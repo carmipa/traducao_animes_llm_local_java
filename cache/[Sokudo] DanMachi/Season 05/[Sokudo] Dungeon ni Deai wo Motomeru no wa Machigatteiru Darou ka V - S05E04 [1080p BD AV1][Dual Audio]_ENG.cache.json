@@ -1,0 +1,2766 @@
+[ {
+  "indice" : 0,
+  "estilo" : "Default",
+  "original" : "{\\i1}How did we end up in this situation?!",
+  "traduzido" : "{\\i1}Como acabamos nessa situação?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 1,
+  "estilo" : "Default",
+  "original" : "{\\i1}How?!",
+  "traduzido" : "{\\i1}Como?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 2,
+  "estilo" : "Default",
+  "original" : "Are there any clothes for me to change into?",
+  "traduzido" : "Tem alguma roupa para eu me trocar?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 3,
+  "estilo" : "Default",
+  "original" : "Y-Yes! I went and got some!",
+  "traduzido" : "S-Sim! Eu fui buscar algumas!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 4,
+  "estilo" : "Default",
+  "original" : "Thank you.",
+  "traduzido" : "Obrigado.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 5,
+  "estilo" : "Default",
+  "original" : "So...",
+  "traduzido" : "Então...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 6,
+  "estilo" : "Default",
+  "original" : "Pardon me!",
+  "traduzido" : "Desculpe-me!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 7,
+  "estilo" : "Default",
+  "original" : "{\\i1}It's not a big deal.",
+  "traduzido" : "{\\i1}Não é nada de mais.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 8,
+  "estilo" : "Default",
+  "original" : "{\\i1}I just need to act like everything's normal between us.",
+  "traduzido" : "{\\i1}Eu só preciso agir como se tudo estivesse normal entre nós.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 9,
+  "estilo" : "Default",
+  "original" : "Feel free to use the bed, Ms. Syr.",
+  "traduzido" : "Sinta-se à vontade para usar a cama, Srta. Syr.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 10,
+  "estilo" : "Default",
+  "original" : "I don't have a problem with sleeping on the floor.",
+  "traduzido" : "Eu não tenho problema em dormir no chão.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 11,
+  "estilo" : "Default",
+  "original" : "Whoa! Why aren't you wearing pants?!",
+  "traduzido" : "Uau! Por que você não está usando calças?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 12,
+  "estilo" : "Default",
+  "original" : "I tried to wear them, but I had trouble.",
+  "traduzido" : "Eu tentei vestir, mas tive dificuldades.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 13,
+  "estilo" : "Default",
+  "original" : "They were too baggy.",
+  "traduzido" : "Elas eram muito folgadas.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 14,
+  "estilo" : "Default",
+  "original" : "And kept falling down.",
+  "traduzido" : "E ficavam caindo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 15,
+  "estilo" : "Default",
+  "original" : "So, uh, like I said...",
+  "traduzido" : "Então, bem...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 16,
+  "estilo" : "Default",
+  "original" : "I'll just sleep on the floor.",
+  "traduzido" : "Eu só vou dormir no chão.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 17,
+  "estilo" : "Default",
+  "original" : "Please take the bed, Ms. Syr.",
+  "traduzido" : "Por favor, fique com a cama, Srta. Syr.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 18,
+  "estilo" : "Default",
+  "original" : "No way. We'll both sleep in the bed.",
+  "traduzido" : "De jeito nenhum. Vamos ambos dormir na cama.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 19,
+  "estilo" : "Default",
+  "original" : "I can't do that.",
+  "traduzido" : "Eu não posso fazer isso.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 20,
+  "estilo" : "Default",
+  "original" : "Why?",
+  "traduzido" : "Por que?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 21,
+  "estilo" : "Default",
+  "original" : "Because I just can't.",
+  "traduzido" : "Porque simplesmente não consigo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 22,
+  "estilo" : "Default",
+  "original" : "No matter what?",
+  "traduzido" : "Não importa o quê?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 23,
+  "estilo" : "Default",
+  "original" : "Goddess Hestia will get upset with me.",
+  "traduzido" : "A deusa Hestia vai ficar brava comigo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 24,
+  "estilo" : "Default",
+  "original" : "But if I take the bed all for myself...",
+  "traduzido" : "Mas se eu tomar a cama só para mim...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 25,
+  "estilo" : "Default",
+  "original" : "then I might just die from the overwhelming guilt.",
+  "traduzido" : "eu poderia morrer de culpa excessiva.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 26,
+  "estilo" : "Default",
+  "original" : "There you go lying again.",
+  "traduzido" : "Lá vai você mentir de novo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 27,
+  "estilo" : "Default",
+  "original" : "Would you care to take a seat?",
+  "traduzido" : "Gostaria de se sentar?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 28,
+  "estilo" : "Default",
+  "original" : "You're really not going to do anything for me?",
+  "traduzido" : "Você realmente não vai fazer nada por mim?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 29,
+  "estilo" : "Default",
+  "original" : "Wh-What is that supposed to mean?",
+  "traduzido" : "Q-Que diabos isso quer dizer?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 30,
+  "estilo" : "Default",
+  "original" : "I don't get it.",
+  "traduzido" : "Eu não entendo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 31,
+  "estilo" : "Default",
+  "original" : "So, uh, Ms. Syr? I was wondering...",
+  "traduzido" : "Então, uhm, Srta. Syr? Eu estava me perguntando...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 32,
+  "estilo" : "Default",
+  "original" : "What made you ask me out on this date?",
+  "traduzido" : "O que fez você me convidar para esse encontro?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 33,
+  "estilo" : "Default",
+  "original" : "Because I wanted to express my feelings for you.",
+  "traduzido" : "Porque eu queria expressar meus sentimentos por você.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 34,
+  "estilo" : "Default",
+  "original" : "No.",
+  "traduzido" : "Não.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 35,
+  "estilo" : "Default",
+  "original" : "Because I wanted to prove them.",
+  "traduzido" : "Porque eu queria prová-los.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 36,
+  "estilo" : "Default",
+  "original" : "I needed to be sure.",
+  "traduzido" : "Eu precisava ter certeza.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 37,
+  "estilo" : "Default",
+  "original" : "That what I'm feeling...",
+  "traduzido" : "Que o que eu estou sentindo...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 38,
+  "estilo" : "Default",
+  "original" : "is really love. Or not.",
+  "traduzido" : "é realmente amor. Ou não.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 39,
+  "estilo" : "Default",
+  "original" : "Stop!",
+  "traduzido" : "Pare!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 40,
+  "estilo" : "Default",
+  "original" : "{\\i1}This isn't right.",
+  "traduzido" : "{\\i1}Isso não está certo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 41,
+  "estilo" : "Default",
+  "original" : "{\\i1}Getting swept up in the moment \\Nwill just hurt both of us in the end...",
+  "traduzido" : "{\\i1}Ser levado pela emoção \\Napenas nos machucará no final...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 42,
+  "estilo" : "Default",
+  "original" : "Don't reject me.",
+  "traduzido" : "Não me rejeite.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 43,
+  "estilo" : "Default",
+  "original" : "Accept my feelings.",
+  "traduzido" : "Aceite meus sentimentos.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 44,
+  "estilo" : "Default",
+  "original" : "Ms. Syr...",
+  "traduzido" : "Sra. Syr...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 45,
+  "estilo" : "Default",
+  "original" : "No! I can't!",
+  "traduzido" : "Não! Eu não posso!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 46,
+  "estilo" : "Default",
+  "original" : "This is wrong!",
+  "traduzido" : "Isso está errado!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 47,
+  "estilo" : "Default",
+  "original" : "It's not who I am!",
+  "traduzido" : "Não sou eu!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 48,
+  "estilo" : "Default",
+  "original" : "Please don't look at me!",
+  "traduzido" : "Por favor, não olhe para mim!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 49,
+  "estilo" : "Default",
+  "original" : "Look away!",
+  "traduzido" : "Olhe para outro lugar!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 50,
+  "estilo" : "Default",
+  "original" : "I'm begging you!",
+  "traduzido" : "Estou implorando!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 51,
+  "estilo" : "Default",
+  "original" : "Are you disillusioned with me now?",
+  "traduzido" : "Você ficou desiludido comigo agora?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 52,
+  "estilo" : "Default",
+  "original" : "No.",
+  "traduzido" : "Não.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 53,
+  "estilo" : "Default",
+  "original" : "So, I'm curious...",
+  "traduzido" : "Então, estou curioso...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 54,
+  "estilo" : "Default",
+  "original" : "Don't you have any desire for a lover?",
+  "traduzido" : "Não sente desejo por um amante?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 55,
+  "estilo" : "Default",
+  "original" : "What kind of question is that?!",
+  "traduzido" : "Que tipo de pergunta é essa?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 56,
+  "estilo" : "Default",
+  "original" : "Hey, you promised you wouldn't do anything...",
+  "traduzido" : "Ei, você prometeu que não faria nada...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 57,
+  "estilo" : "Default",
+  "original" : "Let me get closer. I'm cold.",
+  "traduzido" : "Me deixe me aproximar. Estou com frio.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 58,
+  "estilo" : "Default",
+  "original" : "B-But...",
+  "traduzido" : "B-Bem...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 59,
+  "estilo" : "Default",
+  "original" : "You didn't have any trouble snuggling with Ryu.",
+  "traduzido" : "Você não teve problemas em se aconchegar com Ryu.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 60,
+  "estilo" : "Default",
+  "original" : "Did you hear about that from her?",
+  "traduzido" : "Você ouviu isso dela?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 61,
+  "estilo" : "Default",
+  "original" : "Nope.",
+  "traduzido" : "Não.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 62,
+  "estilo" : "Default",
+  "original" : "But your reaction just now told me everything.",
+  "traduzido" : "Mas sua reação agora me disse tudo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 63,
+  "estilo" : "Default",
+  "original" : "You know Ryu is someone special to me.",
+  "traduzido" : "Você sabe que Ryu é alguém especial para mim.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 64,
+  "estilo" : "Default",
+  "original" : "But you did naughty things with her anyway, didn't you?",
+  "traduzido" : "Mas você fez coisas más com ela de qualquer maneira, não é?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 65,
+  "estilo" : "Default",
+  "original" : "Th-Th-That's not what happened!",
+  "traduzido" : "N-Não, isso não aconteceu!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 66,
+  "estilo" : "Default",
+  "original" : "I did no such thing!",
+  "traduzido" : "Eu não fiz tal coisa!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 67,
+  "estilo" : "Default",
+  "original" : "Really?",
+  "traduzido" : "De verdade?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 68,
+  "estilo" : "Default",
+  "original" : "Really.",
+  "traduzido" : "De verdade.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 69,
+  "estilo" : "Default",
+  "original" : "Then you won't do anything naughty to me, either, huh?",
+  "traduzido" : "Então você também não vai fazer nada de ruim comigo, certo?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 70,
+  "estilo" : "Default",
+  "original" : "N-No, I won't.",
+  "traduzido" : "N-Não, eu não vou.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 71,
+  "estilo" : "Default",
+  "original" : "Why not?",
+  "traduzido" : "Por que não?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 72,
+  "estilo" : "Default",
+  "original" : "Well, I mean...",
+  "traduzido" : "Bem, eu quero dizer...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 73,
+  "estilo" : "Default",
+  "original" : "It's because you're you, Ms. Syr.",
+  "traduzido" : "É porque você é você, Srta. Syr.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 74,
+  "estilo" : "Default",
+  "original" : "I can't do it.",
+  "traduzido" : "Eu não posso fazer isso.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 75,
+  "estilo" : "Default",
+  "original" : "You jerk. You big, fat jerk.",
+  "traduzido" : "Você é um idiota. Um grande idiota.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 76,
+  "estilo" : "Default",
+  "original" : "Jerk. Jerk.",
+  "traduzido" : "Idiota. Idiota.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 77,
+  "estilo" : "Default",
+  "original" : "You know we can't all be alike.",
+  "traduzido" : "Você sabe que não podemos todos ser iguais.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 78,
+  "estilo" : "Default",
+  "original" : "I'm not okay being the same as Ryu and everybody else.",
+  "traduzido" : "Eu não estou bem sendo igual a Ryu e todo mundo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 79,
+  "estilo" : "Default",
+  "original" : "What do you mean?",
+  "traduzido" : "O que você quer dizer?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 80,
+  "estilo" : "Default",
+  "original" : "You're too much of a kid to understand.",
+  "traduzido" : "Você é muito criança para entender.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 81,
+  "estilo" : "Default",
+  "original" : "I don't even understand it, myself.",
+  "traduzido" : "Eu nem entendo isso, mesmo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 82,
+  "estilo" : "Default",
+  "original" : "Where is this desperation coming from?",
+  "traduzido" : "De onde vem essa desesperação?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 83,
+  "estilo" : "Default",
+  "original" : "To keep it from falling out of my hands...",
+  "traduzido" : "Para mantê-lo de cair das minhas mãos...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 84,
+  "estilo" : "Default",
+  "original" : "Obsessing, striving, and hoping...",
+  "traduzido" : "Obsessão, esforço e esperança...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 85,
+  "estilo" : "Default",
+  "original" : "Ah, I get it now.",
+  "traduzido" : "Ah, agora eu entendo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 86,
+  "estilo" : "Default",
+  "original" : "That's why... I fell... for you...",
+  "traduzido" : "Foi por isso... que eu caí... por você...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 87,
+  "estilo" : "Default",
+  "original" : "Ms. Syr?!",
+  "traduzido" : "Sra. Syr?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 88,
+  "estilo" : "Default",
+  "original" : "So, how'd that date of yours go?",
+  "traduzido" : "Então, como foi o seu encontro?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 89,
+  "estilo" : "Default",
+  "original" : "We were worried since you never came back.",
+  "traduzido" : "Estávamos preocupados porque você não voltou.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 90,
+  "estilo" : "Default",
+  "original" : "What about you, Welf? What's with the getup?",
+  "traduzido" : "E você, Welf? O que é essa aparência?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 91,
+  "estilo" : "Default",
+  "original" : "All of us got roped into working here \\Nduring the Goddess Festival.",
+  "traduzido" : "All of us got roped into working here \\Nduring the Goddess Festival.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 92,
+  "estilo" : "Default",
+  "original" : "But let's get back to you.",
+  "traduzido" : "Mas voltemos a você.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 93,
+  "estilo" : "Default",
+  "original" : "Well, actually...",
+  "traduzido" : "Bem, na verdade...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 94,
+  "estilo" : "Default",
+  "original" : "You two got chased around by the Freya Familia \\Nand she was gone by the time you woke up?",
+  "traduzido" : "Vocês dois foram perseguidos pela Familia de Freya \\Ne ela já tinha sumido quando acordaram?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 95,
+  "estilo" : "Default",
+  "original" : "Yeah. So I figured she might have \\Njust gone back to the tavern.",
+  "traduzido" : "Sim. Então eu achei que ela podia ter \\Napenas voltado para a taverna.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 96,
+  "estilo" : "Default",
+  "original" : "Well, I was stuck here all night and I didn't see \\Nany sign of her coming back whatsoever.",
+  "traduzido" : "Bem, fiquei aqui a noite toda e não vi \\Nnenhum sinal dela voltando.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 97,
+  "estilo" : "Default",
+  "original" : "Darn...",
+  "traduzido" : "Droga...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 98,
+  "estilo" : "Default",
+  "original" : "Hold up. What are you planning to do once you find her?",
+  "traduzido" : "Espere aí. O que você vai fazer quando encontrar com ela?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 99,
+  "estilo" : "Default",
+  "original" : "Why are you asking?",
+  "traduzido" : "Por que está perguntando?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 100,
+  "estilo" : "Default",
+  "original" : "From what you've told me,",
+  "traduzido" : "De acordo com o que me contou,",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 101,
+  "estilo" : "Default",
+  "original" : "it seems pretty obvious \\Nthat she's head over heels about you.",
+  "traduzido" : "Parece bastante óbvio \\Nque ela está loucamente apaixonada por você.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 102,
+  "estilo" : "Default",
+  "original" : "So that begs the question: \\NWhat will you do when you find her?",
+  "traduzido" : "Então isso levanta uma pergunta: \\NO que você vai fazer quando encontrar com ela?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 103,
+  "estilo" : "Default",
+  "original" : "Are you just gonna play dumb and let things \\Ngo back to normal between you two?",
+  "traduzido" : "Are you just gonna play dumb and let things \\Ngo back to normal between you two?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 104,
+  "estilo" : "Default",
+  "original" : "It's cruel not to give her a clear answer, man.",
+  "traduzido" : "É cruel não dar a ela uma resposta clara, cara.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 105,
+  "estilo" : "Default",
+  "original" : "Even I know that much.",
+  "traduzido" : "Mesmo eu sei disso.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 106,
+  "estilo" : "Default",
+  "original" : "If you choose to keep up the \"dense fool\" act,",
+  "traduzido" : "Se você optar por continuar com a atuação de \"idiota denso\",",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 107,
+  "estilo" : "Default",
+  "original" : "then you're gonna lose all my respect.",
+  "traduzido" : "então vai perder todo o meu respeito.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 108,
+  "estilo" : "Default",
+  "original" : "It's okay to be modest.",
+  "traduzido" : "Está bem ser modesto.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 109,
+  "estilo" : "Default",
+  "original" : "And I get that it's easy to feel helpless \\Nwhen you lack self-confidence.",
+  "traduzido" : "E eu entendo que é fácil se sentir impotente \\N quando você falta confiança em si mesmo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 110,
+  "estilo" : "Default",
+  "original" : "But don't cut and run from someone \\Nwho poured their heart out to you.",
+  "traduzido" : "But don't cut and run from someone \\Nwho poured their heart out to you.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 111,
+  "estilo" : "Default",
+  "original" : "I want you to stay a straight shooter \\Nwho takes care of business.",
+  "traduzido" : "Quero que você fique um cara direto \\Nque cuida dos negócios.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 112,
+  "estilo" : "Default",
+  "original" : "Although that's just me being selfish.",
+  "traduzido" : " Embora isso seja apenas meu egoísmo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 113,
+  "estilo" : "Default",
+  "original" : "Thanks. I'll have a real talk with Ms. Syr.",
+  "traduzido" : "Obrigado. Vou ter uma conversa séria com a Sra. Syr.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 114,
+  "estilo" : "Default",
+  "original" : "But I'm going to have to find her first.",
+  "traduzido" : "Mas primeiro vou ter que encontrá-la.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 115,
+  "estilo" : "Default",
+  "original" : "Sorry, man. Didn't mean to lecture you.",
+  "traduzido" : "Desculpe, cara. Não quis lhe dar um sermão.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 116,
+  "estilo" : "Default",
+  "original" : "Nah.",
+  "traduzido" : "Não.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 117,
+  "estilo" : "Default",
+  "original" : "I'm the one who should say sorry.",
+  "traduzido" : "Sou eu quem deveria pedir desculpas.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 118,
+  "estilo" : "Default",
+  "original" : "I'm betting the best chance you have of finding her \\Nis to get in contact with the Freya Familia directly.",
+  "traduzido" : "A melhor chance que você tem de encontrar ela \\Né entrar em contato diretamente com a Familia de Freya.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 119,
+  "estilo" : "Default",
+  "original" : "Wish I could help, but...",
+  "traduzido" : "Lamento não poder ajudar, mas...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 120,
+  "estilo" : "Default",
+  "original" : "there's no escaping from that Dwarf.",
+  "traduzido" : "não há como escapar do Anão.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 121,
+  "estilo" : "Default",
+  "original" : "{\\i1}The Freya Familia's lookouts have all but disappeared.",
+  "traduzido" : "{\\i1}Os olhares da Familia de Freya desapareceram quase completamente.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 122,
+  "estilo" : "Default",
+  "original" : "{\\i1}Finding Master Hedin and asking him \\Nabout Ms. Syr would be nice, but...",
+  "traduzido" : "{\\i1}Encontrar o Mestre Hedin e perguntar a ele \\Nsobre a Srta. Syr seria legal, mas...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 123,
+  "estilo" : "Default",
+  "original" : "The wind is weeping.",
+  "traduzido" : "O vento está chorando.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 124,
+  "estilo" : "Default",
+  "original" : "You're a first-class adventurer with the Freya Familia.",
+  "traduzido" : "Você é um aventureiro de primeira classe na Familia de Freya.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 125,
+  "estilo" : "Default",
+  "original" : "Mr. Hogni Ragnar, right?",
+  "traduzido" : "Sr. Hogni Ragnar, certo?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 126,
+  "estilo" : "Default",
+  "original" : "What business have you here? My unhonored guest.",
+  "traduzido" : "Qual é o seu negócio aqui? Meu hóspede desonrado.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 127,
+  "estilo" : "Default",
+  "original" : "Unless you covet being embroiled \\Nin a banquet of madness, then be gone forthwith.",
+  "traduzido" : "A menos que você deseje ser envolvido \\Nem um banquete de loucura, então vá embora agora.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 128,
+  "estilo" : "Default",
+  "original" : "Wait, are you...",
+  "traduzido" : "Espere, você...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 129,
+  "estilo" : "Default",
+  "original" : "the guy the Gods dubbed \"cringe-infected\" \\Nfor speaking with big words?",
+  "traduzido" : "é aquele cara que os Deuses apelidaram \"infectado por vergonha\" \\Npor falar com palavras grandes?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 130,
+  "estilo" : "Default",
+  "original" : "Do not mention that abhorrent name!",
+  "traduzido" : "Não mencionem esse nome horrível!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 131,
+  "estilo" : "Default",
+  "original" : "I am infected by no such blight!",
+  "traduzido" : "Eu não sou infectado por tal praga!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 132,
+  "estilo" : "Default",
+  "original" : "S-Sorry.",
+  "traduzido" : "D-D-desculpe.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 133,
+  "estilo" : "Default",
+  "original" : "Please quit looking at me like that.",
+  "traduzido" : "Por favor, pare de me olhar assim.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 134,
+  "estilo" : "Default",
+  "original" : "This is the worst first encounter ever! \\NSo humiliating! I wanna die!",
+  "traduzido" : "Essa é a pior primeira encontro possível! \\NTão humilhante! Eu quero morrer!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 135,
+  "estilo" : "Default",
+  "original" : "My persona of dark intrigue is withering away...",
+  "traduzido" : "Minha persona de intriga sombria está murchando...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 136,
+  "estilo" : "Default",
+  "original" : "Um, do you happen to know where Ms. Syr went to?",
+  "traduzido" : "Hum, você por acaso sabe onde a Srta. Syr foi?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 137,
+  "estilo" : "Default",
+  "original" : "We, too, presently seek \\Nthe whereabouts of the holy maiden.",
+  "traduzido" : "Nós também procuramos atualmente \\No paradeiro da santa donzela.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 138,
+  "estilo" : "Default",
+  "original" : "A myriad of my compatriots have \\Nliberated themselves from thine snare,",
+  "traduzido" : "Uma miríade dos meus companheiros se libertou \\Ndo seu domínio,",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 139,
+  "estilo" : "Default",
+  "original" : "and now quest for signs of good tidings.",
+  "traduzido" : "e agora procura sinais de boas novas.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 140,
+  "estilo" : "Default",
+  "original" : "Uh, so... everybody else from the Freya Familia \\Nquit watching me and went to find Ms. Syr instead?",
+  "traduzido" : "Ah, então... todo mundo da Familia de Freya \\Nparou de me observar e foi procurar a Srta. Syr em vez disso?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 141,
+  "estilo" : "Default",
+  "original" : "{\\i1}That must mean Mr. Hogni was left \\Nto keep tabs on me just in case.",
+  "traduzido" : "{\\i1}Isso deve significar que o Sr. Hogni foi deixado \\Npara me vigiar caso contrário.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 142,
+  "estilo" : "Default",
+  "original" : "What of your sublime and eternal memories?",
+  "traduzido" : "O que é da sua sublime e eterna memória?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 143,
+  "estilo" : "Default",
+  "original" : "Have you forged the epoch of which shall never fade?",
+  "traduzido" : "Você já forjou a era que nunca vai desaparecer?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 144,
+  "estilo" : "Default",
+  "original" : "Huh?",
+  "traduzido" : "Hum?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 145,
+  "estilo" : "Default",
+  "original" : "There shall be no going of separate ways.",
+  "traduzido" : "Não haverá separação de caminhos.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 146,
+  "estilo" : "Default",
+  "original" : "Thus, I am asking if you have made \\Nready by exchanging your farewells.",
+  "traduzido" : "Portanto, estou perguntando se você fez \\Npronto ao trocar seus adeuses.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 147,
+  "estilo" : "Default",
+  "original" : "Memories? Farewell?",
+  "traduzido" : "Memórias? Adeus?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 148,
+  "estilo" : "Default",
+  "original" : "I don't know what you mean.",
+  "traduzido" : "Eu não sei o que você quer dizer.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 149,
+  "estilo" : "Default",
+  "original" : "Twas the girl and not the Goddess who courted you.",
+  "traduzido" : "Foi a garota e não a Deusa quem cortejou você.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 150,
+  "estilo" : "Default",
+  "original" : "Therefore your destiny shall remain unyielding,",
+  "traduzido" : "Portanto, seu destino permanecerá inabalável,",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 151,
+  "estilo" : "Default",
+  "original" : "no matter what other choice you try to adopt.",
+  "traduzido" : "não importa qual outra escolha você tente adotar.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 152,
+  "estilo" : "Default",
+  "original" : "What does that mean?",
+  "traduzido" : "O que isso significa?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 153,
+  "estilo" : "Default",
+  "original" : "What's so special about Ms. Syr?",
+  "traduzido" : "O que há de tão especial na Sra. Syr?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 154,
+  "estilo" : "Default",
+  "original" : "What's my destiny?!",
+  "traduzido" : "Qual é meu destino?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 155,
+  "estilo" : "Default",
+  "original" : "S-S-Stay back! That look in your eyes scares me!",
+  "traduzido" : "S-S-Stay back! Aquela expressão em seus olhos me assusta!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 156,
+  "estilo" : "Default",
+  "original" : "Oh, screw it.",
+  "traduzido" : "Ah, que se dane.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 157,
+  "estilo" : "Default",
+  "original" : "I'm running away.",
+  "traduzido" : "Eu estou fugindo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 158,
+  "estilo" : "Default",
+  "original" : "Hey, wait!",
+  "traduzido" : "Ei, espere!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 159,
+  "estilo" : "Default",
+  "original" : "{\\i1}Farewell? Like I'm leaving?",
+  "traduzido" : "{\\i1}Adeus? Como se eu estivesse indo embora?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 160,
+  "estilo" : "Default",
+  "original" : "{\\i1}What is that supposed to mean?",
+  "traduzido" : "{\\i1}O que isso quer dizer?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 161,
+  "estilo" : "Default",
+  "original" : "{\\i1}And how does it relate to Ms. Syr?",
+  "traduzido" : "{\\i1}E como isso se relaciona à Srta. Syr?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 162,
+  "estilo" : "Default",
+  "original" : "Please, Hermes!",
+  "traduzido" : "Por favor, Hermes!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 163,
+  "estilo" : "Default",
+  "original" : "I'm begging you to help me out!",
+  "traduzido" : "Estou implorando para que me ajude!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 164,
+  "estilo" : "Default",
+  "original" : "It's Bell! My precious Bell is nowhere to be found!",
+  "traduzido" : "É o Bell! Meu precioso Bell está desaparecido!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 165,
+  "estilo" : "Default",
+  "original" : "Okay, I get it! Just let me go!",
+  "traduzido" : "Tudo bem, entendi! Só me deixe ir!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 166,
+  "estilo" : "Default",
+  "original" : "I already sent Asfi to look for him from the skies!",
+  "traduzido" : "Já enviei Asfi para procurá-lo pelos céus!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 167,
+  "estilo" : "Default",
+  "original" : "{\\an8}Wah! I need Bell! My precious Bell!",
+  "traduzido" : "{\\an8}Ah! Preciso do Bell! Meu precioso Bell!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 168,
+  "estilo" : "Default",
+  "original" : "My apologies, Master Hermes.",
+  "traduzido" : "Me desculpe, Mestre Hermes.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 169,
+  "estilo" : "Default",
+  "original" : "It's all right.",
+  "traduzido" : "Tudo bem.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 170,
+  "estilo" : "Default",
+  "original" : "I've been concerned about those two, myself.",
+  "traduzido" : "Estive preocupado com aqueles dois também.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 171,
+  "estilo" : "Default",
+  "original" : "Although, more so Syr than Bell.",
+  "traduzido" : " Embora, mais Syr do que Bell.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 172,
+  "estilo" : "Default",
+  "original" : "We search fur the whole night and didn't find them.",
+  "traduzido" : "Pesquisamos por toda a noite e não os encontramos.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 173,
+  "estilo" : "Default",
+  "original" : "Just where the heck did Syr and that kid disappurr to?!",
+  "traduzido" : "Onde diabos a Syr e aquele garoto desapareceram?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 174,
+  "estilo" : "Default",
+  "original" : "Syr and Bell are nowhere to be found...",
+  "traduzido" : "Syr e Bell estão nowhere to be found...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 175,
+  "estilo" : "Default",
+  "original" : "And they never came home at all...",
+  "traduzido" : "E eles nunca voltaram para casa...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 176,
+  "estilo" : "Default",
+  "original" : "Hey! Anya caught a whiff of the adventure boy!",
+  "traduzido" : "Ei! Anya captou um cheiro do menino aventureiro!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 177,
+  "estilo" : "Default",
+  "original" : "He's heading northeast towards \\Nthe manufacturing district.",
+  "traduzido" : "Ele está indo para nordeste em direção à \\Ndistrito de manufatura.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 178,
+  "estilo" : "Default",
+  "original" : "That's amewzing news, Anya!",
+  "traduzido" : "Isso é incrível, Anya!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 179,
+  "estilo" : "Default",
+  "original" : "{\\an8}They spent the night alone together? Until morning?",
+  "traduzido" : "{\\an8}Eles passaram a noite juntos? Até de manhã?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 180,
+  "estilo" : "Default",
+  "original" : "Yeah, but there was no trace of Syr.",
+  "traduzido" : "Sim, mas não havia nenhum vestígio de Syr.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 181,
+  "estilo" : "Default",
+  "original" : "She might've gotten sepurrated from white whiskers.",
+  "traduzido" : "Ela pode ter sido separada das bigodes brancas.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 182,
+  "estilo" : "Default",
+  "original" : "{\\an8}No way. I don't believe it.",
+  "traduzido" : "{\\an8}De jeito nenhum. Eu não acredito nisso.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 183,
+  "estilo" : "Default",
+  "original" : "{\\an8}This can't be real. They're not even married yet.",
+  "traduzido" : "{\\an8}Isso não pode ser real. Eles nem estão casados ainda.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 184,
+  "estilo" : "Default",
+  "original" : "Whatever, let's get on his tail!",
+  "traduzido" : "Tanto faz, vamos atrás dele!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 185,
+  "estilo" : "Default",
+  "original" : "C'mon, Ryu. Time to kitten gear.",
+  "traduzido" : "Vamos, Ryu. É hora de equipar o kitten gear.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 186,
+  "estilo" : "Default",
+  "original" : "{\\an8}They have to make vows of love first.",
+  "traduzido" : "{\\an8}Eles têm que fazer juramentos de amor primeiro.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 187,
+  "estilo" : "Default",
+  "original" : "If not in the forest, then at least before a God...",
+  "traduzido" : "Se não na floresta, então ao menos diante de um Deus...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 188,
+  "estilo" : "Default",
+  "original" : "If not in the forest, then at least before a God...",
+  "traduzido" : "Se não na floresta, então ao menos diante de um Deus...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 189,
+  "estilo" : "Default - Alt",
+  "original" : "Ugh, enough! Snap the hell out of it!",
+  "traduzido" : "Ah, chega! Saia dessa agora mesmo!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 190,
+  "estilo" : "Default",
+  "original" : "Oh gosh! I'm so glad to see you again!",
+  "traduzido" : "Meu Deus! Estou tão feliz em ver você de novo!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 191,
+  "estilo" : "Default",
+  "original" : "You actually came and found me.",
+  "traduzido" : "Você realmente veio e me encontrou.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 192,
+  "estilo" : "Default",
+  "original" : "Um, about this...",
+  "traduzido" : "Hum, sobre isso...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 193,
+  "estilo" : "Default",
+  "original" : "I'm sorry. I was in such a rush I forgot.",
+  "traduzido" : "Eu sinto muito. Eu estava tão apressado que esqueci.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 194,
+  "estilo" : "Default",
+  "original" : "I've been waiting the whole time!",
+  "traduzido" : "Eu estive esperando esse tempo todo!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 195,
+  "estilo" : "Default",
+  "original" : "Letting this chance slip by would mean \\Nmy dream will never come true!",
+  "traduzido" : "Deixar essa chance passar significaria \\Nmeu sonho nunca se tornar realidade!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 196,
+  "estilo" : "Default",
+  "original" : "So please!",
+  "traduzido" : "Então, por favor!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 197,
+  "estilo" : "Default",
+  "original" : "This is the last time!",
+  "traduzido" : "Isso é pela última vez!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 198,
+  "estilo" : "Default",
+  "original" : "Don't reject me. Please.",
+  "traduzido" : "Não me rejeite. Por favor.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 199,
+  "estilo" : "Default",
+  "original" : "Dainsleif.",
+  "traduzido" : "Dainsleif.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 200,
+  "estilo" : "Default",
+  "original" : "Mr. Hogni...?",
+  "traduzido" : "Sr. Hogni...?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 201,
+  "estilo" : "Default",
+  "original" : "What are you plotting?",
+  "traduzido" : "O que você está planejando?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 202,
+  "estilo" : "Default",
+  "original" : "The White Rabbit belongs to the Goddess.",
+  "traduzido" : "A Coelho Branco pertence à Deusa.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 203,
+  "estilo" : "Default",
+  "original" : "There is no world where you have the right to infringe.",
+  "traduzido" : "Não existe mundo onde você tenha o direito de infringir.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 204,
+  "estilo" : "Default",
+  "original" : "Mr. Hogni, I was just...",
+  "traduzido" : "Senhor Hogni, eu apenas...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 205,
+  "estilo" : "Default",
+  "original" : "Don't waste your words.",
+  "traduzido" : "Não desperdice suas palavras.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 206,
+  "estilo" : "Default",
+  "original" : "I shall extinguish your life.",
+  "traduzido" : "Eu extinguirei sua vida.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 207,
+  "estilo" : "Default",
+  "original" : "But why?! Explain yourself!",
+  "traduzido" : "Mas por quê?! Explique-se!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 208,
+  "estilo" : "Default",
+  "original" : "All in service to my Goddess.",
+  "traduzido" : "Tudo em serviço à minha Deusa.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 209,
+  "estilo" : "Default",
+  "original" : "Withdraw, Rabbit! \\NUnless you want my blade to end you!",
+  "traduzido" : "Recue, Coelho! \\NA menos que queira que minha lâmina acabe com você!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 210,
+  "estilo" : "Default",
+  "original" : "If I make one mistake, your head comes clean off!",
+  "traduzido" : "Se eu cometer um erro, sua cabeça será limpa!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 211,
+  "estilo" : "Default",
+  "original" : "{\\i1}Mr. Hogni isn't aiming for me.",
+  "traduzido" : "{\\i1}O Senhor Hogni não está atrás de mim.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 212,
+  "estilo" : "Default",
+  "original" : "{\\i1}Which means, I can act as a shield!",
+  "traduzido" : "{\\i1}Significa que posso agir como um escudo!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 213,
+  "estilo" : "Default",
+  "original" : "Irksome.",
+  "traduzido" : "Irritante.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 214,
+  "estilo" : "Default",
+  "original" : "Yet meaningless.",
+  "traduzido" : "Ainda sem sentido.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 215,
+  "estilo" : "Default",
+  "original" : "Ms. Ryu?!",
+  "traduzido" : "Sra. Ryu?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 216,
+  "estilo" : "Default",
+  "original" : "What's going on here?",
+  "traduzido" : "O que está acontecendo aqui?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 217,
+  "estilo" : "Default",
+  "original" : "Why is the Freya Familia attacking you?!",
+  "traduzido" : "Por que a Familia Freya está atacando você?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 218,
+  "estilo" : "Default",
+  "original" : "Begone.",
+  "traduzido" : "Afaste-se.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 219,
+  "estilo" : "Default",
+  "original" : "I'm in the middle of killing that woman.",
+  "traduzido" : "Estou no meio de matar aquela mulher.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 220,
+  "estilo" : "Default",
+  "original" : "Huh?! Screw that!",
+  "traduzido" : "Huh?! Que se dane!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 221,
+  "estilo" : "Default",
+  "original" : "You're acting way too immature \\Nfur an expurrt adventurer!",
+  "traduzido" : "You're acting way too immature \\Nfur an expurrt adventurer!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 222,
+  "estilo" : "Default",
+  "original" : "What's the hold up, Hogni?",
+  "traduzido" : "O que está causando o atraso, Hogni?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 223,
+  "estilo" : "Default",
+  "original" : "It's already clear that woman is a transgressor.",
+  "traduzido" : "Já está claro que aquela mulher é uma transgressora.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 224,
+  "estilo" : "Default",
+  "original" : "If you're going to keep dawdling, \\Nthen we'll eliminate her.",
+  "traduzido" : "Se você vai continuar a enrolar, \\Nentão nós vamos eliminá-la.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 225,
+  "estilo" : "Default",
+  "original" : "Adventurer boy. Take Syr and make a break for it.",
+  "traduzido" : "Menino aventureiro. Leve Syr e fuja daqui.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 226,
+  "estilo" : "Default",
+  "original" : "We can only stall them for a minute.",
+  "traduzido" : "Nós só podemos ganhar tempo por um minuto.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 227,
+  "estilo" : "Default",
+  "original" : "Go!",
+  "traduzido" : "Vamos!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 228,
+  "estilo" : "Default",
+  "original" : "Stay out of this, brethren!",
+  "traduzido" : "Fique fora disso, irmãos!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 229,
+  "estilo" : "Default",
+  "original" : "You are another of her cherished ones.",
+  "traduzido" : "Você também é uma de suas queridas.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 230,
+  "estilo" : "Default",
+  "original" : "That makes this most arduous!",
+  "traduzido" : "Isso torna isso ainda mais difícil!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 231,
+  "estilo" : "Default",
+  "original" : "What are you talking about?!",
+  "traduzido" : "Do que você está falando?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 232,
+  "estilo" : "Default",
+  "original" : "I can avoid it!",
+  "traduzido" : "Eu posso evitar isso!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 233,
+  "estilo" : "Default",
+  "original" : "My beloved blade, Victim Abyss.",
+  "traduzido" : "Minha amada espada, Abismo Vítima.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 234,
+  "estilo" : "Default",
+  "original" : "Or as I call it: the Vanguard Slayer.",
+  "traduzido" : "Ou como eu a chamo: o Matador de Vanguarda.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 235,
+  "estilo" : "Default",
+  "original" : "Meow?",
+  "traduzido" : "Miado?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 236,
+  "estilo" : "Default",
+  "original" : "Chloe...",
+  "traduzido" : "Chloe...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 237,
+  "estilo" : "Default",
+  "original" : "Lunor...",
+  "traduzido" : "Lunor...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 238,
+  "estilo" : "Default",
+  "original" : "Ryu!",
+  "traduzido" : "Ryu!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 239,
+  "estilo" : "Default",
+  "original" : "Are you still going to resist, Vana Alfi?",
+  "traduzido" : "Você ainda vai resistir, Vana Alfi?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 240,
+  "estilo" : "Default",
+  "original" : "I don't go by that name anymeowr!",
+  "traduzido" : "Não me chame assim qualquermeowr!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 241,
+  "estilo" : "Default",
+  "original" : "I'm just Anya to mew!",
+  "traduzido" : "Eu sou apenas Anya para mim!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 242,
+  "estilo" : "Default",
+  "original" : "Leave Syr alone. I won't stand fur \\Nanybody hurting my family!",
+  "traduzido" : "Leave Syr alone. I won't stand fur \\Nanybody hurting my family!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 243,
+  "estilo" : "Default",
+  "original" : "Whaddya think you're doing, goofus?",
+  "traduzido" : "O que você pensa que está fazendo, seu bobo?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 244,
+  "estilo" : "Default",
+  "original" : "B-Big brother?! Why are you here?",
+  "traduzido" : "Irmão mais velho?! Por que você está aqui?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 245,
+  "estilo" : "Default",
+  "original" : "Don't reply with a question! \\NI'm the one asking {\\i1}you{\\i0} here!",
+  "traduzido" : "Don't reply with a question! \\NI'm the one asking {\\i1}you{\\i0} here!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 246,
+  "estilo" : "Default",
+  "original" : "Oh, I'm sorry!",
+  "traduzido" : "Ah, me desculpe!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 247,
+  "estilo" : "Default",
+  "original" : "We were kitten into a fight cuz \\Nmy friends and I want to purrtect Syr...",
+  "traduzido" : "We were kitten into a fight cuz \\Nmy friends and I want to purrtect Syr...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 248,
+  "estilo" : "Default",
+  "original" : "Quit talking like you're a damn clown!",
+  "traduzido" : "Pare de falar como se fosse um palhaço!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 249,
+  "estilo" : "Default",
+  "original" : "How many times do I have to say it before \\Nit gets through your thick friggin' skull?",
+  "traduzido" : "Quantas vezes tenho que dizer isso antes de \\Nisso passar pela sua cabeça grossa?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 250,
+  "estilo" : "Default",
+  "original" : "You really piss me the hell off!",
+  "traduzido" : "Você realmente me irrita pra caramba!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 251,
+  "estilo" : "Default",
+  "original" : "I'm sorry... I just...",
+  "traduzido" : "Sinto muito... Eu só...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 252,
+  "estilo" : "Default",
+  "original" : "Get lost. Right now.",
+  "traduzido" : "Perde-te. Agora mesmo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 253,
+  "estilo" : "Default",
+  "original" : "You're a nuisance!",
+  "traduzido" : "Estás a incomodar!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 254,
+  "estilo" : "Default",
+  "original" : "Wait! Please wait!",
+  "traduzido" : "Espere! Por favor espere!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 255,
+  "estilo" : "Default",
+  "original" : "Listen, Big Brother! I don't care what \\Nhappens to me, just please let Syr go!",
+  "traduzido" : "Ouve, Grande Irmão! Não me importo com o que \\Nme acontece, só por favor deixa Syr ir!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 256,
+  "estilo" : "Default",
+  "original" : "Shut up.",
+  "traduzido" : "Cala-te.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 257,
+  "estilo" : "Default",
+  "original" : "Please help me understand! \\NWhy would the Freya Familia be trying to kill you?!",
+  "traduzido" : "Por favor ajuda-me a entender! \\NPorque é que a Familia Freya estaria a tentar matar-te?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 258,
+  "estilo" : "Default",
+  "original" : "It's all because Lady Freya fell in love \\Nwith you at first sight, Mr. Bell.",
+  "traduzido" : "Tudo porque a Senhora Freya se apaixonou \\Npor ti à primeira vista, Sr. Bell.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 259,
+  "estilo" : "Default",
+  "original" : "Even though I knew she wanted to keep you for herself,",
+  "traduzido" : "Mesmo sabendo que ela queria ficar contigo para si,",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 260,
+  "estilo" : "Default",
+  "original" : "I'm trying to steal you away right now!",
+  "traduzido" : "Estou a tentar roubar-te agora mesmo!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 261,
+  "estilo" : "Default",
+  "original" : "What's going on here, Hermes?",
+  "traduzido" : "O que está a acontecer aqui, Hermes?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 262,
+  "estilo" : "Default",
+  "original" : "What is that girl supposed to be? It's hard to tell!",
+  "traduzido" : "O que aquela garota é suposta ser? É difícil dizer!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 263,
+  "estilo" : "Default",
+  "original" : "Is she really... a fellow Goddess?",
+  "traduzido" : "Ela realmente é... uma deusa?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 264,
+  "estilo" : "Default",
+  "original" : "I've been granted just this one chance.",
+  "traduzido" : "Me foi concedida apenas essa chance.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 265,
+  "estilo" : "Default",
+  "original" : "I submitted to my impulses \\Nand made a decision in the face of divine will.",
+  "traduzido" : "Eu cedi aos meus impulsos \\N e tomei uma decisão contra a vontade divina.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 266,
+  "estilo" : "Default",
+  "original" : "So I can't talk my way out of it.",
+  "traduzido" : "Então eu não posso me safar disso.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 267,
+  "estilo" : "Default",
+  "original" : "And they definitely won't spare me.",
+  "traduzido" : "Eles definitivamente não vão me poupar.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 268,
+  "estilo" : "Default",
+  "original" : "But... none of that changes how I feel!",
+  "traduzido" : "Mas... nada disso muda o que eu sinto!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 269,
+  "estilo" : "Default",
+  "original" : "Mr. Bell!",
+  "traduzido" : "Sr. Bell!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 270,
+  "estilo" : "Default",
+  "original" : "I don't care if it's out of kindness.",
+  "traduzido" : "I don't care if it's out of kindness.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 271,
+  "estilo" : "Default",
+  "original" : "Or even just pity.",
+  "traduzido" : "Mesmo assim, apenas pena.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 272,
+  "estilo" : "Default",
+  "original" : "All I want is for you to accept my feelings.",
+  "traduzido" : "Quero apenas que você aceite meus sentimentos.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 273,
+  "estilo" : "Default",
+  "original" : "Please!",
+  "traduzido" : "Por favor!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 274,
+  "estilo" : "Default",
+  "original" : "What are you doing, Mr. Bell?",
+  "traduzido" : "O que você está fazendo, Sr. Bell?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 275,
+  "estilo" : "Default",
+  "original" : "I knew from the moment we met \\Nup earlier. You're not her.",
+  "traduzido" : "Eu sabia desde o momento em que nos encontramos \\N antes. Você não é ela.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 276,
+  "estilo" : "Default",
+  "original" : "Who are you, really?",
+  "traduzido" : "Quem é você, realmente?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 277,
+  "estilo" : "Default",
+  "original" : "How can you say that, Mr. Bell?",
+  "traduzido" : "Como você pode dizer isso, Sr. Bell?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 278,
+  "estilo" : "Default",
+  "original" : "I'm who I've always been.",
+  "traduzido" : "Sou quem sempre fui.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 279,
+  "estilo" : "Default",
+  "original" : "Syr Flover!",
+  "traduzido" : "Syr Flover!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 280,
+  "estilo" : "Default",
+  "original" : "You didn't hesitate to fight and protect me earlier, right?",
+  "traduzido" : "Você não hesitou em lutar e me proteger antes, certo?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 281,
+  "estilo" : "Default",
+  "original" : "Yeah. Because I had no idea what was going on.",
+  "traduzido" : "Sim. Porque eu não fazia ideia do que estava acontecendo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 282,
+  "estilo" : "Default",
+  "original" : "And I didn't want anyone to die.",
+  "traduzido" : "Eu não queria que ninguém morresse.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 283,
+  "estilo" : "Default",
+  "original" : "No matter... who you actually turned out to be.",
+  "traduzido" : "Não importa... quem você realmente acabou sendo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 284,
+  "estilo" : "Default",
+  "original" : "That barrette has the Knight on it.",
+  "traduzido" : "Esse grampo tem o Cavaleiro nele.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 285,
+  "estilo" : "Default",
+  "original" : "It's my half.",
+  "traduzido" : "É meu meio.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 286,
+  "estilo" : "Default",
+  "original" : "The real Syr still has the other half with the Spirit on it.",
+  "traduzido" : "O verdadeiro Syr ainda tem a outra metade com o Espírito nela.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 287,
+  "estilo" : "Default",
+  "original" : "I'm guessing you know everything \\Nthere is to know about Syr.",
+  "traduzido" : "Eu imagino que você saiba tudo \\N sobre Syr.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 288,
+  "estilo" : "Default",
+  "original" : "But not perfectly.",
+  "traduzido" : "Mas não perfeitamente.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 289,
+  "estilo" : "Default",
+  "original" : "That's why I asked. So tell me.",
+  "traduzido" : "Por isso eu perguntei. Então me diga.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 290,
+  "estilo" : "Default",
+  "original" : "Who are you?",
+  "traduzido" : "Quem é você?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 291,
+  "estilo" : "Default",
+  "original" : "I can't believe my cover was blown from the very start.",
+  "traduzido" : "Não posso acreditar que minha cobertura foi revelada desde o início.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 292,
+  "estilo" : "Default",
+  "original" : "Talk about hopelessly foolish.",
+  "traduzido" : "Fale sobre algo terrivelmente tolo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 293,
+  "estilo" : "Default",
+  "original" : "If only you never noticed, \\Nthen you would have fallen into a sweet embrace...",
+  "traduzido" : "If only you never noticed, \\Nthen you would have fallen into a sweet embrace...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 294,
+  "estilo" : "Default",
+  "original" : "and earned yourself a quick death at my mercy!",
+  "traduzido" : "e ganho uma morte rápida pela minha misericórdia!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 295,
+  "estilo" : "Default",
+  "original" : "I've lost this gamble of mine.",
+  "traduzido" : "Eu perdi essa aposta minha.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 296,
+  "estilo" : "Default",
+  "original" : "You're free to go.",
+  "traduzido" : "Você é livre para ir embora.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 297,
+  "estilo" : "Default",
+  "original" : "Lady Syr is over in the south gardens.",
+  "traduzido" : "Lady Syr está no sul dos jardins.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 298,
+  "estilo" : "Default",
+  "original" : "But what are you going to do?",
+  "traduzido" : "Mas o que você vai fazer?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 299,
+  "estilo" : "Default",
+  "original" : "Mr. Hogni and the others are out to kill you.",
+  "traduzido" : "Sr. Hogni e os outros estão atrás de você.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 300,
+  "estilo" : "Default",
+  "original" : "You're still worried despite knowing \\Nthat I'm an imposter?",
+  "traduzido" : "Você ainda está preocupado apesar de saber \\Nque eu sou um impostor?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 301,
+  "estilo" : "Default",
+  "original" : "Just how badly are you trying to immiserate me?",
+  "traduzido" : "Até que ponto você está tentando me imiserar?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 302,
+  "estilo" : "Default",
+  "original" : "You really are the worst kind of hypocrite.",
+  "traduzido" : "Você realmente é o pior tipo de hipocrita.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 303,
+  "estilo" : "Default",
+  "original" : "Please leave. Now.",
+  "traduzido" : "Por favor, saia. Agora.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 304,
+  "estilo" : "Flashback",
+  "original" : "What is it that you desire?",
+  "traduzido" : "O que você deseja?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 305,
+  "estilo" : "Flashback",
+  "original" : "I want to become you.",
+  "traduzido" : "Eu quero ser como você.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 306,
+  "estilo" : "Flashback",
+  "original" : "I want to quit being me",
+  "traduzido" : "Eu quero deixar de ser eu",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 307,
+  "estilo" : "Flashback",
+  "original" : "and become the beautiful and warm person that you are.",
+  "traduzido" : "e me tornar a pessoa linda e quente que você é.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 308,
+  "estilo" : "Flashback",
+  "original" : "What's your name?",
+  "traduzido" : "Qual é o seu nome?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 309,
+  "estilo" : "Flashback",
+  "original" : "Syr.",
+  "traduzido" : "Syr.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 310,
+  "estilo" : "Flashback",
+  "original" : "Okay.",
+  "traduzido" : "Tudo bem.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 311,
+  "estilo" : "Flashback",
+  "original" : "Then give me your name.",
+  "traduzido" : "Então me diga o seu nome.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 312,
+  "estilo" : "Flashback",
+  "original" : "And I'll give you one of mine in exchange.",
+  "traduzido" : "E eu lhe darei um dos meus em troca.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 313,
+  "estilo" : "Flashback",
+  "original" : "From now on, you'll be a daughter of the Gods.",
+  "traduzido" : "Agora em diante, você será uma filha dos Deuses.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 314,
+  "estilo" : "Flashback",
+  "original" : "{\\t(1069,2237,1,\\3c&HFFFFFF&\\4c&HFFFFFF&)}And your name is...",
+  "traduzido" : "{\\t(1069,2237,1,\\3c&HFFFFFF&\\4c&HFFFFFF&)}E seu nome é...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 315,
+  "estilo" : "Default",
+  "original" : "Going solo to pull this bullshit.",
+  "traduzido" : "Viajando sozinha para fazer essa loucura.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 316,
+  "estilo" : "Default",
+  "original" : "What the hell were you even hoping to accomplish?",
+  "traduzido" : "O que diabos você estava esperando para realizar?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 317,
+  "estilo" : "Default",
+  "original" : "Let's hear it, Horn!",
+  "traduzido" : "Escute bem, Chifre!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 318,
+  "estilo" : "Default",
+  "original" : "You're a poor excuse of an assistant.",
+  "traduzido" : "Você é um assistente de primeira qualidade.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 319,
+  "estilo" : "Default",
+  "original" : "This ruse of yours has gone far too smoothly.",
+  "traduzido" : "Esse seu plano correu muito bem.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 320,
+  "estilo" : "Default",
+  "original" : "Admit it. You ensnared Ottarl \\Nand the others in this, didn't you?",
+  "traduzido" : "Admit it. You ensnared Ottarl \\Nand the others in this, didn't you?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 321,
+  "estilo" : "Default",
+  "original" : "I have no excuse.",
+  "traduzido" : "Não tenho desculpa.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 322,
+  "estilo" : "Default",
+  "original" : "I went against her divine will and I...",
+  "traduzido" : "Fui contra sua vontade divina e eu...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 323,
+  "estilo" : "Default",
+  "original" : "tried to murder Bell Cranel.",
+  "traduzido" : "tentei matar Bell Cranel.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 324,
+  "estilo" : "Default",
+  "original" : "Yeah, and you meant to get killed \\Nby us all along, didn't you?",
+  "traduzido" : "Sim, e você queria ser morto por nós desde o início, não é mesmo?\\N",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 325,
+  "estilo" : "Default",
+  "original" : "Forcing her to deal with this crap \\Nall for your own rotten self-satisfaction.",
+  "traduzido" : "Forçando-a a lidar com essa merda\\Ntudo para seu próprio prazer egoísta.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 326,
+  "estilo" : "Default",
+  "original" : "You think this was about self-satisfaction?",
+  "traduzido" : "Você acha que isso foi sobre satisfação própria?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 327,
+  "estilo" : "Default",
+  "original" : "You can't even begin to grasp the reality.",
+  "traduzido" : "Você nem sequer consegue entender a realidade.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 328,
+  "estilo" : "Default",
+  "original" : "Because I can become one with her.",
+  "traduzido" : "Porque eu posso me tornar um com ela.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 329,
+  "estilo" : "Default",
+  "original" : "Our psyches overlap with each other.",
+  "traduzido" : "Nossas psiques se sobrepõem uma à outra.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 330,
+  "estilo" : "Default",
+  "original" : "So it's impossible for you to understand!",
+  "traduzido" : "Então é impossível para você entender!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 331,
+  "estilo" : "Default",
+  "original" : "I was driven by one fear.",
+  "traduzido" : "Fui impelido por um medo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 332,
+  "estilo" : "Default",
+  "original" : "The fear that my Goddess would be \\Nforever changed with that man around.",
+  "traduzido" : "O medo de que minha Deusa seria\\Nmudada para sempre com aquele homem por perto.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 333,
+  "estilo" : "Default",
+  "original" : "If things carried on between them, \\Nthen my one and only Queen would be tainted,",
+  "traduzido" : "Se as coisas continuassem entre eles, \\Nentão minha Rainha única seria macularizada,",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 334,
+  "estilo" : "Default",
+  "original" : "and fall into depravity!",
+  "traduzido" : "e cairia na depravação!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 335,
+  "estilo" : "Default",
+  "original" : "That's why I had no choice but to act!",
+  "traduzido" : "Foi por isso que eu não tive escolha a não ser agir!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 336,
+  "estilo" : "Default",
+  "original" : "Even if she was opposed to it!",
+  "traduzido" : "Mesmo que ela fosse contra isso!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 337,
+  "estilo" : "Default",
+  "original" : "Even if she shunned me forever!",
+  "traduzido" : "Mesmo que ela me repudiasse para sempre!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 338,
+  "estilo" : "Default",
+  "original" : "I was ready to kill him for her sake!",
+  "traduzido" : "Eu estava pronto para matá-lo por ela!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 339,
+  "estilo" : "Default",
+  "original" : "It was a necessary sin!",
+  "traduzido" : "Foi um pecado necessário!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 340,
+  "estilo" : "Default",
+  "original" : "Because a Goddess must remain a Goddess!",
+  "traduzido" : "Porque uma Deusa deve permanecer uma Deusa!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 341,
+  "estilo" : "Default",
+  "original" : "Letting her sink to the level of \\Nsome generic girl defies all reason!",
+  "traduzido" : "Deixar ela afundar no nível de\\Nalguma garota comum é contrário à razão!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 342,
+  "estilo" : "Default",
+  "original" : "You're nothing but a friggin' zealot.",
+  "traduzido" : "Voce nada mais e que um maldito zelote.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 343,
+  "estilo" : "Default",
+  "original" : "I'm flattered you found me, Mr. Bell.",
+  "traduzido" : "Fico lisonjeado por voce ter me encontrado, Sr. Bell.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 344,
+  "estilo" : "Default",
+  "original" : "Well, a person who looks exactly \\Nlike you said you'd be here.",
+  "traduzido" : "Well, a person who looks exactly \\Nlike you said you'd be here.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 345,
+  "estilo" : "Default",
+  "original" : "Silly! You're supposed to reply with something \\Nmore charming like: \"my heart told me you'd be here.\"",
+  "traduzido" : "Silly! You're supposed to reply with something \\Nmore charming like: \"my heart told me you'd be here.\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 346,
+  "estilo" : "Default",
+  "original" : "Why did you do all of this?",
+  "traduzido" : "Por que voce fez tudo isso?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 347,
+  "estilo" : "Default",
+  "original" : "It's like I told you yesterday.",
+  "traduzido" : "E como eu lhe disse ontem.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 348,
+  "estilo" : "Default",
+  "original" : "I wanted to express my feelings for you.",
+  "traduzido" : "Eu queria expressar meus sentimentos por voce.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 349,
+  "estilo" : "Default",
+  "original" : "And to find out whether I was in love or not.",
+  "traduzido" : "E descobrir se estava apaixonado ou nao.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 350,
+  "estilo" : "Default",
+  "original" : "I figured that no matter what \\Nfeelings you have for other girls,",
+  "traduzido" : "I figured that no matter what \\Nfeelings you have for other girls,",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 351,
+  "estilo" : "Default",
+  "original" : "if you actually went out of your way to find me,",
+  "traduzido" : "se voce realmente fosse a esse ponto para me encontrar",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 352,
+  "estilo" : "Default",
+  "original" : "that I would get to feel a little smug about it.",
+  "traduzido" : "Que eu chegaria a me sentir um pouco orgulhoso disso.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 353,
+  "estilo" : "Default",
+  "original" : "I hated the idea of letting time go \\Nby without doing anything.",
+  "traduzido" : "I hated the idea of letting time go \\Nby without doing anything.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 354,
+  "estilo" : "Default",
+  "original" : "So I made my affections clear.",
+  "traduzido" : "Então eu fiz minhas afeições claras.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 355,
+  "estilo" : "Default",
+  "original" : "Except... I realized part of me \\Nprefers a slow burn romance.",
+  "traduzido" : "Except... I realized part of me \\Nprefers a slow burn romance.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 356,
+  "estilo" : "Default",
+  "original" : "Then I started to become unsure of myself \\Nand what I really wanted.",
+  "traduzido" : "Then I started to become unsure of myself \\Nand what I really wanted.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 357,
+  "estilo" : "Default",
+  "original" : "And now, I'm sure the only way \\NI can be free from this torment",
+  "traduzido" : "And now, I'm sure the only way \\NI can be free from this torment",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 358,
+  "estilo" : "Default",
+  "original" : "is by laying all my feelings on the table.",
+  "traduzido" : "é colocando todos os meus sentimentos na mesa.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 359,
+  "estilo" : "Default",
+  "original" : "I finally figured it out.",
+  "traduzido" : "Finalmente, eu descobri.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 360,
+  "estilo" : "Default",
+  "original" : "I'm crazy about you, Mr. Bell.",
+  "traduzido" : "Eu estou louca por você, Sr. Bell.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 361,
+  "estilo" : "Default",
+  "original" : "You're the love of my life.",
+  "traduzido" : "Você é o amor da minha vida.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 362,
+  "estilo" : "Default",
+  "original" : "I want to spend forever with you.",
+  "traduzido" : "Quero passar a eternidade com você.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 363,
+  "estilo" : "Default",
+  "original" : "And I really want you to choose me.",
+  "traduzido" : "E realmente quero que você escolha eu.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 364,
+  "estilo" : "Default",
+  "original" : "My heart aches.",
+  "traduzido" : "Meu coração dói.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 365,
+  "estilo" : "Default",
+  "original" : "I yearn for you to hold me.",
+  "traduzido" : "Anseio por você me segurar.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 366,
+  "estilo" : "Default",
+  "original" : "I'm so sick of agonizing over what tomorrow has in store.",
+  "traduzido" : "Estou tão cansado de sofrer com o que o amanhã reserva.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 367,
+  "estilo" : "Default",
+  "original" : "I never even wanted to experience this.",
+  "traduzido" : "Nunca quis experimentar isso.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 368,
+  "estilo" : "Default",
+  "original" : "But all the same, I want to know \\Nwhere these feelings take me...",
+  "traduzido" : "Mas mesmo assim, quero saber \\Naonde esses sentimentos me levam...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 369,
+  "estilo" : "Default",
+  "original" : "I can't help but be curious!",
+  "traduzido" : "Não consigo deixar de ser curioso!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 370,
+  "estilo" : "Default",
+  "original" : "I love you... Bell.",
+  "traduzido" : "Eu te amo... Bell.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 371,
+  "estilo" : "Default",
+  "original" : "{\\i1}I had no idea.",
+  "traduzido" : "{\\i1}Eu não tinha ideia.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 372,
+  "estilo" : "Default",
+  "original" : "{\\i1}Turning away someone's love...",
+  "traduzido" : "{\\i1}Rejeitar alguém's amor...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 373,
+  "estilo" : "Default",
+  "original" : "{\\i1}really tears you apart inside.",
+  "traduzido" : "{\\i1}realmente te despedaça por dentro.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 374,
+  "estilo" : "Default",
+  "original" : "I'm sorry.",
+  "traduzido" : "Sinto muito.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 375,
+  "estilo" : "Default",
+  "original" : "Ottarl.",
+  "traduzido" : "Ottarl.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 376,
+  "estilo" : "Default",
+  "original" : "Make the preparations.",
+  "traduzido" : "Faça os preparativos.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 377,
+  "estilo" : "Default",
+  "original" : "I'm going to take him for myself.",
+  "traduzido" : "Vou ficar com ele agora.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 378,
+  "estilo" : "Default",
+  "original" : "Are you absolutely sure?",
+  "traduzido" : "Você tem certeza absoluta?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 379,
+  "estilo" : "Default",
+  "original" : "I'm finished with being the girl.",
+  "traduzido" : "Estou cansada de ser menina.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 380,
+  "estilo" : "Default",
+  "original" : "Syr is dead now.",
+  "traduzido" : "Syr está morto agora.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 381,
+  "estilo" : "Default",
+  "original" : "I should have just done it this way from the start.",
+  "traduzido" : "Devia ter feito assim desde o início.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 382,
+  "estilo" : "Default",
+  "original" : "I won't let anyone else have you, Bell.",
+  "traduzido" : "Eu não deixarei que ninguém mais tenha você, Bell.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 383,
+  "estilo" : "Default",
+  "original" : "Soon enough you'll belong to me, and me alone.",
+  "traduzido" : "Em breve, você será meu e só meu.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 384,
+  "estilo" : "Default",
+  "original" : "Next time: \"Freya Familia\".",
+  "traduzido" : "Próxima vez: \"Familia de Freya\".",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 385,
+  "estilo" : "Ep Title",
+  "original" : "{\\shad0\\pos(1612.5,822.5)\\c&H000000&\\blur0.5\\iclip(m 1565.492 802.344 b 1565.929 804.141 1566.32 806.172 1566.539 808.578 1568.382 809.234 1570.726 809.703 1573.039 809.703 1579.023 809.703 1582.601 806.313 1582.601 801.844 1582.601 797.625 1580.429 796.063 1575.711 792.719 1572.461 790.406 1571.086 789.219 1571.086 787.016 1571.086 785.109 1572.351 783.625 1574.726 783.625 1577.586 783.625 1578.445 784.844 1579.211 788.813 l 1581.445 788.453 b 1581.054 786.094 1580.789 783.969 1580.679 782.563 1579.211 781.969 1577.148 781.531 1574.773 781.531 1568.023 781.531 1565.992 785.578 1565.992 788.453 1565.992 792.531 1568.086 794.047 1572.304 797.047 1576.101 799.75 1577.257 800.906 1577.257 803.422 1577.257 806.125 1575.351 807.609 1573.179 807.609 1570.539 807.609 1568.882 806.422 1567.757 801.797 m 1600.492 804.313 b 1599.867 805.688 1598.257 807.672 1595.445 807.672 1594.101 807.672 1592.804 806.984 1591.929 805.688 1591.07 804.25 1590.711 802.328 1590.711 799.953 l 1602.179 799.953 b 1602.179 798.047 1601.82 790.328 1593.929 790.328 1587.617 790.328 1585.086 794.938 1585.086 799.594 1585.086 806.375 1588.554 809.625 1594.429 809.625 1597.601 809.625 1600.273 808.359 1602.07 805.078 m 1590.711 798.297 b 1590.742 795.484 1591.429 791.984 1593.882 791.984 1596.492 791.984 1596.773 795.984 1596.773 798.297 m 1609.148 782.203 b 1607.492 782.203 1606.148 783.5 1606.148 785.344 1606.148 787.219 1607.492 788.516 1609.148 788.516 1610.836 788.516 1612.179 787.219 1612.179 785.344 1612.179 783.578 1610.945 782.203 1609.148 782.203 m 1611.414 790.328 b 1608.929 791.375 1606.586 791.953 1604.382 792.094 l 1604.382 793.531 b 1606.554 793.531 1606.695 793.703 1606.695 796.375 l 1606.695 804.641 b 1606.695 807.313 1606.523 807.641 1604.382 807.641 l 1604.382 809.156 1614.164 809.156 1614.164 807.641 b 1612.257 807.641 1612.039 807.313 1612.039 804.688 l 1612.039 790.656 c m 1628.476 792.031 b 1627.648 791.203 1626.382 790.328 1624.398 790.328 1618.476 790.328 1616.211 794.984 1616.211 799.781 1616.211 806.313 1619.57 809.594 1623.961 809.594 1626.32 809.594 1627.789 808.516 1628.586 807.469 l 1628.664 807.469 1628.804 809.344 1629.211 809.625 b 1631.289 809.125 1634.461 809.047 1635.695 809.047 l 1635.695 807.719 b 1634.07 807.719 1633.851 807.469 1633.851 805.094 l 1633.851 781.203 1633.242 780.906 b 1630.976 781.875 1628.523 782.5 1626.273 782.672 l 1626.273 784.078 b 1628.414 784.078 1628.554 784.547 1628.554 786.969 l 1628.554 792.031 c m 1628.554 805.344 b 1627.867 806.453 1626.898 807.578 1625.445 807.578 1623.382 807.578 1621.836 804.938 1621.836 800.031 1621.836 796.859 1622.195 792.281 1625.523 792.281 1626.851 792.281 1627.898 793.359 1628.554 794.438 m 1644.851 790.656 l 1644.242 790.328 b 1642.039 791.344 1639.554 791.906 1637.57 792.125 l 1637.57 793.531 b 1639.554 793.531 1639.726 793.813 1639.726 796.234 l 1639.726 804.688 b 1639.726 807.391 1639.554 807.641 1637.57 807.641 l 1637.57 809.156 1647.554 809.156 1647.554 807.641 b 1645.32 807.641 1645.07 807.203 1645.07 804.688 l 1645.07 795.641 b 1646.289 793.75 1647.195 792.75 1648.054 792.75 1648.632 792.75 1648.929 793.109 1649.289 794.266 1649.679 795.375 1650.367 795.844 1651.273 795.844 1652.429 795.844 1653.07 794.953 1653.07 793.688 1653.07 791.563 1651.195 790.328 1649.679 790.328 1647.804 790.328 1646.554 791.313 1645.039 793.328 l 1644.961 793.328 c)\\t(3606,0,1,\\alpha&HFF&)}Seidr",
+  "traduzido" : "{\\shad0\\pos(1612.5,822.5)\\c&H000000&\\blur0.5\\iclip(m 1565.492 802.344 b 1565.929 804.141 1566.32 806.172 1566.539 808.578 1568.382 809.234 1570.726 809.703 1573.039 809.703 1579.023 809.703 1582.601 806.313 1582.601 801.844 1582.601 797.625 1580.429 796.063 1575.711 792.719 1572.461 790.406 1571.086 789.219 1571.086 787.016 1571.086 785.109 1572.351 783.625 1574.726 783.625 1577.586 783.625 1578.445 784.844 1579.211 788.813 l 1581.445 788.453 b 1581.054 786.094 1580.789 783.969 1580.679 782.563 1579.211 781.969 1577.148 781.531 1574.773 781.531 1568.023 781.531 1565.992 785.578 1565.992 788.453 1565.992 792.531 1568.086 794.047 1572.304 797.047 1576.101 799.75 1577.257 800.906 1577.257 803.422 1577.257 806.125 1575.351 807.609 1573.179 807.609 1570.539 807.609 1568.882 806.422 1567.757 801.797 m 1600.492 804.313 b 1599.867 805.688 1598.257 807.672 1595.445 807.672 1594.101 807.672 1592.804 806.984 1591.929 805.688 1591.07 804.25 1590.711 802.328 1590.711 799.953 l 1602.179 799.953 b 1602.179 798.047 1601.82 790.328 1593.929 790.328 1587.617 790.328 1585.086 794.938 1585.086 799.594 1585.086 806.375 1588.554 809.625 1594.429 809.625 1597.601 809.625 1600.273 808.359 1602.07 805.078 m 1590.711 798.297 b 1590.742 795.484 1591.429 791.984 1593.882 791.984 1596.492 791.984 1596.773 795.984 1596.773 798.297 m 1609.148 782.203 b 1607.492 782.203 1606.148 783.5 1606.148 785.344 1606.148 787.219 1607.492 788.516 1609.148 788.516 1610.836 788.516 1612.179 787.219 1612.179 785.344 1612.179 783.578 1610.945 782.203 1609.148 782.203 m 1611.414 790.328 b 1608.929 791.375 1606.586 791.953 1604.382 792.094 l 1604.382 793.531 b 1606.554 793.531 1606.695 793.703 1606.695 796.375 l 1606.695 804.641 b 1606.695 807.313 1606.523 807.641 1604.382 807.641 l 1604.382 809.156 1614.164 809.156 1614.164 807.641 b 1612.257 807.641 1612.039 807.313 1612.039 804.688 l 1612.039 790.656 c m 1628.476 792.031 b 1627.648 791.203 1626.382 790.328 1624.398 790.328 1618.476 790.328 1616.211 794.984 1616.211 799.781 1616.211 806.313 1619.57 809.594 1623.961 809.594 1626.32 809.594 1627.789 808.516 1628.586 807.469 l 1628.664 807.469 1628.804 809.344 1629.211 809.625 b 1631.289 809.125 1634.461 809.047 1635.695 809.047 l 1635.695 807.719 b 1634.07 807.719 1633.851 807.469 1633.851 805.094 l 1633.851 781.203 1633.242 780.906 b 1630.976 781.875 1628.523 782.5 1626.273 782.672 l 1626.273 784.078 b 1628.414 784.078 1628.554 784.547 1628.554 786.969 l 1628.554 792.031 c m 1628.554 805.344 b 1627.867 806.453 1626.898 807.578 1625.445 807.578 1623.382 807.578 1621.836 804.938 1621.836 800.031 1621.836 796.859 1622.195 792.281 1625.523 792.281 1626.851 792.281 1627.898 793.359 1628.554 794.438 m 1644.851 790.656 l 1644.242 790.328 b 1642.039 791.344 1639.554 791.906 1637.57 792.125 l 1637.57 793.531 b 1639.554 793.531 1639.726 793.813 1639.726 796.234 l 1639.726 804.688 b 1639.726 807.391 1639.554 807.641 1637.57 807.641 l 1637.57 809.156 1647.554 809.156 1647.554 807.641 b 1645.32 807.641 1645.07 807.203 1645.07 804.688 l 1645.07 795.641 b 1646.289 793.75 1647.195 792.75 1648.054 792.75 1648.632 792.75 1648.929 793.109 1649.289 794.266 1649.679 795.375 1650.367 795.844 1651.273 795.844 1652.429 795.844 1653.07 794.953 1653.07 793.688 1653.07 791.563 1651.195 790.328 1649.679 790.328 1647.804 790.328 1646.554 791.313 1645.039 793.328 l 1644.961 793.328 c)\\t(3606,0,1,\\alpha&HFF&)}Seidr",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 386,
+  "estilo" : "Ep Title",
+  "original" : "{\\an2\\shad0\\blur0.5\\pos(1609,819)\\t(3606,0,1,\\alpha&HFF&)}Seidr",
+  "traduzido" : "{\\an2\\shad0\\blur0.5\\pos(1609,819)\\t(3606,0,1,\\alpha&HFF&)}Seidr",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 387,
+  "estilo" : "Ep Title",
+  "original" : "{\\pos(1612.5,1027.5)\\fs60\\c&H000000&\\shad0\\blur0.5\\iclip(m 1505.022 988.641 b 1504.538 985.875 1504.116 983.141 1503.897 980.594 1501.6 979.547 1499.225 979.031 1496.741 979.031 1486.475 979.031 1481.679 986.688 1481.679 995.875 1481.679 1006.078 1486.272 1012.828 1495.366 1012.828 1500.944 1012.828 1504.679 1009.938 1505.757 1008.844 l 1505.757 1003.016 b 1505.757 1000.938 1506.022 1000.766 1508.054 1000.766 l 1508.054 998.688 1496.788 998.688 1496.788 1000.766 b 1499.429 1000.766 1499.694 1001.156 1499.694 1003.875 l 1499.694 1008.813 b 1498.741 1009.672 1497.272 1010.234 1495.929 1010.234 1491.507 1010.234 1488.819 1004.047 1488.819 995.578 1488.819 985.563 1492.725 981.281 1496.538 981.281 1500.475 981.281 1501.429 983.703 1502.288 989.125 m 1521.804 1012.75 b 1530.725 1012.75 1533.069 1007.266 1533.069 1001.016 1533.069 994 1529.6 989.594 1521.804 989.594 1514.585 989.594 1510.6 993.656 1510.6 1001.016 1510.6 1007.344 1512.975 1012.75 1521.804 1012.75 m 1521.772 991.578 b 1523.069 991.578 1524.1 992.141 1524.804 993.266 1525.757 994.828 1526.272 997.375 1526.272 1001.188 1526.272 1005.141 1525.71 1007.641 1524.757 1009.125 1524.069 1010.203 1523.069 1010.766 1521.772 1010.766 1520.507 1010.766 1519.475 1010.203 1518.772 1009.125 1517.866 1007.641 1517.304 1005.141 1517.304 1001.188 1517.304 995.563 1518.304 991.578 1521.725 991.578 m 1550.835 991.625 b 1549.835 990.641 1548.319 989.594 1545.929 989.594 1538.819 989.594 1536.1 995.188 1536.1 1000.938 1536.1 1008.766 1540.132 1012.703 1545.413 1012.703 1548.225 1012.703 1550.007 1011.406 1550.96 1010.156 l 1551.038 1010.156 1551.21 1012.406 1551.694 1012.75 b 1554.194 1012.141 1558.007 1012.063 1559.475 1012.063 l 1559.475 1010.453 b 1557.538 1010.453 1557.272 1010.156 1557.272 1007.297 l 1557.272 978.641 1556.538 978.297 b 1553.804 979.453 1550.866 980.188 1548.179 980.406 l 1548.179 982.094 b 1550.741 982.094 1550.913 982.656 1550.913 985.563 l 1550.913 991.625 c m 1550.913 1007.594 b 1550.085 1008.938 1548.913 1010.281 1547.179 1010.281 1544.71 1010.281 1542.85 1007.125 1542.85 1001.234 1542.85 997.438 1543.288 991.938 1547.272 991.938 1548.882 991.938 1550.132 993.234 1550.913 994.531 m 1586.507 998.031 l 1583.554 998.766 b 1580.522 999.453 1578.194 1000.359 1576.538 1001.453 1574.335 1002.797 1573.382 1004.563 1573.382 1006.906 1573.382 1010.938 1576.85 1012.75 1579.882 1012.75 1583.475 1012.75 1585.257 1011.453 1586.632 1010.063 l 1586.804 1010.063 b 1587.507 1011.719 1588.663 1012.453 1591.272 1012.453 1593.335 1012.453 1594.647 1012.188 1595.804 1011.719 l 1595.46 1009.984 b 1595.116 1010.203 1594.679 1010.328 1594.257 1010.328 1593.335 1010.328 1592.866 1009.547 1592.866 1007.219 l 1592.866 997.344 b 1592.866 990.109 1587.757 989.594 1583.772 989.594 1575.944 989.594 1574.429 992.969 1574.429 994.516 1574.429 995.641 1575.116 996.641 1576.757 996.641 1578.413 996.641 1579.1 996 1579.538 994.906 1579.929 993.703 1580.788 991.578 1583.304 991.578 1585.085 991.578 1586.507 992.484 1586.507 996.031 m 1586.507 1007.938 b 1585.725 1008.719 1584.647 1009.719 1583.038 1009.719 1581.257 1009.719 1580.054 1008.5 1580.054 1005.906 1580.054 1002.703 1582.788 1001.063 1586.507 999.891 m 1606.413 993.281 l 1606.241 989.984 1605.429 989.594 b 1602.866 990.766 1599.85 991.453 1597.507 991.719 l 1597.507 993.453 b 1599.85 993.406 1600.147 993.844 1600.147 996.953 l 1600.147 1006.781 b 1600.147 1009.984 1599.882 1010.375 1597.507 1010.375 l 1597.507 1012.188 1608.413 1012.188 1608.413 1010.375 b 1606.632 1010.375 1606.507 1010.078 1606.507 1006.828 l 1606.507 996 b 1608.069 993.75 1609.757 992.328 1611.179 992.328 1613.647 992.328 1614.038 994.531 1614.038 996.922 l 1614.038 1006.781 b 1614.038 1010.078 1613.866 1010.375 1612.054 1010.375 l 1612.054 1012.188 1622.6 1012.188 1622.6 1010.375 b 1620.663 1010.375 1620.397 1009.734 1620.397 1006.906 l 1620.397 996.781 b 1620.397 992.453 1618.71 989.594 1613.6 989.594 1610.71 989.594 1608.366 991.031 1606.507 993.281 m 1639.679 991.625 b 1638.679 990.641 1637.163 989.594 1634.772 989.594 1627.663 989.594 1624.944 995.188 1624.944 1000.938 1624.944 1008.766 1628.975 1012.703 1634.257 1012.703 1637.069 1012.703 1638.85 1011.406 1639.804 1010.156 l 1639.882 1010.156 1640.054 1012.406 1640.538 1012.75 b 1643.038 1012.141 1646.85 1012.063 1648.319 1012.063 l 1648.319 1010.453 b 1646.382 1010.453 1646.116 1010.156 1646.116 1007.297 l 1646.116 978.641 1645.382 978.297 b 1642.647 979.453 1639.71 980.188 1637.022 980.406 l 1637.022 982.094 b 1639.585 982.094 1639.757 982.656 1639.757 985.563 l 1639.757 991.625 c m 1639.757 1007.594 b 1638.929 1008.938 1637.757 1010.281 1636.022 1010.281 1633.554 1010.281 1631.694 1007.125 1631.694 1001.234 1631.694 997.438 1632.132 991.938 1636.116 991.938 1637.725 991.938 1638.975 993.234 1639.757 994.531 m 1685.788 988.641 b 1685.304 985.875 1684.882 983.141 1684.663 980.594 1682.366 979.547 1679.991 979.031 1677.507 979.031 1667.241 979.031 1662.444 986.688 1662.444 995.875 1662.444 1006.078 1667.038 1012.828 1676.132 1012.828 1681.71 1012.828 1685.444 1009.938 1686.522 1008.844 l 1686.522 1003.016 b 1686.522 1000.938 1686.788 1000.766 1688.819 1000.766 l 1688.819 998.688 1677.554 998.688 1677.554 1000.766 b 1680.194 1000.766 1680.46 1001.156 1680.46 1003.875 l 1680.46 1008.813 b 1679.507 1009.672 1678.038 1010.234 1676.694 1010.234 1672.272 1010.234 1669.585 1004.047 1669.585 995.578 1669.585 985.563 1673.491 981.281 1677.304 981.281 1681.241 981.281 1682.194 983.703 1683.054 989.125 m 1696.819 979.844 b 1694.835 979.844 1693.225 981.406 1693.225 983.609 1693.225 985.859 1694.835 987.422 1696.819 987.422 1698.85 987.422 1700.46 985.859 1700.46 983.609 1700.46 981.484 1698.991 979.844 1696.819 979.844 m 1699.554 989.594 b 1696.569 990.844 1693.757 991.531 1691.116 991.703 l 1691.116 993.438 b 1693.71 993.438 1693.882 993.656 1693.882 996.859 l 1693.882 1006.781 b 1693.882 1009.984 1693.663 1010.375 1691.116 1010.375 l 1691.116 1012.188 1702.835 1012.188 1702.835 1010.375 b 1700.554 1010.375 1700.288 1009.984 1700.288 1006.828 l 1700.288 989.984 c m 1713.741 989.984 l 1713.007 989.594 b 1710.366 990.797 1707.382 991.5 1705.007 991.75 l 1705.007 993.438 b 1707.382 993.438 1707.6 993.781 1707.6 996.688 l 1707.6 1006.828 b 1707.6 1010.078 1707.382 1010.375 1705.007 1010.375 l 1705.007 1012.188 1716.991 1012.188 1716.991 1010.375 b 1714.304 1010.375 1714.007 1009.859 1714.007 1006.828 l 1714.007 995.953 b 1715.475 993.703 1716.554 992.5 1717.6 992.5 1718.288 992.5 1718.632 992.938 1719.069 994.313 1719.554 995.656 1720.366 996.219 1721.444 996.219 1722.835 996.219 1723.616 995.141 1723.616 993.625 1723.616 991.063 1721.366 989.594 1719.554 989.594 1717.288 989.594 1715.788 990.766 1713.96 993.188 l 1713.882 993.188 c m 1725.272 1012.188 l 1736.991 1012.188 1736.991 1010.375 b 1734.71 1010.375 1734.444 1009.859 1734.444 1006.828 l 1734.444 978.641 1733.71 978.297 b 1730.772 979.453 1727.694 980.188 1725.272 980.406 l 1725.272 982.094 b 1727.866 982.094 1728.085 982.609 1728.085 985.422 l 1728.085 1006.781 b 1728.085 1009.859 1727.866 1010.375 1725.272 1010.375)\\t(3606,0,1,\\alpha&HFF&)}God and Girl",
+  "traduzido" : "{\\pos(1612.5,1027.5)\\fs60\\c&H000000&\\shad0\\blur0.5\\iclip(m 1505.022 988.641 b 1504.538 985.875 1504.116 983.141 1503.897 980.594 1501.6 979.547 1499.225 979.031 1496.741 979.031 1486.475 979.031 1481.679 986.688 1481.679 995.875 1481.679 1006.078 1486.272 1012.828 1495.366 1012.828 1500.944 1012.828 1504.679 1009.938 1505.757 1008.844 l 1505.757 1003.016 b 1505.757 1000.938 1506.022 1000.766 1508.054 1000.766 l 1508.054 998.688 1496.788 998.688 1496.788 1000.766 b 1499.429 1000.766 1499.694 1001.156 1499.694 1003.875 l 1499.694 1008.813 b 1498.741 1009.672 1497.272 1010.234 1495.929 1010.234 1491.507 1010.234 1488.819 1004.047 1488.819 995.578 1488.819 985.563 1492.725 981.281 1496.538 981.281 1500.475 981.281 1501.429 983.703 1502.288 989.125 m 1521.804 1012.75 b 1530.725 1012.75 1533.069 1007.266 1533.069 1001.016 1533.069 994 1529.6 989.594 1521.804 989.594 1514.585 989.594 1510.6 993.656 1510.6 1001.016 1510.6 1007.344 1512.975 1012.75 1521.804 1012.75 m 1521.772 991.578 b 1523.069 991.578 1524.1 992.141 1524.804 993.266 1525.757 994.828 1526.272 997.375 1526.272 1001.188 1526.272 1005.141 1525.71 1007.641 1524.757 1009.125 1524.069 1010.203 1523.069 1010.766 1521.772 1010.766 1520.507 1010.766 1519.475 1010.203 1518.772 1009.125 1517.866 1007.641 1517.304 1005.141 1517.304 1001.188 1517.304 995.563 1518.304 991.578 1521.725 991.578 m 1550.835 991.625 b 1549.835 990.641 1548.319 989.594 1545.929 989.594 1538.819 989.594 1536.1 995.188 1536.1 1000.938 1536.1 1008.766 1540.132 1012.703 1545.413 1012.703 1548.225 1012.703 1550.007 1011.406 1550.96 1010.156 l 1551.038 1010.156 1551.21 1012.406 1551.694 1012.75 b 1554.194 1012.141 1558.007 1012.063 1559.475 1012.063 l 1559.475 1010.453 b 1557.538 1010.453 1557.272 1010.156 1557.272 1007.297 l 1557.272 978.641 1556.538 978.297 b 1553.804 979.453 1550.866 980.188 1548.179 980.406 l 1548.179 982.094 b 1550.741 982.094 1550.913 982.656 1550.913 985.563 l 1550.913 991.625 c m 1550.913 1007.594 b 1550.085 1008.938 1548.913 1010.281 1547.179 1010.281 1544.71 1010.281 1542.85 1007.125 1542.85 1001.234 1542.85 997.438 1543.288 991.938 1547.272 991.938 1548.882 991.938 1550.132 993.234 1550.913 994.531 m 1586.507 998.031 l 1583.554 998.766 b 1580.522 999.453 1578.194 1000.359 1576.538 1001.453 1574.335 1002.797 1573.382 1004.563 1573.382 1006.906 1573.382 1010.938 1576.85 1012.75 1579.882 1012.75 1583.475 1012.75 1585.257 1011.453 1586.632 1010.063 l 1586.804 1010.063 b 1587.507 1011.719 1588.663 1012.453 1591.272 1012.453 1593.335 1012.453 1594.647 1012.188 1595.804 1011.719 l 1595.46 1009.984 b 1595.116 1010.203 1594.679 1010.328 1594.257 1010.328 1593.335 1010.328 1592.866 1009.547 1592.866 1007.219 l 1592.866 997.344 b 1592.866 990.109 1587.757 989.594 1583.772 989.594 1575.944 989.594 1574.429 992.969 1574.429 994.516 1574.429 995.641 1575.116 996.641 1576.757 996.641 1578.413 996.641 1579.1 996 1579.538 994.906 1579.929 993.703 1580.788 991.578 1583.304 991.578 1585.085 991.578 1586.507 992.484 1586.507 996.031 m 1586.507 1007.938 b 1585.725 1008.719 1584.647 1009.719 1583.038 1009.719 1581.257 1009.719 1580.054 1008.5 1580.054 1005.906 1580.054 1002.703 1582.788 1001.063 1586.507 999.891 m 1606.413 993.281 l 1606.241 989.984 1605.429 989.594 b 1602.866 990.766 1599.85 991.453 1597.507 991.719 l 1597.507 993.453 b 1599.85 993.406 1600.147 993.844 1600.147 996.953 l 1600.147 1006.781 b 1600.147 1009.984 1599.882 1010.375 1597.507 1010.375 l 1597.507 1012.188 1608.413 1012.188 1608.413 1010.375 b 1606.632 1010.375 1606.507 1010.078 1606.507 1006.828 l 1606.507 996 b 1608.069 993.75 1609.757 992.328 1611.179 992.328 1613.647 992.328 1614.038 994.531 1614.038 996.922 l 1614.038 1006.781 b 1614.038 1010.078 1613.866 1010.375 1612.054 1010.375 l 1612.054 1012.188 1622.6 1012.188 1622.6 1010.375 b 1620.663 1010.375 1620.397 1009.734 1620.397 1006.906 l 1620.397 996.781 b 1620.397 992.453 1618.71 989.594 1613.6 989.594 1610.71 989.594 1608.366 991.031 1606.507 993.281 m 1639.679 991.625 b 1638.679 990.641 1637.163 989.594 1634.772 989.594 1627.663 989.594 1624.944 995.188 1624.944 1000.938 1624.944 1008.766 1628.975 1012.703 1634.257 1012.703 1637.069 1012.703 1638.85 1011.406 1639.804 1010.156 l 1639.882 1010.156 1640.054 1012.406 1640.538 1012.75 b 1643.038 1012.141 1646.85 1012.063 1648.319 1012.063 l 1648.319 1010.453 b 1646.382 1010.453 1646.116 1010.156 1646.116 1007.297 l 1646.116 978.641 1645.382 978.297 b 1642.647 979.453 1639.71 980.188 1637.022 980.406 l 1637.022 982.094 b 1639.585 982.094 1639.757 982.656 1639.757 985.563 l 1639.757 991.625 c m 1639.757 1007.594 b 1638.929 1008.938 1637.757 1010.281 1636.022 1010.281 1633.554 1010.281 1631.694 1007.125 1631.694 1001.234 1631.694 997.438 1632.132 991.938 1636.116 991.938 1637.725 991.938 1638.975 993.234 1639.757 994.531 m 1685.788 988.641 b 1685.304 985.875 1684.882 983.141 1684.663 980.594 1682.366 979.547 1679.991 979.031 1677.507 979.031 1667.241 979.031 1662.444 986.688 1662.444 995.875 1662.444 1006.078 1667.038 1012.828 1676.132 1012.828 1681.71 1012.828 1685.444 1009.938 1686.522 1008.844 l 1686.522 1003.016 b 1686.522 1000.938 1686.788 1000.766 1688.819 1000.766 l 1688.819 998.688 1677.554 998.688 1677.554 1000.766 b 1680.194 1000.766 1680.46 1001.156 1680.46 1003.875 l 1680.46 1008.813 b 1679.507 1009.672 1678.038 1010.234 1676.694 1010.234 1672.272 1010.234 1669.585 1004.047 1669.585 995.578 1669.585 985.563 1673.491 981.281 1677.304 981.281 1681.241 981.281 1682.194 983.703 1683.054 989.125 m 1696.819 979.844 b 1694.835 979.844 1693.225 981.406 1693.225 983.609 1693.225 985.859 1694.835 987.422 1696.819 987.422 1698.85 987.422 1700.46 985.859 1700.46 983.609 1700.46 981.484 1698.991 979.844 1696.819 979.844 m 1699.554 989.594 b 1696.569 990.844 1693.757 991.531 1691.116 991.703 l 1691.116 993.438 b 1693.71 993.438 1693.882 993.656 1693.882 996.859 l 1693.882 1006.781 b 1693.882 1009.984 1693.663 1010.375 1691.116 1010.375 l 1691.116 1012.188 1702.835 1012.188 1702.835 1010.375 b 1700.554 1010.375 1700.288 1009.984 1700.288 1006.828 l 1700.288 989.984 c m 1713.741 989.984 l 1713.007 989.594 b 1710.366 990.797 1707.382 991.5 1705.007 991.75 l 1705.007 993.438 b 1707.382 993.438 1707.6 993.781 1707.6 996.688 l 1707.6 1006.828 b 1707.6 1010.078 1707.382 1010.375 1705.007 1010.375 l 1705.007 1012.188 1716.991 1012.188 1716.991 1010.375 b 1714.304 1010.375 1714.007 1009.859 1714.007 1006.828 l 1714.007 995.953 b 1715.475 993.703 1716.554 992.5 1717.6 992.5 1718.288 992.5 1718.632 992.938 1719.069 994.313 1719.554 995.656 1720.366 996.219 1721.444 996.219 1722.835 996.219 1723.616 995.141 1723.616 993.625 1723.616 991.063 1721.366 989.594 1719.554 989.594 1717.288 989.594 1715.788 990.766 1713.96 993.188 l 1713.882 993.188 c m 1725.272 1012.188 l 1736.991 1012.188 1736.991 1010.375 b 1734.71 1010.375 1734.444 1009.859 1734.444 1006.828 l 1734.444 978.641 1733.71 978.297 b 1730.772 979.453 1727.694 980.188 1725.272 980.406 l 1725.272 982.094 b 1727.866 982.094 1728.085 982.609 1728.085 985.422 l 1728.085 1006.781 b 1728.085 1009.859 1727.866 1010.375 1725.272 1010.375)\\t(3606,0,1,\\alpha&HFF&)}Deus e Garota",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 388,
+  "estilo" : "Ep Title",
+  "original" : "{\\an2\\pos(1609,1024)\\fs60\\shad0\\blur0.5\\t(3606,0,1,\\alpha&HFF&)}God and Girl",
+  "traduzido" : "{\\an2\\pos(1609,1024)\\fs60\\shad0\\blur0.5\\t(3606,0,1,\\alpha&HFF&)}God and Girl",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 389,
+  "estilo" : "Next Ep",
+  "original" : "{\\pos(248.457,35.6)\\fs58\\bord1\\c&H000000&\\blur0.6}Next Time",
+  "traduzido" : "{\\pos(248.457,35.6)\\fs58\\bord1\\c&H000000&\\blur0.6}Next Time",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 390,
+  "estilo" : "Next Ep",
+  "original" : "{\\pos(248.457,35.6)\\fs58\\bord0\\shad0\\blur0.5}Next Time",
+  "traduzido" : "{\\pos(248.457,35.6)\\fs58\\bord0\\shad0\\blur0.5}Next Time",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 391,
+  "estilo" : "Next Ep",
+  "original" : "{\\pos(962,327)\\c&H000000&\\blur0.6}Freya Familia",
+  "traduzido" : "{\\pos(962,327)\\c&H000000&\\blur0.6}Freya Familia",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 392,
+  "estilo" : "Next Ep",
+  "original" : "{\\fs92\\c&H000000&\\blur0.6\\pos(962,607)}Invasion",
+  "traduzido" : "{\\fs92\\c&H000000&\\blur0.6\\pos(962,607)}Invasion",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 393,
+  "estilo" : "Next Ep",
+  "original" : "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Freya Familia",
+  "traduzido" : "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Freya Familia",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 394,
+  "estilo" : "Next Ep",
+  "original" : "{\\pos(962,607)\\fs92\\bord0\\shad0\\blur0.5}Invasion",
+  "traduzido" : "{\\pos(962,607)\\fs92\\bord0\\shad0\\blur0.5}Invasion",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+} ]

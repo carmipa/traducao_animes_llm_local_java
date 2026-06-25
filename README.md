@@ -1,1 +1,679 @@
-# traducao_java
+<div align="center">
+
+# 🎌 Tradutor de Legendas de Anime — LLM Local
+
+### Tradução automática de legendas `.ass` / `.ssa` (Inglês → Português-BR) usando um LLM rodando **100% local**, sem nuvem, sem custo por token e sem enviar suas legendas para terceiros.
+
+[![Java](https://img.shields.io/badge/Java-25-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org/projects/jdk/25/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.4-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![Gradle](https://img.shields.io/badge/Gradle-9.3.0-02303A?style=for-the-badge&logo=gradle&logoColor=white)](https://gradle.org)
+[![LLM Local](https://img.shields.io/badge/LLM-Local%20%7C%20LM%20Studio-FF6F00?style=for-the-badge)](#llm)
+[![License: MIT](https://img.shields.io/github/license/carmipa/traducao_animes_llm_local_java?style=for-the-badge&color=yellow)](LICENSE)
+
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](#pre-requisitos)
+[![Architecture](https://img.shields.io/badge/Architecture-Hexagonal%20(Ports%20%26%20Adapters)-8A2BE2?style=for-the-badge)](#arquitetura)
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento%20ativo-success?style=for-the-badge)](#decisoes)
+[![Last Commit](https://img.shields.io/github/last-commit/carmipa/traducao_animes_llm_local_java?style=for-the-badge&color=informational)](https://github.com/carmipa/traducao_animes_llm_local_java/commits/main)
+
+</div>
+
+<p align="center">
+  <a href="#sumario"><b>Sumário</b></a> •
+  <a href="#visao-geral">Visão Geral</a> •
+  <a href="#arquitetura">Arquitetura</a> •
+  <a href="#instalacao">Como Executar</a> •
+  <a href="#configuracao">Configuração</a> •
+  <a href="ARQUITETURA.md"><b>📐 Documento de Arquitetura Completo</b></a> •
+  <a href="LICENSE">📜 Licença</a>
+</p>
+
+---
+
+<a id="sumario"></a>
+## 📚 Sumário
+
+1. [✨ Visão Geral](#visao-geral)
+2. [🧩 Funcionalidades](#funcionalidades)
+3. [🏗️ Arquitetura em Camadas](#arquitetura)
+4. [🔄 Pipeline de Tradução — Visão Ponta a Ponta](#pipeline)
+5. [✂️ Divisão Recursiva de Lotes (Anti-Alucinação)](#divisao-lotes)
+6. [🔌 Integração com o LLM (Retry)](#llm)
+7. [🏷️ Mascaramento de Tags ASS/SSA](#mascaramento)
+8. [📦 Modelo de Domínio & Hierarquia de Exceções](#dominio)
+9. [🗂️ Resolução Automática de Pastas](#pastas)
+10. [✅ Pré-requisitos](#pre-requisitos)
+11. [🚀 Instalação e Execução Rápida](#instalacao)
+12. [⚙️ Configuração (`application.yml`)](#configuracao)
+13. [🖥️ Exemplo de Uso (Console)](#exemplo-uso)
+14. [📁 Estrutura de Pastas do Repositório](#estrutura-projeto)
+15. [🧪 Testes](#testes)
+16. [🐛 Solução de Problemas / JDK 25](#troubleshooting)
+17. [🗺️ Histórico de Decisões](#decisoes)
+18. [🤝 Contribuindo](#contribuindo)
+19. [📜 Licença](#licenca)
+20. [🙏 Créditos](#creditos)
+
+---
+
+<a id="visao-geral"></a>
+## ✨ Visão Geral
+
+Este projeto é uma **CLI em Java 25 + Spring Boot** que traduz legendas de anime no formato Advanced SubStation Alpha (`.ass`/`.ssa`) do **inglês para português do Brasil**, usando um **modelo de linguagem (LLM) executado localmente** — por padrão, **Mistral Nemo Instruct** servido pelo [LM Studio](https://lmstudio.ai/) através de uma API compatível com OpenAI (`/v1/chat/completions`).
+
+> [!NOTE]
+> O projeto é a refatoração para Java de um pipeline originalmente escrito em Python. A motivação da migração foi reduzir o overhead de I/O usando **Virtual Threads** da JVM onde isso faz sentido — embora, na prática, o gargalo real seja a **GPU única** do LLM local, e não a JVM (ver [Histórico de Decisões](#decisoes)).
+
+Diferenciais do projeto:
+
+```mermaid
+flowchart LR
+    User["👤 Usuário"] -->|"roda gradlew bootRun / run.bat"| App["☕ Tradutor de Legendas<br/>(Java 25 + Spring Boot, CLI local)"]
+    App -->|"lê .ass/.ssa"| Disk1["💾 Pasta de ENTRADA<br/>(legendas em inglês)"]
+    App -->|"grava .ass/.ssa traduzido"| Disk2["💾 Pasta de SAÍDA<br/>(legendas em pt-BR)"]
+    App -->|"lê/grava JSON"| Disk3["💾 Pasta de CACHE<br/>(*.cache.json)"]
+    App -->|"grava log"| Disk4["📜 logs/tradutor.log"]
+    App <-->|"HTTP REST · POST /v1/chat/completions"| LMStudio["🤖 LM Studio<br/>(Mistral Nemo · execução local · GPU)"]
+
+    classDef ext fill:#FFE4B5,stroke:#CC8400,color:#000,stroke-width:2px;
+    classDef app fill:#BBDEFB,stroke:#0D47A1,color:#000,stroke-width:2px;
+    classDef disk fill:#C8E6C9,stroke:#1B5E20,color:#000,stroke-width:2px;
+    class User ext
+    class App app
+    class LMStudio ext
+    class Disk1,Disk2,Disk3,Disk4 disk
+```
+
+> [!IMPORTANT]
+> Não há nenhuma chamada de rede externa além do `localhost` do LM Studio. Não é necessária chave de API nem conexão com a internet para traduzir — tudo roda na máquina do usuário.
+
+---
+
+<a id="funcionalidades"></a>
+## 🧩 Funcionalidades
+
+| Recurso | Descrição |
+|---|---|
+| 🧠 **Tradução 100% local** | Nenhuma dependência de API paga em nuvem; conversa apenas com `tradutor.llm.base-url` (LM Studio). |
+| 💾 **Cache JSON reaproveitável** | Cada arquivo gera um `*.cache.json`. Correções manuais no JSON são **respeitadas** na próxima execução. |
+| 🧹 **Deduplicação de falas** | Falas idênticas repetidas no episódio são traduzidas **uma única vez**. |
+| 🏷️ **Mascaramento de tags ASS/SSA** | Tags de formatação (`{\i1}`, `{\pos(...)}`, `\N`, `\n`, `\h`) são protegidas antes de chegar ao LLM. |
+| 🚨 **Validação anti-alucinação** | Detecta resíduo em inglês, preâmbulos do modelo e contagem de linhas divergente. |
+| ✂️ **Divisão recursiva de lotes** | Um lote problemático é dividido ao meio recursivamente até isolar a fala culpada — não descarta o lote inteiro. |
+| 🔁 **Retry automático** | Até 3 tentativas com pausa de 2s em falha HTTP/timeout/parse ao chamar o LLM. |
+| 💔 **Tolerância a falha parcial** | Uma falha no meio do episódio salva no cache tudo que já foi traduzido (`TraducaoParcialException`). |
+| 📊 **Barra de progresso estilo `tqdm`** | Via `me.tongfei:progressbar`, com mensagens coloridas sobre a barra. |
+| 🪵 **Logging duplo** | Console colorido (ANSI) + arquivo `logs/tradutor.log` com `loteId` no MDC. |
+| 🔒 **Sem superfície HTTP exposta** | `spring.main.web-application-type: none` — não levanta Tomcat, é uma CLI, não um serviço. |
+| 🌐 **Par de idiomas configurável** | `idioma-original`/`idioma-traduzido` gravados no cache, prontos para outros pares além de en→pt-br. |
+
+> [!WARNING]
+> O **prompt de sistema** enviado ao LLM (`MistralClientAdapter.PROMPT_SISTEMA`) está atualmente fixado para a terminologia da série **DanMachi** ("Familia", "Dungeon", "Orario", "Bell Cranel", "Hestia"). Para traduzir outro anime com terminologia própria, ajuste manualmente essa constante antes de compilar — não há (ainda) uma propriedade de configuração para isso.
+
+---
+
+<a id="arquitetura"></a>
+## 🏗️ Arquitetura em Camadas
+
+O projeto segue uma **arquitetura hexagonal "light"** (ports & adapters): o `domain` não depende de nada externo, a `application` orquestra casos de uso através de uma porta (`MistralPort`), e a `infrastructure` implementa os adapters concretos (HTTP, arquivos, cache).
+
+```mermaid
+flowchart TB
+    subgraph Presentation["🖥️ presentation"]
+        CLI["TradutorCLI<br/>(CommandLineRunner)"]
+        CE["ConsoleEntrada<br/>(prompt de pastas, sem Spring)"]
+        UI["ConsoleUILogger<br/>(barra de progresso + log colorido)"]
+        PEXE["PastasExecucao"]
+    end
+
+    subgraph Application["⚙️ application"]
+        PAU["ProcessarArquivoUseCase<br/>(orquestra 1 arquivo)"]
+        PEU["ProcessarEpisodioUseCase<br/>(traduz lotes sequencialmente)"]
+        VTS["ValidadorTraducaoService<br/>(anti-alucinação)"]
+    end
+
+    subgraph Domain["🧠 domain (sem dependências externas)"]
+        LOTE["Lote / TraducaoLote"]
+        EVT["DocumentoLegenda / EventoLegenda"]
+        PORT["MistralPort «interface»"]
+        EXC["Hierarquia de exceções"]
+    end
+
+    subgraph Infrastructure["🔧 infrastructure"]
+        MCA["MistralClientAdapter<br/>(RestClient → LM Studio)"]
+        CTS["CacheTraducaoService<br/>(JSON)"]
+        LLA["LeitorLegendaAss"]
+        ELA["EscritorLegendaAss"]
+        MT["MascaradorTags"]
+        CFG["TradutorProperties / LlmProperties /<br/>RestClientConfig"]
+    end
+
+    CLI --> PAU
+    CLI --> PEXE
+    CE -.console antes do Spring subir.-> CLI
+    PAU --> UI
+    PAU --> LLA
+    PAU --> ELA
+    PAU --> MT
+    PAU --> CTS
+    PAU --> PEU
+    PEU --> VTS
+    PEU --> PORT
+    MCA -. implementa .-> PORT
+    PAU -. usa .-> LOTE
+    PAU -. usa .-> EVT
+    PAU -. lança/captura .-> EXC
+
+    classDef pres fill:#BBDEFB,stroke:#0D47A1,color:#000,stroke-width:2px;
+    classDef appl fill:#C8E6C9,stroke:#1B5E20,color:#000,stroke-width:2px;
+    classDef dom fill:#FFE0B2,stroke:#E65100,color:#000,stroke-width:2px;
+    classDef infra fill:#E1BEE7,stroke:#4A148C,color:#000,stroke-width:2px;
+    class CLI,CE,UI,PEXE pres
+    class PAU,PEU,VTS appl
+    class LOTE,EVT,PORT,EXC dom
+    class MCA,CTS,LLA,ELA,MT,CFG infra
+```
+
+> [!CAUTION]
+> Os beans **não** são descobertos por `@ComponentScan` automático. O ASM embutido no Spring 6.1.x não lê o *class file version* 69 (Java 25), então `@SpringBootApplication` sozinho não registra nada. A solução é `@Import({...})` explícito em [`Application.java`](src/main/java/org/traducao/animes/Application.java) — ver [Solução de Problemas](#troubleshooting).
+
+---
+
+<a id="pipeline"></a>
+## 🔄 Pipeline de Tradução — Visão Ponta a Ponta
+
+Fluxo completo para **um único arquivo** `.ass`/`.ssa`, do `TradutorCLI` até o arquivo traduzido + cache salvos:
+
+```mermaid
+sequenceDiagram
+    actor User as 👤 Usuário
+    participant CLI as TradutorCLI
+    participant PAU as ProcessarArquivoUseCase
+    participant Leitor as LeitorLegendaAss
+    participant Cache as CacheTraducaoService
+    participant Mask as MascaradorTags
+    participant PEU as ProcessarEpisodioUseCase
+    participant LLM as MistralClientAdapter
+    participant Valid as ValidadorTraducaoService
+    participant Escritor as EscritorLegendaAss
+
+    User->>CLI: .\gradlew.bat bootRun
+    CLI->>PAU: processar(arquivo.ass)
+    PAU->>Leitor: ler(arquivo)
+    Leitor-->>PAU: DocumentoLegenda (cabeçalho + eventos)
+    PAU->>Cache: carregar(arquivo.cache.json)
+    Cache-->>PAU: Map original→traduzido
+
+    Note over PAU: filtra eventos não-Dialogue/estilo ignorado<br/>e deduplica falas repetidas
+
+    PAU->>Mask: mascarar(texto) para cada fala pendente
+    Mask-->>PAU: texto com marcadores [[TAGn]]
+    PAU->>PEU: processarEpisodio(lotes de N falas)
+
+    loop cada lote, sequencialmente
+        PEU->>LLM: traduzir(lote)
+        LLM-->>PEU: TraducaoLote
+        PEU->>Valid: validarFala() em cada linha
+        alt divergência de linhas OU alucinação detectada
+            PEU->>PEU: divide o lote ao meio e tenta novamente (recursivo)
+        end
+    end
+
+    PEU-->>PAU: List~TraducaoLote~
+    PAU->>Mask: desmascarar(tradução, tags originais)
+    PAU->>Valid: validarFala() — revalidação final
+    PAU->>Escritor: escrever(documento final em pt-BR)
+    PAU->>Cache: salvar(entradas atualizadas)
+    PAU-->>CLI: Path do arquivo de saída
+```
+
+> [!TIP]
+> Se o episódio falhar **no meio do caminho**, `ProcessarArquivoUseCase` captura a `TraducaoParcialException`, combina o que já foi traduzido com o cache existente e grava o JSON **antes** de propagar o erro — nenhuma tradução já feita é perdida.
+
+---
+
+<a id="divisao-lotes"></a>
+## ✂️ Divisão Recursiva de Lotes (Anti-Alucinação)
+
+O coração da robustez do tradutor está em `ProcessarEpisodioUseCase.traduzirComDivisao`: em vez de descartar um lote de 20 falas porque **uma só** delas confundiu o LLM, o lote é dividido recursivamente até isolar exatamente a fala problemática.
+
+```mermaid
+flowchart TD
+    A["Lote recebido"] --> B{"Tamanho do lote ≤ 1?"}
+    B -- "Sim" --> C["traduzirLinhaUnicaComFallback()"]
+    C --> C1{"Ainda há tentativas?<br/>(1 + 2 extras)"}
+    C1 -- "sucesso" --> C2["Retorna a tradução"]
+    C1 -- "tentativas esgotadas" --> C3["Mantém o texto ORIGINAL sem tradução<br/>+ log WARN para revisão manual"]
+    B -- "Não" --> D["traduzirERevalidarBruto()<br/>(chama o LLM 1x para o lote inteiro)"]
+    D --> E{"DivergenciaLinhasException OU<br/>AlucinacaoDetectadaException?"}
+    E -- "Não" --> F["Retorna as traduções do lote"]
+    E -- "Sim" --> G["Divide o lote ao meio"]
+    G --> H["traduzirComDivisao(1ª metade)"]
+    G --> I["traduzirComDivisao(2ª metade)"]
+    H --> J["Concatena os resultados"]
+    I --> J
+
+    classDef ok fill:#C8E6C9,stroke:#1B5E20,color:#000;
+    classDef warn fill:#FFE0B2,stroke:#E65100,color:#000;
+    classDef fail fill:#FFCDD2,stroke:#B71C1C,color:#000;
+    class C2,F ok
+    class G,H,I,J warn
+    class C3 fail
+```
+
+> [!NOTE]
+> Apenas uma **falha real de comunicação** (HTTP/timeout, já esgotadas as 3 tentativas do `MistralClientAdapter`) interrompe o episódio inteiro lançando `TraducaoParcialException` — divergência de contagem de linhas e alucinação de marcadores **nunca** abortam o episódio, apenas isolam a fala culpada.
+
+---
+
+<a id="llm"></a>
+## 🔌 Integração com o LLM (Retry)
+
+`MistralClientAdapter` fala com o LM Studio via uma API REST compatível com OpenAI. Como a inferência é local e serial (uma GPU, uma fila), falhas transitórias (timeout, resposta `application/octet-stream`, conexão interrompida) são comuns e tratadas com retry:
+
+```mermaid
+sequenceDiagram
+    participant PEU as ProcessarEpisodioUseCase
+    participant Adapter as MistralClientAdapter
+    participant LMStudio as 🤖 LM Studio<br/>(OpenAI-compatible API)
+
+    PEU->>Adapter: traduzir(lote)
+    Note over Adapter: até 3 tentativas no total
+
+    loop tentativa 1..3
+        Adapter->>LMStudio: POST /v1/chat/completions<br/>(system + user prompt, temperature, max_tokens)
+        alt resposta 200 com conteúdo
+            LMStudio-->>Adapter: choices[0].message.content
+            Adapter-->>PEU: TraducaoLote(sucesso=true)
+        else erro HTTP / timeout / resposta vazia
+            LMStudio-->>Adapter: erro / sem resposta
+            Adapter->>Adapter: log WARN + aguarda 2s
+        end
+    end
+
+    opt todas as tentativas falharam
+        Adapter-->>PEU: TraducaoLote(sucesso=false, mensagemErro)
+    end
+```
+
+**Detalhes relevantes:**
+
+- **Headers:** `Content-Type` e `Accept: application/json` — evita o LM Studio responder como `application/octet-stream` sem parse.
+- **Timeouts:** aplicados via `RestClientConfig` (connect: `5s`, read: `180s` no `application.yml` — lotes grandes podem levar tempo).
+- **Resposta vazia:** trata `RespostaLlmVaziaException` como falha definitiva (não há retry para conteúdo vazio, só para erro de comunicação).
+
+---
+
+<a id="mascaramento"></a>
+## 🏷️ Mascaramento de Tags ASS/SSA
+
+Tags de formatação ASS (itálico, posição, cor) e códigos de quebra de linha **não podem** ser traduzidos — se forem, a legenda renderiza corrompida. `MascaradorTags` os substitui por marcadores neutros antes de enviar ao LLM, e exige que o modelo os devolva **intactos**:
+
+```mermaid
+flowchart LR
+    A["Texto original<br/>(com tag de itálico + quebra de linha)<br/>'I am' + quebra + 'fine'"] --> B["MascaradorTags.mascarar()"]
+    B --> C["Texto mascarado enviado ao LLM<br/>'[[TAG0]] I am [[TAG1]] fine'"]
+    C --> D["LLM traduz o conteúdo,<br/>instruído a preservar os marcadores"]
+    D --> E["Tradução mascarada recebida<br/>'[[TAG0]] Eu estou [[TAG1]] bem'"]
+    E --> F["MascaradorTags.desmascarar()"]
+    F --> G["Texto final<br/>(tags ASS originais restauradas)"]
+    F -. "contagem/índices de [[TAGn]] não batem" .-> H["⚠️ AlucinacaoDetectadaException"]
+
+    classDef flow fill:#BBDEFB,stroke:#0D47A1,color:#000;
+    classDef bad fill:#FFCDD2,stroke:#B71C1C,color:#000;
+    class A,B,C,D,E,F,G flow
+    class H bad
+```
+
+Se uma única fala vier com marcadores corrompidos, **não derruba o lote**: `ProcessarArquivoUseCase.desmascararComFallback` mantém o texto original sem tradução só para aquela fala e sinaliza no log/console para revisão manual.
+
+---
+
+<a id="dominio"></a>
+## 📦 Modelo de Domínio & Hierarquia de Exceções
+
+```mermaid
+classDiagram
+    class Lote {
+        +int idLote
+        +List~String~ linhasOriginais
+    }
+    class TraducaoLote {
+        +int idLote
+        +List~String~ linhasTraduzidas
+        +boolean sucesso
+        +String mensagemErro
+    }
+    class EventoLegenda {
+        +int indice
+        +String tipoLinha
+        +String estilo
+        +String prefixo
+        +String texto
+        +temTexto() boolean
+        +isDialogo() boolean
+        +comTexto(String) EventoLegenda
+    }
+    class DocumentoLegenda {
+        +String cabecalho
+        +List~EventoLegenda~ eventos
+        +String quebraDeLinha
+        +boolean comBom
+    }
+    class MistralPort {
+        <<interface>>
+        +traduzir(Lote) TraducaoLote
+    }
+    class MistralClientAdapter {
+        +traduzir(Lote) TraducaoLote
+    }
+    MistralPort <|.. MistralClientAdapter
+    DocumentoLegenda "1" *-- "many" EventoLegenda
+
+    class TradutorException
+    class TraducaoParcialException {
+        +List~TraducaoLote~ lotesSalvos
+        +Map~String,String~ dicionarioParcial
+    }
+    class DivergenciaLinhasException
+    class AlucinacaoDetectadaException
+    class LlmFalhaComunicacaoException
+    class RespostaLlmVaziaException
+    class ArquivoLegendaException
+
+    TradutorException <|-- TraducaoParcialException
+    TradutorException <|-- DivergenciaLinhasException
+    TradutorException <|-- AlucinacaoDetectadaException
+    TradutorException <|-- LlmFalhaComunicacaoException
+    TradutorException <|-- RespostaLlmVaziaException
+    TradutorException <|-- ArquivoLegendaException
+```
+
+| Exceção | Quando ocorre | Efeito |
+|---|---|---|
+| `TraducaoParcialException` | Falha no meio do episódio/arquivo | Carrega o que já foi traduzido; cache parcial é salvo antes de propagar. |
+| `DivergenciaLinhasException` | LLM devolve nº de linhas ≠ enviado | Dispara divisão recursiva do lote (não aborta). |
+| `AlucinacaoDetectadaException` | Resíduo em inglês, preâmbulo, ou marcadores `[[TAGn]]` corrompidos | Dispara divisão recursiva do lote ou fallback de fala única. |
+| `LlmFalhaComunicacaoException` / `RespostaLlmVaziaException` | HTTP/timeout/parse após 3 tentativas, ou resposta vazia | Falha real — aborta o episódio com parcial salvo. |
+| `ArquivoLegendaException` | Erro de I/O ou parsing do `.ass`/`.ssa` | Aborta o arquivo atual; demais arquivos continuam. |
+
+---
+
+<a id="pastas"></a>
+## 🗂️ Resolução Automática de Pastas
+
+```mermaid
+flowchart TD
+    A["Início"] --> B{"tradutor.diretorio-entrada vazio?"}
+    B -- "Sim" --> C["ConsoleEntrada pergunta no console<br/>(antes do Spring subir)"]
+    B -- "Não" --> D["Usa valor do application.yml / CLI"]
+    C --> E["PastasExecucao.configurar(...)"]
+    D --> E
+    E --> F{"diretorio-saida informado?"}
+    F -- "Não" --> G["Troca 'eng' por 'pt-br' no nome da pasta<br/>(ou acrescenta '_pt-br')"]
+    F -- "Sim" --> H["Usa o valor informado"]
+    E --> I{"diretorio-cache informado?"}
+    I -- "Não" --> J["cache/&lt;anime&gt;/&lt;subpasta&gt;<br/>na raiz do projeto"]
+    I -- "Sim" --> K["Usa o valor informado"]
+
+    classDef step fill:#BBDEFB,stroke:#0D47A1,color:#000;
+    class A,B,C,D,E,F,G,H,I,J,K step
+```
+
+| Campo no prompt | Obrigatório | Se vazio |
+|---|---|---|
+| Pasta de **ENTRADA** | ✅ Sim | Programa encerra com erro |
+| Pasta de **SAÍDA** | ❌ Não | `TradutorProperties.resolverDiretorioSaida()` |
+| Pasta de **CACHE** | ❌ Não | `<saída>/cache` → na prática, `cache/<anime>/<subpasta>` na raiz do projeto |
+
+---
+
+<a id="pre-requisitos"></a>
+## ✅ Pré-requisitos
+
+- ☕ **JDK 25** instalado e configurado (`JAVA_HOME` / `PATH`) — o projeto usa *preview features* (`--enable-preview`).
+- 🤖 **[LM Studio](https://lmstudio.ai/)** (ou outro servidor compatível com a API OpenAI) rodando localmente, com um modelo carregado — por padrão `mistralai/mistral-nemo-instruct-2407`, servido em `http://127.0.0.1:1234/v1`.
+- 🐘 **Gradle Wrapper incluso** — não é preciso instalar o Gradle manualmente (`gradlew.bat` / `gradlew`).
+- 🪟 Testado em **Windows**; roda em qualquer SO com JDK 25 (adapte `run.bat`/`gradlew.bat` para `run.sh`/`gradlew` em Linux/macOS).
+
+> [!IMPORTANT]
+> O nome do modelo em `tradutor.llm.model` precisa **bater exatamente** com o `id` retornado por `GET /v1/models` no LM Studio (ex.: `mistralai/mistral-nemo-instruct-2407`, não apenas `mistral-nemo`).
+
+---
+
+<a id="instalacao"></a>
+## 🚀 Instalação e Execução Rápida
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/carmipa/traducao_animes_llm_local_java.git
+cd traducao_animes_llm_local_java
+
+# 2. Garanta que o LM Studio esteja rodando com o modelo carregado
+#    (servidor local ativo em http://127.0.0.1:1234/v1 por padrão)
+
+# 3a. Execute em modo interativo — pede a pasta de legendas no console
+.\gradlew.bat bootRun --console=plain
+
+# 3b. Ou use o atalho de raiz (equivalente ao comando acima)
+.\run.bat
+
+# 3c. Ou informe a pasta direto via argumento (pula o prompt interativo)
+.\gradlew.bat bootRun --args="--tradutor.diretorio-entrada=D:\caminho\legendas_eng"
+```
+
+> [!TIP]
+> O flag `--console=plain` é necessário para o terminal continuar interativo — sem ele, o Gradle pode bufferizar a saída e esconder o prompt de digitação. `build.gradle` já define `standardInput = System.in` na task `bootRun` para repassar o teclado à JVM.
+
+---
+
+<a id="configuracao"></a>
+## ⚙️ Configuração (`application.yml`)
+
+### `tradutor.*`
+
+| Propriedade | Tipo | Padrão | Descrição |
+|---|---|---|---|
+| `diretorio-entrada` | `String` | `""` | Pasta com os `.ass`/`.ssa` originais. Vazio → prompt interativo no console. |
+| `diretorio-saida` | `String` | `""` (auto) | Se vazio, calculado a partir da entrada — ver [Resolução de Pastas](#pastas). |
+| `diretorio-cache` | `String` | `""` (auto) | Se vazio, usa `cache/<anime>/<subpasta>` na raiz do projeto. |
+| `tamanho-lote` | `int` | `20` | Falas agrupadas por requisição ao LLM. |
+| `estilos-ignorados` | `List<String>` | `["Song JP"]` | Estilos ASS que não são traduzidos (ex.: karaokê em romaji). |
+| `idioma-original` | `String` | `en` | Gravado no cache JSON (`idiomaOriginal`). |
+| `idioma-traduzido` | `String` | `pt-br` | Gravado no cache JSON (`idiomaTraduzido`). |
+
+### `tradutor.llm.*`
+
+| Propriedade | Tipo | Padrão | Descrição |
+|---|---|---|---|
+| `base-url` | `String` | `http://127.0.0.1:1234/v1` | Endpoint compatível com OpenAI exposto pelo LM Studio. |
+| `model` | `String` | `mistralai/mistral-nemo-instruct-2407` | Deve bater com o `id` de `GET /v1/models`. |
+| `temperature` | `double` | `0.3` | Temperatura de amostragem do modelo. |
+| `max-tokens` | `int` | `2000` | Limite de tokens de saída por requisição. |
+| `connect-timeout` | `Duration` | `5s` | Timeout de conexão HTTP. |
+| `read-timeout` | `Duration` | `180s` (no `application.yml`; `90s` é o fallback do record se omitido) | Lotes grandes podem demorar — aumentado após travamentos observados em produção. |
+
+Qualquer propriedade pode ser sobrescrita via linha de comando, ex.: `--tradutor.diretorio-entrada=...`, `--tradutor.idioma-original=ja`.
+
+---
+
+<a id="exemplo-uso"></a>
+## 🖥️ Exemplo de Uso (Console)
+
+```text
+==============================================================
+  TRADUTOR DE ANIMES - configuracao de pastas
+==============================================================
+
+Informe onde estao os arquivos de legenda que serao traduzidos.
+Exemplo: D:\animes\meu_anime\legendas_eng
+
+>>> Digite o caminho da pasta com os arquivos .ass/.ssa: D:\animes\DanMachi\legendas_eng
+
+Pasta de SAIDA (legendas traduzidas). Enter = calculo automatico.
+>>> Pasta de SAIDA (Enter = automatico):
+
+Pastas OK. Subindo o tradutor...
+
+Entrada: D:\animes\DanMachi\legendas_eng
+Saída: D:\animes\DanMachi\legendas_pt-br
+3 arquivo(s) encontrado(s). Iniciando tradução...
+[ INFO ] Processando episodio01_ENG.ass...
+Traduzindo episodio01_ENG.ass  100% |████████████████████| 5/5
+✅ Lote 1 traduzido com sucesso.
+✅ Lote 2 traduzido com sucesso.
+[ OK ] episodio01_ENG.ass traduzido com sucesso.
+...
+Concluido: 3 sucesso(s), 0 falha(s) de 3 arquivo(s).
+```
+
+Saída gerada: `episodio01_PT-BR.ass` na pasta de saída + `episodio01_ENG.cache.json` na pasta de cache (editável manualmente).
+
+---
+
+<a id="estrutura-projeto"></a>
+## 📁 Estrutura de Pastas do Repositório
+
+```text
+traducao_animes_llm_local_java/
+├── README.md                      # este arquivo
+├── ARQUITETURA.md                 # 📐 decisões de arquitetura, em detalhe (leitura recomendada para IAs/contribuidores)
+├── LICENSE                        # MIT
+├── build.gradle / settings.gradle
+├── run.bat                        # atalho: gradlew bootRun --console=plain
+├── src/
+│   ├── main/java/org/traducao/animes/
+│   │   ├── Application.java                       # main() + @Import explícito dos beans
+│   │   ├── presentation/
+│   │   │   ├── TradutorCLI.java                    # CommandLineRunner — varre a pasta e traduz
+│   │   │   └── ui/
+│   │   │       ├── ConsoleEntrada.java             # prompt de pastas (estilo input() do Python)
+│   │   │       ├── ConsoleUILogger.java            # barra de progresso + log colorido
+│   │   │       ├── AnsiCores.java
+│   │   │       └── PastasExecucao.java
+│   │   ├── application/
+│   │   │   ├── ProcessarArquivoUseCase.java        # orquestra 1 arquivo .ass
+│   │   │   ├── ProcessarEpisodioUseCase.java       # traduz lotes (sequencial + divisão recursiva)
+│   │   │   └── ValidadorTraducaoService.java       # anti-alucinação
+│   │   ├── domain/
+│   │   │   ├── Lote.java / TraducaoLote.java
+│   │   │   ├── legenda/ DocumentoLegenda.java, EventoLegenda.java
+│   │   │   ├── ports/ MistralPort.java
+│   │   │   └── exceptions/ (TradutorException e subclasses)
+│   │   └── infrastructure/
+│   │       ├── adapters/ MistralClientAdapter.java # RestClient → LM Studio (retry)
+│   │       ├── cache/ CacheTraducaoService.java, EntradaCache.java
+│   │       ├── config/ TradutorProperties.java, LlmProperties.java, RestClientConfig.java
+│   │       ├── dtos/ RecordsMistral.java           # DTOs da API OpenAI-compatible
+│   │       └── legenda/ LeitorLegendaAss.java, EscritorLegendaAss.java, MascaradorTags.java
+│   └── test/java/org/traducao/animes/...           # JUnit 5 + Mockito + AssertJ
+├── cache/                          # gerado em runtime (gitignored)
+└── logs/                           # gerado em runtime (gitignored)
+```
+
+---
+
+<a id="testes"></a>
+## 🧪 Testes
+
+```bash
+.\gradlew.bat test
+```
+
+| Classe de teste | Cobre |
+|---|---|
+| `ValidadorTraducaoServiceTest` | Regras anti-alucinação (resíduo em inglês, preâmbulos, falsos positivos com acentuação). |
+| `MascaradorTagsTest` | Mascarar/desmascarar tags ASS, casos de marcadores corrompidos. |
+| `LeitorLegendaAssTest` | Parsing real de `.ass` (BOM, CRLF, índice dinâmico de `Style`). |
+| `CacheTraducaoServiceTest` | Carregar/salvar cache JSON, resumo de execução anterior, idiomas gravados. |
+| `MistralClientAdapterTest` | `MockRestServiceServer`, retry em erro HTTP, resposta vazia. |
+| `ProcessarEpisodioUseCaseTest` | Falha de lote aborta com lotes parciais preservados; divisão recursiva. |
+| `ProcessarArquivoUseCaseTest` | Orquestração ponta a ponta: dedup, reaproveitamento de cache, falha parcial. |
+| `TradutorCLITest` | Falha em um arquivo não aborta o processamento dos demais. |
+| `TradutorPropertiesTest` | `resolverDiretorioSaida()` / `resolverDiretorioCache()` e seus defaults. |
+| `ApplicationTest` | Preparo de argumentos quando a pasta já foi informada via CLI. |
+
+> [!NOTE]
+> `build.gradle` injeta `-Dnet.bytebuddy.experimental=true` nos testes — o ByteBuddy embutido no Mockito ainda não reconhece o *class file version* do Java 25. Remover quando Mockito/Spring suportarem o JDK 25 oficialmente.
+
+---
+
+<a id="troubleshooting"></a>
+## 🐛 Solução de Problemas / JDK 25
+
+> [!CAUTION]
+> **"Nenhum bean é registrado" / a aplicação sobe e não faz nada.**
+> O ASM do Spring 6.1.x não lê o *class file version* 69 (Java 25), então `@ComponentScan` automático falha silenciosamente. A solução já está aplicada em [`Application.java`](src/main/java/org/traducao/animes/Application.java) via `@Import({...})` explícito — se você adicionar um novo `@Component`/`@Service`, **adicione-o também na lista do `@Import`**.
+
+> [!CAUTION]
+> **`BeanDefinitionStoreException` ao rodar `bootRun`.**
+> Faltam as flags JVM `-Dspring.classformat.ignore=true` e `--enable-preview`. Já configuradas em `build.gradle` na task `JavaExec` — confirme que está usando `gradlew.bat`/`run.bat` e não rodando a classe direto pela IDE sem essas flags.
+
+> [!CAUTION]
+> **O prompt de pastas não aparece, ou o programa "trava" sem aceitar entrada.**
+> Use `--console=plain` (`.\gradlew.bat bootRun --console=plain`) ou o atalho `run.bat`. Sem isso, o Gradle pode não repassar o `stdin` ao processo Java.
+
+> [!CAUTION]
+> **Erros `application/octet-stream`, `Closed by interrupt`, ou o programa "parece parado" após ~10 minutos.**
+> Sintoma de sobrecarregar o LM Studio com chamadas paralelas — o motivo pelo qual os lotes de um mesmo episódio são processados **sequencialmente**, não em paralelo com `StructuredTaskScope`. Não reative paralelismo nos lotes sem antes medir a carga real suportada pelo seu hardware/modelo.
+
+> [!TIP]
+> Erro de comunicação persistente? Confirme que o LM Studio está com o servidor local ligado, o modelo carregado e que `tradutor.llm.model` bate **exatamente** com o `id` de `GET http://127.0.0.1:1234/v1/models`.
+
+Para o detalhamento completo dessas decisões e o porquê de cada workaround, veja **[ARQUITETURA.md](ARQUITETURA.md)**.
+
+---
+
+<a id="decisoes"></a>
+## 🗺️ Histórico de Decisões
+
+| Decisão | Motivo |
+|---|---|
+| Lotes **sequenciais**, não paralelos | LM Studio trava com 20+ requisições simultâneas (GPU única, fila serial). |
+| Prompt de pastas **antes** do Spring subir | A mensagem não se perde atrás dos logs de boot do Spring. |
+| `PastasExecucao` separado de `TradutorProperties` | `TradutorProperties` é imutável (Spring `@ConfigurationProperties`); os caminhos efetivos vêm do console em runtime. |
+| Retry 3× no `MistralClientAdapter` | Falhas transitórias de rede/parse são comuns ao falar com um servidor LLM local. |
+| `idioma-original` / `idioma-traduzido` no `application.yml` | O cache JSON documenta o par de idiomas; abre caminho para outros pares além de en→pt-br. |
+| Episódios sequenciais entre arquivos | Uma falha não deve cancelar a série inteira; a GPU já é o gargalo, não há ganho em paralelizar arquivos. |
+
+📖 Tabela completa, incluindo armadilhas a evitar ("o que NÃO fazer"), em **[ARQUITETURA.md](ARQUITETURA.md#o-que-não-fazer-armadilhas-comuns)**.
+
+---
+
+<a id="contribuindo"></a>
+## 🤝 Contribuindo
+
+1. Faça um fork do repositório.
+2. Crie uma branch a partir de `main`: `git checkout -b feature/minha-melhoria`.
+3. Leia **[ARQUITETURA.md](ARQUITETURA.md)** antes de alterar o pipeline de tradução, cache ou chamadas ao LLM — várias decisões existem por limitações reais do LM Studio.
+4. Garanta que `.\gradlew.bat test` passa.
+5. Abra um Pull Request descrevendo o problema resolvido e a motivação da mudança.
+
+---
+
+<a id="licenca"></a>
+## 📜 Licença
+
+Distribuído sob a licença **MIT** — veja [LICENSE](LICENSE) para o texto completo.
+
+```
+Copyright (c) 2026 Paulo André Carminati
+```
+
+---
+
+<a id="creditos"></a>
+## 🙏 Créditos
+
+- Refatoração para Java 25 + Spring Boot de um pipeline originalmente em Python (tradução via Mistral/Nemo).
+- Testado com legendas reais de **Mobile Suit Gundam ZZ** e **DanMachi** (releases [Sokudo]).
+- Bibliotecas de terceiros: [Spring Boot](https://spring.io/projects/spring-boot), [me.tongfei:progressbar](https://github.com/ctongfei/progressbar), Jackson, JUnit 5, Mockito, AssertJ.
+
+<div align="center">
+
+---
+
+⭐ Se este projeto te ajudou a traduzir suas legendas, considere deixar uma estrela no repositório.
+
+[![Voltar ao topo](https://img.shields.io/badge/⬆-Voltar%20ao%20topo-blue?style=for-the-badge)](#sumario)
+
+</div>

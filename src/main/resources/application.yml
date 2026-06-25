@@ -20,7 +20,9 @@ tradutor:
   diretorio-entrada: ""
   # Se vazia, e calculada a partir de diretorio-entrada (troca "eng" por "pt-br").
   diretorio-saida: ""
-  # Se vazia, e calculada como <diretorio-saida>/cache.
+  # Se vazia (padrao), nao e mais perguntada no console: cai em
+  # cache/<pasta-do-anime>/<subpasta>, na raiz do projeto, derivada de
+  # diretorio-entrada. So precisa ser preenchida para forcar outro local.
   diretorio-cache: ""
   # Quantidade de falas por requisicao ao LLM.
   tamanho-lote: 20
@@ -42,12 +44,17 @@ tradutor:
     connect-timeout: 5s
     read-timeout: 180s
 
+remuxer:
+  # Caminho para o executavel do mkvmerge (se vazio, tenta achar no PATH ou pasta padrao do Windows)
+  mkvmerge-path: ""
+
+
 logging:
   level:
     root: INFO
-    org.traducao.animes: DEBUG
+    org.traducao.projeto.animes: INFO
   pattern:
-    console: "%clr(%d{HH:mm:ss.SSS}){faint} %clr(%-5level) %clr([%thread]){magenta} %clr(loteId=%X{loteId}){yellow} %clr(%logger{36}){cyan} %clr(-){faint} %msg%n"
+    console: "%clr(%d{HH:mm:ss}){faint} %clr(%-5level) %clr([%thread]){magenta} %clr(%logger{20}){cyan} %clr(-){faint} %msg%n"
     file: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] loteId=%X{loteId} %logger{36} - %msg%n"
   file:
     name: logs/tradutor.log

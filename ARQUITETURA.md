@@ -1,5 +1,7 @@
 # Arquitetura do Tradutor Local (Java 25 + Spring Boot)
 
+> 🏠 [Voltar ao README](README.md) · 📜 [Licença](LICENSE)
+
 ## Para as IAs que lerem este repositório no futuro
 
 Este projeto foi refatorado do Python (pipeline do Gundam Origin usando Mistral/Nemo) para Java 25 visando **baixo overhead de I/O** com Virtual Threads onde faz sentido.
@@ -50,7 +52,7 @@ Se o prompt nao esperar digitacao: use `run.bat` ou `bootRun --console=plain` no
 ## Estrutura de pacotes (hexagonal light)
 
 ```
-org.traducao.animes
+org.traducao.projeto.animes
 ├── Application.java          # @Import explícito (ver JDK 25 abaixo)
 ├── presentation/
 │   ├── TradutorCLI.java      # CommandLineRunner — entrada do programa
@@ -72,6 +74,58 @@ org.traducao.animes
 ```
 
 Beans **não** são descobertos por `@ComponentScan` automático — ver seção JDK 25.
+
+---
+
+## Modos de execução (`app.modo`) e os pacotes `legendas` / `remuxer`
+
+Além de `org.traducao.projeto.animes` (tradução), o projeto tem dois módulos irmãos, cada um com seu próprio `CommandLineRunner` ativado por `@ConditionalOnProperty(name = "app.modo", havingValue = "...")`:
+
+| Modo | CLI | Pacote | Função |
+|---|---|---|---|
+| `TRADUZIR` (padrão, `matchIfMissing = true`) | `TradutorCLI` | `animes` | Traduz `.ass`/`.ssa` via LLM local (fluxo já documentado acima) |
+| `EXTRAIR` | `ExtratorCLI` | `legendas` | Extrai faixas de legenda embutidas em `.mkv` (ASS/PGS/SRT) via MKVToolNix (`mkvmerge --identify` + `mkvextract`) |
+| `REMUXAR` | `RemuxerCLI` | `remuxer` | Remultiplexa um `.mkv` original com uma legenda `.ass`/`.srt` traduzida via `mkvmerge` |
+
+`ConsoleEntrada.solicitarPastas()` pergunta o modo (`[1]/[2]/[3]`) antes do Spring subir e grava `--app.modo=...` nos args, igual ao fluxo de pastas. Os três modos reaproveitam as mesmas chaves `tradutor.diretorio-entrada` / `tradutor.diretorio-saida` (ver `Application.ARG_ENTRADA`/`ARG_SAIDA`) — não existem propriedades `extrator.diretorio-*` ou `remuxer.diretorio-*` separadas.
+
+### `legendas` (extração)
+
+```
+org.traducao.projeto.legendas
+├── domain/        FormatoLegenda (ASS/PGS/SRT), FaixaLegenda, RelatorioExtracao, ExtratorException
+├── application/
+│   ├── ExtrairLegendaUseCase.java     # varre .mkv, identifica faixas, extrai a melhor
+│   └── strategy/  ExtratorStrategy + Ass/Pgs/Srt — Strategy Pattern para "qual faixa é a certa"
+├── infrastructure/
+│   ├── adapters/MkvToolNixAdapter.java   # ProcessBuilder → mkvmerge --identify / mkvextract
+│   └── config/ExtratorProperties.java
+└── presentation/  ExtratorCLI.java, ui/ConsoleExtratorLogger.java
+```
+
+Cada `ExtratorStrategy` decide a "melhor faixa" dentro das candidatas que batem com o formato (por palavra-chave no nome da faixa, idioma, ou flag `default_track` — ver implementações). Saída: `<pasta-de-entrada>/legendas_extraidas_<formato>/<nome>_Track<id>.<ext>`.
+
+### `remuxer` (remultiplexação)
+
+```
+org.traducao.projeto.remuxer
+├── domain/        RemuxTarefa, RelatorioRemux, RemuxerException
+├── application/
+│   ├── MapeadorMidiaService.java   # pareia cada .mkv com a legenda PT-BR pelo nome do arquivo
+│   └── RemuxarLoteUseCase.java     # orquestra validação + remux + relatório
+├── infrastructure/adapters/MkvmergeAdapter.java
+└── presentation/  RemuxerCLI.java, ui/ConsoleRemuxerLogger.java
+```
+
+`MapeadorMidiaService` tenta várias convenções de nome (`_PTBR.ass`, `_PTBR_ENG.ass`, `_ENG.srt`, etc. — ver `tentativas` em `construirFilaProcessamento`) para achar a legenda de cada vídeo; o vídeo é **ignorado** (não é erro) se nenhuma bater. Saída: `<pasta-de-vídeos>/mkv_final_ptbr/<nome>_PTBR.mkv`.
+
+### Bug crítico corrigido (jun/2026): `PastasExecucao` não configurada fora do modo `TRADUZIR`
+
+`PastasExecucao` (bean singleton com os `Path` efetivos de entrada/saída) só era preenchida em `TradutorCLI.resolverPastas()` — método que só executa quando `app.modo=TRADUZIR`. Em `EXTRAIR`/`REMUXAR`, `ExtratorCLI`/`RemuxerCLI` liam `pastasExecucao.diretorioEntrada()` **antes de qualquer `configurar()` ter rodado**, recebendo `null` e estourando `NullPointerException` assim que o use case tentava usar o caminho.
+
+**Correção:** `ExtratorCLI` e `RemuxerCLI` agora chamam `pastasExecucao.configurar(...)` no próprio `run()`, com a `TradutorProperties` injetada (mesmas chaves `tradutor.diretorio-*`, reaproveitadas pelos três modos). Cada CLI também valida com `Files.isDirectory(...)` antes de prosseguir, em vez de deixar o use case criar silenciosamente a pasta de saída (e, por consequência, a própria pasta de entrada via `Files.createDirectories`) quando o caminho informado não existe.
+
+**Para IAs:** se um novo modo/CLI for adicionado, **não assuma** que `PastasExecucao` já está populada — cada `CommandLineRunner` condicional ao seu `app.modo` é responsável por chamar `configurar()` antes de ler `diretorioEntrada()`/`diretorioSaida()`.
 
 ---
 
@@ -238,3 +292,5 @@ JUnit 5 + Mockito + AssertJ. Cobertura principal:
 3. **Usar só `ConsoleUILogger` para o prompt de pastas** — pode não aparecer a tempo ou competir com a progress bar.
 4. **Confiar em `@ComponentScan`** sem `@Import` — beans não sobem no JDK 25.
 5. **Assumir que Virtual Threads = paralelismo de GPU** — o gargalo é inferência local serial na prática.
+6. **Assumir que `PastasExecucao` já está configurada** em `ExtratorCLI`/`RemuxerCLI` (ou em qualquer novo `CommandLineRunner` condicional a `app.modo`) — cada um precisa chamar `pastasExecucao.configurar(...)` no próprio `run()`; ela não é populada automaticamente fora do modo `TRADUZIR` (bug real corrigido em jun/2026, ver seção "Modos de execução" acima).
+7. **Deixar `Files.createDirectories(pastaSaida)` rodar antes de validar que a pasta de entrada existe** — como `pastaSaida` é uma subpasta de `pastaVideos`, isso cria silenciosamente a pasta de entrada (vazia) em vez de avisar o usuário sobre um caminho digitado errado.
