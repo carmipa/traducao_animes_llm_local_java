@@ -1,0 +1,59 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.3.4'
+    id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'org.traducao.animes'
+version = '1.0-SNAPSHOT'
+java {
+    sourceCompatibility = JavaVersion.toVersion("25")
+}
+
+repositories {
+    mavenCentral()
+}
+
+springBoot {
+    mainClass = 'org.traducao.animes.Application'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'me.tongfei:progressbar:0.10.1'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs += "--enable-preview"
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+    jvmArgs += "--enable-preview"
+    // O ByteBuddy embutido no Mockito (via spring-boot-starter-test) ainda nao
+    // reconhece a class file version do Java 25 (69) e falha com
+    // "is not supported by the current version of Byte Buddy" ao tentar mockar
+    // qualquer classe/interface. A propria mensagem de erro recomenda esta flag
+    // experimental ate o Mockito/ByteBuddy lancarem suporte oficial ao JDK 25.
+    jvmArgs += "-Dnet.bytebuddy.experimental=true"
+}
+
+tasks.withType(JavaExec) {
+    jvmArgs += "--enable-preview"
+    // O ASM embutido no Spring Core 6.1.x (Spring Boot 3.3.x) ainda nao
+    // reconhece a class file version do Java 25 (69) e o component-scan
+    // falha com BeanDefinitionStoreException ao tentar ler as proprias
+    // classes compiladas do projeto. Workaround oficial do Spring ate uma
+    // versao do Spring Core com suporte ao JDK 25 ser lancada.
+    jvmArgs += "-Dspring.classformat.ignore=true"
+    jvmArgs += "-Dfile.encoding=UTF-8"
+    // Sem isso o Gradle nao repassa o teclado ao bootRun e o prompt fecha sozinho.
+    standardInput = System.in
+}
+
+tasks.named('bootRun') {
+    // Console interativo: evita buffer que esconde o prompt de input().
+    systemProperty 'spring.output.ansi.enabled', 'always'
+}

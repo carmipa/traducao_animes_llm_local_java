@@ -1,0 +1,57 @@
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  threads:
+    virtual:
+      enabled: true
+  main:
+    # Esta aplicacao e uma CLI local, nao um servico web: nao precisamos do
+    # Tomcat embutido que o spring-boot-starter-web (usado so pelo RestClient)
+    # ligaria por padrao. Um servidor HTTP sem autenticacao escutando em
+    # localhost e uma superficie de ataque desnecessaria para uma ferramenta
+    # de tradução de legendas.
+    web-application-type: none
+
+tradutor:
+  # Pasta com os arquivos .ass/.ssa em ingles a serem traduzidos.
+  # Se vazia, o programa pede o caminho no console ao iniciar.
+  # Tambem pode ser sobrescrita via: --tradutor.diretorio-entrada=<caminho>
+  diretorio-entrada: ""
+  # Se vazia, e calculada a partir de diretorio-entrada (troca "eng" por "pt-br").
+  diretorio-saida: ""
+  # Se vazia, e calculada como <diretorio-saida>/cache.
+  diretorio-cache: ""
+  # Quantidade de falas por requisicao ao LLM.
+  tamanho-lote: 20
+  # Estilos ASS que nao devem ser traduzidos (ex: letra original em romaji
+  # usada para karaoke, que deve permanecer no idioma original).
+  estilos-ignorados:
+    - "Song JP"
+  # Chaves de idioma gravadas no cache JSON (par original -> traduzido).
+  idioma-original: "en"
+  idioma-traduzido: "pt-br"
+  llm:
+    base-url: "http://127.0.0.1:1234/v1"
+    # Precisa bater com o "id" do modelo carregado no LM Studio
+    # (GET /v1/models). Para o Mistral Nemo costuma ser algo como
+    # "mistralai/mistral-nemo-instruct-2407", nao apenas "mistral-nemo".
+    model: "mistralai/mistral-nemo-instruct-2407"
+    temperature: 0.3
+    max-tokens: 2000
+    connect-timeout: 5s
+    read-timeout: 180s
+
+logging:
+  level:
+    root: INFO
+    org.traducao.animes: DEBUG
+  pattern:
+    console: "%clr(%d{HH:mm:ss.SSS}){faint} %clr(%-5level) %clr([%thread]){magenta} %clr(loteId=%X{loteId}){yellow} %clr(%logger{36}){cyan} %clr(-){faint} %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] loteId=%X{loteId} %logger{36} - %msg%n"
+  file:
+    name: logs/tradutor.log
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+      max-history: 5
