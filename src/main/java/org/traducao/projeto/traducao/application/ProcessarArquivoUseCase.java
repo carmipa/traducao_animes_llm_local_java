@@ -268,6 +268,9 @@ public class ProcessarArquivoUseCase {
             return false;
         }
         if (normalizarParaComparacao(original).equals(normalizarParaComparacao(traduzido))) {
+            if (deveManterIdentico(original)) {
+                return true;
+            }
             return false;
         }
         try {
@@ -277,6 +280,35 @@ public class ProcessarArquivoUseCase {
             log.warn("Cache ignorado porque parece conter fala ainda nao traduzida: {}", traduzido);
             return false;
         }
+    }
+
+    private boolean deveManterIdentico(String texto) {
+        String textoLimpo = texto.replaceAll("\\{[^}]+\\}", "").strip();
+        textoLimpo = textoLimpo.replaceAll("[^\\w\\s\\d]", "").strip();
+
+        if (textoLimpo.isEmpty()) {
+            return true;
+        }
+
+        String[] palavras = textoLimpo.split("\\s+");
+        if (palavras.length <= 1) {
+            return true;
+        }
+
+        if (palavras.length == 2 && 
+            Character.isUpperCase(palavras[0].charAt(0)) && 
+            Character.isUpperCase(palavras[1].charAt(0))) {
+            return true;
+        }
+
+        String textoMinusculo = textoLimpo.toLowerCase();
+        List<String> termosIgnorados = List.of(
+            "fire bolt", "argo vesta", "caelus hildr", "hildrsleif", "dios aedes vesta",
+            "vana freya", "vana seith", "vana seith.", "zeo gullveig", "hildis vini",
+            "agallis arvesynth", "remiste felis", "uchide no kozuchi", "feles cruz",
+            "dubh daol", "zekka", "gralineze fromel", "gokoh", "astrea record"
+        );
+        return termosIgnorados.contains(textoMinusculo);
     }
 
     private String normalizarParaComparacao(String texto) {

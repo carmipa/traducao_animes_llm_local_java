@@ -1,2410 +1,2108 @@
-[
-  {
-    "indice": 0,
-    "estilo": "Default",
-    "original": "The War Game between the Freya Familia and\\Nthe allied army is turning out to be pretty one-sided!",
-    "traduzido": "O War Game entre a Família Freya e \\No exército aliado está se mostrando bastante unilateral!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 1,
-    "estilo": "Default",
-    "original": "The allies' biggest hitter, Rabbit's Foot, \\Nis currently getting steamrolled by the King, Ottarl!",
-    "traduzido": "O maior trunfo dos aliados, Rabbit's Foot, \\Nestá sendo atropelado pelo Rei, Ottarl!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 2,
-    "estilo": "Default",
-    "original": "There's just no stopping Orario's most powerful Familia!",
-    "traduzido": "Não há como deter a Familia mais poderosa de Orario!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 3,
-    "estilo": "Default",
-    "original": "But jeez, I think they've made their point!",
-    "traduzido": "Mas sério, eu acho que eles já provaram o suficiente!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 4,
-    "estilo": "Default",
-    "original": "Somebody stop this horror show!",
-    "traduzido": "Alguém pare esse espetáculo horrível!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 5,
-    "estilo": "Default",
-    "original": "Oh, Bell...",
-    "traduzido": "Ah, Bell...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 6,
-    "estilo": "Default",
-    "original": "Master Bell...",
-    "traduzido": "Mestre Bell...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 7,
-    "estilo": "Default",
-    "original": "Horn... I detest the way that you mirror me.",
-    "traduzido": "Chifre... Eu detesto a maneira como você me imita.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 8,
-    "estilo": "Default",
-    "original": "Wrap this up already!",
-    "traduzido": "Acabe logo com isso!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 9,
-    "estilo": "Default",
-    "original": "Go and tell Hedin that he needs\\Nto end the War Game now!",
-    "traduzido": "Vá dizer para Hedin que ele precisa \\Nterminar o jogo da guerra agora!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 10,
-    "estilo": "Default",
-    "original": "Uh-oh!",
-    "traduzido": "Ah-ah!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 11,
-    "estilo": "Default",
-    "original": "Here comes trouble!",
-    "traduzido": "Lá vem problema!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 12,
-    "estilo": "Default",
-    "original": "The Freya Familia goes on the offensive!",
-    "traduzido": "A Familia de Freya vai para o ataque!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 13,
-    "estilo": "Default",
-    "original": "A squadron led by Vana Freya is\\Nnow rushing towards the eastern side!",
-    "traduzido": "Um esquadrão liderado por Vana Freya está \\Ncorrendo agora em direção ao lado leste!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 14,
-    "estilo": "Default",
-    "original": "They're invading the ruins\\Nwhere the allies' Gods are hiding!",
-    "traduzido": "Eles estão invadindo as ruínas \\Nonde os Deuses aliados estão se escondendo!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 15,
-    "estilo": "Default",
-    "original": "You have to run for it, Lady Hestia!",
-    "traduzido": "Tem que correr, Senhora Hestia!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 16,
-    "estilo": "Default",
-    "original": "Okay, you got us!",
-    "traduzido": "Tudo bem, você nos pegou!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 17,
-    "estilo": "Default",
-    "original": "We surrender!",
-    "traduzido": "Nos rendemos!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 18,
-    "estilo": "Default",
-    "original": "We wanna side with Lady Freya! Comprende?",
-    "traduzido": "Queremos ficar do lado da Senhora Freya! Entende?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 19,
-    "estilo": "Default",
-    "original": "Shut up.",
-    "traduzido": "Cale a boca.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 20,
-    "estilo": "Default",
-    "original": "The Gods Magni and Modi are both out!",
-    "traduzido": "Os deuses Magni e Modi estão ambos fora!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 21,
-    "estilo": "Default",
-    "original": "Quickly followed by Ogma, Serket, and Sobek!",
-    "traduzido": "Seguidos rapidamente por Ogma, Serket e Sobek!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 22,
-    "estilo": "Default",
-    "original": "The allies' Gods are dropping like flies!",
-    "traduzido": "Os deuses aliados estão caindo como moscas!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 23,
-    "estilo": "Default",
-    "original": "Yikes! Looks like Soma has now been found, too!",
-    "traduzido": "Ai! Parece que Soma também foi encontrado!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 24,
-    "estilo": "Default",
-    "original": "The Familia members of any God that has been \\Nknocked out can no longer participate in the War Game.",
-    "traduzido": "Os membros da Familia de qualquer deus que tenha sido \\Nderrotado não podem mais participar do Jogo de Guerra.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 25,
-    "estilo": "Default",
-    "original": "Which means the allied army has just lost \\Na huge chunk of their forces!",
-    "traduzido": "O que significa que o exército aliado acabou de perder \\Numa grande parte de suas forças!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 26,
-    "estilo": "Default",
-    "original": "Things were already looking bad,\\Nbut now they're even worse!",
-    "traduzido": "As coisas já estavam ruins,\\Nmas agora estão ainda piores!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 27,
-    "estilo": "Default",
-    "original": "Get out of here, Hestia!",
-    "traduzido": "Saia daqui, Hestia!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 28,
-    "estilo": "Default",
-    "original": "They'll find you sooner or later if you stay put!",
-    "traduzido": "Eles vão te encontrar mais cedo ou mais tarde se você ficar parado!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 29,
-    "estilo": "Default",
-    "original": "Go west! Head for the frontlines!",
-    "traduzido": "Vá para o oeste! Vá para a linha de frente!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 30,
-    "estilo": "Default",
-    "original": "We lose all chance of winning if they find you!",
-    "traduzido": "Perderemos todas as chances de vitória se eles te encontrarem!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 31,
-    "estilo": "Default",
-    "original": "Okay, but, what about you?!",
-    "traduzido": "Tudo bem, mas o que sobre você?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 32,
-    "estilo": "Default",
-    "original": "I'll act as a decoy!",
-    "traduzido": "Eu vou acting como isca!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 33,
-    "estilo": "Default",
-    "original": "Now hurry and go,\\Nwhile Takemikazuchi is still holding them off!",
-    "traduzido": "Agora vá embora,\\Nenquanto Takemikazuchi ainda está os segurando!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 34,
-    "estilo": "Default",
-    "original": "You'll have to do better than that!",
-    "traduzido": "Você vai ter que fazer melhor do que isso!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 35,
-    "estilo": "Default",
-    "original": "Thanks!",
-    "traduzido": "Obrigado!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 36,
-    "estilo": "Default",
-    "original": "I found one!",
-    "traduzido": "Encontrei um!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 37,
-    "estilo": "Default",
-    "original": "Everyone attack at once!",
-    "traduzido": "Todos ataquem ao mesmo tempo!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 38,
-    "estilo": "Default",
-    "original": "You can't beat me with brute force!",
-    "traduzido": "Não pode me vencer com força bruta!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 39,
-    "estilo": "Default",
-    "original": "And down goes Goddess Hephaistos!",
-    "traduzido": "E aí vai a deusa He",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 40,
-    "estilo": "Default",
-    "original": "Uh-oh!",
-    "traduzido": "Ah-ah!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 41,
-    "estilo": "Default",
-    "original": "God Takemikazuchi has finally met his match, too!",
-    "traduzido": "Deus Takemikazuchi finalmente encontrou seu par!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 42,
-    "estilo": "Default",
-    "original": "The Gods Dellingr and Ratri are also out.",
-    "traduzido": "Os deuses Dellingr e Ratri também estão fora.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 43,
-    "estilo": "Default",
-    "original": "The power of Vana Freya and\\Nthe Einherjar is simply overwhelming!",
-    "traduzido": "O poder de Vana Freya e \\Ndos Einherjar é simplesmente esmagador!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 44,
-    "estilo": "Default",
-    "original": "Not to mention their speed!",
-    "traduzido": "Sem mencionar sua velocidade!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 45,
-    "estilo": "Default",
-    "original": "Out of the 46 Familia that comprised the allied army,\\Nthere are now only four remaining!",
-    "traduzido": "Das 46 Famílias que compunham o exército aliado, \\Nagora restam apenas quatro!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 46,
-    "estilo": "Default",
-    "original": "Defeat seems imminent if those \\Nfour Gods can't keep their flowers safe.",
-    "traduzido": "A derrota parece iminente se esses \\Nquatro Deuses não conseguirem manter suas flores seguras.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 47,
-    "estilo": "Default",
-    "original": "The game will end!",
-    "traduzido": "O jogo vai acabar!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 48,
-    "estilo": "Default",
-    "original": "How are you gonna stay in this, allied army?!",
-    "traduzido": "Como você vai ficar nessa, exército aliado?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 49,
-    "estilo": "Default",
-    "original": "Just as expected.",
-    "traduzido": "Como esperado.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 50,
-    "estilo": "Default",
-    "original": "{\\i1}This was the natural conclusion when you consider\\Nhow much military superiority their side has.",
-    "traduzido": "{\\i1}Esta foi a conclusão natural quando se considera\\Nquantas superioridade militar eles têm.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 51,
-    "estilo": "Default",
-    "original": "{\\i1}Which means there's no point in panicking just yet.",
-    "traduzido": "{\\i1}Significa que ainda não há razão para entrar em pânico.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 52,
-    "estilo": "Default",
-    "original": "{\\i1}The plan is in place.",
-    "traduzido": "{\\i1}O plano está pronto.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 53,
-    "estilo": "Default",
-    "original": "{\\i1}The preparations are done.",
-    "traduzido": "{\\i1}As preparações estão feitas.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 54,
-    "estilo": "Default",
-    "original": "{\\i1}All we need is one successful push to throw them\\Noff balance, then the tables will turn!",
-    "traduzido": "{\\i1}Tudo o que precisamos é de uma investida bem-sucedida para desestabilizá-los, \\Ne o jogo vai virar!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 55,
-    "estilo": "Default",
-    "original": "{\\i1}It's impossible for a nobody like me \\Nto compete against the sharp mind of Master Hedin.",
-    "traduzido": "{\\i1}É impossível para alguém como eu \\Ncompetir contra a mente afiada do Mestre Hedin.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 56,
-    "estilo": "Default",
-    "original": "{\\i1}So I have to consider his tactics,\\Nfighting style, and thought patterns...",
-    "traduzido": "{\\i1}Então tenho que considerar suas táticas,\\Nestilo de luta e padrões de pensamento...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 57,
-    "estilo": "Default",
-    "original": "{\\i1}and take advantage of whatever I can!",
-    "traduzido": "{\\i1}e aproveitar qualquer vantagem que puder!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 58,
-    "estilo": "Default",
-    "original": "{\\i1}Master Hedin is positioned awfully\\Nclose to their rearguard...",
-    "traduzido": "{\\i1}O Mestre Hedin está posicionado incrivelmente \\Nperto da retaguarda deles...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 59,
-    "estilo": "Default",
-    "original": "{\\i1}Oh my gosh!",
-    "traduzido": "{\\i1}Meu Deus!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 60,
-    "estilo": "Default",
-    "original": "Please hang in there, Lady Daphne!",
-    "traduzido": "Por favor, aguente firme, Senhora Daphne!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 61,
-    "estilo": "Default",
-    "original": "Daphne!",
-    "traduzido": "Daphne!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 62,
-    "estilo": "Default",
-    "original": "Our victory is inevitable.",
-    "traduzido": "A nossa vitória é inevitável.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 63,
-    "estilo": "Default",
-    "original": "Yet you resist. In a fruitless endeavor.",
-    "traduzido": "No entanto, você resiste. Em uma empreitada infrutífera.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 64,
-    "estilo": "Default",
-    "original": "Yeah, well, I'm not dead yet.",
-    "traduzido": "Bem, eu ainda não estou morto.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 65,
-    "estilo": "Default",
-    "original": "Oh, Daphne...",
-    "traduzido": "Ah, Daphne...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 66,
-    "estilo": "Default",
-    "original": "Cassandra! Heal me!",
-    "traduzido": "Cassandra! Cure-me!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 67,
-    "estilo": "Default",
-    "original": "Soul Light!",
-    "traduzido": "Luz da Alma!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 68,
-    "estilo": "Default",
-    "original": "I'm healing too slowly...",
-    "traduzido": "Estou me curando muito devagar...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 69,
-    "estilo": "Default",
-    "original": "That cursed weapon of yours... is really a pain in the ass.",
-    "traduzido": "Essa arma amaldiçoada sua... é mesmo um incômodo.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 70,
-    "estilo": "Default",
-    "original": "There is something peculiar about your body\\Nand the way it's been weathering all my blows.",
-    "traduzido": "Há algo peculiar em seu corpo \\Ne na maneira como ele tem resistido a todos os meus golpes.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 71,
-    "estilo": "Default",
-    "original": "Laurus Wreath.",
-    "traduzido": "Laurus Coroa.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 72,
-    "estilo": "Default",
-    "original": "It's a skill that boosts my endurance.",
-    "traduzido": "É uma habilidade que aumenta minha resistência.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 73,
-    "estilo": "Default",
-    "original": "Although, I really hate using it \\Nsince it makes my skin all hard and woody.",
-    "traduzido": "Embora eu realmente odeie usar isso, \\Njá que deixa minha pele toda dura e rígida.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 74,
-    "estilo": "Default",
-    "original": "Just more grief that Lord Apollon caused me.",
-    "traduzido": "Apenas mais sofrimento que o Senhor Apollon me causou.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 75,
-    "estilo": "Default",
-    "original": "Keep this up and you'll devolve into\\Na human-faced sapling that is bereft of speech.",
-    "traduzido": "Continue assim e você se transformará em \\Numa muda com rosto humano incapaz de falar.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 76,
-    "estilo": "Default",
-    "original": "To what end do you brave\\Nthrough such hell and brimstone?",
-    "traduzido": "Com que propósito você enfrenta \\Ntamanho inferno?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 77,
-    "estilo": "Default",
-    "original": "That's easy.",
-    "traduzido": "Isso é fácil.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 78,
-    "estilo": "Default",
-    "original": "My job is to buy as much time as possible by keeping\\Nfirst-class adventurers like you busy.",
-    "traduzido": "Meu trabalho é ganhar o máximo de tempo possível mantendo \\Naventureiros de primeira classe como você ocupados.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 79,
-    "estilo": "Default",
-    "original": "That's why I had everybody else\\Nthrow themselves at you.",
-    "traduzido": "É por isso que fiz com que todos os outros \\Nse jogassem contra você.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 80,
-    "estilo": "Default",
-    "original": "What good would I be if I didn't dig my heels in?!",
-    "traduzido": "O que eu seria se não lutasse com unhas e dentes?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 81,
-    "estilo": "Default",
-    "original": "How foolhardy.",
-    "traduzido": "Como pode ser tão imprudente?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 82,
-    "estilo": "Default",
-    "original": "Yet also worthy of my respect.",
-    "traduzido": "No entanto, também merece minha respeito.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 83,
-    "estilo": "Default",
-    "original": "Therefore... I shall end you!",
-    "traduzido": "Portanto... Eu vou acabar com você!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 84,
-    "estilo": "Default",
-    "original": "Oh no, Daphne!",
-    "traduzido": "Oh não, Daphne!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 85,
-    "estilo": "Default",
-    "original": "Cassandra... heal me again...",
-    "traduzido": "Cassandra... cure-me novamente...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 86,
-    "estilo": "Default",
-    "original": "Save your strength! I'll get right on it!",
-    "traduzido": "Poupe suas forças! Eu cuidarei disso agora mesmo!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 87,
-    "estilo": "Default",
-    "original": "Don't move.",
-    "traduzido": "Não se mova.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 88,
-    "estilo": "Default",
-    "original": "I will judge any attempt to cast magic\\Nas further resistance and cut you both to pieces.",
-    "traduzido": "Considerarei qualquer tentativa de conjurar magia \\Ncomo mais resistência e cortarei vocês dois em pedaços.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 89,
-    "estilo": "Default",
-    "original": "Only if you lay down your weapons and\\Nsurrender will I allow you to heal her.",
-    "traduzido": "Só se você baixar suas armas e \\Nse render.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 90,
-    "estilo": "Default",
-    "original": "Ignore him and heal me.",
-    "traduzido": "Ignore-o e cure-me.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 91,
-    "estilo": "Default",
-    "original": "Hurry.",
-    "traduzido": "Corra.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 92,
-    "estilo": "Default",
-    "original": "I shall wait 3 seconds.",
-    "traduzido": "Eu vou esperar 3 segundos.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 93,
-    "estilo": "Default",
-    "original": "Three, two...",
-    "traduzido": "Três, dois...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 94,
-    "estilo": "Default",
-    "original": "We surrender!",
-    "traduzido": "Nos rendemos!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 95,
-    "estilo": "Default",
-    "original": "Please spare Daphne!",
-    "traduzido": "Por favor, poupe Daphne!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 96,
-    "estilo": "Default",
-    "original": "You dummy.",
-    "traduzido": "Você é burro.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 97,
-    "estilo": "Default",
-    "original": "Now there are none left to oppose us here.",
-    "traduzido": "Agora não há ninguém para nos enfrentar aqui.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 98,
-    "estilo": "Default",
-    "original": "This consumed more of my time than I had anticipated.",
-    "traduzido": "Isso consumiu mais do meu tempo do que eu havia previsto.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 99,
-    "estilo": "Default",
-    "original": "I'm sorry.",
-    "traduzido": "Eu sinto muito.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 100,
-    "estilo": "Default",
-    "original": "I wish I wasn't so useless.",
-    "traduzido": "Eu gostaria de não ser tão inútil.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 101,
-    "estilo": "Default",
-    "original": "I couldn't do anything to change the course of fate.",
-    "traduzido": "Eu não pude fazer nada para mudar o curso do destino.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 102,
-    "estilo": "Default",
-    "original": "The wind...?",
-    "traduzido": "O vento...?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 103,
-    "estilo": "Default",
-    "original": "{\\i1}But the wind will blow in our favor!",
-    "traduzido": "{\\i1}Mas o vento soprará a nosso favor!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 104,
-    "estilo": "Default",
-    "original": "{\\i1}\"Please stop.\"",
-    "traduzido": "{\\i1}\"Por favor, pare.\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 105,
-    "estilo": "Default",
-    "original": "{\\i1}\"I've had enough.\"",
-    "traduzido": "{\\i1}\"Já basta.\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 106,
-    "estilo": "Default",
-    "original": "{\\i1}How long has it been since I last pled for mercy like that?",
-    "traduzido": "{\\i1}Há quanto tempo não imploro misericórdia assim?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 107,
-    "estilo": "Default",
-    "original": "{\\i1}I can't win.",
-    "traduzido": "{\\i1}Eu não posso vencer.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 108,
-    "estilo": "Default",
-    "original": "{\\i1}It's impossible for me to beat Mr. Ottarl.",
-    "traduzido": "{\\i1}É impossível para mim derrotar o Sr. Ottarl.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 109,
-    "estilo": "Default",
-    "original": "{\\i1}But...",
-    "traduzido": "{\\i1}Mas...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 110,
-    "estilo": "Default",
-    "original": "Save me! Mr. Bell!",
-    "traduzido": "Salve-me! Sr. Bell!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 111,
-    "estilo": "Default",
-    "original": "{\\i1}I made a promise.",
-    "traduzido": "{\\i1}Eu fiz uma promessa.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 112,
-    "estilo": "Default",
-    "original": "{\\i1}A promise to save her.",
-    "traduzido": "{\\i1}Uma promessa para salvá-la.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 113,
-    "estilo": "Default",
-    "original": "Unless I beat you...",
-    "traduzido": "A menos que...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 114,
-    "estilo": "Default",
-    "original": "I can't reach Lady Freya.",
-    "traduzido": "eu derrote você...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 115,
-    "estilo": "Default",
-    "original": "That's right.",
-    "traduzido": "Não posso alcançar a Senhora Freya.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 116,
-    "estilo": "Default",
-    "original": "And I can't see Ms. Syr.",
-    "traduzido": "Isso mesmo.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 117,
-    "estilo": "Default",
-    "original": "That's right.",
-    "traduzido": "Não posso alcançar a Senhora Freya.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 118,
-    "estilo": "Default",
-    "original": "Then...",
-    "traduzido": "E não posso ver a Sra. Syr.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 119,
-    "estilo": "Default",
-    "original": "you're going down.",
-    "traduzido": "Então...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 120,
-    "estilo": "Default",
-    "original": "Bring it on.",
-    "traduzido": "você vai cair.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 121,
-    "estilo": "Default",
-    "original": "Go crazy.",
-    "traduzido": "Mande ver.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 122,
-    "estilo": "Default",
-    "original": "{\\i1}It's blowing...",
-    "traduzido": "{\\i1}Está soprando...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 123,
-    "estilo": "Default",
-    "original": "{\\i1}The Gale Wind has come!",
-    "traduzido": "{\\i1}O Vento Furioso chegou!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 124,
-    "estilo": "Default",
-    "original": "Who goes there?",
-    "traduzido": "Quem é você?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 125,
-    "estilo": "Default",
-    "original": "I've come to join the fray.",
-    "traduzido": "Eu vim me juntar à batalha.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 126,
-    "estilo": "Default",
-    "original": "I hope you're prepared, brethren.",
-    "traduzido": "Espero que estejam preparados, irmãos.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 127,
-    "estilo": "Default",
-    "original": "Prepared for what, pray tell?",
-    "traduzido": "Preparados para quê, posso perguntar?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 128,
-    "estilo": "Default",
-    "original": "To fall by my blade.",
-    "traduzido": "Para cair pela minha lâmina.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 129,
-    "estilo": "Default",
-    "original": "Fat chance!",
-    "traduzido": "Pouca chance!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 130,
-    "estilo": "Default",
-    "original": "H-Holy smokes!",
-    "traduzido": "- H-Holy smokes!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 131,
-    "estilo": "Default",
-    "original": "{\\an8}Unbelievable! What's happening?!",
-    "traduzido": "{\\an8}Inacreditável! O que está acontecendo?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 132,
-    "estilo": "Default",
-    "original": "Who is this adventurer?!",
-    "traduzido": "Quem é esse aventureiro?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 133,
-    "estilo": "Default",
-    "original": "Guess they needed somebody to lean-on!",
-    "traduzido": "Acho que eles precisavam de alguém para se apoiar!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 134,
-    "estilo": "Default",
-    "original": "Oh, come on. That joke's gone stale!",
-    "traduzido": "Oh, por favor. Essa piada já era velha!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 135,
-    "estilo": "Default",
-    "original": "No way, I thought the Gale Wind\\Nwas supposed to be dead!",
-    "traduzido": "De jeito nenhum, eu pensei que o Vento Furioso \\Nestava morto!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 136,
-    "estilo": "Default",
-    "original": "{\\i1}She's matching me blow for blow.",
-    "traduzido": "{\\i1}Ela está me enfrentando golpe por golpe.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 137,
-    "estilo": "Default",
-    "original": "{\\i1}This is nothing like back when\\Nwe fought at the Goddess Festival!",
-    "traduzido": "{\\i1}Isso não é nada como quando \\Nlutamos na Festa das Deusas!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 138,
-    "estilo": "Default",
-    "original": "You've gotten stronger! Level 6 strong!",
-    "traduzido": "Você ficou mais forte! Nível 6 de força!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 139,
-    "estilo": "Default",
-    "original": "But there's no way you could have gone up 2 levels!",
-    "traduzido": "Mas não há maneira de você ter subido 2 níveis!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 140,
-    "estilo": "Default",
-    "original": "It's possible!",
-    "traduzido": "É possível!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 141,
-    "estilo": "Default",
-    "original": "More than possible!",
-    "traduzido": "Mais do que possível!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 142,
-    "estilo": "Default",
-    "original": "Ryu has fought her fair share.",
-    "traduzido": "Ryu já lutou bastante.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 143,
-    "estilo": "Default",
-    "original": "Ever since the day that ended Orario's dark age!",
-    "traduzido": "Desde o dia que pôs fim à era sombria de Orario!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 144,
-    "estilo": "Default",
-    "original": "She has a long history of combat that's filled\\Nwith outstanding accomplishments!",
-    "traduzido": "Ela tem um longo histórico de combate que está cheio \\Nde conquistas notáveis!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 145,
-    "estilo": "Default",
-    "original": "Five years ago, she was already\\Ntop tier among all the level 4s.",
-    "traduzido": "Há cinco anos, ela já era \\Nda elite entre todos os níveis 4.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 146,
-    "estilo": "Default",
-    "original": "It's hardly surprising she'd be\\Nthe first person to achieve a double rank up!",
-    "traduzido": "É pouco surpreendente que ela seria \\Na primeira pessoa a alcançar uma promoção duplo!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 147,
-    "estilo": "Default",
-    "original": "{\\i1}I was powerless. I suffered miserable defeats\\Nat the hands of both you and the King.",
-    "traduzido": "{\\i1}Eu estava impotente. Sofri derrotas miseráveis \\Nnas mãos tanto de você quanto do Rei.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 148,
-    "estilo": "Default",
-    "original": "{\\i1}So I had to change.",
-    "traduzido": "{\\i1}Então eu tive que mudar.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 149,
-    "estilo": "Default",
-    "original": "{\\i1}I couldn't just let things stand as they were.",
-    "traduzido": "{\\i1}Não podia apenas deixar as coisas como estavam.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 150,
-    "estilo": "Default",
-    "original": "{\\i1}Lady Astrea and everyone gifted me this...",
-    "traduzido": "{\\i1}Lady Astrea e todos me deram...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 151,
-    "estilo": "Default",
-    "original": "{\\i1\\t(1223,2224,1,\\3c&HFFFFFF&\\4c&HFFFFFF&)}the Alvs Justitia.",
-    "traduzido": "{\\i1\\t(1223,2224,1,\\3c&HFFFFFF&\\4c&HFFFFFF&)}os Alvs Justitia.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 152,
-    "estilo": "Default",
-    "original": "{\\i1}By using its sharp blade,",
-    "traduzido": "{\\i1}Ao usar sua lâmina afiada,",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 153,
-    "estilo": "Default",
-    "original": "{\\i1}I will claim victory this time!",
-    "traduzido": "{\\i1}Vou declarar vitória desta vez!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 154,
-    "estilo": "Default",
-    "original": "Surround that Elf, quickly!",
-    "traduzido": "Cercai aquela Elfa, rapidamente!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 155,
-    "estilo": "Default",
-    "original": "Einherjar!",
-    "traduzido": "Einherjar!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 156,
-    "estilo": "Default",
-    "original": "Heith! You would dare interfere in our duel?!",
-    "traduzido": "Heith! Você ousaria interferir em nosso duelo?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 157,
-    "estilo": "Default",
-    "original": "Your pride is of no concern to me.",
-    "traduzido": "Seu orgulho não é da minha conta.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 158,
-    "estilo": "Default",
-    "original": "Her Ladyship wants to have Bell.",
-    "traduzido": "Sua Senhora deseja ter Bell.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 159,
-    "estilo": "Default",
-    "original": "And our mission is to swiftly eliminate\\Nany potential threats that could interfere.",
-    "traduzido": "E nossa missão é eliminar rapidamente\\Nqualquer ameaça potencial que possa atrapalhar.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 160,
-    "estilo": "Default",
-    "original": "Am I wrong?!",
-    "traduzido": "Estou errado?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 161,
-    "estilo": "Default",
-    "original": "At times, single combat is not an option\\Nwhere warriors must meet their end.",
-    "traduzido": "Às vezes, o combate individual não é uma opção\\Nonde os guerreiros devem encontrar seu fim.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 162,
-    "estilo": "Default",
-    "original": "Despite these regrettable circumstances,\\Nthere is naught we can do but curse the Fates.",
-    "traduzido": " Apesar dessas circunstâncias lamentáveis,\\Nnão há nada que possamos fazer senão amaldiçoar os Destinos.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 163,
-    "estilo": "Default",
-    "original": "I'm going to use it, Lady Astrea.",
-    "traduzido": "Vou usar isso, Senhora Astrea.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 164,
-    "estilo": "Default",
-    "original": "Put an end to her, Einherjar!",
-    "traduzido": "Ponha um fim nela, Einherjar!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 165,
-    "estilo": "Default",
-    "original": "Astrea Record.",
-    "traduzido": "Astrea Record.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 166,
-    "estilo": "Default",
-    "original": "\"With obligation fulfilled,\\Nthe scales are brought to balance.\"",
-    "traduzido": "\"Com a obrigação cumprida,\\Nas balanças são equilibradas.\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 167,
-    "estilo": "Default",
-    "original": "She's casting a spell! Don't let her finish!",
-    "traduzido": "Ela está lançando um feitiço! Não deixe-a terminar!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 168,
-    "estilo": "Default",
-    "original": "Wh-What the hell?!",
-    "traduzido": "Q-Que diabos?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 169,
-    "estilo": "Default",
-    "original": "\"Bastion of order, crown of rectitude,\\Nlight of vanquishment.\"",
-    "traduzido": "\"Bastião da ordem, coroa da retidão,\\Nluz da vitória.\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 170,
-    "estilo": "Default",
-    "original": "\"In the name of the Goddess, let traces of stars be jot\\Nupon this land much like they rip through the Heavens.\"",
-    "traduzido": "\"Em nome da Deusa, que os rastros das estrelas sejam gravados\\Nnessa terra assim como eles rasgam os Céus.\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 171,
-    "estilo": "Default",
-    "original": "A barrier?! A star justitory?!",
-    "traduzido": "Uma barreira?! Uma justiça estelar?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 172,
-    "estilo": "Default",
-    "original": "\"Justice is passed down.\"",
-    "traduzido": "\"A justiça é transmitida.\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 173,
-    "estilo": "Default",
-    "original": "Agallis Arvesynth!",
-    "traduzido": "Agallis Arvesynth!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 174,
-    "estilo": "Default",
-    "original": "A flame enchantment?!",
-    "traduzido": "Um encantamento de chama?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 175,
-    "estilo": "Default",
-    "original": "That's impossible!",
-    "traduzido": "Isso é impossível!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 176,
-    "estilo": "Default",
-    "original": "Alise...",
-    "traduzido": "Alise...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 177,
-    "estilo": "Default",
-    "original": "Scarlet Harnel!",
-    "traduzido": "Escaravelha Harnel!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 178,
-    "estilo": "Default",
-    "original": "That magic belongs to Alise Lovell!",
-    "traduzido": "Essa mágica pertence a Alise Lovell!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 179,
-    "estilo": "Default",
-    "original": "Why the hell can you use it?!",
-    "traduzido": "Por que diabos você pode usá-la?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 180,
-    "estilo": "Default",
-    "original": "My journey ended.",
-    "traduzido": "Minha jornada terminou.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 181,
-    "estilo": "Default",
-    "original": "So I went to reunite with Lady Astrea,",
-    "traduzido": "Então fui me reunir com Senhora Astrea,",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 182,
-    "estilo": "Default",
-    "original": "to inherit the spirit of Alise and everyone else.",
-    "traduzido": "para herdar o espírito de Alise e de todos os outros.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 183,
-    "estilo": "Default",
-    "original": "Here we go, Alise.",
-    "traduzido": "Vamos embora, Alise.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 184,
-    "estilo": "Default",
-    "original": "Astrea Record.",
-    "traduzido": "Astrea Record.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 185,
-    "estilo": "Default",
-    "original": "{\\i1}It's a type of magic unique to Ryu that allow her\\Nto use the spells of her old comrades.",
-    "traduzido": "{\\i1}É um tipo de magia única dos Ryu que permite a ela\\Nusar os feitiços de seus antigos companheiros.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 186,
-    "estilo": "Default",
-    "original": "{\\i1}With my ichor serving as a mediary,\\Nshe became the successor to Alise's brand of justice.",
-    "traduzido": "{\\i1}Com meu íchor servindo como intermediário,\\Nela se tornou a sucessora da marca de justiça de Alise.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 187,
-    "estilo": "Default",
-    "original": "{\\i1}Even if Ryu converted to another Familia,",
-    "traduzido": "{\\i1}Mesmo que Ryu tenha mudado para outra Familia,",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 188,
-    "estilo": "Default",
-    "original": "{\\i1}the bond she shares with those girls will never fade.",
-    "traduzido": "{\\i1}a ligação dela com aquelas garotas nunca desaparecerá.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 189,
-    "estilo": "Default",
-    "original": "{\\i1}The just course of action in her eyes right now \\Nis stopping her friend.",
-    "traduzido": "{\\i1}O caminho justo em seus olhos agora \\Né deter sua amiga.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 190,
-    "estilo": "Default",
-    "original": "{\\i1}And considering that, I wish to illuminate her path\\Nto the future with the light of the stars.",
-    "traduzido": "{\\i1}E levando isso em conta, eu desejo iluminar seu caminho\\Npara o futuro com a luz das estrelas.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 191,
-    "estilo": "Default",
-    "original": "What in tarnation? Is that summoning magic?",
-    "traduzido": "O que é isso? É magia de invocação?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 192,
-    "estilo": "Default",
-    "original": "Is she just like the Thousand Elf?!",
-    "traduzido": "Ela é igual à Elfa Mil?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 193,
-    "estilo": "Default",
-    "original": "No, she hasn't summoned anything.",
-    "traduzido": "Não, ela não invocou nada.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 194,
-    "estilo": "Default",
-    "original": "This is a miracle of the Lower World\\Nthat goes beyond understanding.",
-    "traduzido": "Esse é um milagre do Mundo Inferior\\Nque ultrapassa a compreensão.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 195,
-    "estilo": "Default",
-    "original": "\"Justice is passed down.\"",
-    "traduzido": "\"A justiça é transmitida.\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 196,
-    "estilo": "Default",
-    "original": "\"Astrea Record.\"",
-    "traduzido": "\"Registro de Astrea\".",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 197,
-    "estilo": "Default",
-    "original": "In other words, these are the memories of the stars.",
-    "traduzido": "Em outras palavras, são as memórias das estrelas.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 198,
-    "estilo": "Default",
-    "original": "The Astrea Familia.",
-    "traduzido": "A Familia Astrea.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 199,
-    "estilo": "Default",
-    "original": "It's actually them. The Astrea Familia has returned!",
-    "traduzido": "Eles estão realmente aqui. A Familia Astrea retornou!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 200,
-    "estilo": "Default",
-    "original": "You can do it!",
-    "traduzido": "Você pode fazer isso!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 201,
-    "estilo": "Default",
-    "original": "\"Now in the skies of the distant forest,\"",
-    "traduzido": "\"Agora no céu da floresta distante,\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 202,
-    "estilo": "Default",
-    "original": "\"to the infinite stars mounted upon \\Nthe eternal firmament of night.\"",
-    "traduzido": "\"até às estrelas infinitas montadas \\Nno firmamento eterno da noite.\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 203,
-    "estilo": "Default",
-    "original": "Concurrent chanting?!",
-    "traduzido": "Canto concorrente?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 204,
-    "estilo": "Default",
-    "original": "Stop her!",
-    "traduzido": "Pare ela!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 205,
-    "estilo": "Default",
-    "original": "\"This fool doth entreat just once for\\Nthe divine protection of the stars' fire.\"",
-    "traduzido": "\"Este tolo pede apenas uma vez \\Na proteção divina do fogo das estrelas.\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 206,
-    "estilo": "Default",
-    "original": "\"Grant thy benevolent light to\\Nthe one who abandoned thee!\"",
-    "traduzido": "\"Concede tua luz benevolente a \\Naquele que te abandonou!\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 207,
-    "estilo": "Default",
-    "original": "Dammit, she's adept at spellcasting!",
-    "traduzido": "Diabos, ela é boa em lançar feitiços!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 208,
-    "estilo": "Default",
-    "original": "\"Come forth, wandering wind... my fellow drifter!\"",
-    "traduzido": "\"Apareça, vento errante... meu companheiro vagante!\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 209,
-    "estilo": "Default",
-    "original": "\"Cross the skies, speed through the wastelands!\"",
-    "traduzido": "\"Cruze os céus, passe pelas terras desoladas!\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 210,
-    "estilo": "Default",
-    "original": "\"Race more swiftly than any other!\"",
-    "traduzido": "\"Corra mais rápido do que qualquer outro!\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 211,
-    "estilo": "Default",
-    "original": "{\\i1}Formidable.",
-    "traduzido": "{\\i1}Impressionante.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 212,
-    "estilo": "Default",
-    "original": "Unbelievable! What am I looking at?!",
-    "traduzido": "Inacreditável! O que eu estou vendo?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 213,
-    "estilo": "Default",
-    "original": "\"Let the light of stardust occupy me\\Nand strike my enemy!\"",
-    "traduzido": "\"Deixe a luz de poeira de estrela me ocupar e \\Natingir meu inimigo!\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 214,
-    "estilo": "Default",
-    "original": "Luminous Wind!",
-    "traduzido": "Vento Luminoso!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 215,
-    "estilo": "Default",
-    "original": "Dodge it!",
-    "traduzido": "Esquive-se!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 216,
-    "estilo": "Default",
-    "original": "Whose magic is that?!",
-    "traduzido": "De quem é esse feitiço?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 217,
-    "estilo": "Default",
-    "original": "No way... it's Lady Ryu!",
-    "traduzido": "Não pode ser... é Lady Ryu!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 218,
-    "estilo": "Default",
-    "original": "Ryu. I knew you'd come.",
-    "traduzido": "Ryu. Eu sabia que você viria.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 219,
-    "estilo": "Default",
-    "original": "What the?",
-    "traduzido": "O quê?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 220,
-    "estilo": "Default",
-    "original": "An explosion?",
-    "traduzido": "Uma explosão?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 221,
-    "estilo": "Default",
-    "original": "Ms. Ryu...?",
-    "traduzido": "Sra. Ryu...?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 222,
-    "estilo": "Default",
-    "original": "{\\i1}I'm the only one still standing.",
-    "traduzido": "{\\i1}Eu sou o único ainda em pé.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 223,
-    "estilo": "Default",
-    "original": "You amplified the scope of your spell\\Nto make a wide-range attack.",
-    "traduzido": "Você ampliou o alcance do seu feitiço para \\Nfazer um ataque em área ampla.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 224,
-    "estilo": "Default",
-    "original": "It expunged the interlopers and\\Ncleared the battlefield of obstacles.",
-    "traduzido": "Ele expurgou os intrusos e \\Nlimpou o campo de batalha dos obstáculos.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 225,
-    "estilo": "Default",
-    "original": "{\\i1}Which leads me to surmise her true intent is...",
-    "traduzido": "{\\i1}Isso me leva a supor que sua verdadeira intenção é...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 226,
-    "estilo": "Default",
-    "original": "Bring it.",
-    "traduzido": "Traga isso.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 227,
-    "estilo": "Default",
-    "original": "You fool!",
-    "traduzido": "Você é louco!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 228,
-    "estilo": "Default",
-    "original": "Slow! Weak! Dull!",
-    "traduzido": "Lento! Fraco! Embotado!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 229,
-    "estilo": "Default",
-    "original": "{\\i1}That flame enchantment is most daunting,\\Nbut I already know how to counter it!",
-    "traduzido": "{\\i1}Essa chama encantada é bastante intimidante,\\Nmas eu já sei como contra-atacar!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 230,
-    "estilo": "Default",
-    "original": "{\\i1}Since the Gale Wind has not mastered her control \\Nof the flames, my best chance is to... forge ahead!",
-    "traduzido": "{\\i1}Desde que o Vento Galeiro não dominou seu controle \\Ndas chamas, minha melhor chance é... avançar!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 231,
-    "estilo": "Default",
-    "original": "Go ahead and wear the flames of your friends like armor!",
-    "traduzido": "Vá em frente e use as chamas dos seus amigos como armadura!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 232,
-    "estilo": "Default",
-    "original": "It won't be enough to scorch my Victim Abyss!",
-    "traduzido": "Não será suficiente para queimar meu Abismo Vítima!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 233,
-    "estilo": "Default",
-    "original": "Just because you've suffered defeat twice\\Ndoesn't mean it can't happen thrice, you whelp!",
-    "traduzido": "Mesmo que você tenha sofrido duas derrotas \\Nnão significa que não possa acontecer três vezes, seu filhote!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 234,
-    "estilo": "Default",
-    "original": "You still haven't even reached my feet!",
-    "traduzido": "Você ainda nem chegou aos meus pés!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 235,
-    "estilo": "Default",
-    "original": "{\\i1}I'm being thwarted?! How is this happening?!",
-    "traduzido": "{\\i1}Estou sendo impedido?! Como é isso possível?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 236,
-    "estilo": "Default",
-    "original": "{\\i1}No, it should be impossible for me to lose!",
-    "traduzido": "{\\i1}Não, deveria ser impossível eu perder!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 237,
-    "estilo": "Default",
-    "original": "Don't forget this is a War Game.",
-    "traduzido": "Não esqueça que isto é um Jogo de Guerra.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 238,
-    "estilo": "Default",
-    "original": "Tell me, just how many adventurers did you cut down\\Nwith that blade before fighting against me?",
-    "traduzido": "Diga-me, quantos aventureiros você cortou \\Ncom essa lâmina antes de lutar contra mim?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 239,
-    "estilo": "Flashback",
-    "original": "I need a favor, you guys.",
-    "traduzido": "Preciso de um favor, pessoal.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 240,
-    "estilo": "Flashback",
-    "original": "Go get beaten.",
-    "traduzido": "Vão se ferrar.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 241,
-    "estilo": "Default",
-    "original": "Inconceivable!",
-    "traduzido": "Inconcebível!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 242,
-    "estilo": "Default",
-    "original": "Cursed weapons can grant their user\\Nwith immense power, but it does come at a price.",
-    "traduzido": "Armas amaldiçoadas podem conceder seu usuário \\Ncom poder imenso, mas isso vem a um custo.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 243,
-    "estilo": "Default",
-    "original": "Primarily that means a drop in stats,\\Nand high stamina consumption!",
-    "traduzido": "Principalmente uma queda nas estatísticas,\\Ne alto consumo de stamina!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 244,
-    "estilo": "Default",
-    "original": "All the fallen warriors here \\Nhave shaved your powers away!",
-    "traduzido": "Todos os guerreiros caídos aqui \\Ntiraram suas forças!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 245,
-    "estilo": "Default",
-    "original": "They forced you to waste \\Nas much energy as they could!",
-    "traduzido": "Forçaram você a desperdiçar \\Ntoda a sua energia quanto puderam!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 246,
-    "estilo": "Default",
-    "original": "Ridiculous!",
-    "traduzido": "Ridículo!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 247,
-    "estilo": "Default",
-    "original": "It's coming together...",
-    "traduzido": "Está tudo se juntando...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 248,
-    "estilo": "Default",
-    "original": "It's all coming together!",
-    "traduzido": "Tudo está se juntando!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 249,
-    "estilo": "Default",
-    "original": "Lady Daphne, Lady Tsubaki, Master Ouka, everyone!",
-    "traduzido": "Dama Daphne, Dama Tsubaki, Mestre Ouka, todos!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 250,
-    "estilo": "Default",
-    "original": "All of the sacrifices they made\\Nto keep fighting are paying off!",
-    "traduzido": "Todos os sacrifícios que eles fizeram\\Npara continuar lutando estão dando certo agora!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 251,
-    "estilo": "Default",
-    "original": "I can't be sure who would win in a true one-on-one.",
-    "traduzido": "Não posso ter certeza de quem venceria em um verdadeiro duelo.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 252,
-    "estilo": "Default",
-    "original": "But right now?",
-    "traduzido": "Mas agora?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 253,
-    "estilo": "Default",
-    "original": "This battle is {\\i1}ours{\\i1} to win!",
-    "traduzido": "Esta batalha é {\\i1}nossa{\\i1} para vencer!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 254,
-    "estilo": "Default",
-    "original": "{\\i1}Alise Lovell.",
-    "traduzido": "{\\i1}Alise Lovell.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 255,
-    "estilo": "Default",
-    "original": "{\\i1}Your flames of justice... were something I once admired...",
-    "traduzido": "{\\i1}Seus flames de justiça... eram algo que eu admirava...",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 256,
-    "estilo": "Default",
-    "original": "Arvelia!",
-    "traduzido": "Arvelia!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 257,
-    "estilo": "Default",
-    "original": "That's one down!",
-    "traduzido": "Isso é um a menos!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 258,
-    "estilo": "Default",
-    "original": "Dainsleif has been defeated!",
-    "traduzido": "Dainsleif foi derrotado!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 259,
-    "estilo": "Default",
-    "original": "Hell yeah! Now that's more like it!",
-    "traduzido": "Sim! Agora isso é mais como deve ser!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 260,
-    "estilo": "Default",
-    "original": "They did it! They beat one!",
-    "traduzido": "Eles fizeram isso! Eles derrotaram um!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 261,
-    "estilo": "Default",
-    "original": "They wiped the floor with Dainsleif!",
-    "traduzido": "Eles varreram o chão com Dainsleif!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 262,
-    "estilo": "Default",
-    "original": "Keep it up, Liliruca Arde!",
-    "traduzido": "Continue assim, Liliruca Arde!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 263,
-    "estilo": "Default",
-    "original": "Howdya like that, suckers!",
-    "traduzido": "Como gostaram disso, idiotas!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 264,
-    "estilo": "Default",
-    "original": "This is huge! Yahoo!",
-    "traduzido": "Isso é enorme! Uhu!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 265,
-    "estilo": "Default",
-    "original": "We took down a first-class adventurer!",
-    "traduzido": "Tomamos um aventureiro de primeira classe!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 266,
-    "estilo": "Default",
-    "original": "We're still this! Now the tables can be turned!",
-    "traduzido": "Ainda somos isso! Agora as coisas podem virar!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 267,
-    "estilo": "Default",
-    "original": "First-class adventurers have\\Na huge impact on a War Game!",
-    "traduzido": "Os aventureiros de primeira classe \\Ntêm um grande impacto em uma Guerra de Jogos!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 268,
-    "estilo": "Default",
-    "original": "Their forces should start to falter after losing one!",
-    "traduzido": "Suas forças deveriam começar a fraquejar depois de perder um!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 269,
-    "estilo": "Default",
-    "original": "Then the chain of command breaks down\\Nand the battlefield turns into chaos!",
-    "traduzido": "Então a cadeia de comando desmorona\\Ne o campo de batalha vira em caos!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 270,
-    "estilo": "Default",
-    "original": "It's a crack in their armor! Our chance to win!",
-    "traduzido": "É uma rachadura na armadura deles! Nossa chance de vencer!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 271,
-    "estilo": "Default",
-    "original": "They beat Lord Hogni?!",
-    "traduzido": "Eles bateram no Lorde Hogni?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 272,
-    "estilo": "Default",
-    "original": "What should we do now?!",
-    "traduzido": "O que devemos fazer agora?!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 273,
-    "estilo": "Default",
-    "original": "Stop panicking!",
-    "traduzido": "Parem de entrar em pânico!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 274,
-    "estilo": "Default",
-    "original": "We are the Andhrímnir.",
-    "traduzido": "Somos os Andhrímnir.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 275,
-    "estilo": "Default",
-    "original": "No matter how many of our people fall,\\Nwe simply heal their wounds, slap them awake,",
-    "traduzido": "Sem importar quantos dos nossos caírem,\\Nsimplesmente curamos suas feridas, os acordamos,",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 276,
-    "estilo": "Default",
-    "original": "and send them straight back to the battlefield!",
-    "traduzido": "Enviar eles de volta para o campo de batalha!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 277,
-    "estilo": "Default",
-    "original": "Over and over! For as long as it takes!",
-    "traduzido": "Várias e várias vezes! Por quanto tempo for necessário!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 278,
-    "estilo": "Default",
-    "original": "I will treat Lord Hogni myself.",
-    "traduzido": "Eu mesmo tratarei Lorde Hogni.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 279,
-    "estilo": "Default",
-    "original": "The rest of you revive the Einherjar!",
-    "traduzido": "O resto de vocês revivam os Einherjar!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 280,
-    "estilo": "Default",
-    "original": "Yes ma'am!",
-    "traduzido": "Sim senhora!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 281,
-    "estilo": "Default",
-    "original": "{\\i1}Damn you, allied army!",
-    "traduzido": "{\\i1}Malditos sejam, exército aliado!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 282,
-    "estilo": "Default",
-    "original": "{\\i1}But Lord Hogni is the only one you've managed to beat.",
-    "traduzido": "{\\i1}Mas Lorde Hogni é o único que você conseguiu vencer.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 283,
-    "estilo": "Default",
-    "original": "{\\i1}And with our healing magic,\\Nhe'll be back on his feet in no time.",
-    "traduzido": "{\\i1}E com nossa mágica de cura,\\Nele estará de pé em um piscar de olhos.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 284,
-    "estilo": "Default",
-    "original": "{\\i1}I won't let you turn the tables on us.",
-    "traduzido": "{\\i1}Não deixarei você virar a mesa contra nós.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 285,
-    "estilo": "Default",
-    "original": "{\\i1}I will crush any hope you have.",
-    "traduzido": "{\\i1}Eu esmagarei qualquer esperança que você tenha.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 286,
-    "estilo": "Default",
-    "original": "{\\i1}All for Lady Freya!",
-    "traduzido": "{\\i1}Tudo pela Senhora Freya!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 287,
-    "estilo": "Default",
-    "original": "{\\i1}Our victory is still assured!",
-    "traduzido": "{\\i1} Nossa vitória ainda é garantida!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 288,
-    "estilo": "Default",
-    "original": "Huh?",
-    "traduzido": "Huh?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 289,
-    "estilo": "Default",
-    "original": "What?",
-    "traduzido": "O que?",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 290,
-    "estilo": "Default",
-    "original": "Fight evermore, my immortal lightning warriors.",
-    "traduzido": "Lute para sempre, meus guerreiros imortais de relâmpago.",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 291,
-    "estilo": "Default",
-    "original": "Caelus Hildr!",
-    "traduzido": "Caelus Hildr!",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 292,
-    "estilo": "Default",
-    "original": "Next time: \"Revenge\".",
-    "traduzido": "Próxima vez: \"Vingança\"",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 296,
-    "estilo": "Ep Title",
-    "original": "{\\an2\\t(3939,0,1,\\alpha&HFF&)\\pos(1644,816)}Astrea Record",
-    "traduzido": "{\\an2\\t(3939,0,1,\\alpha&HFF&)\\pos(1644,816)}Livro de Astrea",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 298,
-    "estilo": "Ep Title",
-    "original": "{\\an2\\fs60\\shad0\\blur0.5\\t(3939,0,1,\\alpha&HFF&)\\pos(1644,1024)}Inheritance",
-    "traduzido": "{\\an2\\fs60\\shad0\\blur0.5\\t(3939,0,1,\\alpha&HFF&)\\pos(1644,1024)}Herança",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 299,
-    "estilo": "Next Ep",
-    "original": "{\\pos(248.457,35.6)\\fs58\\bord1\\c&H000000&\\blur0.6}Next Time",
-    "traduzido": "{\\pos(248.457,35.6)\\fs58\\bord1\\c&H000000&\\blur0.6}Próxima Vez",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 300,
-    "estilo": "Next Ep",
-    "original": "{\\pos(248.457,35.6)\\fs58\\bord0\\shad0\\blur0.5}Next Time",
-    "traduzido": "{\\pos(248.457,35.6)\\fs58\\bord0\\shad0\\blur0.5}Próxima Vez",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 301,
-    "estilo": "Next Ep",
-    "original": "{\\pos(962,327)\\c&H000000&\\blur0.6}Revenge",
-    "traduzido": "{\\pos(962,327)\\c&H000000&\\blur0.6}Vingança",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 302,
-    "estilo": "Next Ep",
-    "original": "{\\fs92\\c&H000000&\\blur0.6\\pos(962,607)}Counterattack",
-    "traduzido": "{\\fs92\\c&H000000&\\blur0.6\\pos(962,607)}Contra-ataque",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 303,
-    "estilo": "Next Ep",
-    "original": "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Revenge",
-    "traduzido": "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Vingança",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  },
-  {
-    "indice": 304,
-    "estilo": "Next Ep",
-    "original": "{\\pos(962,607)\\fs92\\bord0\\shad0\\blur0.5}Counterattack",
-    "traduzido": "{\\pos(962,607)\\fs92\\bord0\\shad0\\blur0.5}Contra-ataque",
-    "idiomaOriginal": "en",
-    "idiomaTraduzido": "pt-br"
-  }
-]
+[ {
+  "indice" : 0,
+  "estilo" : "Default",
+  "original" : "The War Game between the Freya Familia and\\Nthe allied army is turning out to be pretty one-sided!",
+  "traduzido" : "O War Game entre a Família Freya e \\No exército aliado está se mostrando bastante unilateral!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 1,
+  "estilo" : "Default",
+  "original" : "The allies' biggest hitter, Rabbit's Foot, \\Nis currently getting steamrolled by the King, Ottarl!",
+  "traduzido" : "O maior trunfo dos aliados, Rabbit's Foot, \\Nestá sendo atropelado pelo Rei, Ottarl!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 2,
+  "estilo" : "Default",
+  "original" : "There's just no stopping Orario's most powerful Familia!",
+  "traduzido" : "Não há como deter a Familia mais poderosa de Orario!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 3,
+  "estilo" : "Default",
+  "original" : "But jeez, I think they've made their point!",
+  "traduzido" : "Mas sério, eu acho que eles já provaram o suficiente!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 4,
+  "estilo" : "Default",
+  "original" : "Somebody stop this horror show!",
+  "traduzido" : "Alguém pare esse espetáculo horrível!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 5,
+  "estilo" : "Default",
+  "original" : "Oh, Bell...",
+  "traduzido" : "Ah, Bell...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 6,
+  "estilo" : "Default",
+  "original" : "Master Bell...",
+  "traduzido" : "Mestre Bell...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 7,
+  "estilo" : "Default",
+  "original" : "Horn... I detest the way that you mirror me.",
+  "traduzido" : "Chifre... Eu detesto a maneira como você me imita.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 8,
+  "estilo" : "Default",
+  "original" : "Wrap this up already!",
+  "traduzido" : "Acabe logo com isso!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 9,
+  "estilo" : "Default",
+  "original" : "Go and tell Hedin that he needs\\Nto end the War Game now!",
+  "traduzido" : "Vá dizer para Hedin que ele precisa \\Nterminar o jogo da guerra agora!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 10,
+  "estilo" : "Default",
+  "original" : "Uh-oh!",
+  "traduzido" : "Ah-ah!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 11,
+  "estilo" : "Default",
+  "original" : "Here comes trouble!",
+  "traduzido" : "Lá vem problema!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 12,
+  "estilo" : "Default",
+  "original" : "The Freya Familia goes on the offensive!",
+  "traduzido" : "A Familia de Freya vai para o ataque!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 13,
+  "estilo" : "Default",
+  "original" : "A squadron led by Vana Freya is\\Nnow rushing towards the eastern side!",
+  "traduzido" : "Um esquadrão liderado por Vana Freya está \\Ncorrendo agora em direção ao lado leste!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 14,
+  "estilo" : "Default",
+  "original" : "They're invading the ruins\\Nwhere the allies' Gods are hiding!",
+  "traduzido" : "Eles estão invadindo as ruínas \\Nonde os Deuses aliados estão se escondendo!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 15,
+  "estilo" : "Default",
+  "original" : "You have to run for it, Lady Hestia!",
+  "traduzido" : "Tem que correr, Senhora Hestia!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 16,
+  "estilo" : "Default",
+  "original" : "Okay, you got us!",
+  "traduzido" : "Tudo bem, você nos pegou!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 17,
+  "estilo" : "Default",
+  "original" : "We surrender!",
+  "traduzido" : "Nos rendemos!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 18,
+  "estilo" : "Default",
+  "original" : "We wanna side with Lady Freya! Comprende?",
+  "traduzido" : "Queremos ficar do lado da Senhora Freya! Entende?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 19,
+  "estilo" : "Default",
+  "original" : "Shut up.",
+  "traduzido" : "Cale a boca.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 20,
+  "estilo" : "Default",
+  "original" : "The Gods Magni and Modi are both out!",
+  "traduzido" : "Os deuses Magni e Modi estão ambos fora!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 21,
+  "estilo" : "Default",
+  "original" : "Quickly followed by Ogma, Serket, and Sobek!",
+  "traduzido" : "Seguidos rapidamente por Ogma, Serket e Sobek!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 22,
+  "estilo" : "Default",
+  "original" : "The allies' Gods are dropping like flies!",
+  "traduzido" : "Os deuses aliados estão caindo como moscas!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 23,
+  "estilo" : "Default",
+  "original" : "Yikes! Looks like Soma has now been found, too!",
+  "traduzido" : "Ai! Parece que Soma também foi encontrado!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 24,
+  "estilo" : "Default",
+  "original" : "The Familia members of any God that has been \\Nknocked out can no longer participate in the War Game.",
+  "traduzido" : "Os membros da Familia de qualquer deus que tenha sido \\Nderrotado não podem mais participar do Jogo de Guerra.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 25,
+  "estilo" : "Default",
+  "original" : "Which means the allied army has just lost \\Na huge chunk of their forces!",
+  "traduzido" : "O que significa que o exército aliado acabou de perder \\Numa grande parte de suas forças!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 26,
+  "estilo" : "Default",
+  "original" : "Things were already looking bad,\\Nbut now they're even worse!",
+  "traduzido" : "As coisas já estavam ruins,\\Nmas agora estão ainda piores!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 27,
+  "estilo" : "Default",
+  "original" : "Get out of here, Hestia!",
+  "traduzido" : "Saia daqui, Hestia!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 28,
+  "estilo" : "Default",
+  "original" : "They'll find you sooner or later if you stay put!",
+  "traduzido" : "Eles vão te encontrar mais cedo ou mais tarde se você ficar parado!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 29,
+  "estilo" : "Default",
+  "original" : "Go west! Head for the frontlines!",
+  "traduzido" : "Vá para o oeste! Vá para a linha de frente!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 30,
+  "estilo" : "Default",
+  "original" : "We lose all chance of winning if they find you!",
+  "traduzido" : "Perderemos todas as chances de vitória se eles te encontrarem!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 31,
+  "estilo" : "Default",
+  "original" : "Okay, but, what about you?!",
+  "traduzido" : "Tudo bem, mas o que sobre você?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 32,
+  "estilo" : "Default",
+  "original" : "I'll act as a decoy!",
+  "traduzido" : "Eu vou acting como isca!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 33,
+  "estilo" : "Default",
+  "original" : "Now hurry and go,\\Nwhile Takemikazuchi is still holding them off!",
+  "traduzido" : "Agora vá embora,\\Nenquanto Takemikazuchi ainda está os segurando!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 34,
+  "estilo" : "Default",
+  "original" : "You'll have to do better than that!",
+  "traduzido" : "Você vai ter que fazer melhor do que isso!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 35,
+  "estilo" : "Default",
+  "original" : "Thanks!",
+  "traduzido" : "Obrigado!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 36,
+  "estilo" : "Default",
+  "original" : "I found one!",
+  "traduzido" : "Encontrei um!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 37,
+  "estilo" : "Default",
+  "original" : "Everyone attack at once!",
+  "traduzido" : "Todos ataquem ao mesmo tempo!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 38,
+  "estilo" : "Default",
+  "original" : "You can't beat me with brute force!",
+  "traduzido" : "Não pode me vencer com força bruta!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 39,
+  "estilo" : "Default",
+  "original" : "And down goes Goddess Hephaistos!",
+  "traduzido" : "E aí vai a deusa He",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 40,
+  "estilo" : "Default",
+  "original" : "Uh-oh!",
+  "traduzido" : "Ah-ah!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 41,
+  "estilo" : "Default",
+  "original" : "God Takemikazuchi has finally met his match, too!",
+  "traduzido" : "Deus Takemikazuchi finalmente encontrou seu par!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 42,
+  "estilo" : "Default",
+  "original" : "The Gods Dellingr and Ratri are also out.",
+  "traduzido" : "Os deuses Dellingr e Ratri também estão fora.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 43,
+  "estilo" : "Default",
+  "original" : "The power of Vana Freya and\\Nthe Einherjar is simply overwhelming!",
+  "traduzido" : "O poder de Vana Freya e \\Ndos Einherjar é simplesmente esmagador!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 44,
+  "estilo" : "Default",
+  "original" : "Not to mention their speed!",
+  "traduzido" : "Sem mencionar sua velocidade!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 45,
+  "estilo" : "Default",
+  "original" : "Out of the 46 Familia that comprised the allied army,\\Nthere are now only four remaining!",
+  "traduzido" : "Das 46 Famílias que compunham o exército aliado, \\Nagora restam apenas quatro!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 46,
+  "estilo" : "Default",
+  "original" : "Defeat seems imminent if those \\Nfour Gods can't keep their flowers safe.",
+  "traduzido" : "A derrota parece iminente se esses \\Nquatro Deuses não conseguirem manter suas flores seguras.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 47,
+  "estilo" : "Default",
+  "original" : "The game will end!",
+  "traduzido" : "O jogo vai acabar!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 48,
+  "estilo" : "Default",
+  "original" : "How are you gonna stay in this, allied army?!",
+  "traduzido" : "Como você vai ficar nessa, exército aliado?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 49,
+  "estilo" : "Default",
+  "original" : "Just as expected.",
+  "traduzido" : "Como esperado.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 50,
+  "estilo" : "Default",
+  "original" : "{\\i1}This was the natural conclusion when you consider\\Nhow much military superiority their side has.",
+  "traduzido" : "{\\i1}Esta foi a conclusão natural quando se considera\\Nquantas superioridade militar eles têm.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 51,
+  "estilo" : "Default",
+  "original" : "{\\i1}Which means there's no point in panicking just yet.",
+  "traduzido" : "{\\i1}Significa que ainda não há razão para entrar em pânico.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 52,
+  "estilo" : "Default",
+  "original" : "{\\i1}The plan is in place.",
+  "traduzido" : "{\\i1}O plano está pronto.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 53,
+  "estilo" : "Default",
+  "original" : "{\\i1}The preparations are done.",
+  "traduzido" : "{\\i1}As preparações estão feitas.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 54,
+  "estilo" : "Default",
+  "original" : "{\\i1}All we need is one successful push to throw them\\Noff balance, then the tables will turn!",
+  "traduzido" : "{\\i1}Tudo o que precisamos é de uma investida bem-sucedida para desestabilizá-los, \\Ne o jogo vai virar!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 55,
+  "estilo" : "Default",
+  "original" : "{\\i1}It's impossible for a nobody like me \\Nto compete against the sharp mind of Master Hedin.",
+  "traduzido" : "{\\i1}É impossível para alguém como eu \\Ncompetir contra a mente afiada do Mestre Hedin.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 56,
+  "estilo" : "Default",
+  "original" : "{\\i1}So I have to consider his tactics,\\Nfighting style, and thought patterns...",
+  "traduzido" : "{\\i1}Então tenho que considerar suas táticas,\\Nestilo de luta e padrões de pensamento...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 57,
+  "estilo" : "Default",
+  "original" : "{\\i1}and take advantage of whatever I can!",
+  "traduzido" : "{\\i1}e aproveitar qualquer vantagem que puder!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 58,
+  "estilo" : "Default",
+  "original" : "{\\i1}Master Hedin is positioned awfully\\Nclose to their rearguard...",
+  "traduzido" : "{\\i1}O Mestre Hedin está posicionado incrivelmente \\Nperto da retaguarda deles...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 59,
+  "estilo" : "Default",
+  "original" : "{\\i1}Oh my gosh!",
+  "traduzido" : "{\\i1}Meu Deus!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 60,
+  "estilo" : "Default",
+  "original" : "Please hang in there, Lady Daphne!",
+  "traduzido" : "Por favor, aguente firme, Senhora Daphne!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 61,
+  "estilo" : "Default",
+  "original" : "Daphne!",
+  "traduzido" : "Daphne!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 62,
+  "estilo" : "Default",
+  "original" : "Our victory is inevitable.",
+  "traduzido" : "A nossa vitória é inevitável.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 63,
+  "estilo" : "Default",
+  "original" : "Yet you resist. In a fruitless endeavor.",
+  "traduzido" : "No entanto, você resiste. Em uma empreitada infrutífera.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 64,
+  "estilo" : "Default",
+  "original" : "Yeah, well, I'm not dead yet.",
+  "traduzido" : "Bem, eu ainda não estou morto.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 65,
+  "estilo" : "Default",
+  "original" : "Oh, Daphne...",
+  "traduzido" : "Ah, Daphne...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 66,
+  "estilo" : "Default",
+  "original" : "Cassandra! Heal me!",
+  "traduzido" : "Cassandra! Cure-me!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 67,
+  "estilo" : "Default",
+  "original" : "Soul Light!",
+  "traduzido" : "Luz da Alma!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 68,
+  "estilo" : "Default",
+  "original" : "I'm healing too slowly...",
+  "traduzido" : "Estou me curando muito devagar...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 69,
+  "estilo" : "Default",
+  "original" : "That cursed weapon of yours... is really a pain in the ass.",
+  "traduzido" : "Essa arma amaldiçoada sua... é mesmo um incômodo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 70,
+  "estilo" : "Default",
+  "original" : "There is something peculiar about your body\\Nand the way it's been weathering all my blows.",
+  "traduzido" : "Há algo peculiar em seu corpo \\Ne na maneira como ele tem resistido a todos os meus golpes.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 71,
+  "estilo" : "Default",
+  "original" : "Laurus Wreath.",
+  "traduzido" : "Laurus Coroa.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 72,
+  "estilo" : "Default",
+  "original" : "It's a skill that boosts my endurance.",
+  "traduzido" : "É uma habilidade que aumenta minha resistência.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 73,
+  "estilo" : "Default",
+  "original" : "Although, I really hate using it \\Nsince it makes my skin all hard and woody.",
+  "traduzido" : "Embora eu realmente odeie usar isso, \\Njá que deixa minha pele toda dura e rígida.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 74,
+  "estilo" : "Default",
+  "original" : "Just more grief that Lord Apollon caused me.",
+  "traduzido" : "Apenas mais sofrimento que o Senhor Apollon me causou.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 75,
+  "estilo" : "Default",
+  "original" : "Keep this up and you'll devolve into\\Na human-faced sapling that is bereft of speech.",
+  "traduzido" : "Continue assim e você se transformará em \\Numa muda com rosto humano incapaz de falar.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 76,
+  "estilo" : "Default",
+  "original" : "To what end do you brave\\Nthrough such hell and brimstone?",
+  "traduzido" : "Com que propósito você enfrenta \\Ntamanho inferno?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 77,
+  "estilo" : "Default",
+  "original" : "That's easy.",
+  "traduzido" : "Isso é fácil.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 78,
+  "estilo" : "Default",
+  "original" : "My job is to buy as much time as possible by keeping\\Nfirst-class adventurers like you busy.",
+  "traduzido" : "Meu trabalho é ganhar o máximo de tempo possível mantendo \\Naventureiros de primeira classe como você ocupados.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 79,
+  "estilo" : "Default",
+  "original" : "That's why I had everybody else\\Nthrow themselves at you.",
+  "traduzido" : "É por isso que fiz com que todos os outros \\Nse jogassem contra você.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 80,
+  "estilo" : "Default",
+  "original" : "What good would I be if I didn't dig my heels in?!",
+  "traduzido" : "O que eu seria se não lutasse com unhas e dentes?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 81,
+  "estilo" : "Default",
+  "original" : "How foolhardy.",
+  "traduzido" : "Como pode ser tão imprudente?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 82,
+  "estilo" : "Default",
+  "original" : "Yet also worthy of my respect.",
+  "traduzido" : "No entanto, também merece minha respeito.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 83,
+  "estilo" : "Default",
+  "original" : "Therefore... I shall end you!",
+  "traduzido" : "Portanto... Eu vou acabar com você!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 84,
+  "estilo" : "Default",
+  "original" : "Oh no, Daphne!",
+  "traduzido" : "Oh não, Daphne!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 85,
+  "estilo" : "Default",
+  "original" : "Cassandra... heal me again...",
+  "traduzido" : "Cassandra... cure-me novamente...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 86,
+  "estilo" : "Default",
+  "original" : "Save your strength! I'll get right on it!",
+  "traduzido" : "Poupe suas forças! Eu cuidarei disso agora mesmo!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 87,
+  "estilo" : "Default",
+  "original" : "Don't move.",
+  "traduzido" : "Não se mova.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 88,
+  "estilo" : "Default",
+  "original" : "I will judge any attempt to cast magic\\Nas further resistance and cut you both to pieces.",
+  "traduzido" : "Considerarei qualquer tentativa de conjurar magia \\Ncomo mais resistência e cortarei vocês dois em pedaços.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 89,
+  "estilo" : "Default",
+  "original" : "Only if you lay down your weapons and\\Nsurrender will I allow you to heal her.",
+  "traduzido" : "Só se você baixar suas armas e \\Nse render.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 90,
+  "estilo" : "Default",
+  "original" : "Ignore him and heal me.",
+  "traduzido" : "Ignore-o e cure-me.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 91,
+  "estilo" : "Default",
+  "original" : "Hurry.",
+  "traduzido" : "Corra.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 92,
+  "estilo" : "Default",
+  "original" : "I shall wait 3 seconds.",
+  "traduzido" : "Eu vou esperar 3 segundos.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 93,
+  "estilo" : "Default",
+  "original" : "Three, two...",
+  "traduzido" : "Três, dois...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 94,
+  "estilo" : "Default",
+  "original" : "We surrender!",
+  "traduzido" : "Nos rendemos!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 95,
+  "estilo" : "Default",
+  "original" : "Please spare Daphne!",
+  "traduzido" : "Por favor, poupe Daphne!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 96,
+  "estilo" : "Default",
+  "original" : "You dummy.",
+  "traduzido" : "Você é burro.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 97,
+  "estilo" : "Default",
+  "original" : "Now there are none left to oppose us here.",
+  "traduzido" : "Agora não há ninguém para nos enfrentar aqui.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 98,
+  "estilo" : "Default",
+  "original" : "This consumed more of my time than I had anticipated.",
+  "traduzido" : "Isso consumiu mais do meu tempo do que eu havia previsto.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 99,
+  "estilo" : "Default",
+  "original" : "I'm sorry.",
+  "traduzido" : "Eu sinto muito.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 100,
+  "estilo" : "Default",
+  "original" : "I wish I wasn't so useless.",
+  "traduzido" : "Eu gostaria de não ser tão inútil.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 101,
+  "estilo" : "Default",
+  "original" : "I couldn't do anything to change the course of fate.",
+  "traduzido" : "Eu não pude fazer nada para mudar o curso do destino.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 102,
+  "estilo" : "Default",
+  "original" : "The wind...?",
+  "traduzido" : "O vento...?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 103,
+  "estilo" : "Default",
+  "original" : "{\\i1}But the wind will blow in our favor!",
+  "traduzido" : "{\\i1}Mas o vento soprará a nosso favor!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 104,
+  "estilo" : "Default",
+  "original" : "{\\i1}\"Please stop.\"",
+  "traduzido" : "{\\i1}\"Por favor, pare.\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 105,
+  "estilo" : "Default",
+  "original" : "{\\i1}\"I've had enough.\"",
+  "traduzido" : "{\\i1}\"Já basta.\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 106,
+  "estilo" : "Default",
+  "original" : "{\\i1}How long has it been since I last pled for mercy like that?",
+  "traduzido" : "{\\i1}Há quanto tempo não imploro misericórdia assim?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 107,
+  "estilo" : "Default",
+  "original" : "{\\i1}I can't win.",
+  "traduzido" : "{\\i1}Eu não posso vencer.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 108,
+  "estilo" : "Default",
+  "original" : "{\\i1}It's impossible for me to beat Mr. Ottarl.",
+  "traduzido" : "{\\i1}É impossível para mim derrotar o Sr. Ottarl.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 109,
+  "estilo" : "Default",
+  "original" : "{\\i1}But...",
+  "traduzido" : "{\\i1}Mas...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 110,
+  "estilo" : "Default",
+  "original" : "Save me! Mr. Bell!",
+  "traduzido" : "Salve-me! Sr. Bell!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 111,
+  "estilo" : "Default",
+  "original" : "{\\i1}I made a promise.",
+  "traduzido" : "{\\i1}Eu fiz uma promessa.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 112,
+  "estilo" : "Default",
+  "original" : "{\\i1}A promise to save her.",
+  "traduzido" : "{\\i1}Uma promessa para salvá-la.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 113,
+  "estilo" : "Default",
+  "original" : "Unless I beat you...",
+  "traduzido" : "A menos que...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 114,
+  "estilo" : "Default",
+  "original" : "I can't reach Lady Freya.",
+  "traduzido" : "eu derrote você...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 115,
+  "estilo" : "Default",
+  "original" : "That's right.",
+  "traduzido" : "Não posso alcançar a Senhora Freya.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 116,
+  "estilo" : "Default",
+  "original" : "And I can't see Ms. Syr.",
+  "traduzido" : "Isso mesmo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 117,
+  "estilo" : "Default",
+  "original" : "That's right.",
+  "traduzido" : "Não posso alcançar a Senhora Freya.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 118,
+  "estilo" : "Default",
+  "original" : "Then...",
+  "traduzido" : "E não posso ver a Sra. Syr.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 119,
+  "estilo" : "Default",
+  "original" : "you're going down.",
+  "traduzido" : "Então...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 120,
+  "estilo" : "Default",
+  "original" : "Bring it on.",
+  "traduzido" : "você vai cair.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 121,
+  "estilo" : "Default",
+  "original" : "Go crazy.",
+  "traduzido" : "Mande ver.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 122,
+  "estilo" : "Default",
+  "original" : "{\\i1}It's blowing...",
+  "traduzido" : "{\\i1}Está soprando...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 123,
+  "estilo" : "Default",
+  "original" : "{\\i1}The Gale Wind has come!",
+  "traduzido" : "{\\i1}O Vento Furioso chegou!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 124,
+  "estilo" : "Default",
+  "original" : "Who goes there?",
+  "traduzido" : "Quem é você?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 125,
+  "estilo" : "Default",
+  "original" : "I've come to join the fray.",
+  "traduzido" : "Eu vim me juntar à batalha.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 126,
+  "estilo" : "Default",
+  "original" : "I hope you're prepared, brethren.",
+  "traduzido" : "Espero que estejam preparados, irmãos.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 127,
+  "estilo" : "Default",
+  "original" : "Prepared for what, pray tell?",
+  "traduzido" : "Preparados para quê, posso perguntar?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 128,
+  "estilo" : "Default",
+  "original" : "To fall by my blade.",
+  "traduzido" : "Para cair pela minha lâmina.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 129,
+  "estilo" : "Default",
+  "original" : "Fat chance!",
+  "traduzido" : "Pouca chance!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 130,
+  "estilo" : "Default",
+  "original" : "H-Holy smokes!",
+  "traduzido" : "- H-Holy smokes!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 131,
+  "estilo" : "Default",
+  "original" : "{\\an8}Unbelievable! What's happening?!",
+  "traduzido" : "{\\an8}Inacreditável! O que está acontecendo?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 132,
+  "estilo" : "Default",
+  "original" : "Who is this adventurer?!",
+  "traduzido" : "Quem é esse aventureiro?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 133,
+  "estilo" : "Default",
+  "original" : "Guess they needed somebody to lean-on!",
+  "traduzido" : "Acho que eles precisavam de alguém para se apoiar!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 134,
+  "estilo" : "Default",
+  "original" : "Oh, come on. That joke's gone stale!",
+  "traduzido" : "Oh, por favor. Essa piada já era velha!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 135,
+  "estilo" : "Default",
+  "original" : "No way, I thought the Gale Wind\\Nwas supposed to be dead!",
+  "traduzido" : "De jeito nenhum, eu pensei que o Vento Furioso \\Nestava morto!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 136,
+  "estilo" : "Default",
+  "original" : "{\\i1}She's matching me blow for blow.",
+  "traduzido" : "{\\i1}Ela está me enfrentando golpe por golpe.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 137,
+  "estilo" : "Default",
+  "original" : "{\\i1}This is nothing like back when\\Nwe fought at the Goddess Festival!",
+  "traduzido" : "{\\i1}Isso não é nada como quando \\Nlutamos na Festa das Deusas!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 138,
+  "estilo" : "Default",
+  "original" : "You've gotten stronger! Level 6 strong!",
+  "traduzido" : "Você ficou mais forte! Nível 6 de força!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 139,
+  "estilo" : "Default",
+  "original" : "But there's no way you could have gone up 2 levels!",
+  "traduzido" : "Mas não há maneira de você ter subido 2 níveis!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 140,
+  "estilo" : "Default",
+  "original" : "It's possible!",
+  "traduzido" : "É possível!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 141,
+  "estilo" : "Default",
+  "original" : "More than possible!",
+  "traduzido" : "Mais do que possível!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 142,
+  "estilo" : "Default",
+  "original" : "Ryu has fought her fair share.",
+  "traduzido" : "Ryu já lutou bastante.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 143,
+  "estilo" : "Default",
+  "original" : "Ever since the day that ended Orario's dark age!",
+  "traduzido" : "Desde o dia que pôs fim à era sombria de Orario!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 144,
+  "estilo" : "Default",
+  "original" : "She has a long history of combat that's filled\\Nwith outstanding accomplishments!",
+  "traduzido" : "Ela tem um longo histórico de combate que está cheio \\Nde conquistas notáveis!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 145,
+  "estilo" : "Default",
+  "original" : "Five years ago, she was already\\Ntop tier among all the level 4s.",
+  "traduzido" : "Há cinco anos, ela já era \\Nda elite entre todos os níveis 4.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 146,
+  "estilo" : "Default",
+  "original" : "It's hardly surprising she'd be\\Nthe first person to achieve a double rank up!",
+  "traduzido" : "É pouco surpreendente que ela seria \\Na primeira pessoa a alcançar uma promoção duplo!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 147,
+  "estilo" : "Default",
+  "original" : "{\\i1}I was powerless. I suffered miserable defeats\\Nat the hands of both you and the King.",
+  "traduzido" : "{\\i1}Eu estava impotente. Sofri derrotas miseráveis \\Nnas mãos tanto de você quanto do Rei.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 148,
+  "estilo" : "Default",
+  "original" : "{\\i1}So I had to change.",
+  "traduzido" : "{\\i1}Então eu tive que mudar.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 149,
+  "estilo" : "Default",
+  "original" : "{\\i1}I couldn't just let things stand as they were.",
+  "traduzido" : "{\\i1}Não podia apenas deixar as coisas como estavam.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 150,
+  "estilo" : "Default",
+  "original" : "{\\i1}Lady Astrea and everyone gifted me this...",
+  "traduzido" : "{\\i1}Lady Astrea e todos me deram...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 151,
+  "estilo" : "Default",
+  "original" : "{\\i1\\t(1223,2224,1,\\3c&HFFFFFF&\\4c&HFFFFFF&)}the Alvs Justitia.",
+  "traduzido" : "{\\i1\\t(1223,2224,1,\\3c&HFFFFFF&\\4c&HFFFFFF&)}os Alvs Justitia.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 152,
+  "estilo" : "Default",
+  "original" : "{\\i1}By using its sharp blade,",
+  "traduzido" : "{\\i1}Ao usar sua lâmina afiada,",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 153,
+  "estilo" : "Default",
+  "original" : "{\\i1}I will claim victory this time!",
+  "traduzido" : "{\\i1}Vou declarar vitória desta vez!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 154,
+  "estilo" : "Default",
+  "original" : "Surround that Elf, quickly!",
+  "traduzido" : "Cercai aquela Elfa, rapidamente!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 155,
+  "estilo" : "Default",
+  "original" : "Einherjar!",
+  "traduzido" : "Einherjar!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 156,
+  "estilo" : "Default",
+  "original" : "Heith! You would dare interfere in our duel?!",
+  "traduzido" : "Heith! Você ousaria interferir em nosso duelo?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 157,
+  "estilo" : "Default",
+  "original" : "Your pride is of no concern to me.",
+  "traduzido" : "Seu orgulho não é da minha conta.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 158,
+  "estilo" : "Default",
+  "original" : "Her Ladyship wants to have Bell.",
+  "traduzido" : "Sua Senhora deseja ter Bell.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 159,
+  "estilo" : "Default",
+  "original" : "And our mission is to swiftly eliminate\\Nany potential threats that could interfere.",
+  "traduzido" : "E nossa missão é eliminar rapidamente\\Nqualquer ameaça potencial que possa atrapalhar.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 160,
+  "estilo" : "Default",
+  "original" : "Am I wrong?!",
+  "traduzido" : "Estou errado?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 161,
+  "estilo" : "Default",
+  "original" : "At times, single combat is not an option\\Nwhere warriors must meet their end.",
+  "traduzido" : "Às vezes, o combate individual não é uma opção\\Nonde os guerreiros devem encontrar seu fim.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 162,
+  "estilo" : "Default",
+  "original" : "Despite these regrettable circumstances,\\Nthere is naught we can do but curse the Fates.",
+  "traduzido" : " Apesar dessas circunstâncias lamentáveis,\\Nnão há nada que possamos fazer senão amaldiçoar os Destinos.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 163,
+  "estilo" : "Default",
+  "original" : "I'm going to use it, Lady Astrea.",
+  "traduzido" : "Vou usar isso, Senhora Astrea.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 164,
+  "estilo" : "Default",
+  "original" : "Put an end to her, Einherjar!",
+  "traduzido" : "Ponha um fim nela, Einherjar!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 165,
+  "estilo" : "Default",
+  "original" : "Astrea Record.",
+  "traduzido" : "Registro de Astrea.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 166,
+  "estilo" : "Default",
+  "original" : "\"With obligation fulfilled,\\Nthe scales are brought to balance.\"",
+  "traduzido" : "\"Com a obrigação cumprida,\\Nas balanças são equilibradas.\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 167,
+  "estilo" : "Default",
+  "original" : "She's casting a spell! Don't let her finish!",
+  "traduzido" : "Ela está lançando um feitiço! Não deixe-a terminar!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 168,
+  "estilo" : "Default",
+  "original" : "Wh-What the hell?!",
+  "traduzido" : "Q-Que diabos?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 169,
+  "estilo" : "Default",
+  "original" : "\"Bastion of order, crown of rectitude,\\Nlight of vanquishment.\"",
+  "traduzido" : "\"Bastião da ordem, coroa da retidão,\\Nluz da vitória.\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 170,
+  "estilo" : "Default",
+  "original" : "\"In the name of the Goddess, let traces of stars be jot\\Nupon this land much like they rip through the Heavens.\"",
+  "traduzido" : "\"Em nome da Deusa, que os rastros das estrelas sejam gravados\\Nnessa terra assim como eles rasgam os Céus.\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 171,
+  "estilo" : "Default",
+  "original" : "A barrier?! A star justitory?!",
+  "traduzido" : "Uma barreira?! Uma justiça estelar?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 172,
+  "estilo" : "Default",
+  "original" : "\"Justice is passed down.\"",
+  "traduzido" : "\"A justiça é transmitida.\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 173,
+  "estilo" : "Default",
+  "original" : "Agallis Arvesynth!",
+  "traduzido" : "Agallis Arvesynth!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 174,
+  "estilo" : "Default",
+  "original" : "A flame enchantment?!",
+  "traduzido" : "Um encantamento de chama?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 175,
+  "estilo" : "Default",
+  "original" : "That's impossible!",
+  "traduzido" : "Isso é impossível!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 176,
+  "estilo" : "Default",
+  "original" : "Alise...",
+  "traduzido" : "Alise...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 177,
+  "estilo" : "Default",
+  "original" : "Scarlet Harnel!",
+  "traduzido" : "Escaravelha Harnel!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 178,
+  "estilo" : "Default",
+  "original" : "That magic belongs to Alise Lovell!",
+  "traduzido" : "Essa mágica pertence a Alise Lovell!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 179,
+  "estilo" : "Default",
+  "original" : "Why the hell can you use it?!",
+  "traduzido" : "Por que diabos você pode usá-la?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 180,
+  "estilo" : "Default",
+  "original" : "My journey ended.",
+  "traduzido" : "Minha jornada terminou.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 181,
+  "estilo" : "Default",
+  "original" : "So I went to reunite with Lady Astrea,",
+  "traduzido" : "Então fui me reunir com Senhora Astrea,",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 182,
+  "estilo" : "Default",
+  "original" : "to inherit the spirit of Alise and everyone else.",
+  "traduzido" : "para herdar o espírito de Alise e de todos os outros.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 183,
+  "estilo" : "Default",
+  "original" : "Here we go, Alise.",
+  "traduzido" : "Vamos embora, Alise.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 184,
+  "estilo" : "Default",
+  "original" : "Astrea Record.",
+  "traduzido" : "Registro de Astrea.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 185,
+  "estilo" : "Default",
+  "original" : "{\\i1}It's a type of magic unique to Ryu that allow her\\Nto use the spells of her old comrades.",
+  "traduzido" : "{\\i1}É um tipo de magia única dos Ryu que permite a ela\\Nusar os feitiços de seus antigos companheiros.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 186,
+  "estilo" : "Default",
+  "original" : "{\\i1}With my ichor serving as a mediary,\\Nshe became the successor to Alise's brand of justice.",
+  "traduzido" : "{\\i1}Com meu íchor servindo como intermediário,\\Nela se tornou a sucessora da marca de justiça de Alise.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 187,
+  "estilo" : "Default",
+  "original" : "{\\i1}Even if Ryu converted to another Familia,",
+  "traduzido" : "{\\i1}Mesmo que Ryu tenha mudado para outra Familia,",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 188,
+  "estilo" : "Default",
+  "original" : "{\\i1}the bond she shares with those girls will never fade.",
+  "traduzido" : "{\\i1}a ligação dela com aquelas garotas nunca desaparecerá.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 189,
+  "estilo" : "Default",
+  "original" : "{\\i1}The just course of action in her eyes right now \\Nis stopping her friend.",
+  "traduzido" : "{\\i1}O caminho justo em seus olhos agora \\Né deter sua amiga.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 190,
+  "estilo" : "Default",
+  "original" : "{\\i1}And considering that, I wish to illuminate her path\\Nto the future with the light of the stars.",
+  "traduzido" : "{\\i1}E levando isso em conta, eu desejo iluminar seu caminho\\Npara o futuro com a luz das estrelas.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 191,
+  "estilo" : "Default",
+  "original" : "What in tarnation? Is that summoning magic?",
+  "traduzido" : "O que é isso? É magia de invocação?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 192,
+  "estilo" : "Default",
+  "original" : "Is she just like the Thousand Elf?!",
+  "traduzido" : "Ela é igual à Elfa Mil?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 193,
+  "estilo" : "Default",
+  "original" : "No, she hasn't summoned anything.",
+  "traduzido" : "Não, ela não invocou nada.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 194,
+  "estilo" : "Default",
+  "original" : "This is a miracle of the Lower World\\Nthat goes beyond understanding.",
+  "traduzido" : "Esse é um milagre do Mundo Inferior\\Nque ultrapassa a compreensão.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 195,
+  "estilo" : "Default",
+  "original" : "\"Justice is passed down.\"",
+  "traduzido" : "\"A justiça é transmitida.\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 196,
+  "estilo" : "Default",
+  "original" : "\"Astrea Record.\"",
+  "traduzido" : "\"Registro de Astrea\".",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 197,
+  "estilo" : "Default",
+  "original" : "In other words, these are the memories of the stars.",
+  "traduzido" : "Em outras palavras, são as memórias das estrelas.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 198,
+  "estilo" : "Default",
+  "original" : "The Astrea Familia.",
+  "traduzido" : "A Familia Astrea.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 199,
+  "estilo" : "Default",
+  "original" : "It's actually them. The Astrea Familia has returned!",
+  "traduzido" : "Eles estão realmente aqui. A Familia Astrea retornou!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 200,
+  "estilo" : "Default",
+  "original" : "You can do it!",
+  "traduzido" : "Você pode fazer isso!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 201,
+  "estilo" : "Default",
+  "original" : "\"Now in the skies of the distant forest,\"",
+  "traduzido" : "\"Agora no céu da floresta distante,\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 202,
+  "estilo" : "Default",
+  "original" : "\"to the infinite stars mounted upon \\Nthe eternal firmament of night.\"",
+  "traduzido" : "\"até às estrelas infinitas montadas \\Nno firmamento eterno da noite.\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 203,
+  "estilo" : "Default",
+  "original" : "Concurrent chanting?!",
+  "traduzido" : "Canto concorrente?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 204,
+  "estilo" : "Default",
+  "original" : "Stop her!",
+  "traduzido" : "Pare ela!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 205,
+  "estilo" : "Default",
+  "original" : "\"This fool doth entreat just once for\\Nthe divine protection of the stars' fire.\"",
+  "traduzido" : "\"Este tolo pede apenas uma vez \\Na proteção divina do fogo das estrelas.\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 206,
+  "estilo" : "Default",
+  "original" : "\"Grant thy benevolent light to\\Nthe one who abandoned thee!\"",
+  "traduzido" : "\"Concede tua luz benevolente a \\Naquele que te abandonou!\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 207,
+  "estilo" : "Default",
+  "original" : "Dammit, she's adept at spellcasting!",
+  "traduzido" : "Diabos, ela é boa em lançar feitiços!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 208,
+  "estilo" : "Default",
+  "original" : "\"Come forth, wandering wind... my fellow drifter!\"",
+  "traduzido" : "\"Apareça, vento errante... meu companheiro vagante!\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 209,
+  "estilo" : "Default",
+  "original" : "\"Cross the skies, speed through the wastelands!\"",
+  "traduzido" : "\"Cruze os céus, passe pelas terras desoladas!\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 210,
+  "estilo" : "Default",
+  "original" : "\"Race more swiftly than any other!\"",
+  "traduzido" : "\"Corra mais rápido do que qualquer outro!\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 211,
+  "estilo" : "Default",
+  "original" : "{\\i1}Formidable.",
+  "traduzido" : "{\\i1}Impressionante.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 212,
+  "estilo" : "Default",
+  "original" : "Unbelievable! What am I looking at?!",
+  "traduzido" : "Inacreditável! O que eu estou vendo?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 213,
+  "estilo" : "Default",
+  "original" : "\"Let the light of stardust occupy me\\Nand strike my enemy!\"",
+  "traduzido" : "\"Deixe a luz de poeira de estrela me ocupar e \\Natingir meu inimigo!\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 214,
+  "estilo" : "Default",
+  "original" : "Luminous Wind!",
+  "traduzido" : "Vento Luminoso!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 215,
+  "estilo" : "Default",
+  "original" : "Dodge it!",
+  "traduzido" : "Esquive-se!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 216,
+  "estilo" : "Default",
+  "original" : "Whose magic is that?!",
+  "traduzido" : "De quem é esse feitiço?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 217,
+  "estilo" : "Default",
+  "original" : "No way... it's Lady Ryu!",
+  "traduzido" : "Não pode ser... é Lady Ryu!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 218,
+  "estilo" : "Default",
+  "original" : "Ryu. I knew you'd come.",
+  "traduzido" : "Ryu. Eu sabia que você viria.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 219,
+  "estilo" : "Default",
+  "original" : "What the?",
+  "traduzido" : "O quê?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 220,
+  "estilo" : "Default",
+  "original" : "An explosion?",
+  "traduzido" : "Uma explosão?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 221,
+  "estilo" : "Default",
+  "original" : "Ms. Ryu...?",
+  "traduzido" : "Sra. Ryu...?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 222,
+  "estilo" : "Default",
+  "original" : "{\\i1}I'm the only one still standing.",
+  "traduzido" : "{\\i1}Eu sou o único ainda em pé.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 223,
+  "estilo" : "Default",
+  "original" : "You amplified the scope of your spell\\Nto make a wide-range attack.",
+  "traduzido" : "Você ampliou o alcance do seu feitiço para \\Nfazer um ataque em área ampla.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 224,
+  "estilo" : "Default",
+  "original" : "It expunged the interlopers and\\Ncleared the battlefield of obstacles.",
+  "traduzido" : "Ele expurgou os intrusos e \\Nlimpou o campo de batalha dos obstáculos.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 225,
+  "estilo" : "Default",
+  "original" : "{\\i1}Which leads me to surmise her true intent is...",
+  "traduzido" : "{\\i1}Isso me leva a supor que sua verdadeira intenção é...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 226,
+  "estilo" : "Default",
+  "original" : "Bring it.",
+  "traduzido" : "Traga isso.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 227,
+  "estilo" : "Default",
+  "original" : "You fool!",
+  "traduzido" : "Você é louco!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 228,
+  "estilo" : "Default",
+  "original" : "Slow! Weak! Dull!",
+  "traduzido" : "Lento! Fraco! Embotado!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 229,
+  "estilo" : "Default",
+  "original" : "{\\i1}That flame enchantment is most daunting,\\Nbut I already know how to counter it!",
+  "traduzido" : "{\\i1}Essa chama encantada é bastante intimidante,\\Nmas eu já sei como contra-atacar!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 230,
+  "estilo" : "Default",
+  "original" : "{\\i1}Since the Gale Wind has not mastered her control \\Nof the flames, my best chance is to... forge ahead!",
+  "traduzido" : "{\\i1}Desde que o Vento Galeiro não dominou seu controle \\Ndas chamas, minha melhor chance é... avançar!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 231,
+  "estilo" : "Default",
+  "original" : "Go ahead and wear the flames of your friends like armor!",
+  "traduzido" : "Vá em frente e use as chamas dos seus amigos como armadura!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 232,
+  "estilo" : "Default",
+  "original" : "It won't be enough to scorch my Victim Abyss!",
+  "traduzido" : "Não será suficiente para queimar meu Abismo Vítima!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 233,
+  "estilo" : "Default",
+  "original" : "Just because you've suffered defeat twice\\Ndoesn't mean it can't happen thrice, you whelp!",
+  "traduzido" : "Mesmo que você tenha sofrido duas derrotas \\Nnão significa que não possa acontecer três vezes, seu filhote!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 234,
+  "estilo" : "Default",
+  "original" : "You still haven't even reached my feet!",
+  "traduzido" : "Você ainda nem chegou aos meus pés!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 235,
+  "estilo" : "Default",
+  "original" : "{\\i1}I'm being thwarted?! How is this happening?!",
+  "traduzido" : "{\\i1}Estou sendo impedido?! Como é isso possível?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 236,
+  "estilo" : "Default",
+  "original" : "{\\i1}No, it should be impossible for me to lose!",
+  "traduzido" : "{\\i1}Não, deveria ser impossível eu perder!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 237,
+  "estilo" : "Default",
+  "original" : "Don't forget this is a War Game.",
+  "traduzido" : "Não esqueça que isto é um Jogo de Guerra.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 238,
+  "estilo" : "Default",
+  "original" : "Tell me, just how many adventurers did you cut down\\Nwith that blade before fighting against me?",
+  "traduzido" : "Diga-me, quantos aventureiros você cortou \\Ncom essa lâmina antes de lutar contra mim?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 239,
+  "estilo" : "Flashback",
+  "original" : "I need a favor, you guys.",
+  "traduzido" : "Preciso de um favor, pessoal.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 240,
+  "estilo" : "Flashback",
+  "original" : "Go get beaten.",
+  "traduzido" : "Vão se ferrar.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 241,
+  "estilo" : "Default",
+  "original" : "Inconceivable!",
+  "traduzido" : "Inconcebível!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 242,
+  "estilo" : "Default",
+  "original" : "Cursed weapons can grant their user\\Nwith immense power, but it does come at a price.",
+  "traduzido" : "Armas amaldiçoadas podem conceder seu usuário \\Ncom poder imenso, mas isso vem a um custo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 243,
+  "estilo" : "Default",
+  "original" : "Primarily that means a drop in stats,\\Nand high stamina consumption!",
+  "traduzido" : "Principalmente uma queda nas estatísticas,\\Ne alto consumo de stamina!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 244,
+  "estilo" : "Default",
+  "original" : "All the fallen warriors here \\Nhave shaved your powers away!",
+  "traduzido" : "Todos os guerreiros caídos aqui \\Ntiraram suas forças!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 245,
+  "estilo" : "Default",
+  "original" : "They forced you to waste \\Nas much energy as they could!",
+  "traduzido" : "Forçaram você a desperdiçar \\Ntoda a sua energia quanto puderam!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 246,
+  "estilo" : "Default",
+  "original" : "Ridiculous!",
+  "traduzido" : "Ridículo!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 247,
+  "estilo" : "Default",
+  "original" : "It's coming together...",
+  "traduzido" : "Está tudo se juntando...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 248,
+  "estilo" : "Default",
+  "original" : "It's all coming together!",
+  "traduzido" : "Tudo está se juntando!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 249,
+  "estilo" : "Default",
+  "original" : "Lady Daphne, Lady Tsubaki, Master Ouka, everyone!",
+  "traduzido" : "Dama Daphne, Dama Tsubaki, Mestre Ouka, todos!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 250,
+  "estilo" : "Default",
+  "original" : "All of the sacrifices they made\\Nto keep fighting are paying off!",
+  "traduzido" : "Todos os sacrifícios que eles fizeram\\Npara continuar lutando estão dando certo agora!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 251,
+  "estilo" : "Default",
+  "original" : "I can't be sure who would win in a true one-on-one.",
+  "traduzido" : "Não posso ter certeza de quem venceria em um verdadeiro duelo.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 252,
+  "estilo" : "Default",
+  "original" : "But right now?",
+  "traduzido" : "Mas agora?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 253,
+  "estilo" : "Default",
+  "original" : "This battle is {\\i1}ours{\\i1} to win!",
+  "traduzido" : "Esta batalha é {\\i1}nossa{\\i1} para vencer!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 254,
+  "estilo" : "Default",
+  "original" : "{\\i1}Alise Lovell.",
+  "traduzido" : "{\\i1}Alise Lovel.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 255,
+  "estilo" : "Default",
+  "original" : "{\\i1}Your flames of justice... were something I once admired...",
+  "traduzido" : "{\\i1}Seus flames de justiça... eram algo que eu admirava...",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 256,
+  "estilo" : "Default",
+  "original" : "Arvelia!",
+  "traduzido" : "Arvelia!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 257,
+  "estilo" : "Default",
+  "original" : "That's one down!",
+  "traduzido" : "Isso é um a menos!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 258,
+  "estilo" : "Default",
+  "original" : "Dainsleif has been defeated!",
+  "traduzido" : "Dainsleif foi derrotado!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 259,
+  "estilo" : "Default",
+  "original" : "Hell yeah! Now that's more like it!",
+  "traduzido" : "Sim! Agora isso é mais como deve ser!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 260,
+  "estilo" : "Default",
+  "original" : "They did it! They beat one!",
+  "traduzido" : "Eles fizeram isso! Eles derrotaram um!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 261,
+  "estilo" : "Default",
+  "original" : "They wiped the floor with Dainsleif!",
+  "traduzido" : "Eles varreram o chão com Dainsleif!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 262,
+  "estilo" : "Default",
+  "original" : "Keep it up, Liliruca Arde!",
+  "traduzido" : "Continue assim, Liliruca Arde!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 263,
+  "estilo" : "Default",
+  "original" : "Howdya like that, suckers!",
+  "traduzido" : "Como gostaram disso, idiotas!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 264,
+  "estilo" : "Default",
+  "original" : "This is huge! Yahoo!",
+  "traduzido" : "Isso é enorme! Uhu!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 265,
+  "estilo" : "Default",
+  "original" : "We took down a first-class adventurer!",
+  "traduzido" : "Tomamos um aventureiro de primeira classe!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 266,
+  "estilo" : "Default",
+  "original" : "We're still this! Now the tables can be turned!",
+  "traduzido" : "Ainda somos isso! Agora as coisas podem virar!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 267,
+  "estilo" : "Default",
+  "original" : "First-class adventurers have\\Na huge impact on a War Game!",
+  "traduzido" : "Os aventureiros de primeira classe \\Ntêm um grande impacto em uma Guerra de Jogos!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 268,
+  "estilo" : "Default",
+  "original" : "Their forces should start to falter after losing one!",
+  "traduzido" : "Suas forças deveriam começar a fraquejar depois de perder um!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 269,
+  "estilo" : "Default",
+  "original" : "Then the chain of command breaks down\\Nand the battlefield turns into chaos!",
+  "traduzido" : "Então a cadeia de comando desmorona\\Ne o campo de batalha vira em caos!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 270,
+  "estilo" : "Default",
+  "original" : "It's a crack in their armor! Our chance to win!",
+  "traduzido" : "É uma rachadura na armadura deles! Nossa chance de vencer!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 271,
+  "estilo" : "Default",
+  "original" : "They beat Lord Hogni?!",
+  "traduzido" : "Eles bateram no Lorde Hogni?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 272,
+  "estilo" : "Default",
+  "original" : "What should we do now?!",
+  "traduzido" : "O que devemos fazer agora?!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 273,
+  "estilo" : "Default",
+  "original" : "Stop panicking!",
+  "traduzido" : "Parem de entrar em pânico!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 274,
+  "estilo" : "Default",
+  "original" : "We are the Andhrímnir.",
+  "traduzido" : "Somos os Andhrímnir.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 275,
+  "estilo" : "Default",
+  "original" : "No matter how many of our people fall,\\Nwe simply heal their wounds, slap them awake,",
+  "traduzido" : "Sem importar quantos dos nossos caírem,\\Nsimplesmente curamos suas feridas, os acordamos,",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 276,
+  "estilo" : "Default",
+  "original" : "and send them straight back to the battlefield!",
+  "traduzido" : "Enviar eles de volta para o campo de batalha!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 277,
+  "estilo" : "Default",
+  "original" : "Over and over! For as long as it takes!",
+  "traduzido" : "Várias e várias vezes! Por quanto tempo for necessário!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 278,
+  "estilo" : "Default",
+  "original" : "I will treat Lord Hogni myself.",
+  "traduzido" : "Eu mesmo tratarei Lorde Hogni.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 279,
+  "estilo" : "Default",
+  "original" : "The rest of you revive the Einherjar!",
+  "traduzido" : "O resto de vocês revivam os Einherjar!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 280,
+  "estilo" : "Default",
+  "original" : "Yes ma'am!",
+  "traduzido" : "Sim senhora!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 281,
+  "estilo" : "Default",
+  "original" : "{\\i1}Damn you, allied army!",
+  "traduzido" : "{\\i1}Malditos sejam, exército aliado!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 282,
+  "estilo" : "Default",
+  "original" : "{\\i1}But Lord Hogni is the only one you've managed to beat.",
+  "traduzido" : "{\\i1}Mas Lorde Hogni é o único que você conseguiu vencer.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 283,
+  "estilo" : "Default",
+  "original" : "{\\i1}And with our healing magic,\\Nhe'll be back on his feet in no time.",
+  "traduzido" : "{\\i1}E com nossa mágica de cura,\\Nele estará de pé em um piscar de olhos.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 284,
+  "estilo" : "Default",
+  "original" : "{\\i1}I won't let you turn the tables on us.",
+  "traduzido" : "{\\i1}Não deixarei você virar a mesa contra nós.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 285,
+  "estilo" : "Default",
+  "original" : "{\\i1}I will crush any hope you have.",
+  "traduzido" : "{\\i1}Eu esmagarei qualquer esperança que você tenha.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 286,
+  "estilo" : "Default",
+  "original" : "{\\i1}All for Lady Freya!",
+  "traduzido" : "{\\i1}Tudo pela Senhora Freya!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 287,
+  "estilo" : "Default",
+  "original" : "{\\i1}Our victory is still assured!",
+  "traduzido" : "{\\i1} Nossa vitória ainda é garantida!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 288,
+  "estilo" : "Default",
+  "original" : "Huh?",
+  "traduzido" : "Hum?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 289,
+  "estilo" : "Default",
+  "original" : "What?",
+  "traduzido" : "O que?",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 290,
+  "estilo" : "Default",
+  "original" : "Fight evermore, my immortal lightning warriors.",
+  "traduzido" : "Lute para sempre, meus guerreiros imortais de relâmpago.",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 291,
+  "estilo" : "Default",
+  "original" : "Caelus Hildr!",
+  "traduzido" : "Caelus Hildr!",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 292,
+  "estilo" : "Default",
+  "original" : "Next time: \"Revenge\".",
+  "traduzido" : "Próxima vez: \"Vingança\"",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 296,
+  "estilo" : "Ep Title",
+  "original" : "{\\an2\\t(3939,0,1,\\alpha&HFF&)\\pos(1644,816)}Astrea Record",
+  "traduzido" : "{\\an2\\t(3939,0,1,\\alpha&HFF&)\\pos(1644,816)}Livro de Astrea",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 298,
+  "estilo" : "Ep Title",
+  "original" : "{\\an2\\fs60\\shad0\\blur0.5\\t(3939,0,1,\\alpha&HFF&)\\pos(1644,1024)}Inheritance",
+  "traduzido" : "{\\an2\\fs60\\shad0\\blur0.5\\t(3939,0,1,\\alpha&HFF&)\\pos(1644,1024)}Herança",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 299,
+  "estilo" : "Next Ep",
+  "original" : "{\\pos(248.457,35.6)\\fs58\\bord1\\c&H000000&\\blur0.6}Next Time",
+  "traduzido" : "{\\pos(248.457,35.6)\\fs58\\bord1\\c&H000000&\\blur0.6}Próxima Vez",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 300,
+  "estilo" : "Next Ep",
+  "original" : "{\\pos(248.457,35.6)\\fs58\\bord0\\shad0\\blur0.5}Next Time",
+  "traduzido" : "{\\pos(248.457,35.6)\\fs58\\bord0\\shad0\\blur0.5}Próxima Vez",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 301,
+  "estilo" : "Next Ep",
+  "original" : "{\\pos(962,327)\\c&H000000&\\blur0.6}Revenge",
+  "traduzido" : "{\\pos(962,327)\\c&H000000&\\blur0.6}Vingança",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 302,
+  "estilo" : "Next Ep",
+  "original" : "{\\fs92\\c&H000000&\\blur0.6\\pos(962,607)}Counterattack",
+  "traduzido" : "{\\fs92\\c&H000000&\\blur0.6\\pos(962,607)}Contra-ataque",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 303,
+  "estilo" : "Next Ep",
+  "original" : "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Revenge",
+  "traduzido" : "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Vingança",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+}, {
+  "indice" : 304,
+  "estilo" : "Next Ep",
+  "original" : "{\\pos(962,607)\\fs92\\bord0\\shad0\\blur0.5}Counterattack",
+  "traduzido" : "{\\pos(962,607)\\fs92\\bord0\\shad0\\blur0.5}Contra-ataque",
+  "idiomaOriginal" : "en",
+  "idiomaTraduzido" : "pt-br"
+} ]
