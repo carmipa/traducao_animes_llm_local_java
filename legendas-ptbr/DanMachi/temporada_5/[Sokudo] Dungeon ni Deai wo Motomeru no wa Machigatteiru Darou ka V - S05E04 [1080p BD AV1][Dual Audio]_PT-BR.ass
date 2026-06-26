@@ -1,0 +1,416 @@
+﻿[Script Info]
+Title: HIDIVE
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 1920
+PlayResY: 1080
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+LayoutResX: 1920
+LayoutResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Cabin PL,76,&H00FFFFFF,&H000000FF,&H00000000,&HA0000000,-1,0,0,0,98,100,0.4,0,1,3.6,1.5,2,200,200,58,1
+Style: Default - Alt,Cabin PL,76,&H00FFFFFF,&H000000FF,&H008D0F1C,&HA0000000,-1,0,0,0,98,100,0.4,0,1,3.6,1.5,2,200,200,58,1
+Style: Flashback,Cabin PL,76,&H00FFFFFF,&H000000FF,&H001E3167,&HA0000000,-1,0,0,0,98,100,0.4,0,1,3.6,1.5,2,200,200,58,1
+Style: Ep Title,Kozuka Mincho Pro H,50,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,150,30,270,1
+Style: Next Ep,Kozuka Mincho Pro H,62,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,5.5,8,30,30,225,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 10,0:00:06.57,0:00:08.61,Default,,0,0,0,,{\i1}Como acabamos nessa situação?!
+Dialogue: 10,0:00:09.20,0:00:10.24,Default,,0,0,0,,{\i1}Como?!
+Dialogue: 10,0:00:12.91,0:00:15.16,Default,,0,0,0,,Tem alguma roupa para eu me trocar?
+Dialogue: 10,0:00:15.45,0:00:17.25,Default,,0,0,0,,S-Sim! Eu fui buscar algumas!
+Dialogue: 10,0:00:19.04,0:00:20.58,Default,,0,0,0,,Obrigado.
+Dialogue: 10,0:00:28.47,0:00:29.18,Default,,0,0,0,,Então...
+Dialogue: 10,0:00:29.18,0:00:29.88,Default,,0,0,0,,Desculpe-me!
+Dialogue: 10,0:00:35.22,0:00:36.77,Default,,0,0,0,,{\i1}Não é nada de mais.
+Dialogue: 10,0:00:38.02,0:00:39.98,Default,,0,0,0,,{\i1}Eu só preciso agir como se tudo estivesse normal entre nós.
+Dialogue: 10,0:00:40.27,0:00:43.15,Default,,0,0,0,,Sinta-se à vontade para usar a cama, Srta. Syr.
+Dialogue: 10,0:00:43.15,0:00:45.94,Default,,0,0,0,,Eu não tenho problema em dormir no chão.
+Dialogue: 10,0:00:47.19,0:00:49.03,Default,,0,0,0,,Uau! Por que você não está usando calças?!
+Dialogue: 10,0:00:49.45,0:00:51.91,Default,,0,0,0,,Eu tentei vestir, mas tive dificuldades.
+Dialogue: 10,0:00:51.91,0:00:53.20,Default,,0,0,0,,Elas eram muito folgadas.
+Dialogue: 10,0:00:54.03,0:00:55.41,Default,,0,0,0,,E ficavam caindo.
+Dialogue: 10,0:01:00.75,0:01:03.00,Default,,0,0,0,,Então, bem...
+Dialogue: 10,0:01:03.00,0:01:04.84,Default,,0,0,0,,Eu só vou dormir no chão.
+Dialogue: 10,0:01:04.84,0:01:05.96,Default,,0,0,0,,Por favor, fique com a cama, Srta. Syr.
+Dialogue: 10,0:01:05.96,0:01:08.59,Default,,0,0,0,,De jeito nenhum. Vamos ambos dormir na cama.
+Dialogue: 10,0:01:09.09,0:01:09.88,Default,,0,0,0,,Eu não posso fazer isso.
+Dialogue: 10,0:01:10.30,0:01:11.38,Default,,0,0,0,,Por que?
+Dialogue: 10,0:01:12.39,0:01:14.35,Default,,0,0,0,,Porque simplesmente não consigo.
+Dialogue: 10,0:01:15.14,0:01:16.31,Default,,0,0,0,,Não importa o quê?
+Dialogue: 10,0:01:17.89,0:01:19.93,Default,,0,0,0,,A deusa Hestia vai ficar brava comigo.
+Dialogue: 10,0:01:20.27,0:01:23.10,Default,,0,0,0,,Mas se eu tomar a cama só para mim...
+Dialogue: 10,0:01:23.65,0:01:26.02,Default,,0,0,0,,eu poderia morrer de culpa excessiva.
+Dialogue: 10,0:01:26.90,0:01:28.40,Default,,0,0,0,,Lá vai você mentir de novo.
+Dialogue: 10,0:01:35.20,0:01:36.24,Default,,0,0,0,,Gostaria de se sentar?
+Dialogue: 10,0:01:49.01,0:01:51.63,Default,,0,0,0,,Você realmente não vai fazer nada por mim?
+Dialogue: 10,0:01:52.13,0:01:55.35,Default,,0,0,0,,Q-Que diabos isso quer dizer?
+Dialogue: 10,0:01:55.35,0:01:56.51,Default,,0,0,0,,Eu não entendo.
+Dialogue: 10,0:02:10.36,0:02:13.32,Default,,0,0,0,,Então, uhm, Srta. Syr? Eu estava me perguntando...
+Dialogue: 10,0:02:13.74,0:02:18.24,Default,,0,0,0,,O que fez você me convidar para esse encontro?
+Dialogue: 10,0:02:19.87,0:02:22.33,Default,,0,0,0,,Porque eu queria expressar meus sentimentos por você.
+Dialogue: 10,0:02:23.29,0:02:24.54,Default,,0,0,0,,Não.
+Dialogue: 10,0:02:25.38,0:02:26.50,Default,,0,0,0,,Porque eu queria prová-los.
+Dialogue: 10,0:02:32.22,0:02:34.05,Default,,0,0,0,,Eu precisava ter certeza.
+Dialogue: 10,0:02:34.43,0:02:35.84,Default,,0,0,0,,Que o que eu estou sentindo...
+Dialogue: 10,0:02:37.01,0:02:39.76,Default,,0,0,0,,é realmente amor. Ou não.
+Dialogue: 10,0:02:41.89,0:02:43.35,Default,,0,0,0,,Pare!
+Dialogue: 10,0:02:48.56,0:02:50.27,Default,,0,0,0,,{\i1}Isso não está certo.
+Dialogue: 10,0:02:50.86,0:02:53.78,Default,,0,0,0,,{\i1}Ser levado pela emoção \Napenas nos machucará no final...
+Dialogue: 10,0:02:55.28,0:02:56.99,Default,,0,0,0,,Não me rejeite.
+Dialogue: 10,0:02:57.95,0:02:59.20,Default,,0,0,0,,Aceite meus sentimentos.
+Dialogue: 10,0:03:05.71,0:03:06.96,Default,,0,0,0,,Sra. Syr...
+Dialogue: 10,0:03:08.54,0:03:10.80,Default,,0,0,0,,Não! Eu não posso!
+Dialogue: 10,0:03:10.80,0:03:11.80,Default,,0,0,0,,Isso está errado!
+Dialogue: 10,0:03:12.30,0:03:13.51,Default,,0,0,0,,Não sou eu!
+Dialogue: 10,0:03:14.51,0:03:16.18,Default,,0,0,0,,Por favor, não olhe para mim!
+Dialogue: 10,0:03:16.18,0:03:17.68,Default,,0,0,0,,Olhe para outro lugar!
+Dialogue: 10,0:03:17.68,0:03:19.22,Default,,0,0,0,,Estou implorando!
+Dialogue: 10,0:03:25.73,0:03:28.52,Default,,0,0,0,,Você ficou desiludido comigo agora?
+Dialogue: 10,0:03:28.52,0:03:29.69,Default,,0,0,0,,Não.
+Dialogue: 10,0:03:33.73,0:03:35.24,Default,,0,0,0,,Então, estou curioso...
+Dialogue: 10,0:03:35.24,0:03:37.03,Default,,0,0,0,,Não sente desejo por um amante?
+Dialogue: 10,0:03:37.03,0:03:38.16,Default,,0,0,0,,Que tipo de pergunta é essa?!
+Dialogue: 10,0:03:42.95,0:03:45.62,Default,,0,0,0,,Ei, você prometeu que não faria nada...
+Dialogue: 10,0:03:45.62,0:03:47.21,Default,,0,0,0,,Me deixe me aproximar. Estou com frio.
+Dialogue: 10,0:03:47.62,0:03:48.58,Default,,0,0,0,,B-Bem...
+Dialogue: 10,0:03:49.29,0:03:51.04,Default,,0,0,0,,Você não teve problemas em se aconchegar com Ryu.
+Dialogue: 10,0:03:53.13,0:03:55.26,Default,,0,0,0,,Você ouviu isso dela?
+Dialogue: 10,0:03:55.26,0:03:55.92,Default,,0,0,0,,Não.
+Dialogue: 10,0:03:56.72,0:03:59.51,Default,,0,0,0,,Mas sua reação agora me disse tudo.
+Dialogue: 10,0:04:01.76,0:04:04.39,Default,,0,0,0,,Você sabe que Ryu é alguém especial para mim.
+Dialogue: 10,0:04:05.10,0:04:07.52,Default,,0,0,0,,Mas você fez coisas más com ela de qualquer maneira, não é?
+Dialogue: 10,0:04:07.52,0:04:09.52,Default,,0,0,0,,N-Não, isso não aconteceu!
+Dialogue: 10,0:04:09.52,0:04:10.52,Default,,0,0,0,,Eu não fiz tal coisa!
+Dialogue: 10,0:04:10.89,0:04:12.11,Default,,0,0,0,,De verdade?
+Dialogue: 10,0:04:12.11,0:04:13.11,Default,,0,0,0,,De verdade.
+Dialogue: 10,0:04:13.61,0:04:15.82,Default,,0,0,0,,Então você também não vai fazer nada de ruim comigo, certo?
+Dialogue: 10,0:04:15.82,0:04:17.74,Default,,0,0,0,,N-Não, eu não vou.
+Dialogue: 10,0:04:17.74,0:04:19.16,Default,,0,0,0,,Por que não?
+Dialogue: 10,0:04:19.16,0:04:20.99,Default,,0,0,0,,Bem, eu quero dizer...
+Dialogue: 10,0:04:27.21,0:04:30.42,Default,,0,0,0,,É porque você é você, Srta. Syr.
+Dialogue: 10,0:04:30.75,0:04:31.92,Default,,0,0,0,,Eu não posso fazer isso.
+Dialogue: 10,0:04:35.17,0:04:38.09,Default,,0,0,0,,Você é um idiota. Um grande idiota.
+Dialogue: 10,0:04:38.63,0:04:41.05,Default,,0,0,0,,Idiota. Idiota.
+Dialogue: 10,0:04:42.76,0:04:44.89,Default,,0,0,0,,Você sabe que não podemos todos ser iguais.
+Dialogue: 10,0:04:45.47,0:04:47.89,Default,,0,0,0,,Eu não estou bem sendo igual a Ryu e todo mundo.
+Dialogue: 10,0:04:48.89,0:04:50.14,Default,,0,0,0,,O que você quer dizer?
+Dialogue: 10,0:04:51.06,0:04:53.65,Default,,0,0,0,,Você é muito criança para entender.
+Dialogue: 10,0:04:55.11,0:04:57.15,Default,,0,0,0,,Eu nem entendo isso, mesmo.
+Dialogue: 10,0:04:57.99,0:05:00.20,Default,,0,0,0,,De onde vem essa desesperação?
+Dialogue: 10,0:05:00.95,0:05:02.87,Default,,0,0,0,,Para mantê-lo de cair das minhas mãos...
+Dialogue: 10,0:05:03.49,0:05:07.79,Default,,0,0,0,,Obsessão, esforço e esperança...
+Dialogue: 10,0:05:08.70,0:05:10.37,Default,,0,0,0,,Ah, agora eu entendo.
+Dialogue: 10,0:05:11.21,0:05:15.25,Default,,0,0,0,,Foi por isso... que eu caí... por você...
+Dialogue: 10,0:05:46.03,0:05:47.62,Default,,0,0,0,,Sra. Syr?!
+Dialogue: 10,0:05:51.83,0:05:53.58,Default,,0,0,0,,Então, como foi o seu encontro?
+Dialogue: 10,0:05:53.58,0:05:55.92,Default,,0,0,0,,Estávamos preocupados porque você não voltou.
+Dialogue: 10,0:05:56.42,0:05:58.55,Default,,0,0,0,,E você, Welf? O que é essa aparência?
+Dialogue: 10,0:06:00.09,0:06:04.26,Default,,0,0,0,,All of us got roped into working here \Nduring the Goddess Festival.
+Dialogue: 10,0:06:04.89,0:06:06.72,Default,,0,0,0,,Mas voltemos a você.
+Dialogue: 10,0:06:07.39,0:06:08.72,Default,,0,0,0,,Bem, na verdade...
+Dialogue: 10,0:06:09.97,0:06:14.56,Default,,0,0,0,,Vocês dois foram perseguidos pela Familia de Freya \Ne ela já tinha sumido quando acordaram?
+Dialogue: 10,0:06:15.19,0:06:19.90,Default,,0,0,0,,Sim. Então eu achei que ela podia ter \Napenas voltado para a taverna.
+Dialogue: 10,0:06:19.90,0:06:24.86,Default,,0,0,0,,Bem, fiquei aqui a noite toda e não vi \Nnenhum sinal dela voltando.
+Dialogue: 10,0:06:24.86,0:06:25.53,Default,,0,0,0,,Droga...
+Dialogue: 10,0:06:26.28,0:06:29.74,Default,,0,0,0,,Espere aí. O que você vai fazer quando encontrar com ela?
+Dialogue: 10,0:06:30.83,0:06:32.29,Default,,0,0,0,,Por que está perguntando?
+Dialogue: 10,0:06:32.29,0:06:34.29,Default,,0,0,0,,De acordo com o que me contou,
+Dialogue: 10,0:06:34.29,0:06:37.96,Default,,0,0,0,,Parece bastante óbvio \Nque ela está loucamente apaixonada por você.
+Dialogue: 10,0:06:37.96,0:06:40.30,Default,,0,0,0,,Então isso levanta uma pergunta: \NO que você vai fazer quando encontrar com ela?
+Dialogue: 10,0:06:41.13,0:06:45.09,Default,,0,0,0,,Are you just gonna play dumb and let things \Ngo back to normal between you two?
+Dialogue: 10,0:06:46.43,0:06:49.43,Default,,0,0,0,,É cruel não dar a ela uma resposta clara, cara.
+Dialogue: 10,0:06:49.43,0:06:50.85,Default,,0,0,0,,Mesmo eu sei disso.
+Dialogue: 10,0:06:51.31,0:06:53.43,Default,,0,0,0,,Se você optar por continuar com a atuação de "idiota denso",
+Dialogue: 10,0:06:53.43,0:06:55.90,Default,,0,0,0,,então vai perder todo o meu respeito.
+Dialogue: 10,0:06:57.06,0:06:58.90,Default,,0,0,0,,Está bem ser modesto.
+Dialogue: 10,0:06:58.90,0:07:02.36,Default,,0,0,0,,E eu entendo que é fácil se sentir impotente \N quando você falta confiança em si mesmo.
+Dialogue: 10,0:07:02.94,0:07:06.53,Default,,0,0,0,,But don't cut and run from someone \Nwho poured their heart out to you.
+Dialogue: 10,0:07:07.16,0:07:10.16,Default,,0,0,0,,Quero que você fique um cara direto \Nque cuida dos negócios.
+Dialogue: 10,0:07:10.91,0:07:12.58,Default,,0,0,0,, Embora isso seja apenas meu egoísmo.
+Dialogue: 10,0:07:14.54,0:07:17.25,Default,,0,0,0,,Obrigado. Vou ter uma conversa séria com a Sra. Syr.
+Dialogue: 10,0:07:17.75,0:07:20.00,Default,,0,0,0,,Mas primeiro vou ter que encontrá-la.
+Dialogue: 10,0:07:20.67,0:07:23.05,Default,,0,0,0,,Desculpe, cara. Não quis lhe dar um sermão.
+Dialogue: 10,0:07:23.05,0:07:23.96,Default,,0,0,0,,Não.
+Dialogue: 10,0:07:24.42,0:07:25.68,Default,,0,0,0,,Sou eu quem deveria pedir desculpas.
+Dialogue: 10,0:07:27.80,0:07:31.85,Default,,0,0,0,,A melhor chance que você tem de encontrar ela \Né entrar em contato diretamente com a Familia de Freya.
+Dialogue: 10,0:07:32.35,0:07:34.31,Default,,0,0,0,,Lamento não poder ajudar, mas...
+Dialogue: 10,0:07:34.98,0:07:37.77,Default,,0,0,0,,não há como escapar do Anão.
+Dialogue: 10,0:07:43.36,0:07:47.53,Default,,0,0,0,,{\i1}Os olhares da Familia de Freya desapareceram quase completamente.
+Dialogue: 10,0:07:47.95,0:07:51.45,Default,,0,0,0,,{\i1}Encontrar o Mestre Hedin e perguntar a ele \Nsobre a Srta. Syr seria legal, mas...
+Dialogue: 10,0:07:58.58,0:08:01.09,Default,,0,0,0,,O vento está chorando.
+Dialogue: 10,0:08:02.71,0:08:05.84,Default,,0,0,0,,Você é um aventureiro de primeira classe na Familia de Freya.
+Dialogue: 10,0:08:05.84,0:08:08.55,Default,,0,0,0,,Sr. Hogni Ragnar, certo?
+Dialogue: 10,0:08:08.55,0:08:12.51,Default,,0,0,0,,Qual é o seu negócio aqui? Meu hóspede desonrado.
+Dialogue: 10,0:08:12.51,0:08:17.35,Default,,0,0,0,,A menos que você deseje ser envolvido \Nem um banquete de loucura, então vá embora agora.
+Dialogue: 10,0:08:20.02,0:08:22.40,Default,,0,0,0,,Espere, você...
+Dialogue: 10,0:08:22.40,0:08:25.61,Default,,0,0,0,,é aquele cara que os Deuses apelidaram "infectado por vergonha" \Npor falar com palavras grandes?
+Dialogue: 10,0:08:25.61,0:08:27.32,Default,,0,0,0,,Não mencionem esse nome horrível!
+Dialogue: 10,0:08:27.32,0:08:29.53,Default,,0,0,0,,Eu não sou infectado por tal praga!
+Dialogue: 10,0:08:29.53,0:08:31.12,Default,,0,0,0,,D-D-desculpe.
+Dialogue: 10,0:08:32.45,0:08:35.04,Default,,0,0,0,,Por favor, pare de me olhar assim.
+Dialogue: 10,0:08:35.04,0:08:38.87,Default,,0,0,0,,Essa é a pior primeira encontro possível! \NTão humilhante! Eu quero morrer!
+Dialogue: 10,0:08:38.87,0:08:41.88,Default,,0,0,0,,Minha persona de intriga sombria está murchando...
+Dialogue: 10,0:08:42.38,0:08:46.13,Default,,0,0,0,,Hum, você por acaso sabe onde a Srta. Syr foi?
+Dialogue: 10,0:08:48.09,0:08:51.72,Default,,0,0,0,,Nós também procuramos atualmente \No paradeiro da santa donzela.
+Dialogue: 10,0:08:51.72,0:08:55.22,Default,,0,0,0,,Uma miríade dos meus companheiros se libertou \Ndo seu domínio,
+Dialogue: 10,0:08:55.22,0:08:57.77,Default,,0,0,0,,e agora procura sinais de boas novas.
+Dialogue: 10,0:08:58.27,0:09:06.15,Default,,0,0,0,,Ah, então... todo mundo da Familia de Freya \Nparou de me observar e foi procurar a Srta. Syr em vez disso?
+Dialogue: 10,0:09:08.03,0:09:11.95,Default,,0,0,0,,{\i1}Isso deve significar que o Sr. Hogni foi deixado \Npara me vigiar caso contrário.
+Dialogue: 10,0:09:12.20,0:09:15.03,Default,,0,0,0,,O que é da sua sublime e eterna memória?
+Dialogue: 10,0:09:15.03,0:09:17.41,Default,,0,0,0,,Você já forjou a era que nunca vai desaparecer?
+Dialogue: 10,0:09:17.41,0:09:18.16,Default,,0,0,0,,Hum?
+Dialogue: 10,0:09:18.50,0:09:20.71,Default,,0,0,0,,Não haverá separação de caminhos.
+Dialogue: 10,0:09:20.71,0:09:25.00,Default,,0,0,0,,Portanto, estou perguntando se você fez \Npronto ao trocar seus adeuses.
+Dialogue: 10,0:09:25.25,0:09:27.09,Default,,0,0,0,,Memórias? Adeus?
+Dialogue: 10,0:09:27.09,0:09:28.76,Default,,0,0,0,,Eu não sei o que você quer dizer.
+Dialogue: 10,0:09:28.76,0:09:32.59,Default,,0,0,0,,Foi a garota e não a Deusa quem cortejou você.
+Dialogue: 10,0:09:32.59,0:09:34.89,Default,,0,0,0,,Portanto, seu destino permanecerá inabalável,
+Dialogue: 10,0:09:34.89,0:09:38.02,Default,,0,0,0,,não importa qual outra escolha você tente adotar.
+Dialogue: 10,0:09:38.02,0:09:39.64,Default,,0,0,0,,O que isso significa?
+Dialogue: 10,0:09:39.64,0:09:41.35,Default,,0,0,0,,O que há de tão especial na Sra. Syr?
+Dialogue: 10,0:09:41.69,0:09:43.19,Default,,0,0,0,,Qual é meu destino?!
+Dialogue: 10,0:09:43.19,0:09:46.73,Default,,0,0,0,,S-S-Stay back! Aquela expressão em seus olhos me assusta!
+Dialogue: 10,0:09:46.73,0:09:47.86,Default,,0,0,0,,Ah, que se dane.
+Dialogue: 10,0:09:48.44,0:09:49.19,Default,,0,0,0,,Eu estou fugindo.
+Dialogue: 10,0:09:49.19,0:09:50.07,Default,,0,0,0,,Ei, espere!
+Dialogue: 10,0:09:51.95,0:09:53.86,Default,,0,0,0,,{\i1}Adeus? Como se eu estivesse indo embora?
+Dialogue: 10,0:09:53.86,0:09:55.66,Default,,0,0,0,,{\i1}O que isso quer dizer?
+Dialogue: 10,0:09:55.66,0:09:57.33,Default,,0,0,0,,{\i1}E como isso se relaciona à Srta. Syr?
+Dialogue: 10,0:10:07.13,0:10:09.46,Default,,0,0,0,,Por favor, Hermes!
+Dialogue: 10,0:10:09.84,0:10:12.17,Default,,0,0,0,,Estou implorando para que me ajude!
+Dialogue: 10,0:10:12.17,0:10:15.59,Default,,0,0,0,,É o Bell! Meu precioso Bell está desaparecido!
+Dialogue: 10,0:10:15.59,0:10:18.60,Default,,0,0,0,,Tudo bem, entendi! Só me deixe ir!
+Dialogue: 10,0:10:18.60,0:10:21.56,Default,,0,0,0,,Já enviei Asfi para procurá-lo pelos céus!
+Dialogue: 10,0:10:23.81,0:10:28.36,Default,,0,0,0,,{\an8}Ah! Preciso do Bell! Meu precioso Bell!
+Dialogue: 10,0:10:26.19,0:10:28.36,Default,,0,0,0,,Me desculpe, Mestre Hermes.
+Dialogue: 10,0:10:29.94,0:10:31.24,Default,,0,0,0,,Tudo bem.
+Dialogue: 10,0:10:31.24,0:10:33.78,Default,,0,0,0,,Estive preocupado com aqueles dois também.
+Dialogue: 10,0:10:34.41,0:10:37.74,Default,,0,0,0,, Embora, mais Syr do que Bell.
+Dialogue: 10,0:10:39.87,0:10:42.25,Default,,0,0,0,,Pesquisamos por toda a noite e não os encontramos.
+Dialogue: 10,0:10:42.58,0:10:46.50,Default,,0,0,0,,Onde diabos a Syr e aquele garoto desapareceram?!
+Dialogue: 10,0:10:47.00,0:10:49.96,Default,,0,0,0,,Syr e Bell estão nowhere to be found...
+Dialogue: 10,0:10:49.96,0:10:51.71,Default,,0,0,0,,E eles nunca voltaram para casa...
+Dialogue: 10,0:10:51.71,0:10:55.55,Default,,0,0,0,,Ei! Anya captou um cheiro do menino aventureiro!
+Dialogue: 10,0:10:55.55,0:10:57.89,Default,,0,0,0,,Ele está indo para nordeste em direção à \Ndistrito de manufatura.
+Dialogue: 10,0:10:57.89,0:10:59.89,Default,,0,0,0,,Isso é incrível, Anya!
+Dialogue: 10,0:10:58.47,0:11:02.22,Default,,0,0,0,,{\an8}Eles passaram a noite juntos? Até de manhã?
+Dialogue: 10,0:10:59.89,0:11:03.18,Default,,0,0,0,,Sim, mas não havia nenhum vestígio de Syr.
+Dialogue: 10,0:11:03.18,0:11:05.85,Default,,0,0,0,,Ela pode ter sido separada das bigodes brancas.
+Dialogue: 10,0:11:02.22,0:11:05.02,Default,,0,0,0,,{\an8}De jeito nenhum. Eu não acredito nisso.
+Dialogue: 10,0:11:05.02,0:11:07.86,Default,,0,0,0,,{\an8}Isso não pode ser real. Eles nem estão casados ainda.
+Dialogue: 10,0:11:05.85,0:11:07.86,Default,,0,0,0,,Tanto faz, vamos atrás dele!
+Dialogue: 10,0:11:07.86,0:11:09.98,Default,,0,0,0,,Vamos, Ryu. É hora de equipar o kitten gear.
+Dialogue: 10,0:11:07.86,0:11:09.98,Default,,0,0,0,,{\an8}Eles têm que fazer juramentos de amor primeiro.
+Dialogue: 10,0:11:10.36,0:11:12.44,Default,,0,0,0,,Se não na floresta, então ao menos diante de um Deus...
+Dialogue: 10,0:11:12.44,0:11:15.32,Default,,0,0,0,,Se não na floresta, então ao menos diante de um Deus...
+Dialogue: 10,0:11:12.74,0:11:15.32,Default - Alt,,0,0,0,,Ah, chega! Saia dessa agora mesmo!
+Dialogue: 10,0:11:28.75,0:11:31.42,Default,,0,0,0,,Meu Deus! Estou tão feliz em ver você de novo!
+Dialogue: 10,0:11:31.80,0:11:33.38,Default,,0,0,0,,Você realmente veio e me encontrou.
+Dialogue: 10,0:11:34.38,0:11:36.01,Default,,0,0,0,,Hum, sobre isso...
+Dialogue: 10,0:11:39.18,0:11:41.56,Default,,0,0,0,,Eu sinto muito. Eu estava tão apressado que esqueci.
+Dialogue: 10,0:11:45.73,0:11:47.48,Default,,0,0,0,,Eu estive esperando esse tempo todo!
+Dialogue: 10,0:11:48.02,0:11:51.23,Default,,0,0,0,,Deixar essa chance passar significaria \Nmeu sonho nunca se tornar realidade!
+Dialogue: 10,0:11:51.23,0:11:51.94,Default,,0,0,0,,Então, por favor!
+Dialogue: 10,0:11:52.61,0:11:53.90,Default,,0,0,0,,Isso é pela última vez!
+Dialogue: 10,0:11:55.07,0:11:57.95,Default,,0,0,0,,Não me rejeite. Por favor.
+Dialogue: 10,0:12:00.37,0:12:01.53,Default,,0,0,0,,Dainsleif.
+Dialogue: 10,0:12:08.37,0:12:09.79,Default,,0,0,0,,Sr. Hogni...?
+Dialogue: 10,0:12:10.17,0:12:11.88,Default,,0,0,0,,O que você está planejando?
+Dialogue: 10,0:12:11.88,0:12:14.46,Default,,0,0,0,,A Coelho Branco pertence à Deusa.
+Dialogue: 10,0:12:14.46,0:12:17.42,Default,,0,0,0,,Não existe mundo onde você tenha o direito de infringir.
+Dialogue: 10,0:12:17.42,0:12:18.93,Default,,0,0,0,,Senhor Hogni, eu apenas...
+Dialogue: 10,0:12:18.93,0:12:20.68,Default,,0,0,0,,Não desperdice suas palavras.
+Dialogue: 10,0:12:20.68,0:12:22.81,Default,,0,0,0,,Eu extinguirei sua vida.
+Dialogue: 10,0:12:22.81,0:12:24.39,Default,,0,0,0,,Mas por quê?! Explique-se!
+Dialogue: 10,0:12:24.39,0:12:26.73,Default,,0,0,0,,Tudo em serviço à minha Deusa.
+Dialogue: 10,0:12:45.16,0:12:48.62,Default,,0,0,0,,Recue, Coelho! \NA menos que queira que minha lâmina acabe com você!
+Dialogue: 10,0:12:48.62,0:12:50.54,Default,,0,0,0,,Se eu cometer um erro, sua cabeça será limpa!
+Dialogue: 10,0:12:51.08,0:12:53.63,Default,,0,0,0,,{\i1}O Senhor Hogni não está atrás de mim.
+Dialogue: 10,0:12:53.63,0:12:55.13,Default,,0,0,0,,{\i1}Significa que posso agir como um escudo!
+Dialogue: 10,0:12:57.46,0:12:58.92,Default,,0,0,0,,Irritante.
+Dialogue: 10,0:12:58.92,0:13:00.55,Default,,0,0,0,,Ainda sem sentido.
+Dialogue: 10,0:13:07.43,0:13:08.52,Default,,0,0,0,,Sra. Ryu?!
+Dialogue: 10,0:13:08.98,0:13:10.48,Default,,0,0,0,,O que está acontecendo aqui?
+Dialogue: 10,0:13:10.48,0:13:12.86,Default,,0,0,0,,Por que a Familia Freya está atacando você?!
+Dialogue: 10,0:13:12.86,0:13:14.15,Default,,0,0,0,,Afaste-se.
+Dialogue: 10,0:13:14.15,0:13:16.19,Default,,0,0,0,,Estou no meio de matar aquela mulher.
+Dialogue: 10,0:13:16.19,0:13:17.82,Default,,0,0,0,,Huh?! Que se dane!
+Dialogue: 10,0:13:18.24,0:13:21.28,Default,,0,0,0,,You're acting way too immature \Nfur an expurrt adventurer!
+Dialogue: 10,0:13:21.28,0:13:23.20,Default,,0,0,0,,O que está causando o atraso, Hogni?
+Dialogue: 10,0:13:24.12,0:13:26.20,Default,,0,0,0,,Já está claro que aquela mulher é uma transgressora.
+Dialogue: 10,0:13:26.58,0:13:29.41,Default,,0,0,0,,Se você vai continuar a enrolar, \Nentão nós vamos eliminá-la.
+Dialogue: 10,0:13:29.98,0:13:32.37,Default,,0,0,0,,Menino aventureiro. Leve Syr e fuja daqui.
+Dialogue: 10,0:13:33.04,0:13:34.71,Default,,0,0,0,,Nós só podemos ganhar tempo por um minuto.
+Dialogue: 10,0:13:36.38,0:13:37.34,Default,,0,0,0,,Vamos!
+Dialogue: 10,0:13:48.39,0:13:50.14,Default,,0,0,0,,Fique fora disso, irmãos!
+Dialogue: 10,0:13:53.60,0:13:55.90,Default,,0,0,0,,Você também é uma de suas queridas.
+Dialogue: 10,0:13:55.90,0:13:57.36,Default,,0,0,0,,Isso torna isso ainda mais difícil!
+Dialogue: 10,0:13:57.36,0:13:58.82,Default,,0,0,0,,Do que você está falando?!
+Dialogue: 10,0:14:01.65,0:14:02.40,Default,,0,0,0,,Eu posso evitar isso!
+Dialogue: 10,0:14:11.41,0:14:13.83,Default,,0,0,0,,Minha amada espada, Abismo Vítima.
+Dialogue: 10,0:14:14.12,0:14:16.54,Default,,0,0,0,,Ou como eu a chamo: o Matador de Vanguarda.
+Dialogue: 10,0:14:23.05,0:14:23.93,Default,,0,0,0,,Miado?
+Dialogue: 10,0:14:24.64,0:14:25.64,Default,,0,0,0,,Chloe...
+Dialogue: 10,0:14:26.05,0:14:27.10,Default,,0,0,0,,Lunor...
+Dialogue: 10,0:14:27.93,0:14:29.06,Default,,0,0,0,,Ryu!
+Dialogue: 10,0:14:30.22,0:14:32.98,Default,,0,0,0,,Você ainda vai resistir, Vana Alfi?
+Dialogue: 10,0:14:34.06,0:14:36.23,Default,,0,0,0,,Não me chame assim qualquermeowr!
+Dialogue: 10,0:14:36.23,0:14:37.61,Default,,0,0,0,,Eu sou apenas Anya para mim!
+Dialogue: 10,0:14:38.44,0:14:42.19,Default,,0,0,0,,Leave Syr alone. I won't stand fur \Nanybody hurting my family!
+Dialogue: 10,0:14:42.19,0:14:44.70,Default,,0,0,0,,O que você pensa que está fazendo, seu bobo?
+Dialogue: 10,0:14:46.99,0:14:49.74,Default,,0,0,0,,Irmão mais velho?! Por que você está aqui?
+Dialogue: 10,0:14:49.74,0:14:52.45,Default,,0,0,0,,Don't reply with a question! \NI'm the one asking {\i1}you{\i0} here!
+Dialogue: 10,0:14:52.45,0:14:54.29,Default,,0,0,0,,Ah, me desculpe!
+Dialogue: 10,0:14:54.29,0:14:56.88,Default,,0,0,0,,We were kitten into a fight cuz \Nmy friends and I want to purrtect Syr...
+Dialogue: 10,0:14:56.88,0:14:59.29,Default,,0,0,0,,Pare de falar como se fosse um palhaço!
+Dialogue: 10,0:15:01.42,0:15:04.26,Default,,0,0,0,,Quantas vezes tenho que dizer isso antes de \Nisso passar pela sua cabeça grossa?
+Dialogue: 10,0:15:04.26,0:15:06.80,Default,,0,0,0,,Você realmente me irrita pra caramba!
+Dialogue: 10,0:15:06.80,0:15:09.72,Default,,0,0,0,,Sinto muito... Eu só...
+Dialogue: 10,0:15:10.06,0:15:11.72,Default,,0,0,0,,Perde-te. Agora mesmo.
+Dialogue: 10,0:15:11.72,0:15:12.85,Default,,0,0,0,,Estás a incomodar!
+Dialogue: 10,0:15:14.31,0:15:16.40,Default,,0,0,0,,Espere! Por favor espere!
+Dialogue: 10,0:15:16.40,0:15:20.11,Default,,0,0,0,,Ouve, Grande Irmão! Não me importo com o que \Nme acontece, só por favor deixa Syr ir!
+Dialogue: 10,0:15:20.11,0:15:21.11,Default,,0,0,0,,Cala-te.
+Dialogue: 10,0:15:46.09,0:15:50.85,Default,,0,0,0,,Por favor ajuda-me a entender! \NPorque é que a Familia Freya estaria a tentar matar-te?!
+Dialogue: 10,0:15:50.85,0:15:54.27,Default,,0,0,0,,Tudo porque a Senhora Freya se apaixonou \Npor ti à primeira vista, Sr. Bell.
+Dialogue: 10,0:15:54.27,0:15:56.77,Default,,0,0,0,,Mesmo sabendo que ela queria ficar contigo para si,
+Dialogue: 10,0:15:56.77,0:15:59.98,Default,,0,0,0,,Estou a tentar roubar-te agora mesmo!
+Dialogue: 10,0:16:00.48,0:16:02.61,Default,,0,0,0,,O que está a acontecer aqui, Hermes?
+Dialogue: 10,0:16:02.61,0:16:05.07,Default,,0,0,0,,O que aquela garota é suposta ser? É difícil dizer!
+Dialogue: 10,0:16:06.74,0:16:09.57,Default,,0,0,0,,Ela realmente é... uma deusa?
+Dialogue: 10,0:16:15.41,0:16:17.92,Default,,0,0,0,,Me foi concedida apenas essa chance.
+Dialogue: 10,0:16:18.54,0:16:22.38,Default,,0,0,0,,Eu cedi aos meus impulsos \N e tomei uma decisão contra a vontade divina.
+Dialogue: 10,0:16:22.38,0:16:24.00,Default,,0,0,0,,Então eu não posso me safar disso.
+Dialogue: 10,0:16:24.71,0:16:27.72,Default,,0,0,0,,Eles definitivamente não vão me poupar.
+Dialogue: 10,0:16:28.09,0:16:30.80,Default,,0,0,0,,Mas... nada disso muda o que eu sinto!
+Dialogue: 10,0:16:31.43,0:16:32.39,Default,,0,0,0,,Sr. Bell!
+Dialogue: 10,0:16:34.77,0:16:36.56,Default,,0,0,0,,I don't care if it's out of kindness.
+Dialogue: 10,0:16:36.56,0:16:37.98,Default,,0,0,0,,Mesmo assim, apenas pena.
+Dialogue: 10,0:16:38.69,0:16:40.35,Default,,0,0,0,,Quero apenas que você aceite meus sentimentos.
+Dialogue: 10,0:16:40.73,0:16:41.65,Default,,0,0,0,,Por favor!
+Dialogue: 10,0:16:45.40,0:16:47.36,Default,,0,0,0,,O que você está fazendo, Sr. Bell?
+Dialogue: 10,0:16:47.99,0:16:51.32,Default,,0,0,0,,Eu sabia desde o momento em que nos encontramos \N antes. Você não é ela.
+Dialogue: 10,0:16:52.37,0:16:53.83,Default,,0,0,0,,Quem é você, realmente?
+Dialogue: 10,0:16:57.45,0:16:59.46,Default,,0,0,0,,Como você pode dizer isso, Sr. Bell?
+Dialogue: 10,0:16:59.46,0:17:01.25,Default,,0,0,0,,Sou quem sempre fui.
+Dialogue: 10,0:17:01.25,0:17:02.83,Default,,0,0,0,,Syr Flover!
+Dialogue: 10,0:17:02.83,0:17:05.46,Default,,0,0,0,,Você não hesitou em lutar e me proteger antes, certo?
+Dialogue: 10,0:17:05.71,0:17:09.63,Default,,0,0,0,,Sim. Porque eu não fazia ideia do que estava acontecendo.
+Dialogue: 10,0:17:09.63,0:17:12.22,Default,,0,0,0,,Eu não queria que ninguém morresse.
+Dialogue: 10,0:17:12.22,0:17:14.76,Default,,0,0,0,,Não importa... quem você realmente acabou sendo.
+Dialogue: 10,0:17:15.35,0:17:17.52,Default,,0,0,0,,Esse grampo tem o Cavaleiro nele.
+Dialogue: 10,0:17:17.52,0:17:18.77,Default,,0,0,0,,É meu meio.
+Dialogue: 10,0:17:19.43,0:17:22.77,Default,,0,0,0,,O verdadeiro Syr ainda tem a outra metade com o Espírito nela.
+Dialogue: 10,0:17:23.48,0:17:27.03,Default,,0,0,0,,Eu imagino que você saiba tudo \N sobre Syr.
+Dialogue: 10,0:17:27.03,0:17:28.49,Default,,0,0,0,,Mas não perfeitamente.
+Dialogue: 10,0:17:28.90,0:17:30.40,Default,,0,0,0,,Por isso eu perguntei. Então me diga.
+Dialogue: 10,0:17:30.90,0:17:33.28,Default,,0,0,0,,Quem é você?
+Dialogue: 10,0:17:34.37,0:17:36.91,Default,,0,0,0,,Não posso acreditar que minha cobertura foi revelada desde o início.
+Dialogue: 10,0:17:37.24,0:17:39.41,Default,,0,0,0,,Fale sobre algo terrivelmente tolo.
+Dialogue: 10,0:17:40.71,0:17:44.33,Default,,0,0,0,,If only you never noticed, \Nthen you would have fallen into a sweet embrace...
+Dialogue: 10,0:17:44.71,0:17:48.59,Default,,0,0,0,,e ganho uma morte rápida pela minha misericórdia!
+Dialogue: 10,0:17:51.97,0:17:53.84,Default,,0,0,0,,Eu perdi essa aposta minha.
+Dialogue: 10,0:17:54.22,0:17:55.72,Default,,0,0,0,,Você é livre para ir embora.
+Dialogue: 10,0:17:55.72,0:17:58.22,Default,,0,0,0,,Lady Syr está no sul dos jardins.
+Dialogue: 10,0:17:59.22,0:18:01.27,Default,,0,0,0,,Mas o que você vai fazer?
+Dialogue: 10,0:18:01.27,0:18:03.69,Default,,0,0,0,,Sr. Hogni e os outros estão atrás de você.
+Dialogue: 10,0:18:03.69,0:18:07.11,Default,,0,0,0,,Você ainda está preocupado apesar de saber \Nque eu sou um impostor?
+Dialogue: 10,0:18:07.11,0:18:10.19,Default,,0,0,0,,Até que ponto você está tentando me imiserar?
+Dialogue: 10,0:18:10.69,0:18:13.03,Default,,0,0,0,,Você realmente é o pior tipo de hipocrita.
+Dialogue: 10,0:18:13.99,0:18:16.07,Default,,0,0,0,,Por favor, saia. Agora.
+Dialogue: 10,0:18:25.42,0:18:27.71,Flashback,,0,0,0,,O que você deseja?
+Dialogue: 10,0:18:31.67,0:18:34.26,Flashback,,0,0,0,,Eu quero ser como você.
+Dialogue: 10,0:18:34.55,0:18:36.35,Flashback,,0,0,0,,Eu quero deixar de ser eu
+Dialogue: 10,0:18:36.35,0:18:39.93,Flashback,,0,0,0,,e me tornar a pessoa linda e quente que você é.
+Dialogue: 10,0:18:41.31,0:18:42.23,Flashback,,0,0,0,,Qual é o seu nome?
+Dialogue: 10,0:18:42.60,0:18:43.64,Flashback,,0,0,0,,Syr.
+Dialogue: 10,0:18:44.27,0:18:45.06,Flashback,,0,0,0,,Tudo bem.
+Dialogue: 10,0:18:45.98,0:18:47.81,Flashback,,0,0,0,,Então me diga o seu nome.
+Dialogue: 10,0:18:48.57,0:18:51.15,Flashback,,0,0,0,,E eu lhe darei um dos meus em troca.
+Dialogue: 10,0:18:52.78,0:18:55.49,Flashback,,0,0,0,,Agora em diante, você será uma filha dos Deuses.
+Dialogue: 10,0:18:55.91,0:18:58.12,Flashback,,0,0,0,,{\t(1069,2237,1,\3c&HFFFFFF&\4c&HFFFFFF&)}E seu nome é...
+Dialogue: 10,0:19:02.50,0:19:04.62,Default,,0,0,0,,Viajando sozinha para fazer essa loucura.
+Dialogue: 10,0:19:04.62,0:19:06.88,Default,,0,0,0,,O que diabos você estava esperando para realizar?
+Dialogue: 10,0:19:07.29,0:19:09.29,Default,,0,0,0,,Escute bem, Chifre!
+Dialogue: 10,0:19:10.71,0:19:12.67,Default,,0,0,0,,Você é um assistente de primeira qualidade.
+Dialogue: 10,0:19:18.51,0:19:21.14,Default,,0,0,0,,Esse seu plano correu muito bem.
+Dialogue: 10,0:19:21.14,0:19:24.31,Default,,0,0,0,,Admit it. You ensnared Ottarl \Nand the others in this, didn't you?
+Dialogue: 10,0:19:28.23,0:19:29.98,Default,,0,0,0,,Não tenho desculpa.
+Dialogue: 10,0:19:29.98,0:19:32.78,Default,,0,0,0,,Fui contra sua vontade divina e eu...
+Dialogue: 10,0:19:32.78,0:19:34.69,Default,,0,0,0,,tentei matar Bell Cranel.
+Dialogue: 10,0:19:35.40,0:19:39.03,Default,,0,0,0,,Sim, e você queria ser morto por nós desde o início, não é mesmo?\N
+Dialogue: 10,0:19:39.03,0:19:42.87,Default,,0,0,0,,Forçando-a a lidar com essa merda\Ntudo para seu próprio prazer egoísta.
+Dialogue: 10,0:19:43.87,0:19:46.33,Default,,0,0,0,,Você acha que isso foi sobre satisfação própria?
+Dialogue: 10,0:19:47.21,0:19:49.75,Default,,0,0,0,,Você nem sequer consegue entender a realidade.
+Dialogue: 10,0:19:49.75,0:19:52.00,Default,,0,0,0,,Porque eu posso me tornar um com ela.
+Dialogue: 10,0:19:52.00,0:19:54.63,Default,,0,0,0,,Nossas psiques se sobrepõem uma à outra.
+Dialogue: 10,0:19:54.63,0:19:56.84,Default,,0,0,0,,Então é impossível para você entender!
+Dialogue: 10,0:19:57.30,0:19:59.72,Default,,0,0,0,,Fui impelido por um medo.
+Dialogue: 10,0:19:59.72,0:20:03.35,Default,,0,0,0,,O medo de que minha Deusa seria\Nmudada para sempre com aquele homem por perto.
+Dialogue: 10,0:20:03.35,0:20:06.52,Default,,0,0,0,,Se as coisas continuassem entre eles, \Nentão minha Rainha única seria macularizada,
+Dialogue: 10,0:20:06.52,0:20:08.19,Default,,0,0,0,,e cairia na depravação!
+Dialogue: 10,0:20:08.56,0:20:11.11,Default,,0,0,0,,Foi por isso que eu não tive escolha a não ser agir!
+Dialogue: 10,0:20:11.11,0:20:13.32,Default,,0,0,0,,Mesmo que ela fosse contra isso!
+Dialogue: 10,0:20:13.32,0:20:15.44,Default,,0,0,0,,Mesmo que ela me repudiasse para sempre!
+Dialogue: 10,0:20:15.74,0:20:18.95,Default,,0,0,0,,Eu estava pronto para matá-lo por ela!
+Dialogue: 10,0:20:19.49,0:20:21.95,Default,,0,0,0,,Foi um pecado necessário!
+Dialogue: 10,0:20:22.62,0:20:26.04,Default,,0,0,0,,Porque uma Deusa deve permanecer uma Deusa!
+Dialogue: 10,0:20:26.33,0:20:29.96,Default,,0,0,0,,Deixar ela afundar no nível de\Nalguma garota comum é contrário à razão!
+Dialogue: 10,0:20:35.55,0:20:38.38,Default,,0,0,0,,Voce nada mais e que um maldito zelote.
+Dialogue: 10,0:20:54.11,0:20:56.82,Default,,0,0,0,,Fico lisonjeado por voce ter me encontrado, Sr. Bell.
+Dialogue: 10,0:20:57.65,0:21:00.28,Default,,0,0,0,,Well, a person who looks exactly \Nlike you said you'd be here.
+Dialogue: 10,0:21:00.78,0:21:05.87,Default,,0,0,0,,Silly! You're supposed to reply with something \Nmore charming like: "my heart told me you'd be here."
+Dialogue: 10,0:21:08.96,0:21:10.50,Default,,0,0,0,,Por que voce fez tudo isso?
+Dialogue: 10,0:21:11.42,0:21:13.54,Default,,0,0,0,,E como eu lhe disse ontem.
+Dialogue: 10,0:21:13.54,0:21:15.25,Default,,0,0,0,,Eu queria expressar meus sentimentos por voce.
+Dialogue: 10,0:21:16.38,0:21:18.47,Default,,0,0,0,,E descobrir se estava apaixonado ou nao.
+Dialogue: 10,0:21:19.13,0:21:22.05,Default,,0,0,0,,I figured that no matter what \Nfeelings you have for other girls,
+Dialogue: 10,0:21:22.05,0:21:24.55,Default,,0,0,0,,se voce realmente fosse a esse ponto para me encontrar
+Dialogue: 10,0:21:25.22,0:21:27.93,Default,,0,0,0,,Que eu chegaria a me sentir um pouco orgulhoso disso.
+Dialogue: 10,0:21:28.56,0:21:31.39,Default,,0,0,0,,I hated the idea of letting time go \Nby without doing anything.
+Dialogue: 10,0:21:31.69,0:21:33.90,Default,,0,0,0,,Então eu fiz minhas afeições claras.
+Dialogue: 10,0:21:34.52,0:21:38.99,Default,,0,0,0,,Except... I realized part of me \Nprefers a slow burn romance.
+Dialogue: 10,0:21:38.99,0:21:42.95,Default,,0,0,0,,Then I started to become unsure of myself \Nand what I really wanted.
+Dialogue: 10,0:21:43.91,0:21:47.62,Default,,0,0,0,,And now, I'm sure the only way \NI can be free from this torment
+Dialogue: 10,0:21:48.54,0:21:51.83,Default,,0,0,0,,é colocando todos os meus sentimentos na mesa.
+Dialogue: 10,0:21:51.83,0:21:53.92,Default,,0,0,0,,Finalmente, eu descobri.
+Dialogue: 10,0:21:55.88,0:21:57.88,Default,,0,0,0,,Eu estou louca por você, Sr. Bell.
+Dialogue: 10,0:21:58.46,0:22:00.09,Default,,0,0,0,,Você é o amor da minha vida.
+Dialogue: 10,0:22:00.67,0:22:02.26,Default,,0,0,0,,Quero passar a eternidade com você.
+Dialogue: 10,0:22:03.18,0:22:05.39,Default,,0,0,0,,E realmente quero que você escolha eu.
+Dialogue: 10,0:22:05.80,0:22:07.47,Default,,0,0,0,,Meu coração dói.
+Dialogue: 10,0:22:07.47,0:22:09.14,Default,,0,0,0,,Anseio por você me segurar.
+Dialogue: 10,0:22:09.72,0:22:12.02,Default,,0,0,0,,Estou tão cansado de sofrer com o que o amanhã reserva.
+Dialogue: 10,0:22:12.52,0:22:15.27,Default,,0,0,0,,Nunca quis experimentar isso.
+Dialogue: 10,0:22:15.27,0:22:18.73,Default,,0,0,0,,Mas mesmo assim, quero saber \Naonde esses sentimentos me levam...
+Dialogue: 10,0:22:19.36,0:22:21.24,Default,,0,0,0,,Não consigo deixar de ser curioso!
+Dialogue: 10,0:22:22.57,0:22:26.16,Default,,0,0,0,,Eu te amo... Bell.
+Dialogue: 10,0:22:34.37,0:22:35.63,Default,,0,0,0,,{\i1}Eu não tinha ideia.
+Dialogue: 10,0:22:37.54,0:22:40.05,Default,,0,0,0,,{\i1}Rejeitar alguém's amor...
+Dialogue: 10,0:22:40.42,0:22:43.88,Default,,0,0,0,,{\i1}realmente te despedaça por dentro.
+Dialogue: 10,0:22:48.93,0:22:49.60,Default,,0,0,0,,Sinto muito.
+Dialogue: 10,0:23:08.95,0:23:09.87,Default,,0,0,0,,Ottarl.
+Dialogue: 10,0:23:10.24,0:23:11.79,Default,,0,0,0,,Faça os preparativos.
+Dialogue: 10,0:23:11.79,0:23:13.62,Default,,0,0,0,,Vou ficar com ele agora.
+Dialogue: 10,0:23:14.29,0:23:15.83,Default,,0,0,0,,Você tem certeza absoluta?
+Dialogue: 10,0:23:16.79,0:23:19.34,Default,,0,0,0,,Estou cansada de ser menina.
+Dialogue: 10,0:23:20.34,0:23:22.51,Default,,0,0,0,,Syr está morto agora.
+Dialogue: 10,0:23:22.51,0:23:25.38,Default,,0,0,0,,Devia ter feito assim desde o início.
+Dialogue: 10,0:23:27.34,0:23:30.43,Default,,0,0,0,,Eu não deixarei que ninguém mais tenha você, Bell.
+Dialogue: 10,0:23:30.72,0:23:33.48,Default,,0,0,0,,Em breve, você será meu e só meu.
+Dialogue: 10,0:23:35.98,0:23:38.81,Default,,0,0,0,,Próxima vez: "Familia de Freya".
+Dialogue: 0,0:00:59.04,0:01:02.96,Ep Title,,0,0,0,,{\shad0\pos(1612.5,822.5)\c&H000000&\blur0.5\iclip(m 1565.492 802.344 b 1565.929 804.141 1566.32 806.172 1566.539 808.578 1568.382 809.234 1570.726 809.703 1573.039 809.703 1579.023 809.703 1582.601 806.313 1582.601 801.844 1582.601 797.625 1580.429 796.063 1575.711 792.719 1572.461 790.406 1571.086 789.219 1571.086 787.016 1571.086 785.109 1572.351 783.625 1574.726 783.625 1577.586 783.625 1578.445 784.844 1579.211 788.813 l 1581.445 788.453 b 1581.054 786.094 1580.789 783.969 1580.679 782.563 1579.211 781.969 1577.148 781.531 1574.773 781.531 1568.023 781.531 1565.992 785.578 1565.992 788.453 1565.992 792.531 1568.086 794.047 1572.304 797.047 1576.101 799.75 1577.257 800.906 1577.257 803.422 1577.257 806.125 1575.351 807.609 1573.179 807.609 1570.539 807.609 1568.882 806.422 1567.757 801.797 m 1600.492 804.313 b 1599.867 805.688 1598.257 807.672 1595.445 807.672 1594.101 807.672 1592.804 806.984 1591.929 805.688 1591.07 804.25 1590.711 802.328 1590.711 799.953 l 1602.179 799.953 b 1602.179 798.047 1601.82 790.328 1593.929 790.328 1587.617 790.328 1585.086 794.938 1585.086 799.594 1585.086 806.375 1588.554 809.625 1594.429 809.625 1597.601 809.625 1600.273 808.359 1602.07 805.078 m 1590.711 798.297 b 1590.742 795.484 1591.429 791.984 1593.882 791.984 1596.492 791.984 1596.773 795.984 1596.773 798.297 m 1609.148 782.203 b 1607.492 782.203 1606.148 783.5 1606.148 785.344 1606.148 787.219 1607.492 788.516 1609.148 788.516 1610.836 788.516 1612.179 787.219 1612.179 785.344 1612.179 783.578 1610.945 782.203 1609.148 782.203 m 1611.414 790.328 b 1608.929 791.375 1606.586 791.953 1604.382 792.094 l 1604.382 793.531 b 1606.554 793.531 1606.695 793.703 1606.695 796.375 l 1606.695 804.641 b 1606.695 807.313 1606.523 807.641 1604.382 807.641 l 1604.382 809.156 1614.164 809.156 1614.164 807.641 b 1612.257 807.641 1612.039 807.313 1612.039 804.688 l 1612.039 790.656 c m 1628.476 792.031 b 1627.648 791.203 1626.382 790.328 1624.398 790.328 1618.476 790.328 1616.211 794.984 1616.211 799.781 1616.211 806.313 1619.57 809.594 1623.961 809.594 1626.32 809.594 1627.789 808.516 1628.586 807.469 l 1628.664 807.469 1628.804 809.344 1629.211 809.625 b 1631.289 809.125 1634.461 809.047 1635.695 809.047 l 1635.695 807.719 b 1634.07 807.719 1633.851 807.469 1633.851 805.094 l 1633.851 781.203 1633.242 780.906 b 1630.976 781.875 1628.523 782.5 1626.273 782.672 l 1626.273 784.078 b 1628.414 784.078 1628.554 784.547 1628.554 786.969 l 1628.554 792.031 c m 1628.554 805.344 b 1627.867 806.453 1626.898 807.578 1625.445 807.578 1623.382 807.578 1621.836 804.938 1621.836 800.031 1621.836 796.859 1622.195 792.281 1625.523 792.281 1626.851 792.281 1627.898 793.359 1628.554 794.438 m 1644.851 790.656 l 1644.242 790.328 b 1642.039 791.344 1639.554 791.906 1637.57 792.125 l 1637.57 793.531 b 1639.554 793.531 1639.726 793.813 1639.726 796.234 l 1639.726 804.688 b 1639.726 807.391 1639.554 807.641 1637.57 807.641 l 1637.57 809.156 1647.554 809.156 1647.554 807.641 b 1645.32 807.641 1645.07 807.203 1645.07 804.688 l 1645.07 795.641 b 1646.289 793.75 1647.195 792.75 1648.054 792.75 1648.632 792.75 1648.929 793.109 1649.289 794.266 1649.679 795.375 1650.367 795.844 1651.273 795.844 1652.429 795.844 1653.07 794.953 1653.07 793.688 1653.07 791.563 1651.195 790.328 1649.679 790.328 1647.804 790.328 1646.554 791.313 1645.039 793.328 l 1644.961 793.328 c)\t(3606,0,1,\alpha&HFF&)}Seidr
+Dialogue: 1,0:00:59.04,0:01:02.96,Ep Title,,0,0,0,,{\an2\shad0\blur0.5\pos(1609,819)\t(3606,0,1,\alpha&HFF&)}Seidr
+Dialogue: 0,0:00:59.04,0:01:02.96,Ep Title,,0,0,0,,{\pos(1612.5,1027.5)\fs60\c&H000000&\shad0\blur0.5\iclip(m 1505.022 988.641 b 1504.538 985.875 1504.116 983.141 1503.897 980.594 1501.6 979.547 1499.225 979.031 1496.741 979.031 1486.475 979.031 1481.679 986.688 1481.679 995.875 1481.679 1006.078 1486.272 1012.828 1495.366 1012.828 1500.944 1012.828 1504.679 1009.938 1505.757 1008.844 l 1505.757 1003.016 b 1505.757 1000.938 1506.022 1000.766 1508.054 1000.766 l 1508.054 998.688 1496.788 998.688 1496.788 1000.766 b 1499.429 1000.766 1499.694 1001.156 1499.694 1003.875 l 1499.694 1008.813 b 1498.741 1009.672 1497.272 1010.234 1495.929 1010.234 1491.507 1010.234 1488.819 1004.047 1488.819 995.578 1488.819 985.563 1492.725 981.281 1496.538 981.281 1500.475 981.281 1501.429 983.703 1502.288 989.125 m 1521.804 1012.75 b 1530.725 1012.75 1533.069 1007.266 1533.069 1001.016 1533.069 994 1529.6 989.594 1521.804 989.594 1514.585 989.594 1510.6 993.656 1510.6 1001.016 1510.6 1007.344 1512.975 1012.75 1521.804 1012.75 m 1521.772 991.578 b 1523.069 991.578 1524.1 992.141 1524.804 993.266 1525.757 994.828 1526.272 997.375 1526.272 1001.188 1526.272 1005.141 1525.71 1007.641 1524.757 1009.125 1524.069 1010.203 1523.069 1010.766 1521.772 1010.766 1520.507 1010.766 1519.475 1010.203 1518.772 1009.125 1517.866 1007.641 1517.304 1005.141 1517.304 1001.188 1517.304 995.563 1518.304 991.578 1521.725 991.578 m 1550.835 991.625 b 1549.835 990.641 1548.319 989.594 1545.929 989.594 1538.819 989.594 1536.1 995.188 1536.1 1000.938 1536.1 1008.766 1540.132 1012.703 1545.413 1012.703 1548.225 1012.703 1550.007 1011.406 1550.96 1010.156 l 1551.038 1010.156 1551.21 1012.406 1551.694 1012.75 b 1554.194 1012.141 1558.007 1012.063 1559.475 1012.063 l 1559.475 1010.453 b 1557.538 1010.453 1557.272 1010.156 1557.272 1007.297 l 1557.272 978.641 1556.538 978.297 b 1553.804 979.453 1550.866 980.188 1548.179 980.406 l 1548.179 982.094 b 1550.741 982.094 1550.913 982.656 1550.913 985.563 l 1550.913 991.625 c m 1550.913 1007.594 b 1550.085 1008.938 1548.913 1010.281 1547.179 1010.281 1544.71 1010.281 1542.85 1007.125 1542.85 1001.234 1542.85 997.438 1543.288 991.938 1547.272 991.938 1548.882 991.938 1550.132 993.234 1550.913 994.531 m 1586.507 998.031 l 1583.554 998.766 b 1580.522 999.453 1578.194 1000.359 1576.538 1001.453 1574.335 1002.797 1573.382 1004.563 1573.382 1006.906 1573.382 1010.938 1576.85 1012.75 1579.882 1012.75 1583.475 1012.75 1585.257 1011.453 1586.632 1010.063 l 1586.804 1010.063 b 1587.507 1011.719 1588.663 1012.453 1591.272 1012.453 1593.335 1012.453 1594.647 1012.188 1595.804 1011.719 l 1595.46 1009.984 b 1595.116 1010.203 1594.679 1010.328 1594.257 1010.328 1593.335 1010.328 1592.866 1009.547 1592.866 1007.219 l 1592.866 997.344 b 1592.866 990.109 1587.757 989.594 1583.772 989.594 1575.944 989.594 1574.429 992.969 1574.429 994.516 1574.429 995.641 1575.116 996.641 1576.757 996.641 1578.413 996.641 1579.1 996 1579.538 994.906 1579.929 993.703 1580.788 991.578 1583.304 991.578 1585.085 991.578 1586.507 992.484 1586.507 996.031 m 1586.507 1007.938 b 1585.725 1008.719 1584.647 1009.719 1583.038 1009.719 1581.257 1009.719 1580.054 1008.5 1580.054 1005.906 1580.054 1002.703 1582.788 1001.063 1586.507 999.891 m 1606.413 993.281 l 1606.241 989.984 1605.429 989.594 b 1602.866 990.766 1599.85 991.453 1597.507 991.719 l 1597.507 993.453 b 1599.85 993.406 1600.147 993.844 1600.147 996.953 l 1600.147 1006.781 b 1600.147 1009.984 1599.882 1010.375 1597.507 1010.375 l 1597.507 1012.188 1608.413 1012.188 1608.413 1010.375 b 1606.632 1010.375 1606.507 1010.078 1606.507 1006.828 l 1606.507 996 b 1608.069 993.75 1609.757 992.328 1611.179 992.328 1613.647 992.328 1614.038 994.531 1614.038 996.922 l 1614.038 1006.781 b 1614.038 1010.078 1613.866 1010.375 1612.054 1010.375 l 1612.054 1012.188 1622.6 1012.188 1622.6 1010.375 b 1620.663 1010.375 1620.397 1009.734 1620.397 1006.906 l 1620.397 996.781 b 1620.397 992.453 1618.71 989.594 1613.6 989.594 1610.71 989.594 1608.366 991.031 1606.507 993.281 m 1639.679 991.625 b 1638.679 990.641 1637.163 989.594 1634.772 989.594 1627.663 989.594 1624.944 995.188 1624.944 1000.938 1624.944 1008.766 1628.975 1012.703 1634.257 1012.703 1637.069 1012.703 1638.85 1011.406 1639.804 1010.156 l 1639.882 1010.156 1640.054 1012.406 1640.538 1012.75 b 1643.038 1012.141 1646.85 1012.063 1648.319 1012.063 l 1648.319 1010.453 b 1646.382 1010.453 1646.116 1010.156 1646.116 1007.297 l 1646.116 978.641 1645.382 978.297 b 1642.647 979.453 1639.71 980.188 1637.022 980.406 l 1637.022 982.094 b 1639.585 982.094 1639.757 982.656 1639.757 985.563 l 1639.757 991.625 c m 1639.757 1007.594 b 1638.929 1008.938 1637.757 1010.281 1636.022 1010.281 1633.554 1010.281 1631.694 1007.125 1631.694 1001.234 1631.694 997.438 1632.132 991.938 1636.116 991.938 1637.725 991.938 1638.975 993.234 1639.757 994.531 m 1685.788 988.641 b 1685.304 985.875 1684.882 983.141 1684.663 980.594 1682.366 979.547 1679.991 979.031 1677.507 979.031 1667.241 979.031 1662.444 986.688 1662.444 995.875 1662.444 1006.078 1667.038 1012.828 1676.132 1012.828 1681.71 1012.828 1685.444 1009.938 1686.522 1008.844 l 1686.522 1003.016 b 1686.522 1000.938 1686.788 1000.766 1688.819 1000.766 l 1688.819 998.688 1677.554 998.688 1677.554 1000.766 b 1680.194 1000.766 1680.46 1001.156 1680.46 1003.875 l 1680.46 1008.813 b 1679.507 1009.672 1678.038 1010.234 1676.694 1010.234 1672.272 1010.234 1669.585 1004.047 1669.585 995.578 1669.585 985.563 1673.491 981.281 1677.304 981.281 1681.241 981.281 1682.194 983.703 1683.054 989.125 m 1696.819 979.844 b 1694.835 979.844 1693.225 981.406 1693.225 983.609 1693.225 985.859 1694.835 987.422 1696.819 987.422 1698.85 987.422 1700.46 985.859 1700.46 983.609 1700.46 981.484 1698.991 979.844 1696.819 979.844 m 1699.554 989.594 b 1696.569 990.844 1693.757 991.531 1691.116 991.703 l 1691.116 993.438 b 1693.71 993.438 1693.882 993.656 1693.882 996.859 l 1693.882 1006.781 b 1693.882 1009.984 1693.663 1010.375 1691.116 1010.375 l 1691.116 1012.188 1702.835 1012.188 1702.835 1010.375 b 1700.554 1010.375 1700.288 1009.984 1700.288 1006.828 l 1700.288 989.984 c m 1713.741 989.984 l 1713.007 989.594 b 1710.366 990.797 1707.382 991.5 1705.007 991.75 l 1705.007 993.438 b 1707.382 993.438 1707.6 993.781 1707.6 996.688 l 1707.6 1006.828 b 1707.6 1010.078 1707.382 1010.375 1705.007 1010.375 l 1705.007 1012.188 1716.991 1012.188 1716.991 1010.375 b 1714.304 1010.375 1714.007 1009.859 1714.007 1006.828 l 1714.007 995.953 b 1715.475 993.703 1716.554 992.5 1717.6 992.5 1718.288 992.5 1718.632 992.938 1719.069 994.313 1719.554 995.656 1720.366 996.219 1721.444 996.219 1722.835 996.219 1723.616 995.141 1723.616 993.625 1723.616 991.063 1721.366 989.594 1719.554 989.594 1717.288 989.594 1715.788 990.766 1713.96 993.188 l 1713.882 993.188 c m 1725.272 1012.188 l 1736.991 1012.188 1736.991 1010.375 b 1734.71 1010.375 1734.444 1009.859 1734.444 1006.828 l 1734.444 978.641 1733.71 978.297 b 1730.772 979.453 1727.694 980.188 1725.272 980.406 l 1725.272 982.094 b 1727.866 982.094 1728.085 982.609 1728.085 985.422 l 1728.085 1006.781 b 1728.085 1009.859 1727.866 1010.375 1725.272 1010.375)\t(3606,0,1,\alpha&HFF&)}Deus e Garota
+Dialogue: 1,0:00:59.04,0:01:02.96,Ep Title,,0,0,0,,{\an2\pos(1609,1024)\fs60\shad0\blur0.5\t(3606,0,1,\alpha&HFF&)}God and Girl
+Dialogue: 0,0:23:35.02,0:23:40.02,Next Ep,,0,0,0,,{\pos(248.457,35.6)\fs58\bord1\c&H000000&\blur0.6}Next Time
+Dialogue: 1,0:23:35.02,0:23:40.02,Next Ep,,0,0,0,,{\pos(248.457,35.6)\fs58\bord0\shad0\blur0.5}Next Time
+Dialogue: 0,0:23:35.02,0:23:40.02,Next Ep,,0,0,0,,{\pos(962,327)\c&H000000&\blur0.6}Freya Familia
+Dialogue: 0,0:23:35.02,0:23:40.02,Next Ep,,0,0,0,,{\fs92\c&H000000&\blur0.6\pos(962,607)}Invasion
+Dialogue: 1,0:23:35.02,0:23:40.02,Next Ep,,0,0,0,,{\pos(962,327)\bord0\shad0\blur0.5}Freya Familia
+Dialogue: 1,0:23:35.02,0:23:40.02,Next Ep,,0,0,0,,{\pos(962,607)\fs92\bord0\shad0\blur0.5}Invasion

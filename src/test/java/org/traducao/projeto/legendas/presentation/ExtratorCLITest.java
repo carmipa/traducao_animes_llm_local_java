@@ -2,8 +2,8 @@ package org.traducao.projeto.legendas.presentation;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
-import org.traducao.projeto.animes.infrastructure.config.TradutorProperties;
-import org.traducao.projeto.animes.presentation.ui.PastasExecucao;
+import org.traducao.projeto.traducao.infrastructure.config.TradutorProperties;
+import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
 import org.traducao.projeto.legendas.application.ExtrairLegendaUseCase;
 import org.traducao.projeto.legendas.domain.FormatoLegenda;
 import org.traducao.projeto.legendas.domain.RelatorioExtracao;

@@ -30,6 +30,10 @@ tradutor:
   # usada para karaoke, que deve permanecer no idioma original).
   estilos-ignorados:
     - "Song JP"
+    - "OP - Romaji"
+    - "OP - English"
+    - "ED - Romaji"
+    - "ED - English"
   # Chaves de idioma gravadas no cache JSON (par original -> traduzido).
   idioma-original: "en"
   idioma-traduzido: "pt-br"
@@ -52,7 +56,7 @@ remuxer:
 logging:
   level:
     root: INFO
-    org.traducao.projeto.animes: INFO
+    org.traducao.projeto.traducao: INFO
   pattern:
     console: "%clr(%d{HH:mm:ss}){faint} %clr(%-5level) %clr([%thread]){magenta} %clr(%logger{20}){cyan} %clr(-){faint} %msg%n"
     file: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] loteId=%X{loteId} %logger{36} - %msg%n"

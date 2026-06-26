@@ -52,7 +52,7 @@ Se o prompt nao esperar digitacao: use `run.bat` ou `bootRun --console=plain` no
 ## Estrutura de pacotes (hexagonal light)
 
 ```
-org.traducao.projeto.animes
+org.traducao.projeto.traducao
 ├── Application.java          # @Import explícito (ver JDK 25 abaixo)
 ├── presentation/
 │   ├── TradutorCLI.java      # CommandLineRunner — entrada do programa
@@ -79,7 +79,7 @@ Beans **não** são descobertos por `@ComponentScan` automático — ver seção
 
 ## Modos de execução (`app.modo`) e os pacotes `legendas` / `remuxer`
 
-Além de `org.traducao.projeto.animes` (tradução), o projeto tem dois módulos irmãos, cada um com seu próprio `CommandLineRunner` ativado por `@ConditionalOnProperty(name = "app.modo", havingValue = "...")`:
+Além de `org.traducao.projeto.traducao` (tradução), o projeto tem dois módulos irmãos, cada um com seu próprio `CommandLineRunner` ativado por `@ConditionalOnProperty(name = "app.modo", havingValue = "...")`:
 
 | Modo | CLI | Pacote | Função |
 |---|---|---|---|

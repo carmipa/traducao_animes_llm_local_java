@@ -2,8 +2,8 @@ package org.traducao.projeto.remuxer.presentation;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
-import org.traducao.projeto.animes.infrastructure.config.TradutorProperties;
-import org.traducao.projeto.animes.presentation.ui.PastasExecucao;
+import org.traducao.projeto.traducao.infrastructure.config.TradutorProperties;
+import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
 import org.traducao.projeto.remuxer.application.RemuxarLoteUseCase;
 import org.traducao.projeto.remuxer.domain.RelatorioRemux;
 import org.traducao.projeto.remuxer.presentation.ui.ConsoleRemuxerLogger;

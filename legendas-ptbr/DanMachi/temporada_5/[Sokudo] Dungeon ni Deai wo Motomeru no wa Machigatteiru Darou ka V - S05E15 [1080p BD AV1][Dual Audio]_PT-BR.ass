@@ -1,0 +1,341 @@
+﻿[Script Info]
+Title: [SubsPlus+]
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 1920
+PlayResY: 1080
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+LayoutResX: 1920
+LayoutResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Cabin PL,76,&H00FFFFFF,&H000000FF,&H00000000,&HA0000000,-1,0,0,0,98,100,0.4,0,1,3.6,1.5,2,200,200,58,1
+Style: Flashback,Cabin PL,76,&H00FFFFFF,&H000000FF,&H001E3167,&HA0000000,-1,0,0,0,98,100,0.4,0,1,3.6,1.5,2,200,200,58,1
+Style: Ep Title,Kozuka Mincho Pro H,50,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,150,30,270,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 10,0:00:00.73,0:00:02.44,Default,,0,0,0,,Precisa se perder!
+Dialogue: 10,0:00:02.86,0:00:04.15,Default,,0,0,0,,Deve se perder!
+Dialogue: 10,0:00:04.15,0:00:05.86,Default,,0,0,0,,Perdido já!
+Dialogue: 10,0:00:06.74,0:00:08.32,Default,,0,0,0,,Eu vou te derrotar.
+Dialogue: 10,0:00:08.86,0:00:11.32,Default,,0,0,0,,Não pode me impedir de alcançar a Srta. Syr!
+Dialogue: 10,0:00:11.70,0:00:14.29,Default,,0,0,0,,Foi abençoado com o amor de uma Deusa,
+Dialogue: 10,0:00:14.29,0:00:16.62,Default,,0,0,0,,mas ainda assim escolhe rejeitá-lo e se opor a ela?
+Dialogue: 10,0:00:18.08,0:00:19.29,Default,,0,0,0,,Tudo bem, então.
+Dialogue: 10,0:00:20.12,0:00:21.00,Default,,0,0,0,,Traga isso.
+Dialogue: 10,0:00:22.46,0:00:24.46,Default,,0,0,0,,Isso vai ser o fim!
+Dialogue: 10,0:00:29.76,0:00:30.80,Default,,0,0,0,,Uchide no Kozuchi!
+Dialogue: 10,0:00:31.22,0:00:32.58,Default,,0,0,0,,Dance e gira!
+Dialogue: 10,0:00:39.60,0:00:41.56,Default,,0,0,0,,Bell!
+Dialogue: 10,0:00:42.81,0:00:45.07,Default,,0,0,0,,Deusa! E Srta. Haruhime!
+Dialogue: 10,0:00:45.07,0:00:45.94,Default,,0,0,0,,Por que está aqui?
+Dialogue: 10,0:00:46.28,0:00:48.99,Default,,0,0,0,,Vim atualizar seu status!
+Dialogue: 10,0:00:48.99,0:00:51.07,Default,,0,0,0,,Usarei sua excelência para lhe dar umboost de poder!
+Dialogue: 10,0:00:52.16,0:00:54.53,Default,,0,0,0,,Vai derrubar o Rei, não é?
+Dialogue: 10,0:00:55.03,0:00:58.12,Default,,0,0,0,,E depois vai salvar a Syr, certo?
+Dialogue: 10,0:01:01.55,0:01:02.83,Default,,0,0,0,,Vá fazer isso, Bell.
+Dialogue: 10,0:01:03.10,0:01:05.04,Default,,0,0,0,,Vamos dar uma surra nele enquanto você não está.
+Dialogue: 10,0:01:05.38,0:01:07.67,Default,,0,0,0,,Faça rápido, coelho.
+Dialogue: 10,0:01:07.67,0:01:08.84,Default,,0,0,0,,Certo!
+Dialogue: 10,0:01:23.19,0:01:25.65,Default,,0,0,0,,Espero que goste de ser surpreendido, idiota!
+Dialogue: 10,0:01:49.51,0:01:50.26,Default,,0,0,0,,Inacreditável...
+Dialogue: 10,0:01:50.26,0:01:52.18,Default,,0,0,0,,Não seja bobo.
+Dialogue: 10,0:01:52.18,0:01:54.47,Default,,0,0,0,,Você vai se juntar à ação em breve!
+Dialogue: 10,0:01:55.26,0:01:58.47,Default,,0,0,0,,{\i1}O aumento total de suas habilidades básicas ultrapassa 999.
+Dialogue: 10,0:01:59.14,0:02:00.64,Default,,0,0,0,,{\i1}Mas ainda não é suficiente.
+Dialogue: 10,0:02:00.64,0:02:04.44,Default,,0,0,0,,{\i1}Ele não pode competir com aquele ápice de poder \N mesmo com o boost que ele receberá disso.
+Dialogue: 10,0:02:05.02,0:02:05.65,Default,,0,0,0,,{\i1}Mas mesmo assim!
+Dialogue: 10,0:02:06.94,0:02:11.15,Default,,0,0,0,,Escute-me, Bell. Você vai estar \Nem pé de igualdade com aqueles aventureiros.
+Dialogue: 10,0:02:11.86,0:02:14.41,Default,,0,0,0,,E você os superará. Eu sei que você tem isso em você.
+Dialogue: 10,0:02:15.39,0:02:16.87,Default,,0,0,0,,Então, aguenta firme.
+Dialogue: 10,0:02:17.44,0:02:18.41,Default,,0,0,0,,E vença isso!
+Dialogue: 10,0:02:19.16,0:02:20.75,Default,,0,0,0,,Eu vou, Deusa!
+Dialogue: 10,0:02:21.12,0:02:22.00,Default,,0,0,0,,Mestre Bell.
+Dialogue: 10,0:02:24.04,0:02:25.67,Default,,0,0,0,,Que a sorte lhe sorria.
+Dialogue: 10,0:02:40.64,0:02:41.56,Default,,0,0,0,,Vamos fazer isso!
+Dialogue: 10,0:02:41.56,0:02:43.94,Default,,0,0,0,,Vá lá!
+Dialogue: 10,0:03:23.02,0:03:27.02,Default,,0,0,0,,{\i1}Right now, they effectively have\None level 6 and three level 7s.
+Dialogue: 10,0:03:27.31,0:03:30.98,Default,,0,0,0,,É uma festa forte o suficiente \Npara conquistar os Andares Profundos. E ainda assim...
+Dialogue: 10,0:03:31.48,0:03:33.73,Default,,0,0,0,,Ainda não é o suficiente para derrotá-lo, hein?
+Dialogue: 10,0:03:34.36,0:03:36.20,Default,,0,0,0,,aquele porco com cara de idiota.
+Dialogue: 10,0:03:36.49,0:03:39.20,Default,,0,0,0,,Ele já chegou ao nível fodão 8.
+Dialogue: 10,0:03:39.91,0:03:40.95,Default,,0,0,0,,Isso é uma merda!
+Dialogue: 10,0:03:40.95,0:03:42.95,Default,,0,0,0,,Como diabos alguém vai vencê-lo?!
+Dialogue: 10,0:03:42.95,0:03:43.91,Default,,0,0,0,,Não pergunte a mim!
+Dialogue: 10,0:03:44.50,0:03:48.88,Default,,0,0,0,,Hedin está quase sem magic power, mesmo tendo \Na maior reserva de poder mágico em todo Orario.
+Dialogue: 10,0:03:49.29,0:03:50.84,Default,,0,0,0,,É perigoso deixar isso acontecer.
+Dialogue: 10,0:03:51.50,0:03:53.21,Default,,0,0,0,,Eles ainda têm uma chance.
+Dialogue: 10,0:03:53.21,0:03:56.01,Default,,0,0,0,,A forma bestial de Ottarl não é uma habilidade invencível por nenhum meio.
+Dialogue: 10,0:03:57.18,0:03:59.64,Default,,0,0,0,,Eu tenho certeza de que Hedin sabe disso.
+Dialogue: 10,0:03:59.64,0:04:02.35,Default,,0,0,0,,Eles só podem continuar pressionando!
+Dialogue: 10,0:04:05.31,0:04:07.77,Default,,0,0,0,,Meu Deus!
+Dialogue: 10,0:04:08.23,0:04:10.77,Default,,0,0,0,,Nada pode derrubá-lo!
+Dialogue: 10,0:04:12.61,0:04:14.23,Default,,0,0,0,,Isso é o auge do poder!
+Dialogue: 10,0:04:14.23,0:04:17.86,Default,,0,0,0,,Esse é o poder de Ottarl, o Rei!
+Dialogue: 10,0:04:18.45,0:04:22.83,Default,,0,0,0,,É hora do exército aliado \Ndesistir de toda a esperança?!
+Dialogue: 10,0:04:31.20,0:04:32.34,Default,,0,0,0,,{\i1}Nada está funcionando!
+Dialogue: 10,0:04:33.63,0:04:35.76,Default,,0,0,0,,{\i1}Não consigo derrubá-lo!
+Dialogue: 10,0:04:44.85,0:04:47.56,Default,,0,0,0,,{\i1}Mas não vou desistir até alcançar a Sra. Syr!
+Dialogue: 10,0:04:51.48,0:04:53.61,Default,,0,0,0,,{\i1}Porque prometi...
+Dialogue: 10,0:04:54.48,0:04:57.40,Default,,0,0,0,,{\i1}Que a salvaria!
+Dialogue: 10,0:05:03.07,0:05:04.53,Default,,0,0,0,,{\i1}Maldição!
+Dialogue: 10,0:05:04.53,0:05:08.66,Default,,0,0,0,,{\i1}Odeio isso! Ele conseguiu me pegar também!
+Dialogue: 10,0:05:10.12,0:05:11.37,Default,,0,0,0,,{\i1}Tudo bem.
+Dialogue: 10,0:05:11.37,0:05:12.71,Default,,0,0,0,,{\i1}Vou admitir.
+Dialogue: 10,0:05:13.08,0:05:16.13,Default,,0,0,0,,{\i1}Esse idiota nunca escolheria ser seu Odr.
+Dialogue: 10,0:05:16.13,0:05:19.63,Default,,0,0,0,,{\i1}E exatamente por isso que ele é o único\Nque pode fazê-la perceber...
+Dialogue: 10,0:05:19.63,0:05:21.97,Default,,0,0,0,,{\i1}Isso não é o que é amor.
+Dialogue: 10,0:05:21.97,0:05:22.93,Default,,0,0,0,,Cuidado, Hedin!
+Dialogue: 10,0:05:25.22,0:05:28.35,Default,,0,0,0,,"Atacar para sempre, general imortal de raios."
+Dialogue: 10,0:05:28.35,0:05:30.10,Default,,0,0,0,,Hildr Valioso!
+Dialogue: 10,0:05:41.78,0:05:44.24,Default,,0,0,0,,Mestre!
+Dialogue: 10,0:05:50.37,0:05:51.12,Default,,0,0,0,,Mestre!
+Dialogue: 10,0:05:53.96,0:05:56.67,Default,,0,0,0,,Mantenha... sua concentração...
+Dialogue: 10,0:05:57.80,0:06:01.13,Default,,0,0,0,,Você deve... salvá-la...
+Dialogue: 10,0:06:01.63,0:06:06.39,Default,,0,0,0,,"Executar para sempre, santa imortal."
+Dialogue: 10,0:06:06.93,0:06:09.52,Default,,0,0,0,,Hildr Laurus.
+Dialogue: 10,0:06:14.02,0:06:16.94,Default,,0,0,0,,Vá, meu estúpido aprendiz.
+Dialogue: 10,0:06:42.84,0:06:44.72,Default,,0,0,0,,Tudo que posso ver é uma confusão de luz...
+Dialogue: 10,0:06:44.72,0:06:46.93,Default,,0,0,0,,Esse é o terceiro feitiço do Hedin!
+Dialogue: 10,0:06:46.93,0:06:48.55,Default,,0,0,0,,Um encantamento de raio?!
+Dialogue: 10,0:06:48.55,0:06:50.81,Default,,0,0,0,,Ele está aumentando tanto sua recuperação quanto sua agilidade!
+Dialogue: 10,0:06:52.77,0:06:53.77,Default,,0,0,0,,Meu Deus...
+Dialogue: 10,0:06:54.23,0:06:58.02,Default,,0,0,0,,É como a lenda do Cavaleiro do Raio \Ntornando-se realidade.
+Dialogue: 10,0:07:00.48,0:07:03.57,Default,,0,0,0,,{\i1}Com a ajuda do Mestre, não há limite para onde posso ir!
+Dialogue: 10,0:07:03.57,0:07:05.49,Default,,0,0,0,,{\i1}Para quem posso derrotar!
+Dialogue: 10,0:07:05.49,0:07:07.41,Default,,0,0,0,,{\i1}E agora, tenho que defeating {\i0}ele{\i1}!
+Dialogue: 10,0:07:31.68,0:07:32.89,Default,,0,0,0,,{\i1}Eu me lembro.
+Dialogue: 10,0:07:33.39,0:07:35.85,Default,,0,0,0,,{\i1}Eu já senti essa sensação antes...
+Dialogue: 10,0:07:36.56,0:07:37.98,Default,,0,0,0,,{\i1}O desejo de vencer!
+Dialogue: 10,0:07:39.52,0:07:41.44,Default,,0,0,0,,{\i1}A necessidade de superar o obstáculo à minha frente!
+Dialogue: 10,0:07:42.53,0:07:47.86,Default,,0,0,0,,{\i1}Mas não estou lutando sozinho... todos estão me apoiando!
+Dialogue: 10,0:07:52.41,0:07:54.50,Default,,0,0,0,,{\i1}Desculpe por ser fraco.
+Dialogue: 10,0:07:54.50,0:07:58.00,Default,,0,0,0,,{\i1}Desculpe por não poder lutar com você de igual para igual.
+Dialogue: 10,0:07:58.00,0:08:00.79,Default,,0,0,0,,{\i1}Vamos te vencer juntos! Então só desiste!
+Dialogue: 10,0:08:01.75,0:08:03.80,Default,,0,0,0,,Você está socando muito acima do seu peso!
+Dialogue: 10,0:08:04.96,0:08:07.47,Default,,0,0,0,,Afaste-se, garoto!
+Dialogue: 10,0:08:15.52,0:08:17.56,Default,,0,0,0,,Sra. Mia! Sra. Ryu!
+Dialogue: 10,0:08:17.56,0:08:18.27,Default,,0,0,0,,Estou indo fundo!
+Dialogue: 10,0:08:28.28,0:08:29.53,Default,,0,0,0,,{\i1}Wait, his right arm...
+Dialogue: 10,0:08:33.45,0:08:34.91,Default,,0,0,0,,Ele já viu isso chegando!
+Dialogue: 10,0:08:40.54,0:08:43.79,Flashback,,0,0,0,,É melhor você aceitar esse hábito e \Nusá-lo para atrair seu oponente.
+Dialogue: 10,0:08:44.34,0:08:46.01,Default,,0,0,0,,Que filho da mãe!
+Dialogue: 10,0:08:46.01,0:08:48.05,Default,,0,0,0,,Bom movimento, garoto!
+Dialogue: 10,0:08:53.60,0:08:57.10,Default,,0,0,0,,Tome mais um pouco!
+Dialogue: 10,0:08:57.10,0:09:00.31,Default,,0,0,0,,"Que a luz de stardust me preencha \Ne atinja meu inimigo!"
+Dialogue: 10,0:09:00.31,0:09:01.94,Default,,0,0,0,,Vento Luminoso!
+Dialogue: 10,0:09:10.07,0:09:13.57,Default,,0,0,0,,Raio de Fogo!
+Dialogue: 10,0:09:51.11,0:09:53.86,Default,,0,0,0,,Eles conseguiram!
+Dialogue: 10,0:09:54.28,0:09:57.03,Default,,0,0,0,,O Rei está {\i1}derrotado{\i0}!
+Dialogue: 10,0:10:00.96,0:10:04.75,Default,,0,0,0,,Sim, eles finalmente o derrotaram!
+Dialogue: 10,0:10:06.59,0:10:07.84,Default,,0,0,0,,{\i1} Ainda não acabou.
+Dialogue: 10,0:10:07.84,0:10:10.43,Default,,0,0,0,,{\i1} Ele é o aventureiro mais poderoso de Orario.
+Dialogue: 10,0:10:10.43,0:10:12.09,Default,,0,0,0,,{\i1} Mesmo depois de levar todo aquele dano...
+Dialogue: 10,0:10:12.79,0:10:14.64,Default,,0,0,0,,{\i1} Ele ainda pode lutar!
+Dialogue: 10,0:10:15.89,0:10:19.81,Default,,0,0,0,,Você tem... o que é preciso para libertá-la?
+Dialogue: 10,0:10:20.10,0:10:21.27,Default,,0,0,0,,Hã?
+Dialogue: 10,0:10:22.94,0:10:24.73,Default,,0,0,0,,Você pode salvá-la?
+Dialogue: 10,0:10:26.27,0:10:27.19,Default,,0,0,0,,Sim!
+Dialogue: 10,0:10:30.40,0:10:32.15,Default,,0,0,0,,Então vamos ver você fazer isso.
+Dialogue: 10,0:10:32.90,0:10:35.74,Default,,0,0,0,,Bell. Vana Freya está vindo para cá.
+Dialogue: 10,0:10:38.58,0:10:40.66,Default,,0,0,0,,Vamos perder se ele nos alcançar.
+Dialogue: 10,0:10:40.66,0:10:42.58,Default,,0,0,0,,Você precisa fugir agora mesmo para Freya!
+Dialogue: 10,0:10:42.58,0:10:44.21,Default,,0,0,0,,Tudo depende de você, garoto.
+Dialogue: 10,0:10:44.21,0:10:46.46,Default,,0,0,0,,Somos apenas peso morto agora.
+Dialogue: 10,0:10:46.46,0:10:49.09,Default,,0,0,0,,Vamos manter Lady Hestia segura.
+Dialogue: 10,0:10:49.09,0:10:50.21,Default,,0,0,0,,Você só precisa se concentrar em Syr!
+Dialogue: 10,0:10:54.22,0:10:55.01,Default,,0,0,0,,{\i1}Não falta muito agora.
+Dialogue: 10,0:10:55.97,0:10:57.43,Default,,0,0,0,,{\i1}Senhorita Syr está bem aí.
+Dialogue: 10,0:11:00.26,0:11:02.89,Default,,0,0,0,,Ainda não há vencedor, pessoal!
+Dialogue: 10,0:11:02.89,0:11:05.35,Default,,0,0,0,,A batalha acabou, mas o Jogo de Guerra continua!
+Dialogue: 10,0:11:05.35,0:11:08.31,Default,,0,0,0,,O desfecho final será uma partida de pega-pega!
+Dialogue: 10,0:11:08.31,0:11:11.15,Default,,0,0,0,,Louco pensar que vai dar nisso numa corrida de pernas.
+Dialogue: 10,0:11:11.15,0:11:16.57,Default,,0,0,0,,É isso mesmo. Se Bell puder correr rápido o suficiente para alcançar Freya e \Narrancar sua flor, então o exército aliado vencerá.
+Dialogue: 10,0:11:17.20,0:11:19.99,Default,,0,0,0,,Mas por outro lado, se Vana Freya derrubar Bell...
+Dialogue: 10,0:11:20.62,0:11:23.83,Default,,0,0,0,,então é só uma questão de tempo até que Hestia \Ne os outros percam suas flores.
+Dialogue: 10,0:11:23.83,0:11:26.96,Default,,0,0,0,,Agora o quê? Você vai começar a \Nrezar para Zeus ou algo assim?
+Dialogue: 10,0:11:27.25,0:11:29.34,Default,,0,0,0,,Por favor, isso é um desperdício de tempo.
+Dialogue: 10,0:11:29.34,0:11:32.05,Default,,0,0,0,,Zeus estaria apenas sentado rindo da bunda dele.
+Dialogue: 10,0:11:32.05,0:11:35.09,Default,,0,0,0,,Ah! Ou Astrea ou Athena farão isso!
+Dialogue: 10,0:11:35.09,0:11:37.05,Default,,0,0,0,,Alguém deixe o Bell escapar, por favor!
+Dialogue: 10,0:11:37.05,0:11:40.18,Default,,0,0,0,,Bem, alguém tem uma grande coisa \N pelo tipo prim e próprio!
+Dialogue: 10,0:11:41.89,0:11:44.60,Default,,0,0,0,,Pena para você, Sr. Bom Moço.
+Dialogue: 10,0:11:44.60,0:11:47.39,Default,,0,0,0,,Parece que ninguém está respondendo suas orações.
+Dialogue: 10,0:11:50.44,0:11:51.40,Default,,0,0,0,,Lá está você!
+Dialogue: 10,0:11:52.11,0:11:55.32,Default,,0,0,0,,Uh-oh! Vana Freya está chegando quente!
+Dialogue: 10,0:11:55.32,0:11:57.11,Default,,0,0,0,,Não! Fique longe!
+Dialogue: 10,0:11:57.11,0:11:59.74,Default,,0,0,0,,Mexa-se, Pé de Coelho!
+Dialogue: 10,0:11:59.74,0:12:00.95,Default,,0,0,0,,Ele está perdendo terreno!
+Dialogue: 10,0:12:00.95,0:12:03.41,Default,,0,0,0,,Ainda é uma longa distância até o templo.
+Dialogue: 10,0:12:03.41,0:12:05.87,Default,,0,0,0,,Não olhe para trás! Balance seus braços, droga!
+Dialogue: 10,0:12:06.12,0:12:08.58,Default,,0,0,0,,Mostre-nos um milagre, Pé de Coelho!
+Dialogue: 10,0:12:09.46,0:12:10.50,Default,,0,0,0,,Vá embora!
+Dialogue: 10,0:12:10.50,0:12:13.30,Default,,0,0,0,,Corra, Bell!
+Dialogue: 10,0:12:17.01,0:12:19.76,Default,,0,0,0,,Continue correndo, Bell! Não pare!
+Dialogue: 10,0:12:21.18,0:12:24.64,Default,,0,0,0,,Você é o único que nos resta agora!
+Dialogue: 10,0:12:27.18,0:12:30.27,Default,,0,0,0,,Alô? Alguém está aí?
+Dialogue: 10,0:12:30.98,0:12:34.44,Default,,0,0,0,,Por favor... alguém ajude o Mestre Bell!
+Dialogue: 10,0:12:37.19,0:12:41.07,Default,,0,0,0,,Por favor, me ajude! O Mestre Bell precisa de ajuda!
+Dialogue: 10,0:12:41.49,0:12:43.12,Default,,0,0,0,,Alguém vá até ele!
+Dialogue: 10,0:12:43.70,0:12:45.79,Default,,0,0,0,,Vá para o lado oeste!
+Dialogue: 10,0:12:45.79,0:12:48.75,Default,,0,0,0,,E ajude o Mestre Bell!
+Dialogue: 10,0:12:58.80,0:13:01.72,Default,,0,0,0,,Isto vai ser um final emocionante, pessoal!
+Dialogue: 10,0:13:01.72,0:13:04.51,Default,,0,0,0,,Ninguém pediu por isso, mas estamos Receiving do mesmo jeito!
+Dialogue: 10,0:13:04.51,0:13:06.14,Default,,0,0,0,,Merda, aqui vem ele!
+Dialogue: 10,0:13:06.14,0:13:08.31,Default,,0,0,0,,Esta é a linha de chegada!
+Dialogue: 10,0:13:15.23,0:13:16.94,Default,,0,0,0,,{\i1}Eu não desisto aqui!
+Dialogue: 10,0:13:20.28,0:13:22.07,Default,,0,0,0,,{\i1}O Mestre confiou tudo em mim!
+Dialogue: 10,0:13:23.32,0:13:26.99,Default,,0,0,0,,{\i1}Assim como a Sra. Ryu e a Sra. Mia! Até o Sr. Ottarl!
+Dialogue: 10,0:13:27.66,0:13:29.75,Default,,0,0,0,,{\i1}Eu tenho uma promessa para cumprir!
+Dialogue: 10,0:13:30.12,0:13:31.00,Default,,0,0,0,,{\i1}Eu vou salvar você!
+Dialogue: 10,0:13:31.58,0:13:33.92,Default,,0,0,0,,{\i1}Apenas aguente firme, Sra. Syr!
+Dialogue: 10,0:13:33.92,0:13:37.25,Default,,0,0,0,,Eles estão na reta final!
+Dialogue: 10,0:13:40.51,0:13:42.30,Default,,0,0,0,,Diga suas orações!
+Dialogue: 10,0:13:48.93,0:13:50.14,Default,,0,0,0,,Bell!
+Dialogue: 10,0:13:51.60,0:13:52.81,Default,,0,0,0,,Eu não acredito nisso!
+Dialogue: 10,0:13:52.81,0:13:54.02,Default,,0,0,0,,Vá embora!
+Dialogue: 10,0:13:54.02,0:13:57.90,Default,,0,0,0,,Uau! Ele foi turbo!
+Dialogue: 10,0:14:00.78,0:14:02.91,Default,,0,0,0,,Você pequeno filho da puta!
+Dialogue: 10,0:14:03.20,0:14:05.49,Default,,0,0,0,,Rusk! Lemilia! Pare ele!
+Dialogue: 10,0:14:09.87,0:14:12.29,Default,,0,0,0,,"roda dourada e colar de prata."
+Dialogue: 10,0:14:12.29,0:14:14.67,Default,,0,0,0,,"Entre escárnio amoroso e fantasias mortas,"
+Dialogue: 10,0:14:14.67,0:14:17.00,Default,,0,0,0,,"aqui chegam os Destinos."
+Dialogue: 10,0:14:17.63,0:14:19.34,Default,,0,0,0,,"Eu carrega selvagemente..."
+Dialogue: 10,0:14:19.59,0:14:22.05,Default,,0,0,0,,"entregando sua vontade divina!"
+Dialogue: 10,0:14:23.01,0:14:25.34,Default,,0,0,0,,Gralineze...
+Dialogue: 10,0:14:26.76,0:14:29.47,Default,,0,0,0,,"Queime brilhante! Feitiço proibido!"
+Dialogue: 10,0:14:39.07,0:14:40.94,Default,,0,0,0,,Ouvi você, Lil' Squeak.
+Dialogue: 10,0:14:40.94,0:14:42.86,Default,,0,0,0,,E eu consegui chegar a tempo.
+Dialogue: 10,0:14:44.03,0:14:46.53,Default,,0,0,0,,Perdedores merecem comer terra, certo?
+Dialogue: 10,0:14:46.53,0:14:49.28,Default,,0,0,0,,Voce' verme nojento!
+Dialogue: 10,0:14:50.24,0:14:52.87,Default,,0,0,0,,Kazuki!
+Dialogue: 10,0:14:55.79,0:14:58.38,Default,,0,0,0,,O ferreiro negro entrega na hora!
+Dialogue: 10,0:14:58.38,0:15:01.84,Default,,0,0,0,,Que reviravolta!
+Dialogue: 10,0:15:12.18,0:15:13.35,Default,,0,0,0,,Sra. Syr.
+Dialogue: 10,0:15:18.52,0:15:20.57,Default,,0,0,0,,Bell. Pare aí mesmo.
+Dialogue: 10,0:15:24.90,0:15:26.32,Default,,0,0,0,,Por que...?
+Dialogue: 10,0:15:29.03,0:15:31.54,Default,,0,0,0,,Por que você não quer ser meu?
+Dialogue: 10,0:15:31.83,0:15:34.00,Default,,0,0,0,,Como você pode rejeitar meu amor?
+Dialogue: 10,0:15:34.00,0:15:35.66,Default,,0,0,0,,Eu sou Freya, pelo amor de Deus!
+Dialogue: 10,0:15:37.25,0:15:41.50,Default,,0,0,0,,Eu não consegui conquistá-lo como Syr, então escolhi ser Freya.
+Dialogue: 10,0:15:41.50,0:15:42.71,Default,,0,0,0,,Mas se isso também não funcionar...
+Dialogue: 10,0:15:43.21,0:15:45.47,Default,,0,0,0,,O que mais eu posso fazer?!
+Dialogue: 10,0:15:45.47,0:15:47.55,Default,,0,0,0,,Sou a Deusa do Amor!
+Dialogue: 10,0:15:47.55,0:15:52.18,Default,,0,0,0,,Yet, deep down, my heart keeps telling me\Nthat you're the one person who I don't want to love!
+Dialogue: 10,0:15:52.81,0:15:54.89,Default,,0,0,0,,Estou louca por você, Bell.
+Dialogue: 10,0:15:55.43,0:15:57.06,Flashback,,0,0,0,,Você é o amor da minha vida.
+Dialogue: 10,0:15:57.69,0:15:59.23,Flashback,,0,0,0,,Quero passar a eternidade com você.
+Dialogue: 10,0:16:00.15,0:16:01.90,Flashback,,0,0,0,,E realmente quero que você escolha a mim.
+Dialogue: 10,0:16:02.69,0:16:04.32,Default,,0,0,0,,Meu coração dói.
+Dialogue: 10,0:16:04.32,0:16:06.11,Default,,0,0,0,,Anseio por você me segurar.
+Dialogue: 10,0:16:06.70,0:16:09.62,Default,,0,0,0,,Estou tão cansada de sofrer com \No que o amanhã reserva!
+Dialogue: 10,0:16:10.66,0:16:13.45,Flashback,,0,0,0,,Nunca quis experimentar isso.
+Dialogue: 10,0:16:13.45,0:16:17.54,Flashback,,0,0,0,,Mas mesmo assim, quero saber \Naonde esses sentimentos me levam...
+Dialogue: 10,0:16:17.54,0:16:19.83,Flashback,,0,0,0,,Não consigo deixar de ser curiosa!
+Dialogue: 10,0:16:20.75,0:16:23.38,Default,,0,0,0,,Eu te amo, Bell.
+Dialogue: 10,0:16:31.01,0:16:31.93,Default,,0,0,0,,Eu...
+Dialogue: 10,0:16:32.85,0:16:34.93,Default,,0,0,0,,nunca poderei ser seu.
+Dialogue: 10,0:16:36.18,0:16:39.39,Default,,0,0,0,,Eu não sou a pessoa que pode ser seu Odr.
+Dialogue: 10,0:16:40.02,0:16:41.10,Default,,0,0,0,,Tudo o que posso fazer...
+Dialogue: 10,0:16:43.40,0:16:46.82,Default,,0,0,0,,Me traga algum encerramento para sua paixonite por mim!
+Dialogue: 10,0:17:02.21,0:17:03.79,Default,,0,0,0,,{\i1}Eu queria ter certeza.
+Dialogue: 10,0:17:04.20,0:17:06.59,Default,,0,0,0,,{\i1}O que eu estava sentindo era amor?
+Dialogue: 10,0:17:06.59,0:17:08.88,Default,,0,0,0,,{\i1}Ou era apenas uma paixão passageira?
+Dialogue: 10,0:17:09.72,0:17:14.51,Default,,0,0,0,,{\i1}Como a Deusa do Amor, o que sempre desejei \Nera o doce gosto de ter uma paixonite pura.
+Dialogue: 10,0:17:15.39,0:17:16.81,Default,,0,0,0,,{\i1}Eu adorava isso.
+Dialogue: 10,0:17:17.39,0:17:18.56,Default,,0,0,0,,{\i1}Sonhava com isso.
+Dialogue: 10,0:17:19.52,0:17:22.23,Default,,0,0,0,,{\i1}O amor é incondicional. O amor é absoluto.
+Dialogue: 10,0:17:22.69,0:17:25.69,Default,,0,0,0,,{\i1}E meu amor era desejado por todos \Nsem motivo aparente.
+Dialogue: 10,0:17:26.48,0:17:29.82,Default,,0,0,0,,{\i1}Mas com o tempo, cansei de viver assim.
+Dialogue: 10,0:17:31.45,0:17:33.82,Default,,0,0,0,,{\i1}Havia apenas uma exceção.
+Dialogue: 10,0:17:33.82,0:17:36.70,Default,,0,0,0,,{\i1}Uma pessoa no mundo inteiro \Ncom quem eu estava obcecado.
+Dialogue: 10,0:17:37.29,0:17:39.91,Default,,0,0,0,,{\i1}Porque ele nunca fez o que eu queria.
+Dialogue: 10,0:17:40.37,0:17:41.79,Default,,0,0,0,,{\i1}Ah, a ironia.
+Dialogue: 10,0:17:42.21,0:17:43.33,Default,,0,0,0,,Isso é realmente tudo?
+Dialogue: 10,0:17:45.79,0:17:47.71,Default,,0,0,0,,Lembre-se do que ele disse?
+Dialogue: 10,0:17:47.71,0:17:52.34,Default,,0,0,0,,Se ele ganhasse o Jogo da Guerra,\Nele queria encontrar com a "verdadeira você".
+Dialogue: 10,0:17:53.59,0:17:55.55,Default,,0,0,0,,A verdadeira eu?
+Dialogue: 10,0:17:58.01,0:18:01.18,Default,,0,0,0,,Não deixe nenhum espaço para arrependimentos, certo?
+Dialogue: 10,0:18:11.43,0:18:13.53,Default,,0,0,0,,Como isso aconteceu?
+Dialogue: 10,0:18:13.53,0:18:16.74,Default,,0,0,0,,Porque você irritou muitas pessoas demais, óbvio.
+Dialogue: 10,0:18:16.74,0:18:20.41,Default,,0,0,0,,Although, the mental gymnastics that\NHedin pulled certainly didn't help, either.
+Dialogue: 10,0:18:21.08,0:18:24.88,Default,,0,0,0,,Diabos. Você está mais pobre do que um mendigo agora, não é?
+Dialogue: 10,0:18:24.88,0:18:27.59,Default,,0,0,0,,Não venha aqui só para pegar uma bebida de graça.
+Dialogue: 10,0:18:27.59,0:18:29.71,Default,,0,0,0,,O que mais eu posso fazer?
+Dialogue: 10,0:18:29.71,0:18:31.63,Default,,0,0,0,,Minha Familia foi dissolvida.
+Dialogue: 10,0:18:31.63,0:18:34.30,Default,,0,0,0,,E todos os meus ativos foram tomados.
+Dialogue: 10,0:18:34.63,0:18:38.43,Default,,0,0,0,,Just count yourself lucky\Nyou didn't get sent back to Heaven.
+Dialogue: 10,0:18:38.43,0:18:44.27,Default,,0,0,0,, Ouvi dizer que os chefes da guilda estão completamente perdidos sobre como\Nlidar com Ottarl e os outros no futuro, embora.
+Dialogue: 10,0:18:46.10,0:18:48.36,Default,,0,0,0,,"Seja o herói que este mundo precisa."
+Dialogue: 10,0:18:48.36,0:18:50.15,Default,,0,0,0,,{\fad(0,850)}Essa foi a minha última ordem para eles.
+Dialogue: 10,0:18:58.24,0:19:01.87,Default,,0,0,0,,Como você está pobre, agora terá que trabalhar\Npara viver como fazia antes.
+Dialogue: 10,0:19:02.70,0:19:08.34,Default,,0,0,0,, Ouvi dizer que uma certa deusa baixinha\Nestá disposta a perdoar uma garota de taverna ficando na cidade.
+Dialogue: 10,0:19:08.88,0:19:10.21,Default,,0,0,0,,Eu nunca faria isso.
+Dialogue: 10,0:19:10.21,0:19:12.05,Default,,0,0,0,,Isso é muito triste.
+Dialogue: 10,0:19:19.35,0:19:20.68,Default,,0,0,0,,Adeus, Mia.
+Dialogue: 10,0:19:21.43,0:19:22.72,Default,,0,0,0,,Foi divertido.
+Dialogue: 10,0:19:26.77,0:19:27.98,Default,,0,0,0,,Sra. Syr.
+Dialogue: 10,0:19:28.94,0:19:30.32,Default,,0,0,0,,Você realmente está indo embora?
+Dialogue: 10,0:19:30.94,0:19:32.69,Default,,0,0,0,,É assim que geralmente funciona.
+Dialogue: 10,0:19:33.82,0:19:36.45,Default,,0,0,0,,Ou você planeja me deixar de novo?
+Dialogue: 10,0:19:37.16,0:19:39.41,Default,,0,0,0,,Mesmo depois de causar tamanho alvoroço,
+Dialogue: 10,0:19:39.41,0:19:42.79,Default,,0,0,0,,e rejeitar-me repetidamente \Npor sua própria paz interior?
+Dialogue: 10,0:19:44.33,0:19:45.83,Default,,0,0,0,,Tudo bem.
+Dialogue: 10,0:19:46.42,0:19:49.04,Default,,0,0,0,,Estou grato por você ter posto um fim firme em meu amor não correspondido.
+Dialogue: 10,0:19:49.04,0:19:50.84,Default,,0,0,0,,Realmente me salvou.
+Dialogue: 10,0:19:51.84,0:19:54.26,Default,,0,0,0,,Finalmente aprendi a deixar para trás.
+Dialogue: 10,0:19:55.51,0:19:57.05,Default,,0,0,0,,Obrigado, Bell.
+Dialogue: 10,0:19:57.68,0:19:59.72,Default,,0,0,0,,Sempre pensarei em você.
+Dialogue: 10,0:20:00.14,0:20:04.02,Default,,0,0,0,,Sempre. Até eu ficar cansado disso.
+Dialogue: 10,0:20:13.36,0:20:15.94,Default,,0,0,0,,Não tem nada a dizer ao resto de nós?
+Dialogue: 10,0:20:21.99,0:20:23.37,Default,,0,0,0,,Desculpe-me.
+Dialogue: 10,0:20:28.25,0:20:30.71,Default,,0,0,0,,Se sentir-se culpado, então assuma a responsabilidade!
+Dialogue: 10,0:20:30.71,0:20:33.17,Default,,0,0,0,,Foi você quem salvou minha vida!
+Dialogue: 10,0:20:33.17,0:20:35.38,Default,,0,0,0,,Você não pode fugir da responsabilidade que vem com isso!
+Dialogue: 10,0:20:35.76,0:20:38.76,Default,,0,0,0,,Vou fazer você engolir suas palavras! \NE sofrer todas as consequências!
+Dialogue: 10,0:20:39.43,0:20:41.22,Default,,0,0,0,,Não vá embora.
+Dialogue: 10,0:20:41.64,0:20:44.10,Default,,0,0,0,,Fique aqui conosco para sempre, droga!
+Dialogue: 10,0:20:44.93,0:20:46.93,Default,,0,0,0,,Não vai escapar do peludo!
+Dialogue: 10,0:20:46.93,0:20:51.94,Default,,0,0,0,,Não tente argumentar que se sente desconfortável devido ao orgulho divino ou piedade ou qualquer outra coisa. Não nos importamos!
+Dialogue: 10,0:20:52.23,0:20:56.74,Default,,0,0,0,,Isso mesmo! Pois não estamos \Nfalando com uma Deusa agora.
+Dialogue: 10,0:20:56.74,0:20:58.40,Default,,0,0,0,,Meu colega de trabalho.
+Dialogue: 10,0:21:02.49,0:21:03.87,Default,,0,0,0,,Dama Freya...
+Dialogue: 10,0:21:06.37,0:21:07.41,Default,,0,0,0,,Syr!
+Dialogue: 10,0:21:08.91,0:21:10.29,Default,,0,0,0,,Anya...
+Dialogue: 10,0:21:11.17,0:21:14.42,Default,,0,0,0,,Eu sou muito burro para entender nada agora.
+Dialogue: 10,0:21:15.05,0:21:18.30,Default,,0,0,0,,Mas eu realmente odiaria se Syr fosse embora!
+Dialogue: 10,0:21:20.76,0:21:24.05,Default,,0,0,0,,Eu quero que você fique!
+Dialogue: 10,0:21:29.52,0:21:31.52,Default,,0,0,0,,Aqui, isso é para você.
+Dialogue: 10,0:21:39.65,0:21:42.78,Default,,0,0,0,,Eu já sei que não posso ser seu Odr.
+Dialogue: 10,0:21:43.82,0:21:45.53,Default,,0,0,0,,Eu também não posso ser Sir Fulland.
+Dialogue: 10,0:21:46.62,0:21:47.74,Default,,0,0,0,,Mas...
+Dialogue: 10,0:21:48.95,0:21:51.21,Default,,0,0,0,,Eu acho que posso ser seu protetor.
+Dialogue: 10,0:21:51.21,0:21:54.21,Default,,0,0,0,,Um cavaleiro que vai suportar dificuldades ao seu lado.
+Dialogue: 10,0:21:56.21,0:21:57.67,Default,,0,0,0,,Senhor Bell.
+Dialogue: 10,0:21:57.67,0:22:00.67,Default,,0,0,0,,Sim, então... hum...
+Dialogue: 10,0:22:14.73,0:22:17.52,Default,,0,0,0,,N-Naughty little minx.
+Dialogue: 10,0:22:17.52,0:22:22.36,Default,,0,0,0,,Eu vou tomar conta de você para que \Nvocê não se meta em mais problemas. Prepare-se.
+Dialogue: 10,0:22:26.16,0:22:27.41,Default,,0,0,0,,Senhor Bell!
+Dialogue: 10,0:22:31.12,0:22:34.12,Default,,0,0,0,,Eu quero parar de ser uma Deusa!
+Dialogue: 10,0:22:35.58,0:22:39.25,Default,,0,0,0,,Eu... quero ficar aqui para sempre!
+Dialogue: 10,0:22:39.96,0:22:42.80,Default,,0,0,0,,Com todos vocês! E apenas seja Syr!
+Dialogue: 10,0:22:47.60,0:22:49.60,Default,,0,0,0,,Syr!
+Dialogue: 10,0:22:50.93,0:22:51.81,Default,,0,0,0,,Syr!
+Dialogue: 10,0:22:51.81,0:22:54.85,Default,,0,0,0,,Não mais gatos difíceis!
+Dialogue: 10,0:22:57.44,0:22:59.07,Default,,0,0,0,,Feliz agora, seu safado?
+Dialogue: 10,0:22:59.36,0:23:01.69,Default,,0,0,0,,Eu não sei se isso é tão bom quanto parece.
+Dialogue: 10,0:23:02.07,0:23:02.99,Default,,0,0,0,,Mas...
+Dialogue: 10,0:23:04.53,0:23:05.82,Default,,0,0,0,,Não é ruim.
+Dialogue: 10,0:23:07.37,0:23:10.16,Default,,0,0,0,,Você passou no teste, meu estúpido aprendiz.
+Dialogue: 10,0:23:18.54,0:23:22.09,Default,,0,0,0,,Realmente, um homem muito nojento.
+Dialogue: 10,0:23:29.05,0:23:30.26,Default,,0,0,0,,Você salvou Syr.
+Dialogue: 10,0:23:31.01,0:23:32.60,Default,,0,0,0,,Você salvou ambos nós.
+Dialogue: 10,0:23:33.77,0:23:34.77,Default,,0,0,0,,Então obrigado...
+Dialogue: 10,0:23:36.56,0:23:37.27,Default,,0,0,0,,Bell.
+Dialogue: 0,0:23:35.81,0:23:39.98,Ep Title,,0,0,0,,{\an2\iclip(m 1572.774 799.344 b 1573.211 801.141 1573.602 803.172 1573.821 805.578 1575.664 806.234 1578.008 806.703 1580.321 806.703 1586.305 806.703 1589.883 803.313 1589.883 798.844 1589.883 794.625 1587.711 793.063 1582.993 789.719 1579.743 787.406 1578.368 786.219 1578.368 784.016 1578.368 782.109 1579.633 780.625 1582.008 780.625 1584.868 780.625 1585.727 781.844 1586.493 785.813 l 1588.727 785.453 b 1588.336 783.094 1588.071 780.969 1587.961 779.563 1586.493 778.969 1584.43 778.531 1582.055 778.531 1575.305 778.531 1573.274 782.578 1573.274 785.453 1573.274 789.531 1575.368 791.047 1579.586 794.047 1583.383 796.75 1584.539 797.906 1584.539 800.422 1584.539 803.125 1582.633 804.609 1580.461 804.609 1577.821 804.609 1576.164 803.422 1575.039 798.797 m 1599.008 810.563 b 1598.274 812.188 1597.274 814.172 1595.868 814.172 1595.149 814.172 1594.789 813.516 1594.414 812.547 1594.055 811.641 1593.524 810.891 1592.227 810.891 1591.383 810.891 1590.664 811.609 1590.664 812.578 1590.664 814.422 1592.477 815.969 1595.258 815.969 1598.649 815.969 1600.164 813.266 1601.274 810.813 l 1608.821 791.266 b 1609.493 789.531 1609.899 789.313 1611.086 789.313 l 1611.086 787.797 1605.243 787.797 1605.243 789.313 b 1606.321 789.313 1606.758 789.453 1606.758 789.969 1606.758 790.219 1606.649 790.5 1606.508 790.906 l 1603.149 800.203 1603.086 800.203 1599.539 791.516 b 1599.258 790.906 1599.118 790.438 1599.118 790.063 1599.118 789.484 1599.586 789.313 1600.633 789.313 l 1600.633 787.797 1591.321 787.797 1591.321 789.313 b 1592.618 789.313 1592.868 789.453 1593.946 791.844 l 1600.586 806.016 c m 1619.571 787.656 l 1618.961 787.328 b 1616.758 788.344 1614.274 788.906 1612.289 789.125 l 1612.289 790.531 b 1614.274 790.531 1614.446 790.813 1614.446 793.234 l 1614.446 801.688 b 1614.446 804.391 1614.274 804.641 1612.289 804.641 l 1612.289 806.156 1622.274 806.156 1622.274 804.641 b 1620.039 804.641 1619.789 804.203 1619.789 801.688 l 1619.789 792.641 b 1621.008 790.75 1621.914 789.75 1622.774 789.75 1623.352 789.75 1623.649 790.109 1624.008 791.266 1624.399 792.375 1625.086 792.844 1625.993 792.844 1627.149 792.844 1627.789 791.953 1627.789 790.688 1627.789 788.563 1625.914 787.328 1624.399 787.328 1622.524 787.328 1621.274 788.313 1619.758 790.328 l 1619.68 790.328 c)\shad0\blur0.5\pos(1603.5,819.5)\c&H000000&\alpha&HFF&\t(1,600,1,\alpha&H00&)}Syr
+Dialogue: 1,0:23:35.81,0:23:39.98,Ep Title,,0,0,0,,{\an2\pos(1600,816)\alpha&HFF&\t(1,600,1,\alpha&H00&)}Syr
+Dialogue: 0,0:23:35.81,0:23:39.98,Ep Title,,0,0,0,,{\an2\iclip(m 1485.994 992.188 b 1486.385 988.172 1487.385 982.844 1487.385 981.031 1487.385 979.984 1486.869 979.031 1484.963 979.031 1483.103 979.031 1482.619 979.984 1482.619 981.031 1482.619 982.844 1483.619 988.172 1484.01 992.188 m 1493.744 992.188 b 1494.135 988.172 1495.135 982.844 1495.135 981.031 1495.135 979.984 1494.65 979.031 1492.744 979.031 1490.885 979.031 1490.369 979.984 1490.369 981.031 1490.369 982.844 1491.369 988.172 1491.76 992.188 m 1515.01 990.031 b 1515.01 993.797 1514.494 994.438 1512.588 994.438 l 1509.166 994.438 1509.166 984.359 b 1509.166 982.5 1509.291 982.156 1510.682 982.156 l 1514.791 982.156 b 1517.166 982.156 1517.603 982.594 1518.775 987.313 l 1521.447 987.313 1520.025 979.641 1498.822 979.641 1498.822 981.766 b 1501.932 981.766 1502.322 982.234 1502.322 985.484 l 1502.322 1006.391 b 1502.322 1009.594 1502.025 1010.109 1498.822 1010.109 l 1498.822 1012.188 1513.15 1012.188 1513.15 1010.109 b 1509.385 1010.109 1509.166 1009.672 1509.166 1006.391 l 1509.166 996.953 1512.635 996.953 b 1514.541 996.953 1515.01 997.391 1515.01 1001.547 l 1517.603 1001.547 1517.603 990.031 c m 1529.166 979.844 b 1527.182 979.844 1525.572 981.406 1525.572 983.609 1525.572 985.859 1527.182 987.422 1529.166 987.422 1531.197 987.422 1532.807 985.859 1532.807 983.609 1532.807 981.484 1531.338 979.844 1529.166 979.844 m 1531.9 989.594 b 1528.916 990.844 1526.103 991.531 1523.463 991.703 l 1523.463 993.438 b 1526.057 993.438 1526.228 993.656 1526.228 996.859 l 1526.228 1006.781 b 1526.228 1009.984 1526.01 1010.375 1523.463 1010.375 l 1523.463 1012.188 1535.182 1012.188 1535.182 1010.375 b 1532.9 1010.375 1532.635 1009.984 1532.635 1006.828 l 1532.635 989.984 c m 1546.088 989.984 l 1545.353 989.594 b 1542.713 990.797 1539.728 991.5 1537.353 991.75 l 1537.353 993.438 b 1539.728 993.438 1539.947 993.781 1539.947 996.688 l 1539.947 1006.828 b 1539.947 1010.078 1539.728 1010.375 1537.353 1010.375 l 1537.353 1012.188 1549.338 1012.188 1549.338 1010.375 b 1546.65 1010.375 1546.353 1009.859 1546.353 1006.828 l 1546.353 995.953 b 1547.822 993.703 1548.9 992.5 1549.947 992.5 1550.635 992.5 1550.978 992.938 1551.416 994.313 1551.9 995.656 1552.713 996.219 1553.791 996.219 1555.182 996.219 1555.963 995.141 1555.963 993.625 1555.963 991.063 1553.713 989.594 1551.9 989.594 1549.635 989.594 1548.135 990.766 1546.307 993.188 l 1546.228 993.188 c m 1557.525 1005.703 b 1557.963 1007.906 1558.26 1009.5 1558.478 1011.5 1560.291 1012.188 1562.588 1012.75 1565.838 1012.75 1572.244 1012.75 1575.369 1009.547 1575.369 1005.906 1575.369 1002.281 1571.947 1000.203 1570.088 999.063 1568.916 998.25 1567.228 997.422 1566.01 996.641 1564.932 995.859 1564.275 995 1564.275 994.047 1564.275 992.359 1566.103 991.578 1567.744 991.578 1570.26 991.578 1571.557 992.75 1572.291 996.219 l 1574.197 995.859 b 1573.682 993.391 1573.51 991.969 1573.338 990.547 1571.947 990.063 1569.916 989.594 1567.088 989.594 1561.463 989.594 1558.135 992.016 1558.135 995.438 1558.135 997.031 1558.744 998.328 1559.65 999.375 1560.728 1000.625 1562.291 1001.5 1564.057 1002.703 1566.103 1003.969 1567.275 1004.563 1567.963 1005.391 1568.525 1006 1568.744 1006.656 1568.744 1007.422 1568.744 1008.547 1568.135 1010.719 1564.963 1010.719 1562.369 1010.719 1560.557 1009.422 1559.432 1005.266 m 1580.135 992.281 l 1580.135 1006.266 b 1580.135 1011.406 1583.166 1012.75 1586.666 1012.75 1589.525 1012.75 1591.291 1012.063 1592.682 1010.844 l 1591.603 1009.172 b 1590.728 1009.859 1589.869 1010.203 1588.838 1010.203 1587.322 1010.203 1586.494 1009.25 1586.494 1006.484 l 1586.494 992.281 1591.682 992.281 1591.682 990.156 1586.494 990.156 1586.494 983.141 1584.713 983.141 b 1583.166 988 1580.994 990.203 1577.588 990.594 l 1577.588 992.281 c m 1626.9 1003.75 b 1625.728 1009.156 1625.244 1009.672 1622.572 1009.672 l 1617.51 1009.672 b 1616.463 1009.672 1616.119 1009.5 1616.119 1007.688 l 1616.119 985.609 b 1616.119 982.203 1616.338 981.766 1619.713 981.766 l 1619.713 979.641 1605.775 979.641 1605.775 981.766 b 1608.885 981.766 1609.275 982.234 1609.275 985.484 l 1609.275 1006.344 b 1609.275 1009.594 1608.885 1010.109 1605.775 1010.109 l 1605.775 1012.188 1628.197 1012.188 1629.666 1003.75 c m 1642.994 1012.75 b 1651.916 1012.75 1654.26 1007.266 1654.26 1001.016 1654.26 994 1650.791 989.594 1642.994 989.594 1635.775 989.594 1631.791 993.656 1631.791 1001.016 1631.791 1007.344 1634.166 1012.75 1642.994 1012.75 m 1642.963 991.578 b 1644.26 991.578 1645.291 992.141 1645.994 993.266 1646.947 994.828 1647.463 997.375 1647.463 1001.188 1647.463 1005.141 1646.9 1007.641 1645.947 1009.125 1645.26 1010.203 1644.26 1010.766 1642.963 1010.766 1641.697 1010.766 1640.666 1010.203 1639.963 1009.125 1639.057 1007.641 1638.494 1005.141 1638.494 1001.188 1638.494 995.563 1639.494 991.578 1642.916 991.578 m 1676.385 994.313 b 1677.213 992.234 1677.635 991.969 1678.853 991.969 l 1678.853 990.156 1672.322 990.156 1672.322 991.969 b 1673.541 991.969 1673.963 992.141 1673.963 992.656 1673.963 992.969 1673.838 993.359 1673.666 993.875 l 1669.682 1005.438 1669.603 1005.438 1665.697 994.484 b 1665.447 993.75 1665.26 993.219 1665.26 992.828 1665.26 992.188 1665.791 991.969 1667.088 991.969 l 1667.088 990.156 1656.01 990.156 1656.01 991.969 b 1657.338 991.969 1657.728 992.188 1658.947 995 l 1666.432 1012.75 1669.291 1012.75 c m 1699.119 1006.375 b 1698.369 1008.031 1696.432 1010.406 1693.057 1010.406 1691.447 1010.406 1689.9 1009.578 1688.853 1008.031 1687.822 1006.297 1687.385 1004 1687.385 1001.141 l 1701.15 1001.141 b 1701.15 998.859 1700.713 989.594 1691.228 989.594 1683.666 989.594 1680.635 995.125 1680.635 1000.703 1680.635 1008.844 1684.791 1012.75 1691.838 1012.75 1695.65 1012.75 1698.853 1011.234 1701.025 1007.297 m 1687.385 999.156 b 1687.432 995.781 1688.244 991.578 1691.197 991.578 1694.307 991.578 1694.65 996.391 1694.65 999.156 m 1708.291 992.188 b 1708.682 988.172 1709.682 982.844 1709.682 981.031 1709.682 979.984 1709.166 979.031 1707.26 979.031 1705.4 979.031 1704.916 979.984 1704.916 981.031 1704.916 982.844 1705.916 988.172 1706.307 992.188 m 1716.041 992.188 b 1716.432 988.172 1717.432 982.844 1717.432 981.031 1717.432 979.984 1716.947 979.031 1715.041 979.031 1713.182 979.031 1712.666 979.984 1712.666 981.031 1712.666 982.844 1713.666 988.172 1714.057 992.188)\pos(1603.5,1027.5)\fs60\c&H000000&\shad0\blur0.5\alpha&HFF&\t(1,600,1,\alpha&H00&)}"Primeiro Amor"
+Dialogue: 1,0:23:35.81,0:23:39.98,Ep Title,,0,0,0,,{\an2\fs60\shad0\blur0.5\pos(1600,1024)\alpha&HFF&\t(1,600,1,\alpha&H00&)}"Primeiro Amor"

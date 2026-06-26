@@ -174,7 +174,7 @@ flowchart TB
 ```
 
 > [!CAUTION]
-> Os beans **não** são descobertos por `@ComponentScan` automático. O ASM embutido no Spring 6.1.x não lê o *class file version* 69 (Java 25), então `@SpringBootApplication` sozinho não registra nada. A solução é `@Import({...})` explícito em [`Application.java`](src/main/java/org/traducao/animes/Application.java) — ver [Solução de Problemas](#troubleshooting).
+> Os beans **não** são descobertos por `@ComponentScan` automático. O ASM embutido no Spring 6.1.x não lê o *class file version* 69 (Java 25), então `@SpringBootApplication` sozinho não registra nada. A solução é `@Import({...})` explícito em [`Application.java`](src/main/java/org/traducao/projeto/traducao/Application.java) — ver [Solução de Problemas](#troubleshooting).
 
 ---
 
@@ -541,7 +541,7 @@ traducao_animes_llm_local_java/
 ├── build.gradle / settings.gradle
 ├── run.bat                        # atalho: gradlew bootRun --console=plain
 ├── src/
-│   ├── main/java/org/traducao/animes/
+│   ├── main/java/org/traducao/projeto/traducao/
 │   │   ├── Application.java                       # main() + @Import explícito dos beans
 │   │   ├── presentation/
 │   │   │   ├── TradutorCLI.java                    # CommandLineRunner — varre a pasta e traduz
@@ -565,7 +565,7 @@ traducao_animes_llm_local_java/
 │   │       ├── config/ TradutorProperties.java, LlmProperties.java, RestClientConfig.java
 │   │       ├── dtos/ RecordsMistral.java           # DTOs da API OpenAI-compatible
 │   │       └── legenda/ LeitorLegendaAss.java, EscritorLegendaAss.java, MascaradorTags.java
-│   └── test/java/org/traducao/animes/...           # JUnit 5 + Mockito + AssertJ
+│   └── test/java/org/traducao/projeto/traducao/...           # JUnit 5 + Mockito + AssertJ
 ├── cache/                          # gerado em runtime (gitignored)
 └── logs/                           # gerado em runtime (gitignored)
 ```
@@ -602,7 +602,7 @@ traducao_animes_llm_local_java/
 
 > [!CAUTION]
 > **"Nenhum bean é registrado" / a aplicação sobe e não faz nada.**
-> O ASM do Spring 6.1.x não lê o *class file version* 69 (Java 25), então `@ComponentScan` automático falha silenciosamente. A solução já está aplicada em [`Application.java`](src/main/java/org/traducao/animes/Application.java) via `@Import({...})` explícito — se você adicionar um novo `@Component`/`@Service`, **adicione-o também na lista do `@Import`**.
+> O ASM do Spring 6.1.x não lê o *class file version* 69 (Java 25), então `@ComponentScan` automático falha silenciosamente. A solução já está aplicada em [`Application.java`](src/main/java/org/traducao/projeto/traducao/Application.java) via `@Import({...})` explícito — se você adicionar um novo `@Component`/`@Service`, **adicione-o também na lista do `@Import`**.
 
 > [!CAUTION]
 > **`BeanDefinitionStoreException` ao rodar `bootRun`.**
