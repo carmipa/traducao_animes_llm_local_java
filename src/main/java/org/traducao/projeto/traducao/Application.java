@@ -40,7 +40,18 @@ import org.traducao.projeto.analisadorMidia.application.AnalisarMidiaUseCase;
 import org.traducao.projeto.analisadorMidia.infrastructure.adapters.FfprobeAdapter;
 import org.traducao.projeto.analisadorMidia.presentation.ui.ConsoleAnalisadorLogger;
 import org.traducao.projeto.telemetria.TelemetriaService;
+import org.traducao.projeto.mapaProjeto.presentation.MapaProjetoCLI;
+import org.traducao.projeto.mapaProjeto.application.MapeadorDiretorioUseCase;
+import org.traducao.projeto.mapaProjeto.application.GeradorMapaProjetoUseCase;
+import org.traducao.projeto.raspagemCorrecao.application.CorrigirComGoogleUseCase;
+import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
+import org.traducao.projeto.traducao.presentation.web.ApiController;
+import org.traducao.projeto.traducao.presentation.web.BrowserLauncher;
+import org.traducao.projeto.traducao.presentation.web.ConsoleRedirector;
+import org.traducao.projeto.traducao.presentation.web.LogStreamService;
 
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -87,7 +98,16 @@ import java.util.Optional;
     AnalisarMidiaUseCase.class,
     FfprobeAdapter.class,
     ConsoleAnalisadorLogger.class,
-    TelemetriaService.class
+    TelemetriaService.class,
+    MapaProjetoCLI.class,
+    MapeadorDiretorioUseCase.class,
+    GeradorMapaProjetoUseCase.class,
+    LimparCacheUseCase.class,
+    CorrigirComGoogleUseCase.class,
+    LogStreamService.class,
+    ConsoleRedirector.class,
+    BrowserLauncher.class,
+    ApiController.class
 })
 public class Application {
 
@@ -95,6 +115,7 @@ public class Application {
     private static final String ARG_SAIDA = "--tradutor.diretorio-saida=";
 
     public static void main(String[] args) {
+        forcarSaidaUtf8();
         String[] argsComPastas = prepararArgumentosComPastasDoConsole(args);
         if (argsComPastas == null) {
             System.exit(1);
@@ -107,27 +128,42 @@ public class Application {
      * antes de iniciar o Spring (stdin ainda livre, sem logs do Boot no meio).
      */
     static String[] prepararArgumentosComPastasDoConsole(String[] args) {
-        if (temValorNaoVazio(args, ARG_ENTRADA)) {
-            return args;
+        boolean temEntradaArg = false;
+        for (String arg : args) {
+            if (arg.startsWith(ARG_ENTRADA)) {
+                temEntradaArg = true;
+                break;
+            }
         }
 
-        Optional<ConsoleEntrada.CaminhosPastas> caminhos = ConsoleEntrada.solicitarPastas();
-        if (caminhos.isEmpty()) {
-            ConsoleEntrada.imprimirErroSaida();
-            return null;
+        if (temEntradaArg) {
+            if (temValorNaoVazio(args, ARG_ENTRADA)) {
+                return args;
+            }
+            return null; // Argumento de entrada foi passado vazio, retorna null
         }
 
-        ConsoleEntrada.CaminhosPastas informados = caminhos.get();
+        // Por padrão, se nenhum argumento de console for fornecido,
+        // iniciamos diretamente no modo WEB (servidor + navegador automático) sem travar.
         List<String> lista = new ArrayList<>(Arrays.asList(args));
-        lista.add("--app.modo=" + informados.modo());
-        lista.add(ARG_ENTRADA + informados.entrada());
-        if (informados.saida() != null && !informados.saida().isBlank()) {
-            lista.add(ARG_SAIDA + informados.saida());
-        }
-        if (informados.formato() != null && !informados.formato().isBlank()) {
-            lista.add("--app.extrator.formato=" + informados.formato());
-        }
+        lista.add("--app.modo=" + "WEB");
+        lista.add("--server.port=8080");
+        lista.add("--spring.main.web-application-type=servlet");
+        lista.add(ARG_ENTRADA + "cache"); // Placeholder para passar na validação de entrada
         return lista.toArray(String[]::new);
+    }
+
+    /**
+     * Reconfigura System.out/System.err para UTF-8 explicito, em vez de
+     * confiar em stdout.encoding/stderr.encoding (no Windows, essas
+     * propriedades seguem a codepage nativa do console — tipicamente
+     * CP1252/CP850 — mesmo com file.encoding=UTF-8). Sem isso, acentuação em
+     * português (ex: "tradução", "vídeo") sai corrompida no console/log,
+     * independente de como o app é iniciado (gradlew bootRun, java -jar, IDE).
+     */
+    private static void forcarSaidaUtf8() {
+        System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
+        System.setErr(new PrintStream(System.err, true, StandardCharsets.UTF_8));
     }
 
     private static boolean temValorNaoVazio(String[] args, String prefixo) {

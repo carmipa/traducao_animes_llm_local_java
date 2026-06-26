@@ -12,12 +12,15 @@ import org.traducao.projeto.traducao.domain.legenda.EventoLegenda;
 import org.traducao.projeto.traducao.domain.exceptions.TraducaoParcialException;
 import org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoService;
 import org.traducao.projeto.traducao.infrastructure.cache.EntradaCache;
+import org.traducao.projeto.traducao.infrastructure.config.LlmProperties;
 import org.traducao.projeto.traducao.infrastructure.config.TradutorProperties;
 import org.traducao.projeto.traducao.infrastructure.legenda.EscritorLegendaAss;
 import org.traducao.projeto.traducao.infrastructure.legenda.LeitorLegendaAss;
 import org.traducao.projeto.traducao.infrastructure.legenda.MascaradorTags;
 import org.traducao.projeto.traducao.presentation.ui.ConsoleUILogger;
 import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
+import org.traducao.projeto.telemetria.LlmTelemetria;
+import org.traducao.projeto.telemetria.TelemetriaService;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -49,8 +52,10 @@ public class ProcessarArquivoUseCase {
     private final ProcessarEpisodioUseCase processarEpisodioUseCase;
     private final ValidadorTraducaoService validador;
     private final TradutorProperties propriedades;
+    private final LlmProperties llmPropriedades;
     private final ConsoleUILogger uiLogger;
     private final PastasExecucao pastasExecucao;
+    private final TelemetriaService telemetriaService;
 
     public ProcessarArquivoUseCase(
         LeitorLegendaAss leitor,
@@ -60,8 +65,10 @@ public class ProcessarArquivoUseCase {
         ProcessarEpisodioUseCase processarEpisodioUseCase,
         ValidadorTraducaoService validador,
         TradutorProperties propriedades,
+        LlmProperties llmPropriedades,
         ConsoleUILogger uiLogger,
-        PastasExecucao pastasExecucao
+        PastasExecucao pastasExecucao,
+        TelemetriaService telemetriaService
     ) {
         this.leitor = leitor;
         this.escritor = escritor;
@@ -70,11 +77,14 @@ public class ProcessarArquivoUseCase {
         this.processarEpisodioUseCase = processarEpisodioUseCase;
         this.validador = validador;
         this.propriedades = propriedades;
+        this.llmPropriedades = llmPropriedades;
         this.uiLogger = uiLogger;
         this.pastasExecucao = pastasExecucao;
+        this.telemetriaService = telemetriaService;
     }
 
     public Path processar(Path arquivoEntrada) throws InterruptedException, ExecutionException {
+        long inicioMs = System.currentTimeMillis();
         log.info("Lendo arquivo de legenda: {}", arquivoEntrada);
         DocumentoLegenda documento = leitor.ler(arquivoEntrada);
 
@@ -173,6 +183,17 @@ public class ProcessarArquivoUseCase {
         Path arquivoSaida = resolverArquivoSaida(arquivoEntrada);
         escritor.escrever(arquivoSaida, documentoFinal);
         cacheService.salvar(arquivoCache, entradasCache);
+
+        long tempoTotalMs = System.currentTimeMillis() - inicioMs;
+        telemetriaService.registrarTraducao(new LlmTelemetria(
+            arquivoEntrada.getFileName().toString(),
+            llmPropriedades.model(),
+            eventosTraduziveis.size(),
+            traducoesNovas.size(),
+            cacheReaproveitavel.size(),
+            tempoTotalMs,
+            List.of()
+        ));
 
         log.info("Arquivo traduzido salvo em {} (cache em {})", arquivoSaida, arquivoCache);
         return arquivoSaida;

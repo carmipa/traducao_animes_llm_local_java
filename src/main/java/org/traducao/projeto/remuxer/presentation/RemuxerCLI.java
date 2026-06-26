@@ -7,6 +7,7 @@ import org.traducao.projeto.remuxer.application.RemuxarLoteUseCase;
 import org.traducao.projeto.remuxer.domain.RelatorioRemux;
 import org.traducao.projeto.remuxer.presentation.ui.ConsoleRemuxerLogger;
 import org.traducao.projeto.traducao.infrastructure.config.TradutorProperties;
+import org.traducao.projeto.traducao.presentation.ui.AnsiCores;
 import org.traducao.projeto.traducao.presentation.ui.ConsoleEntrada;
 import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
 
@@ -61,14 +62,16 @@ public class RemuxerCLI implements CommandLineRunner {
         logger.cabecalho("RELATÓRIO FINAL DE MULTIPLEXAÇÃO INDUSTRIAL");
         System.out.printf("  Arquivos MKV Detectados     : %d%n", relatorio.getMkvDetectados());
         System.out.printf("  Legendas PTBR Encontradas   : %d%n", relatorio.getLegendasPareadas());
-        System.out.printf("  Multiplexados com Sucesso   : %s%d\u001B[0m%n", "\u001B[32m", relatorio.getMkvProcessadosSucesso());
-        System.out.printf("  Arquivos Ignorados (Sem Sub): %s%d\u001B[0m%n", "\u001B[33m", relatorio.getArquivosIgnorados());
+        System.out.printf("  Multiplexados com Sucesso   : %s%n",
+            AnsiCores.colorir(String.valueOf(relatorio.getMkvProcessadosSucesso()), AnsiCores.GREEN));
+        System.out.printf("  Arquivos Ignorados (Sem Sub): %s%n",
+            AnsiCores.colorir(String.valueOf(relatorio.getArquivosIgnorados()), AnsiCores.YELLOW));
         System.out.printf("  Volume de Dados Gravados    : %.3f GB%n", relatorio.getBytesMkvGeradosTotal() / (1024.0 * 1024.0 * 1024.0));
         System.out.println("================================================================================");
-        System.out.printf("  \u001B[31mErros de Infraestrutura     : %d%n", relatorio.getErrosInfraestrutura());
-        System.out.printf("  \u001B[31mErros de Mkvmerge Runtime   : %d%n", relatorio.getErrosMkvmergeRuntime());
-        System.out.printf("  \u001B[31mErros de Permissão de I/O   : %d%n", relatorio.getErrosPermissaoIo());
-        System.out.printf("  \u001B[31mErros Inesperados/Hardware  : %d\u001B[0m%n", relatorio.getErrosInesperados());
+        System.out.println(AnsiCores.colorir(String.format("  Erros de Infraestrutura     : %d", relatorio.getErrosInfraestrutura()), AnsiCores.RED));
+        System.out.println(AnsiCores.colorir(String.format("  Erros de Mkvmerge Runtime   : %d", relatorio.getErrosMkvmergeRuntime()), AnsiCores.RED));
+        System.out.println(AnsiCores.colorir(String.format("  Erros de Permissão de I/O   : %d", relatorio.getErrosPermissaoIo()), AnsiCores.RED));
+        System.out.println(AnsiCores.colorir(String.format("  Erros Inesperados/Hardware  : %d", relatorio.getErrosInesperados()), AnsiCores.RED));
         System.out.println("================================================================================");
         logger.sucesso("Esteira finalizada e consolidada com sucesso!");
     }

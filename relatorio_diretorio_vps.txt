@@ -1,0 +1,860 @@
+====================================================================================================
+RELATÓRIO DE MAPEAMENTO COMPLETO DE DIRETÓRIO E TAXONOMIA DE REPOSITÓRIO
+Projeto: traducao_animes_llm_local_java
+Data/Hora de Execução: 2026-06-26 10:47:42
+====================================================================================================
+
+PARTE 1: MAPEAMENTO DE DIRETÓRIO LOCAL (CAMINHO ABSOLUTO COMPLETO)
+----------------------------------------------------------------------------------------------------
+ Arquivo: checksums.lock                      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\9.3.0\checksums\checksums.lock
+ Arquivo: md5-checksums.bin                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\9.3.0\checksums\md5-checksums.bin
+ Arquivo: sha1-checksums.bin                  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\9.3.0\checksums\sha1-checksums.bin
+ Arquivo: executionHistory.bin                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\9.3.0\executionHistory\executionHistory.bin
+ Arquivo: executionHistory.lock               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\9.3.0\executionHistory\executionHistory.lock
+ Arquivo: last-build.bin                      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\9.3.0\fileChanges\last-build.bin
+ Arquivo: fileHashes.bin                      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\9.3.0\fileHashes\fileHashes.bin
+ Arquivo: fileHashes.lock                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\9.3.0\fileHashes\fileHashes.lock
+ Arquivo: resourceHashesCache.bin             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\9.3.0\fileHashes\resourceHashesCache.bin
+ Arquivo: gc.properties                       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\9.3.0\gc.properties
+ Arquivo: buildOutputCleanup.lock             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\buildOutputCleanup\buildOutputCleanup.lock
+ Arquivo: cache.properties                    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\buildOutputCleanup\cache.properties
+ Arquivo: outputFiles.bin                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\buildOutputCleanup\outputFiles.bin
+ Arquivo: file-system.probe                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\file-system.probe
+ Arquivo: subprojects.ser                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\nb-cache\subprojects.ser
+ Arquivo: project-info.ser                    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\nb-cache\traducao_animes_llm_local-1157138920\project-info.ser
+ Arquivo: project-info.ser                    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\nb-cache\traducao_animes_llm_local_java-1756401215\project-info.ser
+ Arquivo: 082349CA6E5189324DB3718DA52C8EE583E6F7099D4A8C3D77B0994ECD5CB86B | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\nb-cache\trust\082349CA6E5189324DB3718DA52C8EE583E6F7099D4A8C3D77B0994ECD5CB86B
+ Arquivo: 9B186DFEE7A43853A010E1DB0AF6A602616C6EDA7B5F726005C5E9AA04551240 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\nb-cache\trust\9B186DFEE7A43853A010E1DB0AF6A602616C6EDA7B5F726005C5E9AA04551240
+ Arquivo: gc.properties                       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.gradle\vcs-1\gc.properties
+ Arquivo: .name                               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.idea\.name
+ Arquivo: compiler.xml                        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.idea\compiler.xml
+ Arquivo: gradle.xml                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.idea\gradle.xml
+ Arquivo: Project_Default.xml                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.idea\inspectionProfiles\Project_Default.xml
+ Arquivo: misc.xml                            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.idea\misc.xml
+ Arquivo: vcs.xml                             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.idea\vcs.xml
+ Arquivo: workspace.xml                       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.idea\workspace.xml
+ Arquivo: settings.json                       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\.vscode\settings.json
+ Arquivo: ARQUITETURA.md                      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\ARQUITETURA.md
+ Arquivo: LICENSE                             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\LICENSE
+ Arquivo: README.md                           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\README.md
+ Arquivo: application.yml                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\application.yml
+ Arquivo: Application.class                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\Application.class
+ Arquivo: ProcessarArquivoUseCase.class       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\application\ProcessarArquivoUseCase.class
+ Arquivo: ProcessarEpisodioUseCase.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\application\ProcessarEpisodioUseCase.class
+ Arquivo: ValidadorTraducaoService.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\application\ValidadorTraducaoService.class
+ Arquivo: Lote.class                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\domain\Lote.class
+ Arquivo: TraducaoLote.class                  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\domain\TraducaoLote.class
+ Arquivo: AlucinacaoDetectadaException.class  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\domain\exceptions\AlucinacaoDetectadaException.class
+ Arquivo: ArquivoLegendaException.class       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\domain\exceptions\ArquivoLegendaException.class
+ Arquivo: DivergenciaLinhasException.class    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\domain\exceptions\DivergenciaLinhasException.class
+ Arquivo: LlmFalhaComunicacaoException.class  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\domain\exceptions\LlmFalhaComunicacaoException.class
+ Arquivo: RespostaLlmVaziaException.class     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\domain\exceptions\RespostaLlmVaziaException.class
+ Arquivo: TraducaoParcialException.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\domain\exceptions\TraducaoParcialException.class
+ Arquivo: TradutorException.class             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\domain\exceptions\TradutorException.class
+ Arquivo: DocumentoLegenda.class              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\domain\legenda\DocumentoLegenda.class
+ Arquivo: EventoLegenda.class                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\domain\legenda\EventoLegenda.class
+ Arquivo: MistralPort.class                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\domain\ports\MistralPort.class
+ Arquivo: MistralClientAdapter.class          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\adapters\MistralClientAdapter.class
+ Arquivo: CacheTraducaoService.class          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\cache\CacheTraducaoService.class
+ Arquivo: EntradaCache.class                  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\cache\EntradaCache.class
+ Arquivo: LlmProperties.class                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\config\LlmProperties.class
+ Arquivo: RestClientConfig.class              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\config\RestClientConfig.class
+ Arquivo: TradutorProperties.class            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\config\TradutorProperties.class
+ Arquivo: RecordsMistral$ChatRequest.class    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\dtos\RecordsMistral$ChatRequest.class
+ Arquivo: RecordsMistral$Choice.class         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\dtos\RecordsMistral$Choice.class
+ Arquivo: RecordsMistral$Mensagem.class       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\dtos\RecordsMistral$Mensagem.class
+ Arquivo: RecordsMistral$RespostaLlm.class    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\dtos\RecordsMistral$RespostaLlm.class
+ Arquivo: RecordsMistral.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\dtos\RecordsMistral.class
+ Arquivo: EscritorLegendaAss.class            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\legenda\EscritorLegendaAss.class
+ Arquivo: LeitorLegendaAss.class              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\legenda\LeitorLegendaAss.class
+ Arquivo: MascaradorTags$Mascarado.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\legenda\MascaradorTags$Mascarado.class
+ Arquivo: MascaradorTags.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\infrastructure\legenda\MascaradorTags.class
+ Arquivo: TradutorCLI.class                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\presentation\TradutorCLI.class
+ Arquivo: AnsiCores.class                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\presentation\ui\AnsiCores.class
+ Arquivo: ConsoleEntrada$CaminhosPastas.class | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\presentation\ui\ConsoleEntrada$CaminhosPastas.class
+ Arquivo: ConsoleEntrada.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\presentation\ui\ConsoleEntrada.class
+ Arquivo: ConsoleUILogger.class               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\presentation\ui\ConsoleUILogger.class
+ Arquivo: PastasExecucao.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\main\org\traducao\animes\presentation\ui\PastasExecucao.class
+ Arquivo: ApplicationTest.class               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\test\org\traducao\animes\ApplicationTest.class
+ Arquivo: ProcessarArquivoUseCaseTest.class   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\test\org\traducao\animes\application\ProcessarArquivoUseCaseTest.class
+ Arquivo: ProcessarEpisodioUseCaseTest.class  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\test\org\traducao\animes\application\ProcessarEpisodioUseCaseTest.class
+ Arquivo: ValidadorTraducaoServiceTest.class  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\test\org\traducao\animes\application\ValidadorTraducaoServiceTest.class
+ Arquivo: MistralClientAdapterTest.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\test\org\traducao\animes\infrastructure\adapters\MistralClientAdapterTest.class
+ Arquivo: CacheTraducaoServiceTest.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\test\org\traducao\animes\infrastructure\cache\CacheTraducaoServiceTest.class
+ Arquivo: LeitorLegendaAssTest.class          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\test\org\traducao\animes\infrastructure\legenda\LeitorLegendaAssTest.class
+ Arquivo: MascaradorTagsTest.class            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\test\org\traducao\animes\infrastructure\legenda\MascaradorTagsTest.class
+ Arquivo: TradutorCLITest.class               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\test\org\traducao\animes\presentation\TradutorCLITest.class
+ Arquivo: tradutor_fallback_google.py         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\bin\tradutor_fallback_google.py
+ Arquivo: build.gradle                        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build.gradle
+ Arquivo: AnalisarMidiaUseCase.class          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\analisadorMidia\application\AnalisarMidiaUseCase.class
+ Arquivo: AnalisadorException.class           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\analisadorMidia\domain\AnalisadorException.class
+ Arquivo: AudioInfo.class                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\analisadorMidia\domain\AudioInfo.class
+ Arquivo: AuditoriaResultado.class            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\analisadorMidia\domain\AuditoriaResultado.class
+ Arquivo: ContainerInfo.class                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\analisadorMidia\domain\ContainerInfo.class
+ Arquivo: LegendaInfo.class                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\analisadorMidia\domain\LegendaInfo.class
+ Arquivo: VideoInfo.class                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\analisadorMidia\domain\VideoInfo.class
+ Arquivo: FfprobeAdapter.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\analisadorMidia\infrastructure\adapters\FfprobeAdapter.class
+ Arquivo: AnalisadorMidiaCLI.class            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\analisadorMidia\presentation\AnalisadorMidiaCLI.class
+ Arquivo: ConsoleAnalisadorLogger.class       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\analisadorMidia\presentation\ui\ConsoleAnalisadorLogger.class
+ Arquivo: ExtrairLegendaUseCase.class         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\application\ExtrairLegendaUseCase.class
+ Arquivo: ExtratorAssStrategy.class           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorAssStrategy.class
+ Arquivo: ExtratorPgsStrategy.class           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorPgsStrategy.class
+ Arquivo: ExtratorSrtStrategy.class           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorSrtStrategy.class
+ Arquivo: ExtratorStrategy.class              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorStrategy.class
+ Arquivo: ExtratorException.class             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\domain\ExtratorException.class
+ Arquivo: FaixaLegenda.class                  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\domain\FaixaLegenda.class
+ Arquivo: FormatoLegenda.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\domain\FormatoLegenda.class
+ Arquivo: RelatorioExtracao.class             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\domain\RelatorioExtracao.class
+ Arquivo: MkvToolNixAdapter.class             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\infrastructure\adapters\MkvToolNixAdapter.class
+ Arquivo: ExtratorProperties.class            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\infrastructure\config\ExtratorProperties.class
+ Arquivo: ExtratorCLI.class                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\presentation\ExtratorCLI.class
+ Arquivo: ConsoleExtratorLogger.class         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\legendasExtracao\presentation\ui\ConsoleExtratorLogger.class
+ Arquivo: GeradorMapaProjetoUseCase.class     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\mapaProjeto\application\GeradorMapaProjetoUseCase.class
+ Arquivo: MapeadorDiretorioUseCase$ArquivoMapeado.class | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\mapaProjeto\application\MapeadorDiretorioUseCase$ArquivoMapeado.class
+ Arquivo: MapeadorDiretorioUseCase.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\mapaProjeto\application\MapeadorDiretorioUseCase.class
+ Arquivo: MapaProjetoCLI.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\mapaProjeto\presentation\MapaProjetoCLI.class
+ Arquivo: CorretorRaspagemCLI$1.class         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\raspagemCorrecao\CorretorRaspagemCLI$1.class
+ Arquivo: CorretorRaspagemCLI.class           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\raspagemCorrecao\CorretorRaspagemCLI.class
+ Arquivo: MapeadorMidiaService.class          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\remuxer\application\MapeadorMidiaService.class
+ Arquivo: RemuxarLoteUseCase.class            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\remuxer\application\RemuxarLoteUseCase.class
+ Arquivo: RelatorioRemux.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\remuxer\domain\RelatorioRemux.class
+ Arquivo: RemuxTarefa.class                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\remuxer\domain\RemuxTarefa.class
+ Arquivo: RemuxerException.class              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\remuxer\domain\RemuxerException.class
+ Arquivo: MkvmergeAdapter.class               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\remuxer\infrastructure\adapters\MkvmergeAdapter.class
+ Arquivo: RemuxerProperties.class             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\remuxer\infrastructure\config\RemuxerProperties.class
+ Arquivo: RemuxerCLI.class                    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\remuxer\presentation\RemuxerCLI.class
+ Arquivo: ConsoleRemuxerLogger.class          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\remuxer\presentation\ui\ConsoleRemuxerLogger.class
+ Arquivo: LlmTelemetria.class                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\telemetria\LlmTelemetria.class
+ Arquivo: MidiaTelemetria$LegendaTelemetria.class | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\telemetria\MidiaTelemetria$LegendaTelemetria.class
+ Arquivo: MidiaTelemetria.class               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\telemetria\MidiaTelemetria.class
+ Arquivo: TelemetriaService.class             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\telemetria\TelemetriaService.class
+ Arquivo: CorretorCache$1.class               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducaoCorrige\CorretorCache$1.class
+ Arquivo: CorretorCache.class                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducaoCorrige\CorretorCache.class
+ Arquivo: CorretorCacheCLI$1.class            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducaoCorrige\CorretorCacheCLI$1.class
+ Arquivo: CorretorCacheCLI.class              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducaoCorrige\CorretorCacheCLI.class
+ Arquivo: Application.class                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\Application.class
+ Arquivo: ProcessarArquivoUseCase.class       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\application\ProcessarArquivoUseCase.class
+ Arquivo: ProcessarEpisodioUseCase.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\application\ProcessarEpisodioUseCase.class
+ Arquivo: ValidadorTraducaoService.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\application\ValidadorTraducaoService.class
+ Arquivo: Lote.class                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\Lote.class
+ Arquivo: StatusLlm.class                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\StatusLlm.class
+ Arquivo: TraducaoLote.class                  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\TraducaoLote.class
+ Arquivo: AlucinacaoDetectadaException.class  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\exceptions\AlucinacaoDetectadaException.class
+ Arquivo: ArquivoLegendaException.class       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\exceptions\ArquivoLegendaException.class
+ Arquivo: DivergenciaLinhasException.class    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\exceptions\DivergenciaLinhasException.class
+ Arquivo: LlmFalhaComunicacaoException.class  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\exceptions\LlmFalhaComunicacaoException.class
+ Arquivo: RespostaLlmVaziaException.class     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\exceptions\RespostaLlmVaziaException.class
+ Arquivo: TraducaoParcialException.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\exceptions\TraducaoParcialException.class
+ Arquivo: TradutorException.class             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\exceptions\TradutorException.class
+ Arquivo: DocumentoLegenda.class              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\legenda\DocumentoLegenda.class
+ Arquivo: EventoLegenda.class                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\legenda\EventoLegenda.class
+ Arquivo: MistralPort.class                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\domain\ports\MistralPort.class
+ Arquivo: MistralClientAdapter.class          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\adapters\MistralClientAdapter.class
+ Arquivo: CacheTraducaoService.class          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\cache\CacheTraducaoService.class
+ Arquivo: EntradaCache.class                  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\cache\EntradaCache.class
+ Arquivo: LlmProperties.class                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\config\LlmProperties.class
+ Arquivo: RestClientConfig.class              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\config\RestClientConfig.class
+ Arquivo: TradutorProperties.class            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\config\TradutorProperties.class
+ Arquivo: RecordsMistral$ChatRequest.class    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\dtos\RecordsMistral$ChatRequest.class
+ Arquivo: RecordsMistral$Choice.class         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\dtos\RecordsMistral$Choice.class
+ Arquivo: RecordsMistral$ListaModelos.class   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\dtos\RecordsMistral$ListaModelos.class
+ Arquivo: RecordsMistral$Mensagem.class       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\dtos\RecordsMistral$Mensagem.class
+ Arquivo: RecordsMistral$ModeloDisponivel.class | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\dtos\RecordsMistral$ModeloDisponivel.class
+ Arquivo: RecordsMistral$RespostaLlm.class    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\dtos\RecordsMistral$RespostaLlm.class
+ Arquivo: RecordsMistral.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\dtos\RecordsMistral.class
+ Arquivo: EscritorLegendaAss.class            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\legenda\EscritorLegendaAss.class
+ Arquivo: LeitorLegendaAss.class              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\legenda\LeitorLegendaAss.class
+ Arquivo: MascaradorTags$Mascarado.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\legenda\MascaradorTags$Mascarado.class
+ Arquivo: MascaradorTags.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\infrastructure\legenda\MascaradorTags.class
+ Arquivo: TradutorCLI.class                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\presentation\TradutorCLI.class
+ Arquivo: AnsiCores.class                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\presentation\ui\AnsiCores.class
+ Arquivo: ConsoleEntrada$CaminhosPastas.class | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\presentation\ui\ConsoleEntrada$CaminhosPastas.class
+ Arquivo: ConsoleEntrada.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\presentation\ui\ConsoleEntrada.class
+ Arquivo: ConsoleUILogger.class               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\presentation\ui\ConsoleUILogger.class
+ Arquivo: PastasExecucao.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main\org\traducao\projeto\traducao\presentation\ui\PastasExecucao.class
+ Arquivo: ExtrairLegendaUseCaseTest.class     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\legendasExtracao\application\ExtrairLegendaUseCaseTest.class
+ Arquivo: ExtratorAssStrategyTest.class       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorAssStrategyTest.class
+ Arquivo: ExtratorPgsStrategyTest.class       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorPgsStrategyTest.class
+ Arquivo: ExtratorSrtStrategyTest.class       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorSrtStrategyTest.class
+ Arquivo: FormatoLegendaTest.class            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\legendasExtracao\domain\FormatoLegendaTest.class
+ Arquivo: ExtratorCLITest.class               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\legendasExtracao\presentation\ExtratorCLITest.class
+ Arquivo: MapeadorMidiaServiceTest.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\remuxer\application\MapeadorMidiaServiceTest.class
+ Arquivo: RemuxarLoteUseCaseTest.class        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\remuxer\application\RemuxarLoteUseCaseTest.class
+ Arquivo: RemuxerCLITest.class                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\remuxer\presentation\RemuxerCLITest.class
+ Arquivo: ApplicationTest.class               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\traducao\ApplicationTest.class
+ Arquivo: ProcessarArquivoUseCaseTest.class   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\traducao\application\ProcessarArquivoUseCaseTest.class
+ Arquivo: ProcessarEpisodioUseCaseTest.class  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\traducao\application\ProcessarEpisodioUseCaseTest.class
+ Arquivo: ValidadorTraducaoServiceTest.class  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\traducao\application\ValidadorTraducaoServiceTest.class
+ Arquivo: MistralClientAdapterTest.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\traducao\infrastructure\adapters\MistralClientAdapterTest.class
+ Arquivo: CacheTraducaoServiceTest.class      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\traducao\infrastructure\cache\CacheTraducaoServiceTest.class
+ Arquivo: TradutorPropertiesTest.class        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\traducao\infrastructure\config\TradutorPropertiesTest.class
+ Arquivo: LeitorLegendaAssTest.class          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\traducao\infrastructure\legenda\LeitorLegendaAssTest.class
+ Arquivo: MascaradorTagsTest.class            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\traducao\infrastructure\legenda\MascaradorTagsTest.class
+ Arquivo: TradutorCLITest.class               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\test\org\traducao\projeto\traducao\presentation\TradutorCLITest.class
+ Arquivo: problems-report.html                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\problems\problems-report.html
+ Arquivo: base-style.css                      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\css\base-style.css
+ Arquivo: style.css                           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\css\style.css
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\index.html
+ Arquivo: report.js                           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\js\report.js
+ Arquivo: extraiFaixaEncontradaParaArquivoDeSaidaCorreto(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCaseTest\extraiFaixaEncontradaParaArquivoDeSaidaCorreto(Path).html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCaseTest\index.html
+ Arquivo: naoAbortaDemaisArquivosQuandoUmFalha(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCaseTest\naoAbortaDemaisArquivosQuandoUmFalha(Path).html
+ Arquivo: registraSemLegendaQuandoNenhumaFaixaAssEncontrada(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCaseTest\registraSemLegendaQuandoNenhumaFaixaAssEncontrada(Path).html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.legendasExtracao.application.strategy.ExtratorAssStrategyTest\index.html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.legendasExtracao.application.strategy.ExtratorPgsStrategyTest\index.html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.legendasExtracao.application.strategy.ExtratorSrtStrategyTest\index.html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.legendasExtracao.domain.FormatoLegendaTest\index.html
+ Arquivo: configuraPastasEChamaUseCaseQuandoDiretorioValido(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.legendasExtracao.presentation.ExtratorCLITest\configuraPastasEChamaUseCaseQuandoDiretorioValido(Path).html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.legendasExtracao.presentation.ExtratorCLITest\index.html
+ Arquivo: naoLancaQuandoDiretorioEntradaNaoConfigurado().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.legendasExtracao.presentation.ExtratorCLITest\naoLancaQuandoDiretorioEntradaNaoConfigurado().html
+ Arquivo: ignoraVideoSemLegendaCorrespondente(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.remuxer.application.MapeadorMidiaServiceTest\ignoraVideoSemLegendaCorrespondente(Path).html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.remuxer.application.MapeadorMidiaServiceTest\index.html
+ Arquivo: contabilizaErroDeInfraQuandoPastasDeOrigemNaoExistem(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest\contabilizaErroDeInfraQuandoPastasDeOrigemNaoExistem(Path).html
+ Arquivo: contabilizaErroDeInfraQuandoValidacaoDeAmbienteFalha(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest\contabilizaErroDeInfraQuandoValidacaoDeAmbienteFalha(Path).html
+ Arquivo: contabilizaErroInesperadoQuandoExcecaoNaoMapeadaOcorre(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest\contabilizaErroInesperadoQuandoExcecaoNaoMapeadaOcorre(Path).html
+ Arquivo: contabilizaErroRuntimeQuandoMkvmergeFalhaSemAbortarLote(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest\contabilizaErroRuntimeQuandoMkvmergeFalhaSemAbortarLote(Path).html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest\index.html
+ Arquivo: naoRegistraErrosQuandoFilaDeProcessamentoEstaVazia(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest\naoRegistraErrosQuandoFilaDeProcessamentoEstaVazia(Path).html
+ Arquivo: registraSucessoEBytesGeradosQuandoRemuxFunciona(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest\registraSucessoEBytesGeradosQuandoRemuxFunciona(Path).html
+ Arquivo: configuraPastasEChamaUseCaseQuandoAmbosOsDiretoriosExistem(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.remuxer.presentation.RemuxerCLITest\configuraPastasEChamaUseCaseQuandoAmbosOsDiretoriosExistem(Path).html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.remuxer.presentation.RemuxerCLITest\index.html
+ Arquivo: naoLancaQuandoDiretorioEntradaNaoConfigurado().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.remuxer.presentation.RemuxerCLITest\naoLancaQuandoDiretorioEntradaNaoConfigurado().html
+ Arquivo: ignoraArgEntradaVazio().html        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.ApplicationTest\ignoraArgEntradaVazio().html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.ApplicationTest\index.html
+ Arquivo: ignoraCacheComTextoOriginalOuResiduoEmInglesERetraduz(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.application.ProcessarArquivoUseCaseTest\ignoraCacheComTextoOriginalOuResiduoEmInglesERetraduz(Path).html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.application.ProcessarArquivoUseCaseTest\index.html
+ Arquivo: reaproveitaCacheExistenteESoTraduzOQueFalta(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.application.ProcessarArquivoUseCaseTest\reaproveitaCacheExistenteESoTraduzOQueFalta(Path).html
+ Arquivo: traduzArquivoNovoDeduplicandoFalasRepetidasEPulandoComentariosEEstilosIgnorados(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.application.ProcessarArquivoUseCaseTest\traduzArquivoNovoDeduplicandoFalasRepetidasEPulandoComentariosEEstilosIgnorados(Path).html
+ Arquivo: abortaTodosQuandoUmLoteFalhaNaComunicacao().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest\abortaTodosQuandoUmLoteFalhaNaComunicacao().html
+ Arquivo: dividePeloMeioQuandoQuantidadeDeLinhasTraduzidasDivergeDoOriginal().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest\dividePeloMeioQuandoQuantidadeDeLinhasTraduzidasDivergeDoOriginal().html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest\index.html
+ Arquivo: mantemTextoOriginalQuandoValidadorDetectaAlucinacaoMesmoIsolandoAFala().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest\mantemTextoOriginalQuandoValidadorDetectaAlucinacaoMesmoIsolandoAFala().html
+ Arquivo: traduzTodosOsLotesComSucesso().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest\traduzTodosOsLotesComSucesso().html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.application.ValidadorTraducaoServiceTest\index.html
+ Arquivo: falhaDeConexaoRetornaTraducaoLoteComFalhaEmVezDeLancar().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest\falhaDeConexaoRetornaTraducaoLoteComFalhaEmVezDeLancar().html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest\index.html
+ Arquivo: normalizaRespostaComCrLfLinhasVaziasExternasECercaMarkdown().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest\normalizaRespostaComCrLfLinhasVaziasExternasECercaMarkdown().html
+ Arquivo: retornaFalhaQuandoChoiceNaoTemMensagem().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest\retornaFalhaQuandoChoiceNaoTemMensagem().html
+ Arquivo: retornaFalhaQuandoRespostaNaoTemChoices().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest\retornaFalhaQuandoRespostaNaoTemChoices().html
+ Arquivo: retornaFalhaQuandoServidorRespondeErroHttp().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest\retornaFalhaQuandoServidorRespondeErroHttp().html
+ Arquivo: traduzComSucessoQuandoLlmRespondeBem().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest\traduzComSucessoQuandoLlmRespondeBem().html
+ Arquivo: ignoraEntradasComTraducaoVaziaAoCarregar(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoServiceTest\ignoraEntradasComTraducaoVaziaAoCarregar(Path).html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoServiceTest\index.html
+ Arquivo: retornaMapaVazioQuandoJsonCorrompido(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoServiceTest\retornaMapaVazioQuandoJsonCorrompido(Path).html
+ Arquivo: salvaEDepoisCarregaAsMesmasEntradas(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoServiceTest\salvaEDepoisCarregaAsMesmasEntradas(Path).html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.config.TradutorPropertiesTest\index.html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.legenda.LeitorLegendaAssTest\index.html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.infrastructure.legenda.MascaradorTagsTest\index.html
+ Arquivo: abortaSemProcessarArquivosQuandoModeloNaoEstaCarregado(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.presentation.TradutorCLITest\abortaSemProcessarArquivosQuandoModeloNaoEstaCarregado(Path).html
+ Arquivo: continuaProcessandoOutrosArquivosQuandoUmFalha(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.presentation.TradutorCLITest\continuaProcessandoOutrosArquivosQuandoUmFalha(Path).html
+ Arquivo: ignoraArquivosSemExtensaoSuportada(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.presentation.TradutorCLITest\ignoraArquivosSemExtensaoSuportada(Path).html
+ Arquivo: index.html                          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.presentation.TradutorCLITest\index.html
+ Arquivo: naoLancaQuandoDiretorioEntradaNaoConfigurado().html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.presentation.TradutorCLITest\naoLancaQuandoDiretorioEntradaNaoConfigurado().html
+ Arquivo: naoLancaQuandoDiretorioNaoExiste(Path).html | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\reports\tests\test\org.traducao.projeto.traducao.presentation.TradutorCLITest\naoLancaQuandoDiretorioNaoExiste(Path).html
+ Arquivo: resolvedMainClassName               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\resolvedMainClassName
+ Arquivo: application.yml                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\resources\main\application.yml
+ Arquivo: TEST-org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCaseTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCaseTest.xml
+ Arquivo: TEST-org.traducao.projeto.legendasExtracao.application.strategy.ExtratorAssStrategyTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.legendasExtracao.application.strategy.ExtratorAssStrategyTest.xml
+ Arquivo: TEST-org.traducao.projeto.legendasExtracao.application.strategy.ExtratorPgsStrategyTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.legendasExtracao.application.strategy.ExtratorPgsStrategyTest.xml
+ Arquivo: TEST-org.traducao.projeto.legendasExtracao.application.strategy.ExtratorSrtStrategyTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.legendasExtracao.application.strategy.ExtratorSrtStrategyTest.xml
+ Arquivo: TEST-org.traducao.projeto.legendasExtracao.domain.FormatoLegendaTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.legendasExtracao.domain.FormatoLegendaTest.xml
+ Arquivo: TEST-org.traducao.projeto.legendasExtracao.presentation.ExtratorCLITest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.legendasExtracao.presentation.ExtratorCLITest.xml
+ Arquivo: TEST-org.traducao.projeto.remuxer.application.MapeadorMidiaServiceTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.remuxer.application.MapeadorMidiaServiceTest.xml
+ Arquivo: TEST-org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest.xml
+ Arquivo: TEST-org.traducao.projeto.remuxer.presentation.RemuxerCLITest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.remuxer.presentation.RemuxerCLITest.xml
+ Arquivo: TEST-org.traducao.projeto.traducao.ApplicationTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.traducao.ApplicationTest.xml
+ Arquivo: TEST-org.traducao.projeto.traducao.application.ProcessarArquivoUseCaseTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.traducao.application.ProcessarArquivoUseCaseTest.xml
+ Arquivo: TEST-org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest.xml
+ Arquivo: TEST-org.traducao.projeto.traducao.application.ValidadorTraducaoServiceTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.traducao.application.ValidadorTraducaoServiceTest.xml
+ Arquivo: TEST-org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest.xml
+ Arquivo: TEST-org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoServiceTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoServiceTest.xml
+ Arquivo: TEST-org.traducao.projeto.traducao.infrastructure.config.TradutorPropertiesTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.traducao.infrastructure.config.TradutorPropertiesTest.xml
+ Arquivo: TEST-org.traducao.projeto.traducao.infrastructure.legenda.LeitorLegendaAssTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.traducao.infrastructure.legenda.LeitorLegendaAssTest.xml
+ Arquivo: TEST-org.traducao.projeto.traducao.infrastructure.legenda.MascaradorTagsTest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.traducao.infrastructure.legenda.MascaradorTagsTest.xml
+ Arquivo: TEST-org.traducao.projeto.traducao.presentation.TradutorCLITest.xml | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\TEST-org.traducao.projeto.traducao.presentation.TradutorCLITest.xml
+ Arquivo: output-events.bin                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\binary\output-events.bin
+ Arquivo: results-generic.bin                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\test-results\test\binary\results-generic.bin
+ Arquivo: MANIFEST.MF                         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\bootJar\MANIFEST.MF
+ Arquivo: AnalisadorMidiaCLI.class.uniqueId2  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileJava\compileTransaction\stash-dir\AnalisadorMidiaCLI.class.uniqueId2
+ Arquivo: Application.class.uniqueId0         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileJava\compileTransaction\stash-dir\Application.class.uniqueId0
+ Arquivo: ConsoleEntrada$CaminhosPastas.class.uniqueId6 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileJava\compileTransaction\stash-dir\ConsoleEntrada$CaminhosPastas.class.uniqueId6
+ Arquivo: ConsoleEntrada.class.uniqueId4      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileJava\compileTransaction\stash-dir\ConsoleEntrada.class.uniqueId4
+ Arquivo: ExtratorCLI.class.uniqueId1         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileJava\compileTransaction\stash-dir\ExtratorCLI.class.uniqueId1
+ Arquivo: RemuxerCLI.class.uniqueId5          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileJava\compileTransaction\stash-dir\RemuxerCLI.class.uniqueId5
+ Arquivo: TradutorCLI.class.uniqueId3         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileJava\compileTransaction\stash-dir\TradutorCLI.class.uniqueId3
+ Arquivo: previous-compilation-data.bin       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileJava\previous-compilation-data.bin
+ Arquivo: ApplicationTest.class.uniqueId2     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileTestJava\compileTransaction\stash-dir\ApplicationTest.class.uniqueId2
+ Arquivo: ExtratorCLITest.class.uniqueId0     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileTestJava\compileTransaction\stash-dir\ExtratorCLITest.class.uniqueId0
+ Arquivo: ProcessarArquivoUseCaseTest.class.uniqueId1 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileTestJava\compileTransaction\stash-dir\ProcessarArquivoUseCaseTest.class.uniqueId1
+ Arquivo: ProcessarEpisodioUseCaseTest.class.uniqueId4 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileTestJava\compileTransaction\stash-dir\ProcessarEpisodioUseCaseTest.class.uniqueId4
+ Arquivo: RemuxerCLITest.class.uniqueId3      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileTestJava\compileTransaction\stash-dir\RemuxerCLITest.class.uniqueId3
+ Arquivo: TradutorCLITest.class.uniqueId5     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileTestJava\compileTransaction\stash-dir\TradutorCLITest.class.uniqueId5
+ Arquivo: previous-compilation-data.bin       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\compileTestJava\previous-compilation-data.bin
+ Arquivo: MANIFEST.MF                         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\tmp\jar\MANIFEST.MF
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E01 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E01 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E02 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E02 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E03 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E03 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E04 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E04 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E05 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E05 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E06 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E06 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E07 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E07 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E08 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E08 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E09 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E09 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E10 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E10 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E11 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E11 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E12 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E12 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E13 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E13 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E14 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E14 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E15 [1080p BD AV1][Dual Audio]_ENG.cache.json | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E15 [1080p BD AV1][Dual Audio]_ENG.cache.json
+ Arquivo: explorador_diretorio.py             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\explorador_diretorio.py
+ Arquivo: gerar_mapa_projeto.py               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\gerar_mapa_projeto.py
+ Arquivo: gradle-wrapper.jar                  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\gradle\wrapper\gradle-wrapper.jar
+ Arquivo: gradle-wrapper.properties           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\gradle\wrapper\gradle-wrapper.properties
+ Arquivo: gradlew                             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\gradlew
+ Arquivo: gradlew.bat                         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\gradlew.bat
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E01 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E01 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E02 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E02 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E03 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E03 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E04 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E04 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E05 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E05 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E06 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E06 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E07 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E07 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E08 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E08 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E09 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E09 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E10 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E10 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E11 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E11 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E12 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E12 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E13 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E13 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E14 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E14 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E15 [1080p BD AV1][Dual Audio]_PT-BR.ass | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\legendas-ptbr\DanMachi\temporada_5\[Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E15 [1080p BD AV1][Dual Audio]_PT-BR.ass
+ Arquivo: tradutor.log                        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\logs\tradutor.log
+ Arquivo: tradutor.log.2026-06-23.0.gz        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\logs\tradutor.log.2026-06-23.0.gz
+ Arquivo: tradutor.log.2026-06-25.0.gz        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\logs\tradutor.log.2026-06-25.0.gz
+ Arquivo: tradutor.log.2026-06-25.1.gz        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\logs\tradutor.log.2026-06-25.1.gz
+ Arquivo: tradutor.log.2026-06-25.2.gz        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\logs\tradutor.log.2026-06-25.2.gz
+ Arquivo: run.bat                             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\run.bat
+ Arquivo: settings.gradle                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\settings.gradle
+ Arquivo: AnalisarMidiaUseCase.java           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\analisadorMidia\application\AnalisarMidiaUseCase.java
+ Arquivo: AnalisadorException.java            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\analisadorMidia\domain\AnalisadorException.java
+ Arquivo: AudioInfo.java                      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\analisadorMidia\domain\AudioInfo.java
+ Arquivo: AuditoriaResultado.java             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\analisadorMidia\domain\AuditoriaResultado.java
+ Arquivo: ContainerInfo.java                  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\analisadorMidia\domain\ContainerInfo.java
+ Arquivo: LegendaInfo.java                    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\analisadorMidia\domain\LegendaInfo.java
+ Arquivo: VideoInfo.java                      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\analisadorMidia\domain\VideoInfo.java
+ Arquivo: FfprobeAdapter.java                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\analisadorMidia\infrastructure\adapters\FfprobeAdapter.java
+ Arquivo: AnalisadorMidiaCLI.java             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\analisadorMidia\presentation\AnalisadorMidiaCLI.java
+ Arquivo: ConsoleAnalisadorLogger.java        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\analisadorMidia\presentation\ui\ConsoleAnalisadorLogger.java
+ Arquivo: ExtrairLegendaUseCase.java          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\application\ExtrairLegendaUseCase.java
+ Arquivo: ExtratorAssStrategy.java            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorAssStrategy.java
+ Arquivo: ExtratorPgsStrategy.java            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorPgsStrategy.java
+ Arquivo: ExtratorSrtStrategy.java            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorSrtStrategy.java
+ Arquivo: ExtratorStrategy.java               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorStrategy.java
+ Arquivo: ExtratorException.java              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\domain\ExtratorException.java
+ Arquivo: FaixaLegenda.java                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\domain\FaixaLegenda.java
+ Arquivo: FormatoLegenda.java                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\domain\FormatoLegenda.java
+ Arquivo: RelatorioExtracao.java              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\domain\RelatorioExtracao.java
+ Arquivo: MkvToolNixAdapter.java              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\infrastructure\adapters\MkvToolNixAdapter.java
+ Arquivo: ExtratorProperties.java             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\infrastructure\config\ExtratorProperties.java
+ Arquivo: ExtratorCLI.java                    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\presentation\ExtratorCLI.java
+ Arquivo: ConsoleExtratorLogger.java          | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\legendasExtracao\presentation\ui\ConsoleExtratorLogger.java
+ Arquivo: GeradorMapaProjetoUseCase.java      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\mapaProjeto\application\GeradorMapaProjetoUseCase.java
+ Arquivo: MapeadorDiretorioUseCase.java       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\mapaProjeto\application\MapeadorDiretorioUseCase.java
+ Arquivo: MapaProjetoCLI.java                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\mapaProjeto\presentation\MapaProjetoCLI.java
+ Arquivo: CorretorRaspagemCLI.java            | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\raspagemCorrecao\CorretorRaspagemCLI.java
+ Arquivo: MapeadorMidiaService.java           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\remuxer\application\MapeadorMidiaService.java
+ Arquivo: RemuxarLoteUseCase.java             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\remuxer\application\RemuxarLoteUseCase.java
+ Arquivo: RelatorioRemux.java                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\remuxer\domain\RelatorioRemux.java
+ Arquivo: RemuxTarefa.java                    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\remuxer\domain\RemuxTarefa.java
+ Arquivo: RemuxerException.java               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\remuxer\domain\RemuxerException.java
+ Arquivo: MkvmergeAdapter.java                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\remuxer\infrastructure\adapters\MkvmergeAdapter.java
+ Arquivo: RemuxerProperties.java              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\remuxer\infrastructure\config\RemuxerProperties.java
+ Arquivo: RemuxerCLI.java                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\remuxer\presentation\RemuxerCLI.java
+ Arquivo: ConsoleRemuxerLogger.java           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\remuxer\presentation\ui\ConsoleRemuxerLogger.java
+ Arquivo: LlmTelemetria.java                  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\telemetria\LlmTelemetria.java
+ Arquivo: MidiaTelemetria.java                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\telemetria\MidiaTelemetria.java
+ Arquivo: TelemetriaService.java              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\telemetria\TelemetriaService.java
+ Arquivo: CorretorCache.java                  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducaoCorrige\CorretorCache.java
+ Arquivo: CorretorCacheCLI.java               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducaoCorrige\CorretorCacheCLI.java
+ Arquivo: Application.java                    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\Application.java
+ Arquivo: ProcessarArquivoUseCase.java        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\application\ProcessarArquivoUseCase.java
+ Arquivo: ProcessarEpisodioUseCase.java       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\application\ProcessarEpisodioUseCase.java
+ Arquivo: ValidadorTraducaoService.java       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\application\ValidadorTraducaoService.java
+ Arquivo: Lote.java                           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\Lote.java
+ Arquivo: StatusLlm.java                      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\StatusLlm.java
+ Arquivo: TraducaoLote.java                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\TraducaoLote.java
+ Arquivo: AlucinacaoDetectadaException.java   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\exceptions\AlucinacaoDetectadaException.java
+ Arquivo: ArquivoLegendaException.java        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\exceptions\ArquivoLegendaException.java
+ Arquivo: DivergenciaLinhasException.java     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\exceptions\DivergenciaLinhasException.java
+ Arquivo: LlmFalhaComunicacaoException.java   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\exceptions\LlmFalhaComunicacaoException.java
+ Arquivo: RespostaLlmVaziaException.java      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\exceptions\RespostaLlmVaziaException.java
+ Arquivo: TraducaoParcialException.java       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\exceptions\TraducaoParcialException.java
+ Arquivo: TradutorException.java              | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\exceptions\TradutorException.java
+ Arquivo: DocumentoLegenda.java               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\legenda\DocumentoLegenda.java
+ Arquivo: EventoLegenda.java                  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\legenda\EventoLegenda.java
+ Arquivo: MistralPort.java                    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\domain\ports\MistralPort.java
+ Arquivo: MistralClientAdapter.java           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\infrastructure\adapters\MistralClientAdapter.java
+ Arquivo: CacheTraducaoService.java           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\infrastructure\cache\CacheTraducaoService.java
+ Arquivo: EntradaCache.java                   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\infrastructure\cache\EntradaCache.java
+ Arquivo: LlmProperties.java                  | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\infrastructure\config\LlmProperties.java
+ Arquivo: RestClientConfig.java               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\infrastructure\config\RestClientConfig.java
+ Arquivo: TradutorProperties.java             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\infrastructure\config\TradutorProperties.java
+ Arquivo: RecordsMistral.java                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\infrastructure\dtos\RecordsMistral.java
+ Arquivo: EscritorLegendaAss.java             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\infrastructure\legenda\EscritorLegendaAss.java
+ Arquivo: LeitorLegendaAss.java               | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\infrastructure\legenda\LeitorLegendaAss.java
+ Arquivo: MascaradorTags.java                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\infrastructure\legenda\MascaradorTags.java
+ Arquivo: TradutorCLI.java                    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\presentation\TradutorCLI.java
+ Arquivo: AnsiCores.java                      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\presentation\ui\AnsiCores.java
+ Arquivo: ConsoleEntrada.java                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\presentation\ui\ConsoleEntrada.java
+ Arquivo: ConsoleUILogger.java                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\presentation\ui\ConsoleUILogger.java
+ Arquivo: PastasExecucao.java                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\java\org\traducao\projeto\traducao\presentation\ui\PastasExecucao.java
+ Arquivo: application.yml                     | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\main\resources\application.yml
+ Arquivo: ExtrairLegendaUseCaseTest.java      | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\legendasExtracao\application\ExtrairLegendaUseCaseTest.java
+ Arquivo: ExtratorAssStrategyTest.java        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorAssStrategyTest.java
+ Arquivo: ExtratorPgsStrategyTest.java        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorPgsStrategyTest.java
+ Arquivo: ExtratorSrtStrategyTest.java        | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\legendasExtracao\application\strategy\ExtratorSrtStrategyTest.java
+ Arquivo: FormatoLegendaTest.java             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\legendasExtracao\domain\FormatoLegendaTest.java
+ Arquivo: ExtratorCLITest.java                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\legendasExtracao\presentation\ExtratorCLITest.java
+ Arquivo: MapeadorMidiaServiceTest.java       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\remuxer\application\MapeadorMidiaServiceTest.java
+ Arquivo: RemuxarLoteUseCaseTest.java         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\remuxer\application\RemuxarLoteUseCaseTest.java
+ Arquivo: RemuxerCLITest.java                 | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\remuxer\presentation\RemuxerCLITest.java
+ Arquivo: ApplicationTest.java                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\traducao\ApplicationTest.java
+ Arquivo: ProcessarArquivoUseCaseTest.java    | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\traducao\application\ProcessarArquivoUseCaseTest.java
+ Arquivo: ProcessarEpisodioUseCaseTest.java   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\traducao\application\ProcessarEpisodioUseCaseTest.java
+ Arquivo: ValidadorTraducaoServiceTest.java   | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\traducao\application\ValidadorTraducaoServiceTest.java
+ Arquivo: MistralClientAdapterTest.java       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\traducao\infrastructure\adapters\MistralClientAdapterTest.java
+ Arquivo: CacheTraducaoServiceTest.java       | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\traducao\infrastructure\cache\CacheTraducaoServiceTest.java
+ Arquivo: TradutorPropertiesTest.java         | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\traducao\infrastructure\config\TradutorPropertiesTest.java
+ Arquivo: LeitorLegendaAssTest.java           | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\traducao\infrastructure\legenda\LeitorLegendaAssTest.java
+ Arquivo: MascaradorTagsTest.java             | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\traducao\infrastructure\legenda\MascaradorTagsTest.java
+ Arquivo: TradutorCLITest.java                | Caminho: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\src\test\java\org\traducao\projeto\traducao\presentation\TradutorCLITest.java
+
+====================================================================================================
+
+PARTE 2: ESTRUTURA DE DESTINO SUGERIDA PARA O REPOSITÓRIO ONLINE
+----------------------------------------------------------------------------------------------------
+ NOME DO ARQUIVO                     | PASTA ALVO NO REPOSITÓRIO ONLINE             
+ ----------------------------------- | ---------------------------------------------
+  .name                              | .idea/                                      
+  082349CA6E5189324DB3718DA52C8EE583E6F7099D4A8C3D77B0994ECD5CB86B | .gradle/nb-cache/trust/                     
+  9B186DFEE7A43853A010E1DB0AF6A602616C6EDA7B5F726005C5E9AA04551240 | .gradle/nb-cache/trust/                     
+  ARQUITETURA.md                     | obsidian_vault/notas/                       
+  AlucinacaoDetectadaException.class | bin/main/org/traducao/animes/domain/exceptions/
+  AlucinacaoDetectadaException.class | build/classes/java/main/org/traducao/projeto/traducao/domain/exceptions/
+  AlucinacaoDetectadaException.java  | src/main/java/org/traducao/projeto/traducao/domain/exceptions/
+  AnalisadorException.class          | build/classes/java/main/org/traducao/projeto/analisadorMidia/domain/
+  AnalisadorException.java           | src/main/java/org/traducao/projeto/analisadorMidia/domain/
+  AnalisadorMidiaCLI.class           | build/classes/java/main/org/traducao/projeto/analisadorMidia/presentation/
+  AnalisadorMidiaCLI.class.uniqueId2 | build/tmp/compileJava/compileTransaction/stash-dir/
+  AnalisadorMidiaCLI.java            | src/main/java/org/traducao/projeto/analisadorMidia/presentation/
+  AnalisarMidiaUseCase.class         | build/classes/java/main/org/traducao/projeto/analisadorMidia/application/
+  AnalisarMidiaUseCase.java          | src/main/java/org/traducao/projeto/analisadorMidia/application/
+  AnsiCores.class                    | bin/main/org/traducao/animes/presentation/ui/
+  AnsiCores.class                    | build/classes/java/main/org/traducao/projeto/traducao/presentation/ui/
+  AnsiCores.java                     | src/main/java/org/traducao/projeto/traducao/presentation/ui/
+  Application.class                  | bin/main/org/traducao/animes/               
+  Application.class                  | build/classes/java/main/org/traducao/projeto/traducao/
+  Application.class.uniqueId0        | build/tmp/compileJava/compileTransaction/stash-dir/
+  Application.java                   | src/main/java/org/traducao/projeto/traducao/
+  ApplicationTest.class              | bin/test/org/traducao/animes/               
+  ApplicationTest.class              | build/classes/java/test/org/traducao/projeto/traducao/
+  ApplicationTest.class.uniqueId2    | build/tmp/compileTestJava/compileTransaction/stash-dir/
+  ApplicationTest.java               | src/test/java/org/traducao/projeto/traducao/
+  ArquivoLegendaException.class      | bin/main/org/traducao/animes/domain/exceptions/
+  ArquivoLegendaException.class      | build/classes/java/main/org/traducao/projeto/traducao/domain/exceptions/
+  ArquivoLegendaException.java       | src/main/java/org/traducao/projeto/traducao/domain/exceptions/
+  AudioInfo.class                    | build/classes/java/main/org/traducao/projeto/analisadorMidia/domain/
+  AudioInfo.java                     | src/main/java/org/traducao/projeto/analisadorMidia/domain/
+  AuditoriaResultado.class           | build/classes/java/main/org/traducao/projeto/analisadorMidia/domain/
+  AuditoriaResultado.java            | src/main/java/org/traducao/projeto/analisadorMidia/domain/
+  CacheTraducaoService.class         | bin/main/org/traducao/animes/infrastructure/cache/
+  CacheTraducaoService.class         | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/cache/
+  CacheTraducaoService.java          | src/main/java/org/traducao/projeto/traducao/infrastructure/cache/
+  CacheTraducaoServiceTest.class     | bin/test/org/traducao/animes/infrastructure/cache/
+  CacheTraducaoServiceTest.class     | build/classes/java/test/org/traducao/projeto/traducao/infrastructure/cache/
+  CacheTraducaoServiceTest.java      | src/test/java/org/traducao/projeto/traducao/infrastructure/cache/
+  ConsoleAnalisadorLogger.class      | build/classes/java/main/org/traducao/projeto/analisadorMidia/presentation/ui/
+  ConsoleAnalisadorLogger.java       | src/main/java/org/traducao/projeto/analisadorMidia/presentation/ui/
+  ConsoleEntrada$CaminhosPastas.class | bin/main/org/traducao/animes/presentation/ui/
+  ConsoleEntrada$CaminhosPastas.class | build/classes/java/main/org/traducao/projeto/traducao/presentation/ui/
+  ConsoleEntrada$CaminhosPastas.class.uniqueId6 | build/tmp/compileJava/compileTransaction/stash-dir/
+  ConsoleEntrada.class               | bin/main/org/traducao/animes/presentation/ui/
+  ConsoleEntrada.class               | build/classes/java/main/org/traducao/projeto/traducao/presentation/ui/
+  ConsoleEntrada.class.uniqueId4     | build/tmp/compileJava/compileTransaction/stash-dir/
+  ConsoleEntrada.java                | src/main/java/org/traducao/projeto/traducao/presentation/ui/
+  ConsoleExtratorLogger.class        | build/classes/java/main/org/traducao/projeto/legendasExtracao/presentation/ui/
+  ConsoleExtratorLogger.java         | src/main/java/org/traducao/projeto/legendasExtracao/presentation/ui/
+  ConsoleRemuxerLogger.class         | build/classes/java/main/org/traducao/projeto/remuxer/presentation/ui/
+  ConsoleRemuxerLogger.java          | src/main/java/org/traducao/projeto/remuxer/presentation/ui/
+  ConsoleUILogger.class              | bin/main/org/traducao/animes/presentation/ui/
+  ConsoleUILogger.class              | build/classes/java/main/org/traducao/projeto/traducao/presentation/ui/
+  ConsoleUILogger.java               | src/main/java/org/traducao/projeto/traducao/presentation/ui/
+  ContainerInfo.class                | build/classes/java/main/org/traducao/projeto/analisadorMidia/domain/
+  ContainerInfo.java                 | src/main/java/org/traducao/projeto/analisadorMidia/domain/
+  CorretorCache$1.class              | build/classes/java/main/org/traducao/projeto/traducaoCorrige/
+  CorretorCache.class                | build/classes/java/main/org/traducao/projeto/traducaoCorrige/
+  CorretorCache.java                 | src/main/java/org/traducao/projeto/traducaoCorrige/
+  CorretorCacheCLI$1.class           | build/classes/java/main/org/traducao/projeto/traducaoCorrige/
+  CorretorCacheCLI.class             | build/classes/java/main/org/traducao/projeto/traducaoCorrige/
+  CorretorCacheCLI.java              | src/main/java/org/traducao/projeto/traducaoCorrige/
+  CorretorRaspagemCLI$1.class        | build/classes/java/main/org/traducao/projeto/raspagemCorrecao/
+  CorretorRaspagemCLI.class          | build/classes/java/main/org/traducao/projeto/raspagemCorrecao/
+  CorretorRaspagemCLI.java           | src/main/java/org/traducao/projeto/raspagemCorrecao/
+  DivergenciaLinhasException.class   | bin/main/org/traducao/animes/domain/exceptions/
+  DivergenciaLinhasException.class   | build/classes/java/main/org/traducao/projeto/traducao/domain/exceptions/
+  DivergenciaLinhasException.java    | src/main/java/org/traducao/projeto/traducao/domain/exceptions/
+  DocumentoLegenda.class             | bin/main/org/traducao/animes/domain/legenda/
+  DocumentoLegenda.class             | build/classes/java/main/org/traducao/projeto/traducao/domain/legenda/
+  DocumentoLegenda.java              | src/main/java/org/traducao/projeto/traducao/domain/legenda/
+  EntradaCache.class                 | bin/main/org/traducao/animes/infrastructure/cache/
+  EntradaCache.class                 | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/cache/
+  EntradaCache.java                  | src/main/java/org/traducao/projeto/traducao/infrastructure/cache/
+  EscritorLegendaAss.class           | bin/main/org/traducao/animes/infrastructure/legenda/
+  EscritorLegendaAss.class           | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/legenda/
+  EscritorLegendaAss.java            | src/main/java/org/traducao/projeto/traducao/infrastructure/legenda/
+  EventoLegenda.class                | bin/main/org/traducao/animes/domain/legenda/
+  EventoLegenda.class                | build/classes/java/main/org/traducao/projeto/traducao/domain/legenda/
+  EventoLegenda.java                 | src/main/java/org/traducao/projeto/traducao/domain/legenda/
+  ExtrairLegendaUseCase.class        | build/classes/java/main/org/traducao/projeto/legendasExtracao/application/
+  ExtrairLegendaUseCase.java         | src/main/java/org/traducao/projeto/legendasExtracao/application/
+  ExtrairLegendaUseCaseTest.class    | build/classes/java/test/org/traducao/projeto/legendasExtracao/application/
+  ExtrairLegendaUseCaseTest.java     | src/test/java/org/traducao/projeto/legendasExtracao/application/
+  ExtratorAssStrategy.class          | build/classes/java/main/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorAssStrategy.java           | src/main/java/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorAssStrategyTest.class      | build/classes/java/test/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorAssStrategyTest.java       | src/test/java/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorCLI.class                  | build/classes/java/main/org/traducao/projeto/legendasExtracao/presentation/
+  ExtratorCLI.class.uniqueId1        | build/tmp/compileJava/compileTransaction/stash-dir/
+  ExtratorCLI.java                   | src/main/java/org/traducao/projeto/legendasExtracao/presentation/
+  ExtratorCLITest.class              | build/classes/java/test/org/traducao/projeto/legendasExtracao/presentation/
+  ExtratorCLITest.class.uniqueId0    | build/tmp/compileTestJava/compileTransaction/stash-dir/
+  ExtratorCLITest.java               | src/test/java/org/traducao/projeto/legendasExtracao/presentation/
+  ExtratorException.class            | build/classes/java/main/org/traducao/projeto/legendasExtracao/domain/
+  ExtratorException.java             | src/main/java/org/traducao/projeto/legendasExtracao/domain/
+  ExtratorPgsStrategy.class          | build/classes/java/main/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorPgsStrategy.java           | src/main/java/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorPgsStrategyTest.class      | build/classes/java/test/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorPgsStrategyTest.java       | src/test/java/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorProperties.class           | build/classes/java/main/org/traducao/projeto/legendasExtracao/infrastructure/config/
+  ExtratorProperties.java            | src/main/java/org/traducao/projeto/legendasExtracao/infrastructure/config/
+  ExtratorSrtStrategy.class          | build/classes/java/main/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorSrtStrategy.java           | src/main/java/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorSrtStrategyTest.class      | build/classes/java/test/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorSrtStrategyTest.java       | src/test/java/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorStrategy.class             | build/classes/java/main/org/traducao/projeto/legendasExtracao/application/strategy/
+  ExtratorStrategy.java              | src/main/java/org/traducao/projeto/legendasExtracao/application/strategy/
+  FaixaLegenda.class                 | build/classes/java/main/org/traducao/projeto/legendasExtracao/domain/
+  FaixaLegenda.java                  | src/main/java/org/traducao/projeto/legendasExtracao/domain/
+  FfprobeAdapter.class               | build/classes/java/main/org/traducao/projeto/analisadorMidia/infrastructure/adapters/
+  FfprobeAdapter.java                | src/main/java/org/traducao/projeto/analisadorMidia/infrastructure/adapters/
+  FormatoLegenda.class               | build/classes/java/main/org/traducao/projeto/legendasExtracao/domain/
+  FormatoLegenda.java                | src/main/java/org/traducao/projeto/legendasExtracao/domain/
+  FormatoLegendaTest.class           | build/classes/java/test/org/traducao/projeto/legendasExtracao/domain/
+  FormatoLegendaTest.java            | src/test/java/org/traducao/projeto/legendasExtracao/domain/
+  GeradorMapaProjetoUseCase.class    | build/classes/java/main/org/traducao/projeto/mapaProjeto/application/
+  GeradorMapaProjetoUseCase.java     | src/main/java/org/traducao/projeto/mapaProjeto/application/
+  LICENSE                            | raiz/                                       
+  LegendaInfo.class                  | build/classes/java/main/org/traducao/projeto/analisadorMidia/domain/
+  LegendaInfo.java                   | src/main/java/org/traducao/projeto/analisadorMidia/domain/
+  LeitorLegendaAss.class             | bin/main/org/traducao/animes/infrastructure/legenda/
+  LeitorLegendaAss.class             | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/legenda/
+  LeitorLegendaAss.java              | src/main/java/org/traducao/projeto/traducao/infrastructure/legenda/
+  LeitorLegendaAssTest.class         | bin/test/org/traducao/animes/infrastructure/legenda/
+  LeitorLegendaAssTest.class         | build/classes/java/test/org/traducao/projeto/traducao/infrastructure/legenda/
+  LeitorLegendaAssTest.java          | src/test/java/org/traducao/projeto/traducao/infrastructure/legenda/
+  LlmFalhaComunicacaoException.class | bin/main/org/traducao/animes/domain/exceptions/
+  LlmFalhaComunicacaoException.class | build/classes/java/main/org/traducao/projeto/traducao/domain/exceptions/
+  LlmFalhaComunicacaoException.java  | src/main/java/org/traducao/projeto/traducao/domain/exceptions/
+  LlmProperties.class                | bin/main/org/traducao/animes/infrastructure/config/
+  LlmProperties.class                | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/config/
+  LlmProperties.java                 | src/main/java/org/traducao/projeto/traducao/infrastructure/config/
+  LlmTelemetria.class                | build/classes/java/main/org/traducao/projeto/telemetria/
+  LlmTelemetria.java                 | src/main/java/org/traducao/projeto/telemetria/
+  Lote.class                         | bin/main/org/traducao/animes/domain/        
+  Lote.class                         | build/classes/java/main/org/traducao/projeto/traducao/domain/
+  Lote.java                          | src/main/java/org/traducao/projeto/traducao/domain/
+  MANIFEST.MF                        | build/tmp/bootJar/                          
+  MANIFEST.MF                        | build/tmp/jar/                              
+  MapaProjetoCLI.class               | build/classes/java/main/org/traducao/projeto/mapaProjeto/presentation/
+  MapaProjetoCLI.java                | src/main/java/org/traducao/projeto/mapaProjeto/presentation/
+  MapeadorDiretorioUseCase$ArquivoMapeado.class | build/classes/java/main/org/traducao/projeto/mapaProjeto/application/
+  MapeadorDiretorioUseCase.class     | build/classes/java/main/org/traducao/projeto/mapaProjeto/application/
+  MapeadorDiretorioUseCase.java      | src/main/java/org/traducao/projeto/mapaProjeto/application/
+  MapeadorMidiaService.class         | build/classes/java/main/org/traducao/projeto/remuxer/application/
+  MapeadorMidiaService.java          | src/main/java/org/traducao/projeto/remuxer/application/
+  MapeadorMidiaServiceTest.class     | build/classes/java/test/org/traducao/projeto/remuxer/application/
+  MapeadorMidiaServiceTest.java      | src/test/java/org/traducao/projeto/remuxer/application/
+  MascaradorTags$Mascarado.class     | bin/main/org/traducao/animes/infrastructure/legenda/
+  MascaradorTags$Mascarado.class     | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/legenda/
+  MascaradorTags.class               | bin/main/org/traducao/animes/infrastructure/legenda/
+  MascaradorTags.class               | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/legenda/
+  MascaradorTags.java                | src/main/java/org/traducao/projeto/traducao/infrastructure/legenda/
+  MascaradorTagsTest.class           | bin/test/org/traducao/animes/infrastructure/legenda/
+  MascaradorTagsTest.class           | build/classes/java/test/org/traducao/projeto/traducao/infrastructure/legenda/
+  MascaradorTagsTest.java            | src/test/java/org/traducao/projeto/traducao/infrastructure/legenda/
+  MidiaTelemetria$LegendaTelemetria.class | build/classes/java/main/org/traducao/projeto/telemetria/
+  MidiaTelemetria.class              | build/classes/java/main/org/traducao/projeto/telemetria/
+  MidiaTelemetria.java               | src/main/java/org/traducao/projeto/telemetria/
+  MistralClientAdapter.class         | bin/main/org/traducao/animes/infrastructure/adapters/
+  MistralClientAdapter.class         | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/adapters/
+  MistralClientAdapter.java          | src/main/java/org/traducao/projeto/traducao/infrastructure/adapters/
+  MistralClientAdapterTest.class     | bin/test/org/traducao/animes/infrastructure/adapters/
+  MistralClientAdapterTest.class     | build/classes/java/test/org/traducao/projeto/traducao/infrastructure/adapters/
+  MistralClientAdapterTest.java      | src/test/java/org/traducao/projeto/traducao/infrastructure/adapters/
+  MistralPort.class                  | bin/main/org/traducao/animes/domain/ports/  
+  MistralPort.class                  | build/classes/java/main/org/traducao/projeto/traducao/domain/ports/
+  MistralPort.java                   | src/main/java/org/traducao/projeto/traducao/domain/ports/
+  MkvToolNixAdapter.class            | build/classes/java/main/org/traducao/projeto/legendasExtracao/infrastructure/adapters/
+  MkvToolNixAdapter.java             | src/main/java/org/traducao/projeto/legendasExtracao/infrastructure/adapters/
+  MkvmergeAdapter.class              | build/classes/java/main/org/traducao/projeto/remuxer/infrastructure/adapters/
+  MkvmergeAdapter.java               | src/main/java/org/traducao/projeto/remuxer/infrastructure/adapters/
+  PastasExecucao.class               | bin/main/org/traducao/animes/presentation/ui/
+  PastasExecucao.class               | build/classes/java/main/org/traducao/projeto/traducao/presentation/ui/
+  PastasExecucao.java                | src/main/java/org/traducao/projeto/traducao/presentation/ui/
+  ProcessarArquivoUseCase.class      | bin/main/org/traducao/animes/application/   
+  ProcessarArquivoUseCase.class      | build/classes/java/main/org/traducao/projeto/traducao/application/
+  ProcessarArquivoUseCase.java       | src/main/java/org/traducao/projeto/traducao/application/
+  ProcessarArquivoUseCaseTest.class  | bin/test/org/traducao/animes/application/   
+  ProcessarArquivoUseCaseTest.class  | build/classes/java/test/org/traducao/projeto/traducao/application/
+  ProcessarArquivoUseCaseTest.class.uniqueId1 | build/tmp/compileTestJava/compileTransaction/stash-dir/
+  ProcessarArquivoUseCaseTest.java   | src/test/java/org/traducao/projeto/traducao/application/
+  ProcessarEpisodioUseCase.class     | bin/main/org/traducao/animes/application/   
+  ProcessarEpisodioUseCase.class     | build/classes/java/main/org/traducao/projeto/traducao/application/
+  ProcessarEpisodioUseCase.java      | src/main/java/org/traducao/projeto/traducao/application/
+  ProcessarEpisodioUseCaseTest.class | bin/test/org/traducao/animes/application/   
+  ProcessarEpisodioUseCaseTest.class | build/classes/java/test/org/traducao/projeto/traducao/application/
+  ProcessarEpisodioUseCaseTest.class.uniqueId4 | build/tmp/compileTestJava/compileTransaction/stash-dir/
+  ProcessarEpisodioUseCaseTest.java  | src/test/java/org/traducao/projeto/traducao/application/
+  Project_Default.xml                | .idea/inspectionProfiles/                   
+  README.md                          | obsidian_vault/notas/                       
+  RecordsMistral$ChatRequest.class   | bin/main/org/traducao/animes/infrastructure/dtos/
+  RecordsMistral$ChatRequest.class   | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/dtos/
+  RecordsMistral$Choice.class        | bin/main/org/traducao/animes/infrastructure/dtos/
+  RecordsMistral$Choice.class        | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/dtos/
+  RecordsMistral$ListaModelos.class  | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/dtos/
+  RecordsMistral$Mensagem.class      | bin/main/org/traducao/animes/infrastructure/dtos/
+  RecordsMistral$Mensagem.class      | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/dtos/
+  RecordsMistral$ModeloDisponivel.class | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/dtos/
+  RecordsMistral$RespostaLlm.class   | bin/main/org/traducao/animes/infrastructure/dtos/
+  RecordsMistral$RespostaLlm.class   | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/dtos/
+  RecordsMistral.class               | bin/main/org/traducao/animes/infrastructure/dtos/
+  RecordsMistral.class               | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/dtos/
+  RecordsMistral.java                | src/main/java/org/traducao/projeto/traducao/infrastructure/dtos/
+  RelatorioExtracao.class            | build/classes/java/main/org/traducao/projeto/legendasExtracao/domain/
+  RelatorioExtracao.java             | src/main/java/org/traducao/projeto/legendasExtracao/domain/
+  RelatorioRemux.class               | build/classes/java/main/org/traducao/projeto/remuxer/domain/
+  RelatorioRemux.java                | src/main/java/org/traducao/projeto/remuxer/domain/
+  RemuxTarefa.class                  | build/classes/java/main/org/traducao/projeto/remuxer/domain/
+  RemuxTarefa.java                   | src/main/java/org/traducao/projeto/remuxer/domain/
+  RemuxarLoteUseCase.class           | build/classes/java/main/org/traducao/projeto/remuxer/application/
+  RemuxarLoteUseCase.java            | src/main/java/org/traducao/projeto/remuxer/application/
+  RemuxarLoteUseCaseTest.class       | build/classes/java/test/org/traducao/projeto/remuxer/application/
+  RemuxarLoteUseCaseTest.java        | src/test/java/org/traducao/projeto/remuxer/application/
+  RemuxerCLI.class                   | build/classes/java/main/org/traducao/projeto/remuxer/presentation/
+  RemuxerCLI.class.uniqueId5         | build/tmp/compileJava/compileTransaction/stash-dir/
+  RemuxerCLI.java                    | src/main/java/org/traducao/projeto/remuxer/presentation/
+  RemuxerCLITest.class               | build/classes/java/test/org/traducao/projeto/remuxer/presentation/
+  RemuxerCLITest.class.uniqueId3     | build/tmp/compileTestJava/compileTransaction/stash-dir/
+  RemuxerCLITest.java                | src/test/java/org/traducao/projeto/remuxer/presentation/
+  RemuxerException.class             | build/classes/java/main/org/traducao/projeto/remuxer/domain/
+  RemuxerException.java              | src/main/java/org/traducao/projeto/remuxer/domain/
+  RemuxerProperties.class            | build/classes/java/main/org/traducao/projeto/remuxer/infrastructure/config/
+  RemuxerProperties.java             | src/main/java/org/traducao/projeto/remuxer/infrastructure/config/
+  RespostaLlmVaziaException.class    | bin/main/org/traducao/animes/domain/exceptions/
+  RespostaLlmVaziaException.class    | build/classes/java/main/org/traducao/projeto/traducao/domain/exceptions/
+  RespostaLlmVaziaException.java     | src/main/java/org/traducao/projeto/traducao/domain/exceptions/
+  RestClientConfig.class             | bin/main/org/traducao/animes/infrastructure/config/
+  RestClientConfig.class             | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/config/
+  RestClientConfig.java              | src/main/java/org/traducao/projeto/traducao/infrastructure/config/
+  StatusLlm.class                    | build/classes/java/main/org/traducao/projeto/traducao/domain/
+  StatusLlm.java                     | src/main/java/org/traducao/projeto/traducao/domain/
+  TEST-org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCaseTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.legendasExtracao.application.strategy.ExtratorAssStrategyTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.legendasExtracao.application.strategy.ExtratorPgsStrategyTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.legendasExtracao.application.strategy.ExtratorSrtStrategyTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.legendasExtracao.domain.FormatoLegendaTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.legendasExtracao.presentation.ExtratorCLITest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.remuxer.application.MapeadorMidiaServiceTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.remuxer.presentation.RemuxerCLITest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.traducao.ApplicationTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.traducao.application.ProcessarArquivoUseCaseTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.traducao.application.ValidadorTraducaoServiceTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoServiceTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.traducao.infrastructure.config.TradutorPropertiesTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.traducao.infrastructure.legenda.LeitorLegendaAssTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.traducao.infrastructure.legenda.MascaradorTagsTest.xml | build/test-results/test/                    
+  TEST-org.traducao.projeto.traducao.presentation.TradutorCLITest.xml | build/test-results/test/                    
+  TelemetriaService.class            | build/classes/java/main/org/traducao/projeto/telemetria/
+  TelemetriaService.java             | src/main/java/org/traducao/projeto/telemetria/
+  TraducaoLote.class                 | bin/main/org/traducao/animes/domain/        
+  TraducaoLote.class                 | build/classes/java/main/org/traducao/projeto/traducao/domain/
+  TraducaoLote.java                  | src/main/java/org/traducao/projeto/traducao/domain/
+  TraducaoParcialException.class     | bin/main/org/traducao/animes/domain/exceptions/
+  TraducaoParcialException.class     | build/classes/java/main/org/traducao/projeto/traducao/domain/exceptions/
+  TraducaoParcialException.java      | src/main/java/org/traducao/projeto/traducao/domain/exceptions/
+  TradutorCLI.class                  | bin/main/org/traducao/animes/presentation/  
+  TradutorCLI.class                  | build/classes/java/main/org/traducao/projeto/traducao/presentation/
+  TradutorCLI.class.uniqueId3        | build/tmp/compileJava/compileTransaction/stash-dir/
+  TradutorCLI.java                   | src/main/java/org/traducao/projeto/traducao/presentation/
+  TradutorCLITest.class              | bin/test/org/traducao/animes/presentation/  
+  TradutorCLITest.class              | build/classes/java/test/org/traducao/projeto/traducao/presentation/
+  TradutorCLITest.class.uniqueId5    | build/tmp/compileTestJava/compileTransaction/stash-dir/
+  TradutorCLITest.java               | src/test/java/org/traducao/projeto/traducao/presentation/
+  TradutorException.class            | bin/main/org/traducao/animes/domain/exceptions/
+  TradutorException.class            | build/classes/java/main/org/traducao/projeto/traducao/domain/exceptions/
+  TradutorException.java             | src/main/java/org/traducao/projeto/traducao/domain/exceptions/
+  TradutorProperties.class           | bin/main/org/traducao/animes/infrastructure/config/
+  TradutorProperties.class           | build/classes/java/main/org/traducao/projeto/traducao/infrastructure/config/
+  TradutorProperties.java            | src/main/java/org/traducao/projeto/traducao/infrastructure/config/
+  TradutorPropertiesTest.class       | build/classes/java/test/org/traducao/projeto/traducao/infrastructure/config/
+  TradutorPropertiesTest.java        | src/test/java/org/traducao/projeto/traducao/infrastructure/config/
+  ValidadorTraducaoService.class     | bin/main/org/traducao/animes/application/   
+  ValidadorTraducaoService.class     | build/classes/java/main/org/traducao/projeto/traducao/application/
+  ValidadorTraducaoService.java      | src/main/java/org/traducao/projeto/traducao/application/
+  ValidadorTraducaoServiceTest.class | bin/test/org/traducao/animes/application/   
+  ValidadorTraducaoServiceTest.class | build/classes/java/test/org/traducao/projeto/traducao/application/
+  ValidadorTraducaoServiceTest.java  | src/test/java/org/traducao/projeto/traducao/application/
+  VideoInfo.class                    | build/classes/java/main/org/traducao/projeto/analisadorMidia/domain/
+  VideoInfo.java                     | src/main/java/org/traducao/projeto/analisadorMidia/domain/
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E01 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E01 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E02 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E02 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E03 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E03 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E04 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E04 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E05 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E05 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E06 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E06 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E07 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E07 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E08 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E08 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E09 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E09 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E10 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E10 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E11 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E11 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E12 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E12 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E13 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E13 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E14 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E14 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E15 [1080p BD AV1][Dual Audio]_ENG.cache.json | config/json_data/                           
+  [Sokudo] Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V - S05E15 [1080p BD AV1][Dual Audio]_PT-BR.ass | legendas-ptbr/DanMachi/temporada_5/         
+  abortaSemProcessarArquivosQuandoModeloNaoEstaCarregado(Path).html | build/reports/tests/test/org.traducao.projeto.traducao.presentation.TradutorCLITest/
+  abortaTodosQuandoUmLoteFalhaNaComunicacao().html | build/reports/tests/test/org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest/
+  application.yml                    | bin/main/                                   
+  application.yml                    | build/resources/main/                       
+  application.yml                    | src/main/resources/                         
+  base-style.css                     | build/reports/tests/test/css/               
+  build.gradle                       | raiz/                                       
+  buildOutputCleanup.lock            | .gradle/buildOutputCleanup/                 
+  cache.properties                   | .gradle/buildOutputCleanup/                 
+  checksums.lock                     | .gradle/9.3.0/checksums/                    
+  compiler.xml                       | .idea/                                      
+  configuraPastasEChamaUseCaseQuandoAmbosOsDiretoriosExistem(Path).html | build/reports/tests/test/org.traducao.projeto.remuxer.presentation.RemuxerCLITest/
+  configuraPastasEChamaUseCaseQuandoDiretorioValido(Path).html | build/reports/tests/test/org.traducao.projeto.legendasExtracao.presentation.ExtratorCLITest/
+  contabilizaErroDeInfraQuandoPastasDeOrigemNaoExistem(Path).html | build/reports/tests/test/org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest/
+  contabilizaErroDeInfraQuandoValidacaoDeAmbienteFalha(Path).html | build/reports/tests/test/org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest/
+  contabilizaErroInesperadoQuandoExcecaoNaoMapeadaOcorre(Path).html | build/reports/tests/test/org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest/
+  contabilizaErroRuntimeQuandoMkvmergeFalhaSemAbortarLote(Path).html | build/reports/tests/test/org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest/
+  continuaProcessandoOutrosArquivosQuandoUmFalha(Path).html | build/reports/tests/test/org.traducao.projeto.traducao.presentation.TradutorCLITest/
+  dividePeloMeioQuandoQuantidadeDeLinhasTraduzidasDivergeDoOriginal().html | build/reports/tests/test/org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest/
+  executionHistory.bin               | .gradle/9.3.0/executionHistory/             
+  executionHistory.lock              | .gradle/9.3.0/executionHistory/             
+  explorador_diretorio.py            | src/scripts_automacao/                      
+  extraiFaixaEncontradaParaArquivoDeSaidaCorreto(Path).html | build/reports/tests/test/org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCaseTest/
+  falhaDeConexaoRetornaTraducaoLoteComFalhaEmVezDeLancar().html | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest/
+  file-system.probe                  | .gradle/                                    
+  fileHashes.bin                     | .gradle/9.3.0/fileHashes/                   
+  fileHashes.lock                    | .gradle/9.3.0/fileHashes/                   
+  gc.properties                      | .gradle/9.3.0/                              
+  gc.properties                      | .gradle/vcs-1/                              
+  gerar_mapa_projeto.py              | src/scripts_automacao/                      
+  gradle-wrapper.jar                 | gradle/wrapper/                             
+  gradle-wrapper.properties          | gradle/wrapper/                             
+  gradle.xml                         | .idea/                                      
+  gradlew                            | raiz/                                       
+  gradlew.bat                        | raiz/                                       
+  ignoraArgEntradaVazio().html       | build/reports/tests/test/org.traducao.projeto.traducao.ApplicationTest/
+  ignoraArquivosSemExtensaoSuportada(Path).html | build/reports/tests/test/org.traducao.projeto.traducao.presentation.TradutorCLITest/
+  ignoraCacheComTextoOriginalOuResiduoEmInglesERetraduz(Path).html | build/reports/tests/test/org.traducao.projeto.traducao.application.ProcessarArquivoUseCaseTest/
+  ignoraEntradasComTraducaoVaziaAoCarregar(Path).html | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoServiceTest/
+  ignoraVideoSemLegendaCorrespondente(Path).html | build/reports/tests/test/org.traducao.projeto.remuxer.application.MapeadorMidiaServiceTest/
+  index.html                         | build/reports/tests/test/                   
+  index.html                         | build/reports/tests/test/org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCaseTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.legendasExtracao.application.strategy.ExtratorAssStrategyTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.legendasExtracao.application.strategy.ExtratorPgsStrategyTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.legendasExtracao.application.strategy.ExtratorSrtStrategyTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.legendasExtracao.domain.FormatoLegendaTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.legendasExtracao.presentation.ExtratorCLITest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.remuxer.application.MapeadorMidiaServiceTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.remuxer.presentation.RemuxerCLITest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.traducao.application.ProcessarArquivoUseCaseTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.traducao.application.ValidadorTraducaoServiceTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.traducao.ApplicationTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoServiceTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.config.TradutorPropertiesTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.legenda.LeitorLegendaAssTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.legenda.MascaradorTagsTest/
+  index.html                         | build/reports/tests/test/org.traducao.projeto.traducao.presentation.TradutorCLITest/
+  last-build.bin                     | .gradle/9.3.0/fileChanges/                  
+  mantemTextoOriginalQuandoValidadorDetectaAlucinacaoMesmoIsolandoAFala().html | build/reports/tests/test/org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest/
+  md5-checksums.bin                  | .gradle/9.3.0/checksums/                    
+  misc.xml                           | .idea/                                      
+  naoAbortaDemaisArquivosQuandoUmFalha(Path).html | build/reports/tests/test/org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCaseTest/
+  naoLancaQuandoDiretorioEntradaNaoConfigurado().html | build/reports/tests/test/org.traducao.projeto.legendasExtracao.presentation.ExtratorCLITest/
+  naoLancaQuandoDiretorioEntradaNaoConfigurado().html | build/reports/tests/test/org.traducao.projeto.remuxer.presentation.RemuxerCLITest/
+  naoLancaQuandoDiretorioEntradaNaoConfigurado().html | build/reports/tests/test/org.traducao.projeto.traducao.presentation.TradutorCLITest/
+  naoLancaQuandoDiretorioNaoExiste(Path).html | build/reports/tests/test/org.traducao.projeto.traducao.presentation.TradutorCLITest/
+  naoRegistraErrosQuandoFilaDeProcessamentoEstaVazia(Path).html | build/reports/tests/test/org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest/
+  normalizaRespostaComCrLfLinhasVaziasExternasECercaMarkdown().html | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest/
+  output-events.bin                  | build/test-results/test/binary/             
+  outputFiles.bin                    | .gradle/buildOutputCleanup/                 
+  previous-compilation-data.bin      | build/tmp/compileJava/                      
+  previous-compilation-data.bin      | build/tmp/compileTestJava/                  
+  problems-report.html               | build/reports/problems/                     
+  project-info.ser                   | .gradle/nb-cache/traducao_animes_llm_local-1157138920/
+  project-info.ser                   | .gradle/nb-cache/traducao_animes_llm_local_java-1756401215/
+  reaproveitaCacheExistenteESoTraduzOQueFalta(Path).html | build/reports/tests/test/org.traducao.projeto.traducao.application.ProcessarArquivoUseCaseTest/
+  registraSemLegendaQuandoNenhumaFaixaAssEncontrada(Path).html | build/reports/tests/test/org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCaseTest/
+  registraSucessoEBytesGeradosQuandoRemuxFunciona(Path).html | build/reports/tests/test/org.traducao.projeto.remuxer.application.RemuxarLoteUseCaseTest/
+  report.js                          | build/reports/tests/test/js/                
+  resolvedMainClassName              | build/                                      
+  resourceHashesCache.bin            | .gradle/9.3.0/fileHashes/                   
+  results-generic.bin                | build/test-results/test/binary/             
+  retornaFalhaQuandoChoiceNaoTemMensagem().html | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest/
+  retornaFalhaQuandoRespostaNaoTemChoices().html | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest/
+  retornaFalhaQuandoServidorRespondeErroHttp().html | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest/
+  retornaMapaVazioQuandoJsonCorrompido(Path).html | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoServiceTest/
+  run.bat                            | raiz/                                       
+  salvaEDepoisCarregaAsMesmasEntradas(Path).html | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoServiceTest/
+  settings.gradle                    | raiz/                                       
+  settings.json                      | config/json_data/                           
+  sha1-checksums.bin                 | .gradle/9.3.0/checksums/                    
+  style.css                          | build/reports/tests/test/css/               
+  subprojects.ser                    | .gradle/nb-cache/                           
+  tradutor.log                       | telemetria/logs_erro/                       
+  tradutor.log.2026-06-23.0.gz       | logs/                                       
+  tradutor.log.2026-06-25.0.gz       | logs/                                       
+  tradutor.log.2026-06-25.1.gz       | logs/                                       
+  tradutor.log.2026-06-25.2.gz       | logs/                                       
+  tradutor_fallback_google.py        | src/scripts_automacao/                      
+  traduzArquivoNovoDeduplicandoFalasRepetidasEPulandoComentariosEEstilosIgnorados(Path).html | build/reports/tests/test/org.traducao.projeto.traducao.application.ProcessarArquivoUseCaseTest/
+  traduzComSucessoQuandoLlmRespondeBem().html | build/reports/tests/test/org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapterTest/
+  traduzTodosOsLotesComSucesso().html | build/reports/tests/test/org.traducao.projeto.traducao.application.ProcessarEpisodioUseCaseTest/
+  vcs.xml                            | .idea/                                      
+  workspace.xml                      | .idea/                                      
+
+====================================================================================================
+FIM DO RELATÓRIO - PRONTO PARA DOWNLOAD DA JANELA DE CONTEXTO

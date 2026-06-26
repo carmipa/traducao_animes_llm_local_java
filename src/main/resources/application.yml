@@ -1,3 +1,11 @@
+server:
+  # A interface web nao tem autenticacao: so deve ser alcancavel pelo proprio
+  # PC. Sem isso, o Spring Boot escuta em 0.0.0.0 e qualquer dispositivo na
+  # mesma rede Wi-Fi/LAN pode acionar traducao, remux, limpeza de cache e
+  # leitura do codigo-fonte (endpoint /api/mapa) sem nenhuma credencial.
+  address: 127.0.0.1
+  port: 8080
+
 spring:
   output:
     ansi:
@@ -6,11 +14,11 @@ spring:
     virtual:
       enabled: true
   main:
-    # Esta aplicacao e uma CLI local, nao um servico web: nao precisamos do
-    # Tomcat embutido que o spring-boot-starter-web (usado so pelo RestClient)
-    # ligaria por padrao. Um servidor HTTP sem autenticacao escutando em
-    # localhost e uma superficie de ataque desnecessaria para uma ferramenta
-    # de tradução de legendas.
+    # Esta aplicacao e uma CLI local; por padrao (sem argumentos), o
+    # Application.main agora sobe em modo WEB (servlet) para servir a
+    # interface web em src/main/resources/static. Quando rodada com
+    # --tradutor.diretorio-entrada=<algo>, cai de volta ao modo CLI puro e
+    # nenhum servidor HTTP e levantado.
     web-application-type: none
 
 tradutor:
@@ -54,6 +62,9 @@ remuxer:
 
 
 logging:
+  charset:
+    console: UTF-8
+    file: UTF-8
   level:
     root: INFO
     org.traducao.projeto.traducao: INFO

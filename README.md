@@ -34,57 +34,65 @@
 
 1. [✨ Visão Geral](#visao-geral)
 2. [🧩 Funcionalidades](#funcionalidades)
-3. [🏗️ Arquitetura em Camadas](#arquitetura)
-4. [🔄 Pipeline de Tradução — Visão Ponta a Ponta](#pipeline)
-5. [✂️ Divisão Recursiva de Lotes (Anti-Alucinação)](#divisao-lotes)
-6. [🔌 Integração com o LLM (Retry)](#llm)
-7. [🏷️ Mascaramento de Tags ASS/SSA](#mascaramento)
-8. [📦 Modelo de Domínio & Hierarquia de Exceções](#dominio)
-9. [🗂️ Resolução Automática de Pastas](#pastas)
-10. [✅ Pré-requisitos](#pre-requisitos)
-11. [🚀 Instalação e Execução Rápida](#instalacao)
-12. [⚙️ Configuração (`application.yml`)](#configuracao)
-13. [🖥️ Exemplo de Uso (Console)](#exemplo-uso)
-14. [📁 Estrutura de Pastas do Repositório](#estrutura-projeto)
-15. [🧪 Testes](#testes)
-16. [🐛 Solução de Problemas / JDK 25](#troubleshooting)
-17. [🗺️ Histórico de Decisões](#decisoes)
-18. [🤝 Contribuindo](#contribuindo)
-19. [📜 Licença](#licenca)
-20. [🙏 Créditos](#creditos)
+3. [🌐 Interface Web](#interface-web)
+4. [🏗️ Arquitetura em Camadas](#arquitetura)
+5. [🔄 Pipeline de Tradução — Visão Ponta a Ponta](#pipeline)
+6. [✂️ Divisão Recursiva de Lotes (Anti-Alucinação)](#divisao-lotes)
+7. [🔌 Integração com o LLM (Retry)](#llm)
+8. [🏷️ Mascaramento de Tags ASS/SSA](#mascaramento)
+9. [📦 Modelo de Domínio & Hierarquia de Exceções](#dominio)
+10. [🗂️ Resolução Automática de Pastas](#pastas)
+11. [✅ Pré-requisitos](#pre-requisitos)
+12. [🚀 Instalação e Execução Rápida](#instalacao)
+13. [⚙️ Configuração (`application.yml`)](#configuracao)
+14. [🖥️ Exemplo de Uso (Console)](#exemplo-uso)
+15. [📁 Estrutura de Pastas do Repositório](#estrutura-projeto)
+16. [🧪 Testes](#testes)
+17. [🐛 Solução de Problemas / JDK 25](#troubleshooting)
+18. [🗺️ Histórico de Decisões](#decisoes)
+19. [🤝 Contribuindo](#contribuindo)
+20. [📜 Licença](#licenca)
+21. [🙏 Créditos](#creditos)
 
 ---
 
 <a id="visao-geral"></a>
 ## ✨ Visão Geral
 
-Este projeto é uma **CLI em Java 25 + Spring Boot** que traduz legendas de anime no formato Advanced SubStation Alpha (`.ass`/`.ssa`) do **inglês para português do Brasil**, usando um **modelo de linguagem (LLM) executado localmente** — por padrão, **Mistral Nemo Instruct** servido pelo [LM Studio](https://lmstudio.ai/) através de uma API compatível com OpenAI (`/v1/chat/completions`).
+Este projeto é uma aplicação **Java 25 + Spring Boot** que traduz legendas de anime no formato Advanced SubStation Alpha (`.ass`/`.ssa`) do **inglês para português do Brasil**, usando um **modelo de linguagem (LLM) executado localmente** — por padrão, **Mistral Nemo Instruct** servido pelo [LM Studio](https://lmstudio.ai/) através de uma API compatível com OpenAI (`/v1/chat/completions`).
 
 > [!NOTE]
 > O projeto é a refatoração para Java de um pipeline originalmente escrito em Python. A motivação da migração foi reduzir o overhead de I/O usando **Virtual Threads** da JVM onde isso faz sentido — embora, na prática, o gargalo real seja a **GPU única** do LLM local, e não a JVM (ver [Histórico de Decisões](#decisoes)).
+
+> [!NOTE]
+> Desde jun/2026 o ponto de entrada padrão é uma **interface web local** (sobe sozinha em `http://localhost:8080` e abre o navegador automaticamente) — os prompts de console antigos continuam funcionando, mas só se você passar `--tradutor.diretorio-entrada=...` explicitamente. Veja [🌐 Interface Web](#interface-web).
 
 Diferenciais do projeto:
 
 ```mermaid
 flowchart LR
-    User["👤 Usuário"] -->|"roda gradlew bootRun / run.bat"| App["☕ Tradutor de Legendas<br/>(Java 25 + Spring Boot, CLI local)"]
+    User["👤 Usuário"] -->|"roda gradlew bootRun / run.bat"| App["☕ Pipeline de Tradução & Remux<br/>(Java 25 + Spring Boot)"]
+    User <-->|"navegador · http://localhost:8080"| Web["🌐 Interface Web<br/>(SPA estática + REST + SSE)"]
+    Web --- App
     App -->|"lê .ass/.ssa"| Disk1["💾 Pasta de ENTRADA<br/>(legendas em inglês)"]
     App -->|"grava .ass/.ssa traduzido"| Disk2["💾 Pasta de SAÍDA<br/>(legendas em pt-BR)"]
     App -->|"lê/grava JSON"| Disk3["💾 Pasta de CACHE<br/>(*.cache.json)"]
-    App -->|"grava log"| Disk4["📜 logs/tradutor.log"]
+    App -->|"grava logs e telemetria"| Disk4["📜 logs/ (tradutor.log,<br/>console-web.log, telemetria_compartilhada.json)"]
     App <-->|"HTTP REST · POST /v1/chat/completions"| LMStudio["🤖 LM Studio<br/>(Mistral Nemo · execução local · GPU)"]
 
     classDef ext fill:#FFE4B5,stroke:#CC8400,color:#000,stroke-width:2px;
     classDef app fill:#BBDEFB,stroke:#0D47A1,color:#000,stroke-width:2px;
+    classDef web fill:#D1C4E9,stroke:#4527A0,color:#000,stroke-width:2px;
     classDef disk fill:#C8E6C9,stroke:#1B5E20,color:#000,stroke-width:2px;
     class User ext
     class App app
+    class Web web
     class LMStudio ext
     class Disk1,Disk2,Disk3,Disk4 disk
 ```
 
 > [!IMPORTANT]
-> Não há nenhuma chamada de rede externa além do `localhost` do LM Studio. Não é necessária chave de API nem conexão com a internet para traduzir — tudo roda na máquina do usuário.
+> Não há nenhuma chamada de rede externa além do `localhost` do LM Studio (e, opcionalmente, da correção via Google Translate — ver tabela de funcionalidades). A interface web só aceita conexões da própria máquina (`server.address: 127.0.0.1`) e não tem autenticação — não é pensada para ser exposta na rede.
 
 ---
 
@@ -101,13 +109,44 @@ flowchart LR
 | ✂️ **Divisão recursiva de lotes** | Um lote problemático é dividido ao meio recursivamente até isolar a fala culpada — não descarta o lote inteiro. |
 | 🔁 **Retry automático** | Até 3 tentativas com pausa de 2s em falha HTTP/timeout/parse ao chamar o LLM. |
 | 💔 **Tolerância a falha parcial** | Uma falha no meio do episódio salva no cache tudo que já foi traduzido (`TraducaoParcialException`). |
-| 📊 **Barra de progresso estilo `tqdm`** | Via `me.tongfei:progressbar`, com mensagens coloridas sobre a barra. |
-| 🪵 **Logging duplo** | Console colorido (ANSI) + arquivo `logs/tradutor.log` com `loteId` no MDC. |
-| 🔒 **Sem superfície HTTP exposta** | `spring.main.web-application-type: none` — não levanta Tomcat, é uma CLI, não um serviço. |
+| 📊 **Barra de progresso estilo `tqdm`** | Via `me.tongfei:progressbar`, com mensagens coloridas sobre a barra (modo CLI). |
+| 🪵 **Logging triplo** | Console colorido (ANSI) + `logs/tradutor.log` (estruturado, com `loteId` no MDC) + `logs/console-web.log` (transcrição do console da interface web). |
+| 🌐 **Interface web local** | SPA com painéis para análise, extração, tradução, correção de cache, remuxer, mapa do projeto e telemetria — sobe automaticamente como modo padrão. Ver [🌐 Interface Web](#interface-web). |
+| 🔒 **Web vinculada só ao próprio PC** | `server.address: 127.0.0.1` — sem autenticação, então o servidor não aceita conexões de outros dispositivos da rede. |
+| 📡 **Logs ao vivo via SSE** | Cada painel da interface web recebe só os logs da sua própria operação (`GET /api/logs/stream`, um canal SSE por pipeline). |
+| 📈 **Telemetria persistida no projeto** | `logs/telemetria_compartilhada.json` acumula métricas de análise de mídia e tradução entre execuções; consumido pelo painel "Telemetria" via `GET /api/telemetria`. |
 | 🌐 **Par de idiomas configurável** | `idioma-original`/`idioma-traduzido` gravados no cache, prontos para outros pares além de en→pt-br. |
 
 > [!WARNING]
 > O **prompt de sistema** enviado ao LLM (`MistralClientAdapter.PROMPT_SISTEMA`) está atualmente fixado para a terminologia da série **DanMachi** ("Familia", "Dungeon", "Orario", "Bell Cranel", "Hestia"). Para traduzir outro anime com terminologia própria, ajuste manualmente essa constante antes de compilar — não há (ainda) uma propriedade de configuração para isso.
+
+---
+
+<a id="interface-web"></a>
+## 🌐 Interface Web
+
+Ao rodar `.\gradlew.bat bootRun` (ou `run.bat`) **sem nenhum argumento**, o programa sobe em modo `WEB`: levanta um Tomcat embutido em `http://localhost:8080`, abre o navegador padrão automaticamente e fica esperando ação na interface, em vez de pedir caminhos no console.
+
+| Painel | O que faz | Endpoint acionado |
+|---|---|---|
+| Início | Resumo/atalhos do repositório (cards estáticos + contagem de cache) | — |
+| 1. Análise de Mídia | Audita codecs, resolução e sincronia de legendas embutidas em vídeos | `POST /api/analisar` |
+| 2. Extração | Extrai faixas de legenda (`ASS`/`PGS`/`SRT`) de arquivos `.mkv` | `POST /api/extrair` |
+| 3. Tradução Local | Traduz `.ass`/`.ssa` via LLM local (mesmo pipeline do modo CLI) | `POST /api/traduzir` |
+| 4. Correção Cache | Limpa falas com falha no cache, ou preenche via raspagem do Google Translate | `POST /api/corrigir-cache` / `POST /api/corrigir-scraping` |
+| 5. Remuxer | Junta vídeo original + legenda traduzida num novo `.mkv` | `POST /api/remuxar` |
+| 6. Mapa do Projeto | Gera a documentação automática de estrutura do repositório | `POST /api/mapa` |
+| 7. Telemetria | Métricas acumuladas de análise/tradução, lidas de `logs/telemetria_compartilhada.json`; pode ser exportada como arquivo | `GET /api/telemetria` · `GET /api/telemetria/exportar` |
+
+Cada painel tem seu próprio console de log, alimentado em tempo real via **Server-Sent Events** (`GET /api/logs/stream`) — cada operação publica num canal SSE próprio, então o log de uma tradução longa não se mistura com o de outra aba aberta ao mesmo tempo.
+
+> [!IMPORTANT]
+> **Sem autenticação.** A interface web não tem login nem CSRF — qualquer requisição local pode disparar tradução, remux ou limpeza de cache. Por isso o servidor só escuta em `server.address: 127.0.0.1` (`application.yml`): nenhum outro dispositivo na rede consegue alcançá-lo. **Não troque isso para `0.0.0.0`** sem antes adicionar alguma forma de autenticação.
+
+> [!TIP]
+> Quer voltar ao fluxo de prompts no console (sem subir o Tomcat)? Passe a pasta de entrada explicitamente: `.\gradlew.bat bootRun --args="--tradutor.diretorio-entrada=D:\caminho\legendas_eng"`. Ver [🚀 Instalação e Execução Rápida](#instalacao).
+
+Detalhes de implementação (endpoints completos, SSE por canal, persistência de logs/telemetria, bugs já corrigidos) estão em **[ARQUITETURA.md → Interface Web](ARQUITETURA.md#interface-web)**.
 
 ---
 
@@ -450,19 +489,20 @@ cd traducao_animes_llm_local_java
 
 # 2. Garanta que o LM Studio esteja rodando com o modelo carregado
 #    (servidor local ativo em http://127.0.0.1:1234/v1 por padrão)
+#    — só necessário para o painel "Tradução Local"; os outros painéis funcionam sem ele.
 
-# 3a. Execute em modo interativo — pede a pasta de legendas no console
+# 3a. Modo padrão: sobe a interface web em http://localhost:8080 e abre o navegador
 .\gradlew.bat bootRun --console=plain
 
 # 3b. Ou use o atalho de raiz (equivalente ao comando acima)
 .\run.bat
 
-# 3c. Ou informe a pasta direto via argumento (pula o prompt interativo)
+# 3c. Modo CLI clássico: pula a interface web e cai no fluxo de prompts/console antigo
 .\gradlew.bat bootRun --args="--tradutor.diretorio-entrada=D:\caminho\legendas_eng"
 ```
 
 > [!TIP]
-> O flag `--console=plain` é necessário para o terminal continuar interativo — sem ele, o Gradle pode bufferizar a saída e esconder o prompt de digitação. `build.gradle` já define `standardInput = System.in` na task `bootRun` para repassar o teclado à JVM.
+> O flag `--console=plain` é necessário para o terminal continuar interativo — sem ele, o Gradle pode bufferizar a saída e esconder o prompt de digitação. `build.gradle` já define `standardInput = System.in` na task `bootRun` para repassar o teclado à JVM. Isso só importa no modo CLI (3c); no modo web (3a/3b) o terminal só exibe o espelho dos logs.
 
 ---
 

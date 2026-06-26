@@ -21,35 +21,50 @@ public final class ConsoleEntrada {
 
         try {
             String modoOpcao = lerOpcional(
-                AnsiCores.colorir("Escolha (1/2/3/4/5/6) [Enter = 1]: ", AnsiCores.CYAN)
+                AnsiCores.colorir("Escolha (1/2/3/4/5/6/7) [Enter = Interface WEB]: ", AnsiCores.CYAN)
             );
-            
-            String modo = "1".equals(modoOpcao) || "".equals(modoOpcao) ? "TRADUZIR" : 
-                          "2".equals(modoOpcao) ? "REMUXAR" :
-                          "3".equals(modoOpcao) ? "EXTRAIR" :
+
+            if (modoOpcao == null) {
+                return Optional.empty();
+            }
+
+            // Numeração segue a ordem natural do pipeline: primeiro auditar a
+            // mídia, depois extrair/traduzir/corrigir a legenda e por fim remuxar.
+            String modo = "1".equals(modoOpcao) ? "ANALISAR" :
+                          "2".equals(modoOpcao) ? "EXTRAIR" :
+                          "3".equals(modoOpcao) ? "TRADUZIR" :
                           "4".equals(modoOpcao) ? "CORRIGIR_CACHE" :
                           "5".equals(modoOpcao) ? "RASPAGEM_CORRECAO" :
-                          "6".equals(modoOpcao) ? "ANALISAR" : "TRADUZIR";
-            
+                          "6".equals(modoOpcao) ? "REMUXAR" :
+                          "7".equals(modoOpcao) ? "MAPEAR" : "WEB";
+
             imprimir("");
-            if (modo.equals("TRADUZIR")) {
-                imprimir(AnsiCores.colorir(">>> MODO TRADUZIR SELECIONADO <<<", AnsiCores.GREEN, true));
-                return solicitarPastasTraducao(modo);
+            if (modo.equals("ANALISAR")) {
+                imprimir(AnsiCores.colorir(">>> MODO ANÁLISE DE MÍDIA SELECIONADO <<<", AnsiCores.CYAN, true));
+                return solicitarPastasAnalisador(modo);
             } else if (modo.equals("EXTRAIR")) {
-                imprimir(AnsiCores.colorir(">>> MODO EXTRAIR LEGENDAS SELECIONADO <<<", AnsiCores.MAGENTA, true));
+                imprimir(AnsiCores.colorir(">>> MODO EXTRAÇÃO DE LEGENDAS SELECIONADO <<<", AnsiCores.MAGENTA, true));
                 return solicitarPastasExtrator(modo);
-            } else if (modo.equals("REMUXAR")) {
-                imprimir(AnsiCores.colorir(">>> MODO REMUXAR (MKVMERGE) SELECIONADO <<<", AnsiCores.CYAN, true));
-                return solicitarPastasRemuxer(modo);
+            } else if (modo.equals("TRADUZIR")) {
+                imprimir(AnsiCores.colorir(">>> MODO TRADUÇÃO DE LEGENDAS VIA LLM SELECIONADO <<<", AnsiCores.GREEN, true));
+                return solicitarPastasTraducao(modo);
             } else if (modo.equals("CORRIGIR_CACHE")) {
-                imprimir(AnsiCores.colorir(">>> MODO CORRIGIR ERROS DE TRADUÇÃO (LIMPAR CACHE) SELECIONADO <<<", AnsiCores.YELLOW, true));
+                imprimir(AnsiCores.colorir(">>> MODO CORREÇÃO DE TRADUÇÃO (LIMPAR CACHE) SELECIONADO <<<", AnsiCores.YELLOW, true));
                 return solicitarPastasCorretor(modo);
             } else if (modo.equals("RASPAGEM_CORRECAO")) {
-                imprimir(AnsiCores.colorir(">>> MODO CORRIGIR ERROS COM GOOGLE TRANSLATE (RASPAGEM) SELECIONADO <<<", AnsiCores.YELLOW, true));
+                imprimir(AnsiCores.colorir(">>> MODO CORREÇÃO DE TRADUÇÃO VIA SCRAPING (GOOGLE TRADUTOR) SELECIONADO <<<", AnsiCores.YELLOW, true));
                 return solicitarPastasCorretor(modo);
+            } else if (modo.equals("REMUXAR")) {
+                imprimir(AnsiCores.colorir(">>> MODO REMUXER (JUNÇÃO DE VÍDEOS COM LEGENDAS) SELECIONADO <<<", AnsiCores.CYAN, true));
+                return solicitarPastasRemuxer(modo);
+            } else if (modo.equals("MAPEAR")) {
+                imprimir(AnsiCores.colorir(">>> MODO MAPEAR PROJETO SELECIONADO <<<", AnsiCores.CYAN, true));
+                String raiz = System.getProperty("user.dir");
+                imprimir(AnsiCores.colorir("Diretório atual detectado como raiz: " + raiz, AnsiCores.GREEN));
+                return Optional.of(new CaminhosPastas(modo, raiz, raiz, null));
             } else {
-                imprimir(AnsiCores.colorir(">>> MODO ANALISAR ARQUIVOS DE MÍDIA SELECIONADO <<<", AnsiCores.CYAN, true));
-                return solicitarPastasAnalisador(modo);
+                imprimir(AnsiCores.colorir(">>> INICIANDO INTERFACE WEB (NAVEGADOR) <<<", AnsiCores.CYAN, true));
+                return Optional.of(new CaminhosPastas("WEB", "", "", null));
             }
         } catch (IOException e) {
             imprimir(AnsiCores.colorir("ERRO ao ler do console: " + e.getMessage(), AnsiCores.RED, true));
@@ -151,12 +166,13 @@ public final class ConsoleEntrada {
         imprimir(linha);
         imprimir("");
         imprimir(AnsiCores.colorir("O que você deseja fazer?", AnsiCores.WHITE));
-        imprimir(AnsiCores.colorir("  [1] Traduzir legendas com LLM Local", AnsiCores.GREEN));
-        imprimir(AnsiCores.colorir("  [2] Remuxar legendas traduzidas nos MKVs", AnsiCores.CYAN));
-        imprimir(AnsiCores.colorir("  [3] Extrair legendas embutidas de MKVs", AnsiCores.MAGENTA));
-        imprimir(AnsiCores.colorir("  [4] Corrigir erros de tradução (Limpar Cache)", AnsiCores.YELLOW));
-        imprimir(AnsiCores.colorir("  [5] Corrigir erros com Google Translate (Raspagem)", AnsiCores.YELLOW));
-        imprimir(AnsiCores.colorir("  [6] Analisar arquivos de mídia (Vídeos/Legendas)", AnsiCores.CYAN));
+        imprimir(AnsiCores.colorir("  [1] Análise de Mídia (Codecs, Sincronia, Auditoria Técnica)", AnsiCores.CYAN));
+        imprimir(AnsiCores.colorir("  [2] Extração de Legendas embutidas em MKVs", AnsiCores.MAGENTA));
+        imprimir(AnsiCores.colorir("  [3] Tradução de Legendas via LLM Local", AnsiCores.GREEN));
+        imprimir(AnsiCores.colorir("  [4] Correção de Tradução (Limpar Cache)", AnsiCores.YELLOW));
+        imprimir(AnsiCores.colorir("  [5] Correção de Tradução via Scraping (Google Tradutor Online)", AnsiCores.YELLOW));
+        imprimir(AnsiCores.colorir("  [6] Remuxer - Junção de Vídeos com Legendas", AnsiCores.CYAN));
+        imprimir(AnsiCores.colorir("  [7] Mapear estrutura e taxonomia do projeto", AnsiCores.CYAN));
         imprimir("");
     }
 

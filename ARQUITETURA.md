@@ -81,11 +81,18 @@ Beans **não** são descobertos por `@ComponentScan` automático — ver seção
 
 Além de `org.traducao.projeto.traducao` (tradução), o projeto tem dois módulos irmãos, cada um com seu próprio `CommandLineRunner` ativado por `@ConditionalOnProperty(name = "app.modo", havingValue = "...")`:
 
-| Modo | CLI | Pacote | Função |
+| Modo | CLI/Bean | Pacote | Função |
 |---|---|---|---|
-| `TRADUZIR` (padrão, `matchIfMissing = true`) | `TradutorCLI` | `animes` | Traduz `.ass`/`.ssa` via LLM local (fluxo já documentado acima) |
+| `WEB` (padrão **desde jun/2026** quando nenhum argumento de CLI é passado) | `ApiController` + SPA estática | `traducao/presentation/web` | Sobe a interface web (ver seção [Interface Web](#interface-web) abaixo) — substitui os prompts de console por formulários e dispara cada pipeline em background. |
+| `TRADUZIR` (`matchIfMissing = true`, só roda se `app.modo` não for definido) | `TradutorCLI` | `animes` | Traduz `.ass`/`.ssa` via LLM local (fluxo já documentado acima) |
 | `EXTRAIR` | `ExtratorCLI` | `legendasExtracao` | Extrai faixas de legenda embutidas em `.mkv` (ASS/PGS/SRT) via MKVToolNix (`mkvmerge --identify` + `mkvextract`) |
 | `REMUXAR` | `RemuxerCLI` | `remuxer` | Remultiplexa um `.mkv` original com uma legenda `.ass`/`.srt` traduzida via `mkvmerge` |
+| `CORRIGIR_CACHE` | `CorretorCacheCLI` | `traducaoCorrige` | Limpa falas do cache cujo `traduzido` ficou igual ao `original` (fallback de falha do LLM) |
+| `RASPAGEM_CORRECAO` | `CorretorRaspagemCLI` | `raspagemCorrecao` | Preenche as falas limpas acima raspando `translate.googleapis.com` (sem chave de API) |
+| `MAPEAR` | `MapaProjetoCLI` | `mapaProjeto` | Gera `relatorio_diretorio_vps.txt` e `mapa_projeto.md` (documentação/taxonomia automática do repositório) |
+
+> [!IMPORTANT]
+> `WEB` não é "mais um modo" no mesmo pé que os outros — é o **caminho de inicialização padrão** (`Application.prepararArgumentosComPastasDoConsole`): quando o programa é iniciado **sem** `--tradutor.diretorio-entrada=...`, o `main()` injeta `--app.modo=WEB --server.port=8080 --spring.main.web-application-type=servlet` antes de subir o Spring. Passar `--tradutor.diretorio-entrada=<pasta>` continua pulando isso e caindo no modo CLI puro (`spring.main.web-application-type: none`, do `application.yml`) — nenhum Tomcat é levantado nesse caso.
 
 `ConsoleEntrada.solicitarPastas()` pergunta o modo (`[1]/[2]/[3]`) antes do Spring subir e grava `--app.modo=...` nos args, igual ao fluxo de pastas. Os três modos reaproveitam as mesmas chaves `tradutor.diretorio-entrada` / `tradutor.diretorio-saida` (ver `Application.ARG_ENTRADA`/`ARG_SAIDA`) — não existem propriedades `extrator.diretorio-*` ou `remuxer.diretorio-*` separadas.
 
@@ -126,6 +133,90 @@ org.traducao.projeto.remuxer
 **Correção:** `ExtratorCLI` e `RemuxerCLI` agora chamam `pastasExecucao.configurar(...)` no próprio `run()`, com a `TradutorProperties` injetada (mesmas chaves `tradutor.diretorio-*`, reaproveitadas pelos três modos). Cada CLI também valida com `Files.isDirectory(...)` antes de prosseguir, em vez de deixar o use case criar silenciosamente a pasta de saída (e, por consequência, a própria pasta de entrada via `Files.createDirectories`) quando o caminho informado não existe.
 
 **Para IAs:** se um novo modo/CLI for adicionado, **não assuma** que `PastasExecucao` já está populada — cada `CommandLineRunner` condicional ao seu `app.modo` é responsável por chamar `configurar()` antes de ler `diretorioEntrada()`/`diretorioSaida()`.
+
+---
+
+<a id="interface-web"></a>
+## Interface Web (modo `WEB`, padrão desde jun/2026)
+
+Toda a interação por console (prompts, banners, barra de progresso) foi substituída por uma SPA estática (`src/main/resources/static/`) servida pelo próprio Spring Boot, com um `RestController` único acionando cada pipeline em background e transmitindo o log ao vivo via Server-Sent Events (SSE).
+
+### Estrutura de pacotes
+
+```
+org.traducao.projeto.traducao.presentation.web
+├── ApiController.java       # @RestController — POST /api/{analisar,extrair,traduzir,corrigir-cache,
+│                             #   corrigir-scraping,remuxar,mapa}, GET /api/{status,telemetria,logs/stream}
+├── LogStreamService.java    # Registro de SseEmitters + canal "atual" da tarefa em execução +
+│                             #   persistência de cada linha em logs/console-web.log
+├── ConsoleRedirector.java   # Substitui System.out por um OutputStream que espelha no console
+│                             #   físico E publica cada linha completa no LogStreamService
+└── BrowserLauncher.java     # @EventListener(ApplicationReadyEvent) — abre o navegador padrão
+                              #   automaticamente quando app.modo=WEB
+
+src/main/resources/static/   # SPA sem framework (HTML + CSS + JS módulos ES, sem build step)
+├── index.html               # Sidebar com 7 painéis (análise, extração, tradução, correção,
+│                             #   remuxer, mapa, telemetria)
+├── js/app.js                 # Orquestrador: navegação entre painéis, conexão SSE, escaping de HTML
+└── {analise,extracao,traducao,correcao,remuxer,mapa,telemetria}/*.js   # 1 módulo por painel
+```
+
+### Endpoints da API
+
+Cada `POST` (exceto `/api/mapa`) só valida a entrada e devolve `200` imediatamente — o trabalho real roda em segundo plano num `ExecutorService` **single-thread** compartilhado por todos os módulos (mesma justificativa dos lotes sequenciais: uma GPU só, fila serial).
+
+| Endpoint | Pipeline acionado |
+|---|---|
+| `POST /api/analisar` | `AnalisarMidiaUseCase` (auditoria de mídia/sincronia de legenda) |
+| `POST /api/extrair` | `ExtrairLegendaUseCase` |
+| `POST /api/traduzir` | `ProcessarArquivoUseCase` por arquivo `.ass`/`.ssa` encontrado |
+| `POST /api/corrigir-cache` | `LimparCacheUseCase` |
+| `POST /api/corrigir-scraping` | `CorrigirComGoogleUseCase` |
+| `POST /api/remuxar` | `RemuxarLoteUseCase` |
+| `POST /api/mapa` | `GeradorMapaProjetoUseCase` (síncrono — devolve o markdown direto na resposta) |
+| `GET /api/status` | Heartbeat simples (`{"mensagem":"online"}`) |
+| `GET /api/telemetria` | `TelemetriaService.gerarResumo(...)` — ver seção Telemetria abaixo |
+| `GET /api/telemetria/exportar` | Download direto de `logs/telemetria_compartilhada.json` (`Content-Disposition: attachment`) |
+| `GET /api/logs/stream` | Conexão SSE consumida pelo `EventSource` do `app.js` |
+
+### Logs em tempo real (SSE) com canal por operação
+
+`LogStreamService` mantém um campo `canalAtual` (ex.: `"analise"`, `"traducao"`, `"remuxer"`). Cada handler do `ApiController` define esse canal como **primeira linha** dentro do `executor.submit(...)`, antes de chamar o use case — como o executor é single-thread, isso garante que toda linha impressa por aquela tarefa seja publicada sob o canal certo, mesmo que o usuário troque de aba no navegador no meio da execução. O `app.js` registra um listener `EventSource` por canal e escreve direto no painel correspondente (sem depender de "qual aba está aberta agora").
+
+> [!CAUTION]
+> **Bug corrigido (jun/2026): logs cruzando entre painéis.** Antes de existir esse canal por operação, todas as mensagens iam para um único evento SSE `"console"`, e o `app.js` decidia o painel de destino **pela aba ativa no momento em que a linha chegava** — trocar de aba durante uma tradução longa fazia logs da tradução aparecerem no painel errado.
+
+`ConsoleRedirector` substitui `System.out` (e por consequência também captura tudo que o Logback/SLF4J escreve no console, já que o `ConsoleAppender` do Spring Boot resolve `System.out` dinamicamente) por um `OutputStream` que: (1) espelha cada byte no console físico original; (2) acumula até `\n` e publica a linha completa via `LogStreamService.publicarLog(...)`.
+
+### Persistência (logs e telemetria sobrevivem ao navegador/restart)
+
+| O que | Onde fica | Quem grava |
+|---|---|---|
+| Console da web (texto puro, sem ANSI) | `logs/console-web.log` | `LogStreamService.publicarLog(...)`, a cada linha publicada |
+| Log estruturado completo (igual ao modo CLI) | `logs/tradutor.log` | Logback (já existia antes da interface web) |
+| Telemetria agregada do projeto | `logs/telemetria_compartilhada.json` | `TelemetriaService.registrarMidia(...)` / `registrarTraducao(...)`, a cada registro |
+
+> [!CAUTION]
+> **Bug corrigido (jun/2026): `/api/telemetria` sempre devolvia `{}`.** `TelemetriaService` não tem getters (não é um DTO) — sem eles, o Jackson não tinha nenhuma propriedade acessível para serializar. Corrigido criando `TelemetriaResumo`/`OperacaoHistorico` (records dedicados) e um método `TelemetriaService.gerarResumo(Path diretorioCache)` que monta o DTO a partir do banco persistido em `logs/telemetria_compartilhada.json` (não do lote em memória, que `limparLote()` zera a cada nova análise).
+
+> [!NOTE]
+> Antes dessa correção, **só** `AnalisarMidiaUseCase` registrava telemetria; o pipeline de tradução nunca chamava `telemetriaService.registrarTraducao(...)`. Isso foi corrigido em `ProcessarArquivoUseCase.processar(...)`, que agora mede o tempo total do arquivo e registra `LlmTelemetria` (modelo, linhas, falas do cache, tempo) ao final de cada tradução **bem-sucedida**. Falhas parciais/abortadas ainda não geram registro de telemetria — é um gap conhecido, não um requisito coberto ainda.
+
+### Segurança
+
+> [!CAUTION]
+> **Risco corrigido (jun/2026): servidor web sem autenticação escutando em todas as interfaces de rede.** Por padrão o Spring Boot escuta em `0.0.0.0`, não só `127.0.0.1`. Como a interface web não tem login nem CSRF, qualquer dispositivo na mesma LAN/Wi-Fi podia disparar tradução, remux, limpeza de cache e até ler a árvore do código-fonte (`/api/mapa`) sem credencial nenhuma. **Solução aplicada:** `server.address: 127.0.0.1` no `application.yml` — o servidor só aceita conexões da própria máquina. Se algum dia for necessário acessar de outro dispositivo na rede, **não basta voltar para `0.0.0.0`** sem antes adicionar autenticação (nem que seja um token compartilhado simples).
+
+> [!CAUTION]
+> **Risco corrigido (jun/2026): XSS via `innerHTML` no console e na tabela de telemetria.** `app.js` (linhas de log) e `telemetria.js` (tabela de histórico) inseriam texto vindo do backend — nomes de arquivo, mensagens de erro, texto raspado de `translate.googleapis.com` — direto em `innerHTML`, sem escapar. Um nome de arquivo ou resposta de tradução contendo `<script>`/`<img onerror=...>` seria executado no navegador. **Solução:** `app.js` escapa entidades HTML antes de aplicar as cores ANSI (`escapeHtml()`); `telemetria.js` monta as células da tabela via `textContent` em vez de template strings em `innerHTML`.
+
+### Bug crítico corrigido (jun/2026): beans da camada web nunca eram registrados
+
+Igual ao restante do projeto (ver seção ASM/component scan mais abaixo), `ApiController`, `LogStreamService`, `ConsoleRedirector` e `BrowserLauncher` dependem de `@Import({...})` explícito em `Application.java` — `@ComponentScan` automático não funciona neste projeto sob Java 25. Esses quatro beans **não estavam** na lista, então todo `/api/*` devolvia `404 "No static resource"` (o `DispatcherServlet` caía no resolvedor de recursos estáticos por não achar nenhum `@RequestMapping`), e o navegador nunca abria automaticamente. A interface web inteira ficava com a aparência pronta mas **nenhum botão funcionava de fato**.
+
+**Correção:** os quatro beans web + `LimparCacheUseCase` + `CorrigirComGoogleUseCase` (dependências do `ApiController` que também faltavam) foram adicionados ao `@Import` de `Application.java`.
+
+**Para IAs:** ao criar qualquer novo `@Component`/`@Service`/`@RestController`, **sempre** adicione a classe na lista `@Import` de `Application.java` — mesmo estando no mesmo pacote do `Application`, mesmo sem nenhum outro bean a importar diretamente. Esqueceu disso é exatamente o que causou este bug: a classe compila, o Spring sobe sem erro nenhum, e a única pista é a ausência silenciosa do comportamento esperado.
 
 ---
 
@@ -282,6 +373,10 @@ JUnit 5 + Mockito + AssertJ. Cobertura principal:
 | Retry 3× no adapter | Falhas transitórias de rede/parse no LM Studio |
 | `idioma-original` / `idioma-traduzido` no yml | Cache JSON documenta par de idiomas; suporta futuros pares além de en→pt-br |
 | Episódios sequenciais entre arquivos | Uma falha não deve cancelar série inteira; GPU já é gargalo |
+| Modo `WEB` como padrão sem argumentos (jun/2026) | A interface web substituiu os prompts de console como forma principal de uso; quem ainda quiser CLI pura passa `--tradutor.diretorio-entrada=...` explicitamente |
+| `server.address: 127.0.0.1` fixo no `application.yml` (jun/2026) | Interface web não tem autenticação; expor em `0.0.0.0` deixaria qualquer dispositivo na LAN acionar tradução/remux/limpeza de cache sem credencial |
+| Um canal SSE por operação (`analise`, `traducao`, ...) em vez de um único `"console"` (jun/2026) | Evitar log de uma operação aparecer no painel errado quando o usuário troca de aba no navegador |
+| `LogStreamService`/`TelemetriaService` persistem em `logs/` a cada evento, não só ao final do lote (jun/2026) | Sobreviver a fechamento de aba e a restart do servidor; antes só existiam em memória/SSE |
 
 ---
 
@@ -290,7 +385,9 @@ JUnit 5 + Mockito + AssertJ. Cobertura principal:
 1. **Reativar `StructuredTaskScope` paralelo nos lotes** sem medir carga no LM Studio — causa os erros vistos em `logs/tradutor.log` (jun/2026).
 2. **Hard-coded de pasta** em `application.yml` — usuário quer escolher no console.
 3. **Usar só `ConsoleUILogger` para o prompt de pastas** — pode não aparecer a tempo ou competir com a progress bar.
-4. **Confiar em `@ComponentScan`** sem `@Import` — beans não sobem no JDK 25.
+4. **Confiar em `@ComponentScan`** sem `@Import` — beans não sobem no JDK 25. Isso vale **igualmente** para a camada web (`ApiController`, `LogStreamService`, `ConsoleRedirector`, `BrowserLauncher`) — foram esquecidos do `@Import` e deixaram a API inteira em 404 silencioso até jun/2026 (ver seção [Interface Web](#interface-web)).
 5. **Assumir que Virtual Threads = paralelismo de GPU** — o gargalo é inferência local serial na prática.
 6. **Assumir que `PastasExecucao` já está configurada** em `ExtratorCLI`/`RemuxerCLI` (ou em qualquer novo `CommandLineRunner` condicional a `app.modo`) — cada um precisa chamar `pastasExecucao.configurar(...)` no próprio `run()`; ela não é populada automaticamente fora do modo `TRADUZIR` (bug real corrigido em jun/2026, ver seção "Modos de execução" acima).
 7. **Deixar `Files.createDirectories(pastaSaida)` rodar antes de validar que a pasta de entrada existe** — como `pastaSaida` é uma subpasta de `pastaVideos`, isso cria silenciosamente a pasta de entrada (vazia) em vez de avisar o usuário sobre um caminho digitado errado.
+8. **Voltar `server.address` para `0.0.0.0`** (ou removê-lo do `application.yml`) sem antes adicionar autenticação à interface web — sem isso, qualquer dispositivo na mesma rede pode acionar qualquer pipeline (incluindo apagar/reescrever cache) sem nenhuma credencial.
+9. **Inserir texto vindo do backend em `innerHTML`** no JS da interface web (nomes de arquivo, mensagens de erro, texto raspado do Google Translate) sem escapar — use `textContent`/`escapeHtml()` como em `app.js`/`telemetria.js`. Esses valores não são confiáveis: podem conter nomes de arquivo arbitrários do usuário ou texto de uma resposta HTTP externa.

@@ -21,12 +21,18 @@ springBoot {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'me.tongfei:progressbar:0.10.1'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 tasks.withType(JavaCompile) {
     options.compilerArgs += "--enable-preview"
+    // Sem isso, o javac le os .java com o charset nativo do SO (no Windows,
+    // tipicamente CP1252/CP850) em vez de UTF-8: qualquer acentuacao em
+    // literais de String (ex: "Duração", "vídeo") seria compilada errado
+    // direto no .class, independente do encoding do console em runtime.
+    options.encoding = "UTF-8"
 }
 
 tasks.withType(Test) {

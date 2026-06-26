@@ -11,7 +11,7 @@ public class ConsoleExtratorLogger {
     private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
 
     public void info(String mensagem) {
-        imprimir(AnsiCores.WHITE, "INFO", mensagem);
+        imprimir(null, "INFO", mensagem);
     }
 
     public void aviso(String mensagem) {
@@ -19,21 +19,21 @@ public class ConsoleExtratorLogger {
     }
 
     public void sucesso(String mensagem) {
-        imprimir(AnsiCores.GREEN, "OK", AnsiCores.GREEN + AnsiCores.BOLD + mensagem + AnsiCores.RESET);
+        imprimir(AnsiCores.GREEN, "OK", AnsiCores.GREEN + mensagem + AnsiCores.RESET);
     }
 
     public void erro(String mensagem) {
-        imprimir(AnsiCores.RED, "ERRO", AnsiCores.RED + AnsiCores.BOLD + mensagem + AnsiCores.RESET);
+        imprimir(AnsiCores.RED, "ERRO", AnsiCores.RED + mensagem + AnsiCores.RESET);
     }
 
+    // Tag colorida em negrito (chama atenção), corpo da mensagem em peso normal
+    // (mais fácil de ler em blocos de texto maiores) — INFO fica sem cor nenhuma.
     private void imprimir(String corNivel, String nivel, String mensagemFormatada) {
         String tempo = LocalTime.now().format(TIME_FORMATTER);
-        System.out.printf("[%s] [%s%-6s%s] %s%n", 
-                tempo, 
-                corNivel, 
-                nivel, 
-                AnsiCores.RESET, 
-                mensagemFormatada);
+        String tag = corNivel != null
+                ? String.format("%s%s%-6s%s", AnsiCores.BOLD, corNivel, nivel, AnsiCores.RESET)
+                : String.format("%-6s", nivel);
+        System.out.printf("[%s] [%s] %s%n", tempo, tag, mensagemFormatada);
     }
 
     public void cabecalho(String titulo) {

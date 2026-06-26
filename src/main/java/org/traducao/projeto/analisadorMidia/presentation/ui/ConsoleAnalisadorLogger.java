@@ -20,13 +20,13 @@ public class ConsoleAnalisadorLogger {
     public void cabecalhoGrande(String titulo) {
         String divisor = AnsiCores.colorir("=".repeat(80), AnsiCores.MAGENTA);
         System.out.println("\n" + divisor);
-        System.out.println(AnsiCores.colorir("  >>> " + titulo.toUpperCase() + " <<<", AnsiCores.WHITE, true));
+        System.out.println(AnsiCores.colorir("  >>> " + titulo.toUpperCase() + " <<<", AnsiCores.YELLOW, true));
         System.out.println(divisor);
         System.out.flush();
     }
 
     public void info(String msg) {
-        System.out.println(AnsiCores.colorir("  [INFO] ", AnsiCores.CYAN) + msg);
+        System.out.println("  [INFO] " + msg);
         System.out.flush();
     }
 
@@ -52,39 +52,39 @@ public class ConsoleAnalisadorLogger {
 
         // 1. Container/Geral
         System.out.println("\n" + AnsiCores.colorir("ESTRUTURA GERAL", AnsiCores.MAGENTA, true));
-        System.out.println("- Formato do Container: " + AnsiCores.colorir(res.container().formato(), AnsiCores.WHITE));
-        
+        System.out.println("- Formato do Container: " + res.container().formato());
+
         double tamanhoGB = res.container().tamanhoBytes() / (1024.0 * 1024.0 * 1024.0);
         double tamanhoMB = res.container().tamanhoBytes() / (1024.0 * 1024.0);
-        System.out.printf("- Tamanho: %s%n", AnsiCores.colorir(String.format("%.2f GiB (%.0f MB)", tamanhoGB, tamanhoMB), AnsiCores.WHITE));
-        System.out.println("- Duração Total: " + AnsiCores.colorir(formatarSegundos(res.container().duracaoSegundos()), AnsiCores.WHITE));
-        
+        System.out.printf("- Tamanho: %s%n", String.format("%.2f GiB (%.0f MB)", tamanhoGB, tamanhoMB));
+        System.out.println("- Duração Total: " + formatarSegundos(res.container().duracaoSegundos()));
+
         long brGeral = res.container().bitrateGeral();
-        System.out.println("- Bitrate Geral: " + AnsiCores.colorir(brGeral > 0 ? (brGeral / 1000) + " kbps" : "N/A", AnsiCores.WHITE));
-        System.out.println("- Aplicação de Escrita: " + AnsiCores.colorir(res.container().aplicacaoEscrita(), AnsiCores.WHITE));
+        System.out.println("- Bitrate Geral: " + (brGeral > 0 ? (brGeral / 1000) + " kbps" : "N/A"));
+        System.out.println("- Aplicação de Escrita: " + res.container().aplicacaoEscrita());
 
         // 2. Fluxos de Vídeo
         System.out.println("\n" + AnsiCores.colorir("FLUXOS DE VÍDEO", AnsiCores.MAGENTA, true));
         for (VideoInfo v : res.videos()) {
             System.out.printf("  Fluxo %d (Track ID: %d)%n", v.index(), v.index());
-            System.out.println("    Codec: " + AnsiCores.colorir(v.codecId() + " (" + v.format() + ")", AnsiCores.WHITE));
-            System.out.println("    Resolução: " + AnsiCores.colorir(v.width() + "x" + v.height() + "p", AnsiCores.WHITE));
-            System.out.println("    Profundidade de Cor: " + AnsiCores.colorir(v.bitDepth() + " bits", AnsiCores.WHITE));
-            System.out.printf("    FPS: %s%n", AnsiCores.colorir(String.format("%.3f fps", v.fps()), AnsiCores.WHITE));
-            System.out.println("    Aspect Ratio: " + AnsiCores.colorir(v.displayAspectRatio(), AnsiCores.WHITE));
-            System.out.println("    Bitrate: " + AnsiCores.colorir(v.bitrate() > 0 ? (v.bitrate() / 1000) + " kbps" : "N/A", AnsiCores.WHITE));
+            System.out.println("    Codec: " + v.codecId() + " (" + v.format() + ")");
+            System.out.println("    Resolução: " + v.width() + "x" + v.height() + "p");
+            System.out.println("    Profundidade de Cor: " + v.bitDepth() + " bits");
+            System.out.printf("    FPS: %s%n", String.format("%.3f fps", v.fps()));
+            System.out.println("    Aspect Ratio: " + v.displayAspectRatio());
+            System.out.println("    Bitrate: " + (v.bitrate() > 0 ? (v.bitrate() / 1000) + " kbps" : "N/A"));
         }
 
         // 3. Fluxos de Áudio
         System.out.println("\n" + AnsiCores.colorir("FLUXOS DE ÁUDIO", AnsiCores.MAGENTA, true));
         for (AudioInfo a : res.audios()) {
             System.out.printf("  Fluxo %d (Track ID: %d)%n", a.index(), a.index());
-            System.out.println("    Idioma: " + AnsiCores.colorir(a.idioma(), AnsiCores.WHITE));
-            System.out.println("    Codec/Formato: " + AnsiCores.colorir(a.format(), AnsiCores.WHITE));
-            System.out.println("    Canais: " + AnsiCores.colorir(String.valueOf(a.channels()), AnsiCores.WHITE));
-            System.out.printf("    Aostragem: %s%n", AnsiCores.colorir(String.format("%.1f kHz", a.sampleRateKHz()), AnsiCores.WHITE));
-            System.out.println("    Bitrate: " + AnsiCores.colorir(a.bitrate() > 0 ? (a.bitrate() / 1000) + " kbps" : "N/A", AnsiCores.WHITE));
-            System.out.println("    Título: " + AnsiCores.colorir(a.titulo(), AnsiCores.WHITE));
+            System.out.println("    Idioma: " + a.idioma());
+            System.out.println("    Codec/Formato: " + a.format());
+            System.out.println("    Canais: " + a.channels());
+            System.out.printf("    Amostragem: %s%n", String.format("%.1f kHz", a.sampleRateKHz()));
+            System.out.println("    Bitrate: " + (a.bitrate() > 0 ? (a.bitrate() / 1000) + " kbps" : "N/A"));
+            System.out.println("    Título: " + a.titulo());
         }
 
         // 4. Fluxos de Legenda
@@ -96,24 +96,24 @@ public class ConsoleAnalisadorLogger {
         } else {
             for (LegendaInfo leg : res.legendas()) {
                 System.out.printf("  Legenda %d (Track ID: %d)%n", leg.indexRelativo() + 1, leg.index());
-                System.out.println("    Idioma: " + AnsiCores.colorir(leg.idioma(), AnsiCores.WHITE));
-                System.out.println("    Formato: " + AnsiCores.colorir(leg.formato(), AnsiCores.WHITE));
+                System.out.println("    Idioma: " + leg.idioma());
+                System.out.println("    Formato: " + leg.formato());
 
                 String corTipo = obterCorPorTipo(leg.tipoCurto());
                 System.out.println("    Tipo: " + AnsiCores.colorir(leg.tipoCompleto(), corTipo));
-                System.out.println("    Codec ID: " + AnsiCores.colorir(leg.codecId(), AnsiCores.WHITE));
-                System.out.println("    Título: " + AnsiCores.colorir(leg.titulo(), AnsiCores.WHITE));
+                System.out.println("    Codec ID: " + leg.codecId());
+                System.out.println("    Título: " + leg.titulo());
 
                 if (leg.diferencaFimSegundos() != null) {
                     System.out.printf("    Duração Legenda: %s %s%n",
-                        AnsiCores.colorir(formatarSegundos(leg.duracaoEfetivaSegundos()), AnsiCores.WHITE),
+                        formatarSegundos(leg.duracaoEfetivaSegundos()),
                         AnsiCores.colorir("(via " + leg.metodoDuracao() + ")", AnsiCores.YELLOW)
                     );
                     System.out.printf("    Diferença Fim: %s (Video - Legenda)%n",
-                        AnsiCores.colorir(String.format("%+.3fs", leg.diferencaFimSegundos()), AnsiCores.WHITE)
+                        String.format("%+.3fs", leg.diferencaFimSegundos())
                     );
                     System.out.printf("    Taxa de Drift: %s%n",
-                        AnsiCores.colorir(String.format("%.3f s/hora", leg.driftRatio()), AnsiCores.WHITE)
+                        String.format("%.3f s/hora", leg.driftRatio())
                     );
 
                     String corVeredicto = obterCorPorVeredicto(leg.veredicto());
@@ -125,7 +125,7 @@ public class ConsoleAnalisadorLogger {
         // 5. Resumo Final
         System.out.println("\n" + AnsiCores.colorir("RESUMO FINAL", AnsiCores.MAGENTA, true));
         int totalFaixas = 1 + res.videos().size() + res.audios().size() + res.legendas().size();
-        System.out.println("  Total de Faixas: " + AnsiCores.colorir(String.valueOf(totalFaixas), AnsiCores.WHITE));
+        System.out.println("  Total de Faixas: " + totalFaixas);
         System.out.println("    Vídeo(s): " + AnsiCores.colorir(String.valueOf(res.videos().size()), AnsiCores.CYAN));
         System.out.println("    Áudio(s): " + AnsiCores.colorir(String.valueOf(res.audios().size()), AnsiCores.GREEN));
         System.out.println("    Legenda(s): " + AnsiCores.colorir(String.valueOf(res.legendas().size()), AnsiCores.YELLOW));
@@ -133,15 +133,15 @@ public class ConsoleAnalisadorLogger {
         for (LegendaInfo leg : res.legendas()) {
             String tituloStr = leg.titulo() != null && !leg.titulo().isBlank() ? " - " + leg.titulo() : "";
             String corTipo = obterCorPorTipo(leg.tipoCurto());
-            
+
             System.out.printf("      [%d] %s: %s | %s: %s | %s: %s%s%n",
                 leg.index(),
                 AnsiCores.colorir("Idioma", AnsiCores.CYAN),
-                AnsiCores.colorir(leg.idioma(), AnsiCores.WHITE),
+                leg.idioma(),
                 AnsiCores.colorir("Tipo", AnsiCores.CYAN),
                 AnsiCores.colorir(leg.tipoCurto(), corTipo, true),
                 AnsiCores.colorir("Formato", AnsiCores.CYAN),
-                AnsiCores.colorir(leg.formato(), AnsiCores.WHITE),
+                leg.formato(),
                 tituloStr
             );
         }
@@ -152,17 +152,17 @@ public class ConsoleAnalisadorLogger {
     }
 
     private String obterCorPorTipo(String tipoCurto) {
-        if (tipoCurto == null) return AnsiCores.WHITE;
+        if (tipoCurto == null) return "";
         return switch (tipoCurto.toUpperCase()) {
             case "ASS", "SSA" -> AnsiCores.YELLOW;
             case "PGS", "VOBSUB", "DVB", "HARDSUB" -> AnsiCores.RED;
             case "SRT", "WEBVTT", "MOV_TEXT" -> AnsiCores.GREEN;
-            default -> AnsiCores.WHITE;
+            default -> "";
         };
     }
 
     private String obterCorPorVeredicto(String veredicto) {
-        if (veredicto == null) return AnsiCores.WHITE;
+        if (veredicto == null) return "";
         if (veredicto.contains("Sincronizada") || veredicto.contains("Parcial")) {
             return AnsiCores.GREEN;
         }

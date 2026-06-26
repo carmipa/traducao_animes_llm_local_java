@@ -5,6 +5,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 import org.traducao.projeto.traducao.infrastructure.config.TradutorProperties;
+import org.traducao.projeto.traducao.presentation.ui.AnsiCores;
 import org.traducao.projeto.traducao.presentation.ui.ConsoleEntrada;
 import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
 import org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCase;
@@ -59,10 +60,13 @@ public class ExtratorCLI implements CommandLineRunner {
 
         logger.cabecalho("RELATÓRIO DE EXTRAÇÃO");
         System.out.printf("  Total de arquivos MKV detectados  : %d%n", relatorio.getArquivosDetectados());
-        System.out.printf("  Arquivos sem legendas %-3s         : \u001B[33m%d\u001B[0m%n", formato.name(), relatorio.getArquivosSemLegenda());
-        System.out.printf("  Legendas extraídas com sucesso    : \u001B[32m%d\u001B[0m%n", relatorio.getLegendasExtraidas());
+        System.out.printf("  Arquivos sem legendas %-3s         : %s%n", formato.name(),
+            AnsiCores.colorir(String.valueOf(relatorio.getArquivosSemLegenda()), AnsiCores.YELLOW));
+        System.out.printf("  Legendas extraídas com sucesso    : %s%n",
+            AnsiCores.colorir(String.valueOf(relatorio.getLegendasExtraidas()), AnsiCores.GREEN));
         if (relatorio.getFalhasInesperadas() > 0) {
-            System.out.printf("  Falhas de extração                : \u001B[31m%d\u001B[0m%n", relatorio.getFalhasInesperadas());
+            System.out.printf("  Falhas de extração                : %s%n",
+                AnsiCores.colorir(String.valueOf(relatorio.getFalhasInesperadas()), AnsiCores.RED));
         }
         System.out.println("=".repeat(80));
         logger.sucesso("Processamento finalizado!");

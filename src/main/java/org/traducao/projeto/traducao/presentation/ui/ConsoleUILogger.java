@@ -69,7 +69,10 @@ public class ConsoleUILogger {
     }
 
     public synchronized void log(String mensagem) {
-        String cor = ANSI_CYAN; // Cor padrão das informações
+        // INFO fica sem cor (herda o foreground padrão do terminal): cor é
+        // reservada para o que precisa de atenção (sucesso/aviso/erro) e para
+        // cabeçalhos, evitando fadiga visual em telas com muita linha de info.
+        String cor = null;
 
         if (mensagem.contains("[ FAIL ]") || mensagem.contains("Erro") || mensagem.contains("Falha")) {
             log.warn(mensagem);
@@ -86,7 +89,7 @@ public class ConsoleUILogger {
         }
 
         // Aplica a cor na string final para o console visual do usuário
-        String msgVisual = cor + mensagem + ANSI_RESET;
+        String msgVisual = cor != null ? cor + mensagem + ANSI_RESET : mensagem;
 
         if (pb != null) {
             // Emula o tqdm.write(): pausa o redesenho automático da barra (que corre
