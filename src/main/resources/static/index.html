@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRONOS CORE Pipeline Industrial</title>
+    <meta name="description" content="Interface web premium para gerenciar a tradução, extração, análise de mídia, remuxer e telemetria de legendas de animes.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=2.0">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar de Navegação -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-logo">
+                    <img src="img/kronos_logo.png" alt="Logo">
+                </div>
+                <div class="brand-info">
+                    <h2>KRONOS CORE</h2>
+                    <span>Pipeline Industrial</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="nav-item active" data-target="inicio" id="btn-menu-inicio" data-tooltip="Acesse o painel principal com informações gerais do repositório, shields e documentação.">
+                    <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    <span>Painel Inicial</span>
+                </button>
+                <button class="nav-item" data-target="analise" id="btn-menu-analise" data-tooltip="Audite faixas, codecs e bitrate dos arquivos de vídeo.">
+                    <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    <span>1. Análise de Mídia</span>
+                </button>
+                <button class="nav-item" data-target="extracao" id="btn-menu-extracao" data-tooltip="Extraia faixas de legendas (ASS/SRT/PGS) em lote de MKVs.">
+                    <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    <span>2. Extração</span>
+                </button>
+                <button class="nav-item" data-target="traducao" id="btn-menu-traducao" data-tooltip="Traduza legendas usando IA local com proteção de tags.">
+                    <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <span>3. Tradução Local</span>
+                </button>
+                <button class="nav-item" data-target="correcao" id="btn-menu-correcao" data-tooltip="Corrija falhas de cache ou traduções ausentes.">
+                    <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4z"></path></svg>
+                    <span>4. Correção Cache</span>
+                </button>
+                <button class="nav-item" data-target="remuxer" id="btn-menu-remuxer" data-tooltip="Recombine vídeos originais e as legendas traduzidas.">
+                    <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                    <span>5. Remuxer</span>
+                </button>
+                <button class="nav-item" data-target="mapa" id="btn-menu-mapa" data-tooltip="Exiba a árvore estrutural e taxonomia do código Java.">
+                    <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    <span>6. Mapa do Projeto</span>
+                </button>
+                <button class="nav-item" data-target="telemetria" id="btn-menu-telemetria" data-tooltip="Monitore hits de cache, tokens e logs em tempo real.">
+                    <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    <span>7. Telemetria</span>
+                </button>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="status-indicator online">
+                    <span class="dot"></span>
+                    <span class="status-text">Backend Online</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <!-- Header Global -->
+            <header class="main-header">
+                <div class="header-title">
+                    <h1 id="page-title">Painel Inicial</h1>
+                    <p id="page-subtitle">Orquestrador automatizado e pipeline industrial de processamento de animes</p>
+                </div>
+                <div class="quick-stats">
+                    <div class="stat-card">
+                        <span class="stat-label">Cache Local</span>
+                        <span class="stat-value" id="stat-cache-count">Carregando...</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Container dos Painéis (Telas) -->
+            <section class="panels-container">
+                <!-- 0. PAINEL DE BOAS-VINDAS / DASHBOARD INICIAL -->
+                <div class="panel active" id="panel-inicio">
+                    <!-- Dashboard Grid de Stats Rápidos -->
+                    <div class="dashboard-stats-grid">
+                        <div class="stat-widget glow-blue">
+                            <div class="widget-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                            </div>
+                            <div class="widget-info">
+                                <span class="widget-label">Orquestrador</span>
+                                <span class="widget-value">Java Spring Boot</span>
+                            </div>
+                            <span class="status-badge pulse-green">Online</span>
+                        </div>
+                        
+                        <div class="stat-widget glow-magenta">
+                            <div class="widget-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            </div>
+                            <div class="widget-info">
+                                <span class="widget-label">LLM de Tradução</span>
+                                <span class="widget-value">Mistral Nemo Local</span>
+                            </div>
+                            <span class="status-badge pulse-purple" id="llm-status-indicator">LM Studio</span>
+                        </div>
+
+                        <div class="stat-widget glow-green">
+                            <div class="widget-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <div class="widget-info">
+                                <span class="widget-label">Cache de Legendas</span>
+                                <span class="widget-value" id="dashboard-cache-count">Carregando...</span>
+                            </div>
+                            <span class="status-badge pulse-green">Ativo</span>
+                        </div>
+                    </div>
+
+                    <!-- Banner Hero Modernizado -->
+                    <div class="welcome-hero-banner">
+                        <div class="hero-content">
+                            <div class="hero-title-container">
+                                <span class="hero-eyebrow">AUTOMATION SUITE</span>
+                                <h2>KRONOS CORE</h2>
+                                <p class="hero-tagline-sub">Pipeline Industrial de Processamento & Tradução de Animes</p>
+                            </div>
+                            <p class="hero-desc-new">
+                                Plataforma integrada para gerenciamento em lote de legendas de animes. Realize auditoria detalhada de faixas de mídia, extração de faixas embutidas (ASS/PGS/SRT), tradução contextualizada por Inteligência Artificial rodando 100% localmente e remuxagem automatizada com preservação de qualidade original.
+                            </p>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="tech-circle">
+                                <div class="inner-pulse"></div>
+                                <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.5" fill="none" class="floating-tech-icon"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pipeline Flow Section com Estilo Grid Ultra Moderno -->
+                    <div class="pipeline-flow-section">
+                        <div class="flow-header">
+                            <h3>Lógica do Fluxo de Trabalho (Pipeline)</h3>
+                            <span class="flow-line-decorator"></span>
+                        </div>
+                        <div class="pipeline-cards-grid">
+                            
+                            <!-- Card 1 -->
+                            <div class="pipeline-card card-analise" onclick="document.getElementById('btn-menu-analise').click()" data-tooltip="Clique para auditar codecs e bitrate">
+                                <div class="card-glow-bg"></div>
+                                <div class="card-step-num">01</div>
+                                <div class="card-icon-container">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                                </div>
+                                <h4>Análise de Mídia</h4>
+                                <p>Audite faixas, codecs e bitrate dos arquivos de vídeo originais.</p>
+                                <span class="card-action-link">Acessar Painel →</span>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="pipeline-card card-extracao" onclick="document.getElementById('btn-menu-extracao').click()" data-tooltip="Clique para extrair as legendas originais">
+                                <div class="card-glow-bg"></div>
+                                <div class="card-step-num">02</div>
+                                <div class="card-icon-container">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                </div>
+                                <h4>Extração</h4>
+                                <p>Extraia faixas de legendas (ASS/PGS/SRT) em lote de arquivos MKV.</p>
+                                <span class="card-action-link">Acessar Painel →</span>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="pipeline-card card-traducao" onclick="document.getElementById('btn-menu-traducao').click()" data-tooltip="Clique para traduzir com LLM local">
+                                <div class="card-glow-bg"></div>
+                                <div class="card-step-num">03</div>
+                                <div class="card-icon-container">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                </div>
+                                <h4>Tradução Local</h4>
+                                <p>Traduza legendas por IA usando LLM local com proteção de estilos.</p>
+                                <span class="card-action-link">Acessar Painel →</span>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="pipeline-card card-correcao" onclick="document.getElementById('btn-menu-correcao').click()" data-tooltip="Clique para preencher linhas falhas do cache">
+                                <div class="card-glow-bg"></div>
+                                <div class="card-step-num">04</div>
+                                <div class="card-icon-container">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4z"></path></svg>
+                                </div>
+                                <h4>Correção Cache</h4>
+                                <p>Varra e corrija falas vazias ou não traduzidas do banco de cache.</p>
+                                <span class="card-action-link">Acessar Painel →</span>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="pipeline-card card-remuxer" onclick="document.getElementById('btn-menu-remuxer').click()" data-tooltip="Clique para acoplar legendas traduzidas nos vídeos">
+                                <div class="card-glow-bg"></div>
+                                <div class="card-step-num">05</div>
+                                <div class="card-icon-container">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                                </div>
+                                <h4>Remuxer</h4>
+                                <p>Mescle os vídeos originais e as legendas traduzidas em novos MKVs.</p>
+                                <span class="card-action-link">Acessar Painel →</span>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div class="pipeline-card card-mapa" onclick="document.getElementById('btn-menu-mapa').click()" data-tooltip="Clique para analisar o código Java">
+                                <div class="card-glow-bg"></div>
+                                <div class="card-step-num">06</div>
+                                <div class="card-icon-container">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                </div>
+                                <h4>Mapa do Projeto</h4>
+                                <p>Visualize a árvore estrutural e taxonomia de classes Java do projeto.</p>
+                                <span class="card-action-link">Acessar Painel →</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 1. PAINEL DE ANÁLISE DE MÍDIA -->
+                <div class="panel" id="panel-analise">
+                    <div class="glass-card">
+                        <h2>Iniciar Auditoria de Mídia</h2>
+                        <p class="card-desc">Forneça o caminho da pasta contendo os episódios em formato de vídeo (.mkv, .mp4, etc.) para analisar codecs e sincronias.</p>
+                        
+                        <form id="form-analise" class="standard-form">
+                            <div class="form-group">
+                                <label for="analise-entrada">Caminho da pasta ou arquivo de vídeo: <span class="help-icon" data-tooltip="Caminho absoluto da pasta contendo os vídeos a serem auditados por codecs, faixas e sincronia.">?</span></label>
+                                <input type="text" id="analise-entrada" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="analise-saida">Pasta de saída dos relatórios (Opcional): <span class="help-icon" data-tooltip="Diretório onde serão gravados os relatórios da análise. Se omitido, salvará na pasta 'relatorios' do projeto, usando o nome do anime automaticamente.">?</span></label>
+                                <input type="text" id="analise-saida" placeholder="Deixe em branco p/ salvar na pasta 'relatorios/[anime]' do projeto">
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="btn-submit-analise" data-tooltip="Iniciar varredura técnica de arquivos de mídia">
+                                <span>Iniciar Análise</span>
+                                <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="glass-card console-card">
+                        <div class="console-header">
+                            <h3>Logs do Analisador</h3>
+                            <button class="btn-clear-console" data-target="console-analise">Limpar</button>
+                        </div>
+                        <div class="console-body" id="console-analise">
+                            <div class="system-message">Aguardando execução...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. PAINEL DE EXTRAÇÃO -->
+                <div class="panel" id="panel-extracao">
+                    <div class="glass-card">
+                        <h2>Extração Industrial de Legendas</h2>
+                        <p class="card-desc">Extraia faixas de legendas embutidas em vídeos MKV com alta precisão.</p>
+                        
+                        <form id="form-extracao" class="standard-form">
+                            <div class="form-group">
+                                <label for="extracao-entrada">Pasta com arquivos MKV: <span class="help-icon" data-tooltip="Diretório onde se encontram os vídeos originais dos quais serão extraídas as faixas de legenda.">?</span></label>
+                                <input type="text" id="extracao-entrada" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="extracao-formato">Formato desejado: <span class="help-icon" data-tooltip="O formato de destino da extração. Prefira ASS para animes para preservar estilos, fontes e posições dos textos.">?</span></label>
+                                <select id="extracao-formato">
+                                    <option value="ASS" selected>ASS (Legendas de Estilo Complexo)</option>
+                                    <option value="PGS">PGS (Imagens Embutidas / BD)</option>
+                                    <option value="SRT">SRT (SubRip Texto Simples)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-magenta" data-tooltip="Iniciar extração paralela das faixas de legenda via mkvextract">
+                                <span>Executar Extração</span>
+                                <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="glass-card console-card">
+                        <div class="console-header">
+                            <h3>Logs do Extrator</h3>
+                            <button class="btn-clear-console" data-target="console-extracao">Limpar</button>
+                        </div>
+                        <div class="console-body" id="console-extracao">
+                            <div class="system-message">Aguardando execução...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. PAINEL DE TRADUÇÃO LOCAL -->
+                <div class="panel" id="panel-traducao">
+                    <div class="glass-card">
+                        <h2>Tradução via LLM Local</h2>
+                        <p class="card-desc">Traduz legendas no formato ASS/SSA do Inglês para Português usando IA local (ex: Mistral Nemo no LM Studio).</p>
+                        
+                        <form id="form-traducao" class="standard-form">
+                            <div class="form-group">
+                                <label for="traducao-entrada">Pasta com as legendas ORIGINAIS (.ass / .ssa): <span class="help-icon" data-tooltip="Pasta contendo os arquivos de legenda originais (geralmente em inglês) que serão traduzidos pela LLM.">?</span></label>
+                                <input type="text" id="traducao-entrada" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04\legendas_eng" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="traducao-saida">Pasta de SAÍDA para as legendas em Português: <span class="help-icon" data-tooltip="Pasta de destino onde as legendas traduzidas serão salvas. Por padrão, cria a pasta legendas_ptbr.">?</span></label>
+                                <input type="text" id="traducao-saida" placeholder="Deixe vazio para gerar automaticamente uma pasta de saída">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-green" data-tooltip="Iniciar tradução em lote pelo servidor local do LM Studio">
+                                <span>Iniciar Tradução</span>
+                                <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="glass-card console-card">
+                        <div class="console-header">
+                            <h3>Console da Tradução</h3>
+                            <button class="btn-clear-console" data-target="console-traducao">Limpar</button>
+                        </div>
+                        <div class="console-body" id="console-traducao">
+                            <div class="system-message">Aguardando execução...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. PAINEL DE CORREÇÃO -->
+                <div class="panel" id="panel-correcao">
+                    <div class="glass-card">
+                        <h2>Correção do Cache de Tradução</h2>
+                        <p class="card-desc">Resolva falas persistentes em inglês, limpando caches antigos ou preenchendo automaticamente com o Google Tradutor online.</p>
+                        
+                        <form id="form-correcao" class="standard-form">
+                            <div class="form-group">
+                                <label for="correcao-entrada">Pasta do cache de traduções (.cache.json): <span class="help-icon" data-tooltip="Caminho do diretório de cache. Deixe vazio para usar a pasta padrão 'cache'.">?</span></label>
+                                <input type="text" id="correcao-entrada" placeholder="Deixe em branco para usar a pasta de cache padrão 'cache'">
+                            </div>
+                            
+                            <div class="correcao-actions">
+                                <button type="button" class="btn btn-secondary btn-yellow" id="btn-limpar-cache" data-tooltip="Remove traduções marcadas como falhas, vazias ou contendo alucinações de LLM.">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                                    <span>Limpar Falhas do Cache</span>
+                                </button>
+                                
+                                <button type="button" class="btn btn-primary btn-yellow" id="btn-scraping-google" data-tooltip="Varre as lacunas e termos não traduzidos e realiza tradução online de contingência.">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
+                                    <span>Corrigir via Scraping Google</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="glass-card console-card">
+                        <div class="console-header">
+                            <h3>Logs de Correção</h3>
+                            <button class="btn-clear-console" data-target="console-correcao">Limpar</button>
+                        </div>
+                        <div class="console-body" id="console-correcao">
+                            <div class="system-message">Aguardando execução...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. PAINEL DE REMUXER -->
+                <div class="panel" id="panel-remuxer">
+                    <div class="glass-card">
+                        <h2>Remuxer Industrial</h2>
+                        <p class="card-desc">Gere novos arquivos de vídeo contendo a faixa de vídeo original e as novas legendas em português acopladas de maneira limpa.</p>
+                        
+                        <form id="form-remuxer" class="standard-form">
+                            <div class="form-group">
+                                <label for="remuxer-videos">Pasta com os arquivos de VÍDEO ORIGINAIS (.mkv): <span class="help-icon" data-tooltip="Caminho da pasta que contém os episódios de vídeo em formato MKV (sem legenda em português).">?</span></label>
+                                <input type="text" id="remuxer-videos" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="remuxer-legendas">Pasta com as legendas traduzidas (.ass): <span class="help-icon" data-tooltip="Diretório onde estão as novas legendas ASS traduzidas. Pressione Enter para buscar automaticamente na pasta padrão do projeto.">?</span></label>
+                                <input type="text" id="remuxer-legendas" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04\legendas_ptbr (Enter = automático)">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-cyan" data-tooltip="Mescla os arquivos de vídeo e legendas traduzidas em novos arquivos usando mkvmerge">
+                                <span>Iniciar Remuxing</span>
+                                <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="glass-card console-card">
+                        <div class="console-header">
+                            <h3>Logs de Remux</h3>
+                            <button class="btn-clear-console" data-target="console-remuxer">Limpar</button>
+                        </div>
+                        <div class="console-body" id="console-remuxer">
+                            <div class="system-message">Aguardando execução...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. PAINEL DE MAPA DO PROJETO -->
+                <div class="panel" id="panel-mapa">
+                    <div class="glass-card">
+                        <h2>Mapeamento de Estrutura & Taxonomia</h2>
+                        <p class="card-desc">Varre recursivamente os arquivos do repositório Java, gerando o relatório markdown de arquitetura e taxonomia automaticamente.</p>
+                        
+                        <div class="mapa-controls">
+                            <button type="button" class="btn btn-primary btn-purple" id="btn-gerar-mapa" data-tooltip="Analisa e gera de forma estática o mapa estrutural das classes Java do repositório.">
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                                <span>Gerar Mapa do Projeto</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card viewer-card">
+                        <div class="viewer-header">
+                            <h3>Estrutura do Projeto</h3>
+                            <button class="btn-copy-viewer" id="btn-copiar-mapa">Copiar Mapa</button>
+                        </div>
+                        <pre class="viewer-body" id="viewer-mapa">Estrutura não gerada. Clique em "Gerar Mapa do Projeto" para analisar...</pre>
+                    </div>
+                </div>
+
+                <!-- 7. PAINEL DE TELEMETRIA -->
+                <div class="panel" id="panel-telemetria">
+                    <div class="panel-header-actions" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                        <h2 style="margin:0;">Telemetria e Analytics</h2>
+                        <button type="button" class="btn btn-primary" id="btn-exportar-telemetria" data-tooltip="Faz o download anonimizado do arquivo de telemetria compartilhado para auditoria">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Exportar Estatísticas</span>
+                        </button>
+                    </div>
+                    <div class="telemetria-grid">
+                        <div class="glass-card stat-detail-card">
+                            <h3>Métricas de Tradução</h3>
+                            <div class="metric-group">
+                                <div class="metric-item">
+                                    <span class="m-label">Episódios Traduzidos</span>
+                                    <span class="m-value" id="t-episodios">0</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="m-label">Linhas Traduzidas</span>
+                                    <span class="m-value" id="t-linhas">0</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="m-label">Tempo Médio p/ Linha</span>
+                                    <span class="m-value" id="t-tempo-linha">0 ms</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card stat-detail-card">
+                            <h3>Métricas de Desempenho LLM</h3>
+                            <div class="metric-group">
+                                <div class="metric-item">
+                                    <span class="m-label">Total de Tokens (Estimado)</span>
+                                    <span class="m-value" id="t-tokens">0</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="m-label">Hits de Cache (Reaproveitados)</span>
+                                    <span class="m-value" id="t-cache-hits">0</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="m-label">Fails / Hallucinations</span>
+                                    <span class="m-value" id="t-alucinacoes">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card log-stream-card">
+                        <div class="console-header">
+                            <h3>Métricas e Estatísticas Agregadas</h3>
+                            <button class="btn-refresh-telemetria" id="btn-refresh-telemetria">Atualizar</button>
+                        </div>
+                        <div class="telemetria-details-container">
+                            <table class="telemetria-table">
+                                <thead>
+                                    <tr>
+                                        <th>Época / Operação</th>
+                                        <th>Mapeamento</th>
+                                        <th>Duração</th>
+                                        <th>Taxa de Sucesso</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="telemetria-table-body">
+                                    <tr>
+                                        <td colspan="4" class="table-empty">Nenhuma métrica registrada. Realize operações para alimentar a telemetria.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+            <!-- Rodapé Global -->
+            <footer class="app-footer">
+                <div class="footer-creator-line">
+                    <span class="sparkle-effect">✦</span> Desenvolvido por <strong class="creator-name">Paulo André Carminati</strong>
+                </div>
+                <div class="footer-shields">
+                    <a href="https://github.com/carmipa/traducao_animes_llm_local_java" target="_blank" class="shield-link" data-tooltip="Repositório no GitHub">
+                        <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Repo">
+                    </a>
+                    <img src="https://img.shields.io/badge/Gemini-Google_AI-8E75C2?style=flat-square&logo=googlegemini&logoColor=white" alt="Google Gemini" data-tooltip="Desenvolvido com auxílio do Gemini">
+                    <img src="https://img.shields.io/badge/Cursor-IDE-000000?style=flat-square&logo=cursor&logoColor=white" alt="Cursor IDE" data-tooltip="Programado no Cursor IDE">
+                    <img src="https://img.shields.io/badge/Claude-Anthropic-D97706?style=flat-square&logo=claude&logoColor=white" alt="Anthropic Claude" data-tooltip="Otimizado por Claude">
+                    <img src="https://img.shields.io/badge/GPT-OpenAI-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI GPT" data-tooltip="Refinado com GPT">
+                </div>
+                <div class="footer-meta">
+                    <span class="meta-badge">v2.5.0</span>
+                    <span class="meta-badge">MIT License</span>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

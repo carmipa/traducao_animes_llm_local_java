@@ -222,6 +222,9 @@ flowchart TB
 
 Fluxo completo para **um único arquivo** `.ass`/`.ssa`, do `TradutorCLI` até o arquivo traduzido + cache salvos:
 
+> [!NOTE]
+> O diagrama abaixo mostra o ponto de entrada do **modo CLI** (`TradutorCLI`). No modo web (padrão), `POST /api/traduzir` chama exatamente o mesmo `ProcessarArquivoUseCase`/`ProcessarEpisodioUseCase` — só o ponto de entrada muda, o pipeline de tradução é idêntico.
+
 ```mermaid
 sequenceDiagram
     actor User as 👤 Usuário
@@ -509,6 +512,16 @@ cd traducao_animes_llm_local_java
 <a id="configuracao"></a>
 ## ⚙️ Configuração (`application.yml`)
 
+### `server.*` (interface web)
+
+| Propriedade | Tipo | Padrão | Descrição |
+|---|---|---|---|
+| `address` | `String` | `127.0.0.1` | Interface de rede em que o Tomcat escuta. **Não mude para `0.0.0.0`** sem adicionar autenticação — a API não tem login nem CSRF. |
+| `port` | `int` | `8080` | Porta da interface web (modo `WEB`). |
+
+> [!NOTE]
+> `app.modo` não é uma propriedade declarada no `application.yml` — é injetada em runtime por `Application.main()` (`WEB` por padrão sem argumentos; `TRADUZIR`/`EXTRAIR`/`REMUXAR`/`CORRIGIR_CACHE`/`RASPAGEM_CORRECAO`/`MAPEAR` via `--app.modo=...` explícito). Ver [ARQUITETURA.md → Modos de execução](ARQUITETURA.md).
+
 ### `tradutor.*`
 
 | Propriedade | Tipo | Padrão | Descrição |
@@ -581,33 +594,56 @@ traducao_animes_llm_local_java/
 ├── build.gradle / settings.gradle
 ├── run.bat                        # atalho: gradlew bootRun --console=plain
 ├── src/
-│   ├── main/java/org/traducao/projeto/traducao/
-│   │   ├── Application.java                       # main() + @Import explícito dos beans
-│   │   ├── presentation/
-│   │   │   ├── TradutorCLI.java                    # CommandLineRunner — varre a pasta e traduz
-│   │   │   └── ui/
-│   │   │       ├── ConsoleEntrada.java             # prompt de pastas (estilo input() do Python)
-│   │   │       ├── ConsoleUILogger.java            # barra de progresso + log colorido
-│   │   │       ├── AnsiCores.java
-│   │   │       └── PastasExecucao.java
-│   │   ├── application/
-│   │   │   ├── ProcessarArquivoUseCase.java        # orquestra 1 arquivo .ass
-│   │   │   ├── ProcessarEpisodioUseCase.java       # traduz lotes (sequencial + divisão recursiva)
-│   │   │   └── ValidadorTraducaoService.java       # anti-alucinação
-│   │   ├── domain/
-│   │   │   ├── Lote.java / TraducaoLote.java
-│   │   │   ├── legenda/ DocumentoLegenda.java, EventoLegenda.java
-│   │   │   ├── ports/ MistralPort.java
-│   │   │   └── exceptions/ (TradutorException e subclasses)
-│   │   └── infrastructure/
-│   │       ├── adapters/ MistralClientAdapter.java # RestClient → LM Studio (retry)
-│   │       ├── cache/ CacheTraducaoService.java, EntradaCache.java
-│   │       ├── config/ TradutorProperties.java, LlmProperties.java, RestClientConfig.java
-│   │       ├── dtos/ RecordsMistral.java           # DTOs da API OpenAI-compatible
-│   │       └── legenda/ LeitorLegendaAss.java, EscritorLegendaAss.java, MascaradorTags.java
+│   ├── main/java/org/traducao/projeto/
+│   │   ├── traducao/
+│   │   │   ├── Application.java                   # main() + @Import explícito dos beans (TODOS os módulos)
+│   │   │   ├── presentation/
+│   │   │   │   ├── TradutorCLI.java                # CommandLineRunner — modo CLI (app.modo=TRADUZIR)
+│   │   │   │   ├── web/                            # 🌐 interface web (modo WEB, padrão)
+│   │   │   │   │   ├── ApiController.java          # REST: /api/{analisar,extrair,traduzir,...}
+│   │   │   │   │   ├── LogStreamService.java       # SSE por canal + persiste logs/console-web.log
+│   │   │   │   │   ├── ConsoleRedirector.java       # espelha System.out para o SSE
+│   │   │   │   │   └── BrowserLauncher.java         # abre o navegador no startup
+│   │   │   │   └── ui/
+│   │   │   │       ├── ConsoleEntrada.java         # prompt de pastas (estilo input() do Python)
+│   │   │   │       ├── ConsoleUILogger.java        # barra de progresso + log colorido
+│   │   │   │       ├── AnsiCores.java
+│   │   │   │       └── PastasExecucao.java
+│   │   │   ├── application/
+│   │   │   │   ├── ProcessarArquivoUseCase.java    # orquestra 1 arquivo .ass — registra telemetria LLM
+│   │   │   │   ├── ProcessarEpisodioUseCase.java   # traduz lotes (sequencial + divisão recursiva)
+│   │   │   │   └── ValidadorTraducaoService.java   # anti-alucinação
+│   │   │   ├── domain/
+│   │   │   │   ├── Lote.java / TraducaoLote.java
+│   │   │   │   ├── legenda/ DocumentoLegenda.java, EventoLegenda.java
+│   │   │   │   ├── ports/ MistralPort.java
+│   │   │   │   └── exceptions/ (TradutorException e subclasses)
+│   │   │   └── infrastructure/
+│   │   │       ├── adapters/ MistralClientAdapter.java # RestClient → LM Studio (retry)
+│   │   │       ├── cache/ CacheTraducaoService.java, EntradaCache.java
+│   │   │       ├── config/ TradutorProperties.java, LlmProperties.java, RestClientConfig.java
+│   │   │       ├── dtos/ RecordsMistral.java       # DTOs da API OpenAI-compatible
+│   │   │       └── legenda/ LeitorLegendaAss.java, EscritorLegendaAss.java, MascaradorTags.java
+│   │   ├── legendasExtracao/        # modo EXTRAIR — extração de legendas de .mkv (MKVToolNix)
+│   │   ├── remuxer/                 # modo REMUXAR — remux vídeo + legenda traduzida (mkvmerge)
+│   │   ├── analisadorMidia/         # modo ANALISAR / painel "Análise de Mídia" (ffprobe)
+│   │   ├── traducaoCorrige/         # modo CORRIGIR_CACHE — limpeza de falas com falha no cache
+│   │   ├── raspagemCorrecao/        # modo RASPAGEM_CORRECAO — preenche cache via Google Translate
+│   │   ├── mapaProjeto/             # modo MAPEAR — gera relatorio_diretorio_vps.txt e mapa_projeto.md
+│   │   └── telemetria/              # TelemetriaService + records (MidiaTelemetria, LlmTelemetria,
+│   │                                 #   TelemetriaResumo, OperacaoHistorico) — persiste em logs/
+│   ├── main/resources/
+│   │   ├── application.yml
+│   │   └── static/                  # 🌐 SPA da interface web (sem build step)
+│   │       ├── index.html
+│   │       ├── js/app.js            # orquestrador: navegação, SSE, escaping de HTML
+│   │       └── {analise,extracao,traducao,correcao,remuxer,mapa,telemetria}/*.js
 │   └── test/java/org/traducao/projeto/traducao/...           # JUnit 5 + Mockito + AssertJ
 ├── cache/                          # gerado em runtime (gitignored)
 └── logs/                           # gerado em runtime (gitignored)
+    ├── tradutor.log                 # log estruturado completo (com rotação)
+    ├── console-web.log              # transcrição do console da interface web
+    └── telemetria_compartilhada.json # métricas acumuladas (painel "Telemetria")
 ```
 
 ---
@@ -641,8 +677,12 @@ traducao_animes_llm_local_java/
 ## 🐛 Solução de Problemas / JDK 25
 
 > [!CAUTION]
-> **"Nenhum bean é registrado" / a aplicação sobe e não faz nada.**
-> O ASM do Spring 6.1.x não lê o *class file version* 69 (Java 25), então `@ComponentScan` automático falha silenciosamente. A solução já está aplicada em [`Application.java`](src/main/java/org/traducao/projeto/traducao/Application.java) via `@Import({...})` explícito — se você adicionar um novo `@Component`/`@Service`, **adicione-o também na lista do `@Import`**.
+> **"Nenhum bean é registrado" / a aplicação sobe e não faz nada (inclusive a interface web devolvendo 404 em todo `/api/*`).**
+> O ASM do Spring 6.1.x não lê o *class file version* 69 (Java 25), então `@ComponentScan` automático falha silenciosamente. A solução já está aplicada em [`Application.java`](src/main/java/org/traducao/projeto/traducao/Application.java) via `@Import({...})` explícito — se você adicionar um novo `@Component`/`@Service`/`@RestController` (incluindo na camada web), **adicione-o também na lista do `@Import`**. Foi exatamente isso que aconteceu com `ApiController`/`LogStreamService`/`ConsoleRedirector`/`BrowserLauncher` até serem corrigidos — ver [ARQUITETURA.md](ARQUITETURA.md#interface-web).
+
+> [!CAUTION]
+> **A interface web abre, mas nenhum botão funciona / `/api/*` sempre devolve erro de rede.**
+> Confirme que `server.address: 127.0.0.1` está presente em `application.yml` e que você está acessando `http://localhost:8080` (ou `http://127.0.0.1:8080`) **a partir da própria máquina** — o servidor rejeita conexões de qualquer outro endereço de propósito (ver [🌐 Interface Web](#interface-web)).
 
 > [!CAUTION]
 > **`BeanDefinitionStoreException` ao rodar `bootRun`.**
@@ -674,6 +714,9 @@ Para o detalhamento completo dessas decisões e o porquê de cada workaround, ve
 | Retry 3× no `MistralClientAdapter` | Falhas transitórias de rede/parse são comuns ao falar com um servidor LLM local. |
 | `idioma-original` / `idioma-traduzido` no `application.yml` | O cache JSON documenta o par de idiomas; abre caminho para outros pares além de en→pt-br. |
 | Episódios sequenciais entre arquivos | Uma falha não deve cancelar a série inteira; a GPU já é o gargalo, não há ganho em paralelizar arquivos. |
+| Interface web como modo padrão (jun/2026) | Substitui os prompts de console como forma principal de uso; CLI pura ainda disponível via `--tradutor.diretorio-entrada=...`. |
+| `server.address: 127.0.0.1` fixo | A API não tem autenticação — expor em `0.0.0.0` permitiria qualquer dispositivo da rede acionar tradução/remux/limpeza de cache. |
+| Logs e telemetria da web persistidos em `logs/` a cada evento | Antes só existiam em memória/SSE — fechar a aba ou reiniciar o servidor perdia todo o histórico. |
 
 📖 Tabela completa, incluindo armadilhas a evitar ("o que NÃO fazer"), em **[ARQUITETURA.md](ARQUITETURA.md#o-que-não-fazer-armadilhas-comuns)**.
 

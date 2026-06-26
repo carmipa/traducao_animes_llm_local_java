@@ -15,6 +15,9 @@ Este documento serve como mapa de contexto para LLMs atualizarem a documentaçã
 ## 📁 Pasta: `logs/`
 *(Nenhum script Python ou Java nesta pasta)*
 
+## 📁 Pasta: `relatorios/`
+*(Nenhum script Python ou Java nesta pasta)*
+
 ## 📁 Pasta: `src/`
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/analisadorMidia/application/AnalisarMidiaUseCase.java`
 *(Sem docstring ou cabeçalho explicativo)*
@@ -174,7 +177,12 @@ consumido pelo painel "Telemetria" da interface web.
 ```
 
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/telemetria/TelemetriaService.java`
-*(Sem docstring ou cabeçalho explicativo)*
+```text
+Local canônico dentro do próprio projeto onde a telemetria é sempre
+mesclada e persistida a cada registro, para sobreviver a restarts do
+servidor e não depender só do lote em memória (que é limpo a cada
+análise via limparLote()). É o que o painel web lê em gerarResumo().
+```
 
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducaoCorrige/application/LimparCacheUseCase.java`
 *(Sem docstring ou cabeçalho explicativo)*
@@ -203,7 +211,6 @@ valida -> escreve a legenda final em PT-BR -> grava/atualiza o cache.
 <p>
 Correções manuais feitas pelo usuário no JSON de cache são respeitadas na
 próxima execução: uma fala cujo texto original já tem tradução não-vazia no
-cache nunca é reenviada ao LLM.
 ```
 
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/application/ProcessarEpisodioUseCase.java`
@@ -398,6 +405,9 @@ sem deixar de imprimir no console físico (terminal do CMD/PowerShell original).
 ```text
 Serviço responsável por gerenciar conexões Server-Sent Events (SSE)
 e despachar mensagens de log em tempo real para os clientes web conectados.
+Cada linha publicada também é persistida em {@code logs/console-web.log},
+já que o console do navegador (diferente de {@code logs/tradutor.log}) não
+sobrevive a um reload de página ou ao fechamento da aba.
 ```
 
 ### 📄 Arquivo: `src/test/java/org/traducao/projeto/legendasExtracao/application/ExtrairLegendaUseCaseTest.java`

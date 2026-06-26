@@ -1,0 +1,57 @@
+{
+  "caminhoArquivo" : "file:///C:/animes/%5BJoseki%5D%20Mobile%20Suit%20Gundam%20The%2008th%20MS%20Team%20COMPLETE%20(1996)(BD%20AV1%201080p%20Opus)%5BSub%20Eng%5D/Mobile.Suit.Gundam.The.08th.MS.Team.S01E12.mkv",
+  "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E12.mkv",
+  "container" : {
+    "formato" : "matroska,webm",
+    "tamanhoBytes" : 318117473,
+    "duracaoSegundos" : 1628.635,
+    "bitrateGeral" : 1562621,
+    "aplicacaoEscrita" : "libebml v1.4.5 + libmatroska v1.7.1"
+  },
+  "videos" : [ {
+    "index" : 0,
+    "codecId" : "AV1",
+    "format" : "Alliance for Open Media AV1",
+    "width" : 1440,
+    "height" : 1080,
+    "bitDepth" : 10,
+    "fps" : 23.976023976023978,
+    "displayAspectRatio" : "4:3",
+    "bitrate" : 0
+  } ],
+  "audios" : [ {
+    "index" : 1,
+    "idioma" : "jpn",
+    "format" : "OPUS",
+    "channels" : 2,
+    "sampleRateKHz" : 48.0,
+    "bitrate" : 0,
+    "titulo" : "Japanese 2.0"
+  }, {
+    "index" : 2,
+    "idioma" : "jpn",
+    "format" : "OPUS",
+    "channels" : 6,
+    "sampleRateKHz" : 48.0,
+    "bitrate" : 0,
+    "titulo" : "Japanese 5.1"
+  } ],
+  "legendas" : [ {
+    "index" : 3,
+    "indexRelativo" : 0,
+    "idioma" : "eng",
+    "formato" : "ASS",
+    "codecId" : "ass",
+    "titulo" : "English",
+    "tipoCompleto" : "ASS (Estilizada com cores e posicionamento)",
+    "tipoCurto" : "ASS",
+    "duracaoMetadadosSegundos" : 1628.635,
+    "duracaoPacotesSegundos" : 1601.62,
+    "metodoDuracao" : "Analise de Pacotes (ffprobe)",
+    "duracaoEfetivaSegundos" : 1601.62,
+    "diferencaFimSegundos" : 27.0150000000001,
+    "driftRatio" : 59.71503743932824,
+    "veredicto" : "Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 27015 ms)"
+  } ],
+  "logsAuditoria" : [ "================================================================================", "INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E12.mkv", "================================================================================", "Validação OK", "Tamanho: 0,30 GiB (303 MB)", "Formatos detectados e mapeados via ffprobe com sucesso.\n", "================================================================================", "ESTRUTURA GERAL", "================================================================================", "Formato do Conteiner", "  matroska,webm", "Tamanho do Arquivo", "  0,30 GiB", "Duracao Total", "  00:27:08,635", "Bitrate Geral", "  1562 kbps", "Aplicacao de Escrita", "  libebml v1.4.5 + libmatroska v1.7.1", "\n================================================================================", "FLUXOS DE VIDEO", "================================================================================", "\n  Fluxo 0 (Track ID: 0)", "    Codec: AV1 (Alliance for Open Media AV1)", "    Resolucao: 1440x1080p", "    Profundidade de Cor: 10 bits", "    Taxa de Quadros (FPS): 23,976 fps", "    Aspect Ratio: 4:3", "    Bitrate: N/A", "\n================================================================================", "FLUXOS DE AUDIO", "================================================================================", "\n  Fluxo 1 (Track ID: 1)", "    Idioma: jpn", "    Codec/Formato: OPUS", "    Canais: 2", "    Taxa de Amostragem: 48,0 kHz", "    Bitrate: N/A", "    Titulo: Japanese 2.0", "\n  Fluxo 2 (Track ID: 2)", "    Idioma: jpn", "    Codec/Formato: OPUS", "    Canais: 6", "    Taxa de Amostragem: 48,0 kHz", "    Bitrate: N/A", "    Titulo: Japanese 5.1", "\n================================================================================", "FAIXAS DE LEGENDAS", "================================================================================", "\n  Legenda 1 (Track ID: 3)", "    Idioma: eng", "    Formato: ASS", "    Tipo: ASS (Estilizada com cores e posicionamento)", "    Codec ID: ass", "    Titulo: English", "    Duracao Legenda: 00:26:41,620 (via Analise de Pacotes (ffprobe))", "    Diferenca Fim: +27,015s (Video - Legenda)", "    Taxa de Drift: 59,715 s/hora", "    Veredito de Sincronia: Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 27015 ms)", "\n================================================================================", "RESUMO FINAL", "================================================================================", "  Total de Faixas: 5", "    Video(s): 1", "    Audio(s): 2", "    Legenda(s): 1", "      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English", "\n================================================================================", "Auditoria finalizada com sucesso!", "================================================================================\n" ]
+}

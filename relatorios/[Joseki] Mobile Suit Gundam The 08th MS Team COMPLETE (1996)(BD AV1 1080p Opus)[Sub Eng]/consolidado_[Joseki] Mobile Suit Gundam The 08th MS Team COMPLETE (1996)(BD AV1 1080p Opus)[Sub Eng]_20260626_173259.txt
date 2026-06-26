@@ -1,0 +1,1097 @@
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S00E02.mkv
+================================================================================
+Validação OK
+Tamanho: 0,10 GiB (98 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,10 GiB
+Duracao Total
+  00:09:19,565
+Bitrate Geral
+  1464 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1920x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 16:9
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 2)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:09:12,080 (via Analise de Pacotes (ffprobe))
+    Diferenca Fim: +7,485s (Video - Legenda)
+    Taxa de Drift: 48,155 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 7485 ms)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 4
+    Video(s): 1
+    Audio(s): 1
+    Legenda(s): 1
+      [2] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E01.mkv
+================================================================================
+Validação OK
+Tamanho: 0,36 GiB (372 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,36 GiB
+Duracao Total
+  00:24:46,340
+Bitrate Geral
+  2100 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1440x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 4:3
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 2
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 2.0
+
+  Fluxo 2 (Track ID: 2)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 5.1
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 3)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:24:43,780 (via Metadados)
+    Diferenca Fim: +2,560s (Video - Legenda)
+    Taxa de Drift: 6,200 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 5
+    Video(s): 1
+    Audio(s): 2
+    Legenda(s): 1
+      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E02.mkv
+================================================================================
+Validação OK
+Tamanho: 0,34 GiB (347 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,34 GiB
+Duracao Total
+  00:24:45,522
+Bitrate Geral
+  1957 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1440x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 4:3
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 2
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 2.0
+
+  Fluxo 2 (Track ID: 2)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 5.1
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 3)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:24:43,900 (via Metadados)
+    Diferenca Fim: +1,622s (Video - Legenda)
+    Taxa de Drift: 3,931 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 5
+    Video(s): 1
+    Audio(s): 2
+    Legenda(s): 1
+      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E03.mkv
+================================================================================
+Validação OK
+Tamanho: 0,40 GiB (407 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,40 GiB
+Duracao Total
+  00:24:46,004
+Bitrate Geral
+  2298 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1440x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 4:3
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 2
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 2.0
+
+  Fluxo 2 (Track ID: 2)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 5.1
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 3)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:24:44,400 (via Metadados)
+    Diferenca Fim: +1,604s (Video - Legenda)
+    Taxa de Drift: 3,886 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 5
+    Video(s): 1
+    Audio(s): 2
+    Legenda(s): 1
+      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E04.mkv
+================================================================================
+Validação OK
+Tamanho: 0,37 GiB (377 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,37 GiB
+Duracao Total
+  00:25:00,174
+Bitrate Geral
+  2108 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1440x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 4:3
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 2
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 2.0
+
+  Fluxo 2 (Track ID: 2)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 5.1
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 3)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:24:44,020 (via Metadados)
+    Diferenca Fim: +16,154s (Video - Legenda)
+    Taxa de Drift: 38,765 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 16154 ms)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 5
+    Video(s): 1
+    Audio(s): 2
+    Legenda(s): 1
+      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E05.mkv
+================================================================================
+Validação OK
+Tamanho: 0,34 GiB (348 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,34 GiB
+Duracao Total
+  00:24:46,673
+Bitrate Geral
+  1964 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1440x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 4:3
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 2
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 2.0
+
+  Fluxo 2 (Track ID: 2)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 5.1
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 3)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:24:44,070 (via Metadados)
+    Diferenca Fim: +2,603s (Video - Legenda)
+    Taxa de Drift: 6,303 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 5
+    Video(s): 1
+    Audio(s): 2
+    Legenda(s): 1
+      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E06.mkv
+================================================================================
+Validação OK
+Tamanho: 0,39 GiB (399 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,39 GiB
+Duracao Total
+  00:24:46,022
+Bitrate Geral
+  2252 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1440x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 4:3
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 2
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 2.0
+
+  Fluxo 2 (Track ID: 2)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 5.1
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 3)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:24:44,400 (via Metadados)
+    Diferenca Fim: +1,622s (Video - Legenda)
+    Taxa de Drift: 3,929 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 5
+    Video(s): 1
+    Audio(s): 2
+    Legenda(s): 1
+      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E07.mkv
+================================================================================
+Validação OK
+Tamanho: 0,40 GiB (406 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,40 GiB
+Duracao Total
+  00:24:44,004
+Bitrate Geral
+  2297 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1440x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 4:3
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 2
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 2.0
+
+  Fluxo 2 (Track ID: 2)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 5.1
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 3)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:24:42,440 (via Metadados)
+    Diferenca Fim: +1,564s (Video - Legenda)
+    Taxa de Drift: 3,794 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 5
+    Video(s): 1
+    Audio(s): 2
+    Legenda(s): 1
+      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E08.mkv
+================================================================================
+Validação OK
+Tamanho: 0,37 GiB (375 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,37 GiB
+Duracao Total
+  00:24:59,506
+Bitrate Geral
+  2099 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1440x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 4:3
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 2
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 2.0
+
+  Fluxo 2 (Track ID: 2)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 5.1
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 3)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:24:45,340 (via Metadados)
+    Diferenca Fim: +14,166s (Video - Legenda)
+    Taxa de Drift: 34,010 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 14166 ms)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 5
+    Video(s): 1
+    Audio(s): 2
+    Legenda(s): 1
+      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E09.mkv
+================================================================================
+Validação OK
+Tamanho: 0,33 GiB (342 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,33 GiB
+Duracao Total
+  00:24:47,007
+Bitrate Geral
+  1931 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1440x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 4:3
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 2
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 2.0
+
+  Fluxo 2 (Track ID: 2)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 5.1
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 3)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:24:44,360 (via Metadados)
+    Diferenca Fim: +2,647s (Video - Legenda)
+    Taxa de Drift: 6,408 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 5
+    Video(s): 1
+    Audio(s): 2
+    Legenda(s): 1
+      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E10.mkv
+================================================================================
+Validação OK
+Tamanho: 0,41 GiB (418 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,41 GiB
+Duracao Total
+  00:24:45,021
+Bitrate Geral
+  2360 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1440x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 4:3
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 2
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 2.0
+
+  Fluxo 2 (Track ID: 2)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 5.1
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 3)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:24:43,480 (via Metadados)
+    Diferenca Fim: +1,541s (Video - Legenda)
+    Taxa de Drift: 3,736 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 5
+    Video(s): 1
+    Audio(s): 2
+    Legenda(s): 1
+      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E11.mkv
+================================================================================
+Validação OK
+Tamanho: 0,36 GiB (374 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,36 GiB
+Duracao Total
+  00:24:14,971
+Bitrate Geral
+  2153 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1440x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 4:3
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 2
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 2.0
+
+  Fluxo 2 (Track ID: 2)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 5.1
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 3)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:24:03,770 (via Metadados)
+    Diferenca Fim: +11,201s (Video - Legenda)
+    Taxa de Drift: 27,714 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 11201 ms)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 5
+    Video(s): 1
+    Audio(s): 2
+    Legenda(s): 1
+      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
+================================================================================
+INICIANDO AUDITORIA TECNICA: Mobile.Suit.Gundam.The.08th.MS.Team.S01E12.mkv
+================================================================================
+Validação OK
+Tamanho: 0,30 GiB (303 MB)
+Formatos detectados e mapeados via ffprobe com sucesso.
+
+================================================================================
+ESTRUTURA GERAL
+================================================================================
+Formato do Conteiner
+  matroska,webm
+Tamanho do Arquivo
+  0,30 GiB
+Duracao Total
+  00:27:08,635
+Bitrate Geral
+  1562 kbps
+Aplicacao de Escrita
+  libebml v1.4.5 + libmatroska v1.7.1
+
+================================================================================
+FLUXOS DE VIDEO
+================================================================================
+
+  Fluxo 0 (Track ID: 0)
+    Codec: AV1 (Alliance for Open Media AV1)
+    Resolucao: 1440x1080p
+    Profundidade de Cor: 10 bits
+    Taxa de Quadros (FPS): 23,976 fps
+    Aspect Ratio: 4:3
+    Bitrate: N/A
+
+================================================================================
+FLUXOS DE AUDIO
+================================================================================
+
+  Fluxo 1 (Track ID: 1)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 2
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 2.0
+
+  Fluxo 2 (Track ID: 2)
+    Idioma: jpn
+    Codec/Formato: OPUS
+    Canais: 6
+    Taxa de Amostragem: 48,0 kHz
+    Bitrate: N/A
+    Titulo: Japanese 5.1
+
+================================================================================
+FAIXAS DE LEGENDAS
+================================================================================
+
+  Legenda 1 (Track ID: 3)
+    Idioma: eng
+    Formato: ASS
+    Tipo: ASS (Estilizada com cores e posicionamento)
+    Codec ID: ass
+    Titulo: English
+    Duracao Legenda: 00:26:41,620 (via Analise de Pacotes (ffprobe))
+    Diferenca Fim: +27,015s (Video - Legenda)
+    Taxa de Drift: 59,715 s/hora
+    Veredito de Sincronia: Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 27015 ms)
+
+================================================================================
+RESUMO FINAL
+================================================================================
+  Total de Faixas: 5
+    Video(s): 1
+    Audio(s): 2
+    Legenda(s): 1
+      [3] Idioma: eng | Tipo: ASS | Formato: ASS - English
+
+================================================================================
+Auditoria finalizada com sucesso!
+================================================================================
+
+
+====================================================================================================
+
+
