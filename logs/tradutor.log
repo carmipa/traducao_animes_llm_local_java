@@ -11846,3 +11846,4 @@ java.io.IOException: Uma conexão estabelecida foi anulada pelo software no comp
 2026-06-26 17:50:00.339 INFO  [tomcat-handler-77] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
 2026-06-26 17:50:23.340 INFO  [tomcat-handler-82] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
 2026-06-26 17:50:30.337 INFO  [tomcat-handler-83] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-26 17:51:00.346 INFO  [tomcat-handler-90] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
