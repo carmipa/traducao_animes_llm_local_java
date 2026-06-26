@@ -3,7 +3,9 @@ package org.traducao.projeto.traducao.presentation;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 import org.traducao.projeto.traducao.application.ProcessarArquivoUseCase;
+import org.traducao.projeto.traducao.domain.StatusLlm;
 import org.traducao.projeto.traducao.domain.exceptions.TradutorException;
+import org.traducao.projeto.traducao.domain.ports.MistralPort;
 import org.traducao.projeto.traducao.infrastructure.config.TradutorProperties;
 import org.traducao.projeto.traducao.presentation.ui.ConsoleUILogger;
 import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
@@ -23,9 +25,12 @@ class TradutorCLITest {
     private final ProcessarArquivoUseCase processarArquivoUseCase = mock(ProcessarArquivoUseCase.class);
     private final ConsoleUILogger uiLogger = mock(ConsoleUILogger.class);
     private final PastasExecucao pastasExecucao = new PastasExecucao();
+    private final MistralPort mistralPort = mock(MistralPort.class);
 
     private TradutorCLI criarCli(TradutorProperties propriedades) {
-        return new TradutorCLI(processarArquivoUseCase, uiLogger, propriedades, pastasExecucao);
+        when(mistralPort.verificarDisponibilidade())
+            .thenReturn(new StatusLlm(true, true, "LLM disponível (stub de teste)."));
+        return new TradutorCLI(processarArquivoUseCase, uiLogger, propriedades, pastasExecucao, mistralPort);
     }
 
     @Test
@@ -75,5 +80,19 @@ class TradutorCLITest {
 
         verify(processarArquivoUseCase).processar(arquivoA);
         verify(processarArquivoUseCase).processar(arquivoB);
+    }
+
+    @Test
+    void abortaSemProcessarArquivosQuandoModeloNaoEstaCarregado(@TempDir Path tempDir) throws Exception {
+        Files.writeString(tempDir.resolve("a.ass"), "conteudo a");
+        when(mistralPort.verificarDisponibilidade())
+            .thenReturn(new StatusLlm(true, false, "modelo nao carregado"));
+
+        TradutorProperties propriedades = new TradutorProperties(tempDir.toString(), "", "", 20, List.of(), "en", "pt-br");
+        TradutorCLI cli = new TradutorCLI(processarArquivoUseCase, uiLogger, propriedades, pastasExecucao, mistralPort);
+
+        assertThatCode(cli::run).doesNotThrowAnyException();
+
+        verifyNoInteractions(processarArquivoUseCase);
     }
 }

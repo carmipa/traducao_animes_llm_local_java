@@ -105,10 +105,12 @@ public class ProcessarArquivoUseCase {
         }
         log.info("{} fala(s) distinta(s) reaproveitada(s) do cache, {} suspeita(s), {} pendente(s) de tradução",
             cacheReaproveitavel.size(), cacheSuspeito, textosPendentes.size());
+        uiLogger.registrarFalasCache(cacheReaproveitavel.size());
 
         Map<String, String> traducoesNovas;
         try {
             traducoesNovas = traduzirPendentes(textosPendentes, arquivoEntrada.getFileName().toString());
+            uiLogger.registrarFalasNovas(traducoesNovas.size());
         } catch (TraducaoParcialException e) {
             Map<String, String> traducoesParciais = e.getDicionarioParcial();
             if (traducoesParciais != null && !traducoesParciais.isEmpty()) {

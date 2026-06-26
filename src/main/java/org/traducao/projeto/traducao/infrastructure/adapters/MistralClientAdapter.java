@@ -8,6 +8,7 @@ import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestClientResponseException;
 import org.traducao.projeto.traducao.domain.Lote;
+import org.traducao.projeto.traducao.domain.StatusLlm;
 import org.traducao.projeto.traducao.domain.TraducaoLote;
 import org.traducao.projeto.traducao.domain.exceptions.RespostaLlmVaziaException;
 import org.traducao.projeto.traducao.domain.ports.MistralPort;
@@ -16,6 +17,7 @@ import org.traducao.projeto.traducao.infrastructure.dtos.RecordsMistral.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class MistralClientAdapter implements MistralPort {
@@ -44,6 +46,46 @@ public class MistralClientAdapter implements MistralPort {
         // adapter so faz baseUrl+build, o que mantem o builder mockavel em
         // testes com MockRestServiceServer.bindTo(builder).
         this.restClient = builder.baseUrl(propriedades.baseUrl()).build();
+    }
+
+    @Override
+    public StatusLlm verificarDisponibilidade() {
+        String modeloConfigurado = propriedades.model();
+        try {
+            ListaModelos resposta = restClient.get()
+                .uri("/models")
+                .accept(MediaType.APPLICATION_JSON)
+                .retrieve()
+                .body(ListaModelos.class);
+
+            List<ModeloDisponivel> modelos = resposta != null ? resposta.data() : null;
+            if (modelos == null || modelos.isEmpty()) {
+                return new StatusLlm(true, false,
+                    "Servidor LLM em " + propriedades.baseUrl() + " respondeu, mas nenhum modelo está carregado em memória.");
+            }
+
+            // O nome/ID do modelo é configurável (Mistral, Gemma, Llama etc.) — a
+            // comparação não pode supor um provedor específico.
+            boolean modeloCarregado = modelos.stream()
+                .map(ModeloDisponivel::id)
+                .filter(id -> id != null)
+                .anyMatch(id -> id.equalsIgnoreCase(modeloConfigurado) || id.contains(modeloConfigurado));
+
+            if (!modeloCarregado) {
+                String idsDisponiveis = modelos.stream()
+                    .map(ModeloDisponivel::id)
+                    .collect(Collectors.joining(", "));
+                return new StatusLlm(true, false,
+                    "Modelo configurado (\"" + modeloConfigurado + "\") não está entre os carregados no servidor. "
+                        + "Carregados atualmente: [" + idsDisponiveis + "]");
+            }
+
+            return new StatusLlm(true, true,
+                "Servidor LLM online e modelo \"" + modeloConfigurado + "\" carregado em memória.");
+        } catch (Exception e) {
+            return new StatusLlm(false, false,
+                "Não foi possível conectar ao servidor LLM em " + propriedades.baseUrl() + ": " + e.getMessage());
+        }
     }
 
     @Override

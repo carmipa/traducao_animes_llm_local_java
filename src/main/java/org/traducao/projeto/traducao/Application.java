@@ -19,14 +19,6 @@ import org.traducao.projeto.traducao.presentation.TradutorCLI;
 import org.traducao.projeto.traducao.presentation.ui.ConsoleEntrada;
 import org.traducao.projeto.traducao.presentation.ui.ConsoleUILogger;
 import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
-import org.traducao.projeto.legendas.application.ExtrairLegendaUseCase;
-import org.traducao.projeto.legendas.application.strategy.ExtratorAssStrategy;
-import org.traducao.projeto.legendas.application.strategy.ExtratorPgsStrategy;
-import org.traducao.projeto.legendas.application.strategy.ExtratorSrtStrategy;
-import org.traducao.projeto.legendas.infrastructure.adapters.MkvToolNixAdapter;
-import org.traducao.projeto.legendas.infrastructure.config.ExtratorProperties;
-import org.traducao.projeto.legendas.presentation.ExtratorCLI;
-import org.traducao.projeto.legendas.presentation.ui.ConsoleExtratorLogger;
 import org.traducao.projeto.remuxer.application.MapeadorMidiaService;
 import org.traducao.projeto.remuxer.application.RemuxarLoteUseCase;
 import org.traducao.projeto.remuxer.infrastructure.adapters.MkvmergeAdapter;
@@ -34,7 +26,20 @@ import org.traducao.projeto.remuxer.infrastructure.config.RemuxerProperties;
 import org.traducao.projeto.remuxer.presentation.RemuxerCLI;
 import org.traducao.projeto.remuxer.presentation.ui.ConsoleRemuxerLogger;
 import org.traducao.projeto.traducaoCorrige.CorretorCacheCLI;
+import org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCase;
+import org.traducao.projeto.legendasExtracao.application.strategy.ExtratorAssStrategy;
+import org.traducao.projeto.legendasExtracao.application.strategy.ExtratorPgsStrategy;
+import org.traducao.projeto.legendasExtracao.application.strategy.ExtratorSrtStrategy;
+import org.traducao.projeto.legendasExtracao.infrastructure.adapters.MkvToolNixAdapter;
+import org.traducao.projeto.legendasExtracao.infrastructure.config.ExtratorProperties;
+import org.traducao.projeto.legendasExtracao.presentation.ExtratorCLI;
+import org.traducao.projeto.legendasExtracao.presentation.ui.ConsoleExtratorLogger;
 import org.traducao.projeto.raspagemCorrecao.CorretorRaspagemCLI;
+import org.traducao.projeto.analisadorMidia.presentation.AnalisadorMidiaCLI;
+import org.traducao.projeto.analisadorMidia.application.AnalisarMidiaUseCase;
+import org.traducao.projeto.analisadorMidia.infrastructure.adapters.FfprobeAdapter;
+import org.traducao.projeto.analisadorMidia.presentation.ui.ConsoleAnalisadorLogger;
+import org.traducao.projeto.telemetria.TelemetriaService;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -77,7 +82,12 @@ import java.util.Optional;
     ExtratorSrtStrategy.class,
     MkvToolNixAdapter.class,
     CorretorCacheCLI.class,
-    CorretorRaspagemCLI.class
+    CorretorRaspagemCLI.class,
+    AnalisadorMidiaCLI.class,
+    AnalisarMidiaUseCase.class,
+    FfprobeAdapter.class,
+    ConsoleAnalisadorLogger.class,
+    TelemetriaService.class
 })
 public class Application {
 

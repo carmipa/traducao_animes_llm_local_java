@@ -6,8 +6,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 import org.traducao.projeto.traducao.application.ProcessarArquivoUseCase;
+import org.traducao.projeto.traducao.domain.StatusLlm;
 import org.traducao.projeto.traducao.domain.exceptions.TradutorException;
 import org.traducao.projeto.traducao.domain.exceptions.TraducaoParcialException;
+import org.traducao.projeto.traducao.domain.ports.MistralPort;
 import org.traducao.projeto.traducao.infrastructure.config.TradutorProperties;
 import org.traducao.projeto.traducao.presentation.ui.ConsoleEntrada;
 import org.traducao.projeto.traducao.presentation.ui.ConsoleUILogger;
@@ -16,6 +18,7 @@ import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
@@ -44,17 +47,20 @@ public class TradutorCLI implements CommandLineRunner {
     private final ConsoleUILogger uiLogger;
     private final TradutorProperties propriedades;
     private final PastasExecucao pastasExecucao;
+    private final MistralPort mistralPort;
 
     public TradutorCLI(
         ProcessarArquivoUseCase processarArquivoUseCase,
         ConsoleUILogger uiLogger,
         TradutorProperties propriedades,
-        PastasExecucao pastasExecucao
+        PastasExecucao pastasExecucao,
+        MistralPort mistralPort
     ) {
         this.processarArquivoUseCase = processarArquivoUseCase;
         this.uiLogger = uiLogger;
         this.propriedades = propriedades;
         this.pastasExecucao = pastasExecucao;
+        this.mistralPort = mistralPort;
     }
 
     @Override
@@ -69,6 +75,10 @@ public class TradutorCLI implements CommandLineRunner {
         if (!Files.isDirectory(diretorioEntrada)) {
             log.error("Pasta de entrada não existe ou não é um diretório: {}", diretorioEntrada);
             uiLogger.log("❌ Pasta de entrada não existe ou não é um diretório: " + diretorioEntrada);
+            return;
+        }
+
+        if (!verificarLlmDisponivel()) {
             return;
         }
 
@@ -96,8 +106,10 @@ public class TradutorCLI implements CommandLineRunner {
 
         int sucesso = 0;
         int falha = 0;
-        for (Path arquivo : arquivos) {
-            uiLogger.log("[ INFO ] Processando " + arquivo.getFileName() + "...");
+        List<String> arquivosComFalha = new ArrayList<>();
+        for (int i = 0; i < arquivos.size(); i++) {
+            Path arquivo = arquivos.get(i);
+            uiLogger.tituloEpisodio(arquivo.getFileName().toString(), i + 1, arquivos.size());
             try {
                 processarArquivoUseCase.processar(arquivo);
                 uiLogger.log("[ OK ] " + arquivo.getFileName() + " traduzido com sucesso.");
@@ -107,10 +119,12 @@ public class TradutorCLI implements CommandLineRunner {
                 log.warn("Processamento parcial em {}: {} traduções salvas. {}", arquivo.getFileName(), salvas, e.getMessage());
                 uiLogger.log("[ PARCIAL ] " + arquivo.getFileName() + " (Salvas: " + salvas + " antes de abortar)");
                 falha++;
+                arquivosComFalha.add(arquivo.getFileName().toString() + " (parcial: " + salvas + " salvas)");
             } catch (TradutorException e) {
                 log.error("Falha crítica ao processar {}: {}", arquivo.getFileName(), e.getMessage());
                 uiLogger.log("[ FAIL ] Falha em " + arquivo.getFileName() + ": " + e.getMessage());
                 falha++;
+                arquivosComFalha.add(arquivo.getFileName().toString());
             } catch (Exception e) {
                 String errorMsg = e.getMessage();
                 if (e.getCause() instanceof TradutorException te) {
@@ -119,11 +133,38 @@ public class TradutorCLI implements CommandLineRunner {
                 log.error("Erro ao processar {}: {}", arquivo.getFileName(), errorMsg);
                 uiLogger.log("[ FAIL ] Erro em " + arquivo.getFileName() + " (" + errorMsg + ")");
                 falha++;
+                arquivosComFalha.add(arquivo.getFileName().toString());
             }
         }
 
         log.info("Processamento finalizado: {} sucesso(s), {} falha(s) de {} arquivo(s)", sucesso, falha, arquivos.size());
-        uiLogger.log(String.format("Concluido: %d sucesso(s), %d falha(s) de %d arquivo(s).", sucesso, falha, arquivos.size()));
+        imprimirRelatorioFinal(arquivos.size(), sucesso, falha, arquivosComFalha);
+    }
+
+    private void imprimirRelatorioFinal(int totalArquivos, int sucesso, int falha, List<String> arquivosComFalha) {
+        uiLogger.log("");
+        uiLogger.log("==================== RELATÓRIO FINAL ====================");
+        uiLogger.log(String.format("Concluido: %d sucesso(s), %d falha(s) de %d arquivo(s).", sucesso, falha, totalArquivos));
+        uiLogger.log(String.format("Falas traduzidas agora pelo LLM: %d", uiLogger.totalFalasNovas()));
+        uiLogger.log(String.format("Falas reaproveitadas do cache: %d", uiLogger.totalFalasCache()));
+        uiLogger.log(String.format("Avisos/revisões manuais sinalizadas: %d", uiLogger.totalAvisos()));
+        if (!arquivosComFalha.isEmpty()) {
+            uiLogger.log("[ WARN ] Arquivos com falha ou tradução parcial: " + String.join(", ", arquivosComFalha));
+        }
+        uiLogger.log("===========================================================");
+    }
+
+    private boolean verificarLlmDisponivel() {
+        uiLogger.log("Verificando se o servidor LLM local esta online e com o modelo carregado em memoria...");
+        StatusLlm status = mistralPort.verificarDisponibilidade();
+        if (!status.modeloCarregado()) {
+            uiLogger.log("[ FAIL ] " + status.mensagem());
+            uiLogger.log("[ FAIL ] Abortando: inicie o servidor LLM local (ex: LM Studio), carregue o modelo "
+                + "configurado em tradutor.llm.model e tente novamente.");
+            return false;
+        }
+        uiLogger.log("[ OK ] " + status.mensagem());
+        return true;
     }
 
     private boolean resolverPastas() {

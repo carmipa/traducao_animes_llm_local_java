@@ -77,22 +77,22 @@ Beans **não** são descobertos por `@ComponentScan` automático — ver seção
 
 ---
 
-## Modos de execução (`app.modo`) e os pacotes `legendas` / `remuxer`
+## Modos de execução (`app.modo`) e os pacotes `legendasExtracao` / `remuxer`
 
 Além de `org.traducao.projeto.traducao` (tradução), o projeto tem dois módulos irmãos, cada um com seu próprio `CommandLineRunner` ativado por `@ConditionalOnProperty(name = "app.modo", havingValue = "...")`:
 
 | Modo | CLI | Pacote | Função |
 |---|---|---|---|
 | `TRADUZIR` (padrão, `matchIfMissing = true`) | `TradutorCLI` | `animes` | Traduz `.ass`/`.ssa` via LLM local (fluxo já documentado acima) |
-| `EXTRAIR` | `ExtratorCLI` | `legendas` | Extrai faixas de legenda embutidas em `.mkv` (ASS/PGS/SRT) via MKVToolNix (`mkvmerge --identify` + `mkvextract`) |
+| `EXTRAIR` | `ExtratorCLI` | `legendasExtracao` | Extrai faixas de legenda embutidas em `.mkv` (ASS/PGS/SRT) via MKVToolNix (`mkvmerge --identify` + `mkvextract`) |
 | `REMUXAR` | `RemuxerCLI` | `remuxer` | Remultiplexa um `.mkv` original com uma legenda `.ass`/`.srt` traduzida via `mkvmerge` |
 
 `ConsoleEntrada.solicitarPastas()` pergunta o modo (`[1]/[2]/[3]`) antes do Spring subir e grava `--app.modo=...` nos args, igual ao fluxo de pastas. Os três modos reaproveitam as mesmas chaves `tradutor.diretorio-entrada` / `tradutor.diretorio-saida` (ver `Application.ARG_ENTRADA`/`ARG_SAIDA`) — não existem propriedades `extrator.diretorio-*` ou `remuxer.diretorio-*` separadas.
 
-### `legendas` (extração)
+### `legendasExtracao` (extração)
 
 ```
-org.traducao.projeto.legendas
+org.traducao.projeto.legendasExtracao
 ├── domain/        FormatoLegenda (ASS/PGS/SRT), FaixaLegenda, RelatorioExtracao, ExtratorException
 ├── application/
 │   ├── ExtrairLegendaUseCase.java     # varre .mkv, identifica faixas, extrai a melhor

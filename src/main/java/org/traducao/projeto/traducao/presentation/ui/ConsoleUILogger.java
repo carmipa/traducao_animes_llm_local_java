@@ -30,6 +30,10 @@ public class ConsoleUILogger {
 
     private ProgressBar pb;
 
+    private int totalFalasCache = 0;
+    private int totalFalasNovas = 0;
+    private int totalAvisos = 0;
+
     public synchronized void iniciarLotes(int totalLotes, String nomeEpisodio) {
         if (pb != null) {
             pb.close();
@@ -42,9 +46,31 @@ public class ConsoleUILogger {
                 .build();
     }
 
+    /**
+     * Imprime um separador bem visível indicando o início da tradução de um novo
+     * episódio, para diferenciar claramente esse marco das mensagens linha-a-linha
+     * (lote a lote) que vêm a seguir no mesmo console efêmero.
+     */
+    public synchronized void tituloEpisodio(String nomeEpisodio, int indiceAtual, int totalEpisodios) {
+        if (pb != null) {
+            pb.close();
+            pb = null;
+        }
+        String cabecalho = String.format("EPISÓDIO %d/%d: %s", indiceAtual, totalEpisodios, nomeEpisodio);
+        String linha = "=".repeat(Math.max(cabecalho.length() + 8, 70));
+
+        System.out.println();
+        System.out.println(ANSI_CYAN + linha + ANSI_RESET);
+        System.out.println(AnsiCores.BOLD + AnsiCores.YELLOW + ">>> " + cabecalho + ANSI_RESET);
+        System.out.println(ANSI_CYAN + linha + ANSI_RESET);
+
+        log.info(linha);
+        log.info(">>> {}", cabecalho);
+    }
+
     public synchronized void log(String mensagem) {
         String cor = ANSI_CYAN; // Cor padrão das informações
-        
+
         if (mensagem.contains("[ FAIL ]") || mensagem.contains("Erro") || mensagem.contains("Falha")) {
             log.warn(mensagem);
             cor = ANSI_RED;
@@ -54,6 +80,7 @@ public class ConsoleUILogger {
         } else if (mensagem.contains("[ WARN ]")) {
             log.warn(mensagem);
             cor = ANSI_YELLOW;
+            totalAvisos++;
         } else {
             log.info(mensagem);
         }
@@ -62,10 +89,17 @@ public class ConsoleUILogger {
         String msgVisual = cor + mensagem + ANSI_RESET;
 
         if (pb != null) {
-            // Emula o tqdm.write(), onde a mensagem é impressa acima da barra sem quebrar a tela
-            pb.stepBy(0); // Força um tick no estado
-            System.out.println("\r\033[K" + msgVisual);
-            pb.stepBy(0);
+            // Emula o tqdm.write(): pausa o redesenho automático da barra (que corre
+            // numa thread própria a cada 100ms) para que ele não escreva por cima
+            // desta mensagem no meio da impressão — a versão anterior só dava um
+            // "tick" (stepBy(0)) sem nenhuma garantia de exclusão mútua com aquela
+            // thread, o que corrompia a barra ou a deixava com leitura desatualizada
+            // (parecia "travada" numa porcentagem antiga).
+            pb.pause();
+            System.out.print("\r\033[K");
+            System.out.println(msgVisual);
+            pb.resume();
+            pb.refresh();
         } else {
             System.out.println(msgVisual);
         }
@@ -74,6 +108,7 @@ public class ConsoleUILogger {
     public synchronized void passoConcluido(int lotes) {
         if (pb != null) {
             pb.stepBy(lotes);
+            pb.refresh();
         }
     }
 
@@ -82,5 +117,25 @@ public class ConsoleUILogger {
             pb.close();
             pb = null;
         }
+    }
+
+    public synchronized void registrarFalasCache(int quantidade) {
+        totalFalasCache += quantidade;
+    }
+
+    public synchronized void registrarFalasNovas(int quantidade) {
+        totalFalasNovas += quantidade;
+    }
+
+    public synchronized int totalFalasCache() {
+        return totalFalasCache;
+    }
+
+    public synchronized int totalFalasNovas() {
+        return totalFalasNovas;
+    }
+
+    public synchronized int totalAvisos() {
+        return totalAvisos;
     }
 }

@@ -21,14 +21,15 @@ public final class ConsoleEntrada {
 
         try {
             String modoOpcao = lerOpcional(
-                AnsiCores.colorir("Escolha (1/2/3/4/5) [Enter = 1]: ", AnsiCores.CYAN)
+                AnsiCores.colorir("Escolha (1/2/3/4/5/6) [Enter = 1]: ", AnsiCores.CYAN)
             );
             
             String modo = "1".equals(modoOpcao) || "".equals(modoOpcao) ? "TRADUZIR" : 
                           "2".equals(modoOpcao) ? "REMUXAR" :
                           "3".equals(modoOpcao) ? "EXTRAIR" :
                           "4".equals(modoOpcao) ? "CORRIGIR_CACHE" :
-                          "5".equals(modoOpcao) ? "RASPAGEM_CORRECAO" : "TRADUZIR";
+                          "5".equals(modoOpcao) ? "RASPAGEM_CORRECAO" :
+                          "6".equals(modoOpcao) ? "ANALISAR" : "TRADUZIR";
             
             imprimir("");
             if (modo.equals("TRADUZIR")) {
@@ -43,9 +44,12 @@ public final class ConsoleEntrada {
             } else if (modo.equals("CORRIGIR_CACHE")) {
                 imprimir(AnsiCores.colorir(">>> MODO CORRIGIR ERROS DE TRADUÇÃO (LIMPAR CACHE) SELECIONADO <<<", AnsiCores.YELLOW, true));
                 return solicitarPastasCorretor(modo);
-            } else {
+            } else if (modo.equals("RASPAGEM_CORRECAO")) {
                 imprimir(AnsiCores.colorir(">>> MODO CORRIGIR ERROS COM GOOGLE TRANSLATE (RASPAGEM) SELECIONADO <<<", AnsiCores.YELLOW, true));
                 return solicitarPastasCorretor(modo);
+            } else {
+                imprimir(AnsiCores.colorir(">>> MODO ANALISAR ARQUIVOS DE MÍDIA SELECIONADO <<<", AnsiCores.CYAN, true));
+                return solicitarPastasAnalisador(modo);
             }
         } catch (IOException e) {
             imprimir(AnsiCores.colorir("ERRO ao ler do console: " + e.getMessage(), AnsiCores.RED, true));
@@ -116,6 +120,22 @@ public final class ConsoleEntrada {
         return Optional.of(new CaminhosPastas(modo, entrada, "", null));
     }
 
+    private static Optional<CaminhosPastas> solicitarPastasAnalisador(String modo) throws IOException {
+        String entrada = lerObrigatorio(
+            AnsiCores.colorir(">>> Pasta com os vídeos ou caminho do arquivo individual (.mkv/.mp4/etc): ", AnsiCores.GREEN, true)
+        );
+        if (entrada == null) return Optional.empty();
+
+        String saida = lerOpcional(
+            AnsiCores.colorir(">>> Pasta de SAÍDA para os relatórios (Enter = pasta de entrada/relatorios_analise): ", AnsiCores.CYAN)
+        );
+        if (saida == null) return Optional.empty();
+
+        imprimir("");
+        imprimir(AnsiCores.colorir("Caminhos OK. Iniciando o analisador de mídia...", AnsiCores.GREEN, true));
+        return Optional.of(new CaminhosPastas(modo, entrada, saida, null));
+    }
+
     public static void imprimirErroSaida() {
         imprimir("");
         imprimir(AnsiCores.colorir("ERRO: interrupção ou erro no console.", AnsiCores.RED, true));
@@ -136,6 +156,7 @@ public final class ConsoleEntrada {
         imprimir(AnsiCores.colorir("  [3] Extrair legendas embutidas de MKVs", AnsiCores.MAGENTA));
         imprimir(AnsiCores.colorir("  [4] Corrigir erros de tradução (Limpar Cache)", AnsiCores.YELLOW));
         imprimir(AnsiCores.colorir("  [5] Corrigir erros com Google Translate (Raspagem)", AnsiCores.YELLOW));
+        imprimir(AnsiCores.colorir("  [6] Analisar arquivos de mídia (Vídeos/Legendas)", AnsiCores.CYAN));
         imprimir("");
     }
 
