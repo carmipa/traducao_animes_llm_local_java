@@ -3849,3 +3849,103 @@
 2026-06-27 08:54:34.462 [console] 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
 2026-06-27 08:54:34.463 [console] 	at java.base/java.lang.VirtualThread.run(VirtualThread.java:456)
 2026-06-27 08:55:06.398 [console] 08:55:06 INFO  [tomcat-handler-48] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-27 10:52:26.263 [console] 10:52:26 INFO  [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-27 10:52:26.339 [console] 10:52:26 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-27 10:52:26.349 [console] 10:52:26 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-27 10:52:26.354 [console] 10:52:26 INFO  [restartedMain] o.t.p.t.Application - Started Application in 0.905 seconds (process running for 1.091)
+2026-06-27 10:52:26.356 [console] ==============================================================
+2026-06-27 10:52:26.356 [console]    SERVIDOR WEB INICIADO COM SUCESSO!
+2026-06-27 10:52:26.356 [console]    Acesse a interface visual em: http://localhost:8080
+2026-06-27 10:52:26.357 [console] ==============================================================
+2026-06-27 10:52:26.378 [console] 10:52:26 INFO  [restartedMain] o.t.p.t.p.w.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-27 10:52:27.307 [console] 10:52:27 INFO  [tomcat-handler-0] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-27 10:52:27.308 [console] 10:52:27 INFO  [tomcat-handler-0] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-27 10:52:27.308 [console] 10:52:27 INFO  [tomcat-handler-0] o.s.w.s.DispatcherServlet - Completed initialization in 0 ms
+2026-06-27 10:52:27.701 [console] 10:52:27 INFO  [tomcat-handler-15] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-27 10:53:24.401 [extracao] 10:53:24 INFO  [pool-1-thread-1] o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_Track2.ass
+2026-06-27 10:53:24.691 [extracao] 10:53:24 INFO  [pool-1-thread-1] o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_Track2.ass
+2026-06-27 10:53:24.989 [extracao] 10:53:24 INFO  [pool-1-thread-1] o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_Track2.ass
+2026-06-27 10:53:25.443 [extracao] 10:53:25 INFO  [pool-1-thread-1] o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_Track2.ass
+2026-06-27 10:53:25.739 [extracao] 10:53:25 INFO  [pool-1-thread-1] o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_Track2.ass
+2026-06-27 10:53:26.067 [extracao] 10:53:26 INFO  [pool-1-thread-1] o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_Track2.ass
+2026-06-27 10:54:31.578 [traducao] Verificando se o servidor LLM local está online...
+2026-06-27 10:54:31.643 [traducao] [OK] Servidor LLM ativo.
+2026-06-27 10:54:31.645 [traducao] [CONTEXTO] Utilizando contexto: Gundam 0080: War in the Pocket
+2026-06-27 10:54:31.650 [traducao] Iniciando tradução de 6 arquivo(s)...
+2026-06-27 10:54:31.650 [traducao] --------------------------------------------------------------
+2026-06-27 10:54:31.661 [traducao] Processando arquivo [1/6]: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_Track2.ass
+2026-06-27 10:54:31.663 [traducao] --------------------------------------------------------------
+2026-06-27 10:54:31.665 [traducao] 10:54:31 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - Lendo arquivo de legenda: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\legendas_extraidas_ass\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_Track2.ass
+2026-06-27 10:54:31.690 [traducao] 10:54:31 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - 394 fala(s) traduzível(eis) encontrada(s) em Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_Track2.ass
+2026-06-27 10:54:31.694 [traducao] 10:54:31 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - 0 fala(s) distinta(s) reaproveitada(s) do cache, 0 suspeita(s), 373 pendente(s) de tradução
+2026-06-27 10:54:31.835 [traducao] 10:54:31 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarEpisodioUseCase - Iniciando processamento de 19 lote(s) de forma sequencial (preservando LM Studio/GPU)
+2026-06-27 10:54:43.626 [traducao] 10:54:43 INFO  [pool-1-thread-1] o.t.p.t.i.a.MistralClientAdapter - Lote 1 traduzido em 11788 ms (20 -> 20 linha(s))
+2026-06-27 10:54:43.628 [traducao] 10:54:43 INFO  [pool-1-thread-1] o.t.p.t.p.u.ConsoleUILogger - ✅ Lote 1 traduzido com sucesso.
+2026-06-27 10:54:43.628 [traducao] [K✅ Lote 1 traduzido com sucesso.
+2026-06-27 10:54:43.630 [traducao] [FAIL] Falha no processamento de Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_Track2.ass: Index 88 out of bounds for length 88
+2026-06-27 10:54:43.630 [traducao] --------------------------------------------------------------
+2026-06-27 10:54:43.630 [traducao] Processando arquivo [2/6]: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_Track2.ass
+2026-06-27 10:54:43.632 [traducao] --------------------------------------------------------------
+2026-06-27 10:54:43.632 [traducao] 10:54:43 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - Lendo arquivo de legenda: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\legendas_extraidas_ass\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_Track2.ass
+2026-06-27 10:54:43.640 [traducao] 10:54:43 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - 628 fala(s) traduzível(eis) encontrada(s) em Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_Track2.ass
+2026-06-27 10:54:43.640 [traducao] 10:54:43 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - 0 fala(s) distinta(s) reaproveitada(s) do cache, 0 suspeita(s), 613 pendente(s) de tradução
+2026-06-27 10:54:43.642 [traducao] 10:54:43 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarEpisodioUseCase - Iniciando processamento de 31 lote(s) de forma sequencial (preservando LM Studio/GPU)
+2026-06-27 10:54:49.868 [traducao] 10:54:49 INFO  [pool-1-thread-1] o.t.p.t.i.a.MistralClientAdapter - Lote 1 traduzido em 6226 ms (20 -> 20 linha(s))
+2026-06-27 10:54:49.870 [traducao] 10:54:49 INFO  [pool-1-thread-1] o.t.p.t.p.u.ConsoleUILogger - ✅ Lote 1 traduzido com sucesso.
+2026-06-27 10:54:49.870 [traducao] [K✅ Lote 1 traduzido com sucesso.
+2026-06-27 10:54:49.871 [traducao] [FAIL] Falha no processamento de Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_Track2.ass: Index 88 out of bounds for length 88
+2026-06-27 10:54:49.872 [traducao] --------------------------------------------------------------
+2026-06-27 10:54:49.872 [traducao] Processando arquivo [3/6]: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_Track2.ass
+2026-06-27 10:54:49.873 [traducao] --------------------------------------------------------------
+2026-06-27 10:54:49.873 [traducao] 10:54:49 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - Lendo arquivo de legenda: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\legendas_extraidas_ass\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_Track2.ass
+2026-06-27 10:54:49.884 [traducao] 10:54:49 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - 693 fala(s) traduzível(eis) encontrada(s) em Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_Track2.ass
+2026-06-27 10:54:49.885 [traducao] 10:54:49 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - 0 fala(s) distinta(s) reaproveitada(s) do cache, 0 suspeita(s), 680 pendente(s) de tradução
+2026-06-27 10:54:49.887 [traducao] 10:54:49 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarEpisodioUseCase - Iniciando processamento de 34 lote(s) de forma sequencial (preservando LM Studio/GPU)
+2026-06-27 10:54:57.834 [traducao] 10:54:57 INFO  [pool-1-thread-1] o.t.p.t.i.a.MistralClientAdapter - Lote 1 traduzido em 7945 ms (20 -> 20 linha(s))
+2026-06-27 10:54:57.836 [traducao] 10:54:57 INFO  [pool-1-thread-1] o.t.p.t.p.u.ConsoleUILogger - ✅ Lote 1 traduzido com sucesso.
+2026-06-27 10:54:57.838 [traducao] [K✅ Lote 1 traduzido com sucesso.
+2026-06-27 10:54:57.840 [traducao] [FAIL] Falha no processamento de Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_Track2.ass: Index 88 out of bounds for length 88
+2026-06-27 10:54:57.841 [traducao] --------------------------------------------------------------
+2026-06-27 10:54:57.842 [traducao] Processando arquivo [4/6]: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_Track2.ass
+2026-06-27 10:54:57.842 [traducao] --------------------------------------------------------------
+2026-06-27 10:54:57.843 [traducao] 10:54:57 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - Lendo arquivo de legenda: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\legendas_extraidas_ass\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_Track2.ass
+2026-06-27 10:54:57.850 [traducao] 10:54:57 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - 662 fala(s) traduzível(eis) encontrada(s) em Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_Track2.ass
+2026-06-27 10:54:57.851 [traducao] 10:54:57 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - 0 fala(s) distinta(s) reaproveitada(s) do cache, 0 suspeita(s), 650 pendente(s) de tradução
+2026-06-27 10:54:57.853 [traducao] 10:54:57 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarEpisodioUseCase - Iniciando processamento de 33 lote(s) de forma sequencial (preservando LM Studio/GPU)
+2026-06-27 10:55:03.961 [traducao] 10:55:03 INFO  [pool-1-thread-1] o.t.p.t.i.a.MistralClientAdapter - Lote 1 traduzido em 6107 ms (20 -> 20 linha(s))
+2026-06-27 10:55:03.962 [traducao] 10:55:03 INFO  [pool-1-thread-1] o.t.p.t.p.u.ConsoleUILogger - ✅ Lote 1 traduzido com sucesso.
+2026-06-27 10:55:03.962 [traducao] [K✅ Lote 1 traduzido com sucesso.
+2026-06-27 10:55:03.964 [traducao] [FAIL] Falha no processamento de Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_Track2.ass: Index 88 out of bounds for length 88
+2026-06-27 10:55:03.965 [traducao] --------------------------------------------------------------
+2026-06-27 10:55:03.965 [traducao] Processando arquivo [5/6]: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_Track2.ass
+2026-06-27 10:55:03.965 [traducao] --------------------------------------------------------------
+2026-06-27 10:55:03.967 [traducao] 10:55:03 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - Lendo arquivo de legenda: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\legendas_extraidas_ass\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_Track2.ass
+2026-06-27 10:55:03.974 [traducao] 10:55:03 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - 700 fala(s) traduzível(eis) encontrada(s) em Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_Track2.ass
+2026-06-27 10:55:03.975 [traducao] 10:55:03 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - 0 fala(s) distinta(s) reaproveitada(s) do cache, 0 suspeita(s), 652 pendente(s) de tradução
+2026-06-27 10:55:03.983 [traducao] 10:55:03 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarEpisodioUseCase - Iniciando processamento de 33 lote(s) de forma sequencial (preservando LM Studio/GPU)
+2026-06-27 10:55:11.503 [traducao] 10:55:11 INFO  [pool-1-thread-1] o.t.p.t.i.a.MistralClientAdapter - Lote 1 traduzido em 7518 ms (20 -> 20 linha(s))
+2026-06-27 10:55:11.504 [traducao] 10:55:11 INFO  [pool-1-thread-1] o.t.p.t.p.u.ConsoleUILogger - ✅ Lote 1 traduzido com sucesso.
+2026-06-27 10:55:11.505 [traducao] [K✅ Lote 1 traduzido com sucesso.
+2026-06-27 10:55:11.507 [traducao] [FAIL] Falha no processamento de Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_Track2.ass: Index 88 out of bounds for length 88
+2026-06-27 10:55:11.508 [traducao] --------------------------------------------------------------
+2026-06-27 10:55:11.509 [traducao] Processando arquivo [6/6]: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_Track2.ass
+2026-06-27 10:55:11.509 [traducao] --------------------------------------------------------------
+2026-06-27 10:55:11.510 [traducao] 10:55:11 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - Lendo arquivo de legenda: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\legendas_extraidas_ass\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_Track2.ass
+2026-06-27 10:55:11.519 [traducao] 10:55:11 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - 542 fala(s) traduzível(eis) encontrada(s) em Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_Track2.ass
+2026-06-27 10:55:11.520 [traducao] 10:55:11 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarArquivoUseCase - 0 fala(s) distinta(s) reaproveitada(s) do cache, 0 suspeita(s), 528 pendente(s) de tradução
+2026-06-27 10:55:11.523 [traducao] 10:55:11 INFO  [pool-1-thread-1] o.t.p.t.a.ProcessarEpisodioUseCase - Iniciando processamento de 27 lote(s) de forma sequencial (preservando LM Studio/GPU)
+2026-06-27 10:55:16.664 [traducao] 10:55:16 INFO  [pool-1-thread-1] o.t.p.t.i.a.MistralClientAdapter - Lote 1 traduzido em 5140 ms (20 -> 19 linha(s))
+2026-06-27 10:55:16.667 [traducao] 10:55:16 WARN  [pool-1-thread-1] o.t.p.t.a.ProcessarEpisodioUseCase - Lote 1 (tamanho 20) falhou na validação (Lote 1 retornou 19 linha(s), esperado 20. Provável alucinação do LLM fundindo ou quebrando falas, o que desalinharia a legenda.). Dividindo em 2 partes e tentando novamente...
+2026-06-27 10:55:16.668 [traducao] 10:55:16 WARN  [pool-1-thread-1] o.t.p.t.p.u.ConsoleUILogger - [ WARN ] Lote 1 dividido após falha de validação: Lote 1 retornou 19 linha(s), esperado 20. Provável alucinação do LLM fundindo ou quebrando falas, o que desalinharia a legenda.
+2026-06-27 10:55:16.669 [traducao] [K[ WARN ] Lote 1 dividido após falha de validação: Lote 1 retornou 19 linha(s), esperado 20. Provável alucinação do LLM fundindo ou quebrando falas, o que desalinharia a legenda.
+2026-06-27 10:55:19.739 [traducao] 10:55:19 INFO  [pool-1-thread-1] o.t.p.t.i.a.MistralClientAdapter - Lote 1 traduzido em 3070 ms (10 -> 10 linha(s))
+2026-06-27 10:55:19.741 [traducao] 10:55:19 WARN  [pool-1-thread-1] o.t.p.t.a.ProcessarEpisodioUseCase - Lote 1 (tamanho 10) falhou na validação (Resíduo gringo detectado: [[TAG0]]Loud and clear!). Dividindo em 2 partes e tentando novamente...
+2026-06-27 10:55:19.741 [traducao] 10:55:19 WARN  [pool-1-thread-1] o.t.p.t.p.u.ConsoleUILogger - [ WARN ] Lote 1 dividido após falha de validação: Resíduo gringo detectado: [[TAG0]]Loud and clear!
+2026-06-27 10:55:19.742 [traducao] [K[ WARN ] Lote 1 dividido após falha de validação: Resíduo gringo detectado: [[TAG0]]Loud and clear!
+2026-06-27 10:55:21.413 [traducao] 10:55:21 INFO  [pool-1-thread-1] o.t.p.t.i.a.MistralClientAdapter - Lote 1 traduzido em 1671 ms (5 -> 5 linha(s))
+2026-06-27 10:55:23.043 [traducao] 10:55:23 INFO  [pool-1-thread-1] o.t.p.t.i.a.MistralClientAdapter - Lote 1 traduzido em 1628 ms (5 -> 5 linha(s))
+2026-06-27 10:55:25.613 [traducao] 10:55:25 INFO  [pool-1-thread-1] o.t.p.t.i.a.MistralClientAdapter - Lote 1 traduzido em 2568 ms (10 -> 10 linha(s))
+2026-06-27 10:55:25.614 [traducao] 10:55:25 INFO  [pool-1-thread-1] o.t.p.t.p.u.ConsoleUILogger - ✅ Lote 1 traduzido com sucesso.
+2026-06-27 10:55:25.615 [traducao] [K✅ Lote 1 traduzido com sucesso.
+2026-06-27 10:55:25.617 [traducao] [FAIL] Falha no processamento de Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_Track2.ass: Index 88 out of bounds for length 88
+2026-06-27 10:55:25.618 [traducao] =================== PROCESSAMENTO FINALIZADO ===================

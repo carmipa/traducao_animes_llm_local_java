@@ -95,7 +95,7 @@ public class ApiController {
     public record ExtracaoRequest(String entrada, String formato) {}
     public record RespostaPadrao(String mensagem) {}
     public record MapaResponse(String conteudo) {}
-    public record ContextoResponse(String id, String nome) {}
+    public record ContextoResponse(String id, String nome, boolean padrao) {}
 
     /**
      * Endpoint do stream SSE para envio de logs ao console do navegador
@@ -118,8 +118,9 @@ public class ApiController {
      */
     @GetMapping("/contextos")
     public ResponseEntity<List<ContextoResponse>> listarContextos() {
+        String idPadrao = gerenciadorContexto.getIdContextoPadrao();
         List<ContextoResponse> lista = gerenciadorContexto.getProvedores().stream()
-                .map(p -> new ContextoResponse(p.getId(), p.getNomeExibicao()))
+                .map(p -> new ContextoResponse(p.getId(), p.getNomeExibicao(), p.getId().equals(idPadrao)))
                 .toList();
         return ResponseEntity.ok(lista);
     }
@@ -216,6 +217,10 @@ public class ApiController {
     public ResponseEntity<RespostaPadrao> traduzir(@RequestBody OperacaoRequest req) {
         if (req.entrada() == null || req.entrada().isBlank()) {
             return ResponseEntity.badRequest().body(new RespostaPadrao("Pasta de legendas de entrada obrigatória."));
+        }
+        if (req.contextoId() != null && !req.contextoId().isBlank() && !gerenciadorContexto.existeContexto(req.contextoId())) {
+            return ResponseEntity.badRequest().body(new RespostaPadrao(
+                    "Contexto de tradução desconhecido: \"" + req.contextoId() + "\". Recarregue a página e selecione um contexto válido."));
         }
 
         executor.submit(() -> {
