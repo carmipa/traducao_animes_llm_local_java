@@ -18,6 +18,7 @@ import org.traducao.projeto.traducao.domain.StatusLlm;
 import org.traducao.projeto.traducao.domain.exceptions.TradutorException;
 import org.traducao.projeto.traducao.domain.ports.MistralPort;
 import org.traducao.projeto.traducao.infrastructure.config.TradutorProperties;
+import org.traducao.projeto.traducao.infrastructure.contexto.GerenciadorContexto;
 import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
 import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
 
@@ -58,6 +59,7 @@ public class ApiController {
     private final TradutorProperties propriedades;
     private final PastasExecucao pastasExecucao;
     private final MistralPort mistralPort;
+    private final GerenciadorContexto gerenciadorContexto;
 
     public ApiController(
             AnalisarMidiaUseCase analisarMidiaUseCase,
@@ -71,7 +73,8 @@ public class ApiController {
             LogStreamService logStreamService,
             TradutorProperties propriedades,
             PastasExecucao pastasExecucao,
-            MistralPort mistralPort) {
+            MistralPort mistralPort,
+            GerenciadorContexto gerenciadorContexto) {
         this.analisarMidiaUseCase = analisarMidiaUseCase;
         this.extrairLegendaUseCase = extrairLegendaUseCase;
         this.processarArquivoUseCase = processarArquivoUseCase;
@@ -84,13 +87,15 @@ public class ApiController {
         this.propriedades = propriedades;
         this.pastasExecucao = pastasExecucao;
         this.mistralPort = mistralPort;
+        this.gerenciadorContexto = gerenciadorContexto;
     }
 
     // DTOs
-    public record OperacaoRequest(String entrada, String saida) {}
+    public record OperacaoRequest(String entrada, String saida, String contextoId) {}
     public record ExtracaoRequest(String entrada, String formato) {}
     public record RespostaPadrao(String mensagem) {}
     public record MapaResponse(String conteudo) {}
+    public record ContextoResponse(String id, String nome) {}
 
     /**
      * Endpoint do stream SSE para envio de logs ao console do navegador
@@ -106,6 +111,17 @@ public class ApiController {
     @GetMapping("/status")
     public ResponseEntity<RespostaPadrao> status() {
         return ResponseEntity.ok(new RespostaPadrao("online"));
+    }
+
+    /**
+     * Lista os contextos de tradução disponíveis (animes).
+     */
+    @GetMapping("/contextos")
+    public ResponseEntity<List<ContextoResponse>> listarContextos() {
+        List<ContextoResponse> lista = gerenciadorContexto.getProvedores().stream()
+                .map(p -> new ContextoResponse(p.getId(), p.getNomeExibicao()))
+                .toList();
+        return ResponseEntity.ok(lista);
     }
 
     /**
@@ -223,6 +239,10 @@ public class ApiController {
                 // Configura as pastas compartilhadas
                 String saida = req.saida() != null && !req.saida().isBlank() ? req.saida() : "";
                 pastasExecucao.configurar(req.entrada(), saida, propriedades.diretorioCache(), propriedades);
+
+                // Define o contexto de tradução selecionado na UI
+                gerenciadorContexto.definirContextoAtivo(req.contextoId());
+                System.out.println("\u001B[34m[CONTEXTO] Utilizando contexto: " + gerenciadorContexto.obterNomeContextoAtivo() + "\u001B[0m");
 
                 List<Path> arquivos;
                 try (Stream<Path> stream = Files.list(pathEntrada)) {

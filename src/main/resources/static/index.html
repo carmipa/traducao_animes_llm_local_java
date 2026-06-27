@@ -312,6 +312,11 @@
                             <div class="form-group">
                                 <label for="traducao-saida">Pasta de SAÍDA para as legendas em Português: <span class="help-icon" data-tooltip="Pasta de destino onde as legendas traduzidas serão salvas. Por padrão, cria a pasta legendas_ptbr.">?</span></label>
                                 <input type="text" id="traducao-saida" placeholder="Deixe vazio para gerar automaticamente uma pasta de saída">
+
+                                <label for="traducao-contexto">Contexto de Tradução (Lore): <span class="help-icon" data-tooltip="Define qual pacote de regras de lore será usado pela LLM.">?</span></label>
+                                <select id="traducao-contexto">
+                                    <option value="" disabled selected>Carregando contextos...</option>
+                                </select>
                             </div>
                             <button type="submit" class="btn btn-primary btn-green" data-tooltip="Iniciar tradução em lote pelo servidor local do LM Studio">
                                 <span>Iniciar Tradução</span>
@@ -503,14 +508,25 @@
                 <div class="footer-creator-line">
                     <span class="sparkle-effect">✦</span> Desenvolvido por <strong class="creator-name">Paulo André Carminati</strong>
                 </div>
-                <div class="footer-shields">
-                    <a href="https://github.com/carmipa/traducao_animes_llm_local_java" target="_blank" class="shield-link" data-tooltip="Repositório no GitHub">
+                <div class="footer-links">
+                    <a href="https://github.com/carmipa/traducao_animes_llm_local_java" target="_blank">
                         <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Repo">
                     </a>
-                    <img src="https://img.shields.io/badge/Gemini-Google_AI-8E75C2?style=flat-square&logo=googlegemini&logoColor=white" alt="Google Gemini" data-tooltip="Desenvolvido com auxílio do Gemini">
-                    <img src="https://img.shields.io/badge/Cursor-IDE-000000?style=flat-square&logo=cursor&logoColor=white" alt="Cursor IDE" data-tooltip="Programado no Cursor IDE">
-                    <img src="https://img.shields.io/badge/Claude-Anthropic-D97706?style=flat-square&logo=claude&logoColor=white" alt="Anthropic Claude" data-tooltip="Otimizado por Claude">
-                    <img src="https://img.shields.io/badge/GPT-OpenAI-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI GPT" data-tooltip="Refinado com GPT">
+                    <a href="https://antigravity.google/product/antigravity-ide" target="_blank">
+                        <img src="https://img.shields.io/badge/Antigravity-IDE-34A853?style=flat-square&logo=google&logoColor=white" alt="Antigravity IDE" data-tooltip="Construído com Antigravity IDE">
+                    </a>
+                    <a href="https://gemini.google.com" target="_blank">
+                        <img src="https://img.shields.io/badge/Gemini-Google_AI-8E75C2?style=flat-square&logo=googlegemini&logoColor=white" alt="Google Gemini" data-tooltip="Desenvolvido com auxílio do Gemini">
+                    </a>
+                    <a href="https://www.cursor.com" target="_blank">
+                        <img src="https://img.shields.io/badge/Cursor-IDE-000000?style=flat-square&logo=cursor&logoColor=white" alt="Cursor IDE" data-tooltip="Programado no Cursor IDE">
+                    </a>
+                    <a href="https://claude.ai" target="_blank">
+                        <img src="https://img.shields.io/badge/Claude-Anthropic-D97706?style=flat-square&logo=claude&logoColor=white" alt="Anthropic Claude" data-tooltip="Otimizado por Claude">
+                    </a>
+                    <a href="https://openai.com" target="_blank">
+                        <img src="https://img.shields.io/badge/GPT-OpenAI-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI GPT" data-tooltip="Refinado com GPT">
+                    </a>
                 </div>
                 <div class="footer-meta">
                     <span class="meta-badge">v2.5.0</span>

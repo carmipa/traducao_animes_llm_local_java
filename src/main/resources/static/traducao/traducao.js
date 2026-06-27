@@ -2,6 +2,8 @@ import { logNoConsole } from '../js/app.js';
 
 export function initTraducao() {
     const form = document.getElementById('form-traducao');
+    carregarContextos();
+
     if (!form) return;
 
     form.addEventListener('submit', async (e) => {
@@ -9,16 +11,23 @@ export function initTraducao() {
         
         const entrada = document.getElementById('traducao-entrada').value.trim();
         const saida = document.getElementById('traducao-saida').value.trim();
-        
+        const contextoSelect = document.getElementById('traducao-contexto');
+        const contextoId = contextoSelect ? contextoSelect.value : null;
+
         logNoConsole('console-traducao', 'Iniciando pipeline de tradução local via LLM...', 'info');
         logNoConsole('console-traducao', `Pasta Original: ${entrada}`, 'info');
         if (saida) logNoConsole('console-traducao', `Pasta de Saída: ${saida}`, 'info');
+        if (contextoId) logNoConsole('console-traducao', `Contexto Ativo: ${contextoId}`, 'info');
 
         try {
+            const reqBody = { entrada: entrada };
+            if (saida) reqBody.saida = saida;
+            if (contextoId) reqBody.contextoId = contextoId;
+
             const res = await fetch('/api/traduzir', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ entrada, saida })
+                body: JSON.stringify(reqBody)
             });
 
             if (!res.ok) {
@@ -38,6 +47,28 @@ export function initTraducao() {
             logNoConsole('console-traducao', `Erro ao iniciar tradução: ${err.message}`, 'erro');
         }
     });
+}
+
+async function carregarContextos() {
+    const select = document.getElementById('traducao-contexto');
+    if (!select) return;
+
+    try {
+        const response = await fetch('/api/contextos');
+        if (response.ok) {
+            const contextos = await response.json();
+            select.innerHTML = '';
+            contextos.forEach(ctx => {
+                const opt = document.createElement('option');
+                opt.value = ctx.id;
+                opt.textContent = ctx.nome;
+                select.appendChild(opt);
+            });
+        }
+    } catch (err) {
+        console.error('Erro ao carregar contextos:', err);
+        select.innerHTML = '<option value="">Erro ao carregar</option>';
+    }
 }
 
 function iniciarAcompanhamentoTraducao() {

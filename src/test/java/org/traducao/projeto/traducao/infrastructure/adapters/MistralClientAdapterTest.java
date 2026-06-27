@@ -7,6 +7,7 @@ import org.springframework.web.client.RestClient;
 import org.traducao.projeto.traducao.domain.Lote;
 import org.traducao.projeto.traducao.domain.TraducaoLote;
 import org.traducao.projeto.traducao.infrastructure.config.LlmProperties;
+import org.traducao.projeto.traducao.infrastructure.contexto.GerenciadorContexto;
 
 import java.time.Duration;
 import java.util.List;
@@ -22,11 +23,15 @@ class MistralClientAdapterTest {
         return new LlmProperties(baseUrl, "mistral-nemo", 0.3, 2000, Duration.ofSeconds(2), Duration.ofSeconds(2));
     }
 
+    private MistralClientAdapter criarAdapter(RestClient.Builder builder, LlmProperties propriedades) {
+        return new MistralClientAdapter(builder, propriedades, new GerenciadorContexto(List.of()));
+    }
+
     @Test
     void traduzComSucessoQuandoLlmRespondeBem() {
         RestClient.Builder builder = RestClient.builder();
         MockRestServiceServer server = MockRestServiceServer.bindTo(builder).build();
-        MistralClientAdapter adapter = new MistralClientAdapter(builder, propriedades("http://localhost"));
+        MistralClientAdapter adapter = criarAdapter(builder, propriedades("http://localhost"));
 
         String corpoResposta = """
             {"choices":[{"message":{"role":"assistant","content":"Olá!\\nAdeus."}}]}
@@ -44,7 +49,7 @@ class MistralClientAdapterTest {
     void normalizaRespostaComCrLfLinhasVaziasExternasECercaMarkdown() {
         RestClient.Builder builder = RestClient.builder();
         MockRestServiceServer server = MockRestServiceServer.bindTo(builder).build();
-        MistralClientAdapter adapter = new MistralClientAdapter(builder, propriedades("http://localhost"));
+        MistralClientAdapter adapter = criarAdapter(builder, propriedades("http://localhost"));
 
         String corpoResposta = """
             {"choices":[{"message":{"role":"assistant","content":"```\\r\\n\\r\\nOlá!\\r\\nAdeus.\\r\\n\\r\\n```"}}]}
@@ -62,7 +67,7 @@ class MistralClientAdapterTest {
     void retornaFalhaQuandoChoiceNaoTemMensagem() {
         RestClient.Builder builder = RestClient.builder();
         MockRestServiceServer server = MockRestServiceServer.bindTo(builder).build();
-        MistralClientAdapter adapter = new MistralClientAdapter(builder, propriedades("http://localhost"));
+        MistralClientAdapter adapter = criarAdapter(builder, propriedades("http://localhost"));
 
         server.expect(requestTo("http://localhost/chat/completions"))
             .andRespond(withSuccess("{\"choices\":[{}]}", MediaType.APPLICATION_JSON));
@@ -77,7 +82,7 @@ class MistralClientAdapterTest {
     void retornaFalhaQuandoServidorRespondeErroHttp() {
         RestClient.Builder builder = RestClient.builder();
         MockRestServiceServer server = MockRestServiceServer.bindTo(builder).build();
-        MistralClientAdapter adapter = new MistralClientAdapter(builder, propriedades("http://localhost"));
+        MistralClientAdapter adapter = criarAdapter(builder, propriedades("http://localhost"));
 
         for (int i = 0; i < 3; i++) {
             server.expect(requestTo("http://localhost/chat/completions")).andRespond(withServerError());
@@ -93,7 +98,7 @@ class MistralClientAdapterTest {
     void retornaFalhaQuandoRespostaNaoTemChoices() {
         RestClient.Builder builder = RestClient.builder();
         MockRestServiceServer server = MockRestServiceServer.bindTo(builder).build();
-        MistralClientAdapter adapter = new MistralClientAdapter(builder, propriedades("http://localhost"));
+        MistralClientAdapter adapter = criarAdapter(builder, propriedades("http://localhost"));
 
         server.expect(requestTo("http://localhost/chat/completions"))
             .andRespond(withSuccess("{\"choices\":[]}", MediaType.APPLICATION_JSON));
@@ -108,7 +113,7 @@ class MistralClientAdapterTest {
     void falhaDeConexaoRetornaTraducaoLoteComFalhaEmVezDeLancar() {
         RestClient.Builder builder = RestClient.builder();
         LlmProperties propriedadesInalcancaveis = propriedades("http://127.0.0.1:1");
-        MistralClientAdapter adapter = new MistralClientAdapter(builder, propriedadesInalcancaveis);
+        MistralClientAdapter adapter = criarAdapter(builder, propriedadesInalcancaveis);
 
         TraducaoLote resultado = adapter.traduzir(new Lote(1, List.of("Hello!")));
 

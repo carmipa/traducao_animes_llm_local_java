@@ -13,6 +13,7 @@ import org.traducao.projeto.traducao.domain.TraducaoLote;
 import org.traducao.projeto.traducao.domain.exceptions.RespostaLlmVaziaException;
 import org.traducao.projeto.traducao.domain.ports.MistralPort;
 import org.traducao.projeto.traducao.infrastructure.config.LlmProperties;
+import org.traducao.projeto.traducao.infrastructure.contexto.GerenciadorContexto;
 import org.traducao.projeto.traducao.infrastructure.dtos.RecordsMistral.*;
 
 import java.util.ArrayList;
@@ -27,20 +28,13 @@ public class MistralClientAdapter implements MistralPort {
     private static final int MAX_TENTATIVAS = 3;
     private static final long PAUSA_ENTRE_TENTATIVAS_MS = 2_000;
 
-    private static final String PROMPT_SISTEMA = """
-        Voce e um tradutor especializado em animes, especificamente da serie DanMachi (ingles para portugues do Brasil).
-        Mantenha a terminologia de DanMachi (como Familia, Dungeon, Orario, Bell Cranel, Hestia).
-        Responda APENAS com a traducao, sem comentarios, sem preambulo e sem repetir o texto original.
-        Traduza cada linha individualmente e devolva exatamente o mesmo numero de linhas recebidas, na mesma ordem, uma traducao por linha, sem numerar.
-        Marcadores no formato [[TAG0]], [[TAG1]] etc. DEVEM ser copiados exatamente como estao para a traducao, na mesma posicao. NAO remova e nao traduza esses marcadores!
-        Exemplo: "Hello [[TAG0]]world!" -> "Ola [[TAG0]]mundo!".
-        """;
-
     private final RestClient restClient;
     private final LlmProperties propriedades;
+    private final GerenciadorContexto gerenciadorContexto;
 
-    public MistralClientAdapter(RestClient.Builder builder, LlmProperties propriedades) {
+    public MistralClientAdapter(RestClient.Builder builder, LlmProperties propriedades, GerenciadorContexto gerenciadorContexto) {
         this.propriedades = propriedades;
+        this.gerenciadorContexto = gerenciadorContexto;
         // Os timeouts de conexao/leitura sao aplicados no builder pelo
         // RestClientCustomizer (ver RestClientConfig), nao aqui: assim este
         // adapter so faz baseUrl+build, o que mantem o builder mockavel em
@@ -94,7 +88,7 @@ public class MistralClientAdapter implements MistralPort {
         ChatRequest request = new ChatRequest(
             propriedades.model(),
             List.of(
-                new Mensagem("system", PROMPT_SISTEMA),
+                new Mensagem("system", gerenciadorContexto.obterPromptAtivo()),
                 new Mensagem("user", prompt)
             ),
             propriedades.temperature(),

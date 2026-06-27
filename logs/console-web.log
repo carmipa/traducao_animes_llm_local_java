@@ -2805,3 +2805,1047 @@
 2026-06-26 17:50:30.337 [console] 17:50:30 INFO  [tomcat-handler-83] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
 2026-06-26 17:51:00.346 [console] 17:51:00 INFO  [tomcat-handler-90] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
 2026-06-26 17:51:00.347 [console] 17:51:00 INFO  [tomcat-handler-90] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-26 17:51:23.335 [console] 17:51:23 INFO  [tomcat-handler-96] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-26 17:51:23.337 [console] 17:51:23 INFO  [tomcat-handler-96] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-26 17:52:06.340 [console] 17:52:06 INFO  [tomcat-handler-105] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-26 17:52:06.342 [console] 17:52:06 INFO  [tomcat-handler-105] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-26 17:52:11.237 [console] 17:52:11 INFO  [tomcat-handler-114] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-26 17:52:11.240 [console] 17:52:11 INFO  [tomcat-handler-114] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-26 17:52:11.247 [console] 17:52:11 ERROR [tomcat-handler-115] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] threw exception
+2026-06-26 17:52:11.248 [console] java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+2026-06-26 17:52:11.249 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+2026-06-26 17:52:11.250 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+2026-06-26 17:52:11.251 [console] 	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+2026-06-26 17:52:11.252 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+2026-06-26 17:52:11.253 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+2026-06-26 17:52:11.254 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+2026-06-26 17:52:11.255 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+2026-06-26 17:52:11.255 [console] 	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.257 [console] 	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.259 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.260 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.261 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.262 [console] 	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.263 [console] 	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.264 [console] 	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.265 [console] 	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.268 [console] 	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.269 [console] 	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.270 [console] 	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.271 [console] 	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.272 [console] 	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.273 [console] 	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.274 [console] 	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.274 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.275 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.276 [console] 	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.277 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.278 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.279 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.280 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.281 [console] 	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.282 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+2026-06-26 17:52:11.282 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+2026-06-26 17:52:11.283 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:34) ~[main/:na]
+2026-06-26 17:52:11.284 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:77) ~[main/:na]
+2026-06-26 17:52:11.285 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:67) ~[main/:na]
+2026-06-26 17:52:11.286 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+2026-06-26 17:52:11.287 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+2026-06-26 17:52:11.288 [console] 	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.289 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.291 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.292 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.293 [console] 	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.294 [console] 	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.295 [console] 	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.296 [console] 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.297 [console] 	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.298 [console] 	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.298 [console] 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.300 [console] 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.301 [console] 	at ch.qos.logback.classic.Logger.info(Logger.java:596) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.302 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.carregarBancoPersistido(TelemetriaService.java:183) ~[main/:na]
+2026-06-26 17:52:11.303 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.gerarResumo(TelemetriaService.java:126) ~[main/:na]
+2026-06-26 17:52:11.303 [console] 	at org.traducao.projeto.traducao.presentation.web.ApiController.obterTelemetria(ApiController.java:120) ~[main/:na]
+2026-06-26 17:52:11.306 [console] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+2026-06-26 17:52:11.306 [console] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+2026-06-26 17:52:11.307 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.308 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.310 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.311 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.311 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.312 [console] 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.313 [console] 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.314 [console] 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.315 [console] 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.316 [console] 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.317 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:11.317 [console] 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.318 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:11.319 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.321 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.321 [console] 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.322 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.323 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.324 [console] 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.325 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.325 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.327 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.328 [console] 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.329 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.329 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.330 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.331 [console] 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.332 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.333 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.333 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.334 [console] 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.335 [console] 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.335 [console] 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.337 [console] 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.338 [console] 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.339 [console] 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.340 [console] 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.341 [console] 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.342 [console] 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.342 [console] 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.343 [console] 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.344 [console] 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.345 [console] 	at java.base/java.lang.VirtualThread.run(VirtualThread.java:456) ~[na:na]
+2026-06-26 17:52:11.346 [console] 17:52:11 ERROR [tomcat-handler-115] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] threw exception
+2026-06-26 17:52:11.347 [console] java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+2026-06-26 17:52:11.348 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+2026-06-26 17:52:11.350 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+2026-06-26 17:52:11.351 [console] 	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+2026-06-26 17:52:11.353 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+2026-06-26 17:52:11.354 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+2026-06-26 17:52:11.355 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+2026-06-26 17:52:11.357 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+2026-06-26 17:52:11.358 [console] 	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.359 [console] 	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.360 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.361 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.363 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.364 [console] 	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.366 [console] 	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.367 [console] 	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.368 [console] 	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.370 [console] 	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.372 [console] 	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.374 [console] 	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.375 [console] 	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.377 [console] 	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.379 [console] 	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.381 [console] 	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.381 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.382 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.384 [console] 	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.385 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.387 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.388 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.390 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.392 [console] 	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.393 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+2026-06-26 17:52:11.395 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+2026-06-26 17:52:11.397 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:34) ~[main/:na]
+2026-06-26 17:52:11.399 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:77) ~[main/:na]
+2026-06-26 17:52:11.400 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:67) ~[main/:na]
+2026-06-26 17:52:11.402 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+2026-06-26 17:52:11.403 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+2026-06-26 17:52:11.404 [console] 	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.406 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.407 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.408 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.409 [console] 	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.410 [console] 	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.411 [console] 	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.413 [console] 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.415 [console] 	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.417 [console] 	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.418 [console] 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.420 [console] 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.421 [console] 	at ch.qos.logback.classic.Logger.info(Logger.java:596) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.422 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.carregarBancoPersistido(TelemetriaService.java:183) ~[main/:na]
+2026-06-26 17:52:11.424 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.gerarResumo(TelemetriaService.java:126) ~[main/:na]
+2026-06-26 17:52:11.425 [console] 	at org.traducao.projeto.traducao.presentation.web.ApiController.obterTelemetria(ApiController.java:120) ~[main/:na]
+2026-06-26 17:52:11.425 [console] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+2026-06-26 17:52:11.427 [console] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+2026-06-26 17:52:11.428 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.429 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.430 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.431 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.433 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.434 [console] 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.436 [console] 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.437 [console] 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.438 [console] 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.439 [console] 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.441 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:11.441 [console] 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.442 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:11.444 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.445 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.447 [console] 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.447 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.450 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.451 [console] 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.453 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.455 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.456 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.457 [console] 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.458 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.460 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.461 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.463 [console] 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.465 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.466 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.467 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.469 [console] 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.470 [console] 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.471 [console] 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.472 [console] 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.473 [console] 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.474 [console] 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.475 [console] 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.477 [console] 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.479 [console] 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.481 [console] 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.482 [console] 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.483 [console] 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.485 [console] 	at java.base/java.lang.VirtualThread.run(VirtualThread.java:456) ~[na:na]
+2026-06-26 17:52:11.487 [console] 17:52:11 ERROR [tomcat-handler-116] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] threw exception
+2026-06-26 17:52:11.487 [console] java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+2026-06-26 17:52:11.488 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+2026-06-26 17:52:11.488 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+2026-06-26 17:52:11.488 [console] 	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+2026-06-26 17:52:11.488 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+2026-06-26 17:52:11.488 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+2026-06-26 17:52:11.489 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+2026-06-26 17:52:11.489 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+2026-06-26 17:52:11.489 [console] 	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.489 [console] 	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.489 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.489 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.489 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.490 [console] 	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.491 [console] 	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.492 [console] 	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.493 [console] 	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.494 [console] 	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.495 [console] 	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.497 [console] 	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.498 [console] 	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.500 [console] 	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.501 [console] 	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.502 [console] 	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.503 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.504 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.505 [console] 	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.506 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.507 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.508 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.509 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.510 [console] 	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.511 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+2026-06-26 17:52:11.511 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+2026-06-26 17:52:11.513 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:34) ~[main/:na]
+2026-06-26 17:52:11.514 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:77) ~[main/:na]
+2026-06-26 17:52:11.515 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:67) ~[main/:na]
+2026-06-26 17:52:11.516 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+2026-06-26 17:52:11.517 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+2026-06-26 17:52:11.518 [console] 	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.519 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.520 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.521 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.522 [console] 	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.522 [console] 	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.523 [console] 	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.524 [console] 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.525 [console] 	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.526 [console] 	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.527 [console] 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.527 [console] 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.529 [console] 	at ch.qos.logback.classic.Logger.info(Logger.java:596) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.530 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.carregarBancoPersistido(TelemetriaService.java:183) ~[main/:na]
+2026-06-26 17:52:11.531 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.gerarResumo(TelemetriaService.java:126) ~[main/:na]
+2026-06-26 17:52:11.532 [console] 	at org.traducao.projeto.traducao.presentation.web.ApiController.obterTelemetria(ApiController.java:120) ~[main/:na]
+2026-06-26 17:52:11.533 [console] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+2026-06-26 17:52:11.534 [console] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+2026-06-26 17:52:11.534 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.536 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.537 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.538 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.539 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.540 [console] 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.541 [console] 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.542 [console] 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.543 [console] 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.545 [console] 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.546 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:11.547 [console] 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.548 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:11.548 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.549 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.550 [console] 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.551 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.552 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.553 [console] 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.553 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.554 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.555 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.556 [console] 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.557 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.558 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.559 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.561 [console] 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.562 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.563 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.564 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.565 [console] 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.566 [console] 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.567 [console] 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.568 [console] 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.569 [console] 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.569 [console] 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.570 [console] 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.571 [console] 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.572 [console] 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.573 [console] 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.574 [console] 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.575 [console] 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.575 [console] 	at java.base/java.lang.VirtualThread.run(VirtualThread.java:456) ~[na:na]
+2026-06-26 17:52:11.578 [console] 17:52:11 ERROR [tomcat-handler-116] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] threw exception
+2026-06-26 17:52:11.579 [console] java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+2026-06-26 17:52:11.580 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+2026-06-26 17:52:11.582 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+2026-06-26 17:52:11.583 [console] 	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+2026-06-26 17:52:11.584 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+2026-06-26 17:52:11.585 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+2026-06-26 17:52:11.586 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+2026-06-26 17:52:11.588 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+2026-06-26 17:52:11.590 [console] 	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.591 [console] 	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.594 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.595 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.597 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.598 [console] 	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.599 [console] 	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.600 [console] 	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.601 [console] 	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.603 [console] 	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.604 [console] 	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.605 [console] 	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.606 [console] 	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.607 [console] 	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.609 [console] 	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.611 [console] 	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.612 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.613 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.614 [console] 	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.616 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.617 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.618 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.620 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.622 [console] 	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.623 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+2026-06-26 17:52:11.626 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+2026-06-26 17:52:11.627 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:34) ~[main/:na]
+2026-06-26 17:52:11.628 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:77) ~[main/:na]
+2026-06-26 17:52:11.630 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:67) ~[main/:na]
+2026-06-26 17:52:11.632 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+2026-06-26 17:52:11.634 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+2026-06-26 17:52:11.635 [console] 	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.636 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.637 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.639 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.641 [console] 	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.642 [console] 	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.645 [console] 	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.646 [console] 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.647 [console] 	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.649 [console] 	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.650 [console] 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.652 [console] 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.654 [console] 	at ch.qos.logback.classic.Logger.info(Logger.java:596) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.657 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.carregarBancoPersistido(TelemetriaService.java:183) ~[main/:na]
+2026-06-26 17:52:11.658 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.gerarResumo(TelemetriaService.java:126) ~[main/:na]
+2026-06-26 17:52:11.660 [console] 	at org.traducao.projeto.traducao.presentation.web.ApiController.obterTelemetria(ApiController.java:120) ~[main/:na]
+2026-06-26 17:52:11.662 [console] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+2026-06-26 17:52:11.663 [console] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+2026-06-26 17:52:11.664 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.665 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.666 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.668 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.669 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.670 [console] 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.671 [console] 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.673 [console] 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.675 [console] 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.676 [console] 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.677 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:11.679 [console] 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.680 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:11.681 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.682 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.684 [console] 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.686 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.687 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.690 [console] 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.691 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.693 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.694 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.696 [console] 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.697 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.698 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.700 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.702 [console] 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.703 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.705 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.707 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.708 [console] 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.709 [console] 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.711 [console] 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.712 [console] 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.713 [console] 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.714 [console] 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.715 [console] 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.717 [console] 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.718 [console] 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.719 [console] 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.721 [console] 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.722 [console] 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.724 [console] 	at java.base/java.lang.VirtualThread.run(VirtualThread.java:456) ~[na:na]
+2026-06-26 17:52:11.726 [console] 17:52:11 ERROR [tomcat-handler-115] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2026-06-26 17:52:11.726 [console] java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+2026-06-26 17:52:11.726 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+2026-06-26 17:52:11.727 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+2026-06-26 17:52:11.727 [console] 	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+2026-06-26 17:52:11.727 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+2026-06-26 17:52:11.727 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+2026-06-26 17:52:11.727 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+2026-06-26 17:52:11.728 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+2026-06-26 17:52:11.729 [console] 	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.729 [console] 	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.730 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.732 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.733 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.734 [console] 	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.735 [console] 	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.735 [console] 	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.737 [console] 	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.738 [console] 	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.739 [console] 	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.740 [console] 	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.741 [console] 	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.742 [console] 	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.743 [console] 	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.744 [console] 	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.745 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.746 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.747 [console] 	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.748 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.750 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.751 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.751 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.753 [console] 	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.754 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+2026-06-26 17:52:11.755 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+2026-06-26 17:52:11.756 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:34) ~[main/:na]
+2026-06-26 17:52:11.757 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:77) ~[main/:na]
+2026-06-26 17:52:11.758 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:67) ~[main/:na]
+2026-06-26 17:52:11.759 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+2026-06-26 17:52:11.760 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+2026-06-26 17:52:11.761 [console] 	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.762 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.762 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.764 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.764 [console] 	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.765 [console] 	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.767 [console] 	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.769 [console] 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.770 [console] 	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.771 [console] 	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.772 [console] 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.773 [console] 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.774 [console] 	at ch.qos.logback.classic.Logger.info(Logger.java:596) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.775 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.carregarBancoPersistido(TelemetriaService.java:183) ~[main/:na]
+2026-06-26 17:52:11.776 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.gerarResumo(TelemetriaService.java:126) ~[main/:na]
+2026-06-26 17:52:11.777 [console] 	at org.traducao.projeto.traducao.presentation.web.ApiController.obterTelemetria(ApiController.java:120) ~[main/:na]
+2026-06-26 17:52:11.778 [console] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+2026-06-26 17:52:11.779 [console] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+2026-06-26 17:52:11.780 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.781 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.783 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.783 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.786 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.787 [console] 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.788 [console] 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.789 [console] 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.790 [console] 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.792 [console] 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.793 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:11.794 [console] 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.795 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:11.796 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.797 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.798 [console] 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.799 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.799 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.801 [console] 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.802 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.802 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.804 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.805 [console] 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.806 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.807 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.808 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.809 [console] 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.809 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.811 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.812 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.813 [console] 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.814 [console] 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.815 [console] 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.817 [console] 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.818 [console] 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.818 [console] 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.819 [console] 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.820 [console] 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.820 [console] 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.821 [console] 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.822 [console] 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.823 [console] 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.824 [console] 	at java.base/java.lang.VirtualThread.run(VirtualThread.java:456) ~[na:na]
+2026-06-26 17:52:11.825 [console] 17:52:11 ERROR [tomcat-handler-115] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2026-06-26 17:52:11.827 [console] java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+2026-06-26 17:52:11.828 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+2026-06-26 17:52:11.829 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+2026-06-26 17:52:11.831 [console] 	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+2026-06-26 17:52:11.832 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+2026-06-26 17:52:11.833 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+2026-06-26 17:52:11.835 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+2026-06-26 17:52:11.836 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+2026-06-26 17:52:11.837 [console] 	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.840 [console] 	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.841 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.842 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.844 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.845 [console] 	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.846 [console] 	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.847 [console] 	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.849 [console] 	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.850 [console] 	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.851 [console] 	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.853 [console] 	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.854 [console] 	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.855 [console] 	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.856 [console] 	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.857 [console] 	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.858 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.860 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.861 [console] 	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.862 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.863 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.865 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.867 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.868 [console] 	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.869 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+2026-06-26 17:52:11.870 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+2026-06-26 17:52:11.872 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:34) ~[main/:na]
+2026-06-26 17:52:11.873 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:77) ~[main/:na]
+2026-06-26 17:52:11.874 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:67) ~[main/:na]
+2026-06-26 17:52:11.875 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+2026-06-26 17:52:11.876 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+2026-06-26 17:52:11.877 [console] 	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.879 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.879 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.882 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.883 [console] 	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.884 [console] 	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.885 [console] 	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.886 [console] 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.888 [console] 	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.889 [console] 	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.890 [console] 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.891 [console] 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.892 [console] 	at ch.qos.logback.classic.Logger.info(Logger.java:596) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:11.893 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.carregarBancoPersistido(TelemetriaService.java:183) ~[main/:na]
+2026-06-26 17:52:11.894 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.gerarResumo(TelemetriaService.java:126) ~[main/:na]
+2026-06-26 17:52:11.895 [console] 	at org.traducao.projeto.traducao.presentation.web.ApiController.obterTelemetria(ApiController.java:120) ~[main/:na]
+2026-06-26 17:52:11.897 [console] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+2026-06-26 17:52:11.899 [console] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+2026-06-26 17:52:11.900 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.901 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.903 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.905 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.906 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.908 [console] 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.910 [console] 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.911 [console] 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.914 [console] 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.915 [console] 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.916 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:11.918 [console] 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.919 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:11.921 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.921 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.923 [console] 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.924 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.926 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.927 [console] 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.929 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.930 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.932 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.933 [console] 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.935 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.936 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.937 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.939 [console] 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.941 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.942 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.945 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.946 [console] 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.947 [console] 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.955 [console] 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.957 [console] 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.959 [console] 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.962 [console] 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.963 [console] 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.965 [console] 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.967 [console] 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.968 [console] 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.969 [console] 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.971 [console] 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.972 [console] 	at java.base/java.lang.VirtualThread.run(VirtualThread.java:456) ~[na:na]
+2026-06-26 17:52:11.974 [console] 17:52:11 ERROR [tomcat-handler-116] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2026-06-26 17:52:11.974 [console] java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+2026-06-26 17:52:11.974 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+2026-06-26 17:52:11.975 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+2026-06-26 17:52:11.975 [console] 	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+2026-06-26 17:52:11.975 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+2026-06-26 17:52:11.975 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+2026-06-26 17:52:11.975 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+2026-06-26 17:52:11.975 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+2026-06-26 17:52:11.975 [console] 	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.975 [console] 	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.976 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.976 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.976 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.976 [console] 	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.978 [console] 	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.979 [console] 	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.980 [console] 	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.981 [console] 	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.982 [console] 	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.984 [console] 	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.985 [console] 	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.985 [console] 	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:11.986 [console] 	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.987 [console] 	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.988 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.989 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.990 [console] 	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.991 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.991 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.992 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.994 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.995 [console] 	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:11.995 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+2026-06-26 17:52:11.996 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+2026-06-26 17:52:11.997 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:34) ~[main/:na]
+2026-06-26 17:52:11.998 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:77) ~[main/:na]
+2026-06-26 17:52:11.999 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:67) ~[main/:na]
+2026-06-26 17:52:11.999 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+2026-06-26 17:52:12.001 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+2026-06-26 17:52:12.001 [console] 	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.002 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.003 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.004 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.005 [console] 	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.007 [console] 	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.007 [console] 	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.009 [console] 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.011 [console] 	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.012 [console] 	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.012 [console] 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.013 [console] 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.014 [console] 	at ch.qos.logback.classic.Logger.info(Logger.java:596) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.015 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.carregarBancoPersistido(TelemetriaService.java:183) ~[main/:na]
+2026-06-26 17:52:12.016 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.gerarResumo(TelemetriaService.java:126) ~[main/:na]
+2026-06-26 17:52:12.017 [console] 	at org.traducao.projeto.traducao.presentation.web.ApiController.obterTelemetria(ApiController.java:120) ~[main/:na]
+2026-06-26 17:52:12.017 [console] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+2026-06-26 17:52:12.017 [console] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+2026-06-26 17:52:12.019 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.020 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.021 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.022 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.023 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.024 [console] 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.024 [console] 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.026 [console] 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.027 [console] 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.028 [console] 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.029 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:12.030 [console] 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.031 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:12.032 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.033 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.034 [console] 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.035 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.036 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.037 [console] 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.038 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.039 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.039 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.041 [console] 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.042 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.043 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.044 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.045 [console] 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.046 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.047 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.048 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.049 [console] 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.050 [console] 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.052 [console] 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.053 [console] 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.054 [console] 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.055 [console] 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.055 [console] 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.057 [console] 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.058 [console] 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.058 [console] 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.060 [console] 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.060 [console] 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.061 [console] 	at java.base/java.lang.VirtualThread.run(VirtualThread.java:456) ~[na:na]
+2026-06-26 17:52:12.063 [console] 17:52:11 ERROR [tomcat-handler-116] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2026-06-26 17:52:12.067 [console] java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+2026-06-26 17:52:12.069 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+2026-06-26 17:52:12.070 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+2026-06-26 17:52:12.072 [console] 	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+2026-06-26 17:52:12.073 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+2026-06-26 17:52:12.074 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+2026-06-26 17:52:12.076 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+2026-06-26 17:52:12.078 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+2026-06-26 17:52:12.079 [console] 	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.080 [console] 	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.081 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.083 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.084 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.085 [console] 	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.087 [console] 	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.088 [console] 	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.089 [console] 	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.090 [console] 	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.092 [console] 	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.093 [console] 	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.094 [console] 	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.095 [console] 	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.097 [console] 	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.098 [console] 	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.100 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.102 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.103 [console] 	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.105 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.107 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.108 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.109 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.110 [console] 	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.111 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+2026-06-26 17:52:12.113 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+2026-06-26 17:52:12.113 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:34) ~[main/:na]
+2026-06-26 17:52:12.115 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:77) ~[main/:na]
+2026-06-26 17:52:12.116 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:67) ~[main/:na]
+2026-06-26 17:52:12.117 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+2026-06-26 17:52:12.119 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+2026-06-26 17:52:12.121 [console] 	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.122 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.123 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.125 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.126 [console] 	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.127 [console] 	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.127 [console] 	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.128 [console] 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.128 [console] 	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.129 [console] 	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.129 [console] 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.130 [console] 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.131 [console] 	at ch.qos.logback.classic.Logger.info(Logger.java:596) ~[logback-classic-1.5.8.jar:1.5.8]
+2026-06-26 17:52:12.133 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.carregarBancoPersistido(TelemetriaService.java:183) ~[main/:na]
+2026-06-26 17:52:12.134 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.gerarResumo(TelemetriaService.java:126) ~[main/:na]
+2026-06-26 17:52:12.135 [console] 	at org.traducao.projeto.traducao.presentation.web.ApiController.obterTelemetria(ApiController.java:120) ~[main/:na]
+2026-06-26 17:52:12.138 [console] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+2026-06-26 17:52:12.139 [console] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+2026-06-26 17:52:12.140 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.142 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.143 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.144 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.145 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.147 [console] 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.148 [console] 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.151 [console] 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.152 [console] 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.153 [console] 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.155 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:12.156 [console] 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.158 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+2026-06-26 17:52:12.159 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.160 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.162 [console] 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.163 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.164 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.165 [console] 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.167 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.167 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.169 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.171 [console] 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.172 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.173 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.174 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.176 [console] 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.177 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+2026-06-26 17:52:12.177 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.179 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.180 [console] 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.181 [console] 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.182 [console] 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.183 [console] 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.186 [console] 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.187 [console] 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.188 [console] 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.189 [console] 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.191 [console] 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.192 [console] 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.193 [console] 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.194 [console] 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+2026-06-26 17:52:12.196 [console] 	at java.base/java.lang.VirtualThread.run(VirtualThread.java:456) ~[na:na]
+2026-06-27 08:51:00.465 [console] 08:51:00 INFO  [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-27 08:51:00.541 [console] 08:51:00 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-27 08:51:00.551 [console] 08:51:00 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-27 08:51:00.556 [console] 08:51:00 INFO  [restartedMain] o.t.p.t.Application - Started Application in 1.013 seconds (process running for 1.193)
+2026-06-27 08:51:00.557 [console] ==============================================================
+2026-06-27 08:51:00.558 [console]    SERVIDOR WEB INICIADO COM SUCESSO!
+2026-06-27 08:51:00.558 [console]    Acesse a interface visual em: http://localhost:8080
+2026-06-27 08:51:00.558 [console] ==============================================================
+2026-06-27 08:51:00.587 [console] 08:51:00 INFO  [restartedMain] o.t.p.t.p.w.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-27 08:51:01.492 [console] 08:51:01 INFO  [tomcat-handler-0] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-27 08:51:01.493 [console] 08:51:01 INFO  [tomcat-handler-0] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-27 08:51:01.494 [console] 08:51:01 INFO  [tomcat-handler-0] o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2026-06-27 08:51:01.703 [console] 08:51:01 INFO  [tomcat-handler-14] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-27 08:54:22.909 [console] 08:54:22 INFO  [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-27 08:54:22.988 [console] 08:54:22 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-27 08:54:22.997 [console] 08:54:22 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-27 08:54:23.001 [console] 08:54:23 INFO  [restartedMain] o.t.p.t.Application - Started Application in 0.919 seconds (process running for 1.093)
+2026-06-27 08:54:23.002 [console] ==============================================================
+2026-06-27 08:54:23.003 [console]    SERVIDOR WEB INICIADO COM SUCESSO!
+2026-06-27 08:54:23.003 [console]    Acesse a interface visual em: http://localhost:8080
+2026-06-27 08:54:23.003 [console] ==============================================================
+2026-06-27 08:54:23.032 [console] 08:54:23 INFO  [restartedMain] o.t.p.t.p.w.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-27 08:54:23.951 [console] 08:54:23 INFO  [tomcat-handler-0] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-27 08:54:23.951 [console] 08:54:23 INFO  [tomcat-handler-0] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-27 08:54:23.952 [console] 08:54:23 INFO  [tomcat-handler-0] o.s.w.s.DispatcherServlet - Completed initialization in 0 ms
+2026-06-27 08:54:24.165 [console] 08:54:24 INFO  [tomcat-handler-14] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-27 08:54:34.346 [console] 08:54:34 INFO  [tomcat-handler-36] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.
+2026-06-27 08:54:34.358 [console] 08:54:34 ERROR [tomcat-handler-37] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] threw exception
+2026-06-27 08:54:34.359 [console] java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+2026-06-27 08:54:34.361 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+2026-06-27 08:54:34.361 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57)
+2026-06-27 08:54:34.362 [console] 	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+2026-06-27 08:54:34.362 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+2026-06-27 08:54:34.363 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58)
+2026-06-27 08:54:34.364 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562)
+2026-06-27 08:54:34.364 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614)
+2026-06-27 08:54:34.365 [console] 	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122)
+2026-06-27 08:54:34.365 [console] 	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378)
+2026-06-27 08:54:34.366 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764)
+2026-06-27 08:54:34.367 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728)
+2026-06-27 08:54:34.367 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712)
+2026-06-27 08:54:34.368 [console] 	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574)
+2026-06-27 08:54:34.369 [console] 	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156)
+2026-06-27 08:54:34.369 [console] 	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216)
+2026-06-27 08:54:34.370 [console] 	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252)
+2026-06-27 08:54:34.370 [console] 	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408)
+2026-06-27 08:54:34.371 [console] 	at org.apache.coyote.Response.action(Response.java:208)
+2026-06-27 08:54:34.371 [console] 	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299)
+2026-06-27 08:54:34.372 [console] 	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265)
+2026-06-27 08:54:34.372 [console] 	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136)
+2026-06-27 08:54:34.373 [console] 	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412)
+2026-06-27 08:54:34.373 [console] 	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135)
+2026-06-27 08:54:34.374 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128)
+2026-06-27 08:54:34.374 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44)
+2026-06-27 08:54:34.374 [console] 	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235)
+2026-06-27 08:54:34.375 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221)
+2026-06-27 08:54:34.375 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212)
+2026-06-27 08:54:34.376 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223)
+2026-06-27 08:54:34.377 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214)
+2026-06-27 08:54:34.378 [console] 	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135)
+2026-06-27 08:54:34.378 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71)
+2026-06-27 08:54:34.379 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65)
+2026-06-27 08:54:34.379 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:34)
+2026-06-27 08:54:34.379 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:77)
+2026-06-27 08:54:34.380 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:67)
+2026-06-27 08:54:34.380 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:539)
+2026-06-27 08:54:34.381 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:584)
+2026-06-27 08:54:34.381 [console] 	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39)
+2026-06-27 08:54:34.382 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225)
+2026-06-27 08:54:34.383 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208)
+2026-06-27 08:54:34.383 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197)
+2026-06-27 08:54:34.384 [console] 	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248)
+2026-06-27 08:54:34.384 [console] 	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111)
+2026-06-27 08:54:34.385 [console] 	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85)
+2026-06-27 08:54:34.385 [console] 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51)
+2026-06-27 08:54:34.386 [console] 	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272)
+2026-06-27 08:54:34.386 [console] 	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259)
+2026-06-27 08:54:34.387 [console] 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426)
+2026-06-27 08:54:34.388 [console] 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386)
+2026-06-27 08:54:34.389 [console] 	at ch.qos.logback.classic.Logger.info(Logger.java:596)
+2026-06-27 08:54:34.389 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.carregarBancoPersistido(TelemetriaService.java:183)
+2026-06-27 08:54:34.390 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.gerarResumo(TelemetriaService.java:126)
+2026-06-27 08:54:34.391 [console] 	at org.traducao.projeto.traducao.presentation.web.ApiController.obterTelemetria(ApiController.java:136)
+2026-06-27 08:54:34.391 [console] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+2026-06-27 08:54:34.392 [console] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+2026-06-27 08:54:34.392 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+2026-06-27 08:54:34.393 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-06-27 08:54:34.393 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+2026-06-27 08:54:34.394 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+2026-06-27 08:54:34.394 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+2026-06-27 08:54:34.395 [console] 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+2026-06-27 08:54:34.395 [console] 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+2026-06-27 08:54:34.396 [console] 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+2026-06-27 08:54:34.396 [console] 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+2026-06-27 08:54:34.397 [console] 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+2026-06-27 08:54:34.397 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+2026-06-27 08:54:34.397 [console] 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+2026-06-27 08:54:34.398 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+2026-06-27 08:54:34.398 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+2026-06-27 08:54:34.399 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+2026-06-27 08:54:34.400 [console] 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+2026-06-27 08:54:34.400 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+2026-06-27 08:54:34.401 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+2026-06-27 08:54:34.402 [console] 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+2026-06-27 08:54:34.403 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+2026-06-27 08:54:34.404 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+2026-06-27 08:54:34.404 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+2026-06-27 08:54:34.405 [console] 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+2026-06-27 08:54:34.405 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+2026-06-27 08:54:34.406 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+2026-06-27 08:54:34.406 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+2026-06-27 08:54:34.407 [console] 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+2026-06-27 08:54:34.407 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+2026-06-27 08:54:34.407 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+2026-06-27 08:54:34.409 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+2026-06-27 08:54:34.409 [console] 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+2026-06-27 08:54:34.410 [console] 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+2026-06-27 08:54:34.410 [console] 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+2026-06-27 08:54:34.410 [console] 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+2026-06-27 08:54:34.411 [console] 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+2026-06-27 08:54:34.411 [console] 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+2026-06-27 08:54:34.411 [console] 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+2026-06-27 08:54:34.411 [console] 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+2026-06-27 08:54:34.412 [console] 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+2026-06-27 08:54:34.412 [console] 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+2026-06-27 08:54:34.413 [console] 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+2026-06-27 08:54:34.413 [console] 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+2026-06-27 08:54:34.413 [console] 	at java.base/java.lang.VirtualThread.run(VirtualThread.java:456)
+2026-06-27 08:54:34.416 [console] 08:54:34 ERROR [tomcat-handler-37] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+2026-06-27 08:54:34.417 [console] java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+2026-06-27 08:54:34.418 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+2026-06-27 08:54:34.418 [console] 	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57)
+2026-06-27 08:54:34.419 [console] 	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+2026-06-27 08:54:34.419 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+2026-06-27 08:54:34.420 [console] 	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58)
+2026-06-27 08:54:34.420 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562)
+2026-06-27 08:54:34.420 [console] 	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614)
+2026-06-27 08:54:34.421 [console] 	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122)
+2026-06-27 08:54:34.421 [console] 	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378)
+2026-06-27 08:54:34.421 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764)
+2026-06-27 08:54:34.422 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728)
+2026-06-27 08:54:34.422 [console] 	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712)
+2026-06-27 08:54:34.423 [console] 	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574)
+2026-06-27 08:54:34.423 [console] 	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156)
+2026-06-27 08:54:34.423 [console] 	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216)
+2026-06-27 08:54:34.424 [console] 	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252)
+2026-06-27 08:54:34.424 [console] 	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408)
+2026-06-27 08:54:34.424 [console] 	at org.apache.coyote.Response.action(Response.java:208)
+2026-06-27 08:54:34.424 [console] 	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299)
+2026-06-27 08:54:34.424 [console] 	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265)
+2026-06-27 08:54:34.425 [console] 	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136)
+2026-06-27 08:54:34.425 [console] 	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412)
+2026-06-27 08:54:34.425 [console] 	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135)
+2026-06-27 08:54:34.426 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128)
+2026-06-27 08:54:34.426 [console] 	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44)
+2026-06-27 08:54:34.426 [console] 	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235)
+2026-06-27 08:54:34.426 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221)
+2026-06-27 08:54:34.427 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212)
+2026-06-27 08:54:34.427 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223)
+2026-06-27 08:54:34.428 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214)
+2026-06-27 08:54:34.428 [console] 	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135)
+2026-06-27 08:54:34.429 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71)
+2026-06-27 08:54:34.430 [console] 	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65)
+2026-06-27 08:54:34.430 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:34)
+2026-06-27 08:54:34.431 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:77)
+2026-06-27 08:54:34.431 [console] 	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:67)
+2026-06-27 08:54:34.431 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:539)
+2026-06-27 08:54:34.432 [console] 	at java.base/java.io.PrintStream.write(PrintStream.java:584)
+2026-06-27 08:54:34.432 [console] 	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39)
+2026-06-27 08:54:34.434 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225)
+2026-06-27 08:54:34.436 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208)
+2026-06-27 08:54:34.436 [console] 	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197)
+2026-06-27 08:54:34.436 [console] 	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248)
+2026-06-27 08:54:34.436 [console] 	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111)
+2026-06-27 08:54:34.438 [console] 	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85)
+2026-06-27 08:54:34.438 [console] 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51)
+2026-06-27 08:54:34.438 [console] 	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272)
+2026-06-27 08:54:34.439 [console] 	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259)
+2026-06-27 08:54:34.440 [console] 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426)
+2026-06-27 08:54:34.441 [console] 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386)
+2026-06-27 08:54:34.441 [console] 	at ch.qos.logback.classic.Logger.info(Logger.java:596)
+2026-06-27 08:54:34.442 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.carregarBancoPersistido(TelemetriaService.java:183)
+2026-06-27 08:54:34.442 [console] 	at org.traducao.projeto.telemetria.TelemetriaService.gerarResumo(TelemetriaService.java:126)
+2026-06-27 08:54:34.442 [console] 	at org.traducao.projeto.traducao.presentation.web.ApiController.obterTelemetria(ApiController.java:136)
+2026-06-27 08:54:34.443 [console] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+2026-06-27 08:54:34.444 [console] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+2026-06-27 08:54:34.444 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+2026-06-27 08:54:34.445 [console] 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-06-27 08:54:34.445 [console] 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+2026-06-27 08:54:34.445 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+2026-06-27 08:54:34.445 [console] 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+2026-06-27 08:54:34.445 [console] 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+2026-06-27 08:54:34.445 [console] 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+2026-06-27 08:54:34.447 [console] 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+2026-06-27 08:54:34.447 [console] 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+2026-06-27 08:54:34.447 [console] 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+2026-06-27 08:54:34.447 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+2026-06-27 08:54:34.447 [console] 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+2026-06-27 08:54:34.448 [console] 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+2026-06-27 08:54:34.448 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+2026-06-27 08:54:34.449 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+2026-06-27 08:54:34.449 [console] 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+2026-06-27 08:54:34.450 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+2026-06-27 08:54:34.450 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+2026-06-27 08:54:34.451 [console] 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+2026-06-27 08:54:34.451 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+2026-06-27 08:54:34.452 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+2026-06-27 08:54:34.453 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+2026-06-27 08:54:34.453 [console] 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+2026-06-27 08:54:34.454 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+2026-06-27 08:54:34.454 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+2026-06-27 08:54:34.455 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+2026-06-27 08:54:34.455 [console] 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+2026-06-27 08:54:34.456 [console] 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+2026-06-27 08:54:34.456 [console] 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+2026-06-27 08:54:34.457 [console] 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+2026-06-27 08:54:34.458 [console] 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+2026-06-27 08:54:34.458 [console] 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+2026-06-27 08:54:34.459 [console] 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+2026-06-27 08:54:34.460 [console] 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+2026-06-27 08:54:34.460 [console] 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+2026-06-27 08:54:34.460 [console] 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+2026-06-27 08:54:34.461 [console] 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+2026-06-27 08:54:34.461 [console] 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+2026-06-27 08:54:34.461 [console] 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+2026-06-27 08:54:34.462 [console] 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+2026-06-27 08:54:34.462 [console] 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+2026-06-27 08:54:34.462 [console] 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+2026-06-27 08:54:34.463 [console] 	at java.base/java.lang.VirtualThread.run(VirtualThread.java:456)
+2026-06-27 08:55:06.398 [console] 08:55:06 INFO  [tomcat-handler-48] o.t.p.t.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 0 traduções do arquivo logs\telemetria_compartilhada.json.

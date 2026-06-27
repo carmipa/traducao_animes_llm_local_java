@@ -1,31 +1,20 @@
 package org.traducao.projeto.traducao;
 
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
-import org.traducao.projeto.traducao.application.ProcessarArquivoUseCase;
-import org.traducao.projeto.traducao.application.ProcessarEpisodioUseCase;
-import org.traducao.projeto.traducao.application.ValidadorTraducaoService;
-import org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapter;
-import org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoService;
-import org.traducao.projeto.traducao.infrastructure.config.LlmProperties;
-import org.traducao.projeto.traducao.infrastructure.config.RestClientConfig;
-import org.traducao.projeto.traducao.infrastructure.config.TradutorProperties;
-import org.traducao.projeto.traducao.infrastructure.legenda.EscritorLegendaAss;
-import org.traducao.projeto.traducao.infrastructure.legenda.LeitorLegendaAss;
-import org.traducao.projeto.traducao.infrastructure.legenda.MascaradorTags;
-import org.traducao.projeto.traducao.presentation.TradutorCLI;
-import org.traducao.projeto.traducao.presentation.ui.ConsoleEntrada;
-import org.traducao.projeto.traducao.presentation.ui.ConsoleUILogger;
-import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
-import org.traducao.projeto.remuxer.application.MapeadorMidiaService;
-import org.traducao.projeto.remuxer.application.RemuxarLoteUseCase;
-import org.traducao.projeto.remuxer.infrastructure.adapters.MkvmergeAdapter;
-import org.traducao.projeto.remuxer.infrastructure.config.RemuxerProperties;
-import org.traducao.projeto.remuxer.presentation.RemuxerCLI;
-import org.traducao.projeto.remuxer.presentation.ui.ConsoleRemuxerLogger;
-import org.traducao.projeto.traducaoCorrige.CorretorCacheCLI;
+import org.traducao.projeto.analisadorMidia.application.AnalisarMidiaUseCase;
+import org.traducao.projeto.analisadorMidia.infrastructure.adapters.FfprobeAdapter;
+import org.traducao.projeto.analisadorMidia.presentation.AnalisadorMidiaCLI;
+import org.traducao.projeto.analisadorMidia.presentation.ui.ConsoleAnalisadorLogger;
 import org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCase;
 import org.traducao.projeto.legendasExtracao.application.strategy.ExtratorAssStrategy;
 import org.traducao.projeto.legendasExtracao.application.strategy.ExtratorPgsStrategy;
@@ -34,28 +23,54 @@ import org.traducao.projeto.legendasExtracao.infrastructure.adapters.MkvToolNixA
 import org.traducao.projeto.legendasExtracao.infrastructure.config.ExtratorProperties;
 import org.traducao.projeto.legendasExtracao.presentation.ExtratorCLI;
 import org.traducao.projeto.legendasExtracao.presentation.ui.ConsoleExtratorLogger;
-import org.traducao.projeto.raspagemCorrecao.CorretorRaspagemCLI;
-import org.traducao.projeto.analisadorMidia.presentation.AnalisadorMidiaCLI;
-import org.traducao.projeto.analisadorMidia.application.AnalisarMidiaUseCase;
-import org.traducao.projeto.analisadorMidia.infrastructure.adapters.FfprobeAdapter;
-import org.traducao.projeto.analisadorMidia.presentation.ui.ConsoleAnalisadorLogger;
-import org.traducao.projeto.telemetria.TelemetriaService;
-import org.traducao.projeto.mapaProjeto.presentation.MapaProjetoCLI;
-import org.traducao.projeto.mapaProjeto.application.MapeadorDiretorioUseCase;
 import org.traducao.projeto.mapaProjeto.application.GeradorMapaProjetoUseCase;
+import org.traducao.projeto.mapaProjeto.application.MapeadorDiretorioUseCase;
+import org.traducao.projeto.mapaProjeto.presentation.MapaProjetoCLI;
+import org.traducao.projeto.raspagemCorrecao.CorretorRaspagemCLI;
 import org.traducao.projeto.raspagemCorrecao.application.CorrigirComGoogleUseCase;
-import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
+import org.traducao.projeto.remuxer.application.MapeadorMidiaService;
+import org.traducao.projeto.remuxer.application.RemuxarLoteUseCase;
+import org.traducao.projeto.remuxer.infrastructure.adapters.MkvmergeAdapter;
+import org.traducao.projeto.remuxer.infrastructure.config.RemuxerProperties;
+import org.traducao.projeto.remuxer.presentation.RemuxerCLI;
+import org.traducao.projeto.remuxer.presentation.ui.ConsoleRemuxerLogger;
+import org.traducao.projeto.telemetria.TelemetriaService;
+import org.traducao.projeto.traducao.application.ProcessarArquivoUseCase;
+import org.traducao.projeto.traducao.application.ProcessarEpisodioUseCase;
+import org.traducao.projeto.traducao.application.ValidadorTraducaoService;
+import org.traducao.projeto.traducao.contexto.danmachi.ContextoDanMachi;
+import org.traducao.projeto.traducao.contexto.eightsix.Contexto86;
+import org.traducao.projeto.traducao.contexto.gundam.chars.ContextoCharsCounterattack;
+import org.traducao.projeto.traducao.contexto.gundam.msteam.ContextoGundam08thMSTeam;
+import org.traducao.projeto.traducao.contexto.gundam.reconguista.ContextoGundamReconguista;
+import org.traducao.projeto.traducao.contexto.gundam.stardust.ContextoGundam0083;
+import org.traducao.projeto.traducao.contexto.gundam.warInpocket.ContextoWarInPocket;
+import org.traducao.projeto.traducao.contexto.gundam.zeta.ContextoGundamZeta;
+import org.traducao.projeto.traducao.contexto.gundam.zz.ContextoGundamZZ;
+import org.traducao.projeto.traducao.contexto.macross.ContextoMacross2;
+import org.traducao.projeto.traducao.contexto.macross.ContextoMacrossAnime;
+import org.traducao.projeto.traducao.contexto.macross.ContextoMacrossFilme1;
+import org.traducao.projeto.traducao.contexto.macross.ContextoMacrossFilme2;
+import org.traducao.projeto.traducao.contexto.sidonia.ContextoKnightsOfSidonia;
+import org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapter;
+import org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoService;
+import org.traducao.projeto.traducao.infrastructure.config.LlmProperties;
+import org.traducao.projeto.traducao.infrastructure.config.RestClientConfig;
+import org.traducao.projeto.traducao.infrastructure.config.TradutorProperties;
+import org.traducao.projeto.traducao.infrastructure.contexto.GerenciadorContexto;
+import org.traducao.projeto.traducao.infrastructure.legenda.EscritorLegendaAss;
+import org.traducao.projeto.traducao.infrastructure.legenda.LeitorLegendaAss;
+import org.traducao.projeto.traducao.infrastructure.legenda.MascaradorTags;
+import org.traducao.projeto.traducao.presentation.TradutorCLI;
+import org.traducao.projeto.traducao.presentation.ui.ConsoleUILogger;
+import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
 import org.traducao.projeto.traducao.presentation.web.ApiController;
 import org.traducao.projeto.traducao.presentation.web.BrowserLauncher;
 import org.traducao.projeto.traducao.presentation.web.ConsoleRedirector;
 import org.traducao.projeto.traducao.presentation.web.LogStreamService;
+import org.traducao.projeto.traducaoCorrige.CorretorCacheCLI;
+import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
 
-import java.io.PrintStream;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
 
 /**
  * Ponto de entrada da aplicacao ({@code public static void main}).
@@ -66,6 +81,10 @@ import java.util.Optional;
  * para o {@link TradutorProperties}.
  */
 @SpringBootApplication
+@ComponentScan(basePackages = {
+    "org.traducao.projeto.traducao.contexto",
+    "org.traducao.projeto.traducao.infrastructure.contexto"
+})
 @EnableConfigurationProperties({LlmProperties.class, TradutorProperties.class, RemuxerProperties.class, ExtratorProperties.class})
 @Import({
     TradutorCLI.class,
@@ -107,7 +126,22 @@ import java.util.Optional;
     LogStreamService.class,
     ConsoleRedirector.class,
     BrowserLauncher.class,
-    ApiController.class
+    ApiController.class,
+    GerenciadorContexto.class,
+    ContextoDanMachi.class,
+    ContextoWarInPocket.class,
+    ContextoGundam0083.class,
+    ContextoCharsCounterattack.class,
+    ContextoGundam08thMSTeam.class,
+    ContextoGundamReconguista.class,
+    ContextoGundamZeta.class,
+    ContextoGundamZZ.class,
+    ContextoMacrossFilme1.class,
+    ContextoMacrossFilme2.class,
+    ContextoMacross2.class,
+    ContextoMacrossAnime.class,
+    ContextoKnightsOfSidonia.class,
+    Contexto86.class
 })
 public class Application {
 

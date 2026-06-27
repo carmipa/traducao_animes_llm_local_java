@@ -29,6 +29,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ExecutionException;
 
 /**
@@ -314,8 +315,8 @@ public class ProcessarArquivoUseCase {
         }
 
         String[] palavras = textoLimpo.split("\\s+");
-        if (palavras.length <= 1) {
-            return true;
+        if (palavras.length == 1) {
+            return deveManterPalavraUnicaIdentica(textoLimpo);
         }
 
         if (palavras.length == 2 && 
@@ -332,6 +333,33 @@ public class ProcessarArquivoUseCase {
             "dubh daol", "zekka", "gralineze fromel", "gokoh", "astrea record"
         );
         return termosIgnorados.contains(textoMinusculo);
+    }
+
+    private boolean deveManterPalavraUnicaIdentica(String textoLimpo) {
+        if (textoLimpo.matches("\\d+")) {
+            return true;
+        }
+        if (textoLimpo.length() > 1 && textoLimpo.equals(textoLimpo.toUpperCase())) {
+            return true;
+        }
+
+        String minusculo = textoLimpo.toLowerCase();
+        Set<String> palavrasInglesComuns = Set.of(
+            "hello", "hi", "hey", "goodbye", "bye", "yes", "no", "yeah", "yep", "nope",
+            "thanks", "thank", "sorry", "please", "wait", "stop", "go", "come", "run",
+            "what", "why", "who", "where", "when", "how", "right", "okay", "ok", "fine"
+        );
+        if (palavrasInglesComuns.contains(minusculo)) {
+            return false;
+        }
+
+        Set<String> termosDeLore = Set.of(
+            "bell", "hestia", "ais", "orario", "dungeon", "falna", "familia",
+            "zeon", "gundam", "zaku", "alex", "kampfer", "axis", "aeug", "titans",
+            "macross", "zentradi", "meltrandi", "valkyrie", "marduk",
+            "gauna", "sidonia", "legion", "juggernaut"
+        );
+        return termosDeLore.contains(minusculo);
     }
 
     private String normalizarParaComparacao(String texto) {

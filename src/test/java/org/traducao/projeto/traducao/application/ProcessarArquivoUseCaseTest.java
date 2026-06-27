@@ -8,16 +8,19 @@ import org.traducao.projeto.traducao.domain.TraducaoLote;
 import org.traducao.projeto.traducao.domain.ports.MistralPort;
 import org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoService;
 import org.traducao.projeto.traducao.infrastructure.cache.EntradaCache;
+import org.traducao.projeto.traducao.infrastructure.config.LlmProperties;
 import org.traducao.projeto.traducao.infrastructure.config.TradutorProperties;
 import org.traducao.projeto.traducao.infrastructure.legenda.EscritorLegendaAss;
 import org.traducao.projeto.traducao.infrastructure.legenda.LeitorLegendaAss;
 import org.traducao.projeto.traducao.infrastructure.legenda.MascaradorTags;
 import org.traducao.projeto.traducao.presentation.ui.ConsoleUILogger;
 import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
+import org.traducao.projeto.telemetria.TelemetriaService;
 
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 
@@ -56,11 +59,14 @@ class ProcessarArquivoUseCaseTest {
         ProcessarEpisodioUseCase episodioUseCase = new ProcessarEpisodioUseCase(mistralPort, validador, uiLogger);
         TradutorProperties propriedades = new TradutorProperties(
             null, saida.toString(), cache.toString(), 10, List.of("Song JP"), "en", "pt-br");
+        LlmProperties llmProperties = new LlmProperties(
+            "http://localhost", "mistral-nemo", 0.3, 2000, Duration.ofSeconds(2), Duration.ofSeconds(2));
         PastasExecucao pastasExecucao = new PastasExecucao();
         pastasExecucao.configurar(saida.getParent().resolve("entrada").toString(), saida.toString(), cache.toString(), propriedades);
         return new ProcessarArquivoUseCase(
             new LeitorLegendaAss(), new EscritorLegendaAss(), new MascaradorTags(),
-            cacheService, episodioUseCase, validador, propriedades, uiLogger, pastasExecucao);
+            cacheService, episodioUseCase, validador, propriedades, llmProperties, uiLogger,
+            pastasExecucao, mock(TelemetriaService.class));
     }
 
     private void mockarTraducaoFake() {
