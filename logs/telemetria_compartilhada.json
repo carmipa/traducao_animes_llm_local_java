@@ -310,5 +310,45 @@
     "itensDetectados" : 12,
     "itensCorrigidos" : 0,
     "registradoEm" : "2026-06-27T23:59:12.088727200Z"
+  }, {
+    "tipo" : "Correção Google (cache)",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\[Sokudo] DanMachi\\Season 05",
+    "tempoTotalMs" : 71,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T17:59:20.655661100Z"
+  }, {
+    "tipo" : "Revisão Gramatical (cache LLM)",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\[Sokudo] DanMachi\\Season 05",
+    "tempoTotalMs" : 32509,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 53,
+    "itensCorrigidos" : 24,
+    "registradoEm" : "2026-06-28T18:37:21.287890Z"
+  }, {
+    "tipo" : "Correção Google (cache)",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\[Sokudo] DanMachi\\Season 05",
+    "tempoTotalMs" : 39,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T18:45:08.798070100Z"
+  }, {
+    "tipo" : "Revisão Concordância (.ass LLM)",
+    "detalhe" : "E:\\animes\\DANMACHI\\temporada_5\\legendas_extraidas_ass",
+    "tempoTotalMs" : 32272,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 47,
+    "itensCorrigidos" : 22,
+    "registradoEm" : "2026-06-28T18:48:14.067612100Z"
+  }, {
+    "tipo" : "Revisão Legendas (.ass Google)",
+    "detalhe" : "E:\\animes\\DANMACHI\\temporada_5\\legendas_extraidas_ass",
+    "tempoTotalMs" : 21725,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 25,
+    "itensCorrigidos" : 5,
+    "registradoEm" : "2026-06-28T18:49:48.775720500Z"
   } ]
 }

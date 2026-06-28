@@ -107,6 +107,9 @@ Por padrão, quando o campo de pasta de saída opcional é deixado em branco na 
 - **Análise de Mídia (1)**: subpasta `relatorios/` na pasta do vídeo/anime.
 - *(Se o usuário preencher o campo opcional de saída, o sistema salva no caminho customizado informado).*
 
+**Padronização Visual de Sucesso no Console Web:**
+Todos os 8 endpoints operacionais da API (`ApiController.java`) imprimem um banner ultra-destacado em verde ANSI (`\u001B[32m`) com moldura (`========================================================================`) e o ícone `🎉` ao finalizar cada tarefa em segundo plano, garantindo alta visibilidade na interface.
+
 | Tipo | Caminho Padrão | Quem grava |
 |------|----------------|------------|
 | Log estruturado | `logs/tradutor.log` | SLF4J |

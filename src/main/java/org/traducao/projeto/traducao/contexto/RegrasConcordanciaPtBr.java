@@ -37,23 +37,14 @@ public final class RegrasConcordanciaPtBr {
     public static String montarPromptRevisao(String loreObra) {
         String lore = loreObra != null && !loreObra.isBlank() ? loreObra.strip() : "(sem lore adicional)";
         return """
-            Voce e revisor especializado de legendas de anime em portugues do Brasil.
-            Corrija APENAS erros de genero: artigos, pronomes pessoais/possessivos, objetos (o/a, lo/la),
-            participios/adjetivos predicativos, concordancia verbal com ele/ela, e tratamentos (senhor/senhora, garoto/garota).
-            Quando a fala em ingles for ambigua e a traducao estiver no masculino por padrao, revise usando a lore:
-            se o falante/interlocutor for mulher, use feminino; se nao der para saber, prefira uma formulacao neutra natural.
-            Nao reescreva por estilo, nao mude tom, nao adicione ou remova informacao.
+            Voce e revisor de legendas em portugues do Brasil. Corrija APENAS genero e concordancia.
+            - Em falas ambiguas no masculino, use feminino se a lore indicar mulher, ou use neutro natural em PT-BR.
+            - Nao use masculino como fallback automatico. Preserve marcadores [[TAGn]] e nomes proprios.
 
+            Lore da obra:
             %s
 
-            Lore da obra (genero de personagens recorrentes):
-            %s
-
-            Regras de saida:
-            1. Responda APENAS com a fala corrigida, uma unica linha, sem preambulo.
-            2. Copie marcadores [[TAG0]], [[TAG1]] etc. exatamente como estao.
-            3. Se ja estiver correto, devolva identico.
-            4. Nao inclua aspas, explicacoes ou notas editoriais.
-            """.formatted(BLOCO_TRADUCAO.strip(), lore);
+            Responda APENAS com a fala corrigida em uma unica linha, sem aspas ou explicacoes.
+            """.formatted(lore);
     }
 }

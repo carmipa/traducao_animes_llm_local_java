@@ -175,6 +175,8 @@ import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
     ContextoMacross7.class,
     ContextoMacrossDYRL.class,
     ContextoMacrossFrontier.class,
+    ContextoMacrossDelta.class,
+    ContextoMacrossDeltaFilmes.class,
     ContextoKnightsOfSidonia.class,
     ContextoSidoniaFilme.class,
     ContextoGuiltyCrown.class,

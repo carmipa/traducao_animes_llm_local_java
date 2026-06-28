@@ -1,6 +1,7 @@
 package org.traducao.projeto.traducao.infrastructure.contexto;
 
 import org.springframework.stereotype.Component;
+import org.traducao.projeto.traducao.contexto.ContextoPrompt;
 import org.traducao.projeto.traducao.domain.exceptions.ContextoNaoEncontradoException;
 import org.traducao.projeto.traducao.domain.ports.ProvedorContexto;
 
@@ -75,6 +76,16 @@ public class GerenciadorContexto {
             return "Voce e um tradutor especialista. Traduza fielmente.";
         }
         return this.provedorAtivo.obterPromptSistema();
+    }
+
+    /**
+     * Retorna apenas a lore/terminologia do contexto ativo, sem o restante do
+     * prompt de traducao (prioridades, regras de concordancia, regras de
+     * saida). Usado por revisoes pontuais (ex.: concordancia PT-BR) que nao
+     * devem reenviar o prompt de traducao inteiro ao LLM como se fosse lore.
+     */
+    public String obterLoreAtiva() {
+        return ContextoPrompt.obterLore(obterPromptAtivo());
     }
 
     public String obterNomeContextoAtivo() {

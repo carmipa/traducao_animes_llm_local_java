@@ -11,12 +11,15 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 @Service
 public class MapeadorMidiaService {
     
     private static final Logger log = LoggerFactory.getLogger(MapeadorMidiaService.class);
+    private static final Pattern PATTERN_EPISODIO = Pattern.compile("(?i)(S\\d{1,2}E\\d{1,3}|E\\d{1,3})");
 
     public List<RemuxTarefa> construirFilaProcessamento(Path pastaVideos, Path pastaLegendas, Path pastaSaida) {
         log.debug("Escaneando diretório de vídeos: {}", pastaVideos);
@@ -34,8 +37,11 @@ public class MapeadorMidiaService {
                 .toList();
             
             for (Path mkv : mkvs) {
-                String nomeBase = mkv.getFileName().toString().replaceFirst("[.][^.]+$", "");
+                String nomeArq = mkv.getFileName().toString();
+                String nomeBase = nomeArq.replaceFirst("[.][^.]+$", "");
                 String nomeLimpoBase = nomeBase.replace("_PTBR", "").replace("_ENG", "").replace("_PT-BR", "");
+
+                String tagEpisodio = extrairTagEpisodio(nomeArq);
 
                 Path legendaEncontrada = null;
                 try (Stream<Path> streamLegendas = Files.list(pastaLegendas)) {
@@ -47,7 +53,14 @@ public class MapeadorMidiaService {
                         })
                         .filter(p -> {
                             String f = p.getFileName().toString();
-                            return f.startsWith(nomeBase) || f.startsWith(nomeLimpoBase);
+                            if (f.startsWith(nomeBase) || f.startsWith(nomeLimpoBase)) {
+                                return true;
+                            }
+                            if (tagEpisodio != null && !tagEpisodio.isBlank()) {
+                                String tagLeg = extrairTagEpisodio(f);
+                                return tagEpisodio.equalsIgnoreCase(tagLeg);
+                            }
+                            return false;
                         })
                         .toList();
 
@@ -62,10 +75,10 @@ public class MapeadorMidiaService {
                 }
 
                 if (legendaEncontrada != null) {
-                    String nomeSaida = nomeLimpoBase + "_PTBR.mkv";
+                    String nomeSaida = nomeLimpoBase.endsWith("_PTBR") ? nomeLimpoBase + ".mkv" : nomeLimpoBase + "_PTBR.mkv";
                     Path caminhoSaida = pastaSaida.resolve(nomeSaida);
                     fila.add(new RemuxTarefa(mkv.getFileName().toString(), mkv, legendaEncontrada, caminhoSaida));
-                    log.debug("Pareado com sucesso: {} -> {}", mkv.getFileName(), legendaEncontrada.getFileName());
+                    log.info("Pareado com sucesso: {} -> {}", mkv.getFileName(), legendaEncontrada.getFileName());
                 } else {
                     log.warn("Legenda ausente para: {}", mkv.getFileName());
                 }
@@ -75,5 +88,13 @@ public class MapeadorMidiaService {
         }
 
         return fila;
+    }
+
+    private String extrairTagEpisodio(String nome) {
+        Matcher m = PATTERN_EPISODIO.matcher(nome);
+        if (m.find()) {
+            return m.group(1).toUpperCase();
+        }
+        return null;
     }
 }

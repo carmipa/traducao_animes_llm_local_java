@@ -495,7 +495,14 @@ body {
     color: var(--text-muted);
 }
 
+.console-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .btn-clear-console,
+.btn-toggle-console,
 .btn-copy-viewer,
 .btn-refresh-telemetria {
     background-color: transparent;
@@ -511,10 +518,12 @@ body {
 }
 
 .btn-clear-console:hover,
+.btn-toggle-console:hover,
 .btn-copy-viewer:hover,
 .btn-refresh-telemetria:hover {
     color: var(--text-primary);
     border-color: var(--border-active);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .console-body {
@@ -528,28 +537,19 @@ body {
     border: 1px solid var(--border-color);
     box-sizing: border-box;
     position: relative;
-    /* flex:none impede que o layout flex anule o arraste de redimensionamento */
     flex: none;
     align-self: stretch;
     width: 100%;
-    height: 45vh;
-    min-height: 240px;
+    height: 380px;
+    min-height: 180px;
     max-height: 85vh;
-    overflow: auto;
+    overflow-y: auto;
     resize: vertical;
+    transition: height 0.2s ease;
 }
 
-.console-body::after {
-    content: "";
-    position: absolute;
-    right: 8px;
-    bottom: 6px;
-    width: 10px;
-    height: 10px;
-    pointer-events: none;
-    opacity: 0.35;
-    border-right: 2px solid var(--text-muted);
-    border-bottom: 2px solid var(--text-muted);
+.console-body.expanded {
+    height: 70vh !important;
 }
 
 .log-line {

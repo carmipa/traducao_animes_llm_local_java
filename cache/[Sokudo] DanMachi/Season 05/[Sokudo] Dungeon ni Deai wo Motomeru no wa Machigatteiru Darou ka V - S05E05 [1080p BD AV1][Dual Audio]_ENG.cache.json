@@ -1213,7 +1213,7 @@
   "indice" : 173,
   "estilo" : "Default",
   "original" : "Huh?! Are you nuts, Hermes?!",
-  "traduzido" : "Huh?! Você está louco, Hermes?!",
+  "traduzido" : "Huh?! Você está louca, Hermes?",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1325,7 +1325,7 @@
   "indice" : 189,
   "estilo" : "Default",
   "original" : "Thank you.",
-  "traduzido" : "Obrigado.",
+  "traduzido" : "Muito obrigada.",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2116,7 +2116,7 @@
   "indice" : 302,
   "estilo" : "Default",
   "original" : "Are you crazy?",
-  "traduzido" : "Você está louco?",
+  "traduzido" : "Você está louca?",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2228,7 +2228,7 @@
   "indice" : 318,
   "estilo" : "Default",
   "original" : "Mord! Give him money!",
-  "traduzido" : "Mord! Dê dinheiro a ela!",
+  "traduzido" : "Mord! Dê dinheiro a ele!",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2445,7 +2445,7 @@
   "indice" : 349,
   "estilo" : "Default",
   "original" : "It's just, this is the first time we've actually met, \\Nso I was surprised to hear you say my name.",
-  "traduzido" : "É só, é a primeira vez que nos encontramos de verdade, \\Nentão eu fiquei surpreso ao ouvir você dizer o meu nome.",
+  "traduzido" : "É só, é a primeira vez que nos encontramos de verdade, \\Nentão eu fiquei surpresa ao ouvir você dizer o meu nome.",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

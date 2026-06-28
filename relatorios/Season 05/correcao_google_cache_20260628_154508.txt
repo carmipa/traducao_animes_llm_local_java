@@ -1,0 +1,6 @@
+CORREÇÃO VIA GOOGLE TRANSLATE (CACHE)
+=====================================
+Pasta: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05
+Duração: 0s
+Arquivos de cache analisados: 15
+Falas corrigidas via Google: 0

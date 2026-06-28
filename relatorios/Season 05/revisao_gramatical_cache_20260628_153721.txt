@@ -1,0 +1,7 @@
+REVISÃO GRAMATICAL DO CACHE (LLM)
+=================================
+Pasta: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache\[Sokudo] DanMachi\Season 05
+Duração: 32s
+Arquivos analisados: 15
+Falas com possível erro de concordância: 53
+Falas corrigidas e salvas: 24

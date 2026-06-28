@@ -408,46 +408,71 @@ function inicializarMetadadosDinamicos() {
         { inputId: 'revisao-entrada', selectId: 'revisao-contexto', bannerId: 'meta-banner-revisao' }
     ];
 
+    const atualizarItem = (item) => {
+        const input = document.getElementById(item.inputId);
+        const select = item.selectId ? document.getElementById(item.selectId) : null;
+        let termo = '';
+
+        // Se houver select preenchido com obra válida, usa o contexto como fonte principal de lore
+        if (select && select.value && select.selectedIndex >= 0) {
+            const optText = select.options[select.selectedIndex].text;
+            if (optText && !optText.includes('Carregando') && !optText.includes('Selecione')) {
+                termo = optText;
+            }
+        }
+
+        // Se não houver contexto no select, ou se o usuário digitou um caminho completo de mídia (que não seja termos genéricos de pasta)
+        if (!termo && input && input.value.trim().length > 3) {
+            const val = input.value.trim();
+            if (!['cache', 'logs', 'relatorios'].includes(val.toLowerCase())) {
+                termo = val;
+            }
+        }
+
+        if (termo && termo.length > 2) {
+            carregarMetadataAnime(termo, item.bannerId);
+        } else {
+            const banner = document.getElementById(item.bannerId);
+            if (banner) banner.classList.add('hidden');
+        }
+    };
+
     // Popula automaticamente os selects secundários (análise e correção) se necessário
-    carregarContextosAuxiliares(['analise-contexto', 'correcao-contexto']);
+    carregarContextosAuxiliares(['analise-contexto', 'correcao-contexto'], () => {
+        mapeamentoFormularios.forEach(atualizarItem);
+    });
 
     mapeamentoFormularios.forEach(item => {
         const input = document.getElementById(item.inputId);
         const select = item.selectId ? document.getElementById(item.selectId) : null;
 
-        const atualizar = () => {
-            let termo = '';
-            if (input && input.value.trim().length > 3) {
-                termo = input.value.trim();
-            } else if (select && select.value && select.selectedIndex >= 0) {
-                const optText = select.options[select.selectedIndex].text;
-                if (optText && !optText.includes('Carregando')) {
-                    termo = optText;
-                }
-            }
-
-            if (termo && termo.length > 2) {
-                carregarMetadataAnime(termo, item.bannerId);
-            }
-        };
-
         if (input) {
-            input.addEventListener('change', atualizar);
-            input.addEventListener('blur', atualizar);
+            input.addEventListener('input', () => atualizarItem(item));
+            input.addEventListener('change', () => atualizarItem(item));
+            input.addEventListener('blur', () => atualizarItem(item));
         }
 
         if (select) {
-            select.addEventListener('change', atualizar);
-            // Também dispara quando o select for preenchido via API
+            select.addEventListener('change', () => atualizarItem(item));
             const observer = new MutationObserver(() => {
-                setTimeout(atualizar, 300);
+                setTimeout(() => atualizarItem(item), 100);
             });
             observer.observe(select, { childList: true });
         }
+
+        // Dispara verificação inicial
+        setTimeout(() => atualizarItem(item), 500);
+    });
+
+    // Atualiza metadados ao trocar de aba no menu lateral
+    document.querySelectorAll('.sidebar-nav .nav-item').forEach(nav => {
+        nav.addEventListener('click', () => {
+            setTimeout(() => mapeamentoFormularios.forEach(atualizarItem), 150);
+        });
     });
 }
 
-async function carregarContextosAuxiliares(idsSelects) {
+async function carregarContextosAuxiliares(idsSelects, onComplete) {
     try {
         const response = await fetch('/api/contextos');
         if (!response.ok) return;
@@ -466,6 +491,10 @@ async function carregarContextosAuxiliares(idsSelects) {
                 select.appendChild(opt);
             });
         });
+
+        if (onComplete && typeof onComplete === 'function') {
+            onComplete();
+        }
     } catch (e) {
         console.warn('Falha ao carregar contextos auxiliares:', e);
     }
@@ -530,6 +559,50 @@ function renderizarBannerMetadata(banner, meta) {
     banner.classList.remove('hidden');
 }
 
+function inicializarBotoesLimpezaFormularios() {
+    document.querySelectorAll('.btn-clear-form').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const formId = btn.getAttribute('data-form');
+            const form = formId ? document.getElementById(formId) : btn.closest('form');
+            if (!form) return;
+
+            // Reseta todos os inputs de texto e selects do formulário
+            form.querySelectorAll('input[type="text"]').forEach(input => input.value = '');
+            form.querySelectorAll('select').forEach(select => {
+                select.selectedIndex = 0;
+            });
+
+            // Oculta o banner de metadados associado se houver
+            const cardParent = form.closest('.glass-card');
+            if (cardParent) {
+                const banner = cardParent.querySelector('.anime-meta-banner');
+                if (banner) banner.classList.add('hidden');
+            }
+        });
+    });
+}
+
+function inicializarControlesConsole() {
+    document.querySelectorAll('.btn-toggle-console').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetId = btn.getAttribute('data-target');
+            const consoleBody = targetId ? document.getElementById(targetId) : null;
+            if (!consoleBody) return;
+
+            consoleBody.classList.toggle('expanded');
+            if (consoleBody.classList.contains('expanded')) {
+                btn.textContent = '🗜️ Encolher';
+            } else {
+                btn.textContent = '↕ Expandir';
+            }
+        });
+    });
+}
+
 // Inicializa no carregamento do DOM
-document.addEventListener('DOMContentLoaded', inicializarMetadadosDinamicos);
+document.addEventListener('DOMContentLoaded', () => {
+    inicializarMetadadosDinamicos();
+    inicializarBotoesLimpezaFormularios();
+    inicializarControlesConsole();
+});
 

@@ -1,12 +1,28 @@
 package org.traducao.projeto.traducao.contexto;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 public final class ContextoPrompt {
+
+    // Cada ContextoXxx monta seu PROMPT uma unica vez (campo static final), na
+    // inicializacao da classe; este mapa guarda a lore "crua" por traz de cada
+    // prompt completo para que outros usos (ex.: revisao de concordancia) nao
+    // precisem reenviar o prompt de traducao inteiro - que ja inclui lore +
+    // RegrasConcordanciaPtBr.BLOCO_TRADUCAO + regras de saida - como se fosse
+    // so a lore, o que estourava o contexto do LLM (ver MistralClientAdapter).
+    private static final Map<String, String> LORE_POR_PROMPT = new ConcurrentHashMap<>();
 
     private ContextoPrompt() {
     }
 
+    public static String obterLore(String promptCompleto) {
+        return LORE_POR_PROMPT.getOrDefault(promptCompleto, promptCompleto);
+    }
+
     public static String montar(String obra, String lore) {
-        return """
+        String loreLimpa = lore.strip();
+        String prompt = """
             Voce e um tradutor especializado em legendas de anime, traduzindo do ingles para portugues do Brasil.
             Contexto ativo da obra: %s.
 
@@ -29,6 +45,8 @@ public final class ContextoPrompt {
             3. Marcadores no formato [[TAG0]], [[TAG1]] etc. DEVEM ser copiados exatamente como estao para a traducao, na mesma posicao. NAO remova e nao traduza esses marcadores.
             4. Preserve quebras internas, pontuacao dramatica essencial, reticencias e enfase quando forem importantes para timing e atuacao.
             5. Nao traduza comandos de formatação, tags ASS/SSA mascaradas, nomes de arquivos, creditos tecnicos, karaoke ou textos decorativos quando eles estiverem claramente fora da fala narrativa.
-            """.formatted(obra, lore.strip(), RegrasConcordanciaPtBr.BLOCO_TRADUCAO.strip());
+            """.formatted(obra, loreLimpa, RegrasConcordanciaPtBr.BLOCO_TRADUCAO.strip());
+        LORE_POR_PROMPT.put(prompt, loreLimpa);
+        return prompt;
     }
 }

@@ -8,6 +8,7 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 import org.traducao.projeto.analisadorMidia.application.AnalisarMidiaUseCase;
 import org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCase;
 import org.traducao.projeto.legendasExtracao.domain.FormatoLegenda;
+import org.traducao.projeto.legendasExtracao.domain.RelatorioExtracao;
 import org.traducao.projeto.mapaProjeto.application.GeradorMapaProjetoUseCase;
 import org.traducao.projeto.raspagemCorrecao.application.CorrigirComGoogleUseCase;
 import org.traducao.projeto.raspagemRevisao.application.ResultadoRevisaoLegendas;
@@ -188,7 +189,9 @@ public class ApiController {
                 Path pathEntrada = Path.of(req.entrada());
                 Path pathSaida = (req.saida() != null && !req.saida().isBlank()) ? Path.of(req.saida()) : null;
                 analisarMidiaUseCase.executar(pathEntrada, pathSaida);
-                System.out.println("\u001B[32m[SUCESSO] Análise de mídia finalizada.\u001B[0m");
+                System.out.println("\n\u001B[32m========================================================================\u001B[0m");
+                System.out.println("\u001B[32m  🎉 [SUCESSO] ANÁLISE DE MÍDIA FINALIZADA COM SUCESSO!\u001B[0m");
+                System.out.println("\u001B[32m========================================================================\n\u001B[0m");
                 log.info("[SUCESSO] Análise de mídia finalizada.");
             } catch (Exception e) {
                 log.error("Erro na análise de mídia em background", e);
@@ -214,9 +217,20 @@ public class ApiController {
                 Path pathEntrada = Path.of(req.entrada());
                 Path pathSaida = (req.saida() != null && !req.saida().isBlank()) ? Path.of(req.saida()) : null;
                 FormatoLegenda formato = FormatoLegenda.fromString(req.formato() != null ? req.formato() : "ASS");
-                extrairLegendaUseCase.executar(pathEntrada, pathSaida, formato);
-                System.out.println("\u001B[32m[SUCESSO] Extração de legendas finalizada.\u001B[0m");
-                log.info("[SUCESSO] Extração de legendas finalizada.");
+                RelatorioExtracao rel = extrairLegendaUseCase.executar(pathEntrada, pathSaida, formato);
+                System.out.println("\n\u001B[32m========================================================================\u001B[0m");
+                System.out.println("\u001B[32m  🎉 [SUCESSO] EXTRAÇÃO DE LEGENDAS FINALIZADA COM SUCESSO!\u001B[0m");
+                System.out.println("\u001B[32m========================================================================\u001B[0m");
+                System.out.println("\u001B[36m  • Arquivos de Vídeo Analisados : " + rel.getArquivosDetectados() + "\u001B[0m");
+                System.out.println("\u001B[32m  • Faixas Extraídas com Sucesso : " + rel.getLegendasExtraidas() + " [" + formato.name() + "]\u001B[0m");
+                if (rel.getArquivosSemLegenda() > 0) {
+                    System.out.println("\u001B[33m  • Vídeos sem Faixa " + formato.name() + "        : " + rel.getArquivosSemLegenda() + "\u001B[0m");
+                }
+                if (rel.getFalhasInesperadas() > 0) {
+                    System.out.println("\u001B[31m  • Falhas de Processamento     : " + rel.getFalhasInesperadas() + "\u001B[0m");
+                }
+                System.out.println("\u001B[32m========================================================================\n\u001B[0m");
+                log.info("[SUCESSO] Extração de legendas finalizada. Extraídas: {} de {}", rel.getLegendasExtraidas(), rel.getArquivosDetectados());
             } catch (Exception e) {
                 log.error("Erro na extração de legendas em background", e);
                 System.out.println("\u001B[31m[ERRO] Falha na extração: " + e.getMessage() + "\u001B[0m");
@@ -294,7 +308,9 @@ public class ApiController {
                     }
                 }
 
-                System.out.println("\n\u001B[32m=================== PROCESSAMENTO FINALIZADO ===================\u001B[0m");
+                System.out.println("\n\u001B[32m========================================================================\u001B[0m");
+                System.out.println("\u001B[32m  🎉 [SUCESSO] TRADUÇÃO LOCAL VIA LLM FINALIZADA COM SUCESSO!\u001B[0m");
+                System.out.println("\u001B[32m========================================================================\n\u001B[0m");
                 log.info("[SUCESSO] Tradução via LLM processamento finalizado.");
 
             } catch (Exception e) {
@@ -318,7 +334,9 @@ public class ApiController {
             logStreamService.definirCanalAtual("correcao");
             try {
                 limparCacheUseCase.executar(pathCache);
-                System.out.println("\u001B[32m[SUCESSO] Limpeza de cache concluída.\u001B[0m");
+                System.out.println("\n\u001B[32m========================================================================\u001B[0m");
+                System.out.println("\u001B[32m  🎉 [SUCESSO] LIMPEZA E AUDITORIA DE CACHE CONCLUÍDAS COM SUCESSO!\u001B[0m");
+                System.out.println("\u001B[32m========================================================================\n\u001B[0m");
                 log.info("[SUCESSO] Limpeza de cache concluída.");
             } catch (Exception e) {
                 log.error("Erro ao limpar cache", e);
@@ -341,7 +359,9 @@ public class ApiController {
             logStreamService.definirCanalAtual("correcao");
             try {
                 corrigirComGoogleUseCase.executar(pathCache);
-                System.out.println("\u001B[32m[SUCESSO] Correção via Google Translate finalizada.\u001B[0m");
+                System.out.println("\n\u001B[32m========================================================================\u001B[0m");
+                System.out.println("\u001B[32m  🎉 [SUCESSO] CORREÇÃO VIA GOOGLE TRANSLATE FINALIZADA COM SUCESSO!\u001B[0m");
+                System.out.println("\u001B[32m========================================================================\n\u001B[0m");
                 log.info("[SUCESSO] Correção via Google Translate finalizada.");
             } catch (Exception e) {
                 log.error("Erro ao executar scraping", e);
@@ -375,7 +395,9 @@ public class ApiController {
                     return;
                 }
                 revisarCacheUseCase.executar(pathCache, req.contextoId());
-                System.out.println("\u001B[32m[SUCESSO] Revisão gramatical do cache finalizada.\u001B[0m");
+                System.out.println("\n\u001B[32m========================================================================\u001B[0m");
+                System.out.println("\u001B[32m  🎉 [SUCESSO] REVISÃO GRAMATICAL DO CACHE FINALIZADA COM SUCESSO!\u001B[0m");
+                System.out.println("\u001B[32m========================================================================\n\u001B[0m");
                 log.info("[SUCESSO] Revisão gramatical do cache finalizada.");
             } catch (Exception e) {
                 log.error("Erro na revisão gramatical do cache", e);
@@ -430,10 +452,12 @@ public class ApiController {
                     System.out.println(
                         "\u001B[33m[AVISO] Revisão concluída sem arquivos .ass/.ssa para analisar.\u001B[0m");
                 } else {
-                    System.out.println(
-                        "\u001B[32m[SUCESSO] Revisão de legendas traduzidas finalizada "
-                            + "(" + resultado.arquivosAnalisados() + " arquivo(s), "
-                            + resultado.falasCorrigidas() + " falas corrigidas).\u001B[0m");
+                    System.out.println("\n\u001B[32m========================================================================\u001B[0m");
+                    System.out.println("\u001B[32m  🎉 [SUCESSO] REVISÃO DE LEGENDAS TRADUZIDAS FINALIZADA!\u001B[0m");
+                    System.out.println("\u001B[32m========================================================================\u001B[0m");
+                    System.out.println("\u001B[36m  • Arquivos Analisados : " + resultado.arquivosAnalisados() + "\u001B[0m");
+                    System.out.println("\u001B[32m  • Falas Corrigidas    : " + resultado.falasCorrigidas() + "\u001B[0m");
+                    System.out.println("\u001B[32m========================================================================\n\u001B[0m");
                     log.info("[SUCESSO] Revisão de legendas: {} arquivo(s), {} corrigidas.",
                         resultado.arquivosAnalisados(), resultado.falasCorrigidas());
                 }
@@ -508,10 +532,12 @@ public class ApiController {
                     System.out.println(
                         "\u001B[33m[AVISO] Revisão de concordância concluída sem arquivos .ass/.ssa.\u001B[0m");
                 } else {
-                    System.out.println(
-                        "\u001B[32m[SUCESSO] Revisão de concordância PT-BR finalizada "
-                            + "(" + resultado.arquivosAnalisados() + " arquivo(s), "
-                            + resultado.falasCorrigidas() + " falas corrigidas).\u001B[0m");
+                    System.out.println("\n\u001B[32m========================================================================\u001B[0m");
+                    System.out.println("\u001B[32m  🎉 [SUCESSO] REVISÃO DE CONCORDÂNCIA PT-BR (LLM) FINALIZADA!\u001B[0m");
+                    System.out.println("\u001B[32m========================================================================\u001B[0m");
+                    System.out.println("\u001B[36m  • Arquivos Analisados : " + resultado.arquivosAnalisados() + "\u001B[0m");
+                    System.out.println("\u001B[32m  • Falas Corrigidas    : " + resultado.falasCorrigidas() + "\u001B[0m");
+                    System.out.println("\u001B[32m========================================================================\n\u001B[0m");
                     log.info("[SUCESSO] Revisão concordância legendas: {} arquivo(s), {} corrigidas.",
                         resultado.arquivosAnalisados(), resultado.falasCorrigidas());
                 }
@@ -552,7 +578,9 @@ public class ApiController {
                 }
 
                 remuxarLoteUseCase.executar(pathVideos, pathLegendas);
-                System.out.println("\u001B[32m[SUCESSO] Remuxer de vídeos finalizado.\u001B[0m");
+                System.out.println("\n\u001B[32m========================================================================\u001B[0m");
+                System.out.println("\u001B[32m  🎉 [SUCESSO] REMUXER DE VÍDEOS FINALIZADO COM SUCESSO!\u001B[0m");
+                System.out.println("\u001B[32m========================================================================\n\u001B[0m");
                 log.info("[SUCESSO] Remuxer de vídeos finalizado.");
             } catch (Exception e) {
                 log.error("Erro no remuxer em background", e);

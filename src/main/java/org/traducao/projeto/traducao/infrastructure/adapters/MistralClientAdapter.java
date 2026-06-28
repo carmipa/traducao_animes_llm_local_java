@@ -180,7 +180,7 @@ public class MistralClientAdapter implements MistralPort {
         List<String> problemasDetectados
     ) {
         String promptUsuario = montarPromptRevisao(originalInglesMascarado, traducaoPtMascarada, problemasDetectados);
-        String promptSistema = RegrasConcordanciaPtBr.montarPromptRevisao(gerenciadorContexto.obterPromptAtivo());
+        String promptSistema = RegrasConcordanciaPtBr.montarPromptRevisao(gerenciadorContexto.obterLoreAtiva());
 
         ChatRequest request = new ChatRequest(
             propriedades.model(),

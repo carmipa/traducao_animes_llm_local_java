@@ -267,17 +267,26 @@
                                     <option value="" disabled selected>Carregando contextos...</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary" id="btn-submit-analise" data-tooltip="Iniciar varredura técnica de arquivos de mídia">
-                                <span>Iniciar Análise</span>
-                                <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </button>
+                            <div class="correcao-actions">
+                                <button type="submit" class="btn btn-primary" id="btn-submit-analise" data-tooltip="Iniciar varredura técnica de arquivos de mídia">
+                                    <span>Iniciar Análise</span>
+                                    <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-clear-form" data-form="form-analise" data-tooltip="Limpa todos os campos e oculta o cartão do anime">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                                    <span>Limpar Campos</span>
+                                </button>
+                            </div>
                         </form>
                     </div>
                     
                     <div class="glass-card console-card">
                         <div class="console-header">
                             <h3>Logs do Analisador</h3>
-                            <button class="btn-clear-console" data-target="console-analise">Limpar</button>
+                            <div class="console-actions">
+                                <button class="btn-toggle-console" data-target="console-analise" data-tooltip="Alternar altura expandida do console">↕ Expandir</button>
+                                <button class="btn-clear-console" data-target="console-analise">Limpar</button>
+                            </div>
                         </div>
                         <div class="console-body" id="console-analise">
                             <div class="system-message">Aguardando execução...</div>
@@ -308,17 +317,26 @@
                                     <option value="SRT">SRT (SubRip Texto Simples)</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-magenta" data-tooltip="Iniciar extração paralela das faixas de legenda via mkvextract">
-                                <span>Executar Extração</span>
-                                <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </button>
+                            <div class="correcao-actions">
+                                <button type="submit" class="btn btn-primary btn-magenta" data-tooltip="Iniciar extração paralela das faixas de legenda via mkvextract">
+                                    <span>Executar Extração</span>
+                                    <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-clear-form" data-form="form-extracao" data-tooltip="Limpa todos os campos da extração">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                                    <span>Limpar Campos</span>
+                                </button>
+                            </div>
                         </form>
                     </div>
                     
                     <div class="glass-card console-card">
                         <div class="console-header">
                             <h3>Logs do Extrator</h3>
-                            <button class="btn-clear-console" data-target="console-extracao">Limpar</button>
+                            <div class="console-actions">
+                                <button class="btn-toggle-console" data-target="console-extracao" data-tooltip="Alternar altura expandida do console">↕ Expandir</button>
+                                <button class="btn-clear-console" data-target="console-extracao">Limpar</button>
+                            </div>
                         </div>
                         <div class="console-body" id="console-extracao">
                             <div class="system-message">Aguardando execução...</div>
@@ -348,17 +366,26 @@
                                     <option value="" disabled selected>Carregando contextos...</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-green" data-tooltip="Iniciar tradução em lote pelo servidor local do LM Studio">
-                                <span>Iniciar Tradução</span>
-                                <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </button>
+                            <div class="correcao-actions">
+                                <button type="submit" class="btn btn-primary btn-green" data-tooltip="Iniciar tradução em lote pelo servidor local do LM Studio">
+                                    <span>Iniciar Tradução</span>
+                                    <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-clear-form" data-form="form-traducao" data-tooltip="Limpa todos os campos e oculta o cartão do anime">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                                    <span>Limpar Campos</span>
+                                </button>
+                            </div>
                         </form>
                     </div>
                     
                     <div class="glass-card console-card">
                         <div class="console-header">
                             <h3>Console da Tradução</h3>
-                            <button class="btn-clear-console" data-target="console-traducao">Limpar</button>
+                            <div class="console-actions">
+                                <button class="btn-toggle-console" data-target="console-traducao" data-tooltip="Alternar altura expandida do console">↕ Expandir</button>
+                                <button class="btn-clear-console" data-target="console-traducao">Limpar</button>
+                            </div>
                         </div>
                         <div class="console-body" id="console-traducao">
                             <div class="system-message">Aguardando execução...</div>
@@ -401,6 +428,11 @@
                                     <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
                                     <span>Revisar Concordância do Cache</span>
                                 </button>
+
+                                <button type="button" class="btn btn-secondary btn-clear-form" data-form="form-correcao" data-tooltip="Limpa todos os campos e oculta o cartão do anime">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                                    <span>Limpar Campos</span>
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -408,7 +440,10 @@
                     <div class="glass-card console-card">
                         <div class="console-header">
                             <h3>Logs de Correção</h3>
-                            <button class="btn-clear-console" data-target="console-correcao">Limpar</button>
+                            <div class="console-actions">
+                                <button class="btn-toggle-console" data-target="console-correcao" data-tooltip="Alternar altura expandida do console">↕ Expandir</button>
+                                <button class="btn-clear-console" data-target="console-correcao">Limpar</button>
+                            </div>
                         </div>
                         <div class="console-body" id="console-correcao">
                             <div class="system-message">Aguardando execução...</div>
@@ -449,6 +484,10 @@
                                     <span>Corrigir via Scraping Google</span>
                                     <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
                                 </button>
+                                <button type="button" class="btn btn-secondary btn-clear-form" data-form="form-revisao" data-tooltip="Limpa todos os campos e oculta o cartão do anime">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                                    <span>Limpar Campos</span>
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -456,7 +495,10 @@
                     <div class="glass-card console-card">
                         <div class="console-header">
                             <h3>Logs da Revisão</h3>
-                            <button class="btn-clear-console" data-target="console-revisao">Limpar</button>
+                            <div class="console-actions">
+                                <button class="btn-toggle-console" data-target="console-revisao" data-tooltip="Alternar altura expandida do console">↕ Expandir</button>
+                                <button class="btn-clear-console" data-target="console-revisao">Limpar</button>
+                            </div>
                         </div>
                         <div class="console-body" id="console-revisao">
                             <div class="system-message">Aguardando execução...</div>
@@ -479,17 +521,26 @@
                                 <label for="remuxer-legendas">Pasta com as legendas traduzidas (.ass): <span class="help-icon" data-tooltip="Diretório onde estão as novas legendas ASS traduzidas. Pressione Enter para buscar automaticamente na pasta padrão do projeto.">?</span></label>
                                 <input type="text" id="remuxer-legendas" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04\legendas_ptbr (Enter = automático)">
                             </div>
-                            <button type="submit" class="btn btn-primary btn-cyan" data-tooltip="Mescla os arquivos de vídeo e legendas traduzidas em novos arquivos usando mkvmerge">
-                                <span>Iniciar Remuxing</span>
-                                <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </button>
+                            <div class="correcao-actions">
+                                <button type="submit" class="btn btn-primary btn-cyan" data-tooltip="Mescla os arquivos de vídeo e legendas traduzidas em novos arquivos usando mkvmerge">
+                                    <span>Iniciar Remuxing</span>
+                                    <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-clear-form" data-form="form-remuxer" data-tooltip="Limpa todos os campos do remuxer">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                                    <span>Limpar Campos</span>
+                                </button>
+                            </div>
                         </form>
                     </div>
                     
                     <div class="glass-card console-card">
                         <div class="console-header">
                             <h3>Logs de Remux</h3>
-                            <button class="btn-clear-console" data-target="console-remuxer">Limpar</button>
+                            <div class="console-actions">
+                                <button class="btn-toggle-console" data-target="console-remuxer" data-tooltip="Alternar altura expandida do console">↕ Expandir</button>
+                                <button class="btn-clear-console" data-target="console-remuxer">Limpar</button>
+                            </div>
                         </div>
                         <div class="console-body" id="console-remuxer">
                             <div class="system-message">Aguardando execução...</div>
