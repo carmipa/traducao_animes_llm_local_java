@@ -24,6 +24,8 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 
+import org.mockito.ArgumentCaptor;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
@@ -127,6 +129,61 @@ class ProcessarArquivoUseCaseTest {
 
         // "Hello!" veio do cache (corrigido manualmente): so "Goodbye." precisou ir ao LLM.
         verify(mistralPort, times(1)).traduzir(any());
+    }
+
+    // Reproduz o padrão real encontrado em Mobile Suit Gundam: Char's Counterattack
+    // — um letreiro de título redesenhado quadro a quadro (mesmo texto "TITLE",
+    // só a cor muda, repetido 5x) e um desenho vetorial puro (\p1) — ao lado de
+    // uma fala real com efeito visual pontual em duas camadas (contorno+
+    // preenchimento), que aparece só 2x e deve continuar sendo traduzida.
+    private static final String CONTEUDO_ASS_LIXO_VETORIAL = String.join("\n", List.of(
+        "[Script Info]",
+        "Title: Teste",
+        "",
+        "[V4+ Styles]",
+        "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
+        "Style: Default,Arial,60,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,0,0,0,100,100,0,0,1,0,0,2,-153,-153,66,0",
+        "",
+        "[Events]",
+        "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
+        "Dialogue: 0,0:00:01.00,0:00:02.00,Default,,0,0,0,,{\\p1}m 0 0 l 100 0 100 100 0 100",
+        "Dialogue: 0,0:00:03.00,0:00:03.10,Default,,0,0,0,,{\\fad(200,200)\\blur1\\pos(100,100)\\c&HAAAAAA&}TITLE",
+        "Dialogue: 0,0:00:03.10,0:00:03.20,Default,,0,0,0,,{\\fad(200,200)\\blur1\\pos(100,100)\\c&HBBBBBB&}TITLE",
+        "Dialogue: 0,0:00:03.20,0:00:03.30,Default,,0,0,0,,{\\fad(200,200)\\blur1\\pos(100,100)\\c&HCCCCCC&}TITLE",
+        "Dialogue: 0,0:00:03.30,0:00:03.40,Default,,0,0,0,,{\\fad(200,200)\\blur1\\pos(100,100)\\c&HDDDDDD&}TITLE",
+        "Dialogue: 0,0:00:03.40,0:00:03.50,Default,,0,0,0,,{\\fad(200,200)\\blur1\\pos(100,100)\\c&HEEEEEE&}TITLE",
+        "Dialogue: 1,0:00:05.00,0:00:06.00,Default,,0,0,0,,{\\pos(1889,99)\\blur0.8\\fad(200,200)\\blur4\\bord4\\3c&H345F00&\\c&H345F00&}I could not say goodbye",
+        "Dialogue: 0,0:00:05.00,0:00:06.00,Default,,0,0,0,,{\\blur0.8\\fad(200,200)}I could not say goodbye"
+    )) + "\n";
+
+    @Test
+    void pulaDesenhoVetorialELetreiroAnimadoMasTraduzFalaComEfeitoPontual(@TempDir Path tempDir) throws Exception {
+        Path entrada = tempDir.resolve("entrada.ass");
+        Files.writeString(entrada, CONTEUDO_ASS_LIXO_VETORIAL, StandardCharsets.UTF_8);
+        Path saida = tempDir.resolve("saida");
+        Path cache = tempDir.resolve("cache");
+
+        when(mistralPort.traduzir(any())).thenAnswer(invocation -> {
+            Lote lote = invocation.getArgument(0);
+            List<String> traduzidas = lote.linhasOriginais().stream()
+                .map(linha -> linha.replace("I could not say goodbye", "Eu não pude dizer adeus"))
+                .toList();
+            return new TraducaoLote(lote.idLote(), traduzidas, true, null);
+        });
+
+        Path arquivoSaida = criarUseCase(saida, cache).processar(entrada);
+        String conteudoSaida = Files.readString(arquivoSaida, StandardCharsets.UTF_8);
+
+        // Desenho vetorial (\p1) e letreiro animado (TITLE x5) nunca chegam ao LLM:
+        // só a fala real, enviada em 1 lote de 2 linhas (as duas camadas de "goodbye").
+        ArgumentCaptor<Lote> captor = ArgumentCaptor.forClass(Lote.class);
+        verify(mistralPort, times(1)).traduzir(captor.capture());
+        assertThat(captor.getValue().linhasOriginais()).hasSize(2);
+
+        assertThat(conteudoSaida).contains("{\\p1}m 0 0 l 100 0 100 100 0 100");
+        assertThat(conteudoSaida).contains("&HAAAAAA&}TITLE").contains("&HEEEEEE&}TITLE");
+        assertThat(conteudoSaida).doesNotContain("I could not say goodbye");
+        assertThat(conteudoSaida).contains("Eu não pude dizer adeus");
     }
 
     @Test

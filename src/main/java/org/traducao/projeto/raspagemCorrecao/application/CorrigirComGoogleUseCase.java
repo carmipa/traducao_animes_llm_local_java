@@ -1,39 +1,33 @@
 package org.traducao.projeto.raspagemCorrecao.application;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.traducao.projeto.raspagemCorrecao.infrastructure.GoogleTranslateScraper;
+import org.traducao.projeto.telemetria.OperacaoTelemetria;
+import org.traducao.projeto.telemetria.TelemetriaService;
 import org.traducao.projeto.traducao.presentation.ui.AnsiCores;
 
 import java.io.IOException;
-import java.net.URI;
-import java.net.URLEncoder;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 @Service
 public class CorrigirComGoogleUseCase {
 
     private static final Logger log = LoggerFactory.getLogger(CorrigirComGoogleUseCase.class);
-    private final ObjectMapper mapper;
-    private final HttpClient httpClient;
 
-    // Lista de termos e magias conhecidas de DanMachi que devem permanecer inalterados
+    private final ObjectMapper mapper;
+    private final GoogleTranslateScraper googleScraper;
+    private final TelemetriaService telemetriaService;
+
     private static final Set<String> TERMOS_IGNORADOS = Set.of(
         "fire bolt", "argo vesta", "caelus hildr", "hildrsleif", "dios aedes vesta",
         "vana freya", "vana seith", "vana seith.", "zeo gullveig", "hildis vini",
@@ -41,18 +35,22 @@ public class CorrigirComGoogleUseCase {
         "dubh daol", "zekka", "gralineze fromel", "gokoh", "astrea record"
     );
 
-    public CorrigirComGoogleUseCase(ObjectMapper mapper) {
+    public CorrigirComGoogleUseCase(
+        ObjectMapper mapper,
+        GoogleTranslateScraper googleScraper,
+        TelemetriaService telemetriaService
+    ) {
         this.mapper = mapper.copy().enable(SerializationFeature.INDENT_OUTPUT);
-        this.httpClient = HttpClient.newBuilder()
-                .followRedirects(HttpClient.Redirect.NORMAL)
-                .build();
+        this.googleScraper = googleScraper;
+        this.telemetriaService = telemetriaService;
     }
 
     public int executar(Path diretorioCache) {
-        System.out.println("Iniciando correção via Scraping Google Translate em: " + diretorioCache.toAbsolutePath());
+        long inicioMs = System.currentTimeMillis();
+        out("Iniciando correção via Scraping Google Translate em: " + diretorioCache.toAbsolutePath());
 
         if (!Files.exists(diretorioCache)) {
-            System.out.println(AnsiCores.RED + "Erro: A pasta especificada não foi localizada no disco." + AnsiCores.RESET);
+            out(AnsiCores.RED + "Erro: A pasta especificada não foi localizada no disco." + AnsiCores.RESET);
             return 0;
         }
 
@@ -66,14 +64,50 @@ public class CorrigirComGoogleUseCase {
                         processarArquivoCache(arquivo, totalArquivosProcessados, totalLinhasCorrigidas);
                     });
 
-            System.out.println("Total de arquivos de cache analisados: " + totalArquivosProcessados[0]);
-            System.out.println("Total de falas em inglês corrigidas via Google: " + totalLinhasCorrigidas[0]);
+            out("Total de arquivos de cache analisados: " + totalArquivosProcessados[0]);
+            out("Total de falas em inglês corrigidas via Google: " + totalLinhasCorrigidas[0]);
 
         } catch (IOException e) {
-            System.out.println(AnsiCores.RED + "Erro ao varrer a pasta de cache: " + e.getMessage() + AnsiCores.RESET);
+            out(AnsiCores.RED + "Erro ao varrer a pasta de cache: " + e.getMessage() + AnsiCores.RESET);
         }
-        
+
+        long duracaoMs = System.currentTimeMillis() - inicioMs;
+        OperacaoTelemetria operacao = TelemetriaService.criarOperacao(
+            "Correção Google (cache)",
+            diretorioCache.toAbsolutePath().toString(),
+            duracaoMs,
+            totalArquivosProcessados[0],
+            totalLinhasCorrigidas[0],
+            totalLinhasCorrigidas[0]
+        );
+        String relatorio = """
+            CORREÇÃO VIA GOOGLE TRANSLATE (CACHE)
+            =====================================
+            Pasta: %s
+            Duração: %s
+            Arquivos de cache analisados: %d
+            Falas corrigidas via Google: %d
+            """.formatted(
+            diretorioCache.toAbsolutePath(),
+            formatarDuracaoMs(duracaoMs),
+            totalArquivosProcessados[0],
+            totalLinhasCorrigidas[0]
+        );
+        telemetriaService.finalizarOperacao(
+            operacao, diretorioCache, "correcao_google_cache", relatorio);
+        out("Relatório salvo em: " + TelemetriaService.resolverPastaRelatorios(diretorioCache));
+
         return totalLinhasCorrigidas[0];
+    }
+
+    private String formatarDuracaoMs(long ms) {
+        long segundos = ms / 1000;
+        return segundos >= 60 ? (segundos / 60) + "min " + (segundos % 60) + "s" : segundos + "s";
+    }
+
+    private void out(String mensagem) {
+        System.out.println(mensagem);
+        log.info(mensagem);
     }
 
     private void processarArquivoCache(Path arquivo, int[] totalArquivos, int[] totalLinhas) {
@@ -100,7 +134,7 @@ public class CorrigirComGoogleUseCase {
                     System.out.println("  -> Traduzindo linha " + entrada.get("indice") + " [" + entrada.get("estilo") + "]:");
                     System.out.println("     Inglês: " + AnsiCores.YELLOW + original + AnsiCores.RESET);
 
-                    String traduzidoNovo = traduzirViaGoogle(original);
+                    String traduzidoNovo = googleScraper.traduzir(original);
                     System.out.println("     Português: " + AnsiCores.GREEN + traduzidoNovo + AnsiCores.RESET);
 
                     entrada.put("traduzido", traduzidoNovo);
@@ -109,7 +143,6 @@ public class CorrigirComGoogleUseCase {
                     linhasCorrigidasNesteArquivo++;
                     modificado = true;
 
-                    // Pausa de cortesia para evitar rate limit do Google Translate
                     try {
                         Thread.sleep(400);
                     } catch (InterruptedException ie) {
@@ -150,88 +183,6 @@ public class CorrigirComGoogleUseCase {
             return true;
         }
 
-        if (TERMOS_IGNORADOS.contains(textoLimpo.toLowerCase())) {
-            return true;
-        }
-
-        return false;
-    }
-
-    private String traduzirViaGoogle(String textoOriginal) {
-        List<String> tags = new ArrayList<>();
-        Pattern patternTags = Pattern.compile("\\{[^}]+\\}");
-        Matcher matcher = patternTags.matcher(textoOriginal);
-        StringBuilder sb = new StringBuilder();
-        int lastEnd = 0;
-
-        while (matcher.find()) {
-            sb.append(textoOriginal, lastEnd, matcher.start());
-            tags.add(matcher.group());
-            sb.append(" [T").append(tags.size() - 1).append("] ");
-            lastEnd = matcher.end();
-        }
-        sb.append(textoOriginal, lastEnd, textoOriginal.length());
-        String textoMascarado = sb.toString();
-
-        boolean temQuebra = textoMascarado.contains("\\N");
-        if (temQuebra) {
-            textoMascarado = textoMascarado.replace("\\N", " [B] ");
-        }
-
-        textoMascarado = textoMascarado.replaceAll("\\s+", " ").strip();
-
-        if (textoMascarado.isEmpty()) {
-            return textoOriginal;
-        }
-
-        try {
-            String query = URLEncoder.encode(textoMascarado, StandardCharsets.UTF_8);
-            String url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=pt&dt=t&q=" + query;
-
-            HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create(url))
-                    .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
-                    .GET()
-                    .build();
-
-            HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
-
-            if (response.statusCode() != 200) {
-                log.warn("Erro HTTP na chamada do Google Translate: {}", response.statusCode());
-                return textoOriginal;
-            }
-
-            JsonNode root = mapper.readTree(response.body());
-            JsonNode segments = root.get(0);
-            StringBuilder resultadoTraduzido = new StringBuilder();
-
-            if (segments != null && segments.isArray()) {
-                for (JsonNode segment : segments) {
-                    JsonNode text = segment.get(0);
-                    if (text != null && !text.isNull()) {
-                        resultadoTraduzido.append(text.asText());
-                    }
-                }
-            }
-
-            String traduzido = resultadoTraduzido.toString();
-
-            if (temQuebra) {
-                traduzido = traduzido.replaceAll("(?i)\\s*\\[b\\]\\s*", "\\\\N");
-            }
-
-            for (int i = 0; i < tags.size(); i++) {
-                String pattern = "(?i)\\s*\\[t" + i + "\\]\\s*";
-                traduzido = traduzido.replaceAll(pattern, Matcher.quoteReplacement(tags.get(i)));
-            }
-
-            traduzido = traduzido.replace("\\ N", "\\N").replace("\\ n", "\\N");
-
-            return traduzido;
-
-        } catch (Exception e) {
-            log.error("Erro na comunicação com a API do Google Translate: {}", e.getMessage());
-            return textoOriginal;
-        }
+        return TERMOS_IGNORADOS.contains(textoLimpo.toLowerCase());
     }
 }

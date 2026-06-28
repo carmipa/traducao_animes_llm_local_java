@@ -20,6 +20,7 @@ public class ContextoDanMachi implements ProvedorContexto {
         - Epitetos recorrentes: Ais Wallenstein e conhecida como "Sword Princess" (Princesa Espadachim); Bell e chamado de "Little Rookie" (Pequeno Novato) por outros aventureiros; Ottar e tratado como o aventureiro mais forte de Orario. Mantenha o epiteto e traduza-o de forma consistente sempre que reaparecer.
         - Bell se refere a Hestia como "Goddess" (Deusa), com mistura de respeito e carinho; preserve esse tratamento em vez de reduzir so ao nome proprio.
         - Tom: aventura/fantasia com humor leve, romance timido e momentos heroicos; Bell fala de modo sincero e respeitoso, Hestia alterna carinho e ciume, Freya soa sedutora e dominante.
+        - Genero dos personagens principais (concordancia obrigatoria): Bell Cranel (m), Hestia (f), Ais Wallenstein (f), Liliruca/Lili (f), Welf Crozzo (m), Mikoto Yamato (f), Haruhime Sanjouno (f), Ryu Lion (f), Syr Flova (f), Freya (f), Ottar (m).
         """;
 
     private static final String PROMPT = ContextoPrompt.montar("DanMachi", LORE);

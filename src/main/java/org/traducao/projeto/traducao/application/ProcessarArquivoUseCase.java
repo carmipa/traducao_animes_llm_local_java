@@ -31,6 +31,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ExecutionException;
+import java.util.regex.Pattern;
 
 /**
  * Orquestra a tradução de um único arquivo de legenda: le -> reaproveita o
@@ -45,6 +46,17 @@ import java.util.concurrent.ExecutionException;
 public class ProcessarArquivoUseCase {
 
     private static final Logger log = LoggerFactory.getLogger(ProcessarArquivoUseCase.class);
+
+    // Modo de desenho vetorial do Aegisub (\p1, \p2, ... \pN): o texto que segue
+    // não é fala, são comandos de path vetorial. Sempre lixo, sem exceção.
+    private static final Pattern PADRAO_DESENHO_VETORIAL = Pattern.compile("\\\\p[1-9]\\d*");
+    // Remove blocos de override ASS ({\tag...}) para isolar o texto visível.
+    private static final Pattern PADRAO_REMOVE_TAGS_ASS = Pattern.compile("\\{[^}]+}");
+    // Um letreiro/título animado quadro a quadro reaparece muitas vezes com o
+    // mesmo texto visível (só a tag de efeito muda a cada quadro). Abaixo
+    // disso é mais provável ser só uma fala com efeito visual pontual (ex.:
+    // duas camadas contorno+preenchimento de uma mesma linha de encerramento).
+    private static final int LIMIAR_REPETICAO_LETREIRO = 5;
 
     private final LeitorLegendaAss leitor;
     private final EscritorLegendaAss escritor;
@@ -92,8 +104,9 @@ public class ProcessarArquivoUseCase {
         Path arquivoCache = resolverArquivoCache(arquivoEntrada);
         Map<String, String> cacheExistente = cacheService.carregar(arquivoCache);
 
+        Map<String, Long> frequenciaTextoLimpo = calcularFrequenciaTextoLimpo(documento);
         List<EventoLegenda> eventosTraduziveis = documento.eventos().stream()
-            .filter(this::isTraduzivel)
+            .filter(evento -> isTraduzivel(evento, frequenciaTextoLimpo))
             .toList();
         log.info("{} fala(s) traduzível(eis) encontrada(s) em {}", eventosTraduziveis.size(), arquivoEntrada.getFileName());
 
@@ -131,7 +144,7 @@ public class ProcessarArquivoUseCase {
 
                 List<EntradaCache> entradasCacheParcial = new ArrayList<>();
                 for (EventoLegenda evento : documento.eventos()) {
-                    if (isTraduzivel(evento)) {
+                    if (isTraduzivel(evento, frequenciaTextoLimpo)) {
                         String txtFinal = combinadasParciais.get(evento.texto());
                         if (txtFinal != null) {
                             entradasCacheParcial.add(new EntradaCache(
@@ -153,7 +166,7 @@ public class ProcessarArquivoUseCase {
         List<EventoLegenda> eventosFinais = new ArrayList<>(documento.eventos().size());
         List<EntradaCache> entradasCache = new ArrayList<>();
         for (EventoLegenda evento : documento.eventos()) {
-            if (!isTraduzivel(evento)) {
+            if (!isTraduzivel(evento, frequenciaTextoLimpo)) {
                 eventosFinais.add(evento);
                 continue;
             }
@@ -281,10 +294,64 @@ public class ProcessarArquivoUseCase {
         }
     }
 
-    private boolean isTraduzivel(EventoLegenda evento) {
-        return evento.isDialogo() && evento.temTexto() 
-            && !propriedades.estiloIgnorado(evento.estilo())
-            && mascarador.contemTextoTraduzivel(evento.texto());
+    /**
+     * Conta, por texto "limpo" (sem tags de override ASS), quantas vezes ele
+     * aparece entre as falas de diálogo do documento. Um letreiro/título
+     * animado quadro a quadro reaproveita o mesmo texto visível dezenas ou
+     * milhares de vezes (só a tag de efeito muda); uma fala normal — mesmo
+     * com duas camadas de estilo (contorno+preenchimento) ou repetida em
+     * momentos diferentes do episódio — nunca chega perto desse volume.
+     */
+    private Map<String, Long> calcularFrequenciaTextoLimpo(DocumentoLegenda documento) {
+        Map<String, Long> frequencia = new HashMap<>();
+        for (EventoLegenda evento : documento.eventos()) {
+            if (!evento.isDialogo() || !evento.temTexto()) {
+                continue;
+            }
+            String textoLimpo = PADRAO_REMOVE_TAGS_ASS.matcher(evento.texto()).replaceAll("").strip();
+            if (!textoLimpo.isEmpty()) {
+                frequencia.merge(textoLimpo, 1L, Long::sum);
+            }
+        }
+        return frequencia;
+    }
+
+    private boolean isTraduzivel(EventoLegenda evento, Map<String, Long> frequenciaTextoLimpo) {
+        if (!evento.isDialogo() || !evento.temTexto()) {
+            return false;
+        }
+        if (propriedades.estiloIgnorado(evento.estilo())) {
+            return false;
+        }
+
+        String texto = evento.texto();
+
+        // 1. Blindagem Contra Lixo Vetorial Absoluto (modo de desenho \p1, \p2, ... do Aegisub)
+        if (PADRAO_DESENHO_VETORIAL.matcher(texto).find()) {
+            return false;
+        }
+
+        String textoLimpo = PADRAO_REMOVE_TAGS_ASS.matcher(texto).replaceAll("").strip();
+        if (textoLimpo.isEmpty()) {
+            return false;
+        }
+
+        // 2. Blindagem Contra Typesetting Dinâmico (letreiros/títulos animados quadro a quadro):
+        // tag de efeito pesada + pouco texto visível + o mesmo texto repetido muitas vezes no
+        // arquivo. A repetição é o sinal decisivo: sem ela, uma fala isolada com efeito visual
+        // (ex.: a camada de contorno de uma legenda de encerramento) seria descartada por engano.
+        boolean temTagDeAnimacao = texto.contains("\\clip") || texto.contains("\\move")
+            || texto.contains("\\pos") || texto.contains("\\fad") || texto.contains("\\t(");
+        if (temTagDeAnimacao && texto.length() > 40 && textoLimpo.length() * 3 < texto.length()) {
+            long repeticoes = frequenciaTextoLimpo.getOrDefault(textoLimpo, 1L);
+            if (repeticoes >= LIMIAR_REPETICAO_LETREIRO) {
+                log.debug("Bloqueando evento suspeito de letreiro animado (repetido {}x). Estilo: {} Texto: {}",
+                    repeticoes, evento.estilo(), textoLimpo);
+                return false;
+            }
+        }
+
+        return mascarador.contemTextoTraduzivel(texto);
     }
 
     private boolean isCacheReaproveitavel(String original, String traduzido) {
@@ -307,7 +374,7 @@ public class ProcessarArquivoUseCase {
     }
 
     private boolean deveManterIdentico(String texto) {
-        String textoLimpo = texto.replaceAll("\\{[^}]+\\}", "").strip();
+        String textoLimpo = PADRAO_REMOVE_TAGS_ASS.matcher(texto).replaceAll("").strip();
         textoLimpo = textoLimpo.replaceAll("[^\\w\\s\\d]", "").strip();
 
         if (textoLimpo.isEmpty()) {

@@ -4,6 +4,9 @@
 
 ## Para as IAs que lerem este repositório no futuro
 
+**Leia primeiro [CEREBRO_IA.md](CEREBRO_IA.md)** — memória viva com estado atual do pipeline, telemetria, revisão de legendas e checklist.  
+Atualize o CÉREBRO ao final de cada tarefa significativa; use este `ARQUITETURA.md` para decisões profundas e armadilhas.
+
 Este projeto foi refatorado do Python (pipeline do Gundam Origin usando Mistral/Nemo) para Java 25 visando **baixo overhead de I/O** com Virtual Threads onde faz sentido.
 
 **Leia este arquivo antes de alterar o fluxo de pastas, cache ou chamadas ao LLM** — várias decisões aqui existem por limitações reais do LM Studio (GPU única, fila serial de inferência).

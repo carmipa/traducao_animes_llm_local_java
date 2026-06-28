@@ -10,6 +10,9 @@ import org.traducao.projeto.legendasExtracao.application.ExtrairLegendaUseCase;
 import org.traducao.projeto.legendasExtracao.domain.FormatoLegenda;
 import org.traducao.projeto.mapaProjeto.application.GeradorMapaProjetoUseCase;
 import org.traducao.projeto.raspagemCorrecao.application.CorrigirComGoogleUseCase;
+import org.traducao.projeto.raspagemRevisao.application.ResultadoRevisaoLegendas;
+import org.traducao.projeto.raspagemRevisao.application.RevisarCacheUseCase;
+import org.traducao.projeto.raspagemRevisao.application.RevisarLegendasUseCase;
 import org.traducao.projeto.remuxer.application.RemuxarLoteUseCase;
 import org.traducao.projeto.telemetria.TelemetriaResumo;
 import org.traducao.projeto.telemetria.TelemetriaService;
@@ -23,11 +26,13 @@ import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
 import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
 
 import java.io.IOException;
+import java.nio.file.InvalidPathException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -52,6 +57,8 @@ public class ApiController {
     private final ProcessarArquivoUseCase processarArquivoUseCase;
     private final LimparCacheUseCase limparCacheUseCase;
     private final CorrigirComGoogleUseCase corrigirComGoogleUseCase;
+    private final RevisarCacheUseCase revisarCacheUseCase;
+    private final RevisarLegendasUseCase revisarLegendasUseCase;
     private final RemuxarLoteUseCase remuxarLoteUseCase;
     private final GeradorMapaProjetoUseCase geradorMapaProjetoUseCase;
     private final TelemetriaService telemetriaService;
@@ -67,6 +74,8 @@ public class ApiController {
             ProcessarArquivoUseCase processarArquivoUseCase,
             LimparCacheUseCase limparCacheUseCase,
             CorrigirComGoogleUseCase corrigirComGoogleUseCase,
+            RevisarCacheUseCase revisarCacheUseCase,
+            RevisarLegendasUseCase revisarLegendasUseCase,
             RemuxarLoteUseCase remuxarLoteUseCase,
             GeradorMapaProjetoUseCase geradorMapaProjetoUseCase,
             TelemetriaService telemetriaService,
@@ -80,6 +89,8 @@ public class ApiController {
         this.processarArquivoUseCase = processarArquivoUseCase;
         this.limparCacheUseCase = limparCacheUseCase;
         this.corrigirComGoogleUseCase = corrigirComGoogleUseCase;
+        this.revisarCacheUseCase = revisarCacheUseCase;
+        this.revisarLegendasUseCase = revisarLegendasUseCase;
         this.remuxarLoteUseCase = remuxarLoteUseCase;
         this.geradorMapaProjetoUseCase = geradorMapaProjetoUseCase;
         this.telemetriaService = telemetriaService;
@@ -177,6 +188,8 @@ public class ApiController {
                 Path pathEntrada = Path.of(req.entrada());
                 Path pathSaida = (req.saida() != null && !req.saida().isBlank()) ? Path.of(req.saida()) : null;
                 analisarMidiaUseCase.executar(pathEntrada, pathSaida);
+                System.out.println("\u001B[32m[SUCESSO] Análise de mídia finalizada.\u001B[0m");
+                log.info("[SUCESSO] Análise de mídia finalizada.");
             } catch (Exception e) {
                 log.error("Erro na análise de mídia em background", e);
                 System.out.println("\u001B[31m[ERRO] Falha na análise: " + e.getMessage() + "\u001B[0m");
@@ -201,6 +214,8 @@ public class ApiController {
                 Path pathEntrada = Path.of(req.entrada());
                 FormatoLegenda formato = FormatoLegenda.fromString(req.formato() != null ? req.formato() : "ASS");
                 extrairLegendaUseCase.executar(pathEntrada, formato);
+                System.out.println("\u001B[32m[SUCESSO] Extração de legendas finalizada.\u001B[0m");
+                log.info("[SUCESSO] Extração de legendas finalizada.");
             } catch (Exception e) {
                 log.error("Erro na extração de legendas em background", e);
                 System.out.println("\u001B[31m[ERRO] Falha na extração: " + e.getMessage() + "\u001B[0m");
@@ -279,6 +294,7 @@ public class ApiController {
                 }
 
                 System.out.println("\n\u001B[32m=================== PROCESSAMENTO FINALIZADO ===================\u001B[0m");
+                log.info("[SUCESSO] Tradução via LLM processamento finalizado.");
 
             } catch (Exception e) {
                 log.error("Erro na tradução em background", e);
@@ -301,6 +317,8 @@ public class ApiController {
             logStreamService.definirCanalAtual("correcao");
             try {
                 limparCacheUseCase.executar(pathCache);
+                System.out.println("\u001B[32m[SUCESSO] Limpeza de cache concluída.\u001B[0m");
+                log.info("[SUCESSO] Limpeza de cache concluída.");
             } catch (Exception e) {
                 log.error("Erro ao limpar cache", e);
                 System.out.println("\u001B[31m[ERRO] Limpeza do cache falhou: " + e.getMessage() + "\u001B[0m");
@@ -322,6 +340,8 @@ public class ApiController {
             logStreamService.definirCanalAtual("correcao");
             try {
                 corrigirComGoogleUseCase.executar(pathCache);
+                System.out.println("\u001B[32m[SUCESSO] Correção via Google Translate finalizada.\u001B[0m");
+                log.info("[SUCESSO] Correção via Google Translate finalizada.");
             } catch (Exception e) {
                 log.error("Erro ao executar scraping", e);
                 System.out.println("\u001B[31m[ERRO] Raspagem do Google falhou: " + e.getMessage() + "\u001B[0m");
@@ -329,6 +349,180 @@ public class ApiController {
         });
 
         return ResponseEntity.ok(new RespostaPadrao("Auditoria e correção via Google Translate iniciada."));
+    }
+
+    /**
+     * 5b. REVISÃO GRAMATICAL DO CACHE (concordância PT-BR via LLM)
+     */
+    @PostMapping("/revisar-cache")
+    public ResponseEntity<RespostaPadrao> revisarCache(@RequestBody OperacaoRequest req) {
+        String cacheDir = req.entrada() != null && !req.entrada().isBlank() ? req.entrada() : "cache";
+        Path pathCache = Path.of(cacheDir);
+
+        if (req.contextoId() != null && !req.contextoId().isBlank() && !gerenciadorContexto.existeContexto(req.contextoId())) {
+            return ResponseEntity.badRequest().body(new RespostaPadrao(
+                "Contexto desconhecido: \"" + req.contextoId() + "\"."));
+        }
+
+        executor.submit(() -> {
+            logStreamService.definirCanalAtual("correcao");
+            try {
+                StatusLlm status = mistralPort.verificarDisponibilidade();
+                if (!status.modeloCarregado()) {
+                    System.out.println("\u001B[31m[FAIL] LLM indisponível para revisão: "
+                        + status.mensagem() + "\u001B[0m");
+                    return;
+                }
+                revisarCacheUseCase.executar(pathCache, req.contextoId());
+                System.out.println("\u001B[32m[SUCESSO] Revisão gramatical do cache finalizada.\u001B[0m");
+                log.info("[SUCESSO] Revisão gramatical do cache finalizada.");
+            } catch (Exception e) {
+                log.error("Erro na revisão gramatical do cache", e);
+                System.out.println("\u001B[31m[ERRO] Revisão gramatical falhou: " + e.getMessage() + "\u001B[0m");
+            }
+        });
+
+        return ResponseEntity.ok(new RespostaPadrao("Revisão de concordância PT-BR iniciada no servidor."));
+    }
+
+    /**
+     * 5. REVISÃO DE LEGENDAS TRADUZIDAS (.ass) via Google + auditoria
+     */
+    @PostMapping("/revisar-legendas")
+    public ResponseEntity<RespostaPadrao> revisarLegendas(@RequestBody OperacaoRequest req) {
+        if (req.entrada() == null || req.entrada().isBlank()) {
+            return ResponseEntity.badRequest().body(new RespostaPadrao(
+                "Pasta com legendas traduzidas em português (.ass) é obrigatória."));
+        }
+
+        Optional<Path> pathPtOpt = parseCaminhoSeguro(req.entrada(), "legendas traduzidas");
+        if (pathPtOpt.isEmpty()) {
+            return ResponseEntity.badRequest().body(new RespostaPadrao(
+                "Caminho inválido para legendas traduzidas. Informe apenas a pasta (ex.: E:\\animes\\legendas_ptbr), "
+                    + "sem colar logs ou textos da interface."));
+        }
+        Path pathPt = pathPtOpt.get();
+
+        final Path pathEnFinal;
+        if (req.saida() != null && !req.saida().isBlank()) {
+            Optional<Path> pathEnOpt = parseCaminhoSeguro(req.saida(), "legendas originais em inglês");
+            if (pathEnOpt.isEmpty()) {
+                return ResponseEntity.badRequest().body(new RespostaPadrao(
+                    "Caminho inválido para legendas em inglês. Informe apenas a pasta, sem colar logs da interface."));
+            }
+            pathEnFinal = pathEnOpt.get();
+        } else {
+            pathEnFinal = null;
+        }
+
+        Optional<String> erroValidacao = revisarLegendasUseCase.validarPastaEntrada(pathPt);
+        if (erroValidacao.isPresent()) {
+            return ResponseEntity.badRequest().body(new RespostaPadrao(erroValidacao.get()));
+        }
+
+        executor.submit(() -> {
+            logStreamService.definirCanalAtual("revisao");
+            try {
+                ResultadoRevisaoLegendas resultado = revisarLegendasUseCase.executar(
+                    pathPt, pathEnFinal, Path.of("cache"), null);
+                if (resultado.arquivosAnalisados() == 0) {
+                    System.out.println(
+                        "\u001B[33m[AVISO] Revisão concluída sem arquivos .ass/.ssa para analisar.\u001B[0m");
+                } else {
+                    System.out.println(
+                        "\u001B[32m[SUCESSO] Revisão de legendas traduzidas finalizada "
+                            + "(" + resultado.arquivosAnalisados() + " arquivo(s), "
+                            + resultado.falasCorrigidas() + " falas corrigidas).\u001B[0m");
+                    log.info("[SUCESSO] Revisão de legendas: {} arquivo(s), {} corrigidas.",
+                        resultado.arquivosAnalisados(), resultado.falasCorrigidas());
+                }
+            } catch (Exception e) {
+                log.error("Erro na revisão de legendas", e);
+                System.out.println("\u001B[31m[ERRO] Revisão de legendas falhou: " + e.getMessage() + "\u001B[0m");
+            }
+        });
+
+        return ResponseEntity.ok(new RespostaPadrao("Revisão de legendas traduzidas iniciada no servidor."));
+    }
+
+    /**
+     * 5c. REVISÃO DE CONCORDÂNCIA PT-BR NAS LEGENDAS (.ass) via LLM local
+     */
+    @PostMapping("/revisar-legendas-concordancia")
+    public ResponseEntity<RespostaPadrao> revisarLegendasConcordancia(@RequestBody OperacaoRequest req) {
+        if (req.entrada() == null || req.entrada().isBlank()) {
+            return ResponseEntity.badRequest().body(new RespostaPadrao(
+                "Pasta com legendas traduzidas em português (.ass) é obrigatória."));
+        }
+
+        if (req.contextoId() != null && !req.contextoId().isBlank()
+            && !gerenciadorContexto.existeContexto(req.contextoId())) {
+            return ResponseEntity.badRequest().body(new RespostaPadrao(
+                "Contexto desconhecido: \"" + req.contextoId() + "\"."));
+        }
+
+        Optional<Path> pathPtOpt = parseCaminhoSeguro(req.entrada(), "legendas traduzidas");
+        if (pathPtOpt.isEmpty()) {
+            return ResponseEntity.badRequest().body(new RespostaPadrao(
+                "Caminho inválido para legendas traduzidas. Informe apenas a pasta (ex.: E:\\animes\\legendas_ptbr), "
+                    + "sem colar logs ou textos da interface."));
+        }
+        Path pathPt = pathPtOpt.get();
+
+        final Path pathEnFinal;
+        if (req.saida() != null && !req.saida().isBlank()) {
+            Optional<Path> pathEnOpt = parseCaminhoSeguro(req.saida(), "legendas originais em inglês");
+            if (pathEnOpt.isEmpty()) {
+                return ResponseEntity.badRequest().body(new RespostaPadrao(
+                    "Caminho inválido para legendas em inglês. Informe apenas a pasta, sem colar logs da interface."));
+            }
+            pathEnFinal = pathEnOpt.get();
+        } else {
+            pathEnFinal = null;
+        }
+
+        Optional<String> erroValidacao = revisarLegendasUseCase.validarPastaEntrada(pathPt);
+        if (erroValidacao.isPresent()) {
+            return ResponseEntity.badRequest().body(new RespostaPadrao(erroValidacao.get()));
+        }
+
+        executor.submit(() -> {
+            logStreamService.definirCanalAtual("revisao");
+            try {
+                StatusLlm status = mistralPort.verificarDisponibilidade();
+                if (!status.modeloCarregado()) {
+                    System.out.println("\u001B[31m[FAIL] LLM indisponível para revisão de concordância: "
+                        + status.mensagem() + "\u001B[0m");
+                    return;
+                }
+                ResultadoRevisaoLegendas resultado = revisarLegendasUseCase.executar(
+                    pathPt,
+                    pathEnFinal,
+                    Path.of("cache"),
+                    null,
+                    RevisarLegendasUseCase.ModoRevisaoLegendas.LLM_CONCORDANCIA,
+                    req.contextoId()
+                );
+                if (resultado.arquivosAnalisados() == 0) {
+                    System.out.println(
+                        "\u001B[33m[AVISO] Revisão de concordância concluída sem arquivos .ass/.ssa.\u001B[0m");
+                } else {
+                    System.out.println(
+                        "\u001B[32m[SUCESSO] Revisão de concordância PT-BR finalizada "
+                            + "(" + resultado.arquivosAnalisados() + " arquivo(s), "
+                            + resultado.falasCorrigidas() + " falas corrigidas).\u001B[0m");
+                    log.info("[SUCESSO] Revisão concordância legendas: {} arquivo(s), {} corrigidas.",
+                        resultado.arquivosAnalisados(), resultado.falasCorrigidas());
+                }
+            } catch (Exception e) {
+                log.error("Erro na revisão de concordância das legendas", e);
+                System.out.println("\u001B[31m[ERRO] Revisão de concordância falhou: "
+                    + e.getMessage() + "\u001B[0m");
+            }
+        });
+
+        return ResponseEntity.ok(new RespostaPadrao(
+            "Revisão de concordância PT-BR (LLM) iniciada no servidor."));
     }
 
     /**
@@ -357,6 +551,8 @@ public class ApiController {
                 }
 
                 remuxarLoteUseCase.executar(pathVideos, pathLegendas);
+                System.out.println("\u001B[32m[SUCESSO] Remuxer de vídeos finalizado.\u001B[0m");
+                log.info("[SUCESSO] Remuxer de vídeos finalizado.");
             } catch (Exception e) {
                 log.error("Erro no remuxer em background", e);
                 System.out.println("\u001B[31m[ERRO] Falha no Remuxer: " + e.getMessage() + "\u001B[0m");
@@ -381,6 +577,18 @@ public class ApiController {
         } catch (Exception e) {
             log.error("Erro ao gerar mapa do projeto", e);
             return ResponseEntity.internalServerError().body(new MapaResponse("Erro ao gerar o mapa do projeto: " + e.getMessage()));
+        }
+    }
+
+    private Optional<Path> parseCaminhoSeguro(String valor, String rotulo) {
+        if (valor == null || valor.isBlank()) {
+            return Optional.empty();
+        }
+        try {
+            return Optional.of(Path.of(valor.trim()));
+        } catch (InvalidPathException e) {
+            log.warn("Caminho inválido informado para {}: {}", rotulo, valor);
+            return Optional.empty();
         }
     }
 

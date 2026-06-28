@@ -1,4 +1,4 @@
-import { logNoConsole } from '../js/app.js';
+import { logNoConsole, mostrarAlerta } from '../js/app.js';
 
 let contextosCarregados = false;
 
@@ -39,7 +39,14 @@ export function initTraducao() {
 
             if (!res.ok) {
                 const erroTexto = await res.text();
-                throw new Error(erroTexto || 'Erro interno ao iniciar tradução');
+                let msg = 'Erro interno ao iniciar tradução';
+                try {
+                    const parsed = JSON.parse(erroTexto);
+                    if (parsed.mensagem) msg = parsed.mensagem;
+                } catch(e) {
+                    if (erroTexto) msg = erroTexto;
+                }
+                throw new Error(msg);
             }
 
             const data = await res.json();
@@ -52,6 +59,7 @@ export function initTraducao() {
 
         } catch (err) {
             logNoConsole('console-traducao', `Erro ao iniciar tradução: ${err.message}`, 'erro');
+            mostrarAlerta(`Falha: ${err.message}`, 'erro');
         }
     });
 }

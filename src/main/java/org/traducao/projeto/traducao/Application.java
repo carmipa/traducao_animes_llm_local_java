@@ -28,6 +28,13 @@ import org.traducao.projeto.mapaProjeto.application.MapeadorDiretorioUseCase;
 import org.traducao.projeto.mapaProjeto.presentation.MapaProjetoCLI;
 import org.traducao.projeto.raspagemCorrecao.CorretorRaspagemCLI;
 import org.traducao.projeto.raspagemCorrecao.application.CorrigirComGoogleUseCase;
+import org.traducao.projeto.raspagemCorrecao.infrastructure.GoogleTranslateScraper;
+import org.traducao.projeto.raspagemRevisao.RevisorLegendasCLI;
+import org.traducao.projeto.raspagemRevisao.RevisorRaspagemCLI;
+import org.traducao.projeto.raspagemRevisao.application.AuditorProblemasLegendaService;
+import org.traducao.projeto.raspagemRevisao.application.DetectorConcordanciaService;
+import org.traducao.projeto.raspagemRevisao.application.RevisarCacheUseCase;
+import org.traducao.projeto.raspagemRevisao.application.RevisarLegendasUseCase;
 import org.traducao.projeto.remuxer.application.MapeadorMidiaService;
 import org.traducao.projeto.remuxer.application.RemuxarLoteUseCase;
 import org.traducao.projeto.remuxer.infrastructure.adapters.MkvmergeAdapter;
@@ -113,6 +120,8 @@ import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
     MkvToolNixAdapter.class,
     CorretorCacheCLI.class,
     CorretorRaspagemCLI.class,
+    RevisorRaspagemCLI.class,
+    RevisorLegendasCLI.class,
     AnalisadorMidiaCLI.class,
     AnalisarMidiaUseCase.class,
     FfprobeAdapter.class,
@@ -123,6 +132,11 @@ import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
     GeradorMapaProjetoUseCase.class,
     LimparCacheUseCase.class,
     CorrigirComGoogleUseCase.class,
+    GoogleTranslateScraper.class,
+    DetectorConcordanciaService.class,
+    AuditorProblemasLegendaService.class,
+    RevisarCacheUseCase.class,
+    RevisarLegendasUseCase.class,
     LogStreamService.class,
     ConsoleRedirector.class,
     BrowserLauncher.class,

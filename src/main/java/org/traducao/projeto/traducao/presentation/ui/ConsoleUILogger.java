@@ -35,15 +35,18 @@ public class ConsoleUILogger {
     private int totalAvisos = 0;
 
     public synchronized void iniciarLotes(int totalLotes, String nomeEpisodio) {
-        if (pb != null) {
-            pb.close();
+        fecharBarraComSeguranca();
+        try {
+            pb = new ProgressBarBuilder()
+                    .setTaskName("Traduzindo " + nomeEpisodio)
+                    .setInitialMax(totalLotes)
+                    .setStyle(ProgressBarStyle.COLORFUL_UNICODE_BLOCK) // Upgrade visual aqui!
+                    .setUpdateIntervalMillis(100)
+                    .build();
+        } catch (RuntimeException e) {
+            log.warn("Não foi possível iniciar a barra de progresso (terminal incompatível); continuando sem ela: {}", e.getMessage());
+            pb = null;
         }
-        pb = new ProgressBarBuilder()
-                .setTaskName("Traduzindo " + nomeEpisodio)
-                .setInitialMax(totalLotes)
-                .setStyle(ProgressBarStyle.COLORFUL_UNICODE_BLOCK) // Upgrade visual aqui!
-                .setUpdateIntervalMillis(100)
-                .build();
     }
 
     /**
@@ -52,10 +55,7 @@ public class ConsoleUILogger {
      * (lote a lote) que vêm a seguir no mesmo console efêmero.
      */
     public synchronized void tituloEpisodio(String nomeEpisodio, int indiceAtual, int totalEpisodios) {
-        if (pb != null) {
-            pb.close();
-            pb = null;
-        }
+        fecharBarraComSeguranca();
         String cabecalho = String.format("EPISÓDIO %d/%d: %s", indiceAtual, totalEpisodios, nomeEpisodio);
         String linha = "=".repeat(Math.max(cabecalho.length() + 8, 70));
 
@@ -91,33 +91,66 @@ public class ConsoleUILogger {
         // Aplica a cor na string final para o console visual do usuário
         String msgVisual = cor != null ? cor + mensagem + ANSI_RESET : mensagem;
 
-        if (pb != null) {
-            // Emula o tqdm.write(): pausa o redesenho automático da barra (que corre
-            // numa thread própria a cada 100ms) para que ele não escreva por cima
-            // desta mensagem no meio da impressão — a versão anterior só dava um
-            // "tick" (stepBy(0)) sem nenhuma garantia de exclusão mútua com aquela
-            // thread, o que corrompia a barra ou a deixava com leitura desatualizada
-            // (parecia "travada" numa porcentagem antiga).
+        if (pb == null) {
+            System.out.println(msgVisual);
+            return;
+        }
+
+        // Emula o tqdm.write(): pausa o redesenho automático da barra (que corre
+        // numa thread própria a cada 100ms) para que ele não escreva por cima
+        // desta mensagem no meio da impressão — a versão anterior só dava um
+        // "tick" (stepBy(0)) sem nenhuma garantia de exclusão mútua com aquela
+        // thread, o que corrompia a barra ou a deixava com leitura desatualizada
+        // (parecia "travada" numa porcentagem antiga).
+        //
+        // A biblioteca de terceiros (me.tongfei:progressbar) pode lançar
+        // exceções de renderização dependendo do terminal/console (ex.:
+        // `--console=plain` do Gradle). Isso é puramente cosmético e NUNCA deve
+        // abortar a tradução em andamento — por isso qualquer falha aqui apenas
+        // desativa a barra para o resto do episódio, em vez de propagar.
+        boolean mensagemImpressa = false;
+        try {
             pb.pause();
             System.out.print("\r\033[K");
             System.out.println(msgVisual);
+            mensagemImpressa = true;
             pb.resume();
             pb.refresh();
-        } else {
-            System.out.println(msgVisual);
+        } catch (RuntimeException e) {
+            log.warn("Barra de progresso falhou ao renderizar; desativando-a para o restante deste episódio: {}", e.getMessage());
+            fecharBarraComSeguranca();
+            if (!mensagemImpressa) {
+                System.out.println(msgVisual);
+            }
         }
     }
 
     public synchronized void passoConcluido(int lotes) {
-        if (pb != null) {
+        if (pb == null) {
+            return;
+        }
+        try {
             pb.stepBy(lotes);
             pb.refresh();
+        } catch (RuntimeException e) {
+            log.warn("Barra de progresso falhou ao avançar; desativando-a para o restante deste episódio: {}", e.getMessage());
+            fecharBarraComSeguranca();
         }
     }
 
     public synchronized void finalizar() {
-        if (pb != null) {
+        fecharBarraComSeguranca();
+    }
+
+    private void fecharBarraComSeguranca() {
+        if (pb == null) {
+            return;
+        }
+        try {
             pb.close();
+        } catch (RuntimeException e) {
+            log.warn("Falha ao fechar a barra de progresso (ignorada): {}", e.getMessage());
+        } finally {
             pb = null;
         }
     }

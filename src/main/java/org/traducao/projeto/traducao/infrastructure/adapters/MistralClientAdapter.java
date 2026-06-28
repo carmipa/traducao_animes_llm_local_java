@@ -12,12 +12,14 @@ import org.traducao.projeto.traducao.domain.StatusLlm;
 import org.traducao.projeto.traducao.domain.TraducaoLote;
 import org.traducao.projeto.traducao.domain.exceptions.RespostaLlmVaziaException;
 import org.traducao.projeto.traducao.domain.ports.MistralPort;
+import org.traducao.projeto.traducao.contexto.RegrasConcordanciaPtBr;
 import org.traducao.projeto.traducao.infrastructure.config.LlmProperties;
 import org.traducao.projeto.traducao.infrastructure.contexto.GerenciadorContexto;
 import org.traducao.projeto.traducao.infrastructure.dtos.RecordsMistral.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Component
@@ -26,7 +28,9 @@ public class MistralClientAdapter implements MistralPort {
     private static final Logger log = LoggerFactory.getLogger(MistralClientAdapter.class);
 
     private static final int MAX_TENTATIVAS = 3;
+    private static final int MAX_TENTATIVAS_REVISAO = 2;
     private static final long PAUSA_ENTRE_TENTATIVAS_MS = 2_000;
+    private static final double TEMPERATURA_REVISAO = 0.15;
 
     private final RestClient restClient;
     private final LlmProperties propriedades;
@@ -167,6 +171,96 @@ public class MistralClientAdapter implements MistralPort {
         }
         log.error(mensagemFinal);
         return new TraducaoLote(lote.idLote(), null, false, mensagemFinal);
+    }
+
+    @Override
+    public Optional<String> revisarConcordancia(
+        String originalInglesMascarado,
+        String traducaoPtMascarada,
+        List<String> problemasDetectados
+    ) {
+        String promptUsuario = montarPromptRevisao(originalInglesMascarado, traducaoPtMascarada, problemasDetectados);
+        String promptSistema = RegrasConcordanciaPtBr.montarPromptRevisao(gerenciadorContexto.obterPromptAtivo());
+
+        ChatRequest request = new ChatRequest(
+            propriedades.model(),
+            List.of(
+                new Mensagem("system", promptSistema),
+                new Mensagem("user", promptUsuario)
+            ),
+            TEMPERATURA_REVISAO,
+            propriedades.maxTokens()
+        );
+
+        for (int tentativa = 1; tentativa <= MAX_TENTATIVAS_REVISAO; tentativa++) {
+            try {
+                RespostaLlm resposta = restClient.post()
+                    .uri("/chat/completions")
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .accept(MediaType.APPLICATION_JSON)
+                    .body(request)
+                    .retrieve()
+                    .body(RespostaLlm.class);
+
+                if (resposta == null || resposta.choices() == null || resposta.choices().isEmpty()) {
+                    continue;
+                }
+
+                Mensagem mensagem = resposta.choices().getFirst().message();
+                String texto = mensagem != null ? mensagem.content() : null;
+                if (texto == null || texto.isBlank()) {
+                    continue;
+                }
+
+                return Optional.of(normalizarLinhaUnica(texto));
+            } catch (Exception e) {
+                log.warn("Falha na revisão de concordância (tentativa {}/{}): {}",
+                    tentativa, MAX_TENTATIVAS_REVISAO, e.getMessage());
+                if (tentativa < MAX_TENTATIVAS_REVISAO) {
+                    try {
+                        Thread.sleep(PAUSA_ENTRE_TENTATIVAS_MS);
+                    } catch (InterruptedException ie) {
+                        Thread.currentThread().interrupt();
+                        break;
+                    }
+                }
+            }
+        }
+        return Optional.empty();
+    }
+
+    private String montarPromptRevisao(
+        String originalIngles, String traducaoPt, List<String> problemasDetectados
+    ) {
+        String listaProblemas = problemasDetectados == null || problemasDetectados.isEmpty()
+            ? "(nenhum detalhe heurístico)"
+            : String.join("\n- ", problemasDetectados);
+
+        return """
+            Corrija APENAS concordancia de genero/pronomes/adjetivos na traducao em portugues.
+            Original em ingles (referencia de genero/contexto):
+            %s
+
+            Traducao atual em portugues (corrigir se necessario):
+            %s
+
+            Problemas detectados automaticamente:
+            - %s
+
+            Responda com uma unica linha: a traducao corrigida.
+            """.formatted(originalIngles, traducaoPt, listaProblemas);
+    }
+
+    private String normalizarLinhaUnica(String texto) {
+        String normalizado = texto.replace("\r\n", "\n").replace('\r', '\n').strip();
+        if (normalizado.startsWith("```") && normalizado.endsWith("```")) {
+            normalizado = removerCercaMarkdown(normalizado).strip();
+        }
+        int quebra = normalizado.indexOf('\n');
+        if (quebra >= 0) {
+            normalizado = normalizado.substring(0, quebra).stripTrailing();
+        }
+        return normalizado;
     }
 
     private String montarPrompt(Lote lote) {

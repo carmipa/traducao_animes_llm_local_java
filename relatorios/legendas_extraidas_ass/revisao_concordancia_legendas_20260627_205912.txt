@@ -1,0 +1,9 @@
+REVISÃO DE CONCORDÂNCIA PT-BR (.ass via LLM)
+============================================
+Pasta: E:\animes\DANMACHI\temporada_5\legendas_extraidas_ass
+Duração: 34s
+Arquivos analisados: 15
+Falas auditadas: 5412
+Falas sem original EN (ignoradas): 86427
+Problemas detectados: 12
+Falas corrigidas via LLM: 0

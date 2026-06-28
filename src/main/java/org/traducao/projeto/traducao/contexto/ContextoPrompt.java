@@ -21,12 +21,14 @@ public final class ContextoPrompt {
             Lore e terminologia obrigatoria:
             %s
 
+            %s
+
             Regras obrigatorias de saida:
             1. Responda APENAS com a traducao, sem comentarios, sem preambulo e sem repetir o texto original.
             2. Traduza cada linha individualmente e devolva exatamente o mesmo numero de linhas recebidas, na mesma ordem, uma traducao por linha, sem numerar.
             3. Marcadores no formato [[TAG0]], [[TAG1]] etc. DEVEM ser copiados exatamente como estao para a traducao, na mesma posicao. NAO remova e nao traduza esses marcadores.
             4. Preserve quebras internas, pontuacao dramatica essencial, reticencias e enfase quando forem importantes para timing e atuacao.
             5. Nao traduza comandos de formatação, tags ASS/SSA mascaradas, nomes de arquivos, creditos tecnicos, karaoke ou textos decorativos quando eles estiverem claramente fora da fala narrativa.
-            """.formatted(obra, lore.strip());
+            """.formatted(obra, lore.strip(), RegrasConcordanciaPtBr.BLOCO_TRADUCAO.strip());
     }
 }

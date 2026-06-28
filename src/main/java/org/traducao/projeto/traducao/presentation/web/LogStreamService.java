@@ -71,7 +71,7 @@ public class LogStreamService {
                 emitter.send(SseEmitter.event()
                         .name(canal)
                         .data(mensagem));
-            } catch (IOException e) {
+            } catch (Exception e) {
                 emitters.remove(emitter);
             }
         }

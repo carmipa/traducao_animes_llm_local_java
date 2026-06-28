@@ -4,6 +4,9 @@ import org.traducao.projeto.traducao.domain.Lote;
 import org.traducao.projeto.traducao.domain.StatusLlm;
 import org.traducao.projeto.traducao.domain.TraducaoLote;
 
+import java.util.List;
+import java.util.Optional;
+
 public interface MistralPort {
     TraducaoLote traduzir(Lote lote);
 
@@ -14,4 +17,14 @@ public interface MistralPort {
      * já no meio da tradução do primeiro episódio.
      */
     StatusLlm verificarDisponibilidade();
+
+    /**
+     * Revisa uma fala já traduzida, corrigindo concordância de gênero/pronomes.
+     * Retorna vazio se o LLM falhar ou a resposta for inválida.
+     */
+    Optional<String> revisarConcordancia(
+        String originalInglesMascarado,
+        String traducaoPtMascarada,
+        List<String> problemasDetectados
+    );
 }

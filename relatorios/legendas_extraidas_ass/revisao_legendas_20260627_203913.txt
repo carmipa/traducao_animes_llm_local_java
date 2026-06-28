@@ -1,0 +1,9 @@
+REVISÃO DE LEGENDAS (.ass)
+==========================
+Pasta: E:\animes\DANMACHI\temporada_5\legendas_extraidas_ass
+Duração: 32s
+Arquivos analisados: 15
+Falas auditadas: 91941
+Falas sem original EN em .ass (só validação PT): 91941
+Problemas detectados: 108
+Falas corrigidas via Google: 0

@@ -1,6 +1,7 @@
 # MAPA ESTRUTURAL DO PROJETO - TRACKER ANIMES
-Gerado em: traducao_animes_llm_local_java
+Gerado em: .
 Este documento serve como mapa de contexto para LLMs atualizarem a documentação oficial.
+Memória viva e estado recente: veja **CEREBRO_IA.md** na raiz do repositório.
 ---
 
 ## 📁 Pasta: `.vscode/`
@@ -115,15 +116,52 @@ Determina a raiz a ser mapeada
 ```
 
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/raspagemCorrecao/application/CorrigirComGoogleUseCase.java`
-```text
-Lista de termos e magias conhecidas de DanMachi que devem permanecer inalterados
-```
+*(Sem docstring ou cabeçalho explicativo)*
 
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/raspagemCorrecao/CorretorRaspagemCLI.java`
 ```text
 CommandLineRunner que realiza a tradução das falas residuais pendentes em inglês
 utilizando raspagem na API gratuita e sem chaves do Google Translate.
 Ativado quando a propriedade app.modo é configurada como "RASPAGEM_CORRECAO".
+```
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/raspagemCorrecao/infrastructure/GoogleTranslateScraper.java`
+```text
+Traduz texto via API pública do Google Translate (scraping), preservando
+tags ASS mascaradas e quebras {@code \N}.
+```
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/raspagemRevisao/application/AuditorProblemasLegendaService.java`
+```text
+Agrega detecção de resíduo em inglês e erros de concordância PT-BR.
+```
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/raspagemRevisao/application/DetectorConcordanciaService.java`
+```text
+Heurísticas para calques de gênero do inglês: concordância nominal,
+pronomes pessoais/objetos, tratamentos e predicados verbais.
+```
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/raspagemRevisao/application/RevisarCacheUseCase.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/raspagemRevisao/application/RevisarLegendasUseCase.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/raspagemRevisao/domain/ResultadoDeteccaoConcordancia.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/raspagemRevisao/RevisorLegendasCLI.java`
+```text
+Revisa arquivos .ass/.ssa já traduzidos, detecta resíduos em inglês e erros
+de concordância, e corrige via Google Translate.
+```
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/raspagemRevisao/RevisorRaspagemCLI.java`
+```text
+Revisa falas já traduzidas no cache, corrigindo concordância de gênero,
+pronomes e adjetivos — erros comuns quando o LLM traduz literalmente do inglês.
+Ativado quando {@code app.modo=RASPAGEM_REVISAO}.
 ```
 
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/remuxer/application/MapeadorMidiaService.java`
@@ -170,6 +208,12 @@ Exemplo: [10:20:30] [INFO   ] Mensagem...
 Uma linha da tabela de histórico de operações exibida no painel de Telemetria.
 ```
 
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/telemetria/OperacaoTelemetria.java`
+```text
+Registro persistido de operações do pipeline que não passam pelo LLM de tradução
+(revisão de legendas, correção Google, limpeza de cache, etc.).
+```
+
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/telemetria/TelemetriaResumo.java`
 ```text
 Resumo serializável da telemetria acumulada na sessão atual do servidor,
@@ -209,8 +253,6 @@ Orquestra a tradução de um único arquivo de legenda: le -> reaproveita o
 cache existente -> traduz só o que falta (deduplicando falas repetidas) ->
 valida -> escreve a legenda final em PT-BR -> grava/atualiza o cache.
 <p>
-Correções manuais feitas pelo usuário no JSON de cache são respeitadas na
-próxima execução: uma fala cujo texto original já tem tradução não-vazia no
 ```
 
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/application/ProcessarEpisodioUseCase.java`
@@ -232,10 +274,65 @@ batem com "\bfor\b" e disparam falso positivo de "resíduo em inglês".
 Evita os falsos positivos de "Abaixo a tirania" bloqueando apenas preâmbulos óbvios
 ```
 
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/ContextoPrompt.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/danmachi/ContextoDanMachi.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/eightsix/Contexto86.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/gundam/chars/ContextoCharsCounterattack.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/gundam/msteam/ContextoGundam08thMSTeam.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/gundam/reconguista/ContextoGundamReconguista.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/gundam/stardust/ContextoGundam0083.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/gundam/warInpocket/ContextoWarInPocket.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/gundam/zeta/ContextoGundamZeta.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/gundam/zz/ContextoGundamZZ.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/macross/ContextoMacross2.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/macross/ContextoMacrossAnime.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/macross/ContextoMacrossFilme1.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/macross/ContextoMacrossFilme2.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/RegrasConcordanciaPtBr.java`
+```text
+Regras de concordância de gênero, pronomes, tratamentos e verbos aplicáveis a
+qualquer obra — o inglês não marca gênero em adjetivos/participios e usa
+"you" genérico, o que leva o LLM a masculinizar tudo.
+```
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/contexto/sidonia/ContextoKnightsOfSidonia.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/domain/exceptions/AlucinacaoDetectadaException.java`
 *(Sem docstring ou cabeçalho explicativo)*
 
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/domain/exceptions/ArquivoLegendaException.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/domain/exceptions/ContextoNaoEncontradoException.java`
 *(Sem docstring ou cabeçalho explicativo)*
 
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/domain/exceptions/DivergenciaLinhasException.java`
@@ -271,6 +368,15 @@ Verifica, antes de iniciar a tradução, se o servidor LLM local está
 online e se o modelo configurado está efetivamente carregado em
 memória — evita descobrir isso só depois de várias tentativas/timeouts
 já no meio da tradução do primeiro episódio.
+Revisa uma fala já traduzida, corrigindo concordância de gênero/pronomes.
+Retorna vazio se o LLM falhar ou a resposta for inválida.
+```
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/domain/ports/ProvedorContexto.java`
+```text
+Retorna o ID único para seleção via UI.
+Retorna o nome amigável para exibição no combo box da UI.
+Retorna o prompt de sistema completo para o LLM, com regras gerais e lore especifico da midia.
 ```
 
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/domain/StatusLlm.java`
@@ -310,6 +416,14 @@ resposta) deixaria a Virtual Thread bloqueada indefinidamente.
 
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/infrastructure/config/TradutorProperties.java`
 *(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/infrastructure/contexto/GerenciadorContexto.java`
+```text
+Mutado pela thread única do executor de background (ApiController) e lido
+pela mesma thread ao montar o prompt do LLM (MistralClientAdapter). O
+volatile aqui é uma garantia defensiva de visibilidade, não uma alegação
+de que múltiplas threads concorrem por este campo.
+```
 
 ### 📄 Arquivo: `src/main/java/org/traducao/projeto/traducao/infrastructure/dtos/RecordsMistral.java`
 *(Sem docstring ou cabeçalho explicativo)*
@@ -428,6 +542,12 @@ sobrevive a um reload de página ou ao fechamento da aba.
 ### 📄 Arquivo: `src/test/java/org/traducao/projeto/legendasExtracao/presentation/ExtratorCLITest.java`
 *(Sem docstring ou cabeçalho explicativo)*
 
+### 📄 Arquivo: `src/test/java/org/traducao/projeto/raspagemRevisao/application/DetectorConcordanciaServiceTest.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/test/java/org/traducao/projeto/raspagemRevisao/application/RevisarLegendasUseCaseTest.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
 ### 📄 Arquivo: `src/test/java/org/traducao/projeto/remuxer/application/MapeadorMidiaServiceTest.java`
 *(Sem docstring ou cabeçalho explicativo)*
 
@@ -458,6 +578,9 @@ Sem stdin interativo nos testes: solicitarPastas retorna vazio
 *(Sem docstring ou cabeçalho explicativo)*
 
 ### 📄 Arquivo: `src/test/java/org/traducao/projeto/traducao/infrastructure/config/TradutorPropertiesTest.java`
+*(Sem docstring ou cabeçalho explicativo)*
+
+### 📄 Arquivo: `src/test/java/org/traducao/projeto/traducao/infrastructure/contexto/GerenciadorContextoTest.java`
 *(Sem docstring ou cabeçalho explicativo)*
 
 ### 📄 Arquivo: `src/test/java/org/traducao/projeto/traducao/infrastructure/legenda/LeitorLegendaAssTest.java`

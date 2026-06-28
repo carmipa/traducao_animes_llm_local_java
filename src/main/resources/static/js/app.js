@@ -8,6 +8,7 @@ import { initAnalise } from '../analise/analise.js';
 import { initExtracao } from '../extracao/extracao.js';
 import { initTraducao } from '../traducao/traducao.js';
 import { initCorrecao } from '../correcao/correcao.js';
+import { initRevisao } from '../revisao/revisao.js';
 import { initRemuxer } from '../remuxer/remuxer.js';
 import { initMapa } from '../mapa/mapa.js';
 import { initTelemetria } from '../telemetria/telemetria.js';
@@ -32,18 +33,22 @@ const CONFIG_SECOES = {
     },
     correcao: {
         titulo: "4. Correção do Cache de Tradução",
-        subtitulo: "Limpeza de inconsistências e preenchimento via raspagem de tradutores online"
+        subtitulo: "Limpeza de inconsistências e preenchimento via raspagem do Google Tradutor"
+    },
+    revisao: {
+        titulo: "6. Revisão de Legendas",
+        subtitulo: "Concordância PT-BR via LLM local e correção de inglês residual via Google"
     },
     remuxer: {
-        titulo: "5. Remuxer Industrial",
+        titulo: "7. Remuxer Industrial",
         subtitulo: "Junção de vídeos originais e novas legendas traduzidas em novos MKVs"
     },
     mapa: {
-        titulo: "6. Mapeamento do Projeto",
+        titulo: "8. Mapeamento do Projeto",
         subtitulo: "Auditoria de taxonomia e visualização da árvore de estrutura do código"
     },
     telemetria: {
-        titulo: "7. Painel de Telemetria",
+        titulo: "9. Painel de Telemetria",
         subtitulo: "Métricas de tokens, velocidade, hits de cache e logs em tempo real"
     }
 };
@@ -103,6 +108,7 @@ function inicializarModulos() {
     initExtracao();
     initTraducao();
     initCorrecao();
+    initRevisao();
     initRemuxer();
     initMapa();
     initTelemetria();
@@ -124,12 +130,14 @@ function conectarFluxoLugsSSE() {
         'extracao': 'console-extracao',
         'traducao': 'console-traducao',
         'correcao': 'console-correcao',
+        'revisao': 'console-revisao',
         'remuxer': 'console-remuxer'
     };
 
     for (const [canal, consoleId] of Object.entries(consoleMap)) {
         eventSource.addEventListener(canal, (event) => {
             logNoConsoleFormatado(consoleId, event.data);
+            verificarAlertaSSE(event.data);
         });
     }
 
@@ -143,6 +151,7 @@ function conectarFluxoLugsSSE() {
         const consoleId = consoleMap[target];
         if (consoleId) {
             logNoConsoleFormatado(consoleId, event.data);
+            verificarAlertaSSE(event.data);
         }
     });
 
@@ -290,6 +299,12 @@ function logNoConsoleFormatado(consoleId, rawMessage) {
     linhaLog.innerHTML = `<span style="color: var(--text-muted); font-size: 0.75rem;">[${timestamp}]</span> ${htmlMensagem}`;
     
     consoleDiv.appendChild(linhaLog);
+    
+    // Proteção extrema contra travamentos: Limita a 1000 linhas visíveis no console HTML
+    while (consoleDiv.childElementCount > 1000) {
+        consoleDiv.removeChild(consoleDiv.firstChild);
+    }
+
     consoleDiv.scrollTop = consoleDiv.scrollHeight;
 }
 
@@ -316,3 +331,68 @@ document.querySelectorAll('.btn-clear-console').forEach(btn => {
         }
     });
 });
+
+/**
+ * Exibe um alerta flutuante (Toast) na tela
+ */
+export function mostrarAlerta(mensagem, tipo = 'info') {
+    const container = document.getElementById('toast-container');
+    if (!container) return;
+
+    const toast = document.createElement('div');
+    toast.className = `toast toast-${tipo}`;
+
+    let icon = 'ℹ️';
+    if (tipo === 'erro') icon = '❌';
+    if (tipo === 'sucesso') icon = '✅';
+    if (tipo === 'aviso') icon = '⚠️';
+
+    toast.innerHTML = `
+        <div class="toast-content">
+            <strong>${icon}</strong> &nbsp; ${escapeHtml(mensagem)}
+        </div>
+        <button class="toast-close" title="Fechar">&times;</button>
+    `;
+
+    container.appendChild(toast);
+    
+    // Força reflow para animação
+    toast.offsetHeight;
+    toast.classList.add('show');
+
+    // Auto-destruir após 7 segundos
+    const timeout = setTimeout(() => fecharToast(toast), 7000);
+
+    toast.querySelector('.toast-close').addEventListener('click', () => {
+        clearTimeout(timeout);
+        fecharToast(toast);
+    });
+}
+
+function fecharToast(toast) {
+    toast.classList.remove('show');
+    toast.classList.add('hiding');
+    toast.addEventListener('transitionend', () => {
+        if (toast.parentNode) {
+            toast.parentNode.removeChild(toast);
+        }
+    });
+}
+
+/**
+ * Analisa as mensagens recebidas via SSE e dispara alertas caso sejam de erro fatal ou sucesso
+ */
+export function verificarAlertaSSE(mensagem) {
+    // Remove códigos ANSI limpos para exibir no Toast
+    const msgLimpa = mensagem.replace(/\u001B\[[0-9;]*m/g, '').replace(/\033\[[0-9;]*m/g, '').trim();
+    
+    if (msgLimpa.includes('[ERRO]') || msgLimpa.includes('[FAIL]')) {
+        const erroMsg = msgLimpa.replace(/\[ERRO\]|\[FAIL\]/, '').trim();
+        mostrarAlerta(erroMsg, 'erro');
+    } 
+    else if (msgLimpa.includes('PROCESSAMENTO FINALIZADO') || msgLimpa.includes('[SUCESSO]')) {
+        mostrarAlerta(msgLimpa, 'sucesso');
+        const btnRefresh = document.getElementById('btn-refresh-telemetria');
+        if (btnRefresh) btnRefresh.click();
+    }
+}

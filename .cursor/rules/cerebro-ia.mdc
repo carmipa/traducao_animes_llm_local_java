@@ -1,0 +1,15 @@
+---
+description: Consultar e atualizar o CÉREBRO DE IA do projeto em toda sessão
+alwaysApply: true
+---
+
+# Cérebro de IA (memória do projeto)
+
+1. **Início da sessão:** leia `CEREBRO_IA.md` na raiz antes de alterar pipeline, tradução, revisão, telemetria ou UI web.
+2. **Durante o trabalho:** use `ARQUITETURA.md` para decisões profundas (JDK 25, SSE, LM Studio).
+3. **Fim de tarefa relevante:** atualize a seção "Estado atual" e o histórico em `CEREBRO_IA.md`.
+4. **Novos pacotes/classes:** regenere `mapa_projeto.md` (`POST /api/mapa` ou `--app.modo=MAPEAR --tradutor.diretorio-entrada=.`).
+5. **Persistência:** operações de pipeline devem usar `TelemetriaService.finalizarOperacao` (logs + `logs/telemetria_compartilhada.json` + `relatorios/`).
+6. **Spring beans:** todo `@Service`/`@RestController` novo entra no `@Import` de `Application.java`.
+
+Responda ao usuário em português.

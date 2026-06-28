@@ -72,25 +72,49 @@ public class AnalisarMidiaUseCase {
         List<AuditoriaResultado> resultados = new ArrayList<>();
         telemetriaService.limparLote();
 
-        // Barra de progresso para a análise do lote
-        try (ProgressBar pb = new ProgressBarBuilder()
-                .setTaskName("Analisando vídeos")
-                .setInitialMax(arquivosAnalisar.size())
-                .setStyle(ProgressBarStyle.COLORFUL_UNICODE_BLOCK)
-                .build()) {
+        // Barra de progresso para a análise do lote. É puramente cosmética: uma
+        // falha de renderização dela (ex.: terminal incompatível) nunca deve
+        // abortar a análise dos arquivos do lote, por isso é criada e fechada
+        // manualmente (sem try-with-resources) com erros contidos.
+        ProgressBar pb = null;
+        try {
+            pb = new ProgressBarBuilder()
+                    .setTaskName("Analisando vídeos")
+                    .setInitialMax(arquivosAnalisar.size())
+                    .setStyle(ProgressBarStyle.COLORFUL_UNICODE_BLOCK)
+                    .build();
+        } catch (RuntimeException e) {
+            log.warn("Não foi possível iniciar a barra de progresso (terminal incompatível); continuando sem ela: {}", e.getMessage());
+        }
 
+        try {
             for (Path arquivo : arquivosAnalisar) {
                 try {
                     AuditoriaResultado resultado = analisarArquivo(arquivo);
                     resultados.add(resultado);
-                    
+
                     // Registra na telemetria da comunidade
                     registrarNaTelemetria(resultado, entrada);
-                    
+
                 } catch (Exception e) {
                     log.error("Falha ao analisar o arquivo {}: {}", arquivo.getFileName(), e.getMessage(), e);
                 } finally {
-                    pb.step();
+                    if (pb != null) {
+                        try {
+                            pb.step();
+                        } catch (RuntimeException e) {
+                            log.warn("Barra de progresso falhou ao avançar durante a análise (ignorada): {}", e.getMessage());
+                            pb = null;
+                        }
+                    }
+                }
+            }
+        } finally {
+            if (pb != null) {
+                try {
+                    pb.close();
+                } catch (RuntimeException e) {
+                    log.warn("Falha ao fechar a barra de progresso (ignorada): {}", e.getMessage());
                 }
             }
         }

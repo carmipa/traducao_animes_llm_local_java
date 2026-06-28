@@ -18,7 +18,14 @@ public class ValidadorTraducaoService {
     // batem com "\bfor\b" e disparam falso positivo de "resíduo em inglês".
     private static final Pattern PADRAO_RESIDUO = Pattern.compile(
         "\\b(you|they|without|very|where|what|when|why|who|this|that|these|those|"
-            + "and|the|is|are|was|were|have|has|with|from|exactly|same|not|but)\\b",
+            + "and|the|is|are|was|were|have|has|with|from|exactly|same|not|but|"
+            + "except|because|could|would|should|will|shall|might|must|cannot|"
+            + "their|yours|hers|ours|theirs|whom|whose|which|how|however|whenever|wherever|"
+            + "about|above|across|after|against|along|among|around|before|behind|below|beneath|"
+            + "beside|between|beyond|down|during|into|outside|over|past|since|through|"
+            + "throughout|till|toward|under|underneath|until|upon|within|although|unless|"
+            + "does|did|been|had|went|gone|got|make|made|take|took|saw|seen|"
+            + "always|never|sometimes|often|usually|really|also|even|every|please|thank|thanks|sorry)\\b",
         Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CHARACTER_CLASS
     );
 

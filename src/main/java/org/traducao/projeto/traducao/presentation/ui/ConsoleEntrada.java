@@ -21,7 +21,7 @@ public final class ConsoleEntrada {
 
         try {
             String modoOpcao = lerOpcional(
-                AnsiCores.colorir("Escolha (1/2/3/4/5/6/7) [Enter = Interface WEB]: ", AnsiCores.CYAN)
+                AnsiCores.colorir("Escolha (1/2/3/4/5/6/7/8) [Enter = Interface WEB]: ", AnsiCores.CYAN)
             );
 
             if (modoOpcao == null) {
@@ -35,8 +35,9 @@ public final class ConsoleEntrada {
                           "3".equals(modoOpcao) ? "TRADUZIR" :
                           "4".equals(modoOpcao) ? "CORRIGIR_CACHE" :
                           "5".equals(modoOpcao) ? "RASPAGEM_CORRECAO" :
-                          "6".equals(modoOpcao) ? "REMUXAR" :
-                          "7".equals(modoOpcao) ? "MAPEAR" : "WEB";
+                          "6".equals(modoOpcao) ? "RASPAGEM_REVISAO_LEGENDAS" :
+                          "7".equals(modoOpcao) ? "REMUXAR" :
+                          "8".equals(modoOpcao) ? "MAPEAR" : "WEB";
 
             imprimir("");
             if (modo.equals("ANALISAR")) {
@@ -54,6 +55,9 @@ public final class ConsoleEntrada {
             } else if (modo.equals("RASPAGEM_CORRECAO")) {
                 imprimir(AnsiCores.colorir(">>> MODO CORREÇÃO DE TRADUÇÃO VIA SCRAPING (GOOGLE TRADUTOR) SELECIONADO <<<", AnsiCores.YELLOW, true));
                 return solicitarPastasCorretor(modo);
+            } else if (modo.equals("RASPAGEM_REVISAO_LEGENDAS")) {
+                imprimir(AnsiCores.colorir(">>> MODO REVISÃO DE LEGENDAS (GOOGLE + AUDITORIA) SELECIONADO <<<", AnsiCores.YELLOW, true));
+                return solicitarPastasRevisaoLegendas(modo);
             } else if (modo.equals("REMUXAR")) {
                 imprimir(AnsiCores.colorir(">>> MODO REMUXER (JUNÇÃO DE VÍDEOS COM LEGENDAS) SELECIONADO <<<", AnsiCores.CYAN, true));
                 return solicitarPastasRemuxer(modo);
@@ -135,6 +139,17 @@ public final class ConsoleEntrada {
         return Optional.of(new CaminhosPastas(modo, entrada, "", null));
     }
 
+    private static Optional<CaminhosPastas> solicitarPastasRevisaoLegendas(String modo) throws IOException {
+        String entrada = lerObrigatorio(
+            AnsiCores.colorir(">>> Pasta com legendas TRADUZIDAS em português (.ass/.ssa): ", AnsiCores.GREEN, true)
+        );
+        if (entrada == null) return Optional.empty();
+
+        imprimir("");
+        imprimir(AnsiCores.colorir("Pasta OK. Subindo revisão de legendas...", AnsiCores.GREEN, true));
+        return Optional.of(new CaminhosPastas(modo, entrada, "", null));
+    }
+
     private static Optional<CaminhosPastas> solicitarPastasAnalisador(String modo) throws IOException {
         String entrada = lerObrigatorio(
             AnsiCores.colorir(">>> Pasta com os vídeos ou caminho do arquivo individual (.mkv/.mp4/etc): ", AnsiCores.GREEN, true)
@@ -171,8 +186,9 @@ public final class ConsoleEntrada {
         imprimir(AnsiCores.colorir("  [3] Tradução de Legendas via LLM Local", AnsiCores.GREEN));
         imprimir(AnsiCores.colorir("  [4] Correção de Tradução (Limpar Cache)", AnsiCores.YELLOW));
         imprimir(AnsiCores.colorir("  [5] Correção de Tradução via Scraping (Google Tradutor Online)", AnsiCores.YELLOW));
-        imprimir(AnsiCores.colorir("  [6] Remuxer - Junção de Vídeos com Legendas", AnsiCores.CYAN));
-        imprimir(AnsiCores.colorir("  [7] Mapear estrutura e taxonomia do projeto", AnsiCores.CYAN));
+        imprimir(AnsiCores.colorir("  [6] Revisão de Legendas (.ass via Google)", AnsiCores.YELLOW));
+        imprimir(AnsiCores.colorir("  [7] Remuxer - Junção de Vídeos com Legendas", AnsiCores.CYAN));
+        imprimir(AnsiCores.colorir("  [8] Mapear estrutura e taxonomia do projeto", AnsiCores.CYAN));
         imprimir("");
     }
 

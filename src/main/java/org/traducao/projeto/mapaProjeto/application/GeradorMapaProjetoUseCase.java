@@ -31,6 +31,7 @@ public class GeradorMapaProjetoUseCase {
         linhas.add("# MAPA ESTRUTURAL DO PROJETO - TRACKER ANIMES");
         linhas.add("Gerado em: " + pastaRaiz.getFileName().toString());
         linhas.add("Este documento serve como mapa de contexto para LLMs atualizarem a documentação oficial.");
+        linhas.add("Memória viva e estado recente: veja **CEREBRO_IA.md** na raiz do repositório.");
         linhas.add("---");
         linhas.add("");
 

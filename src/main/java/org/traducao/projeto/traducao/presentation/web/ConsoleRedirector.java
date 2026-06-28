@@ -31,7 +31,11 @@ public class ConsoleRedirector {
         // Envia a mensagem limpa via Server-Sent Events, no canal da
         // operação em segundo plano que estiver em execução no momento
         // (ver LogStreamService#definirCanalAtual).
-        logStreamService.publicarLog(logMsg);
+        try {
+            logStreamService.publicarLog(logMsg);
+        } catch (Exception ignored) {
+            // Cliente SSE desconectado: não propagar para o servlet/Logback.
+        }
     }
 
     /**

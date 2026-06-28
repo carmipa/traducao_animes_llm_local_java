@@ -32,16 +32,19 @@ tradutor:
   # cache/<pasta-do-anime>/<subpasta>, na raiz do projeto, derivada de
   # diretorio-entrada. So precisa ser preenchida para forcar outro local.
   diretorio-cache: ""
-  # Quantidade de falas por requisicao ao LLM.
-  tamanho-lote: 20
+  # Quantidade de falas por requisicao ao LLM. Modificado para 1 (linha a linha) para evitar falhas e alucinações.
+  tamanho-lote: 1
   # Estilos ASS que nao devem ser traduzidos (ex: letra original em romaji
   # usada para karaoke, que deve permanecer no idioma original).
   estilos-ignorados:
     - "Song JP"
+    - "Mobile Suit Gundam"
+    - "Char's Counterattack"
     - "OP - Romaji"
     - "OP - English"
     - "ED - Romaji"
     - "ED - English"
+    - "ED-ROM"
   # Chaves de idioma gravadas no cache JSON (par original -> traduzido).
   idioma-original: "en"
   idioma-traduzido: "pt-br"

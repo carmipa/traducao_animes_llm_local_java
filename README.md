@@ -589,6 +589,7 @@ Saída gerada: `episodio01_PT-BR.ass` na pasta de saída + `episodio01_ENG.cache
 ```text
 traducao_animes_llm_local_java/
 ├── README.md                      # este arquivo
+├── CEREBRO_IA.md                  # 🧠 memória viva para IAs — estado atual, checklist, telemetria/revisão
 ├── ARQUITETURA.md                 # 📐 decisões de arquitetura, em detalhe (leitura recomendada para IAs/contribuidores)
 ├── LICENSE                        # MIT
 ├── build.gradle / settings.gradle
