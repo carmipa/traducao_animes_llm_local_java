@@ -43,3 +43,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Segredos de API e Configurações Locais ###
+src/main/resources/application-local.yml
+src/main/resources/application-secrets.yml
+application-local.yml
+application-secrets.yml

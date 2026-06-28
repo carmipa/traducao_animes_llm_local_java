@@ -250,6 +250,8 @@
                         <h2>Iniciar Auditoria de Mídia</h2>
                         <p class="card-desc">Forneça o caminho da pasta contendo os episódios em formato de vídeo (.mkv, .mp4, etc.) para analisar codecs e sincronias.</p>
                         
+                        <div class="anime-meta-banner hidden" id="meta-banner-analise"></div>
+
                         <form id="form-analise" class="standard-form">
                             <div class="form-group">
                                 <label for="analise-entrada">Caminho da pasta ou arquivo de vídeo: <span class="help-icon" data-tooltip="Caminho absoluto da pasta contendo os vídeos a serem auditados por codecs, faixas e sincronia.">?</span></label>
@@ -258,6 +260,12 @@
                             <div class="form-group">
                                 <label for="analise-saida">Pasta de saída dos relatórios (Opcional): <span class="help-icon" data-tooltip="Diretório onde serão gravados os relatórios da análise. Se omitido, salvará na pasta 'relatorios' do projeto, usando o nome do anime automaticamente.">?</span></label>
                                 <input type="text" id="analise-saida" placeholder="Deixe em branco p/ salvar na pasta 'relatorios/[anime]' do projeto">
+                            </div>
+                            <div class="form-group">
+                                <label for="analise-contexto">Obra / Contexto (Opcional): <span class="help-icon" data-tooltip="Selecione a obra para exibir dados e capa do anime.">?</span></label>
+                                <select id="analise-contexto">
+                                    <option value="" disabled selected>Carregando contextos...</option>
+                                </select>
                             </div>
                             <button type="submit" class="btn btn-primary" id="btn-submit-analise" data-tooltip="Iniciar varredura técnica de arquivos de mídia">
                                 <span>Iniciar Análise</span>
@@ -320,6 +328,8 @@
                         <h2>Tradução via LLM Local</h2>
                         <p class="card-desc">Traduz legendas no formato ASS/SSA do Inglês para Português usando IA local (ex: Mistral Nemo no LM Studio).</p>
                         
+                        <div class="anime-meta-banner hidden" id="meta-banner-traducao"></div>
+
                         <form id="form-traducao" class="standard-form">
                             <div class="form-group">
                                 <label for="traducao-entrada">Pasta com as legendas ORIGINAIS (.ass / .ssa): <span class="help-icon" data-tooltip="Pasta contendo os arquivos de legenda originais (geralmente em inglês) que serão traduzidos pela LLM.">?</span></label>
@@ -358,10 +368,18 @@
                         <h2>Correção do Cache de Tradução</h2>
                         <p class="card-desc">Resolva falas persistentes em inglês, limpando caches antigos ou preenchendo automaticamente com o Google Tradutor online.</p>
                         
+                        <div class="anime-meta-banner hidden" id="meta-banner-correcao"></div>
+
                         <form id="form-correcao" class="standard-form">
                             <div class="form-group">
                                 <label for="correcao-entrada">Pasta do cache de traduções (.cache.json): <span class="help-icon" data-tooltip="Caminho do diretório de cache. Deixe vazio para usar a pasta padrão 'cache'.">?</span></label>
                                 <input type="text" id="correcao-entrada" placeholder="Deixe em branco para usar a pasta de cache padrão 'cache'">
+                            </div>
+                            <div class="form-group">
+                                <label for="correcao-contexto">Obra / Contexto (Opcional): <span class="help-icon" data-tooltip="Selecione a obra para exibir dados e capa durante a correção do cache.">?</span></label>
+                                <select id="correcao-contexto">
+                                    <option value="" disabled selected>Carregando contextos...</option>
+                                </select>
                             </div>
                             
                             <div class="correcao-actions">
@@ -395,6 +413,8 @@
                         <h2>Revisão de Legendas</h2>
                         <p class="card-desc">Varre arquivos .ass/.ssa já em português: corrige concordância de gênero, pronomes, artigos e tratamentos (senhor/senhora, ele/ela) via <strong>LLM local</strong>, ou resíduos em inglês via <strong>Google Tradutor</strong>.</p>
                         <p class="card-hint">Informe a pasta com as legendas <strong>traduzidas</strong> (.ass). A revisão lê e grava os arquivos PT-BR; o inglês de referência vem de <code>_Track2.ass</code> na mesma pasta (ou pasta EN abaixo) e, se não houver, do <strong>cache</strong> do projeto (<code>cache/**/*_ENG.cache.json</code>).</p>
+
+                        <div class="anime-meta-banner hidden" id="meta-banner-revisao"></div>
 
                         <form id="form-revisao" class="standard-form">
                             <div class="form-group">

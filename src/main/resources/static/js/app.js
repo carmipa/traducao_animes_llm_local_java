@@ -396,3 +396,140 @@ export function verificarAlertaSSE(mensagem) {
         if (btnRefresh) btnRefresh.click();
     }
 }
+
+/**
+ * Monitora inputs de caminho/pasta e selects de contexto para carregar dinamicamente os metadados e capas de animes
+ */
+function inicializarMetadadosDinamicos() {
+    const mapeamentoFormularios = [
+        { inputId: 'analise-entrada', selectId: 'analise-contexto', bannerId: 'meta-banner-analise' },
+        { inputId: 'traducao-entrada', selectId: 'traducao-contexto', bannerId: 'meta-banner-traducao' },
+        { inputId: 'correcao-entrada', selectId: 'correcao-contexto', bannerId: 'meta-banner-correcao' },
+        { inputId: 'revisao-entrada', selectId: 'revisao-contexto', bannerId: 'meta-banner-revisao' }
+    ];
+
+    // Popula automaticamente os selects secundários (análise e correção) se necessário
+    carregarContextosAuxiliares(['analise-contexto', 'correcao-contexto']);
+
+    mapeamentoFormularios.forEach(item => {
+        const input = document.getElementById(item.inputId);
+        const select = item.selectId ? document.getElementById(item.selectId) : null;
+
+        const atualizar = () => {
+            let termo = '';
+            if (input && input.value.trim().length > 3) {
+                termo = input.value.trim();
+            } else if (select && select.value && select.selectedIndex >= 0) {
+                const optText = select.options[select.selectedIndex].text;
+                if (optText && !optText.includes('Carregando')) {
+                    termo = optText;
+                }
+            }
+
+            if (termo && termo.length > 2) {
+                carregarMetadataAnime(termo, item.bannerId);
+            }
+        };
+
+        if (input) {
+            input.addEventListener('change', atualizar);
+            input.addEventListener('blur', atualizar);
+        }
+
+        if (select) {
+            select.addEventListener('change', atualizar);
+            // Também dispara quando o select for preenchido via API
+            const observer = new MutationObserver(() => {
+                setTimeout(atualizar, 300);
+            });
+            observer.observe(select, { childList: true });
+        }
+    });
+}
+
+async function carregarContextosAuxiliares(idsSelects) {
+    try {
+        const response = await fetch('/api/contextos');
+        if (!response.ok) return;
+        const contextos = await response.json();
+        if (!Array.isArray(contextos) || contextos.length === 0) return;
+
+        idsSelects.forEach(id => {
+            const select = document.getElementById(id);
+            if (!select) return;
+
+            select.innerHTML = '<option value="" selected>-- Selecione uma obra para visualizar --</option>';
+            contextos.forEach(ctx => {
+                const opt = document.createElement('option');
+                opt.value = ctx.id;
+                opt.textContent = ctx.nome;
+                select.appendChild(opt);
+            });
+        });
+    } catch (e) {
+        console.warn('Falha ao carregar contextos auxiliares:', e);
+    }
+}
+
+async function carregarMetadataAnime(caminho, bannerId) {
+    const banner = document.getElementById(bannerId);
+    if (!banner) return;
+
+    try {
+        const resp = await fetch(`/api/metadata?caminho=${encodeURIComponent(caminho)}`);
+        if (!resp.ok) {
+            banner.classList.add('hidden');
+            return;
+        }
+
+        const meta = await resp.json();
+        renderizarBannerMetadata(banner, meta);
+    } catch (e) {
+        console.warn('Erro ao carregar metadata:', e);
+        banner.classList.add('hidden');
+    }
+}
+
+function renderizarBannerMetadata(banner, meta) {
+    if (!meta || !meta.titulo) {
+        banner.classList.add('hidden');
+        return;
+    }
+
+    const posterHtml = meta.posterUrl 
+        ? `<div class="meta-poster-container"><img src="${escapeHtml(meta.posterUrl)}" alt="${escapeHtml(meta.titulo)}" class="meta-poster-img" onerror="this.src='img/kronos_logo.png'"></div>`
+        : '';
+
+    const scoreHtml = meta.score ? `<span class="meta-badge score">⭐ ${meta.score}</span>` : '';
+    const anoHtml = meta.ano ? `<span class="meta-badge">📅 ${meta.ano}</span>` : '';
+    const epsHtml = meta.episodios ? `<span class="meta-badge">📺 ${meta.episodios} eps</span>` : '';
+    const subTitle = meta.tituloJapones || meta.tituloIngles || '';
+
+    let generosHtml = '';
+    if (meta.generos && meta.generos.length > 0) {
+        generosHtml = meta.generos.slice(0, 3).map(g => `<span class="meta-badge genre">${escapeHtml(g)}</span>`).join('');
+    }
+
+    banner.innerHTML = `
+        ${posterHtml}
+        <div class="meta-info-container">
+            <div class="meta-header-titles">
+                <div class="meta-title-main">${escapeHtml(meta.titulo)}</div>
+                ${subTitle ? `<div class="meta-title-sub">${escapeHtml(subTitle)}</div>` : ''}
+            </div>
+            <div class="meta-badges-row">
+                ${scoreHtml}
+                ${anoHtml}
+                ${epsHtml}
+                ${generosHtml}
+            </div>
+            ${meta.sinopse ? `<div class="meta-synopsis">${escapeHtml(meta.sinopse)}</div>` : ''}
+        </div>
+    `;
+
+    banner.classList.remove('hidden');
+}
+
+// Inicializa no carregamento do DOM
+document.addEventListener('DOMContentLoaded', inicializarMetadadosDinamicos);
+

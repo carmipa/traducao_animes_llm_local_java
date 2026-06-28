@@ -11,6 +11,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
+import org.traducao.projeto.apiDadosAnime.application.ObterMetadataAnimeUseCase;
+import org.traducao.projeto.apiDadosAnime.infrastructure.adapters.JikanApiClientAdapter;
+import org.traducao.projeto.apiDadosAnime.infrastructure.adapters.TmdbApiClientAdapter;
+import org.traducao.projeto.apiDadosAnime.presentation.web.AnimeMetadataController;
 import org.traducao.projeto.analisadorMidia.application.AnalisarMidiaUseCase;
 import org.traducao.projeto.analisadorMidia.infrastructure.adapters.FfprobeAdapter;
 import org.traducao.projeto.analisadorMidia.presentation.AnalisadorMidiaCLI;
@@ -45,8 +49,10 @@ import org.traducao.projeto.telemetria.TelemetriaService;
 import org.traducao.projeto.traducao.application.ProcessarArquivoUseCase;
 import org.traducao.projeto.traducao.application.ProcessarEpisodioUseCase;
 import org.traducao.projeto.traducao.application.ValidadorTraducaoService;
-import org.traducao.projeto.traducao.contexto.danmachi.ContextoDanMachi;
+import org.traducao.projeto.traducao.contexto.danmachi.*;
 import org.traducao.projeto.traducao.contexto.eightsix.Contexto86;
+import org.traducao.projeto.traducao.contexto.evangelion.*;
+import org.traducao.projeto.traducao.contexto.gundam.*;
 import org.traducao.projeto.traducao.contexto.gundam.chars.ContextoCharsCounterattack;
 import org.traducao.projeto.traducao.contexto.gundam.msteam.ContextoGundam08thMSTeam;
 import org.traducao.projeto.traducao.contexto.gundam.reconguista.ContextoGundamReconguista;
@@ -54,11 +60,9 @@ import org.traducao.projeto.traducao.contexto.gundam.stardust.ContextoGundam0083
 import org.traducao.projeto.traducao.contexto.gundam.warInpocket.ContextoWarInPocket;
 import org.traducao.projeto.traducao.contexto.gundam.zeta.ContextoGundamZeta;
 import org.traducao.projeto.traducao.contexto.gundam.zz.ContextoGundamZZ;
-import org.traducao.projeto.traducao.contexto.macross.ContextoMacross2;
-import org.traducao.projeto.traducao.contexto.macross.ContextoMacrossAnime;
-import org.traducao.projeto.traducao.contexto.macross.ContextoMacrossFilme1;
-import org.traducao.projeto.traducao.contexto.macross.ContextoMacrossFilme2;
-import org.traducao.projeto.traducao.contexto.sidonia.ContextoKnightsOfSidonia;
+import org.traducao.projeto.traducao.contexto.guiltycrown.ContextoGuiltyCrown;
+import org.traducao.projeto.traducao.contexto.macross.*;
+import org.traducao.projeto.traducao.contexto.sidonia.*;
 import org.traducao.projeto.traducao.infrastructure.adapters.MistralClientAdapter;
 import org.traducao.projeto.traducao.infrastructure.cache.CacheTraducaoService;
 import org.traducao.projeto.traducao.infrastructure.config.LlmProperties;
@@ -141,8 +145,19 @@ import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
     ConsoleRedirector.class,
     BrowserLauncher.class,
     ApiController.class,
+    AnimeMetadataController.class,
+    ObterMetadataAnimeUseCase.class,
+    TmdbApiClientAdapter.class,
+    JikanApiClientAdapter.class,
     GerenciadorContexto.class,
     ContextoDanMachi.class,
+    ContextoDanMachiS1.class,
+    ContextoDanMachiS2.class,
+    ContextoDanMachiS3.class,
+    ContextoDanMachiS4.class,
+    ContextoDanMachiS5.class,
+    ContextoDanMachiSwordOratoria.class,
+    ContextoDanMachiOrion.class,
     ContextoWarInPocket.class,
     ContextoGundam0083.class,
     ContextoCharsCounterattack.class,
@@ -150,11 +165,24 @@ import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
     ContextoGundamReconguista.class,
     ContextoGundamZeta.class,
     ContextoGundamZZ.class,
+    ContextoGundam0079.class,
+    ContextoGundamSEED.class,
+    ContextoGundamSEEDFreedom.class,
     ContextoMacrossFilme1.class,
     ContextoMacrossFilme2.class,
     ContextoMacross2.class,
     ContextoMacrossAnime.class,
+    ContextoMacross7.class,
+    ContextoMacrossDYRL.class,
+    ContextoMacrossFrontier.class,
     ContextoKnightsOfSidonia.class,
+    ContextoSidoniaFilme.class,
+    ContextoGuiltyCrown.class,
+    ContextoEvangelionTV.class,
+    ContextoEvangelion111.class,
+    ContextoEvangelion222.class,
+    ContextoEvangelion333.class,
+    ContextoEvangelion3010.class,
     Contexto86.class
 })
 public class Application {

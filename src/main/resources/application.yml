@@ -7,6 +7,8 @@ server:
   port: 8080
 
 spring:
+  config:
+    import: "optional:classpath:application-local.yml"
   output:
     ansi:
       enabled: ALWAYS
@@ -62,6 +64,11 @@ tradutor:
 remuxer:
   # Caminho para o executavel do mkvmerge (se vazio, tenta achar no PATH ou pasta padrao do Windows)
   mkvmerge-path: ""
+
+tmdb:
+  # Chave de API do TMDB para busca de capas e metadados nativos em PT-BR
+  api-key: "${TMDB_API_KEY:}"
+
 
 
 logging:

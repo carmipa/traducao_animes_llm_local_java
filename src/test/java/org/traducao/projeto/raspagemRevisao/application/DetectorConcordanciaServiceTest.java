@@ -52,6 +52,22 @@ class DetectorConcordanciaServiceTest {
     }
 
     @Test
+    void detectaEleFalaQuandoOriginalDizShe() {
+        var resultado = detector.analisar("And then she speaks...", "Então ele fala...");
+        assertThat(resultado.suspeito()).isTrue();
+        assertThat(resultado.motivos()).anyMatch(m -> m.contains("ele"));
+    }
+
+    @Test
+    void naoSinalizaEleComoObjetoQuandoOriginalDizSheSemReferenciaMasculina() {
+        var resultado = detector.analisar("She told him to wait.", "Ela disse a ele para esperar.");
+        assertThat(resultado.suspeito()).isFalse();
+
+        resultado = detector.analisar("She saw him yesterday.", "Ela viu ele ontem.");
+        assertThat(resultado.suspeito()).isFalse();
+    }
+
+    @Test
     void detectaTratamentoMasculinoComReferenciaFeminina() {
         var resultado = detector.analisar("Wait, girl!", "Espere, garoto!");
         assertThat(resultado.suspeito()).isTrue();

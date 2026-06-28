@@ -3,7 +3,7 @@ import { logNoConsole } from '../js/app.js';
 export function initCorrecao() {
     const btnLimpar = document.getElementById('btn-limpar-cache');
     const btnScraping = document.getElementById('btn-scraping-google');
-    
+
     if (btnLimpar) {
         btnLimpar.addEventListener('click', async () => {
             const entrada = document.getElementById('correcao-entrada').value.trim();

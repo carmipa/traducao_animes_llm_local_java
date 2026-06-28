@@ -3,7 +3,6 @@ package org.traducao.projeto.raspagemRevisao.application;
 import org.springframework.stereotype.Service;
 import org.traducao.projeto.raspagemRevisao.domain.ResultadoDeteccaoConcordancia;
 
-import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
@@ -76,8 +75,11 @@ public class DetectorConcordanciaService {
     private static final Pattern SUBST_MASC_COM_ADJ_FEM =
         Pattern.compile("\\b(" + SUBST_MASC + ")\\s+(" + ADJ_FEM + ")\\b", FLAGS);
 
+    // "a" sozinho fica fora do segundo grupo: é a preposição invariante em gênero
+    // ("disse a ele" / "disse a ela" são ambos corretos), não o artigo feminino —
+    // incluí-lo fazia "a ele" (construção comum e correta) ser sinalizado sempre.
     private static final Pattern PRONOME_ARTIGO_ERRADO =
-        Pattern.compile("\\b(o|um|do|no|ao|pelo|lo|no)\\s+ela\\b|\\b(a|uma|da|na|à|pela|la|na)\\s+ele\\b", FLAGS);
+        Pattern.compile("\\b(o|um|do|no|ao|pelo|lo|no)\\s+ela\\b|\\b(uma|da|na|à|pela|la)\\s+ele\\b", FLAGS);
 
     private static final Pattern PRONOME_FEMININO_EN = Pattern.compile(
         "\\b(she|her|hers|girl|woman|lady|mother|mom|sister|daughter|"
@@ -111,11 +113,17 @@ public class DetectorConcordanciaService {
     private static final Pattern ELES_COM_PREDICADO_FEM =
         Pattern.compile("\\beles\\s+(" + VERBO_AUX + ")\\s+(" + PARTIC_FEM + ")\\b", FLAGS);
 
+    private static final String PREPOSICOES_OBJETO = "para|com|de|a|ao|à|pela|pelo";
+
+    private static final String VERBOS_TRANSITIVOS_DIRETOS =
+        "vi|vejo|viu|vou ver|viemos ver|viram|amo|amei|odia|odeio|encontrei|encontrou|"
+            + "conheci|conhece|ajudei|ajudou|protegi|protegeu";
+
     private static final Pattern OBJETO_MASC_COM_HER_EN =
-        Pattern.compile("\\b(para|com|de|a|ao|à|pela|pelo)\\s+(ele|o|lo|no|nele|dele|seu)\\b", FLAGS);
+        Pattern.compile("\\b(" + PREPOSICOES_OBJETO + ")\\s+(ele|o|lo|no|nele|dele|seu)\\b", FLAGS);
 
     private static final Pattern OBJETO_FEM_COM_HIM_EN =
-        Pattern.compile("\\b(para|com|de|a|ao|à|pela|pelo)\\s+(ela|a|la|na|nela|dela)\\b", FLAGS);
+        Pattern.compile("\\b(" + PREPOSICOES_OBJETO + ")\\s+(ela|a|la|na|nela|dela)\\b", FLAGS);
 
     private static final Pattern IMPERATIVO_PARA_ELE_COM_HER =
         Pattern.compile("\\b(" + VERBO_IMPERATIVO + ")\\s+(a|para)\\s+ele\\b", FLAGS);
@@ -124,22 +132,44 @@ public class DetectorConcordanciaService {
         Pattern.compile("\\b(" + VERBO_IMPERATIVO + ")\\s+(a|para)\\s+ela\\b", FLAGS);
 
     private static final Pattern VI_ELE_COM_HER =
-        Pattern.compile("\\b(vi|vejo|viu|vou ver|viemos ver|viram|amo|amei|odia|odeio|encontrei|encontrou|"
-            + "conheci|conhece|ajudei|ajudou|protegi|protegeu)\\s+(ele|o|lo)\\b", FLAGS);
+        Pattern.compile("\\b(" + VERBOS_TRANSITIVOS_DIRETOS + ")\\s+(ele|o|lo)\\b", FLAGS);
 
     private static final Pattern VI_ELA_COM_HIM =
-        Pattern.compile("\\b(vi|vejo|viu|vou ver|viemos ver|viram|amo|amei|odia|odeio|encontrei|encontrou|"
-            + "conheci|conhece|ajudei|ajudou|protegi|protegeu)\\s+(ela|a|la)\\b", FLAGS);
+        Pattern.compile("\\b(" + VERBOS_TRANSITIVOS_DIRETOS + ")\\s+(ela|a|la)\\b", FLAGS);
+
+    private static final String VERBOS_SUJEITO =
+        "disse|diz|dizia|falou|fala|falava|gritou|grita|gritava|sussurrou|sussurra|pensou|pensa|pensava|"
+            + "riu|ri|chorou|chora|sorriu|sorri|perguntou|pergunta|perguntava|respondeu|responde|respondia|"
+            + "replicou|replica|murmurou|murmura|exclamou|exclama|continuou|continua|começou|comecou|começa|comeca|"
+            // "para" sozinho fica de fora: é, de longe, mais comum como preposição/marcador
+            // de oração final ("ele para esperar" = "for him to wait") do que como o verbo
+            // "parar" — incluí-lo causava falso positivo em toda frase com essa construção.
+            + "parou|para de|foi|vai|ia|está|esta|estava|é|era|será|sera|ficou|fica|parece|parecia|sabe|sabia|"
+            + "quer|queria|pode|podia|mencionou|menciona|afirmou|afirma|contou|conta|explicou|explica|"
+            + "prometeu|promete|chamou|chama|viu|vê|ve|ouviu|ouve|escutou|escuta|achou|acha|sentiu|sente|"
+            + "olhou|olha|concordou|concorda|trabalhou|trabalha|morou|mora|viveu|vive|fez|faz|faria";
 
     private static final Pattern SUJEITO_ELE_COM_SHE =
-        Pattern.compile("(?:^|[.!?…]\\s*|,\\s*)ele\\s+(disse|falou|gritou|sussurrou|pensou|riu|chorou|"
-            + "sorriu|perguntou|respondeu|replicou|murmurou|exclamou|continuou|começou|comecou|parou|foi|"
-            + "está|esta|estava|é|era|será|sera|ficou|parece|sabe|sabia|quer|queria|pode|podia|vai|ia)\\b", FLAGS);
+        Pattern.compile("\\bele\\s+(" + VERBOS_SUJEITO + ")\\b", FLAGS);
 
     private static final Pattern SUJEITO_ELA_COM_HE =
-        Pattern.compile("(?:^|[.!?…]\\s*|,\\s*)ela\\s+(disse|falou|gritou|sussurrou|pensou|riu|chorou|"
-            + "sorriu|perguntou|respondeu|replicou|murmurou|exclamou|continuou|começou|comecou|parou|foi|"
-            + "está|esta|estava|é|era|será|sera|ficou|parece|sabe|sabia|quer|queria|pode|podia|vai|ia)\\b", FLAGS);
+        Pattern.compile("\\bela\\s+(" + VERBOS_SUJEITO + ")\\b", FLAGS);
+
+    // "ele"/"ela" como objeto direto/oblíquo (vi ele, com ela, para ele...) é uso
+    // pronominal correto em PT-BR mesmo quando o original só menciona o outro
+    // gênero (ex.: "She told him" -> "Ela disse a ele"). Por isso esses usos são
+    // removidos do texto antes de checar o isolado (ver removerObjetoPronominal).
+    // Nota: um lookbehind negativo equivalente (?<!prep|verbo\s+) chega a dar
+    // falso-negativo no JDK quando a alternância mistura frases com espaço
+    // (ex.: "viemos ver") com palavras simples — por isso o "strip primeiro".
+    private static final Pattern OBJETO_PRONOMINAL_ELE_ELA = Pattern.compile(
+        "\\b(?:" + PREPOSICOES_OBJETO + "|" + VERBOS_TRANSITIVOS_DIRETOS + ")\\s+(?:ele|ela)\\b", FLAGS);
+    private static final Pattern ELE_ISOLADO = Pattern.compile("\\bele\\b", FLAGS);
+    private static final Pattern ELA_ISOLADA = Pattern.compile("\\bela\\b", FLAGS);
+
+    private static String removerObjetoPronominal(String texto) {
+        return OBJETO_PRONOMINAL_ELE_ELA.matcher(texto).replaceAll(" ");
+    }
 
     private static final Pattern TRATAMENTO_MASC_COM_FEM_EN =
         Pattern.compile("\\b(" + TRATAMENTO_MASC + ")\\b", FLAGS);
@@ -221,6 +251,9 @@ public class DetectorConcordanciaService {
         if (SHE_EN.matcher(original).find()) {
             adicionarSeEncontrado(motivos, SUJEITO_ELE_COM_SHE, texto,
                 "Original usa 'she', mas sujeito da tradução é 'ele'");
+            if (!HE_EN.matcher(original).find() && ELE_ISOLADO.matcher(removerObjetoPronominal(texto)).find()) {
+                motivos.add("Original usa 'she' sem referência masculina, mas a tradução contém o masculino 'ele'");
+            }
             if (PARTIC_MASC_APOS_VERBO.matcher(texto).find()
                 && !HE_EN.matcher(original).find()) {
                 motivos.add("Original indica personagem/falante feminino ('she'), mas predicado está no masculino");
@@ -230,6 +263,9 @@ public class DetectorConcordanciaService {
         if (HE_EN.matcher(original).find()) {
             adicionarSeEncontrado(motivos, SUJEITO_ELA_COM_HE, texto,
                 "Original usa 'he', mas sujeito da tradução é 'ela'");
+            if (!SHE_EN.matcher(original).find() && ELA_ISOLADA.matcher(removerObjetoPronominal(texto)).find()) {
+                motivos.add("Original usa 'he' sem referência feminina, mas a tradução contém o feminino 'ela'");
+            }
             if (PARTIC_FEM_APOS_VERBO.matcher(texto).find()
                 && !SHE_EN.matcher(original).find()) {
                 motivos.add("Original indica personagem/falante masculino ('he'), mas predicado está no feminino");

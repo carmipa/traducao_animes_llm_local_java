@@ -48,12 +48,24 @@ Extrair → Traduzir (LLM) → Limpar cache (4) → Google no cache (4 scraping)
 → Revisão de Legendas (6) → Remuxer (7)
 ```
 
-### Pacote `raspagemRevisao` (novo)
+### Pacote `apiDadosAnime` (novo)
+
+```
+org.traducao.projeto.apiDadosAnime
+├── domain/model/AnimeMetadata.java              # Record Java 25 (título, poster, nota, sinopse)
+├── infrastructure/adapters/
+│   ├── TmdbApiClientAdapter.java                # API TMDB (language=pt-BR, busca por TV/Movie)
+│   └── JikanApiClientAdapter.java               # API Jikan MyAnimeList (fallback automático)
+├── application/ObterMetadataAnimeUseCase.java   # Sanitização de pasta + cache em cache/metadata/
+└── presentation/web/AnimeMetadataController.java # GET /api/metadata?caminho=...
+```
+
+### Pacote `raspagemRevisao` (atualizado)
 
 ```
 org.traducao.projeto.raspagemRevisao
 ├── application/
-│   ├── DetectorConcordanciaService.java    # heurísticas EN×PT (gênero, pronomes)
+│   ├── DetectorConcordanciaService.java    # heurísticas EN×PT (gênero, pronomes, "ele fala / ela fala")
 │   ├── AuditorProblemasLegendaService.java # inglês residual + concordância
 │   ├── RevisarLegendasUseCase.java         # .ass PT + .ass EN pareado + Google (sem cache)
 │   └── RevisarCacheUseCase.java            # revisão LLM no cache (CLI /api/revisar-cache)
@@ -75,10 +87,13 @@ org.traducao.projeto.raspagemRevisao
 - Cache: `...Dual Audio]_ENG.cache.json` em `cache/` (walk recursivo)
 - Normalização remove: `_PT-BR`, `_PTBR`, `_PTBR_TrackN`, `_TrackN`, `_ENG`
 
-### Contextos de lore (tradução LLM)
+### Contextos de lore (tradução LLM e Web UI Select)
 
-`GerenciadorContexto` + provedores em `traducao/contexto/**` (DanMachi, Gundam, Macross, 86, Sidonia…).  
-Selecionável na UI tradução (`GET /api/contextos`).
+`GerenciadorContexto` + provedores em `traducao/contexto/**`. Expostos na Web UI via `GET /api/contextos`:
+- **DanMachi**: Season 1 a 5 discriminados, Sword Oratoria e Arrow of the Orion (Filme).
+- **Macross**: Macross Anime, Macross 2 (Lovers Again), Macross 7, Macross DYRL (Filme 1), Macross Frontier, Macross Delta.
+- **Gundam**: Universal Century (0079, Zeta, ZZ, CCA, War in Pocket 0080, Stardust Memory 0083, 08th MS Team, Reconguista), SEED (SEED, SEED Destiny, SEED Freedom).
+- **Outros**: Knights of Sidonia (TV e Filme Love Woven in the Stars), Guilty Crown, Neon Genesis Evangelion (Série TV), Evangelion: 1.11, Evangelion: 2.22, Evangelion: 3.33, Evangelion: 3.0+1.0, 86 Eighty-Six.
 
 ---
 
