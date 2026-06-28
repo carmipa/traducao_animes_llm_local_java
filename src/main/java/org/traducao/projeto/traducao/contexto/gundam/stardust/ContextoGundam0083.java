@@ -22,7 +22,7 @@ public class ContextoGundam0083 implements ProvedorContexto {
     @Override
     public String getId() { return "gundam_0083"; }
     @Override
-    public String getNomeExibicao() { return "Gundam 0083: Stardust Memory"; }
+    public String getNomeExibicao() { return "Mobile Suit Gundam 0083: Stardust Memory"; }
     @Override
     public String obterPromptSistema() { return PROMPT; }
 }

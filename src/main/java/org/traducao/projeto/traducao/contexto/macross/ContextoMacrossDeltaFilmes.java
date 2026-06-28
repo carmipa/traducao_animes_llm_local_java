@@ -4,7 +4,6 @@ import org.springframework.stereotype.Component;
 import org.traducao.projeto.traducao.contexto.ContextoPrompt;
 import org.traducao.projeto.traducao.domain.ports.ProvedorContexto;
 
-@Component
 public class ContextoMacrossDeltaFilmes implements ProvedorContexto {
 
     private static final String LORE = """

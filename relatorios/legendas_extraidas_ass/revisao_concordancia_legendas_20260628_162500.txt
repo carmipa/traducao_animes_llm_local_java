@@ -1,0 +1,9 @@
+REVISÃO DE CONCORDÂNCIA PT-BR (.ass via LLM)
+============================================
+Pasta: E:\animes\MACROSS\Macross-Delta-br\macross_delta\legendas_extraidas_ass
+Duração: 11s
+Arquivos analisados: 26
+Falas auditadas: 9864
+Falas sem original EN (ignoradas): 9864
+Problemas detectados: 24
+Falas corrigidas via LLM: 15

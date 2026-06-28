@@ -206,12 +206,12 @@ public class DetectorConcordanciaService {
         Set<String> motivos = new LinkedHashSet<>();
 
         detectarConcordanciaNominal(texto, motivos);
+        detectarVerboPredicado(texto, motivos);
 
         if (originalIngles != null && !originalIngles.isBlank()) {
             String original = removerTagsAss(originalIngles);
             detectarPronomesECruzamento(original, texto, motivos);
             detectarTratamentos(original, texto, motivos);
-            detectarVerboPredicado(original, texto, motivos);
         }
 
         if (motivos.isEmpty()) {
@@ -320,7 +320,7 @@ public class DetectorConcordanciaService {
         }
     }
 
-    private void detectarVerboPredicado(String original, String texto, Set<String> motivos) {
+    private void detectarVerboPredicado(String texto, Set<String> motivos) {
         adicionarSeEncontrado(motivos, ELA_COM_PREDICADO_MASC, texto,
             "Sujeito 'ela' com predicado/adjetivo no masculino");
         adicionarSeEncontrado(motivos, ELE_COM_PREDICADO_FEM, texto,

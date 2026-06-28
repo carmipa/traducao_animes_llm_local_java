@@ -22,7 +22,7 @@ public class ContextoGundam08thMSTeam implements ProvedorContexto {
     @Override
     public String getId() { return "gundam_08ms"; }
     @Override
-    public String getNomeExibicao() { return "Gundam: 08th MS Team"; }
+    public String getNomeExibicao() { return "Mobile Suit Gundam: The 08th MS Team"; }
     @Override
     public String obterPromptSistema() { return PROMPT; }
 }

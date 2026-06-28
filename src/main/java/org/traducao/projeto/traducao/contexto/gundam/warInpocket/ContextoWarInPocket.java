@@ -29,7 +29,7 @@ public class ContextoWarInPocket implements ProvedorContexto {
 
     @Override
     public String getNomeExibicao() {
-        return "Gundam 0080: War in the Pocket";
+        return "Mobile Suit Gundam 0080: War in the Pocket";
     }
 
     @Override

@@ -350,5 +350,37 @@
     "itensDetectados" : 25,
     "itensCorrigidos" : 5,
     "registradoEm" : "2026-06-28T18:49:48.775720500Z"
+  }, {
+    "tipo" : "Revisão Concordância (.ass LLM)",
+    "detalhe" : "E:\\animes\\MACROSS\\Macross-Delta-br\\macross_delta\\legendas_extraidas_ass",
+    "tempoTotalMs" : 468,
+    "arquivosProcessados" : 26,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T19:19:10.626986200Z"
+  }, {
+    "tipo" : "Revisão Concordância (.ass LLM)",
+    "detalhe" : "E:\\animes\\MACROSS\\Macross-Delta-br\\macross_delta\\legendas_extraidas_ass",
+    "tempoTotalMs" : 371,
+    "arquivosProcessados" : 26,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T19:19:25.090123700Z"
+  }, {
+    "tipo" : "Revisão Concordância (.ass LLM)",
+    "detalhe" : "E:\\animes\\MACROSS\\Macross-Delta-br\\macross_delta\\legendas_extraidas_ass",
+    "tempoTotalMs" : 11308,
+    "arquivosProcessados" : 26,
+    "itensDetectados" : 24,
+    "itensCorrigidos" : 15,
+    "registradoEm" : "2026-06-28T19:25:00.055780700Z"
+  }, {
+    "tipo" : "Revisão Legendas (.ass Google)",
+    "detalhe" : "E:\\animes\\MACROSS\\Macross-Delta-br\\macross_delta\\legendas_extraidas_ass",
+    "tempoTotalMs" : 344,
+    "arquivosProcessados" : 26,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T19:25:13.794365900Z"
   } ]
 }

@@ -23,7 +23,7 @@ public class ContextoMacrossAnime implements ProvedorContexto {
     @Override
     public String getId() { return "macross_anime"; }
     @Override
-    public String getNomeExibicao() { return "Macross (Série TV)"; }
+    public String getNomeExibicao() { return "The Super Dimension Fortress Macross"; }
     @Override
     public String obterPromptSistema() { return PROMPT; }
 }

@@ -21,7 +21,7 @@ public class ContextoMacrossFilme2 implements ProvedorContexto {
     @Override
     public String getId() { return "macross_filme2"; }
     @Override
-    public String getNomeExibicao() { return "Macross: Filme 2 / Flash Back 2012"; }
+    public String getNomeExibicao() { return "Macross Flash Back 2012"; }
     @Override
     public String obterPromptSistema() { return PROMPT; }
 }

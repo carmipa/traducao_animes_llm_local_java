@@ -23,7 +23,7 @@ public class ContextoCharsCounterattack implements ProvedorContexto {
     @Override
     public String getId() { return "gundam_cca"; }
     @Override
-    public String getNomeExibicao() { return "Gundam: Char's Counterattack"; }
+    public String getNomeExibicao() { return "Mobile Suit Gundam: Char's Counterattack"; }
     @Override
     public String obterPromptSistema() { return PROMPT; }
 }

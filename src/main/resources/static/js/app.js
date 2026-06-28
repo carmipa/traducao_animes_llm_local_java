@@ -437,8 +437,8 @@ function inicializarMetadadosDinamicos() {
         }
     };
 
-    // Popula automaticamente os selects secundários (análise e correção) se necessário
-    carregarContextosAuxiliares(['analise-contexto', 'correcao-contexto'], () => {
+    // Popula automaticamente todos os selects de contexto (análise, tradução, correção e revisão)
+    carregarContextosAuxiliares(['analise-contexto', 'traducao-contexto', 'correcao-contexto', 'revisao-contexto'], () => {
         mapeamentoFormularios.forEach(atualizarItem);
     });
 
@@ -479,15 +479,28 @@ async function carregarContextosAuxiliares(idsSelects, onComplete) {
         const contextos = await response.json();
         if (!Array.isArray(contextos) || contextos.length === 0) return;
 
-        idsSelects.forEach(id => {
+        const todosSelects = ['analise-contexto', 'traducao-contexto', 'correcao-contexto', 'revisao-contexto'];
+        todosSelects.forEach(id => {
             const select = document.getElementById(id);
             if (!select) return;
 
-            select.innerHTML = '<option value="" selected>-- Selecione uma obra para visualizar --</option>';
+            const ehAuxiliar = (id === 'analise-contexto' || id === 'correcao-contexto');
+            select.innerHTML = '';
+            
+            if (ehAuxiliar) {
+                const optDefault = document.createElement('option');
+                optDefault.value = '';
+                optDefault.textContent = '-- Selecione uma obra para visualizar --';
+                select.appendChild(optDefault);
+            }
+
             contextos.forEach(ctx => {
                 const opt = document.createElement('option');
                 opt.value = ctx.id;
                 opt.textContent = ctx.nome;
+                if (!ehAuxiliar && ctx.padrao) {
+                    opt.selected = true;
+                }
                 select.appendChild(opt);
             });
         });

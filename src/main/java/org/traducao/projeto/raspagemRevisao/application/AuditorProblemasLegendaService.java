@@ -34,11 +34,9 @@ public class AuditorProblemasLegendaService {
             motivos.add(e.getMessage());
         }
 
-        if (originalIngles != null && !originalIngles.isBlank()) {
-            ResultadoDeteccaoConcordancia concordancia = detectorConcordancia.analisar(originalIngles, traducaoPt);
-            if (concordancia.suspeito()) {
-                motivos.addAll(concordancia.motivos());
-            }
+        ResultadoDeteccaoConcordancia concordancia = detectorConcordancia.analisar(originalIngles, traducaoPt);
+        if (concordancia.suspeito()) {
+            motivos.addAll(concordancia.motivos());
         }
 
         if (motivos.isEmpty()) {

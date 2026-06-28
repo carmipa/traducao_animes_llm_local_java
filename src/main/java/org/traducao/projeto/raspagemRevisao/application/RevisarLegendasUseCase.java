@@ -373,8 +373,10 @@ public class RevisarLegendasUseCase {
             if (!temOriginalEn) {
                 falasSemOriginal++;
                 totalSemOriginal[0]++;
-                eventosAtualizados.add(evento);
-                continue;
+                if (modo != ModoRevisaoLegendas.LLM_CONCORDANCIA) {
+                    eventosAtualizados.add(evento);
+                    continue;
+                }
             }
 
             falasAuditadas++;
@@ -678,7 +680,8 @@ public class RevisarLegendasUseCase {
     private Optional<String> tentarRevisarConcordancia(
         String original, String traduzido, List<String> motivos
     ) {
-        MascaradorTags.Mascarado mascOriginal = mascaradorTags.mascarar(original);
+        String textoOriginal = original != null ? original : "";
+        MascaradorTags.Mascarado mascOriginal = mascaradorTags.mascarar(textoOriginal);
         MascaradorTags.Mascarado mascTraduzido = mascaradorTags.mascarar(traduzido);
 
         Optional<String> resposta = mistralPort.revisarConcordancia(
