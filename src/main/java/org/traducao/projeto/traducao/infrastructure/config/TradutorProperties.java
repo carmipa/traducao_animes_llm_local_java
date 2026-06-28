@@ -35,15 +35,8 @@ public record TradutorProperties(
             return Path.of(diretorioSaida);
         }
         Path entrada = Path.of(diretorioEntrada);
-        Path pai = entrada.getParent();
-        if (pai == null || entrada.getFileName() == null) {
-            return entrada.resolve("traduzido");
-        }
-        String nomePasta = entrada.getFileName().toString();
-        String nomeSaida = nomePasta.toLowerCase().contains("eng")
-            ? nomePasta.replaceAll("(?i)eng", "pt-br")
-            : nomePasta + "_pt-br";
-        return pai.resolve(nomeSaida);
+        // Por padrão, cria automaticamente a subpasta 'traducao_ptbr' dentro da pasta da mídia informada
+        return entrada.resolve("traducao_ptbr");
     }
 
     /**
