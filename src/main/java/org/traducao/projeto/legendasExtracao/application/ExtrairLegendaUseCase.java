@@ -31,6 +31,10 @@ public class ExtrairLegendaUseCase {
     }
 
     public RelatorioExtracao executar(Path pastaVideos, FormatoLegenda formato) {
+        return executar(pastaVideos, null, formato);
+    }
+
+    public RelatorioExtracao executar(Path pastaVideos, Path pastaSaidaCustomizada, FormatoLegenda formato) {
         RelatorioExtracao relatorio = new RelatorioExtracao(formato);
 
         if (!Files.isDirectory(pastaVideos)) {
@@ -44,7 +48,9 @@ public class ExtrairLegendaUseCase {
                 .findFirst()
                 .orElseThrow(() -> new ExtratorException("Nenhuma estratégia suporta o formato " + formato));
 
-        Path pastaSaida = pastaVideos.resolve("legendas_extraidas_" + formato.name().toLowerCase());
+        Path pastaSaida = (pastaSaidaCustomizada != null && !pastaSaidaCustomizada.toString().isBlank())
+                ? pastaSaidaCustomizada
+                : pastaVideos.resolve("legendas_extraidas_" + formato.name().toLowerCase());
         try {
             Files.createDirectories(pastaSaida);
         } catch (IOException e) {

@@ -8,16 +8,22 @@ export function initExtracao() {
         e.preventDefault();
         
         const entrada = document.getElementById('extracao-entrada').value.trim();
+        const saidaElem = document.getElementById('extracao-saida');
+        const saida = saidaElem ? saidaElem.value.trim() : '';
         const formato = document.getElementById('extracao-formato').value;
         
         logNoConsole('console-extracao', `Solicitando extração de legendas no formato [${formato}]...`, 'info');
         logNoConsole('console-extracao', `Diretório: ${entrada}`, 'info');
+        if (saida) logNoConsole('console-extracao', `Pasta de Saída Customizada: ${saida}`, 'info');
 
         try {
+            const reqBody = { entrada, formato };
+            if (saida) reqBody.saida = saida;
+
             const res = await fetch('/api/extrair', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ entrada, formato })
+                body: JSON.stringify(reqBody)
             });
 
             if (!res.ok) {

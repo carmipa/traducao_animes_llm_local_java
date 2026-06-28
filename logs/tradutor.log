@@ -1852,3 +1852,773 @@ java.io.IOException: Uma conexão estabelecida foi anulada pelo software no comp
 2026-06-28 13:35:21.648 INFO  [tomcat-handler-2] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2026-06-28 13:35:21.651 INFO  [tomcat-handler-2] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
 2026-06-28 13:35:21.788 INFO  [tomcat-handler-23] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 7 traduções, 4 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-28 13:35:47.511 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 28972 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 13:35:47.511 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 13:35:47.548 INFO  [restartedMain] loteId= o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-28 13:35:47.548 INFO  [restartedMain] loteId= o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-28 13:35:47.991 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 13:35:47.998 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 13:35:47.999 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 13:35:48.018 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 13:35:48.018 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 470 ms
+2026-06-28 13:35:48.102 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 13:35:48.104 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 13:35:48.104 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 13:35:48.201 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 13:35:48.290 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 13:35:48.301 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 13:35:48.305 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 1.029 seconds (process running for 1.219)
+2026-06-28 13:35:48.331 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 13:35:48.565 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 13:35:48.566 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 13:35:48.567 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-28 13:41:45.922 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 29 class path changes (0 additions, 0 deletions, 29 modifications)
+2026-06-28 13:41:45.931 WARN  [tomcat-handler-12] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 13:41:45.931 WARN  [tomcat-handler-13] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 13:41:45.931 WARN  [tomcat-handler-14] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 13:41:45.933 WARN  [tomcat-handler-14] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 13:41:45.931 WARN  [tomcat-handler-10] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 13:41:45.931 WARN  [tomcat-handler-9] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 13:41:45.934 WARN  [tomcat-handler-9] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 13:41:45.931 WARN  [tomcat-handler-11] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 13:41:45.932 WARN  [tomcat-handler-12] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 13:41:45.932 WARN  [tomcat-handler-13] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 13:41:45.934 WARN  [tomcat-handler-10] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 13:41:45.935 WARN  [tomcat-handler-11] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 13:41:46.092 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 28972 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 13:41:46.093 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 13:41:46.227 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 13:41:46.228 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 13:41:46.228 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 13:41:46.237 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 13:41:46.238 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 130 ms
+2026-06-28 13:41:46.278 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 13:41:46.280 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 13:41:46.280 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 13:41:46.304 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 13:41:46.324 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 13:41:46.329 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 13:41:46.331 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.26 seconds (process running for 359.245)
+2026-06-28 13:41:46.333 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-28 13:41:46.337 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 13:41:46.741 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 13:41:46.743 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 13:41:46.744 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-28 13:41:46.867 INFO  [tomcat-handler-26] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 7 traduções, 4 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-28 13:41:46.889 INFO  [tomcat-handler-42] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 7 traduções, 4 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-28 13:42:14.587 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 12568 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 13:42:14.589 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 13:42:14.629 INFO  [restartedMain] loteId= o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-28 13:42:14.629 INFO  [restartedMain] loteId= o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-28 13:42:15.205 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 13:42:15.220 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 13:42:15.220 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 13:42:15.253 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 13:42:15.254 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 625 ms
+2026-06-28 13:42:15.400 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 13:42:15.405 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 13:42:15.406 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 13:42:15.554 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 13:42:15.664 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 13:42:15.678 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 13:42:15.683 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 1.372 seconds (process running for 1.597)
+2026-06-28 13:42:15.707 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 13:42:15.899 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 13:42:15.899 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 13:42:15.901 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-28 13:42:16.288 INFO  [tomcat-handler-21] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 7 traduções, 4 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-28 14:12:16.683 WARN  [tomcat-handler-27] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:12:16.683 WARN  [tomcat-handler-29] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:12:16.683 WARN  [tomcat-handler-26] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:12:16.683 WARN  [tomcat-handler-25] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:12:16.683 WARN  [tomcat-handler-24] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:12:16.683 WARN  [tomcat-handler-28] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:12:16.684 WARN  [tomcat-handler-27] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:12:16.685 WARN  [tomcat-handler-29] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:12:16.685 WARN  [tomcat-handler-26] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:12:16.685 WARN  [tomcat-handler-25] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:12:16.685 WARN  [tomcat-handler-24] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:12:16.686 WARN  [tomcat-handler-28] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:14:08.144 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2026-06-28 14:14:08.148 WARN  [tomcat-handler-62] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:14:08.148 WARN  [tomcat-handler-62] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:14:08.148 WARN  [tomcat-handler-63] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:14:08.148 WARN  [tomcat-handler-61] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:14:08.149 WARN  [tomcat-handler-61] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:14:08.148 WARN  [tomcat-handler-59] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:14:08.148 WARN  [tomcat-handler-60] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:14:08.148 WARN  [tomcat-handler-64] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:14:08.149 WARN  [tomcat-handler-63] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:14:08.150 WARN  [tomcat-handler-59] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:14:08.150 WARN  [tomcat-handler-60] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:14:08.151 WARN  [tomcat-handler-64] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:14:08.319 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 12568 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 14:14:08.320 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 14:14:08.446 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 14:14:08.448 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 14:14:08.449 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 14:14:08.461 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 14:14:08.462 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 128 ms
+2026-06-28 14:14:08.507 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:14:08.510 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:14:08.511 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 14:14:08.531 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 14:14:08.551 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 14:14:08.555 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 14:14:08.560 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.27 seconds (process running for 1914.472)
+2026-06-28 14:14:08.561 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-28 14:14:08.587 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 14:14:08.962 INFO  [tomcat-handler-2] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 14:14:08.963 INFO  [tomcat-handler-2] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 14:14:08.964 INFO  [tomcat-handler-2] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-28 14:14:09.098 INFO  [tomcat-handler-31] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 7 traduções, 4 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-28 14:23:09.956 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2026-06-28 14:23:09.961 WARN  [tomcat-handler-38] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:23:09.962 WARN  [tomcat-handler-37] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:23:09.961 WARN  [tomcat-handler-35] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:23:09.965 WARN  [tomcat-handler-35] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:23:09.962 WARN  [tomcat-handler-33] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:23:09.962 WARN  [tomcat-handler-36] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:23:09.962 WARN  [tomcat-handler-34] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:23:09.963 WARN  [tomcat-handler-38] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:23:09.963 WARN  [tomcat-handler-37] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:23:09.967 WARN  [tomcat-handler-33] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:23:09.968 WARN  [tomcat-handler-36] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:23:09.969 WARN  [tomcat-handler-34] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:23:10.193 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 12568 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 14:23:10.194 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 14:23:10.465 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 14:23:10.469 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 14:23:10.470 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 14:23:10.489 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 14:23:10.490 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 268 ms
+2026-06-28 14:23:10.550 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:23:10.553 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:23:10.554 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 14:23:10.586 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 14:23:10.612 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 14:23:10.620 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 14:23:10.623 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.471 seconds (process running for 2456.536)
+2026-06-28 14:23:10.625 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-28 14:23:10.635 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 14:23:10.791 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 14:23:10.794 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 14:23:10.795 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-28 14:23:38.916 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2026-06-28 14:23:38.919 WARN  [tomcat-handler-13] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:23:38.920 WARN  [tomcat-handler-13] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:23:38.919 WARN  [tomcat-handler-9] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:23:38.923 WARN  [tomcat-handler-9] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:23:38.919 WARN  [tomcat-handler-12] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:23:38.919 WARN  [tomcat-handler-10] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:23:38.925 WARN  [tomcat-handler-10] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:23:38.919 WARN  [tomcat-handler-11] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:23:38.919 WARN  [tomcat-handler-14] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:23:38.925 WARN  [tomcat-handler-12] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:23:38.927 WARN  [tomcat-handler-11] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:23:38.927 WARN  [tomcat-handler-14] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:23:39.099 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 12568 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 14:23:39.100 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 14:23:39.195 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 14:23:39.197 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 14:23:39.198 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 14:23:39.209 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 14:23:39.209 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 96 ms
+2026-06-28 14:23:39.239 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:23:39.241 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:23:39.241 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 14:23:39.261 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 14:23:39.276 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 14:23:39.284 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 14:23:39.286 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.208 seconds (process running for 2485.199)
+2026-06-28 14:23:39.288 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-28 14:23:39.296 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 14:23:39.733 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 14:23:39.734 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 14:23:39.737 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-06-28 14:24:20.184 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-06-28 14:24:20.190 WARN  [tomcat-handler-25] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:24:20.190 WARN  [tomcat-handler-27] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:24:20.190 WARN  [tomcat-handler-26] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:24:20.190 WARN  [tomcat-handler-28] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:24:20.190 WARN  [tomcat-handler-29] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:24:20.190 WARN  [tomcat-handler-24] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:24:20.192 WARN  [tomcat-handler-25] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:24:20.195 WARN  [tomcat-handler-27] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:24:20.196 WARN  [tomcat-handler-26] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:24:20.198 WARN  [tomcat-handler-28] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:24:20.201 WARN  [tomcat-handler-29] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:24:20.202 WARN  [tomcat-handler-24] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:24:20.447 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 12568 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 14:24:20.448 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 14:24:20.658 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 14:24:20.661 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 14:24:20.662 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 14:24:20.682 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 14:24:20.684 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 204 ms
+2026-06-28 14:24:20.738 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:24:20.741 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:24:20.744 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 14:24:20.771 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 14:24:20.799 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 14:24:20.810 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 14:24:20.815 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.412 seconds (process running for 2526.728)
+2026-06-28 14:24:20.819 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-28 14:24:20.834 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 14:24:21.008 INFO  [tomcat-handler-2] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 14:24:21.012 INFO  [tomcat-handler-2] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 14:24:21.014 INFO  [tomcat-handler-2] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-28 14:27:09.241 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 19 class path changes (0 additions, 0 deletions, 19 modifications)
+2026-06-28 14:27:09.248 ERROR [tomcat-handler-10] loteId= o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] threw exception
+java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:35) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:81) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:71) ~[main/:na]
+	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.log(Logger.java:780) ~[logback-classic-1.5.8.jar:1.5.8]
+	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.info(LogAdapter.java:452) ~[spring-jcl-6.1.13.jar:6.1.13]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent(LocalDevToolsAutoConfiguration.java:211) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent(LocalDevToolsAutoConfiguration.java:198) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:452) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:385) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.devtools.classpath.ClassPathFileChangeListener.publishEvent(ClassPathFileChangeListener.java:67) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.classpath.ClassPathFileChangeListener.onChange(ClassPathFileChangeListener.java:63) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.fireListeners(FileSystemWatcher.java:327) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.updateSnapshots(FileSystemWatcher.java:321) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.scan(FileSystemWatcher.java:281) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.run(FileSystemWatcher.java:261) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+2026-06-28 14:27:09.249 ERROR [tomcat-handler-14] loteId= o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] threw exception
+java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:35) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:81) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:71) ~[main/:na]
+	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.log(Logger.java:780) ~[logback-classic-1.5.8.jar:1.5.8]
+	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.info(LogAdapter.java:452) ~[spring-jcl-6.1.13.jar:6.1.13]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent(LocalDevToolsAutoConfiguration.java:211) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent(LocalDevToolsAutoConfiguration.java:198) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:452) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:385) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.devtools.classpath.ClassPathFileChangeListener.publishEvent(ClassPathFileChangeListener.java:67) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.classpath.ClassPathFileChangeListener.onChange(ClassPathFileChangeListener.java:63) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.fireListeners(FileSystemWatcher.java:327) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.updateSnapshots(FileSystemWatcher.java:321) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.scan(FileSystemWatcher.java:281) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.run(FileSystemWatcher.java:261) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+2026-06-28 14:27:09.248 ERROR [tomcat-handler-12] loteId= o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] threw exception
+java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:35) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:81) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:71) ~[main/:na]
+	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.log(Logger.java:780) ~[logback-classic-1.5.8.jar:1.5.8]
+	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.info(LogAdapter.java:452) ~[spring-jcl-6.1.13.jar:6.1.13]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent(LocalDevToolsAutoConfiguration.java:211) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent(LocalDevToolsAutoConfiguration.java:198) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:452) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:385) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.devtools.classpath.ClassPathFileChangeListener.publishEvent(ClassPathFileChangeListener.java:67) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.classpath.ClassPathFileChangeListener.onChange(ClassPathFileChangeListener.java:63) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.fireListeners(FileSystemWatcher.java:327) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.updateSnapshots(FileSystemWatcher.java:321) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.scan(FileSystemWatcher.java:281) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.run(FileSystemWatcher.java:261) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+2026-06-28 14:27:09.249 ERROR [tomcat-handler-15] loteId= o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] threw exception
+java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:35) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:81) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:71) ~[main/:na]
+	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.log(Logger.java:780) ~[logback-classic-1.5.8.jar:1.5.8]
+	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.info(LogAdapter.java:452) ~[spring-jcl-6.1.13.jar:6.1.13]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent(LocalDevToolsAutoConfiguration.java:211) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent(LocalDevToolsAutoConfiguration.java:198) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:452) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:385) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.devtools.classpath.ClassPathFileChangeListener.publishEvent(ClassPathFileChangeListener.java:67) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.classpath.ClassPathFileChangeListener.onChange(ClassPathFileChangeListener.java:63) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.fireListeners(FileSystemWatcher.java:327) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.updateSnapshots(FileSystemWatcher.java:321) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.scan(FileSystemWatcher.java:281) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.run(FileSystemWatcher.java:261) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+2026-06-28 14:27:09.249 ERROR [tomcat-handler-11] loteId= o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] threw exception
+java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:35) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:81) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:71) ~[main/:na]
+	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.log(Logger.java:780) ~[logback-classic-1.5.8.jar:1.5.8]
+	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.info(LogAdapter.java:452) ~[spring-jcl-6.1.13.jar:6.1.13]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent(LocalDevToolsAutoConfiguration.java:211) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent(LocalDevToolsAutoConfiguration.java:198) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:452) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:385) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.devtools.classpath.ClassPathFileChangeListener.publishEvent(ClassPathFileChangeListener.java:67) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.classpath.ClassPathFileChangeListener.onChange(ClassPathFileChangeListener.java:63) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.fireListeners(FileSystemWatcher.java:327) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.updateSnapshots(FileSystemWatcher.java:321) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.scan(FileSystemWatcher.java:281) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.run(FileSystemWatcher.java:261) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+2026-06-28 14:27:09.249 ERROR [tomcat-handler-13] loteId= o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] threw exception
+java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:57) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.implWrite(SocketChannelImpl.java:562) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:614) ~[na:na]
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:122) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1378) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:728) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:712) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:574) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:156) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1252) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:408) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.Response.action(Response.java:208) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:299) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:265) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:136) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.flush(StandardServletAsyncWebRequest.java:412) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:135) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:128) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.StringHttpMessageConverter.writeInternal(StringHttpMessageConverter.java:44) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:235) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.sendInternal(ResponseBodyEmitterReturnValueHandler.java:221) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler$HttpMessageConvertingHandler.send(ResponseBodyEmitterReturnValueHandler.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.sendInternal(ResponseBodyEmitter.java:223) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter.send(ResponseBodyEmitter.java:214) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.SseEmitter.send(SseEmitter.java:135) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:71) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.LogStreamService.publicarLog(LogStreamService.java:65) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector.publicarLog(ConsoleRedirector.java:35) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.flushBuffer(ConsoleRedirector.java:81) ~[main/:na]
+	at org.traducao.projeto.traducao.presentation.web.ConsoleRedirector$DoubleOutputStream.write(ConsoleRedirector.java:71) ~[main/:na]
+	at java.base/java.io.PrintStream.write(PrintStream.java:539) ~[na:na]
+	at java.base/java.io.PrintStream.write(PrintStream.java:584) ~[na:na]
+	at ch.qos.logback.core.joran.spi.ConsoleTarget$1.write(ConsoleTarget.java:39) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeByteArrayToOutputStreamWithPossibleFlush(OutputStreamAppender.java:225) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeBytes(OutputStreamAppender.java:208) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.writeOut(OutputStreamAppender.java:197) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:248) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:111) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:85) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) ~[logback-core-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:272) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:259) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:426) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:386) ~[logback-classic-1.5.8.jar:1.5.8]
+	at ch.qos.logback.classic.Logger.log(Logger.java:780) ~[logback-classic-1.5.8.jar:1.5.8]
+	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.info(LogAdapter.java:452) ~[spring-jcl-6.1.13.jar:6.1.13]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent(LocalDevToolsAutoConfiguration.java:211) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent(LocalDevToolsAutoConfiguration.java:198) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:452) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:385) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.devtools.classpath.ClassPathFileChangeListener.publishEvent(ClassPathFileChangeListener.java:67) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.classpath.ClassPathFileChangeListener.onChange(ClassPathFileChangeListener.java:63) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.fireListeners(FileSystemWatcher.java:327) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.updateSnapshots(FileSystemWatcher.java:321) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.scan(FileSystemWatcher.java:281) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at org.springframework.boot.devtools.filewatch.FileSystemWatcher$Watcher.run(FileSystemWatcher.java:261) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+2026-06-28 14:27:10.010 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 12568 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 14:27:10.012 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 14:27:10.172 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 14:27:10.175 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 14:27:10.176 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 14:27:10.195 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 14:27:10.196 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 161 ms
+2026-06-28 14:27:10.246 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:27:10.249 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:27:10.251 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 14:27:10.279 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 14:27:10.302 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 14:27:10.308 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 14:27:10.313 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.342 seconds (process running for 2696.226)
+2026-06-28 14:27:10.315 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-28 14:27:10.328 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 14:27:11.504 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 14:27:11.507 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 14:27:11.509 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-28 14:27:11.638 INFO  [tomcat-handler-15] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 7 traduções, 4 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-28 14:27:24.199 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-06-28 14:27:24.205 WARN  [tomcat-handler-28] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:27:24.207 WARN  [tomcat-handler-28] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:27:24.402 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 12568 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 14:27:24.406 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 14:27:24.592 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 14:27:24.596 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 14:27:24.598 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 14:27:24.618 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 14:27:24.621 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 187 ms
+2026-06-28 14:27:24.674 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:27:24.679 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:27:24.681 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 14:27:24.712 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 14:27:24.738 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 14:27:24.748 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 14:27:24.754 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.398 seconds (process running for 2710.667)
+2026-06-28 14:27:24.759 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-28 14:27:24.775 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 14:27:25.189 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 14:27:25.191 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 14:27:25.194 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-28 14:27:25.318 INFO  [tomcat-handler-15] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 7 traduções, 4 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-28 14:32:16.518 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 20 class path changes (0 additions, 0 deletions, 20 modifications)
+2026-06-28 14:32:16.522 WARN  [tomcat-handler-77] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:32:16.522 WARN  [tomcat-handler-78] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:32:16.525 WARN  [tomcat-handler-77] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:32:16.528 WARN  [tomcat-handler-78] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:32:16.739 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 12568 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 14:32:16.741 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 14:32:16.934 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 14:32:16.937 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 14:32:16.940 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 14:32:16.959 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 14:32:16.961 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 195 ms
+2026-06-28 14:32:17.001 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:32:17.005 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:32:17.008 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 14:32:17.028 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 14:32:17.051 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 14:32:17.060 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 14:32:17.066 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.367 seconds (process running for 3002.979)
+2026-06-28 14:32:17.069 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-28 14:32:17.099 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 14:32:17.501 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 14:32:17.505 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 14:32:17.509 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-28 14:32:17.632 INFO  [tomcat-handler-15] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 7 traduções, 4 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-28 14:32:51.562 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2026-06-28 14:32:51.569 WARN  [tomcat-handler-35] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:32:51.569 WARN  [tomcat-handler-33] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:32:51.569 WARN  [tomcat-handler-34] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:32:51.573 WARN  [tomcat-handler-35] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:32:51.576 WARN  [tomcat-handler-33] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:32:51.580 WARN  [tomcat-handler-34] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:32:51.805 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 12568 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 14:32:51.808 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 14:32:51.976 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 14:32:51.981 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 14:32:51.983 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 14:32:51.998 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 14:32:52.001 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 167 ms
+2026-06-28 14:32:52.050 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:32:52.055 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:32:52.058 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 14:32:52.087 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 14:32:52.110 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 14:32:52.119 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 14:32:52.124 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.359 seconds (process running for 3038.037)
+2026-06-28 14:32:52.129 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-28 14:32:52.146 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 14:32:52.567 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 14:32:52.569 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 14:32:52.573 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-28 14:32:52.696 INFO  [tomcat-handler-15] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 7 traduções, 4 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-28 14:35:33.925 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 18 class path changes (0 additions, 0 deletions, 18 modifications)
+2026-06-28 14:35:33.931 WARN  [tomcat-handler-86] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:35:33.931 WARN  [tomcat-handler-84] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:35:33.931 WARN  [tomcat-handler-87] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:35:33.931 WARN  [tomcat-handler-85] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-28 14:35:33.935 WARN  [tomcat-handler-86] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:35:33.939 WARN  [tomcat-handler-84] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:35:33.943 WARN  [tomcat-handler-87] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:35:33.947 WARN  [tomcat-handler-85] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-28 14:35:34.173 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 12568 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 14:35:34.176 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 14:35:34.378 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 14:35:34.383 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 14:35:34.385 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 14:35:34.405 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 14:35:34.407 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 199 ms
+2026-06-28 14:35:34.456 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:35:34.462 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:35:34.464 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 14:35:34.493 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 14:35:34.519 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 14:35:34.529 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 14:35:34.536 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.418 seconds (process running for 3200.449)
+2026-06-28 14:35:34.540 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-28 14:35:34.560 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 14:35:34.959 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 14:35:34.961 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 14:35:34.964 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-28 14:35:35.087 INFO  [tomcat-handler-15] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 7 traduções, 4 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-28 14:43:50.972 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 32156 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-28 14:43:50.974 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-28 14:43:51.008 INFO  [restartedMain] loteId= o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-28 14:43:51.008 INFO  [restartedMain] loteId= o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-28 14:43:51.487 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-28 14:43:51.496 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-28 14:43:51.496 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-28 14:43:51.523 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-28 14:43:51.523 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 515 ms
+2026-06-28 14:43:51.620 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:43:51.623 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-28 14:43:51.623 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-28 14:43:51.738 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-28 14:43:51.830 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-28 14:43:51.841 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-28 14:43:51.846 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 1.098 seconds (process running for 1.282)
+2026-06-28 14:43:51.869 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-28 14:43:52.299 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-28 14:43:52.299 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-28 14:43:52.300 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-28 14:43:52.485 INFO  [tomcat-handler-15] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 13 mídias, 7 traduções, 4 operações do arquivo logs\telemetria_compartilhada.json.

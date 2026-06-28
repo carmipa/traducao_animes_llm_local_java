@@ -29,22 +29,26 @@ public class DetectorConcordanciaService {
             + "sacerdote|mago|ladrao|ladrão|deus|garoto";
 
     private static final String ADJ_MASC =
-        "novo|velho|grande|pequeno|meu|seu|nosso|dele|pronto|cansado|sozinho|animado|nervoso|"
-            + "preocupado|furioso|surpreso|certo|errado|bom|mau|feliz|triste|satisfeito|"
-            + "irritado|confuso|ansioso|forte|fraco|jovem|lindo|feio|gentil|bravo|loco|louco";
+        "novo|velho|pequeno|meu|seu|nosso|pronto|cansado|sozinho|animado|nervoso|"
+            + "preocupado|furioso|surpreso|certo|errado|bom|mau|satisfeito|"
+            + "irritado|confuso|ansioso|fraco|lindo|feio|bravo|loco|louco|"
+            + "assustado|machucado|ferido|ocupado|perdido|vivo|morto|bêbado|bebado|doido";
 
     private static final String ADJ_FEM =
-        "nova|velha|grande|pequena|minha|sua|nossa|dela|pronta|cansada|sozinha|animada|nervosa|"
-            + "preocupada|furiosa|surpresa|certa|errada|boa|má|ma|feliz|triste|satisfeita|"
-            + "irritada|confusa|ansiosa|forte|fraca|jovem|linda|feia|gentil|brava|loca|louca";
+        "nova|velha|pequena|minha|sua|nossa|pronta|cansada|sozinha|animada|nervosa|"
+            + "preocupada|furiosa|surpresa|certa|errada|boa|má|ma|satisfeita|"
+            + "irritada|confusa|ansiosa|fraca|linda|feia|brava|loca|louca|"
+            + "assustada|machucada|ferida|ocupada|perdida|viva|morta|bêbada|bebada|doida";
 
     private static final String PARTIC_MASC =
         "cansado|pronto|preocupado|animado|nervoso|sozinho|furioso|surpreso|certo|errado|"
-            + "feliz|triste|satisfeito|irritado|confuso|ansioso|loco|louco";
+            + "satisfeito|irritado|confuso|ansioso|loco|louco|assustado|machucado|ferido|"
+            + "ocupado|perdido|vivo|morto|bêbado|bebado|doido";
 
     private static final String PARTIC_FEM =
         "cansada|pronta|preocupada|animada|nervosa|sozinha|furiosa|surpresa|certa|errada|"
-            + "feliz|triste|satisfeita|irritada|confusa|ansiosa|loca|louca";
+            + "satisfeita|irritada|confusa|ansiosa|loca|louca|assustada|machucada|ferida|"
+            + "ocupada|perdida|viva|morta|bêbada|bebada|doida";
 
     private static final String TRATAMENTO_MASC = "senhor|moço|moco|garoto|rapaz|cara|homem|menino|irmão|irmao|pai";
     private static final String TRATAMENTO_FEM = "senhora|moça|moca|garota|menina|dama|irmã|irma|mãe|mae|donzela";
@@ -113,6 +117,16 @@ public class DetectorConcordanciaService {
     private static final Pattern ELES_COM_PREDICADO_FEM =
         Pattern.compile("\\beles\\s+(" + VERBO_AUX + ")\\s+(" + PARTIC_FEM + ")\\b", FLAGS);
 
+    private static final Pattern INGLES_FALA_AMBIGUA =
+        Pattern.compile("\\b(i|i'm|im|i am|me|my|you|you're|you are|your)\\b", FLAGS);
+
+    private static final Pattern MASCULINO_AMBIGUO_PT =
+        Pattern.compile("\\b("
+            + "estou|to|tô|estava|fiquei|fico|vou ficar|me sinto|sinto-me|sinto me|"
+            + "voce esta|você está|voce ta|você tá|tu estas|tu estás|tu ta|tu tá|"
+            + "esta|está|estas|estás|ta|tá"
+            + ")\\s+(" + PARTIC_MASC + ")\\b|\\bobrigado\\b", FLAGS);
+
     private static final String PREPOSICOES_OBJETO = "para|com|de|a|ao|à|pela|pelo";
 
     private static final String VERBOS_TRANSITIVOS_DIRETOS =
@@ -120,10 +134,10 @@ public class DetectorConcordanciaService {
             + "conheci|conhece|ajudei|ajudou|protegi|protegeu";
 
     private static final Pattern OBJETO_MASC_COM_HER_EN =
-        Pattern.compile("\\b(" + PREPOSICOES_OBJETO + ")\\s+(ele|o|lo|no|nele|dele|seu)\\b", FLAGS);
+        Pattern.compile("\\b(" + PREPOSICOES_OBJETO + ")\\s+(ele|nele|dele)\\b", FLAGS);
 
     private static final Pattern OBJETO_FEM_COM_HIM_EN =
-        Pattern.compile("\\b(" + PREPOSICOES_OBJETO + ")\\s+(ela|a|la|na|nela|dela)\\b", FLAGS);
+        Pattern.compile("\\b(" + PREPOSICOES_OBJETO + ")\\s+(ela|nela|dela)\\b", FLAGS);
 
     private static final Pattern IMPERATIVO_PARA_ELE_COM_HER =
         Pattern.compile("\\b(" + VERBO_IMPERATIVO + ")\\s+(a|para)\\s+ele\\b", FLAGS);
@@ -282,6 +296,13 @@ public class DetectorConcordanciaService {
             && PARTIC_FEM_APOS_VERBO.matcher(texto).find()
             && !PRONOME_FEMININO_EN.matcher(original).find()) {
             motivos.add("Original indica masculino, mas participio/adjetivo predicativo está no feminino");
+        }
+
+        if (!PRONOME_FEMININO_EN.matcher(original).find()
+            && !PRONOME_MASCULINO_EN.matcher(original).find()
+            && INGLES_FALA_AMBIGUA.matcher(original).find()
+            && MASCULINO_AMBIGUO_PT.matcher(texto).find()) {
+            motivos.add("Original não indica gênero, mas a tradução usa masculino marcado; revisar pela lore ou neutralizar");
         }
     }
 

@@ -51,14 +51,9 @@ public class AnalisarMidiaUseCase {
         // Define a pasta de relatórios/logs
         Path pastaRelatorios = saidaEfetiva;
         if (pastaRelatorios == null) {
-            String nomeDir = entrada.getFileName().toString();
-            if (Files.isRegularFile(entrada)) {
-                int dotIdx = nomeDir.lastIndexOf('.');
-                if (dotIdx > 0) {
-                    nomeDir = nomeDir.substring(0, dotIdx);
-                }
-            }
-            pastaRelatorios = Path.of("relatorios", nomeDir).toAbsolutePath();
+            Path entradaAbsoluta = entrada.toAbsolutePath();
+            Path pastaPai = Files.isDirectory(entrada) ? entradaAbsoluta : entradaAbsoluta.getParent();
+            pastaRelatorios = (pastaPai != null) ? pastaPai.resolve("relatorios") : Path.of("relatorios").toAbsolutePath();
         }
         try {
             Files.createDirectories(pastaRelatorios);

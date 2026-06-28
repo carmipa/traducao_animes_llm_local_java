@@ -15,6 +15,14 @@ class DetectorConcordanciaServiceTest {
     }
 
     @Test
+    void naoSinalizaAdjetivosInvariaveisComoErroDeGenero() {
+        assertThat(detector.analisar("She is happy.", "Ela está feliz.").suspeito()).isFalse();
+        assertThat(detector.analisar("The girl is sad.", "A garota triste.").suspeito()).isFalse();
+        assertThat(detector.analisar("The boy is young.", "O garoto jovem.").suspeito()).isFalse();
+        assertThat(detector.analisar("The woman is strong.", "A mulher forte.").suspeito()).isFalse();
+    }
+
+    @Test
     void detectaArtigoMasculinoComSubstantivoFeminino() {
         var resultado = detector.analisar("The girl is here.", "O garota está aqui.");
         assertThat(resultado.suspeito()).isTrue();
@@ -24,11 +32,21 @@ class DetectorConcordanciaServiceTest {
     @Test
     void detectaParticipioMasculinoQuandoOriginalIndicaFeminino() {
         var resultado = detector.analisar("I'm tired.", "Estou cansado.");
-        assertThat(resultado.suspeito()).isFalse();
+        assertThat(resultado.suspeito()).isTrue();
+        assertThat(resultado.motivos()).anyMatch(m -> m.contains("masculino marcado") || m.contains("neutralizar"));
 
         resultado = detector.analisar("She looks tired.", "Ela parece cansado.");
         assertThat(resultado.suspeito()).isTrue();
         assertThat(resultado.motivos()).anyMatch(m -> m.contains("feminino") || m.contains("ela"));
+    }
+
+    @Test
+    void detectaMasculinoPadraoQuandoInglesNaoMarcaGenero() {
+        assertThat(detector.analisar("Are you ready?", "Você está pronto?").suspeito()).isTrue();
+        assertThat(detector.analisar("Thank you.", "Obrigado.").suspeito()).isTrue();
+        assertThat(detector.analisar("I'm not drunk.", "Não estou bêbado.").suspeito()).isTrue();
+        assertThat(detector.analisar("Are you hurt?", "Estás ferido?").suspeito()).isTrue();
+        assertThat(detector.analisar("I'm busy today.", "Estou ocupado hoje.").suspeito()).isTrue();
     }
 
     @Test
@@ -42,6 +60,15 @@ class DetectorConcordanciaServiceTest {
         var resultado = detector.analisar("Tell her I'm coming.", "Diga a ele que estou indo.");
         assertThat(resultado.suspeito()).isTrue();
         assertThat(resultado.motivos()).anyMatch(m -> m.contains("her") || m.contains("imperativo"));
+    }
+
+    @Test
+    void naoConfundeArtigoDepoisDePreposicaoComPronomeDeGenero() {
+        var resultado = detector.analisar("I made this for her brother.", "Fiz isto para o irmão dela.");
+        assertThat(resultado.suspeito()).isFalse();
+
+        resultado = detector.analisar("He returned to the base.", "Ele voltou para a base.");
+        assertThat(resultado.suspeito()).isFalse();
     }
 
     @Test

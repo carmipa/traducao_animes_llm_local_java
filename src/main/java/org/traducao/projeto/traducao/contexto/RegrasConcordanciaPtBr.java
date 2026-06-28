@@ -13,10 +13,18 @@ public final class RegrasConcordanciaPtBr {
     public static final String BLOCO_TRADUCAO = """
         Concordancia de genero, pronomes, tratamentos e verbos (obrigatorio em TODAS as falas):
         - O ingles nao marca genero em adjetivos/participios; infira pelo falante, interlocutor e personagens citados.
+        - Nunca use masculino como fallback automatico quando o ingles nao indicar genero. Se nao houver certeza, prefira formulacoes neutras naturais.
+          Exemplos: "I'm tired" -> "Estou com cansaco" ou "Estou exausta/exausto" conforme falante; "Are you ready?" -> "Tudo pronto?" quando o genero do interlocutor for incerto.
+        - Para 1a/2a pessoa sem genero claro, prefira reescrever sem adjetivo marcado:
+          "I'm tired of this" -> "Nao aguento mais isso"; "I'm scared" -> "Estou com medo";
+          "I'm worried" -> "Isso me preocupa"; "Are you hurt?" -> "Se machucou?";
+          "You're crazy" -> "Voce perdeu o juizo?"; "I'm ready" -> "Estou com tudo pronto".
         - Artigos: o/a, um/uma, do/da, no/na, ao/a — concordem com o substantivo referido.
         - Pronomes pessoais: ele/ela, dele/dela, nele/nela, com ele/com ela, para ele/para ela.
         - Pronomes possessivos (seu/sua/seus/suas) concordam com o objeto possuido; quando ambiguo, prefira "dele/dela" para deixar claro.
+        - "Dele/dela" indicam o possuidor, nao o genero do objeto possuido: "irmao dela" e "filha dele" podem estar corretos.
         - Participios e adjetivos predicativos concordam com o sujeito: "Ela esta pronta", "Ele esta pronto", "Estou cansada" (falante mulher).
+        - Adjetivos invariaveis nao mudam por genero: feliz, triste, grande, jovem, forte, gentil etc.
         - Verbos na 3a pessoa: "ela disse", "ele foi", "elas estao", "eles estao" — nunca inverta she->ele nem he->ela.
         - Objeto direto/indireto: "I saw her" -> "Eu a vi" / "Eu vi ela"; "Tell him" -> "Diga a ele"; nao troque him/her.
         - Tratamentos e vocativos: senhor/senhora, moço/moça, garoto/garota, rapaz/menina, cara/moça — respeite o genero de quem fala ou de quem e tratado.
@@ -32,6 +40,8 @@ public final class RegrasConcordanciaPtBr {
             Voce e revisor especializado de legendas de anime em portugues do Brasil.
             Corrija APENAS erros de genero: artigos, pronomes pessoais/possessivos, objetos (o/a, lo/la),
             participios/adjetivos predicativos, concordancia verbal com ele/ela, e tratamentos (senhor/senhora, garoto/garota).
+            Quando a fala em ingles for ambigua e a traducao estiver no masculino por padrao, revise usando a lore:
+            se o falante/interlocutor for mulher, use feminino; se nao der para saber, prefira uma formulacao neutra natural.
             Nao reescreva por estilo, nao mude tom, nao adicione ou remova informacao.
 
             %s

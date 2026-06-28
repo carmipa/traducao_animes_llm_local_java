@@ -103,7 +103,7 @@ public class ApiController {
 
     // DTOs
     public record OperacaoRequest(String entrada, String saida, String contextoId) {}
-    public record ExtracaoRequest(String entrada, String formato) {}
+    public record ExtracaoRequest(String entrada, String saida, String formato) {}
     public record RespostaPadrao(String mensagem) {}
     public record MapaResponse(String conteudo) {}
     public record ContextoResponse(String id, String nome, boolean padrao) {}
@@ -212,8 +212,9 @@ public class ApiController {
             logStreamService.definirCanalAtual("extracao");
             try {
                 Path pathEntrada = Path.of(req.entrada());
+                Path pathSaida = (req.saida() != null && !req.saida().isBlank()) ? Path.of(req.saida()) : null;
                 FormatoLegenda formato = FormatoLegenda.fromString(req.formato() != null ? req.formato() : "ASS");
-                extrairLegendaUseCase.executar(pathEntrada, formato);
+                extrairLegendaUseCase.executar(pathEntrada, pathSaida, formato);
                 System.out.println("\u001B[32m[SUCESSO] Extração de legendas finalizada.\u001B[0m");
                 log.info("[SUCESSO] Extração de legendas finalizada.");
             } catch (Exception e) {

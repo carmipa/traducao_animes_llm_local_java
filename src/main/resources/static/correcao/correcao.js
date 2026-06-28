@@ -3,6 +3,7 @@ import { logNoConsole } from '../js/app.js';
 export function initCorrecao() {
     const btnLimpar = document.getElementById('btn-limpar-cache');
     const btnScraping = document.getElementById('btn-scraping-google');
+    const btnRevisarCache = document.getElementById('btn-revisar-cache');
 
     if (btnLimpar) {
         btnLimpar.addEventListener('click', async () => {
@@ -58,6 +59,40 @@ export function initCorrecao() {
                 }
             } catch (err) {
                 logNoConsole('console-correcao', `Erro no scraping: ${err.message}`, 'erro');
+            }
+        });
+    }
+
+    if (btnRevisarCache) {
+        btnRevisarCache.addEventListener('click', async () => {
+            const entrada = document.getElementById('correcao-entrada').value.trim();
+            const contextoId = document.getElementById('correcao-contexto')?.value;
+            logNoConsole('console-correcao', 'Disparando revisão de concordância PT-BR no cache...', 'info');
+            if (entrada) logNoConsole('console-correcao', `Pasta de Cache: ${entrada}`, 'info');
+            if (contextoId) logNoConsole('console-correcao', `Contexto: ${contextoId}`, 'info');
+
+            try {
+                const body = { entrada };
+                if (contextoId) body.contextoId = contextoId;
+
+                const res = await fetch('/api/revisar-cache', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(body)
+                });
+
+                if (!res.ok) {
+                    const erro = await res.text();
+                    throw new Error(erro || 'Erro na revisão de concordância do cache');
+                }
+
+                const data = await res.json();
+                logNoConsole('console-correcao', 'Revisão de concordância do cache iniciada!', 'sucesso');
+                if (data.mensagem) {
+                    logNoConsole('console-correcao', data.mensagem, 'info');
+                }
+            } catch (err) {
+                logNoConsole('console-correcao', `Erro na revisão do cache: ${err.message}`, 'erro');
             }
         });
     }

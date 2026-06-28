@@ -247,6 +247,11 @@ public class MistralClientAdapter implements MistralPort {
             Problemas detectados automaticamente:
             - %s
 
+            Se o problema mencionar "masculino marcado" e o original nao indicar genero:
+            - use feminino quando a lore/personagem indicar falante ou interlocutora mulher;
+            - se a lore nao permitir inferir, troque por uma formulacao neutra natural em PT-BR;
+            - nao mantenha masculino apenas por costume ou padrao generico.
+
             Responda com uma unica linha: a traducao corrigida.
             """.formatted(originalIngles, traducaoPt, listaProblemas);
     }

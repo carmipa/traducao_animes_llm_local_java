@@ -75,6 +75,8 @@ org.traducao.projeto.raspagemRevisao
 
 **Regras PT-BR gerais:** `traducao/contexto/RegrasConcordanciaPtBr.java` — injetado nos prompts via `ContextoPrompt`.
 
+**Ajuste de gênero em fala ambígua (2026-06-28):** o inglês não marca gênero em 1ª/2ª pessoa (`I'm tired`, `Are you hurt?`, `Thank you`). O prompt agora proíbe masculino como fallback automático e recomenda formulações neutras quando o falante/interlocutor não puder ser inferido. O detector também marca como suspeitas traduções ambíguas no masculino (`Estou cansado`, `Você está pronto?`, `Obrigado`, `Estás ferido?`, `Não estou bêbado`) para revisão via lore/LLM.
+
 **Pareamento legenda EN ↔ PT (Revisão de Legendas, menu 6):**
 
 - Entrada: pasta com `*_PTBR_TrackN.ass` ou `*_PT-BR.ass`
@@ -97,18 +99,23 @@ org.traducao.projeto.raspagemRevisao
 
 ---
 
-## Onde cada coisa é salva (padrão unificado)
+## Onde cada coisa é salva (padrão unificado de subpastas)
 
-| Tipo | Caminho | Quem grava |
-|------|---------|------------|
-| Log estruturado | `logs/tradutor.log` | SLF4J (`out()` nos use cases de revisão/correção) |
+Por padrão, quando o campo de pasta de saída opcional é deixado em branco na Web UI, o sistema cria automaticamente a subpasta de destino **dentro da própria pasta da mídia indicada pelo usuário**:
+- **Tradução Local (3)**: subpasta `traducao_ptbr/` na pasta do anime.
+- **Extração de Legendas (2)**: subpasta `legendas_extraidas_[formato]/` na pasta dos vídeos.
+- **Análise de Mídia (1)**: subpasta `relatorios/` na pasta do vídeo/anime.
+- *(Se o usuário preencher o campo opcional de saída, o sistema salva no caminho customizado informado).*
+
+| Tipo | Caminho Padrão | Quem grava |
+|------|----------------|------------|
+| Log estruturado | `logs/tradutor.log` | SLF4J |
 | Log console web | `logs/console-web.log` | `LogStreamService` (SSE) |
 | Telemetria canônica | `logs/telemetria_compartilhada.json` | `TelemetriaService.persistirCanonico()` |
-| Cópia telemetria | `relatorios/{nomePasta}/telemetria_compartilhada.json` | `TelemetriaService.salvar(pastaRelatorios)` |
-| Relatório operação | `relatorios/{nomePasta}/{prefixo}_yyyyMMdd_HHmmss.txt` + `.json` | `TelemetriaService.finalizarOperacao(...)` |
-| Análise mídia | `relatorios/{anime}/*.txt`, `*.json` | `AnalisarMidiaUseCase` |
-| Cache tradução | `cache/**/**_ENG.cache.json` (ou `{base}.cache.json`) | `CacheTraducaoService` |
-| Legendas PT | pasta informada pelo usuário | `EscritorLegendaAss` / revisão sobrescreve na mesma pasta |
+| Análise mídia | `{pasta_midia}/relatorios/*.txt`, `*.json` | `AnalisarMidiaUseCase` |
+| Extração | `{pasta_midia}/legendas_extraidas_[formato]/*.ass` | `ExtrairLegendaUseCase` |
+| Tradução | `{pasta_midia}/traducao_ptbr/*.ass` | `ProcessarArquivoUseCase` / `EscritorLegendaAss` |
+| Cache tradução | `cache/**/**_ENG.cache.json` | `CacheTraducaoService` |
 
 ### JSON telemetria — estrutura
 
@@ -200,6 +207,7 @@ Execute mentalmente ou via terminal após mudanças:
 | Data | Autor | Resumo |
 |------|-------|--------|
 | 2026-06-27 | Agent | Criação; documenta raspagemRevisao, telemetria operacoes, relatórios, pareamento cache, protocolo IA |
+| 2026-06-28 | Codex | Reforça regras contra masculino automático em falas ambíguas e documenta gêneros de personagens em Gundam 0080 |
 
 ---
 
