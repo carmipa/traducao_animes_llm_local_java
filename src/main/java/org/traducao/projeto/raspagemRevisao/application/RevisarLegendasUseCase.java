@@ -364,6 +364,17 @@ public class RevisarLegendasUseCase {
                 continue;
             }
 
+            String textoNormalizado = evento.texto();
+            String textoCorrigidoKaraoke = consertarKaraokeQuebrado(textoNormalizado);
+            if (!textoNormalizado.equals(textoCorrigidoKaraoke)) {
+                evento = evento.comTexto(textoCorrigidoKaraoke);
+                modificado = true;
+                corrigidasNesteArquivo++;
+                out("  -> Karaoke corrigido na linha " + evento.indice() + ":");
+                out("     De : " + textoNormalizado);
+                out("     Para: " + textoCorrigidoKaraoke);
+            }
+
             String traducaoAtual = evento.texto();
             String originalEn = originaisPorIndice.get(evento.indice());
             if (originalEn == null || originalEn.isBlank()) {
@@ -477,6 +488,14 @@ public class RevisarLegendasUseCase {
         String estilo = evento.estilo() != null ? evento.estilo().toLowerCase() : "";
         String visivel = extrairTextoVisivel(texto);
         return estilo.contains("romaji") && visivel.equalsIgnoreCase("you");
+    }
+
+    private String consertarKaraokeQuebrado(String texto) {
+        if (texto == null) return null;
+        // Se encontrar chaves que contêm texto não iniciando com \
+        // e substituí-las por \N seguido do texto.
+        // O regex \{([^\\}][^}]*)\} captura {conteúdo} onde 'conteúdo' não inicia com \ ou }
+        return texto.replaceAll("\\{([^\\\\}][^}]*)\\}", "\\\\N$1");
     }
 
     private String extrairTextoVisivel(String texto) {
