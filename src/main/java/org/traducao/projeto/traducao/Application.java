@@ -82,6 +82,7 @@ import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
 import org.traducao.projeto.traducao.presentation.web.ApiController;
 import org.traducao.projeto.traducao.presentation.web.BrowserLauncher;
 import org.traducao.projeto.traducao.presentation.web.ConsoleRedirector;
+import org.traducao.projeto.traducao.presentation.web.DialogoArquivoController;
 import org.traducao.projeto.traducao.presentation.web.LogStreamService;
 import org.traducao.projeto.traducaoCorrige.CorretorCacheCLI;
 import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
@@ -149,6 +150,7 @@ import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
     ConsoleRedirector.class,
     BrowserLauncher.class,
     ApiController.class,
+    DialogoArquivoController.class,
     AnimeMetadataController.class,
     SanitizadorTagsService.class,
     CorretorTraducaoLlmService.class,
