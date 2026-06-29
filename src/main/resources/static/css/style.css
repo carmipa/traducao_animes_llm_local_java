@@ -1807,8 +1807,24 @@ body {
 }
 
 /* ==========================================================================
-   RESPONSIVIDADE (MOBILE & TABLET)
+   RESPONSIVIDADE E ADAPTAÇÃO GLOBAL (MOBILE, TABLET E LAPTOPS)
    ========================================================================== */
+
+.cura-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.input-with-button input[type="text"] {
+    min-width: 0;
+}
+
+@media (max-width: 1200px) {
+    .main-content {
+        padding: 24px 32px;
+    }
+}
 
 @media (max-width: 992px) {
     .app-container {
@@ -1821,6 +1837,7 @@ body {
     }
     .main-content {
         width: 100%;
+        padding: 20px;
     }
 }
 
@@ -1839,6 +1856,20 @@ body {
     }
     .meta-synopsis {
         -webkit-line-clamp: 3;
+    }
+    .input-with-button {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .btn-procurar {
+        justify-content: center;
+    }
+    .correcao-actions, .cura-actions {
+        flex-direction: column;
+    }
+    .correcao-actions .btn, .cura-actions .btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 
