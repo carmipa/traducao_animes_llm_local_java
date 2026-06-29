@@ -185,8 +185,13 @@ body {
 }
 
 .sidebar-footer {
-    padding: 24px;
+    height: 60px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
     border-top: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    box-sizing: border-box;
 }
 
 .status-indicator {
@@ -1521,18 +1526,16 @@ body {
    ========================================================================== */
 
 .app-footer {
+    height: 60px;
+    padding: 0 24px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    padding: 24px 48px;
     border-top: 1px solid var(--border-color);
-    background-color: rgba(10, 13, 20, 0.7);
-    backdrop-filter: blur(8px);
+    background-color: var(--bg-secondary);
     width: 100%;
     margin-top: auto;
-    text-align: center;
+    box-sizing: border-box;
 }
 
 .footer-creator-line {

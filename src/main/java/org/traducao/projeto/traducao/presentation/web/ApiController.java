@@ -226,12 +226,12 @@ public class ApiController {
                 RelatorioExtracao rel = extrairLegendaUseCase.executar(pathEntrada, pathSaida, formato);
                 if (rel.getArquivosDetectados() == 0) {
                     System.out.println("\n\u001B[33m========================================================================\u001B[0m");
-                    System.out.println("\u001B[33m  ⚠️ [AVISO] NENHUM ARQUIVO DE VÍDEO (.MKV) FOI ENCONTRADO!\u001B[0m");
+                    System.out.println("\u001B[33m  ⚠️ [AVISO] NENHUM ARQUIVO DE VÍDEO SUPORTADO FOI ENCONTRADO!\u001B[0m");
                     System.out.println("\u001B[33m========================================================================\u001B[0m");
                     System.out.println("\u001B[36m  • Caminho informado : " + pathEntrada + "\u001B[0m");
-                    System.out.println("\u001B[33m  • Verifique se os arquivos de vídeo possuem extensão .mkv e estão no caminho indicado.\u001B[0m");
+                    System.out.println("\u001B[33m  • Formatos suportados: .mkv/.webm (MKVToolNix) e .mp4/.mov/.avi/.ts/.m2ts/.flv/.wmv (ffmpeg).\u001B[0m");
                     System.out.println("\u001B[33m========================================================================\n\u001B[0m");
-                    log.warn("[AVISO] Nenhum arquivo de vídeo (.mkv) foi encontrado no caminho: {}", pathEntrada);
+                    log.warn("[AVISO] Nenhum arquivo de vídeo suportado foi encontrado no caminho: {}", pathEntrada);
                 } else {
                     System.out.println("\n\u001B[32m========================================================================\u001B[0m");
                     System.out.println("\u001B[32m  🎉 [SUCESSO] EXTRAÇÃO DE LEGENDAS FINALIZADA COM SUCESSO!\u001B[0m");
