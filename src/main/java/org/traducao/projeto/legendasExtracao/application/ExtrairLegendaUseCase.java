@@ -8,13 +8,15 @@ import org.traducao.projeto.legendasExtracao.domain.ExtratorException;
 import org.traducao.projeto.legendasExtracao.domain.FaixaLegenda;
 import org.traducao.projeto.legendasExtracao.domain.FormatoLegenda;
 import org.traducao.projeto.legendasExtracao.domain.RelatorioExtracao;
-import org.traducao.projeto.legendasExtracao.infrastructure.adapters.MkvToolNixAdapter;
+import org.traducao.projeto.legendasExtracao.domain.ports.ExtratorVideoPort;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Stream;
 
 @Service
@@ -22,11 +24,11 @@ public class ExtrairLegendaUseCase {
 
     private static final Logger log = LoggerFactory.getLogger(ExtrairLegendaUseCase.class);
 
-    private final MkvToolNixAdapter mkvAdapter;
+    private final List<ExtratorVideoPort> adaptadoresVideo;
     private final List<ExtratorStrategy> strategies;
 
-    public ExtrairLegendaUseCase(MkvToolNixAdapter mkvAdapter, List<ExtratorStrategy> strategies) {
-        this.mkvAdapter = mkvAdapter;
+    public ExtrairLegendaUseCase(List<ExtratorVideoPort> adaptadoresVideo, List<ExtratorStrategy> strategies) {
+        this.adaptadoresVideo = adaptadoresVideo;
         this.strategies = strategies;
     }
 
@@ -40,8 +42,6 @@ public class ExtrairLegendaUseCase {
         if (!Files.exists(pastaVideos)) {
             throw new ExtratorException("Pasta de vídeos ou arquivo não existe: " + pastaVideos);
         }
-
-        mkvAdapter.validarInfraestrutura();
 
         ExtratorStrategy strategy = strategies.stream()
                 .filter(s -> s.suporta(formato))
@@ -59,35 +59,41 @@ public class ExtrairLegendaUseCase {
             throw new ExtratorException("Falha ao criar pasta de saída: " + pastaSaida, e);
         }
 
-        List<Path> mkvs = encontrarVideos(pastaVideos);
+        List<Path> videos = encontrarVideos(pastaVideos);
 
-        for (Path mkv : mkvs) {
+        Set<ExtratorVideoPort> adaptadoresEmUso = new HashSet<>();
+        videos.forEach(v -> resolverAdaptador(v).ifPresent(adaptadoresEmUso::add));
+        adaptadoresEmUso.forEach(ExtratorVideoPort::validarInfraestrutura);
+
+        for (Path video : videos) {
             relatorio.registrarDetectado();
-            log.debug("Processando {}", mkv.getFileName());
+            log.debug("Processando {}", video.getFileName());
+
+            ExtratorVideoPort adaptador = resolverAdaptador(video).orElseThrow();
 
             try {
-                List<FaixaLegenda> faixas = mkvAdapter.identificarFaixas(mkv);
+                List<FaixaLegenda> faixas = adaptador.identificarFaixas(video);
                 Optional<FaixaLegenda> faixaAlvo = strategy.selecionarMelhorFaixa(faixas);
 
                 if (faixaAlvo.isPresent()) {
                     FaixaLegenda f = faixaAlvo.get();
-                    String nomeBase = mkv.getFileName().toString().replaceFirst("[.][^.]+$", "");
+                    String nomeBase = video.getFileName().toString().replaceFirst("[.][^.]+$", "");
                     String arquivoSaida = nomeBase + "_Track" + f.id() + "." + formato.getExtensaoSaida();
                     Path caminhoSaida = pastaSaida.resolve(arquivoSaida);
 
-                    mkvAdapter.extrairTrilha(mkv, f.id(), caminhoSaida);
+                    adaptador.extrairTrilha(video, f.id(), caminhoSaida);
                     relatorio.registrarExtraido();
-                    log.info("Legenda extraída: {} -> {}", mkv.getFileName(), arquivoSaida);
+                    log.info("Legenda extraída: {} -> {}", video.getFileName(), arquivoSaida);
                 } else {
                     relatorio.registrarSemLegenda();
-                    log.warn("Nenhuma faixa {} encontrada no vídeo: {}", formato, mkv.getFileName());
+                    log.warn("Nenhuma faixa {} encontrada no vídeo: {}", formato, video.getFileName());
                 }
             } catch (ExtratorException e) {
                 relatorio.registrarFalha();
-                log.error("Falha ao processar {}: {}", mkv.getFileName(), e.getMessage());
+                log.error("Falha ao processar {}: {}", video.getFileName(), e.getMessage());
             } catch (Exception e) {
                 relatorio.registrarFalha();
-                log.error("Erro inesperado em {}: {}", mkv.getFileName(), e.getMessage(), e);
+                log.error("Erro inesperado em {}: {}", video.getFileName(), e.getMessage(), e);
             }
         }
 
@@ -96,10 +102,7 @@ public class ExtrairLegendaUseCase {
 
     private List<Path> encontrarVideos(Path entrada) {
         if (Files.isRegularFile(entrada)) {
-            if (entrada.toString().toLowerCase().endsWith(".mkv")) {
-                return List.of(entrada);
-            }
-            return List.of();
+            return resolverAdaptador(entrada).isPresent() ? List.of(entrada) : List.of();
         }
 
         if (!Files.isDirectory(entrada)) {
@@ -109,11 +112,15 @@ public class ExtrairLegendaUseCase {
         try (Stream<Path> walk = Files.walk(entrada)) {
             return walk
                 .filter(Files::isRegularFile)
-                .filter(p -> p.toString().toLowerCase().endsWith(".mkv"))
+                .filter(p -> resolverAdaptador(p).isPresent())
                 .sorted()
                 .toList();
         } catch (IOException e) {
             throw new ExtratorException("Falha ao ler o diretório " + entrada, e);
         }
+    }
+
+    private Optional<ExtratorVideoPort> resolverAdaptador(Path video) {
+        return adaptadoresVideo.stream().filter(a -> a.suporta(video)).findFirst();
     }
 }

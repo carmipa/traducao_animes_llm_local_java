@@ -369,6 +369,37 @@ body {
     font-size: 0.8rem;
 }
 
+.input-with-button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.input-with-button input[type="text"] {
+    flex: 1;
+}
+
+.btn-procurar {
+    background-color: var(--bg-tertiary, #2a2d3d);
+    border: 1px solid var(--border-color, #3a3f58);
+    color: var(--text-primary, #ffffff);
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: var(--transition-fast, all 0.2s);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-procurar:hover {
+    background-color: var(--accent-primary, #6366f1);
+    color: #ffffff;
+    border-color: var(--accent-primary, #6366f1);
+}
+
 /* ==========================================================================
    BOTÕES E COMPONENTES DE AÇÃO
    ========================================================================== */

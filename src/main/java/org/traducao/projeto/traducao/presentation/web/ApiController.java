@@ -216,8 +216,12 @@ public class ApiController {
         executor.submit(() -> {
             logStreamService.definirCanalAtual("extracao");
             try {
-                Path pathEntrada = Path.of(req.entrada());
-                Path pathSaida = (req.saida() != null && !req.saida().isBlank()) ? Path.of(req.saida()) : null;
+                Path pathEntrada = normalizarCaminho(req.entrada());
+                if (pathEntrada == null) {
+                    log.error("Caminho de entrada inválido informado para extração: {}", req.entrada());
+                    return;
+                }
+                Path pathSaida = normalizarCaminho(req.saida());
                 FormatoLegenda formato = FormatoLegenda.fromString(req.formato() != null ? req.formato() : "ASS");
                 RelatorioExtracao rel = extrairLegendaUseCase.executar(pathEntrada, pathSaida, formato);
                 if (rel.getArquivosDetectados() == 0) {
@@ -635,14 +639,25 @@ public class ApiController {
     }
 
     private Optional<Path> parseCaminhoSeguro(String valor, String rotulo) {
+        Path p = normalizarCaminho(valor);
+        return Optional.ofNullable(p);
+    }
+
+    private Path normalizarCaminho(String valor) {
         if (valor == null || valor.isBlank()) {
-            return Optional.empty();
+            return null;
         }
         try {
-            return Optional.of(Path.of(valor.trim()));
+            String limpo = valor.trim();
+            if ((limpo.startsWith("\"") && limpo.endsWith("\"")) || (limpo.startsWith("'") && limpo.endsWith("'"))) {
+                if (limpo.length() >= 2) {
+                    limpo = limpo.substring(1, limpo.length() - 1).trim();
+                }
+            }
+            return limpo.isBlank() ? null : Path.of(limpo);
         } catch (InvalidPathException e) {
-            log.warn("Caminho inválido informado para {}: {}", rotulo, valor);
-            return Optional.empty();
+            log.warn("Caminho inválido informado: {}", valor);
+            return null;
         }
     }
 

@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.traducao.projeto.legendasExtracao.domain.ExtratorException;
 import org.traducao.projeto.legendasExtracao.domain.FaixaLegenda;
+import org.traducao.projeto.legendasExtracao.domain.ports.ExtratorVideoPort;
 import org.traducao.projeto.legendasExtracao.infrastructure.config.ExtratorProperties;
 
 import java.io.IOException;
@@ -14,11 +15,13 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Component
-public class MkvToolNixAdapter {
+public class MkvToolNixAdapter implements ExtratorVideoPort {
     private static final Logger log = LoggerFactory.getLogger(MkvToolNixAdapter.class);
-    
+    private static final Set<String> EXTENSOES_SUPORTADAS = Set.of(".mkv", ".webm");
+
     private final String mkvmergePath;
     private final String mkvextractPath;
     private final ObjectMapper objectMapper;
@@ -50,6 +53,13 @@ public class MkvToolNixAdapter {
         return nomeExecutavel.replace(".exe", "");
     }
 
+    @Override
+    public boolean suporta(Path arquivoVideo) {
+        String nome = arquivoVideo.toString().toLowerCase();
+        return EXTENSOES_SUPORTADAS.stream().anyMatch(nome::endsWith);
+    }
+
+    @Override
     public void validarInfraestrutura() {
         try {
             Process p1 = new ProcessBuilder(mkvmergePath, "--version").start();
@@ -63,6 +73,7 @@ public class MkvToolNixAdapter {
         }
     }
 
+    @Override
     public List<FaixaLegenda> identificarFaixas(Path mkvPath) {
         List<FaixaLegenda> faixas = new ArrayList<>();
         List<String> cmd = List.of(
@@ -111,6 +122,7 @@ public class MkvToolNixAdapter {
         return faixas;
     }
 
+    @Override
     public void extrairTrilha(Path mkvPath, int trackId, Path caminhoSaida) {
         List<String> cmd = List.of(
             mkvextractPath,

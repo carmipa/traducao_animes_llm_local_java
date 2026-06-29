@@ -620,10 +620,45 @@ function inicializarControlesConsole() {
     });
 }
 
+function inicializarBotoesProcurarCaminho() {
+    document.body.addEventListener('click', async (e) => {
+        const btn = e.target.closest('.btn-procurar');
+        if (!btn) return;
+
+        const targetId = btn.getAttribute('data-target');
+        const tipo = btn.getAttribute('data-type') || 'pasta';
+        const inputTarget = document.getElementById(targetId);
+        if (!inputTarget) return;
+
+        const textoOriginal = btn.innerHTML;
+        btn.innerHTML = '⏳ Abrindo...';
+        btn.disabled = true;
+
+        try {
+            const endpoint = tipo === 'arquivo' ? '/api/dialogo/selecionar-arquivo' : '/api/dialogo/selecionar-pasta';
+            const res = await fetch(endpoint);
+            if (res.ok) {
+                const data = await res.json();
+                if (data.caminho) {
+                    inputTarget.value = data.caminho;
+                    inputTarget.dispatchEvent(new Event('input', { bubbles: true }));
+                    inputTarget.dispatchEvent(new Event('change', { bubbles: true }));
+                }
+            }
+        } catch (err) {
+            console.error('Erro ao abrir seletor nativo:', err);
+        } finally {
+            btn.innerHTML = textoOriginal;
+            btn.disabled = false;
+        }
+    });
+}
+
 // Inicializa no carregamento do DOM
 document.addEventListener('DOMContentLoaded', () => {
     inicializarMetadadosDinamicos();
     inicializarBotoesLimpezaFormularios();
     inicializarControlesConsole();
+    inicializarBotoesProcurarCaminho();
 });
 

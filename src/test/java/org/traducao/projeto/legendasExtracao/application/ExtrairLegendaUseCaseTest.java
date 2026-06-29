@@ -9,6 +9,7 @@ import org.traducao.projeto.legendasExtracao.domain.ExtratorException;
 import org.traducao.projeto.legendasExtracao.domain.FaixaLegenda;
 import org.traducao.projeto.legendasExtracao.domain.FormatoLegenda;
 import org.traducao.projeto.legendasExtracao.domain.RelatorioExtracao;
+import org.traducao.projeto.legendasExtracao.domain.ports.ExtratorVideoPort;
 import org.traducao.projeto.legendasExtracao.infrastructure.adapters.MkvToolNixAdapter;
 
 import java.io.IOException;
@@ -31,7 +32,11 @@ class ExtrairLegendaUseCaseTest {
 
     private final MkvToolNixAdapter mkvAdapter = mock(MkvToolNixAdapter.class);
     private final List<ExtratorStrategy> strategies = List.of(new ExtratorAssStrategy());
-    private final ExtrairLegendaUseCase useCase = new ExtrairLegendaUseCase(mkvAdapter, strategies);
+    private final ExtrairLegendaUseCase useCase = new ExtrairLegendaUseCase(List.of(mkvAdapter), strategies);
+
+    {
+        when(mkvAdapter.suporta(any())).thenReturn(true);
+    }
 
     @Test
     void lancaQuandoPastaDeVideosNaoExiste(@TempDir Path tempDir) {
@@ -43,7 +48,7 @@ class ExtrairLegendaUseCaseTest {
 
     @Test
     void lancaQuandoNenhumaEstrategiaSuportaOFormato(@TempDir Path tempDir) {
-        ExtrairLegendaUseCase useCaseSemPgs = new ExtrairLegendaUseCase(mkvAdapter, List.of(new ExtratorAssStrategy()));
+        ExtrairLegendaUseCase useCaseSemPgs = new ExtrairLegendaUseCase(List.of(mkvAdapter), List.of(new ExtratorAssStrategy()));
 
         assertThatThrownBy(() -> useCaseSemPgs.executar(tempDir, FormatoLegenda.PGS))
             .isInstanceOf(ExtratorException.class)
@@ -93,5 +98,40 @@ class ExtrairLegendaUseCaseTest {
         assertThat(relatorio.getFalhasInesperadas()).isEqualTo(1);
         assertThat(relatorio.getLegendasExtraidas()).isEqualTo(1);
         verify(mkvAdapter, times(2)).extrairTrilha(any(), anyInt(), any());
+    }
+
+    @Test
+    void roteiaArquivoParaOAdaptadorQueDeclaraSuporte(@TempDir Path tempDir) throws IOException {
+        ExtratorVideoPort ffmpegAdapter = mock(ExtratorVideoPort.class);
+        when(mkvAdapter.suporta(any())).thenReturn(false);
+        when(ffmpegAdapter.suporta(any())).thenReturn(true);
+        when(ffmpegAdapter.identificarFaixas(any())).thenReturn(List.of(
+            new FaixaLegenda(3, "subtitles", "ass", "ass", "eng", "Dialogue", false, false)
+        ));
+        ExtrairLegendaUseCase useCaseComFfmpeg = new ExtrairLegendaUseCase(List.of(mkvAdapter, ffmpegAdapter), strategies);
+
+        Files.writeString(tempDir.resolve("filme.mp4"), "fake");
+
+        RelatorioExtracao relatorio = useCaseComFfmpeg.executar(tempDir, FormatoLegenda.ASS);
+
+        assertThat(relatorio.getLegendasExtraidas()).isEqualTo(1);
+        verify(ffmpegAdapter).extrairTrilha(eq(tempDir.resolve("filme.mp4")), eq(3), any());
+        verify(mkvAdapter, times(0)).identificarFaixas(any());
+    }
+
+    @Test
+    void encontraVideosEmSubpastas(@TempDir Path tempDir) throws IOException {
+        Path subpasta = tempDir.resolve("temporada_01");
+        Files.createDirectories(subpasta);
+        Files.writeString(subpasta.resolve("ep01.mkv"), "fake");
+        when(mkvAdapter.identificarFaixas(any())).thenReturn(List.of(
+            new FaixaLegenda(1, "subtitles", "SubStation Alpha", "S_TEXT/ASS", "eng", "Dialogue", false, false)
+        ));
+
+        RelatorioExtracao relatorio = useCase.executar(tempDir, FormatoLegenda.ASS);
+
+        assertThat(relatorio.getArquivosDetectados()).isEqualTo(1);
+        assertThat(relatorio.getLegendasExtraidas()).isEqualTo(1);
+        verify(mkvAdapter).extrairTrilha(eq(subpasta.resolve("ep01.mkv")), eq(1), any());
     }
 }

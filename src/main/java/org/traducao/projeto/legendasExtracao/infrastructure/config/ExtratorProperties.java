@@ -5,7 +5,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "extrator")
 public record ExtratorProperties(
     String mkvmergePath,
-    String mkvextractPath
+    String mkvextractPath,
+    String ffmpegPath,
+    String ffprobePath
 ) {
     public String resolverMkvmergePath() {
         if (mkvmergePath == null || mkvmergePath.isBlank()) {
@@ -19,5 +21,19 @@ public record ExtratorProperties(
             return "mkvextract";
         }
         return mkvextractPath;
+    }
+
+    public String resolverFfmpegPath() {
+        if (ffmpegPath == null || ffmpegPath.isBlank()) {
+            return "ffmpeg";
+        }
+        return ffmpegPath;
+    }
+
+    public String resolverFfprobePath() {
+        if (ffprobePath == null || ffprobePath.isBlank()) {
+            return "ffprobe";
+        }
+        return ffprobePath;
     }
 }

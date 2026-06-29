@@ -283,11 +283,17 @@
                         <form id="form-analise" class="standard-form">
                             <div class="form-group">
                                 <label for="analise-entrada">Caminho da pasta ou arquivo de vídeo: <span class="help-icon" data-tooltip="Caminho absoluto da pasta contendo os vídeos a serem auditados por codecs, faixas e sincronia.">?</span></label>
-                                <input type="text" id="analise-entrada" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04" required>
+                                <div class="input-with-button">
+                                    <input type="text" id="analise-entrada" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04" required>
+                                    <button type="button" class="btn-procurar" data-target="analise-entrada" data-type="pasta">📂 Procurar...</button>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="analise-saida">Pasta de saída dos relatórios (Opcional): <span class="help-icon" data-tooltip="Diretório onde serão gravados os relatórios da análise. Deixe em branco para salvar por padrão na subpasta 'relatorios' dentro da pasta da mídia.">?</span></label>
-                                <input type="text" id="analise-saida" placeholder="Deixe vazio p/ salvar em 'relatorios' na pasta da mídia">
+                                <div class="input-with-button">
+                                    <input type="text" id="analise-saida" placeholder="Deixe vazio p/ salvar em 'relatorios' na pasta da mídia">
+                                    <button type="button" class="btn-procurar" data-target="analise-saida" data-type="pasta">📂 Procurar...</button>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="analise-contexto">Obra / Contexto (Opcional): <span class="help-icon" data-tooltip="Selecione a obra para exibir dados e capa do anime.">?</span></label>
@@ -331,11 +337,17 @@
                         <form id="form-extracao" class="standard-form">
                             <div class="form-group">
                                 <label for="extracao-entrada">Pasta com arquivos MKV: <span class="help-icon" data-tooltip="Diretório onde se encontram os vídeos originais dos quais serão extraídas as faixas de legenda.">?</span></label>
-                                <input type="text" id="extracao-entrada" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04" required>
+                                <div class="input-with-button">
+                                    <input type="text" id="extracao-entrada" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04" required>
+                                    <button type="button" class="btn-procurar" data-target="extracao-entrada" data-type="pasta">📂 Procurar...</button>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="extracao-saida">Pasta de saída das legendas extraídas (Opcional): <span class="help-icon" data-tooltip="Diretório onde as legendas extraídas serão salvas. Deixe em branco para salvar por padrão na subpasta 'legendas_extraidas_[formato]' dentro da pasta da mídia.">?</span></label>
-                                <input type="text" id="extracao-saida" placeholder="Deixe vazio p/ salvar em 'legendas_extraidas_[formato]' na pasta da mídia">
+                                <div class="input-with-button">
+                                    <input type="text" id="extracao-saida" placeholder="Deixe vazio p/ salvar em 'legendas_extraidas_[formato]' na pasta da mídia">
+                                    <button type="button" class="btn-procurar" data-target="extracao-saida" data-type="pasta">📂 Procurar...</button>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="extracao-formato">Formato desejado: <span class="help-icon" data-tooltip="O formato de destino da extração. Prefira ASS para animes para preservar estilos, fontes e posições dos textos.">?</span></label>
@@ -383,11 +395,17 @@
                         <form id="form-traducao" class="standard-form">
                             <div class="form-group">
                                 <label for="traducao-entrada">Pasta com as legendas ORIGINAIS (.ass / .ssa): <span class="help-icon" data-tooltip="Pasta contendo os arquivos de legenda originais (geralmente em inglês) que serão traduzidos pela LLM.">?</span></label>
-                                <input type="text" id="traducao-entrada" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04\legendas_eng" required>
+                                <div class="input-with-button">
+                                    <input type="text" id="traducao-entrada" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04\legendas_eng" required>
+                                    <button type="button" class="btn-procurar" data-target="traducao-entrada" data-type="pasta">📂 Procurar...</button>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="traducao-saida">Pasta de SAÍDA para as legendas em Português: <span class="help-icon" data-tooltip="Pasta de destino onde as legendas traduzidas serão salvas. Por padrão, cria a subpasta 'traducao_ptbr' dentro da pasta indicada.">?</span></label>
-                                <input type="text" id="traducao-saida" placeholder="Deixe vazio p/ salvar em 'traducao_ptbr' na pasta da mídia">
+                                <div class="input-with-button">
+                                    <input type="text" id="traducao-saida" placeholder="Deixe vazio p/ salvar em 'traducao_ptbr' na pasta da mídia">
+                                    <button type="button" class="btn-procurar" data-target="traducao-saida" data-type="pasta">📂 Procurar...</button>
+                                </div>
 
                                 <label for="traducao-contexto">Contexto de Tradução (Lore): <span class="help-icon" data-tooltip="Define qual pacote de regras de lore será usado pela LLM.">?</span></label>
                                 <select id="traducao-contexto">
@@ -432,7 +450,10 @@
                         <form id="form-correcao" class="standard-form">
                             <div class="form-group">
                                 <label for="correcao-entrada">Pasta do cache de traduções (.cache.json): <span class="help-icon" data-tooltip="Caminho do diretório de cache. Deixe vazio para usar a pasta padrão 'cache'.">?</span></label>
-                                <input type="text" id="correcao-entrada" placeholder="Deixe em branco para usar a pasta de cache padrão 'cache'">
+                                <div class="input-with-button">
+                                    <input type="text" id="correcao-entrada" placeholder="Deixe em branco para usar a pasta de cache padrão 'cache'">
+                                    <button type="button" class="btn-procurar" data-target="correcao-entrada" data-type="pasta">📂 Procurar...</button>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="correcao-contexto">Obra / Contexto (Opcional): <span class="help-icon" data-tooltip="Selecione a obra para exibir dados e capa durante a correção do cache.">?</span></label>
@@ -491,11 +512,17 @@
                         <form id="form-revisao" class="standard-form">
                             <div class="form-group">
                                 <label for="revisao-entrada">Pasta com legendas TRADUZIDAS (.ass / .ssa): <span class="help-icon" data-tooltip="Arquivos *_PT-BR.ass ou *_PTBR_TrackN.ass gerados pela tradução.">?</span></label>
-                                <input type="text" id="revisao-entrada" name="entrada" autocomplete="off" spellcheck="false" placeholder="Ex: E:\animes\DANMACHI\temporada_5\legendas_extraidas_ass" required>
+                                <div class="input-with-button">
+                                    <input type="text" id="revisao-entrada" name="entrada" autocomplete="off" spellcheck="false" placeholder="Ex: E:\animes\DANMACHI\temporada_5\legendas_extraidas_ass" required>
+                                    <button type="button" class="btn-procurar" data-target="revisao-entrada" data-type="pasta">📂 Procurar...</button>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="revisao-entrada-en">Pasta com legendas ORIGINAIS em inglês (opcional): <span class="help-icon" data-tooltip="Se os .ass em inglês estiverem em outra pasta. Vazio = procura na mesma pasta do PT (_Track2.ass, etc.).">?</span></label>
-                                <input type="text" id="revisao-entrada-en" name="saida" autocomplete="off" spellcheck="false" placeholder="Opcional — mesma pasta do PT se vazio">
+                                <div class="input-with-button">
+                                    <input type="text" id="revisao-entrada-en" name="saida" autocomplete="off" spellcheck="false" placeholder="Opcional — mesma pasta do PT se vazio">
+                                    <button type="button" class="btn-procurar" data-target="revisao-entrada-en" data-type="pasta">📂 Procurar...</button>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="revisao-contexto">Contexto de Lore (concordância LLM): <span class="help-icon" data-tooltip="Define gênero de personagens e regras de tratamento para a revisão de pronomes, artigos e adjetivos.">?</span></label>
@@ -545,11 +572,17 @@
                         <form id="form-cura" class="standard-form">
                             <div class="form-group">
                                 <label for="cura-entrada-original">Pasta com legendas ORIGINAIS (.ass, em inglês): <span class="help-icon" data-tooltip="Pasta com as legendas originais (extraídas do vídeo), usadas como referência de formatação. Pode estar em qualquer caminho, inclusive em outro disco.">?</span></label>
-                                <input type="text" id="cura-entrada-original" name="entradaOriginal" autocomplete="off" spellcheck="false" placeholder="Ex: E:\animes\DANMACHI\temporada_4\legendas_extraidas_ass" required>
+                                <div class="input-with-button">
+                                    <input type="text" id="cura-entrada-original" name="entradaOriginal" autocomplete="off" spellcheck="false" placeholder="Ex: E:\animes\DANMACHI\temporada_4\legendas_extraidas_ass" required>
+                                    <button type="button" class="btn-procurar" data-target="cura-entrada-original" data-type="pasta">📂 Procurar...</button>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="cura-entrada-traduzida">Pasta com legendas TRADUZIDAS (PT-BR): <span class="help-icon" data-tooltip="Pasta com as legendas em português a serem curadas/corrigidas. Pode estar em qualquer caminho, inclusive em outro disco — não precisa estar dentro da pasta original.">?</span></label>
-                                <input type="text" id="cura-entrada-traduzida" name="entradaTraduzida" autocomplete="off" spellcheck="false" placeholder="Ex: E:\animes\DANMACHI\temporada_4\legendas_extraidas_ass\traducao_ptbr" required>
+                                <div class="input-with-button">
+                                    <input type="text" id="cura-entrada-traduzida" name="entradaTraduzida" autocomplete="off" spellcheck="false" placeholder="Ex: E:\animes\DANMACHI\temporada_4\legendas_extraidas_ass\traducao_ptbr" required>
+                                    <button type="button" class="btn-procurar" data-target="cura-entrada-traduzida" data-type="pasta">📂 Procurar...</button>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="cura-contexto">Obra / Contexto (Opcional): <span class="help-icon" data-tooltip="Exibe a capa/dados da obra E ativa a correção de erros de tradução via LLM local usando o contexto/lore dessa obra. Deixe em branco para uma cura só estrutural (sem LLM, mais rápida).">?</span></label>
@@ -595,11 +628,17 @@
                         <form id="form-remuxer" class="standard-form">
                             <div class="form-group">
                                 <label for="remuxer-videos">Pasta com os arquivos de VÍDEO ORIGINAIS (.mkv): <span class="help-icon" data-tooltip="Caminho da pasta que contém os episódios de vídeo em formato MKV (sem legenda em português).">?</span></label>
-                                <input type="text" id="remuxer-videos" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04" required>
+                                <div class="input-with-button">
+                                    <input type="text" id="remuxer-videos" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04" required>
+                                    <button type="button" class="btn-procurar" data-target="remuxer-videos" data-type="pasta">📂 Procurar...</button>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="remuxer-legendas">Pasta com as legendas traduzidas (.ass): <span class="help-icon" data-tooltip="Diretório onde estão as novas legendas ASS traduzidas. Pressione Enter para buscar automaticamente na pasta padrão do projeto.">?</span></label>
-                                <input type="text" id="remuxer-legendas" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04\legendas_ptbr (Enter = automático)">
+                                <div class="input-with-button">
+                                    <input type="text" id="remuxer-legendas" placeholder="Ex: C:\animes\[Sokudo] DanMachi\Season 04\legendas_ptbr (Enter = automático)">
+                                    <button type="button" class="btn-procurar" data-target="remuxer-legendas" data-type="pasta">📂 Procurar...</button>
+                                </div>
                             </div>
                             <div class="correcao-actions">
                                 <button type="submit" class="btn btn-primary btn-cyan" data-tooltip="Mescla os arquivos de vídeo e legendas traduzidas em novos arquivos usando mkvmerge">
@@ -729,30 +768,9 @@
             <footer class="app-footer">
                 <div class="footer-creator-line">
                     <span class="sparkle-effect">✦</span> Desenvolvido por <strong class="creator-name">Paulo André Carminati</strong>
-                </div>
-                <div class="footer-shields">
-                    <a href="https://github.com/carmipa/traducao_animes_llm_local_java" target="_blank">
+                    <a href="https://github.com/carmipa/traducao_animes_llm_local_java" target="_blank" style="display: inline-flex; align-items: center; margin-left: 4px;">
                         <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Repo">
                     </a>
-                    <a href="https://antigravity.google/product/antigravity-ide" target="_blank">
-                        <img src="https://img.shields.io/badge/Antigravity-IDE-34A853?style=flat-square&logo=google&logoColor=white" alt="Antigravity IDE" data-tooltip="Construído com Antigravity IDE">
-                    </a>
-                    <a href="https://gemini.google.com" target="_blank">
-                        <img src="https://img.shields.io/badge/Gemini-Google_AI-8E75C2?style=flat-square&logo=googlegemini&logoColor=white" alt="Google Gemini" data-tooltip="Desenvolvido com auxílio do Gemini">
-                    </a>
-                    <a href="https://www.cursor.com" target="_blank">
-                        <img src="https://img.shields.io/badge/Cursor-IDE-000000?style=flat-square&logo=cursor&logoColor=white" alt="Cursor IDE" data-tooltip="Programado no Cursor IDE">
-                    </a>
-                    <a href="https://claude.ai" target="_blank">
-                        <img src="https://img.shields.io/badge/Claude-Anthropic-D97706?style=flat-square&logo=claude&logoColor=white" alt="Anthropic Claude" data-tooltip="Otimizado por Claude">
-                    </a>
-                    <a href="https://openai.com" target="_blank">
-                        <img src="https://img.shields.io/badge/GPT-OpenAI-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI GPT" data-tooltip="Refinado com GPT">
-                    </a>
-                </div>
-                <div class="footer-meta">
-                    <span class="meta-badge">v2.5.0</span>
-                    <span class="meta-badge">MIT License</span>
                 </div>
             </footer>
         </main>
