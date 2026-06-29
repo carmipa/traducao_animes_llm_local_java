@@ -39,7 +39,7 @@ public class ExtratorCLI implements CommandLineRunner {
     @Override
     public void run(String... args) {
         FormatoLegenda formato = FormatoLegenda.fromString(formatoConfigurado);
-        logger.cabecalho("ESTEIRA DE EXTRAÇÃO INTELIGENTE DE SOFTBUBS: MKV ➔ " + formato.name());
+        logger.cabecalho("ESTEIRA DE EXTRAÇÃO INTELIGENTE DE SOFTSUBS: VÍDEO ➔ " + formato.name());
 
         if (propriedades.diretorioEntrada() == null || propriedades.diretorioEntrada().isBlank()) {
             logger.erro("Pasta de vídeos não configurada.");
@@ -59,7 +59,7 @@ public class ExtratorCLI implements CommandLineRunner {
         RelatorioExtracao relatorio = extrairLegendaUseCase.executar(pastaVideos, formato);
 
         logger.cabecalho("RELATÓRIO DE EXTRAÇÃO");
-        System.out.printf("  Total de arquivos MKV detectados  : %d%n", relatorio.getArquivosDetectados());
+        System.out.printf("  Total de arquivos de vídeo detectados : %d%n", relatorio.getArquivosDetectados());
         System.out.printf("  Arquivos sem legendas %-3s         : %s%n", formato.name(),
             AnsiCores.colorir(String.valueOf(relatorio.getArquivosSemLegenda()), AnsiCores.YELLOW));
         System.out.printf("  Legendas extraídas com sucesso    : %s%n",

@@ -65,6 +65,14 @@ remuxer:
   # Caminho para o executavel do mkvmerge (se vazio, tenta achar no PATH ou pasta padrao do Windows)
   mkvmerge-path: ""
 
+extrator:
+  # Caminhos para mkvmerge/mkvextract (MKV/WebM) e ffmpeg/ffprobe (MP4/MOV/AVI/TS/M2TS/FLV/WMV).
+  # Se vazios, tenta achar no PATH ou pasta padrao do Windows (so para MKVToolNix).
+  mkvmerge-path: ""
+  mkvextract-path: ""
+  ffmpeg-path: ""
+  ffprobe-path: ""
+
 tmdb:
   # Chave de API do TMDB para busca de capas e metadados nativos em PT-BR
   api-key: "${TMDB_API_KEY:}"

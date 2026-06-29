@@ -26,7 +26,7 @@ const CONFIG_SECOES = {
     },
     extracao: {
         titulo: "2. Extração de Legendas",
-        subtitulo: "Extração industrial de faixas de legendas embutidas em MKVs"
+        subtitulo: "Extração industrial de faixas de legendas embutidas em vídeos (MKV, MP4 e outros)"
     },
     traducao: {
         titulo: "3. Tradução Local via LLM",
