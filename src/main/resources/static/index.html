@@ -220,10 +220,22 @@
                                 <span class="card-action-link">Acessar Painel →</span>
                             </div>
 
-                            <!-- Card 7 -->
-                            <div class="pipeline-card card-remuxer" onclick="document.getElementById('btn-menu-remuxer').click()" data-tooltip="Clique para acoplar legendas traduzidas nos vídeos">
+                            <!-- Card 7 - Cura de Legendas -->
+                            <div class="pipeline-card card-cura" onclick="document.getElementById('btn-menu-cura').click()" data-tooltip="Clique para corrigir formatações de ASS">
                                 <div class="card-glow-bg"></div>
                                 <div class="card-step-num">07</div>
+                                <div class="card-icon-container">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                </div>
+                                <h4>Cura de Legendas</h4>
+                                <p>Saneamento estrutural de formatações complexas e reinjeção de tags.</p>
+                                <span class="card-action-link">Acessar Painel →</span>
+                            </div>
+
+                            <!-- Card 8 -->
+                            <div class="pipeline-card card-remuxer" onclick="document.getElementById('btn-menu-remuxer').click()" data-tooltip="Clique para acoplar legendas traduzidas nos vídeos">
+                                <div class="card-glow-bg"></div>
+                                <div class="card-step-num">08</div>
                                 <div class="card-icon-container">
                                     <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
                                 </div>
@@ -232,15 +244,27 @@
                                 <span class="card-action-link">Acessar Painel →</span>
                             </div>
 
-                            <!-- Card 8 -->
+                            <!-- Card 9 -->
                             <div class="pipeline-card card-mapa" onclick="document.getElementById('btn-menu-mapa').click()" data-tooltip="Clique para analisar o código Java">
                                 <div class="card-glow-bg"></div>
-                                <div class="card-step-num">08</div>
+                                <div class="card-step-num">09</div>
                                 <div class="card-icon-container">
                                     <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                                 </div>
                                 <h4>Mapa do Projeto</h4>
                                 <p>Visualize a árvore estrutural e taxonomia de classes Java do projeto.</p>
+                                <span class="card-action-link">Acessar Painel →</span>
+                            </div>
+
+                            <!-- Card 10 -->
+                            <div class="pipeline-card card-telemetria" onclick="document.getElementById('btn-menu-telemetria').click()" data-tooltip="Clique para acessar a telemetria">
+                                <div class="card-glow-bg"></div>
+                                <div class="card-step-num">10</div>
+                                <div class="card-icon-container">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                                </div>
+                                <h4>Telemetria</h4>
+                                <p>Monitore hits de cache, tokens e logs em tempo real do sistema.</p>
                                 <span class="card-action-link">Acessar Painel →</span>
                             </div>
 
@@ -513,9 +537,9 @@
                 <!-- 7. PAINEL DE CURA DE LEGENDAS -->
                 <div class="panel" id="panel-cura">
                     <div class="glass-card">
-                        <h2>Cura Estrutural de Tags ASS</h2>
-                        <p class="card-desc">Saneamento estrutural de formatações complexas que o LLM pode ter quebrado, projetando as formatações originais da legenda base no texto traduzido.</p>
-                        
+                        <h2>Cura de Legendas</h2>
+                        <p class="card-desc">Conserta tags ASS quebradas pelo LLM projetando a formatação original na tradução. Se uma obra for selecionada abaixo, também usa o LLM local (com o contexto/lore daquela obra) para retraduzir falas com resíduo em inglês ou alucinadas.</p>
+
                         <div class="anime-meta-banner hidden" id="meta-banner-cura"></div>
 
                         <form id="form-cura" class="standard-form">
@@ -524,14 +548,14 @@
                                 <input type="text" id="cura-entrada" name="entrada" autocomplete="off" spellcheck="false" placeholder="Ex: E:\animes\DANMACHI\temporada_4\legendas_extraidas_ass" required>
                             </div>
                             <div class="form-group">
-                                <label for="cura-contexto">Obra / Contexto (Opcional): <span class="help-icon" data-tooltip="Selecione a obra para exibir dados e capa do anime.">?</span></label>
+                                <label for="cura-contexto">Obra / Contexto (Opcional): <span class="help-icon" data-tooltip="Exibe a capa/dados da obra E ativa a correção de erros de tradução via LLM local usando o contexto/lore dessa obra. Deixe em branco para uma cura só estrutural (sem LLM, mais rápida).">?</span></label>
                                 <select id="cura-contexto">
                                     <option value="" disabled selected>Carregando contextos...</option>
                                 </select>
                             </div>
 
                             <div class="cura-actions" style="display: flex; gap: 15px; margin-top: 20px;">
-                                <button type="button" class="btn btn-primary btn-green" id="btn-iniciar-cura" data-tooltip="Inicia a varredura corretiva e reinjeção de tags em todos os episódios do anime selecionado.">
+                                <button type="button" class="btn btn-primary btn-green" id="btn-iniciar-cura" data-tooltip="Conserta as tags ASS de todos os episódios. Com uma obra selecionada, também corrige erros de tradução via LLM.">
                                     <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
                                     <span>Iniciar Cura de Tags</span>
                                 </button>

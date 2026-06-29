@@ -16,6 +16,10 @@ import org.traducao.projeto.apiDadosAnime.infrastructure.adapters.JikanApiClient
 import org.traducao.projeto.apiDadosAnime.infrastructure.adapters.TmdbApiClientAdapter;
 import org.traducao.projeto.apiDadosAnime.presentation.web.AnimeMetadataController;
 import org.traducao.projeto.analisadorMidia.application.AnalisarMidiaUseCase;
+import org.traducao.projeto.curatags.CorretorTraducaoLlmService;
+import org.traducao.projeto.curatags.CuraTagsController;
+import org.traducao.projeto.curatags.CuraTagsUseCase;
+import org.traducao.projeto.curatags.SanitizadorTagsService;
 import org.traducao.projeto.analisadorMidia.infrastructure.adapters.FfprobeAdapter;
 import org.traducao.projeto.analisadorMidia.presentation.AnalisadorMidiaCLI;
 import org.traducao.projeto.analisadorMidia.presentation.ui.ConsoleAnalisadorLogger;
@@ -146,6 +150,10 @@ import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
     BrowserLauncher.class,
     ApiController.class,
     AnimeMetadataController.class,
+    SanitizadorTagsService.class,
+    CorretorTraducaoLlmService.class,
+    CuraTagsUseCase.class,
+    CuraTagsController.class,
     ObterMetadataAnimeUseCase.class,
     TmdbApiClientAdapter.class,
     JikanApiClientAdapter.class,

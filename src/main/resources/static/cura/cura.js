@@ -3,6 +3,7 @@ import { logNoConsole, mostrarAlerta } from '../js/app.js';
 export function initCura() {
     const btnIniciarCura = document.getElementById('btn-iniciar-cura');
     const inputEntrada = document.getElementById('cura-entrada');
+    const selectContexto = document.getElementById('cura-contexto');
 
     if (!btnIniciarCura || !inputEntrada) return;
 
@@ -13,14 +14,22 @@ export function initCura() {
             return;
         }
 
+        const contextoId = selectContexto ? selectContexto.value : '';
+
         logNoConsole('console-cura', `Iniciando cura estrutural de tags para: ${diretorio}`, 'info');
+        if (contextoId) {
+            logNoConsole('console-cura', `Contexto LLM ativo: ${contextoId} (também corrige erros de tradução)`, 'info');
+        }
         btnIniciarCura.disabled = true;
 
         try {
+            const body = { diretorio };
+            if (contextoId) body.contextoId = contextoId;
+
             const res = await fetch('/api/cura-tags', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ diretorio })
+                body: JSON.stringify(body)
             });
 
             if (!res.ok) {

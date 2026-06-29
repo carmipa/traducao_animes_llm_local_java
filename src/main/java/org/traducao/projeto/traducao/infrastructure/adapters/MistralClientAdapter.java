@@ -31,6 +31,7 @@ public class MistralClientAdapter implements MistralPort {
     private static final int MAX_TENTATIVAS_REVISAO = 2;
     private static final long PAUSA_ENTRE_TENTATIVAS_MS = 2_000;
     private static final double TEMPERATURA_REVISAO = 0.15;
+    private static final double TEMPERATURA_CORRECAO_TRADUCAO = 0.3;
 
     private final RestClient restClient;
     private final LlmProperties propriedades;
@@ -227,6 +228,77 @@ public class MistralClientAdapter implements MistralPort {
             }
         }
         return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> corrigirTraducao(
+        String originalInglesMascarado,
+        String traducaoPtMascarada,
+        String motivoDetectado
+    ) {
+        String promptUsuario = montarPromptCorrecaoTraducao(originalInglesMascarado, traducaoPtMascarada, motivoDetectado);
+
+        ChatRequest request = new ChatRequest(
+            propriedades.model(),
+            List.of(
+                new Mensagem("system", gerenciadorContexto.obterPromptAtivo()),
+                new Mensagem("user", promptUsuario)
+            ),
+            TEMPERATURA_CORRECAO_TRADUCAO,
+            propriedades.maxTokens()
+        );
+
+        for (int tentativa = 1; tentativa <= MAX_TENTATIVAS_REVISAO; tentativa++) {
+            try {
+                RespostaLlm resposta = restClient.post()
+                    .uri("/chat/completions")
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .accept(MediaType.APPLICATION_JSON)
+                    .body(request)
+                    .retrieve()
+                    .body(RespostaLlm.class);
+
+                if (resposta == null || resposta.choices() == null || resposta.choices().isEmpty()) {
+                    continue;
+                }
+
+                Mensagem mensagem = resposta.choices().getFirst().message();
+                String texto = mensagem != null ? mensagem.content() : null;
+                if (texto == null || texto.isBlank()) {
+                    continue;
+                }
+
+                return Optional.of(normalizarLinhaUnica(texto));
+            } catch (Exception e) {
+                log.warn("Falha na correção de tradução via LLM (tentativa {}/{}): {}",
+                    tentativa, MAX_TENTATIVAS_REVISAO, e.getMessage());
+                if (tentativa < MAX_TENTATIVAS_REVISAO) {
+                    try {
+                        Thread.sleep(PAUSA_ENTRE_TENTATIVAS_MS);
+                    } catch (InterruptedException ie) {
+                        Thread.currentThread().interrupt();
+                        break;
+                    }
+                }
+            }
+        }
+        return Optional.empty();
+    }
+
+    private String montarPromptCorrecaoTraducao(String originalIngles, String traducaoPt, String motivoDetectado) {
+        return """
+            A traducao abaixo ficou com residuo em ingles, incompleta ou alucinada.
+            Retraduza esta fala para PT-BR corretamente, preservando o sentido e os
+            marcadores [[TAGn]] literalmente (nao traduza nem remova marcadores).
+
+            Original (ingles):
+            %s
+
+            Traducao atual (problema detectado: %s):
+            %s
+
+            Responda com uma unica linha: a traducao corrigida em portugues.
+            """.formatted(originalIngles, motivoDetectado, traducaoPt);
     }
 
     private String montarPromptRevisao(

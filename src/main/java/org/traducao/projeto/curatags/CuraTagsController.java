@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.traducao.projeto.traducao.infrastructure.contexto.GerenciadorContexto;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -15,9 +16,11 @@ import java.util.Map;
 public class CuraTagsController {
 
     private final CuraTagsUseCase curaTagsUseCase;
+    private final GerenciadorContexto gerenciadorContexto;
 
-    public CuraTagsController(CuraTagsUseCase curaTagsUseCase) {
+    public CuraTagsController(CuraTagsUseCase curaTagsUseCase, GerenciadorContexto gerenciadorContexto) {
         this.curaTagsUseCase = curaTagsUseCase;
+        this.gerenciadorContexto = gerenciadorContexto;
     }
 
     @PostMapping("/cura-tags")
@@ -27,13 +30,19 @@ public class CuraTagsController {
             return ResponseEntity.badRequest().body(Map.of("erro", "Diretório do anime não informado."));
         }
 
+        String contextoId = payload.get("contextoId");
+        if (contextoId != null && !contextoId.isBlank() && !gerenciadorContexto.existeContexto(contextoId)) {
+            return ResponseEntity.badRequest().body(Map.of(
+                "erro", "Contexto de tradução desconhecido: \"" + contextoId + "\". Recarregue a página e selecione um contexto válido."));
+        }
+
         try {
             Path pastaBase = Paths.get(diretorio);
-            ResultadoCuraTags resultado = curaTagsUseCase.curarPasta(pastaBase);
+            ResultadoCuraTags resultado = curaTagsUseCase.curarPasta(pastaBase, contextoId);
 
             String mensagem = String.format(
-                "Cura finalizada: %d curado(s), %d já perfeito(s), %d sem tradução pareada, %d erro(s) de %d arquivo(s).",
-                resultado.curados(), resultado.semAlteracao(), resultado.semPar(),
+                "Cura finalizada: %d curado(s), %d corrigido(s) via LLM, %d já perfeito(s), %d sem tradução pareada, %d erro(s) de %d arquivo(s).",
+                resultado.curados(), resultado.corrigidosLlm(), resultado.semAlteracao(), resultado.semPar(),
                 resultado.totalErros(), resultado.totalArquivos() + resultado.semPar());
 
             if (resultado.teveErros()) {

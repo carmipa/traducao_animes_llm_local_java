@@ -27,4 +27,15 @@ public interface MistralPort {
         String traducaoPtMascarada,
         List<String> problemasDetectados
     );
+
+    /**
+     * Retraduz uma fala cuja tradução existente ficou com resíduo em inglês,
+     * incompleta ou alucinada, usando o prompt completo (lore + regras) do
+     * contexto ativo. Retorna vazio se o LLM falhar ou a resposta for inválida.
+     */
+    Optional<String> corrigirTraducao(
+        String originalInglesMascarado,
+        String traducaoPtMascarada,
+        String motivoDetectado
+    );
 }
