@@ -1,12 +1,13 @@
 # CÉREBRO DE IA — Memória viva do projeto
 
-> **Instrução para agentes (Cursor, Copilot, etc.):** leia **este arquivo primeiro** em toda sessão que tocar pipeline, tradução, revisão, telemetria ou UI web.  
+> **Instrução para agentes (Cursor, Copilot, Claude, Gemini, etc.):** consulte o protocolo **AI-OS** em `.cursor/rules/ai-os.mdc` e leia **este arquivo** em toda sessão que tocar pipeline, tradução, revisão, telemetria ou UI web.  
 > **Ao concluir mudanças relevantes, atualize a seção [Estado atual](#estado-atual-2026-06-27)** e, se criou pacotes/classes novos, regenere `mapa_projeto.md` (`POST /api/mapa` ou `--app.modo=MAPEAR`).
 
-Documentos irmãos (consultar junto):
+Documentos irmãos (consultar nesta ordem após decisões oficiais do Obsidian, se houver):
 
 | Arquivo | Função |
 |---------|--------|
+| `.cursor/rules/ai-os.mdc` | Protocolo Antigravit — escopo fechado, ordem de consulta, qualidade |
 | **CEREBRO_IA.md** (este) | Estado recente, decisões, checklist, onde salvar o quê |
 | [ARQUITETURA.md](ARQUITETURA.md) | Decisões profundas, armadilhas JDK 25, interface web |
 | [mapa_projeto.md](mapa_projeto.md) | Árvore de classes gerada automaticamente |
@@ -16,11 +17,12 @@ Documentos irmãos (consultar junto):
 
 ## Protocolo obrigatório para IAs
 
-1. **Antes de codar:** ler este arquivo + trecho relevante de `ARQUITETURA.md`.
-2. **Depois de codar:** atualizar [Estado atual](#estado-atual-2026-06-27); rodar `./gradlew test` se mexeu em use cases.
-3. **Persistência:** toda operação de pipeline deve gerar **logs + telemetria + relatório** (ver abaixo) — não só `System.out`.
-4. **Beans Spring:** qualquer `@Service`/`@RestController` novo entra no `@Import` de `Application.java` (JDK 25 / ASM).
-5. **Regenerar mapa** quando adicionar pacote Java novo (ex.: `raspagemRevisao`).
+1. **Antes de codar:** `.cursor/rules/ai-os.mdc` → este arquivo → trecho relevante de `ARQUITETURA.md`.
+2. **Escopo fechado** antes de implementar; não ampliar escopo durante a execução (AI-OS).
+3. **Depois de codar:** atualizar [Estado atual](#estado-atual-2026-06-27); rodar `./gradlew test` se mexeu em use cases.
+4. **Persistência:** toda operação de pipeline deve gerar **logs + telemetria + relatório** (ver abaixo) — não só `System.out`.
+5. **Beans Spring:** qualquer `@Service`/`@RestController` novo entra no `@Import` de `Application.java` (JDK 25 / ASM).
+6. **Regenerar mapa** quando adicionar pacote Java novo (ex.: `raspagemRevisao`).
 
 ---
 
@@ -34,18 +36,30 @@ Documentos irmãos (consultar junto):
 | 2 | Extração | `POST /api/extrair` | `extracao` |
 | 3 | Tradução Local | `POST /api/traduzir` | `traducao` |
 | 4 | Correção Cache | `POST /api/corrigir-cache`, `POST /api/corrigir-scraping` | `correcao` |
-| 6 | **Revisão de Legendas** | `POST /api/revisar-legendas` | `revisao` |
+| 6 | **Revisão de Legendas** | `POST /api/revisar-legendas` (Google), `POST /api/revisar-legendas-concordancia` (LLM) | `revisao` |
 | 7 | Remuxer | `POST /api/remuxar` | `remuxer` |
 | 8 | Mapa do Projeto | `POST /api/mapa` | — |
 | 9 | Telemetria | `GET /api/telemetria` | — |
 
 *(Não há item 5 na UI — numeração histórica.)*
 
+### Painel 6 — duas ações distintas
+
+| Botão | API | Motor | O que corrige |
+|-------|-----|-------|----------------|
+| **Revisar Concordância (LLM)** | `POST /api/revisar-legendas-concordancia` | Mistral local + contexto de lore | Gênero, pronomes, artigos, tratamentos (senhor/senhora, ele/ela) nos `.ass` |
+| **Corrigir via Scraping Google** | `POST /api/revisar-legendas` | Google Translate | Inglês residual e falas que o auditor flagrou |
+
+Ambos exigem pasta com legendas **traduzidas** (`.ass`). Campo opcional: pasta EN. Select **Contexto de Lore** vale para o botão LLM.
+
+**Legado (não é o fluxo principal da UI):** `POST /api/revisar-cache` + `RevisarCacheUseCase` — mesma lógica LLM, mas no **cache JSON** (menu 4 / CLI `RASPAGEM_REVISAO`). Preferir painel 6 para legendas `.ass` já geradas.
+
 ### Pipeline recomendado (DanMachi / obras com cache)
 
 ```
 Extrair → Traduzir (LLM) → Limpar cache (4) → Google no cache (4 scraping)
-→ Revisão de Legendas (6) → Remuxer (7)
+→ Revisão de Legendas (6): Concordância LLM → opcional Google residual
+→ Remuxer (7)
 ```
 
 ### Pacote `apiDadosAnime` (novo)
@@ -65,13 +79,15 @@ org.traducao.projeto.apiDadosAnime
 ```
 org.traducao.projeto.raspagemRevisao
 ├── application/
-│   ├── DetectorConcordanciaService.java    # heurísticas EN×PT (gênero, pronomes, "ele fala / ela fala")
+│   ├── DetectorConcordanciaService.java    # heurísticas EN×PT (gênero, pronomes, tratamentos)
 │   ├── AuditorProblemasLegendaService.java # inglês residual + concordância
-│   ├── RevisarLegendasUseCase.java         # .ass PT + .ass EN pareado + Google (sem cache)
-│   └── RevisarCacheUseCase.java            # revisão LLM no cache (CLI /api/revisar-cache)
+│   ├── RevisarLegendasUseCase.java         # .ass PT; modos GOOGLE | LLM_CONCORDANCIA; cache EN fallback
+│   └── RevisarCacheUseCase.java            # revisão LLM no cache JSON (legado API/CLI)
 ├── RevisorLegendasCLI.java                 # app.modo=RASPAGEM_REVISAO_LEGENDAS
 └── RevisorRaspagemCLI.java                 # revisão LLM cache (modo separado)
 ```
+
+**Frontend:** `static/revisao/revisao.js` — validação de caminhos, contextos, botões Google e LLM.
 
 **Regras PT-BR gerais:** `traducao/contexto/RegrasConcordanciaPtBr.java` — injetado nos prompts via `ContextoPrompt`.
 
@@ -80,9 +96,10 @@ org.traducao.projeto.raspagemRevisao
 **Pareamento legenda EN ↔ PT (Revisão de Legendas, menu 6):**
 
 - Entrada: pasta com `*_PTBR_TrackN.ass` ou `*_PT-BR.ass`
-- Original EN: `.ass` pareado na mesma pasta (ex.: `_Track2.ass`) ou pasta EN opcional na UI
-- **Não usa** `cache/*.cache.json` — isso é o menu 4 (`RevisarCacheUseCase`)
-- Correções são salvas de volta no `.ass` traduzido
+- Original EN (ordem de prioridade):
+  1. `.ass` pareado na mesma pasta (ex.: `_Track2.ass`) ou pasta EN opcional na UI
+  2. **Fallback:** `cache/**/*_ENG.cache.json` (walk + pareamento por episódio/nome)
+- Correções são salvas de volta no `.ass` traduzido (mesma pasta de entrada)
 
 **Pareamento cache ↔ tradução LLM (menu 3):**
 
@@ -128,7 +145,7 @@ Todos os 8 endpoints operacionais da API (`ApiController.java`) imprimem um bann
   "traducoesLlm": [ ... ],
   "operacoes": [
     {
-      "tipo": "Revisão Legendas (.ass)",
+      "tipo": "Revisão Concordância (.ass LLM)",
       "detalhe": "caminho da pasta",
       "tempoTotalMs": 45000,
       "arquivosProcessados": 15,
@@ -140,7 +157,9 @@ Todos os 8 endpoints operacionais da API (`ApiController.java`) imprimem um bann
 }
 ```
 
-**Operações que chamam `finalizarOperacao`:** Revisão Legendas, Limpeza Cache, Correção Google, Revisão Gramatical (cache).
+Tipos em `operacoes[].tipo`: `Revisão Legendas (.ass)`, `Revisão Concordância (.ass LLM)`, `Revisão Gramatical (cache LLM)`, limpeza/correção cache.
+
+**Operações que chamam `finalizarOperacao`:** Revisão Legendas (Google), Revisão Concordância (.ass LLM), Limpeza Cache, Correção Google, Revisão Gramatical (cache legado).
 
 **Tradução LLM:** `registrarTraducao(LlmTelemetria)` por episódio bem-sucedido.
 
@@ -173,17 +192,21 @@ Execute mentalmente ou via terminal após mudanças:
 | Erro servlet ao abrir Telemetria | SSE cliente desconectado propagava IO | try/catch em `ConsoleRedirector` / `LogStreamService` |
 | Mensagem enganosa “Nenhum problema” | Falas puladas sem EN | Log distingue auditadas vs ignoradas |
 | `[SUCESSO]` com pasta cache | Usuário apontou `cache\Season 05` em vez de legendas `.ass` | `validarPastaEntrada()` na API + aviso na UI |
-| Revisão de legendas lia cache | Confusão com menu 4 (revisão cache) | `RevisarLegendasUseCase` usa só `.ass` EN+PT pareados |
+| Revisão de legendas lia cache | Confusão com menu 4 (revisão cache) | Documentado: cache é **fallback** EN no menu 6; LLM concordância também no painel 6 |
+| `InvalidPathException` na revisão | UI enviava texto de logs no campo pasta | `revisao.js` valida caminho + `ApiController.parseCaminhoSeguro()` |
+| Consoles de log pequenos / resize quebrado | `height: 220px` + flex anulava `resize` | `style.css`: `flex:none`, `45vh`, `resize: vertical` em `.console-body` |
+| Concordância LLM só no cache/API legada | Botão removido do menu 4 | Integrado ao painel 6: `/api/revisar-legendas-concordancia` + select de contexto |
 
 ---
 
 ## Gaps conhecidos (backlog)
 
-- README tabela de painéis ainda lista numeração antiga (sem item 6 revisão).
-- `ARQUITETURA.md` seção interface web não lista `/api/revisar-legendas` nem pacote `raspagemRevisao` em detalhe.
+- README e `ARQUITETURA.md` ainda sem `/api/revisar-legendas-concordancia` e detalhe do modo LLM no painel 6.
 - Falhas parciais de tradução LLM ainda não geram `LlmTelemetria`.
 - Remuxer / extração não têm `OperacaoTelemetria` (só revisão/correção/cache).
-- Detector heurístico pode não flaggar todos os eres de gênero (ex.: “seu rosto” para “his face” sem contexto feminino explícito).
+- Detector heurístico pode não flaggar todos os erros de gênero (ex.: “seu rosto” para “his face” sem contexto feminino explícito).
+- Consolidar ou deprecar formalmente `/api/revisar-cache` vs concordância no painel 6 (evitar duplicidade conceitual).
+- AI-OS global (Obsidian `00_…99_`, kernel, scheduler) — fora do escopo deste repo; ver opção B do plano Antigravit.
 
 ---
 
@@ -211,7 +234,8 @@ Execute mentalmente ou via terminal após mudanças:
 |------|-------|--------|
 | 2026-06-27 | Agent | Criação; documenta raspagemRevisao, telemetria operacoes, relatórios, pareamento cache, protocolo IA |
 | 2026-06-28 | Codex | Reforça regras contra masculino automático em falas ambíguas e documenta gêneros de personagens em Gundam 0080 |
+| 2026-06-27 | Agent | AI-OS: rule `ai-os.mdc`; painel 6 com concordância LLM + Google; cache EN fallback; fix path UI; consoles redimensionáveis |
 
 ---
 
-*Última verificação cruzada com o código: pacotes `raspagemRevisao`, `TelemetriaService.finalizarOperacao`, `RevisarLegendasUseCase.resolverArquivoCache`, menu 6 em `index.html`, testes `./gradlew test` OK.*
+*Última verificação cruzada com o código: `RevisarLegendasUseCase` (modos GOOGLE/LLM), `/api/revisar-legendas-concordancia`, `static/revisao/revisao.js`, `style.css` consoles, `ApiController.parseCaminhoSeguro`, testes `./gradlew test` OK.*

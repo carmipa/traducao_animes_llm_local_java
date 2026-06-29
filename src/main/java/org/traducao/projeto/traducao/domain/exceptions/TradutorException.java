@@ -1,6 +1,8 @@
 package org.traducao.projeto.traducao.domain.exceptions;
 
-public class TradutorException extends RuntimeException {
+import org.traducao.projeto.core.exception.BasePipelineException;
+
+public class TradutorException extends BasePipelineException {
     public TradutorException(String message) {
         super(message);
     }

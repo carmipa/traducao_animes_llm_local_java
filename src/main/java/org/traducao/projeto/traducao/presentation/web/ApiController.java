@@ -232,6 +232,19 @@ public class ApiController {
                     System.out.println("\u001B[33m  • Formatos suportados: .mkv/.webm (MKVToolNix) e .mp4/.mov/.avi/.ts/.m2ts/.flv/.wmv (ffmpeg).\u001B[0m");
                     System.out.println("\u001B[33m========================================================================\n\u001B[0m");
                     log.warn("[AVISO] Nenhum arquivo de vídeo suportado foi encontrado no caminho: {}", pathEntrada);
+                } else if (rel.getLegendasExtraidas() == 0) {
+                    System.out.println("\n\u001B[33m========================================================================\u001B[0m");
+                    System.out.println("\u001B[33m  ⚠️ [ALERTA] NENHUMA LEGENDA [" + formato.name() + "] FOI EXTRAÍDA!\u001B[0m");
+                    System.out.println("\u001B[33m========================================================================\u001B[0m");
+                    System.out.println("\u001B[36m  • Arquivos de Vídeo Analisados : " + rel.getArquivosDetectados() + "\u001B[0m");
+                    System.out.println("\u001B[31m  • Faixas Extraídas com Sucesso : 0 [" + formato.name() + "]\u001B[0m");
+                    System.out.println("\u001B[33m  • Vídeos sem Faixa " + formato.name() + "        : " + rel.getArquivosSemLegenda() + "\u001B[0m");
+                    if (rel.getFalhasInesperadas() > 0) {
+                        System.out.println("\u001B[31m  • Falhas de Processamento     : " + rel.getFalhasInesperadas() + "\u001B[0m");
+                    }
+                    System.out.println("\u001B[33m  💡 Dica: Verifique se o vídeo possui legendas em outro formato (ex: PGS ou SRT) ou se a legenda está queimada na imagem (Hardsub).\u001B[0m");
+                    System.out.println("\u001B[33m========================================================================\n\u001B[0m");
+                    log.warn("[ALERTA] Extração finalizada sem faixas geradas. 0 de {} vídeos possuíam faixa {}", rel.getArquivosDetectados(), formato.name());
                 } else {
                     System.out.println("\n\u001B[32m========================================================================\u001B[0m");
                     System.out.println("\u001B[32m  🎉 [SUCESSO] EXTRAÇÃO DE LEGENDAS FINALIZADA COM SUCESSO!\u001B[0m");

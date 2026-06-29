@@ -1,6 +1,8 @@
 package org.traducao.projeto.remuxer.domain;
 
-public class RemuxerException extends RuntimeException {
+import org.traducao.projeto.core.exception.BasePipelineException;
+
+public class RemuxerException extends BasePipelineException {
     public RemuxerException(String message) {
         super(message);
     }

@@ -245,6 +245,210 @@
       "driftRatioSegundosPorHora" : 12.019857168902686,
       "diferencaFimSegundos" : 24.027000000000044
     } ]
+  }, {
+    "nomeArquivo" : "mkv_final_ptbr\\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_PTBR.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 298.15669441223145,
+    "duracaoSegundos" : 1575.082,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "por",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 4592 ms)",
+      "driftRatioSegundosPorHora" : 10.495453570036577,
+      "diferencaFimSegundos" : 4.592000000000098
+    } ]
+  }, {
+    "nomeArquivo" : "mkv_final_ptbr\\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_PTBR.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 308.4582624435425,
+    "duracaoSegundos" : 1636.312,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "por",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 4.976557038021965,
+      "diferencaFimSegundos" : 2.2619999999999436
+    } ]
+  }, {
+    "nomeArquivo" : "mkv_final_ptbr\\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_PTBR.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 317.516393661499,
+    "duracaoSegundos" : 1642.147,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "por",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 7.600537588900102,
+      "diferencaFimSegundos" : 3.466999999999871
+    } ]
+  }, {
+    "nomeArquivo" : "mkv_final_ptbr\\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_PTBR.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 334.67786026000977,
+    "duracaoSegundos" : 1640.817,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "por",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 5.1493859461475155,
+      "diferencaFimSegundos" : 2.34699999999998
+    } ]
+  }, {
+    "nomeArquivo" : "mkv_final_ptbr\\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_PTBR.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 286.60787868499756,
+    "duracaoSegundos" : 1641.482,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "por",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 5.224059721641921,
+      "diferencaFimSegundos" : 2.382000000000062
+    } ]
+  }, {
+    "nomeArquivo" : "mkv_final_ptbr\\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_PTBR.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 362.02428436279297,
+    "duracaoSegundos" : 1633.307,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "por",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 26157 ms)",
+      "driftRatioSegundosPorHora" : 57.65309277435273,
+      "diferencaFimSegundos" : 26.156999999999925
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 298.1561441421509,
+    "duracaoSegundos" : 1575.082,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 4592 ms)",
+      "driftRatioSegundosPorHora" : 10.495453570036577,
+      "diferencaFimSegundos" : 4.592000000000098
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 308.45770931243896,
+    "duracaoSegundos" : 1636.312,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 4.976557038021965,
+      "diferencaFimSegundos" : 2.2619999999999436
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 317.5156898498535,
+    "duracaoSegundos" : 1642.147,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 7.600537588900102,
+      "diferencaFimSegundos" : 3.466999999999871
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 334.6769018173218,
+    "duracaoSegundos" : 1640.817,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 5.1493859461475155,
+      "diferencaFimSegundos" : 2.34699999999998
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 286.60705852508545,
+    "duracaoSegundos" : 1641.482,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 5.224059721641921,
+      "diferencaFimSegundos" : 2.382000000000062
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 362.023606300354,
+    "duracaoSegundos" : 1633.307,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 26157 ms)",
+      "driftRatioSegundosPorHora" : 57.65309277435273,
+      "diferencaFimSegundos" : 26.156999999999925
+    } ]
   } ],
   "traducoesLlm" : [ {
     "nomeEpisodio" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_Track2.ass",

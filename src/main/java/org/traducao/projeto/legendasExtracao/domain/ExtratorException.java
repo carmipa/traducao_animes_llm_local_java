@@ -1,6 +1,8 @@
 package org.traducao.projeto.legendasExtracao.domain;
 
-public class ExtratorException extends RuntimeException {
+import org.traducao.projeto.core.exception.BasePipelineException;
+
+public class ExtratorException extends BasePipelineException {
     public ExtratorException(String message) {
         super(message);
     }

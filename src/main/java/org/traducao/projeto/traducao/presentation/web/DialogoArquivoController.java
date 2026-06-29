@@ -27,14 +27,18 @@ public class DialogoArquivoController {
         // cuja janela de seleção de pasta ainda usa a interface antiga (estilo Windows 95).
         String script = "Add-Type -AssemblyName System.Windows.Forms; " +
                         criarScriptOwnerTopMost() +
-                        "$f = New-Object System.Windows.Forms.OpenFileDialog; " +
-                        "$f.Title = 'Selecione a pasta desejada'; " +
-                        "$f.CheckFileExists = $false; " +
-                        "$f.CheckPathExists = $true; " +
-                        "$f.ValidateNames = $false; " +
-                        "$f.FileName = 'Selecione esta pasta'; " +
-                        "if ($f.ShowDialog($owner) -eq [System.Windows.Forms.DialogResult]::OK) { Write-Output (Split-Path $f.FileName -Parent) }; " +
-                        "$owner.Close()";
+                        "try { " +
+                        "  $f = New-Object System.Windows.Forms.OpenFileDialog; " +
+                        "  $f.Title = 'Selecione a pasta desejada'; " +
+                        "  $f.CheckFileExists = $false; " +
+                        "  $f.CheckPathExists = $true; " +
+                        "  $f.ValidateNames = $false; " +
+                        "  $f.FileName = 'Selecione esta pasta'; " +
+                        "  if ($f.ShowDialog($owner) -eq [System.Windows.Forms.DialogResult]::OK) { Write-Output (Split-Path $f.FileName -Parent) }; " +
+                        "} finally { " +
+                        "  if ($null -ne $f) { $f.Dispose(); } " +
+                        "  if ($null -ne $owner) { $owner.Close(); $owner.Dispose(); } " +
+                        "}";
 
         String caminho = executarScriptPowerShell(script);
         log.info("Caminho de pasta selecionado: {}", caminho);
@@ -49,10 +53,14 @@ public class DialogoArquivoController {
         log.info("Solicitado seletor nativo de arquivo no Windows...");
         String script = "Add-Type -AssemblyName System.Windows.Forms; " +
                         criarScriptOwnerTopMost() +
-                        "$f = New-Object System.Windows.Forms.OpenFileDialog; " +
-                        "$f.Title = 'Selecione o arquivo desejado'; " +
-                        "if ($f.ShowDialog($owner) -eq [System.Windows.Forms.DialogResult]::OK) { Write-Output $f.FileName }; " +
-                        "$owner.Close()";
+                        "try { " +
+                        "  $f = New-Object System.Windows.Forms.OpenFileDialog; " +
+                        "  $f.Title = 'Selecione o arquivo desejado'; " +
+                        "  if ($f.ShowDialog($owner) -eq [System.Windows.Forms.DialogResult]::OK) { Write-Output $f.FileName }; " +
+                        "} finally { " +
+                        "  if ($null -ne $f) { $f.Dispose(); } " +
+                        "  if ($null -ne $owner) { $owner.Close(); $owner.Dispose(); } " +
+                        "}";
 
         String caminho = executarScriptPowerShell(script);
         log.info("Caminho de arquivo selecionado: {}", caminho);
@@ -69,13 +77,28 @@ public class DialogoArquivoController {
      * interagir com uma janela que ele nunca vê.
      */
     private String criarScriptOwnerTopMost() {
-        return "$owner = New-Object System.Windows.Forms.Form; " +
+        return "Add-Type -TypeDefinition 'using System; using System.Runtime.InteropServices; " +
+               "public class NativeWindowTools { " +
+               "[DllImport(\"user32.dll\")] public static extern bool SetForegroundWindow(IntPtr hWnd); " +
+               "[DllImport(\"user32.dll\")] public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow); " +
+               "}'; " +
+               "$owner = New-Object System.Windows.Forms.Form; " +
                "$owner.TopMost = $true; " +
                "$owner.ShowInTaskbar = $false; " +
-               "$owner.StartPosition = 'Manual'; " +
-               "$owner.Left = -2000; $owner.Top = -2000; " +
-               "$owner.Width = 0; $owner.Height = 0; " +
-               "$owner.Show(); $owner.Activate(); ";
+               "$owner.StartPosition = 'CenterScreen'; " +
+               "$owner.FormBorderStyle = 'FixedToolWindow'; " +
+               "$owner.Opacity = 0.01; " +
+               "$owner.Width = 1; $owner.Height = 1; " +
+               "$owner.Show(); " +
+               "$owner.WindowState = 'Normal'; " +
+               "$owner.BringToFront(); " +
+               "$owner.Activate(); " +
+               "[System.Windows.Forms.SendKeys]::SendWait('%'); " +
+               "Start-Sleep -Milliseconds 50; " +
+               "[NativeWindowTools]::ShowWindow($owner.Handle, 5) | Out-Null; " +
+               "[NativeWindowTools]::SetForegroundWindow($owner.Handle) | Out-Null; " +
+               "[System.Windows.Forms.Application]::DoEvents(); " +
+               "Start-Sleep -Milliseconds 150; ";
     }
 
     private String executarScriptPowerShell(String script) {

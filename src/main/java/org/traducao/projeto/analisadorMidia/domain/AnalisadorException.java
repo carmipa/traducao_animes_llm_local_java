@@ -1,6 +1,8 @@
 package org.traducao.projeto.analisadorMidia.domain;
 
-public class AnalisadorException extends RuntimeException {
+import org.traducao.projeto.core.exception.BasePipelineException;
+
+public class AnalisadorException extends BasePipelineException {
     public AnalisadorException(String message) {
         super(message);
     }

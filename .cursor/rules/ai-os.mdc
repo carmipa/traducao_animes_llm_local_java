@@ -1,0 +1,36 @@
+---
+description: Protocolo Antigravit AI-OS — escopo, consulta e qualidade (projeto + Obsidian)
+alwaysApply: true
+---
+
+# AI-OS (Antigravit) — regras operacionais
+
+## Ordem de consulta (obrigatória)
+
+1. Decisões oficiais no Obsidian (`00_DECISOES_OFICIAIS`) — quando existir no vault do usuário
+2. `CEREBRO_IA.md` — estado e decisões deste repositório
+3. `ARQUITETURA.md` — decisões técnicas profundas
+4. Código e testes
+
+Nunca implementar ignorando o cérebro. Nunca duplicar documentação: consolidar em um lugar canônico.
+
+## Antes de implementar
+
+1. Auditoria do que já existe (código + docs)
+2. Dependências, riscos e melhorias obrigatórias no escopo
+3. Escopo fechado — **proibido** ampliar durante a implementação
+4. Se surgir dependência nova: parar, recalcular escopo, replanejar
+
+## Durante e depois
+
+- Uma responsabilidade por mudança; sem soluções parciais
+- Sem frases de encerramento do tipo "mais uma ideia" ou "só uma sugestão"
+- Tarefa relevante concluída → atualizar `CEREBRO_IA.md` (decisão, impacto, arquivos, data)
+- Erro resolvido → registrar sintoma, causa, correção e lição em `CEREBRO_IA.md` (seção bugs/histórico)
+- Novo pacote Java → `@Import` em `Application.java` + regenerar `mapa_projeto.md`
+
+## Escopo deste repositório vs AI-OS global
+
+Este projeto implementa o **pipeline de tradução de animes**, não o kernel/scheduler/monitor do AI-OS completo. O Obsidian é a fonte oficial cross-IA; `CEREBRO_IA.md` é a memória viva **local** sincronizada com ele.
+
+Responda ao usuário em português.

@@ -125,3 +125,238 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2026-06-29 00:12:06.307 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2026-06-29 00:12:06.514 INFO  [tomcat-handler-16] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 14 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
 2026-06-29 00:12:43.934 INFO  [tomcat-handler-43] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 14 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 00:17:50.405 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 16596 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-29 00:17:50.406 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-29 00:17:50.441 INFO  [restartedMain] loteId= o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-29 00:17:50.442 INFO  [restartedMain] loteId= o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-29 00:17:50.865 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-29 00:17:50.872 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-29 00:17:50.872 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-29 00:17:50.893 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-29 00:17:50.893 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 451 ms
+2026-06-29 00:17:50.990 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-29 00:17:50.993 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-29 00:17:50.993 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-29 00:17:51.082 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-29 00:17:51.170 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-29 00:17:51.181 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-29 00:17:51.185 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.997 seconds (process running for 1.185)
+2026-06-29 00:17:51.215 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-29 00:17:52.530 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-29 00:17:52.531 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-29 00:17:52.532 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-06-29 00:17:52.696 INFO  [tomcat-handler-15] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 14 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 00:18:02.139 INFO  [tomcat-handler-34] loteId= o.t.p.t.p.w.DialogoArquivoController - Solicitado seletor nativo de pasta no Windows...
+2026-06-29 00:18:33.467 INFO  [tomcat-handler-34] loteId= o.t.p.t.p.w.DialogoArquivoController - Caminho de pasta selecionado: C:\animes\Macross-Delta-Filme-1\a
+2026-06-29 00:18:37.624 WARN  [pool-1-thread-1] loteId= o.t.p.t.p.web.ApiController - [AVISO] Nenhum arquivo de vídeo suportado foi encontrado no caminho: C:\animes\Macross-Delta-Filme-1\a
+2026-06-29 00:18:41.770 INFO  [tomcat-handler-40] loteId= o.t.p.t.p.w.DialogoArquivoController - Solicitado seletor nativo de pasta no Windows...
+2026-06-29 00:18:50.772 INFO  [tomcat-handler-40] loteId= o.t.p.t.p.w.DialogoArquivoController - Caminho de pasta selecionado: C:\animes\Macross-Delta-Filme-1\b
+2026-06-29 00:18:52.794 WARN  [pool-1-thread-1] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Nenhuma faixa ASS encontrada no vídeo: [Anime Land] Gekijouban Macross Delta - Gekijou no Walküre (BDRip 1080p Hi10P DTS) [04A3C229].mkv
+2026-06-29 00:18:52.799 INFO  [pool-1-thread-1] loteId= o.t.p.t.p.web.ApiController - [SUCESSO] Extração de legendas finalizada. Extraídas: 0 de 1
+2026-06-29 00:18:52.835 INFO  [tomcat-handler-43] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 14 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 00:18:52.858 INFO  [tomcat-handler-44] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 14 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 00:21:50.796 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-06-29 00:21:50.801 WARN  [tomcat-handler-63] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-29 00:21:50.802 WARN  [tomcat-handler-63] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-29 00:21:50.899 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 16596 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-29 00:21:50.900 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-29 00:21:51.085 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-29 00:21:51.087 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-29 00:21:51.087 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-29 00:21:51.098 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-29 00:21:51.098 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 174 ms
+2026-06-29 00:21:51.144 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-29 00:21:51.149 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-29 00:21:51.149 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-29 00:21:51.184 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-29 00:21:51.212 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-29 00:21:51.220 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-29 00:21:51.222 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.358 seconds (process running for 241.223)
+2026-06-29 00:21:51.223 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-29 00:21:51.251 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-29 00:21:51.656 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-29 00:21:51.658 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-29 00:21:51.659 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-29 00:21:51.840 INFO  [tomcat-handler-15] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 14 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 00:22:11.252 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-06-29 00:22:11.256 WARN  [tomcat-handler-31] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-29 00:22:11.256 WARN  [tomcat-handler-31] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-29 00:22:11.256 WARN  [tomcat-handler-32] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-29 00:22:11.259 WARN  [tomcat-handler-32] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-29 00:22:11.478 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 16596 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-29 00:22:11.479 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-29 00:22:11.619 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-29 00:22:11.619 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-29 00:22:11.620 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-29 00:22:11.628 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-29 00:22:11.629 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 125 ms
+2026-06-29 00:22:11.658 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-29 00:22:11.659 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-29 00:22:11.660 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-29 00:22:11.679 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-29 00:22:11.708 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-29 00:22:11.716 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-29 00:22:11.719 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.276 seconds (process running for 261.719)
+2026-06-29 00:22:11.721 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-29 00:22:11.729 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-29 00:22:12.133 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-29 00:22:12.135 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-29 00:22:12.137 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-29 00:22:12.240 INFO  [tomcat-handler-16] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 14 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 00:23:01.061 INFO  [tomcat-handler-44] loteId= o.t.p.t.p.w.DialogoArquivoController - Solicitado seletor nativo de pasta no Windows...
+2026-06-29 00:23:05.245 WARN  [tomcat-handler-44] loteId= o.t.p.t.p.w.DialogoArquivoController - Saida de erro do seletor nativo do Windows: Add-Type : c:\Users\Paulo\AppData\Local\Temp\ersavw1u.0.cs(1) : O nome 'user32' n�o existe no contexto atual
+c:\Users\Paulo\AppData\Local\Temp\ersavw1u.0.cs(1) : >>> using System; using System.Runtime.InteropServices; public 
+class NativeWindowTools { [DllImport(user32.dll)] public static extern bool SetForegroundWindow(IntPtr hWnd); 
+[DllImport(user32.dll)] public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow); }
+No linha:1 caractere:46
++ ... dows.Forms; Add-Type -TypeDefinition 'using System; using System.Runt ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (Microsoft.Power...peCompilerError:AddTypeCompilerError) [Add-Type], Except 
+   ion
+    + FullyQualifiedErrorId : SOURCE_CODE_ERROR,Microsoft.PowerShell.Commands.AddTypeCommand
+ 
+Add-Type : c:\Users\Paulo\AppData\Local\Temp\ersavw1u.0.cs(1) : O nome 'user32' n�o existe no contexto atual
+c:\Users\Paulo\AppData\Local\Temp\ersavw1u.0.cs(1) : >>> using System; using System.Runtime.InteropServices; public 
+class NativeWindowTools { [DllImport(user32.dll)] public static extern bool SetForegroundWindow(IntPtr hWnd); 
+[DllImport(user32.dll)] public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow); }
+No linha:1 caractere:46
++ ... dows.Forms; Add-Type -TypeDefinition 'using System; using System.Runt ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (Microsoft.Power...peCompilerError:AddTypeCompilerError) [Add-Type], Except 
+   ion
+    + FullyQualifiedErrorId : SOURCE_CODE_ERROR,Microsoft.PowerShell.Commands.AddTypeCommand
+ 
+Add-Type : N�o � poss�vel adicionar o tipo. Ocorreram erros de compila��o.
+No linha:1 caractere:46
++ ... dows.Forms; Add-Type -TypeDefinition 'using System; using System.Runt ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Add-Type], InvalidOperationException
+    + FullyQualifiedErrorId : COMPILER_ERRORS,Microsoft.PowerShell.Commands.AddTypeCommand
+ 
+N�o � poss�vel localizar o tipo [NativeWindowTools].
+No linha:1 caractere:745
++ ... dWait('%'); Start-Sleep -Milliseconds 50; [NativeWindowTools]::ShowWi ...
++                                               ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (NativeWindowTools:TypeName) [], RuntimeException
+    + FullyQualifiedErrorId : TypeNotFound
+ 
+N�o � poss�vel localizar o tipo [NativeWindowTools].
+No linha:1 caractere:807
++ ... :ShowWindow($owner.Handle, 5) | Out-Null; [NativeWindowTools]::SetFor ...
++                                               ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (NativeWindowTools:TypeName) [], RuntimeException
+    + FullyQualifiedErrorId : TypeNotFound
+ 
+
+2026-06-29 00:23:05.307 INFO  [tomcat-handler-44] loteId= o.t.p.t.p.w.DialogoArquivoController - Caminho de pasta selecionado: null
+2026-06-29 00:23:05.710 INFO  [File Watcher] loteId= o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 7 class path changes (0 additions, 0 deletions, 7 modifications)
+2026-06-29 00:23:05.715 WARN  [tomcat-handler-48] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-29 00:23:05.715 WARN  [tomcat-handler-47] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-29 00:23:05.715 WARN  [tomcat-handler-46] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.web.context.request.async.AsyncRequestTimeoutException
+2026-06-29 00:23:05.716 WARN  [tomcat-handler-48] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-29 00:23:05.718 WARN  [tomcat-handler-47] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-29 00:23:05.719 WARN  [tomcat-handler-46] loteId= o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestTimeoutException]
+2026-06-29 00:23:05.931 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 16596 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-29 00:23:05.932 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-29 00:23:06.136 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-29 00:23:06.140 INFO  [restartedMain] loteId= o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-29 00:23:06.141 INFO  [restartedMain] loteId= o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-06-29 00:23:06.161 INFO  [restartedMain] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-29 00:23:06.162 INFO  [restartedMain] loteId= o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 203 ms
+2026-06-29 00:23:06.215 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-29 00:23:06.219 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-29 00:23:06.221 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-29 00:23:06.252 INFO  [restartedMain] loteId= o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-06-29 00:23:06.280 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-29 00:23:06.288 INFO  [restartedMain] loteId= o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-29 00:23:06.292 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.397 seconds (process running for 316.293)
+2026-06-29 00:23:06.295 INFO  [restartedMain] loteId= o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-29 00:23:06.307 INFO  [restartedMain] loteId= o.t.p.t.p.web.BrowserLauncher - Navegador aberto automaticamente na URL: http://localhost:8080
+2026-06-29 00:23:06.731 INFO  [tomcat-handler-0] loteId= o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-29 00:23:06.735 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-29 00:23:06.737 INFO  [tomcat-handler-0] loteId= o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-06-29 00:23:06.885 INFO  [tomcat-handler-16] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 14 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:29.315 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 29948 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-29 08:34:29.316 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-29 08:34:29.354 INFO  [restartedMain] loteId= o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-29 08:34:29.354 INFO  [restartedMain] loteId= o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-29 08:34:29.753 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-29 08:34:29.756 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-29 08:34:29.758 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-29 08:34:29.881 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-29 08:34:29.892 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.869 seconds (process running for 1.086)
+2026-06-29 08:34:29.903 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Iniciando auditoria técnica para 12 arquivo(s) de vídeo.
+2026-06-29 08:34:29.903 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatórios serão salvos em: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios
+2026-06-29 08:34:30.265 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 14 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:30.276 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 15 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:30.413 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 15 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:30.415 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 16 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:30.479 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 16 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:30.480 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 17 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:30.544 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 17 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:30.545 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 18 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:30.610 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 18 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:30.612 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 19 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:30.676 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 19 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:30.677 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 20 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:30.742 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 20 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:30.743 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 21 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:30.805 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 21 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:30.807 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 22 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:30.876 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 22 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:30.878 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 23 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:30.946 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 23 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:30.947 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 24 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:31.013 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 24 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:31.014 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 25 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:31.082 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 25 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:31.083 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 26 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:31.085 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório de texto salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_PTBR_20260629_083431.txt
+2026-06-29 08:34:31.090 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório JSON salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_PTBR_20260629_083431.json
+2026-06-29 08:34:31.091 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório de texto salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_PTBR_20260629_083431.txt
+2026-06-29 08:34:31.092 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório JSON salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_PTBR_20260629_083431.json
+2026-06-29 08:34:31.092 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório de texto salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_PTBR_20260629_083431.txt
+2026-06-29 08:34:31.094 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório JSON salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_PTBR_20260629_083431.json
+2026-06-29 08:34:31.094 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório de texto salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_PTBR_20260629_083431.txt
+2026-06-29 08:34:31.095 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório JSON salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_PTBR_20260629_083431.json
+2026-06-29 08:34:31.095 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório de texto salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_PTBR_20260629_083431.txt
+2026-06-29 08:34:31.096 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório JSON salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_PTBR_20260629_083431.json
+2026-06-29 08:34:31.097 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório de texto salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_PTBR_20260629_083431.txt
+2026-06-29 08:34:31.100 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório JSON salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_PTBR_20260629_083431.json
+2026-06-29 08:34:31.101 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório de texto salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_20260629_083431.txt
+2026-06-29 08:34:31.102 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório JSON salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_20260629_083431.json
+2026-06-29 08:34:31.102 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório de texto salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_20260629_083431.txt
+2026-06-29 08:34:31.102 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório JSON salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_20260629_083431.json
+2026-06-29 08:34:31.103 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório de texto salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_20260629_083431.txt
+2026-06-29 08:34:31.105 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório JSON salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_20260629_083431.json
+2026-06-29 08:34:31.106 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório de texto salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_20260629_083431.txt
+2026-06-29 08:34:31.107 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório JSON salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_20260629_083431.json
+2026-06-29 08:34:31.107 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório de texto salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_20260629_083431.txt
+2026-06-29 08:34:31.108 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório JSON salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_20260629_083431.json
+2026-06-29 08:34:31.109 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório de texto salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_20260629_083431.txt
+2026-06-29 08:34:31.110 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório JSON salvo: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_20260629_083431.json
+2026-06-29 08:34:31.111 INFO  [restartedMain] loteId= o.t.p.a.a.AnalisarMidiaUseCase - Relatório consolidado de texto salvo com 12 arquivos em: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\consolidado_[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]_20260629_083431.txt
+2026-06-29 08:34:31.112 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Carregadas entradas anteriores: 26 mídias, 7 traduções, 28 operações do arquivo logs\telemetria_compartilhada.json.
+2026-06-29 08:34:31.113 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Telemetria unificada salva com sucesso: 26 mídias, 7 traduções, 28 operações em: logs\telemetria_compartilhada.json
+2026-06-29 08:34:31.116 INFO  [restartedMain] loteId= o.t.p.telemetria.TelemetriaService - Cópia da telemetria unificada salva em: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\relatorios\telemetria_compartilhada.json
+2026-06-29 08:34:39.855 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Starting Application using Java 25.0.2 with PID 14952 (D:\PROJETOS-OPEN\traducao_animes_llm_local_java\build\classes\java\main started by Paulo in D:\PROJETOS-OPEN\traducao_animes_llm_local_java)
+2026-06-29 08:34:39.857 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - No active profile set, falling back to 1 default profile: "default"
+2026-06-29 08:34:39.895 INFO  [restartedMain] loteId= o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-29 08:34:39.895 INFO  [restartedMain] loteId= o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-29 08:34:40.260 INFO  [restartedMain] loteId= o.t.p.r.i.adapters.MkvmergeAdapter - mkvmerge detectado no caminho padrão do Windows: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-29 08:34:40.264 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvmerge.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvmerge.exe
+2026-06-29 08:34:40.264 INFO  [restartedMain] loteId= o.t.p.l.i.adapters.MkvToolNixAdapter - mkvextract.exe detectado no caminho padrão: C:\Program Files\MKVToolNix\mkvextract.exe
+2026-06-29 08:34:40.391 INFO  [restartedMain] loteId= o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-29 08:34:40.402 INFO  [restartedMain] loteId= o.t.projeto.traducao.Application - Started Application in 0.784 seconds (process running for 0.961)
+2026-06-29 08:34:40.932 INFO  [restartedMain] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_PTBR.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_PTBR_Track2.ass
+2026-06-29 08:34:41.214 INFO  [restartedMain] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_PTBR.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_PTBR_Track2.ass
+2026-06-29 08:34:41.483 INFO  [restartedMain] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_PTBR.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_PTBR_Track2.ass
+2026-06-29 08:34:41.771 INFO  [restartedMain] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_PTBR.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_PTBR_Track2.ass
+2026-06-29 08:34:42.054 INFO  [restartedMain] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_PTBR.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_PTBR_Track2.ass
+2026-06-29 08:34:42.386 INFO  [restartedMain] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_PTBR.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_PTBR_Track2.ass
+2026-06-29 08:34:42.755 INFO  [restartedMain] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_Track2.ass
+2026-06-29 08:34:43.037 INFO  [restartedMain] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_Track2.ass
+2026-06-29 08:34:43.366 INFO  [restartedMain] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_Track2.ass
+2026-06-29 08:34:43.704 INFO  [restartedMain] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_Track2.ass
+2026-06-29 08:34:43.974 INFO  [restartedMain] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_Track2.ass
+2026-06-29 08:34:44.280 INFO  [restartedMain] loteId= o.t.p.l.a.ExtrairLegendaUseCase - Legenda extraída: Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06.mkv -> Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_Track2.ass
