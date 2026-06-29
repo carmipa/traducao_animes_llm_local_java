@@ -413,7 +413,7 @@ function inicializarMetadadosDinamicos() {
         { inputId: 'traducao-entrada', selectId: 'traducao-contexto', bannerId: 'meta-banner-traducao' },
         { inputId: 'correcao-entrada', selectId: 'correcao-contexto', bannerId: 'meta-banner-correcao' },
         { inputId: 'revisao-entrada', selectId: 'revisao-contexto', bannerId: 'meta-banner-revisao' },
-        { inputId: 'cura-entrada', selectId: 'cura-contexto', bannerId: 'meta-banner-cura' }
+        { inputId: 'cura-entrada-original', selectId: 'cura-contexto', bannerId: 'meta-banner-cura' }
     ];
 
     const atualizarItem = (item) => {

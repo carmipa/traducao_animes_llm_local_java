@@ -544,8 +544,12 @@
 
                         <form id="form-cura" class="standard-form">
                             <div class="form-group">
-                                <label for="cura-entrada">Pasta com legendas ORIGINAIS (.ass): <span class="help-icon" data-tooltip="A cura lê a subpasta traducao_ptbr dentro desta pasta (criada automaticamente pelo Tradutor) e corrige as tags ASS lá.">?</span></label>
-                                <input type="text" id="cura-entrada" name="entrada" autocomplete="off" spellcheck="false" placeholder="Ex: E:\animes\DANMACHI\temporada_4\legendas_extraidas_ass" required>
+                                <label for="cura-entrada-original">Pasta com legendas ORIGINAIS (.ass, em inglês): <span class="help-icon" data-tooltip="Pasta com as legendas originais (extraídas do vídeo), usadas como referência de formatação. Pode estar em qualquer caminho, inclusive em outro disco.">?</span></label>
+                                <input type="text" id="cura-entrada-original" name="entradaOriginal" autocomplete="off" spellcheck="false" placeholder="Ex: E:\animes\DANMACHI\temporada_4\legendas_extraidas_ass" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cura-entrada-traduzida">Pasta com legendas TRADUZIDAS (PT-BR): <span class="help-icon" data-tooltip="Pasta com as legendas em português a serem curadas/corrigidas. Pode estar em qualquer caminho, inclusive em outro disco — não precisa estar dentro da pasta original.">?</span></label>
+                                <input type="text" id="cura-entrada-traduzida" name="entradaTraduzida" autocomplete="off" spellcheck="false" placeholder="Ex: E:\animes\DANMACHI\temporada_4\legendas_extraidas_ass\traducao_ptbr" required>
                             </div>
                             <div class="form-group">
                                 <label for="cura-contexto">Obra / Contexto (Opcional): <span class="help-icon" data-tooltip="Exibe a capa/dados da obra E ativa a correção de erros de tradução via LLM local usando o contexto/lore dessa obra. Deixe em branco para uma cura só estrutural (sem LLM, mais rápida).">?</span></label>

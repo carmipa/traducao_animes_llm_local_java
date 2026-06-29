@@ -220,19 +220,29 @@ public class ApiController {
                 Path pathSaida = (req.saida() != null && !req.saida().isBlank()) ? Path.of(req.saida()) : null;
                 FormatoLegenda formato = FormatoLegenda.fromString(req.formato() != null ? req.formato() : "ASS");
                 RelatorioExtracao rel = extrairLegendaUseCase.executar(pathEntrada, pathSaida, formato);
-                System.out.println("\n\u001B[32m========================================================================\u001B[0m");
-                System.out.println("\u001B[32m  🎉 [SUCESSO] EXTRAÇÃO DE LEGENDAS FINALIZADA COM SUCESSO!\u001B[0m");
-                System.out.println("\u001B[32m========================================================================\u001B[0m");
-                System.out.println("\u001B[36m  • Arquivos de Vídeo Analisados : " + rel.getArquivosDetectados() + "\u001B[0m");
-                System.out.println("\u001B[32m  • Faixas Extraídas com Sucesso : " + rel.getLegendasExtraidas() + " [" + formato.name() + "]\u001B[0m");
-                if (rel.getArquivosSemLegenda() > 0) {
-                    System.out.println("\u001B[33m  • Vídeos sem Faixa " + formato.name() + "        : " + rel.getArquivosSemLegenda() + "\u001B[0m");
+                if (rel.getArquivosDetectados() == 0) {
+                    System.out.println("\n\u001B[33m========================================================================\u001B[0m");
+                    System.out.println("\u001B[33m  ⚠️ [AVISO] NENHUM ARQUIVO DE VÍDEO (.MKV) FOI ENCONTRADO!\u001B[0m");
+                    System.out.println("\u001B[33m========================================================================\u001B[0m");
+                    System.out.println("\u001B[36m  • Caminho informado : " + pathEntrada + "\u001B[0m");
+                    System.out.println("\u001B[33m  • Verifique se os arquivos de vídeo possuem extensão .mkv e estão no caminho indicado.\u001B[0m");
+                    System.out.println("\u001B[33m========================================================================\n\u001B[0m");
+                    log.warn("[AVISO] Nenhum arquivo de vídeo (.mkv) foi encontrado no caminho: {}", pathEntrada);
+                } else {
+                    System.out.println("\n\u001B[32m========================================================================\u001B[0m");
+                    System.out.println("\u001B[32m  🎉 [SUCESSO] EXTRAÇÃO DE LEGENDAS FINALIZADA COM SUCESSO!\u001B[0m");
+                    System.out.println("\u001B[32m========================================================================\u001B[0m");
+                    System.out.println("\u001B[36m  • Arquivos de Vídeo Analisados : " + rel.getArquivosDetectados() + "\u001B[0m");
+                    System.out.println("\u001B[32m  • Faixas Extraídas com Sucesso : " + rel.getLegendasExtraidas() + " [" + formato.name() + "]\u001B[0m");
+                    if (rel.getArquivosSemLegenda() > 0) {
+                        System.out.println("\u001B[33m  • Vídeos sem Faixa " + formato.name() + "        : " + rel.getArquivosSemLegenda() + "\u001B[0m");
+                    }
+                    if (rel.getFalhasInesperadas() > 0) {
+                        System.out.println("\u001B[31m  • Falhas de Processamento     : " + rel.getFalhasInesperadas() + "\u001B[0m");
+                    }
+                    System.out.println("\u001B[32m========================================================================\n\u001B[0m");
+                    log.info("[SUCESSO] Extração de legendas finalizada. Extraídas: {} de {}", rel.getLegendasExtraidas(), rel.getArquivosDetectados());
                 }
-                if (rel.getFalhasInesperadas() > 0) {
-                    System.out.println("\u001B[31m  • Falhas de Processamento     : " + rel.getFalhasInesperadas() + "\u001B[0m");
-                }
-                System.out.println("\u001B[32m========================================================================\n\u001B[0m");
-                log.info("[SUCESSO] Extração de legendas finalizada. Extraídas: {} de {}", rel.getLegendasExtraidas(), rel.getArquivosDetectados());
             } catch (Exception e) {
                 log.error("Erro na extração de legendas em background", e);
                 System.out.println("\u001B[31m[ERRO] Falha na extração: " + e.getMessage() + "\u001B[0m");

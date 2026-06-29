@@ -43,10 +43,12 @@ public class CuraTagsUseCase {
         this.gerenciadorContexto = gerenciadorContexto;
     }
 
-    public ResultadoCuraTags curarPasta(Path pastaOriginal, String contextoId) {
-        Path pastaTraduzida = pastaOriginal.resolve("traducao_ptbr");
+    public ResultadoCuraTags curarPasta(Path pastaBase, String contextoId) {
+        return curarPasta(pastaBase, pastaBase, contextoId);
+    }
 
-        if (!Files.exists(pastaOriginal) || !Files.exists(pastaTraduzida)) {
+    public ResultadoCuraTags curarPasta(Path pastaOriginal, Path pastaTraduzida, String contextoId) {
+        if (!Files.isDirectory(pastaOriginal) || !Files.isDirectory(pastaTraduzida)) {
             String msg = "Pastas não encontradas — esperava " + pastaOriginal + " e " + pastaTraduzida;
             System.out.println(AnsiCores.YELLOW + msg + AnsiCores.RESET);
             return new ResultadoCuraTags(0, 0, 0, 0, 1, List.of(msg));
@@ -55,7 +57,8 @@ public class CuraTagsUseCase {
         boolean llmHabilitado = aplicarContextoLlm(contextoId);
 
         System.out.println(AnsiCores.CYAN + "\n=== Iniciando Cura de Tags de Legendas ===" + AnsiCores.RESET);
-        System.out.println("Diretório: " + pastaOriginal.getFileName());
+        System.out.println("Pasta original (en): " + pastaOriginal);
+        System.out.println("Pasta traduzida (pt-br): " + pastaTraduzida);
         if (llmHabilitado) {
             System.out.println(AnsiCores.CYAN + "Correção de tradução via LLM ativa (contexto: "
                 + gerenciadorContexto.obterNomeContextoAtivo() + ")" + AnsiCores.RESET);

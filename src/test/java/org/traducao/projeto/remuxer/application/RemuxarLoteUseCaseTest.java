@@ -62,6 +62,7 @@ class RemuxarLoteUseCaseTest {
         Path pastaVideos = criarPasta(tempDir, "videos");
         Path pastaLegendas = criarPasta(tempDir, "legendas");
         Files.writeString(pastaVideos.resolve("ep01.mkv"), "video original");
+        Files.writeString(pastaLegendas.resolve("ep01_PTBR.ass"), "legenda valida");
         Path caminhoSaida = pastaVideos.resolve("mkv_final_ptbr").resolve("ep01_PTBR.mkv");
         RemuxTarefa tarefa = new RemuxTarefa("ep01.mkv", pastaVideos.resolve("ep01.mkv"),
             pastaLegendas.resolve("ep01_PTBR.ass"), caminhoSaida);
@@ -86,6 +87,7 @@ class RemuxarLoteUseCaseTest {
         Path pastaVideos = criarPasta(tempDir, "videos");
         Path pastaLegendas = criarPasta(tempDir, "legendas");
         Files.writeString(pastaVideos.resolve("ep01.mkv"), "video");
+        Files.writeString(pastaLegendas.resolve("ep01_PTBR.ass"), "legenda valida");
         RemuxTarefa tarefa = new RemuxTarefa("ep01.mkv", pastaVideos.resolve("ep01.mkv"),
             pastaLegendas.resolve("ep01_PTBR.ass"), pastaVideos.resolve("mkv_final_ptbr/ep01_PTBR.mkv"));
         when(mapeadorMidiaService.construirFilaProcessamento(any(), any(), any())).thenReturn(List.of(tarefa));
@@ -102,6 +104,7 @@ class RemuxarLoteUseCaseTest {
         Path pastaVideos = criarPasta(tempDir, "videos");
         Path pastaLegendas = criarPasta(tempDir, "legendas");
         Files.writeString(pastaVideos.resolve("ep01.mkv"), "video");
+        Files.writeString(pastaLegendas.resolve("ep01_PTBR.ass"), "legenda valida");
         RemuxTarefa tarefa = new RemuxTarefa("ep01.mkv", pastaVideos.resolve("ep01.mkv"),
             pastaLegendas.resolve("ep01_PTBR.ass"), pastaVideos.resolve("mkv_final_ptbr/ep01_PTBR.mkv"));
         when(mapeadorMidiaService.construirFilaProcessamento(any(), any(), any())).thenReturn(List.of(tarefa));

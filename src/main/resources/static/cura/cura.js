@@ -2,28 +2,30 @@ import { logNoConsole, mostrarAlerta } from '../js/app.js';
 
 export function initCura() {
     const btnIniciarCura = document.getElementById('btn-iniciar-cura');
-    const inputEntrada = document.getElementById('cura-entrada');
+    const inputOriginal = document.getElementById('cura-entrada-original');
+    const inputTraduzida = document.getElementById('cura-entrada-traduzida');
     const selectContexto = document.getElementById('cura-contexto');
 
-    if (!btnIniciarCura || !inputEntrada) return;
+    if (!btnIniciarCura || !inputOriginal || !inputTraduzida) return;
 
     btnIniciarCura.addEventListener('click', async () => {
-        const diretorio = inputEntrada.value.trim();
-        if (!diretorio) {
-            mostrarAlerta('Informe a pasta do anime primeiro!', 'erro');
+        const diretorioOriginal = inputOriginal.value.trim();
+        const diretorioTraduzido = inputTraduzida.value.trim();
+        if (!diretorioOriginal || !diretorioTraduzido) {
+            mostrarAlerta('Informe as pastas com as legendas originais e traduzidas!', 'erro');
             return;
         }
 
         const contextoId = selectContexto ? selectContexto.value : '';
 
-        logNoConsole('console-cura', `Iniciando cura estrutural de tags para: ${diretorio}`, 'info');
+        logNoConsole('console-cura', `Iniciando cura estrutural de tags. Original: ${diretorioOriginal} | Traduzida: ${diretorioTraduzido}`, 'info');
         if (contextoId) {
             logNoConsole('console-cura', `Contexto LLM ativo: ${contextoId} (também corrige erros de tradução)`, 'info');
         }
         btnIniciarCura.disabled = true;
 
         try {
-            const body = { diretorio };
+            const body = { diretorioOriginal, diretorioTraduzido };
             if (contextoId) body.contextoId = contextoId;
 
             const res = await fetch('/api/cura-tags', {

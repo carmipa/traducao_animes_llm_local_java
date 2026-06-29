@@ -25,9 +25,13 @@ public class CuraTagsController {
 
     @PostMapping("/cura-tags")
     public ResponseEntity<Map<String, Object>> iniciarCuraTags(@RequestBody Map<String, String> payload) {
-        String diretorio = payload.get("diretorio");
-        if (diretorio == null || diretorio.trim().isEmpty()) {
-            return ResponseEntity.badRequest().body(Map.of("erro", "Diretório do anime não informado."));
+        String diretorioOriginal = payload.get("diretorioOriginal");
+        String diretorioTraduzido = payload.get("diretorioTraduzido");
+        if (diretorioOriginal == null || diretorioOriginal.trim().isEmpty()) {
+            return ResponseEntity.badRequest().body(Map.of("erro", "Pasta com as legendas originais (inglês) não informada."));
+        }
+        if (diretorioTraduzido == null || diretorioTraduzido.trim().isEmpty()) {
+            return ResponseEntity.badRequest().body(Map.of("erro", "Pasta com as legendas traduzidas (PT-BR) não informada."));
         }
 
         String contextoId = payload.get("contextoId");
@@ -37,8 +41,9 @@ public class CuraTagsController {
         }
 
         try {
-            Path pastaBase = Paths.get(diretorio);
-            ResultadoCuraTags resultado = curaTagsUseCase.curarPasta(pastaBase, contextoId);
+            Path pastaOriginal = Paths.get(diretorioOriginal);
+            Path pastaTraduzida = Paths.get(diretorioTraduzido);
+            ResultadoCuraTags resultado = curaTagsUseCase.curarPasta(pastaOriginal, pastaTraduzida, contextoId);
 
             String mensagem = String.format(
                 "Cura finalizada: %d curado(s), %d corrigido(s) via LLM, %d já perfeito(s), %d sem tradução pareada, %d erro(s) de %d arquivo(s).",
