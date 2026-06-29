@@ -1388,14 +1388,14 @@
   "indice" : 198,
   "estilo" : "Default",
   "original" : "Syr...",
-  "traduzido" : "Syr...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 199,
   "estilo" : "Default",
   "original" : "Bell...",
-  "traduzido" : "Bell...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1745,7 +1745,7 @@
   "indice" : 249,
   "estilo" : "Default",
   "original" : "Hup!",
-  "traduzido" : "Hup!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2221,7 +2221,7 @@
   "indice" : 321,
   "estilo" : "Next Ep",
   "original" : "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Seidr",
-  "traduzido" : "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Seidr",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

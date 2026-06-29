@@ -1,0 +1,467 @@
+{
+  "midias" : [ {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S00E02.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 97.71164894104004,
+    "duracaoSegundos" : 559.565,
+    "codecVideo" : "AV1",
+    "resolucao" : "1920x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 7485 ms)",
+      "driftRatioSegundosPorHora" : 48.1552634635834,
+      "diferencaFimSegundos" : 7.485000000000014
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E01.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 372.1925039291382,
+    "duracaoSegundos" : 1486.34,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 6.200465573152713,
+      "diferencaFimSegundos" : 2.5599999999999454
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E02.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 346.61976528167725,
+    "duracaoSegundos" : 1485.522,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 3.9307394976307566,
+      "diferencaFimSegundos" : 1.6219999999998436
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E03.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 407.1512680053711,
+    "duracaoSegundos" : 1486.004,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 3.8858576423746722,
+      "diferencaFimSegundos" : 1.6039999999998145
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E04.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 377.008207321167,
+    "duracaoSegundos" : 1500.174,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 16154 ms)",
+      "driftRatioSegundosPorHora" : 38.76510324802322,
+      "diferencaFimSegundos" : 16.153999999999996
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E05.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 348.1790761947632,
+    "duracaoSegundos" : 1486.673,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 6.303201847346548,
+      "diferencaFimSegundos" : 2.6030000000000655
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E06.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 398.94036865234375,
+    "duracaoSegundos" : 1486.022,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 3.9294169265323373,
+      "diferencaFimSegundos" : 1.6219999999998436
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E07.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 406.45040798187256,
+    "duracaoSegundos" : 1484.004,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 3.794059854285745,
+      "diferencaFimSegundos" : 1.5639999999998508
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E08.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 375.28577613830566,
+    "duracaoSegundos" : 1499.506,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 14166 ms)",
+      "driftRatioSegundosPorHora" : 34.009600495096784,
+      "diferencaFimSegundos" : 14.166000000000167
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E09.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 342.33837032318115,
+    "duracaoSegundos" : 1487.007,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 6.408308770571075,
+      "diferencaFimSegundos" : 2.647000000000162
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E10.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 417.8344964981079,
+    "duracaoSegundos" : 1485.021,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Necessita Estiramento de Tempo! (FPS Mismatch: 24.000 -> 23.976 fps)",
+      "driftRatioSegundosPorHora" : 3.7357047476094842,
+      "diferencaFimSegundos" : 1.54099999999994
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E11.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 373.52982997894287,
+    "duracaoSegundos" : 1454.971,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 11201 ms)",
+      "driftRatioSegundosPorHora" : 27.714366815558577,
+      "diferencaFimSegundos" : 11.201000000000022
+    } ]
+  }, {
+    "nomeArquivo" : "Mobile.Suit.Gundam.The.08th.MS.Team.S01E12.mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 303.3804636001587,
+    "duracaoSegundos" : 1628.635,
+    "codecVideo" : "AV1",
+    "resolucao" : "1440x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "eng",
+      "formato" : "ASS",
+      "tipo" : "ASS",
+      "veredicto" : "Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 27015 ms)",
+      "driftRatioSegundosPorHora" : 59.71503743932824,
+      "diferencaFimSegundos" : 27.0150000000001
+    } ]
+  }, {
+    "nomeArquivo" : "[Anime Land] Gekijouban Macross Delta - Gekijou no Walküre (BDRip 1080p Hi10P DTS) [04A3C229].mkv",
+    "formatoContainer" : "matroska,webm",
+    "tamanhoMB" : 9737.534958839417,
+    "duracaoSegundos" : 7196.192,
+    "codecVideo" : "H264",
+    "resolucao" : "1920x1080",
+    "fps" : 23.976023976023978,
+    "legendas" : [ {
+      "indexRelativo" : 1,
+      "idioma" : "jpn",
+      "formato" : "HDMV_PGS_SUBTITLE",
+      "tipo" : "PGS",
+      "veredicto" : "Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 24027 ms)",
+      "driftRatioSegundosPorHora" : 12.019857168902686,
+      "diferencaFimSegundos" : 24.027000000000044
+    }, {
+      "indexRelativo" : 2,
+      "idioma" : "eng",
+      "formato" : "HDMV_PGS_SUBTITLE",
+      "tipo" : "PGS",
+      "veredicto" : "Legenda Desalinhada - Possivel atraso constante! (Sugestao: Offset de 24027 ms)",
+      "driftRatioSegundosPorHora" : 12.019857168902686,
+      "diferencaFimSegundos" : 24.027000000000044
+    } ]
+  } ],
+  "traducoesLlm" : [ {
+    "nomeEpisodio" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E01_Track2.ass",
+    "modeloLlm" : "mistralai/mistral-nemo-instruct-2407",
+    "totalLinhas" : 394,
+    "falasTraduzidas" : 373,
+    "falasDoCache" : 0,
+    "tempoTotalMs" : 170957,
+    "errosOcorridos" : [ ]
+  }, {
+    "nomeEpisodio" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E02_Track2.ass",
+    "modeloLlm" : "mistralai/mistral-nemo-instruct-2407",
+    "totalLinhas" : 628,
+    "falasTraduzidas" : 613,
+    "falasDoCache" : 0,
+    "tempoTotalMs" : 266631,
+    "errosOcorridos" : [ ]
+  }, {
+    "nomeEpisodio" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E03_Track2.ass",
+    "modeloLlm" : "mistralai/mistral-nemo-instruct-2407",
+    "totalLinhas" : 693,
+    "falasTraduzidas" : 680,
+    "falasDoCache" : 0,
+    "tempoTotalMs" : 316713,
+    "errosOcorridos" : [ ]
+  }, {
+    "nomeEpisodio" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E04_Track2.ass",
+    "modeloLlm" : "mistralai/mistral-nemo-instruct-2407",
+    "totalLinhas" : 662,
+    "falasTraduzidas" : 650,
+    "falasDoCache" : 0,
+    "tempoTotalMs" : 312750,
+    "errosOcorridos" : [ ]
+  }, {
+    "nomeEpisodio" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E05_Track2.ass",
+    "modeloLlm" : "mistralai/mistral-nemo-instruct-2407",
+    "totalLinhas" : 700,
+    "falasTraduzidas" : 652,
+    "falasDoCache" : 0,
+    "tempoTotalMs" : 298264,
+    "errosOcorridos" : [ ]
+  }, {
+    "nomeEpisodio" : "Mobile.Suit.Gundam.0080.War.in.the.Pocket.S01E06_Track2.ass",
+    "modeloLlm" : "mistralai/mistral-nemo-instruct-2407",
+    "totalLinhas" : 542,
+    "falasTraduzidas" : 528,
+    "falasDoCache" : 0,
+    "tempoTotalMs" : 240675,
+    "errosOcorridos" : [ ]
+  }, {
+    "nomeEpisodio" : "Mobile.Suit.Gundam.CCA_Track2.ass",
+    "modeloLlm" : "mistralai/mistral-nemo-instruct-2407",
+    "totalLinhas" : 1928,
+    "falasTraduzidas" : 1796,
+    "falasDoCache" : 0,
+    "tempoTotalMs" : 751898,
+    "errosOcorridos" : [ ]
+  } ],
+  "operacoes" : [ {
+    "tipo" : "Revisão Legendas (.ass)",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\[Sokudo] DanMachi\\Season 05",
+    "tempoTotalMs" : 16,
+    "arquivosProcessados" : 0,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-27T23:29:48.513065800Z"
+  }, {
+    "tipo" : "Revisão Legendas (.ass)",
+    "detalhe" : "E:\\animes\\DANMACHI\\temporada_5\\legendas_extraidas_ass",
+    "tempoTotalMs" : 32959,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 108,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-27T23:39:13.451563300Z"
+  }, {
+    "tipo" : "Revisão Legendas (.ass)",
+    "detalhe" : "E:\\animes\\DANMACHI\\temporada_5\\legendas_extraidas_ass",
+    "tempoTotalMs" : 35453,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 32,
+    "itensCorrigidos" : 20,
+    "registradoEm" : "2026-06-27T23:52:48.950403100Z"
+  }, {
+    "tipo" : "Revisão Concordância (.ass LLM)",
+    "detalhe" : "E:\\animes\\DANMACHI\\temporada_5\\legendas_extraidas_ass",
+    "tempoTotalMs" : 34683,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 12,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-27T23:59:12.088727200Z"
+  }, {
+    "tipo" : "Correção Google (cache)",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\[Sokudo] DanMachi\\Season 05",
+    "tempoTotalMs" : 71,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T17:59:20.655661100Z"
+  }, {
+    "tipo" : "Revisão Gramatical (cache LLM)",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\[Sokudo] DanMachi\\Season 05",
+    "tempoTotalMs" : 32509,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 53,
+    "itensCorrigidos" : 24,
+    "registradoEm" : "2026-06-28T18:37:21.287890Z"
+  }, {
+    "tipo" : "Correção Google (cache)",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\[Sokudo] DanMachi\\Season 05",
+    "tempoTotalMs" : 39,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T18:45:08.798070100Z"
+  }, {
+    "tipo" : "Revisão Concordância (.ass LLM)",
+    "detalhe" : "E:\\animes\\DANMACHI\\temporada_5\\legendas_extraidas_ass",
+    "tempoTotalMs" : 32272,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 47,
+    "itensCorrigidos" : 22,
+    "registradoEm" : "2026-06-28T18:48:14.067612100Z"
+  }, {
+    "tipo" : "Revisão Legendas (.ass Google)",
+    "detalhe" : "E:\\animes\\DANMACHI\\temporada_5\\legendas_extraidas_ass",
+    "tempoTotalMs" : 21725,
+    "arquivosProcessados" : 15,
+    "itensDetectados" : 25,
+    "itensCorrigidos" : 5,
+    "registradoEm" : "2026-06-28T18:49:48.775720500Z"
+  }, {
+    "tipo" : "Revisão Concordância (.ass LLM)",
+    "detalhe" : "E:\\animes\\MACROSS\\Macross-Delta-br\\macross_delta\\legendas_extraidas_ass",
+    "tempoTotalMs" : 468,
+    "arquivosProcessados" : 26,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T19:19:10.626986200Z"
+  }, {
+    "tipo" : "Revisão Concordância (.ass LLM)",
+    "detalhe" : "E:\\animes\\MACROSS\\Macross-Delta-br\\macross_delta\\legendas_extraidas_ass",
+    "tempoTotalMs" : 371,
+    "arquivosProcessados" : 26,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T19:19:25.090123700Z"
+  }, {
+    "tipo" : "Revisão Concordância (.ass LLM)",
+    "detalhe" : "E:\\animes\\MACROSS\\Macross-Delta-br\\macross_delta\\legendas_extraidas_ass",
+    "tempoTotalMs" : 11308,
+    "arquivosProcessados" : 26,
+    "itensDetectados" : 24,
+    "itensCorrigidos" : 15,
+    "registradoEm" : "2026-06-28T19:25:00.055780700Z"
+  }, {
+    "tipo" : "Revisão Legendas (.ass Google)",
+    "detalhe" : "E:\\animes\\MACROSS\\Macross-Delta-br\\macross_delta\\legendas_extraidas_ass",
+    "tempoTotalMs" : 344,
+    "arquivosProcessados" : 26,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T19:25:13.794365900Z"
+  }, {
+    "tipo" : "Limpeza de Cache",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\animes\\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]",
+    "tempoTotalMs" : 74,
+    "arquivosProcessados" : 6,
+    "itensDetectados" : 2136,
+    "itensCorrigidos" : 2136,
+    "registradoEm" : "2026-06-28T19:43:28.990656300Z"
+  }, {
+    "tipo" : "Revisão Gramatical (cache LLM)",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\animes\\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]",
+    "tempoTotalMs" : 10355,
+    "arquivosProcessados" : 6,
+    "itensDetectados" : 17,
+    "itensCorrigidos" : 10,
+    "registradoEm" : "2026-06-28T19:43:46.314959400Z"
+  }, {
+    "tipo" : "Correção Google (cache)",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\animes\\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]",
+    "tempoTotalMs" : 25,
+    "arquivosProcessados" : 6,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T19:43:51.008869200Z"
+  }, {
+    "tipo" : "Revisão Gramatical (cache LLM)",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\animes\\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]",
+    "tempoTotalMs" : 4424,
+    "arquivosProcessados" : 6,
+    "itensDetectados" : 7,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T22:55:45.984822800Z"
+  }, {
+    "tipo" : "Correção Google (cache)",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\animes\\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]",
+    "tempoTotalMs" : 16,
+    "arquivosProcessados" : 6,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T22:55:51.955360Z"
+  }, {
+    "tipo" : "Limpeza de Cache",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\animes\\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]",
+    "tempoTotalMs" : 18,
+    "arquivosProcessados" : 6,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T22:58:29.163421500Z"
+  }, {
+    "tipo" : "Limpeza de Cache",
+    "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache\\animes\\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]",
+    "tempoTotalMs" : 16,
+    "arquivosProcessados" : 6,
+    "itensDetectados" : 0,
+    "itensCorrigidos" : 0,
+    "registradoEm" : "2026-06-28T22:58:36.157724300Z"
+  } ]
+}

@@ -2,7 +2,7 @@
   "indice" : 0,
   "estilo" : "Default",
   "original" : "Caelus Hildr!",
-  "traduzido" : "Caelus Hildr!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -93,7 +93,7 @@
   "indice" : 13,
   "estilo" : "Default",
   "original" : "So get up! You are obligated to keep going!",
-  "traduzido" : "Então levante-se! Você é obrigado a continuar!",
+  "traduzido" : "Então levante-se! Você é obrigada a continuar!",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -163,7 +163,7 @@
   "indice" : 23,
   "estilo" : "Default",
   "original" : "{\\an8}Hedin.",
-  "traduzido" : "{\\an8}Hedin.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -345,14 +345,14 @@
   "indice" : 49,
   "estilo" : "Default",
   "original" : "Tch!",
-  "traduzido" : "Tch!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 50,
   "estilo" : "Default",
   "original" : "Ottarl.",
-  "traduzido" : "Ottarl.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -506,7 +506,7 @@
   "indice" : 72,
   "estilo" : "Default",
   "original" : "{\\i1}Welf...",
-  "traduzido" : "{\\i1}Welf...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -548,7 +548,7 @@
   "indice" : 78,
   "estilo" : "Default",
   "original" : "{\\an8}Oh, Asfi!",
-  "traduzido" : "{\\an8}Oh, Asfi!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1815,7 +1815,7 @@
   "indice" : 259,
   "estilo" : "Default",
   "original" : "Ais!",
-  "traduzido" : "Ais!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1962,7 +1962,7 @@
   "indice" : 280,
   "estilo" : "Default",
   "original" : "Caelus Hildr!",
-  "traduzido" : "Caelus Hildr!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2557,7 +2557,7 @@
   "indice" : 368,
   "estilo" : "Ep Title",
   "original" : "{\\an2\\shad0\\blur0.5\\pos(1645,816)\\t(3565,0,1,\\alpha&HFF&)}Bell Cranel",
-  "traduzido" : "{\\an2\\shad0\\blur0.5\\pos(1645,816)\\t(3565,0,1,\\alpha&HFF&)}Bell Cranel",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

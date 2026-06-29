@@ -429,7 +429,7 @@
   "indice" : 61,
   "estilo" : "Default",
   "original" : "Daphne!",
-  "traduzido" : "Daphne!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -450,7 +450,7 @@
   "indice" : 64,
   "estilo" : "Default",
   "original" : "Yeah, well, I'm not dead yet.",
-  "traduzido" : "Bem, eu ainda não estou morto.",
+  "traduzido" : "Bem, eu ainda não estou morta.",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1087,7 +1087,7 @@
   "indice" : 155,
   "estilo" : "Default",
   "original" : "Einherjar!",
-  "traduzido" : "Einherjar!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1213,7 +1213,7 @@
   "indice" : 173,
   "estilo" : "Default",
   "original" : "Agallis Arvesynth!",
-  "traduzido" : "Agallis Arvesynth!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1234,7 +1234,7 @@
   "indice" : 176,
   "estilo" : "Default",
   "original" : "Alise...",
-  "traduzido" : "Alise...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1794,7 +1794,7 @@
   "indice" : 256,
   "estilo" : "Default",
   "original" : "Arvelia!",
-  "traduzido" : "Arvelia!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2039,7 +2039,7 @@
   "indice" : 291,
   "estilo" : "Default",
   "original" : "Caelus Hildr!",
-  "traduzido" : "Caelus Hildr!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

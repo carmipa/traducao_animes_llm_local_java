@@ -1255,7 +1255,7 @@
   "indice" : 179,
   "estilo" : "Default",
   "original" : "Anya!",
-  "traduzido" : "Anya!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1325,7 +1325,7 @@
   "indice" : 189,
   "estilo" : "Default",
   "original" : "Anya?!",
-  "traduzido" : "Anya?!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1598,7 +1598,7 @@
   "indice" : 228,
   "estilo" : "Default",
   "original" : "Anya!",
-  "traduzido" : "Anya!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2354,7 +2354,7 @@
   "indice" : 336,
   "estilo" : "Default",
   "original" : "Huh?!",
-  "traduzido" : "Huh?!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2487,7 +2487,7 @@
   "indice" : 359,
   "estilo" : "Next Ep",
   "original" : "{\\pos(962,327)\\c&H000000&\\blur0.6}Bell Cranel",
-  "traduzido" : "{\\pos(962,327)\\c&H000000&\\blur0.6}Bell Cranel",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2501,7 +2501,7 @@
   "indice" : 361,
   "estilo" : "Next Ep",
   "original" : "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Bell Cranel",
-  "traduzido" : "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Bell Cranel",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

@@ -527,7 +527,7 @@
   "indice" : 75,
   "estilo" : "Default",
   "original" : "Huh?!",
-  "traduzido" : "Huh?!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -604,28 +604,28 @@
   "indice" : 86,
   "estilo" : "Default",
   "original" : "Vana Freya.",
-  "traduzido" : "Vana Freya.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 87,
   "estilo" : "Default",
   "original" : "Bringar.",
-  "traduzido" : "Bringar.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 88,
   "estilo" : "Default",
   "original" : "Dainsleif.",
-  "traduzido" : "Dainsleif.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 89,
   "estilo" : "Default",
   "original" : "Hildrsleif.",
-  "traduzido" : "Hildrsleif.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -751,7 +751,7 @@
   "indice" : 107,
   "estilo" : "Default",
   "original" : "Lili.",
-  "traduzido" : "Lili.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -975,7 +975,7 @@
   "indice" : 139,
   "estilo" : "Default",
   "original" : "Kazuki!",
-  "traduzido" : "Kazuki!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1080,7 +1080,7 @@
   "indice" : 154,
   "estilo" : "Default",
   "original" : "Zeo Gullveig.",
-  "traduzido" : "Zeo Gullveig.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1374,14 +1374,14 @@
   "indice" : 196,
   "estilo" : "Default",
   "original" : "Caelus Hildr!",
-  "traduzido" : "Caelus Hildr!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 197,
   "estilo" : "Default",
   "original" : "{\\i1}Hildrsleif!",
-  "traduzido" : "{\\i1}Hildrsleif!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1437,7 +1437,7 @@
   "indice" : 205,
   "estilo" : "Default",
   "original" : "Hogni?!",
-  "traduzido" : "Hogni?!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1549,7 +1549,7 @@
   "indice" : 221,
   "estilo" : "Default",
   "original" : "Dainsleif!",
-  "traduzido" : "Dainsleif!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1857,7 +1857,7 @@
   "indice" : 265,
   "estilo" : "Default",
   "original" : "I'm alone.",
-  "traduzido" : "Estou sozinho.",
+  "traduzido" : "Estou sozinha.",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1969,14 +1969,14 @@
   "indice" : 281,
   "estilo" : "Default",
   "original" : "Fire Bolt!",
-  "traduzido" : "Fire Bolt!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 282,
   "estilo" : "Default",
   "original" : "Bell...",
-  "traduzido" : "Bell...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2081,7 +2081,7 @@
   "indice" : 297,
   "estilo" : "Default",
   "original" : "Fire Bolt.",
-  "traduzido" : "Fire Bolt.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2130,7 +2130,7 @@
   "indice" : 304,
   "estilo" : "Default",
   "original" : "Hildis Vini.",
-  "traduzido" : "Hildis Vini.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2158,7 +2158,7 @@
   "indice" : 308,
   "estilo" : "Default",
   "original" : "Argo Vesta!",
-  "traduzido" : "Argo Vesta!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2256,7 +2256,7 @@
   "indice" : 322,
   "estilo" : "Default",
   "original" : "D-Daphne!",
-  "traduzido" : "D-Daphne!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2333,7 +2333,7 @@
   "indice" : 333,
   "estilo" : "Default",
   "original" : "Bell...",
-  "traduzido" : "Bell...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2347,7 +2347,7 @@
   "indice" : 335,
   "estilo" : "Default",
   "original" : "Fire Bolt!",
-  "traduzido" : "Fire Bolt!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2382,7 +2382,7 @@
   "indice" : 340,
   "estilo" : "Default",
   "original" : "Bell...",
-  "traduzido" : "Bell...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2466,7 +2466,7 @@
   "indice" : 356,
   "estilo" : "Next Ep",
   "original" : "{\\pos(962,327)\\c&H000000&\\blur0.6}Astrea Record",
-  "traduzido" : "{\\pos(962,327)\\c&H000000&\\blur0.6}Astrea Record",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2480,7 +2480,7 @@
   "indice" : 358,
   "estilo" : "Next Ep",
   "original" : "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Astrea Record",
-  "traduzido" : "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Astrea Record",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

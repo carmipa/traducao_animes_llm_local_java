@@ -72,7 +72,7 @@
   "indice" : 10,
   "estilo" : "Default",
   "original" : "Uchide no Kozuchi!",
-  "traduzido" : "Uchide no Kozuchi!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -86,7 +86,7 @@
   "indice" : 12,
   "estilo" : "Default",
   "original" : "Bell!",
-  "traduzido" : "Bell!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1241,7 +1241,7 @@
   "indice" : 177,
   "estilo" : "Default",
   "original" : "Bell!",
-  "traduzido" : "Bell!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1360,7 +1360,7 @@
   "indice" : 194,
   "estilo" : "Default",
   "original" : "Kazuki!",
-  "traduzido" : "Kazuki!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2011,7 +2011,7 @@
   "indice" : 287,
   "estilo" : "Default",
   "original" : "Anya...",
-  "traduzido" : "Anya...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2221,7 +2221,7 @@
   "indice" : 317,
   "estilo" : "Default",
   "original" : "Bell.",
-  "traduzido" : "Bell.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

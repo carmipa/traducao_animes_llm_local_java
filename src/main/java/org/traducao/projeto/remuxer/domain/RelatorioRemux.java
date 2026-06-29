@@ -12,6 +12,7 @@ public class RelatorioRemux {
     private int errosMkvmergeRuntime;
     private int errosPermissaoIo;
     private int errosInesperados;
+    private int errosLegendaInvalida;
     private long bytesMkvGeradosTotal;
     private int arquivosIgnorados;
 
@@ -41,6 +42,12 @@ public class RelatorioRemux {
     public void registrarErroRuntime() { this.errosMkvmergeRuntime++; }
     public void registrarErroIo() { this.errosPermissaoIo++; }
     public void registrarErroInesperado() { this.errosInesperados++; }
+    public void registrarErroLegendaInvalida() { this.errosLegendaInvalida++; }
+
+    /** Soma de todas as categorias de erro registradas (infra + runtime + io + inesperado + legenda inválida). */
+    public int getTotalErros() {
+        return errosInfraestrutura + errosMkvmergeRuntime + errosPermissaoIo + errosInesperados + errosLegendaInvalida;
+    }
 
     // Getters para relatório final
     public LocalDateTime getDataHoraInicio() { return dataHoraInicio; }
@@ -52,6 +59,7 @@ public class RelatorioRemux {
     public int getErrosMkvmergeRuntime() { return errosMkvmergeRuntime; }
     public int getErrosPermissaoIo() { return errosPermissaoIo; }
     public int getErrosInesperados() { return errosInesperados; }
+    public int getErrosLegendaInvalida() { return errosLegendaInvalida; }
     public long getBytesMkvGeradosTotal() { return bytesMkvGeradosTotal; }
     public int getArquivosIgnorados() { return arquivosIgnorados; }
 }

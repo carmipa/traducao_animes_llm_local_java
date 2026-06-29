@@ -1297,7 +1297,7 @@
   "indice" : 185,
   "estilo" : "Default",
   "original" : "Bell Cranel.",
-  "traduzido" : "Bell Cranel.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2025,7 +2025,7 @@
   "indice" : 289,
   "estilo" : "Default",
   "original" : "I was worried if we met up beforehand \\Nand joked around with each other like usual",
-  "traduzido" : "Eu estava preocupado se nos encontrássemos antes \\Ne brincássemos juntos como sempre",
+  "traduzido" : "Eu estava preocupada se nos encontrássemos antes \\Ne brincássemos juntas como sempre",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2564,7 +2564,7 @@
   "indice" : 366,
   "estilo" : "Default",
   "original" : "Hildrsleif...",
-  "traduzido" : "Hildrsleif...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2760,7 +2760,7 @@
   "indice" : 397,
   "estilo" : "Ep Title",
   "original" : "{\\an2\\shad0\\blur0.5\\pos(1582,831)\\t(3151,0,1,\\alpha&HFF&)}Syr",
-  "traduzido" : "{\\an2\\shad0\\blur0.5\\pos(1582,831)\\t(3151,0,1,\\alpha&HFF&)}Syr",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

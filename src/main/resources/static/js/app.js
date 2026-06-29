@@ -9,6 +9,7 @@ import { initExtracao } from '../extracao/extracao.js';
 import { initTraducao } from '../traducao/traducao.js';
 import { initCorrecao } from '../correcao/correcao.js';
 import { initRevisao } from '../revisao/revisao.js';
+import { initCura } from '../cura/cura.js';
 import { initRemuxer } from '../remuxer/remuxer.js';
 import { initMapa } from '../mapa/mapa.js';
 import { initTelemetria } from '../telemetria/telemetria.js';
@@ -39,17 +40,21 @@ const CONFIG_SECOES = {
         titulo: "6. Revisão de Legendas",
         subtitulo: "Concordância PT-BR via LLM local e correção de inglês residual via Google"
     },
+    cura: {
+        titulo: "7. Cura de Legendas",
+        subtitulo: "Saneamento estrutural de formatações complexas e reinjeção de tags originais ASS"
+    },
     remuxer: {
-        titulo: "7. Remuxer Industrial",
+        titulo: "8. Remuxer Industrial",
         subtitulo: "Junção de vídeos originais e novas legendas traduzidas em novos MKVs"
     },
     mapa: {
-        titulo: "8. Mapeamento do Projeto",
+        titulo: "9. Mapeamento do Projeto",
         subtitulo: "Auditoria de taxonomia e visualização da árvore de estrutura do código"
     },
     telemetria: {
-        titulo: "9. Painel de Telemetria",
-        subtitulo: "Métricas de tokens, velocidade, hits de cache e logs em tempo real"
+        titulo: "10. Telemetria e Analytics",
+        subtitulo: "Monitoramento em tempo real de tokens, hits de cache e vazão do LLM"
     }
 };
 
@@ -109,6 +114,7 @@ function inicializarModulos() {
     initTraducao();
     initCorrecao();
     initRevisao();
+    initCura();
     initRemuxer();
     initMapa();
     initTelemetria();
@@ -131,6 +137,7 @@ function conectarFluxoLugsSSE() {
         'traducao': 'console-traducao',
         'correcao': 'console-correcao',
         'revisao': 'console-revisao',
+        'cura': 'console-cura',
         'remuxer': 'console-remuxer'
     };
 
@@ -405,7 +412,8 @@ function inicializarMetadadosDinamicos() {
         { inputId: 'analise-entrada', selectId: 'analise-contexto', bannerId: 'meta-banner-analise' },
         { inputId: 'traducao-entrada', selectId: 'traducao-contexto', bannerId: 'meta-banner-traducao' },
         { inputId: 'correcao-entrada', selectId: 'correcao-contexto', bannerId: 'meta-banner-correcao' },
-        { inputId: 'revisao-entrada', selectId: 'revisao-contexto', bannerId: 'meta-banner-revisao' }
+        { inputId: 'revisao-entrada', selectId: 'revisao-contexto', bannerId: 'meta-banner-revisao' },
+        { inputId: 'cura-entrada', selectId: 'cura-contexto', bannerId: 'meta-banner-cura' }
     ];
 
     const atualizarItem = (item) => {
@@ -437,8 +445,8 @@ function inicializarMetadadosDinamicos() {
         }
     };
 
-    // Popula automaticamente todos os selects de contexto (análise, tradução, correção e revisão)
-    carregarContextosAuxiliares(['analise-contexto', 'traducao-contexto', 'correcao-contexto', 'revisao-contexto'], () => {
+    // Popula automaticamente todos os selects de contexto (análise, tradução, correção, revisão e cura)
+    carregarContextosAuxiliares(['analise-contexto', 'traducao-contexto', 'correcao-contexto', 'revisao-contexto', 'cura-contexto'], () => {
         mapeamentoFormularios.forEach(atualizarItem);
     });
 
@@ -479,12 +487,12 @@ async function carregarContextosAuxiliares(idsSelects, onComplete) {
         const contextos = await response.json();
         if (!Array.isArray(contextos) || contextos.length === 0) return;
 
-        const todosSelects = ['analise-contexto', 'traducao-contexto', 'correcao-contexto', 'revisao-contexto'];
+        const todosSelects = ['analise-contexto', 'traducao-contexto', 'correcao-contexto', 'revisao-contexto', 'cura-contexto'];
         todosSelects.forEach(id => {
             const select = document.getElementById(id);
             if (!select) return;
 
-            const ehAuxiliar = (id === 'analise-contexto' || id === 'correcao-contexto');
+            const ehAuxiliar = (id === 'analise-contexto' || id === 'correcao-contexto' || id === 'cura-contexto');
             select.innerHTML = '';
             
             if (ehAuxiliar) {

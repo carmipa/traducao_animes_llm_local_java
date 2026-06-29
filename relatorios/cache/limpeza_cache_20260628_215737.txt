@@ -1,0 +1,6 @@
+LIMPEZA DE CACHE
+================
+Pasta: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache
+Duração: 0s
+Arquivos de cache analisados: 44
+Falas em inglês (fallbacks) limpas: 23505

@@ -1,0 +1,7 @@
+REVISÃO GRAMATICAL DO CACHE (LLM)
+=================================
+Pasta: D:\PROJETOS-OPEN\traducao_animes_llm_local_java\cache
+Duração: 1min 25s
+Arquivos analisados: 44
+Falas com possível erro de concordância: 146
+Falas corrigidas e salvas: 71

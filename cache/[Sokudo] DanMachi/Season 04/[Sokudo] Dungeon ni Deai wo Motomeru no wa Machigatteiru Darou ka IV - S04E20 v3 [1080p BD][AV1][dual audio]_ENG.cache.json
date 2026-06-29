@@ -86,7 +86,7 @@
   "indice" : 15,
   "estilo" : "Flashback",
   "original" : "G-Goddammit!",
-  "traduzido" : "G-Goddammit!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -191,7 +191,7 @@
   "indice" : 30,
   "estilo" : "Flashback",
   "original" : "Celty... Ryana...",
-  "traduzido" : "Celty... Ryana...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -205,7 +205,7 @@
   "indice" : 32,
   "estilo" : "Flashback",
   "original" : "Marrue!",
-  "traduzido" : "Marrue!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -219,7 +219,7 @@
   "indice" : 34,
   "estilo" : "Flashback",
   "original" : "Alise...",
-  "traduzido" : "Alise...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -268,7 +268,7 @@
   "indice" : 41,
   "estilo" : "Flashback",
   "original" : "Alise...",
-  "traduzido" : "Alise...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -534,7 +534,7 @@
   "indice" : 79,
   "estilo" : "Flashback",
   "original" : "Agallis Arvesynth!",
-  "traduzido" : "Agallis Arvesynth!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -562,14 +562,14 @@
   "indice" : 83,
   "estilo" : "Flashback",
   "original" : "Arvelia!",
-  "traduzido" : "Arvelia!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 84,
   "estilo" : "Flashback",
   "original" : "Ryu...",
-  "traduzido" : "Ryu...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1136,14 +1136,14 @@
   "indice" : 165,
   "estilo" : "Flashback",
   "original" : "Ryana! Asta! Neun! Isuka! Celty!",
-  "traduzido" : "Ryana! Asta! Neun! Isuka! Celty!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 166,
   "estilo" : "Flashback",
   "original" : "Alise!",
-  "traduzido" : "Alise!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1157,7 +1157,7 @@
   "indice" : 168,
   "estilo" : "Default",
   "original" : "M-Mr. Cranel?",
-  "traduzido" : "M-Mr. Cranel?",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1458,7 +1458,7 @@
   "indice" : 211,
   "estilo" : "Default",
   "original" : "N-No... I was wrong!",
-  "traduzido" : "N-Não... Eu estava errado!",
+  "traduzido" : "N-Não... Eu estava errada!",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1612,7 +1612,7 @@
   "indice" : 233,
   "estilo" : "Default",
   "original" : "Bell!",
-  "traduzido" : "Bell!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1640,7 +1640,7 @@
   "indice" : 237,
   "estilo" : "Default",
   "original" : "Bell!",
-  "traduzido" : "Bell!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1787,7 +1787,7 @@
   "indice" : 258,
   "estilo" : "Default",
   "original" : "Bell!",
-  "traduzido" : "Bell!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2284,7 +2284,7 @@
   "indice" : 329,
   "estilo" : "ED Rom",
   "original" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}monooto hitotsu ni mo obieru no ni",
-  "traduzido" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}monooto hitotsu ni mo obieru no ni",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2298,56 +2298,56 @@
   "indice" : 331,
   "estilo" : "ED Rom",
   "original" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}ukande shimau hodo no kimi da",
-  "traduzido" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}ukande shimau hodo no kimi da",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 332,
   "estilo" : "ED Rom",
   "original" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}kazoe kirenai hodo no kirikizu ga tsuite",
-  "traduzido" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}kazoe kirenai hodo no kirikizu ga tsuite",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 333,
   "estilo" : "ED Rom",
   "original" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}toumei janaku natta garasu mitai na boku no",
-  "traduzido" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}toumei janaku natta garasu mitai na boku no",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 334,
   "estilo" : "ED Rom",
   "original" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}hetakuso na egao sae ukeirete kureta",
-  "traduzido" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}hetakuso na egao sae ukeirete kureta",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 335,
   "estilo" : "ED Rom",
   "original" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}kimi no kasa ni narou",
-  "traduzido" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}kimi no kasa ni narou",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 336,
   "estilo" : "ED Rom",
   "original" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}sono te de, sono yubi de, furete",
-  "traduzido" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}sono te de, sono yubi de, furete",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 337,
   "estilo" : "ED Rom",
   "original" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}boku no me o miteite",
-  "traduzido" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}boku no me o miteite",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 338,
   "estilo" : "ED Rom",
   "original" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}futari de kono sekai ga furutta",
-  "traduzido" : "{\\shad0.01\\1a&HFE&\\3a&HFE&\\blur4\\fad(200,200)}futari de kono sekai ga furutta",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

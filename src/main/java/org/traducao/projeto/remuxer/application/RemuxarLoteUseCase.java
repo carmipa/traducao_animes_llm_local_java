@@ -76,6 +76,16 @@ public class RemuxarLoteUseCase {
         for (RemuxTarefa tarefa : fila) {
             try {
                 log.info("Remuxando vídeo: {} (pareado com {})", tarefa.nomeVideo(), tarefa.caminhoLegenda().getFileName());
+
+                long tamanhoLegenda = Files.size(tarefa.caminhoLegenda());
+                if (tamanhoLegenda == 0) {
+                    log.error("Legenda traduzida vazia/corrompida (0 bytes), pulando remux: {}. "
+                        + "Refaça a tradução ou a cura de tags para regenerar esse arquivo antes de remuxar.",
+                        tarefa.caminhoLegenda());
+                    relatorio.registrarErroLegendaInvalida();
+                    continue;
+                }
+
                 mkvmergeAdapter.executarRemux(tarefa);
                 long bytes = Files.size(tarefa.caminhoSaida());
                 relatorio.registrarSucesso(bytes);

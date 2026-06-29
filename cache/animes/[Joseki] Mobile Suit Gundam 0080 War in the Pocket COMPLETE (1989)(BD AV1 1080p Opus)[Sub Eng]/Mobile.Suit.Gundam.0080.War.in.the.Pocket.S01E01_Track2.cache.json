@@ -9,7 +9,7 @@
   "indice" : 3,
   "estilo" : "Default",
   "original" : "{\\i1}Ready to launch.",
-  "traduzido" : "{\\i1}Ready to launch.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -44,14 +44,14 @@
   "indice" : 8,
   "estilo" : "Default",
   "original" : "{\\i1}Roger.",
-  "traduzido" : "{\\i1}Roger.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 9,
   "estilo" : "Default",
   "original" : "We're 15 minutes behind schedule. All units, increase speed to 30.",
-  "traduzido" : "We're 15 minutes behind schedule. All units, increase speed to 30.",
+  "traduzido" : "Estamos 15 minutos atrasados. Todas as unidades, aumentem a velocidade para 30.",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -65,14 +65,14 @@
   "indice" : 11,
   "estilo" : "Default",
   "original" : "{\\i1}Report says the beach'll be foggy,\\Ntemperature 12 below.",
-  "traduzido" : "{\\i1}Report says the beach'll be foggy,\\Ntemperature 12 below.",
+  "traduzido" : "{\\i1}O relatório diz que a praia estará nebulosa, \\Ntemperatura abaixo de 12 graus.",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 12,
   "estilo" : "Default",
   "original" : "{\\i1}Misha, you can warm up,\\Nbut don't go nuts with the booze.",
-  "traduzido" : "{\\i1}Misha, you can warm up,\\Nbut don't go nuts with the booze.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -86,7 +86,7 @@
   "indice" : 14,
   "estilo" : "Default",
   "original" : "It's an undersea passage. It may lead into the base.",
-  "traduzido" : "It's an undersea passage. It may lead into the base.",
+  "traduzido" : "É um túnel subaquático. Pode levar até a base.",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -107,7 +107,7 @@
   "indice" : 17,
   "estilo" : "Default",
   "original" : "{\\i1}Roger.",
-  "traduzido" : "{\\i1}Roger.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -121,7 +121,7 @@
   "indice" : 19,
   "estilo" : "Default",
   "original" : "{\\i1}Brown team, scramble to defend!",
-  "traduzido" : "{\\i1}Brown team, scramble to defend!",
+  "traduzido" : "{\\i1}Time marrom, se reúnam para defender!",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -142,7 +142,7 @@
   "indice" : 22,
   "estilo" : "Default",
   "original" : "{\\i1}You've got 5 minutes!",
-  "traduzido" : "{\\i1}You've got 5 minutes!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -163,7 +163,7 @@
   "indice" : 25,
   "estilo" : "Default",
   "original" : "{\\i1}Same story in the hangar.",
-  "traduzido" : "{\\i1}Same story in the hangar.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -184,7 +184,7 @@
   "indice" : 28,
   "estilo" : "Default",
   "original" : "{\\i1}I'm on an elevator, approaching the exit.",
-  "traduzido" : "{\\i1}I'm on an elevator, approaching the exit.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -198,7 +198,7 @@
   "indice" : 30,
   "estilo" : "Default - Alt",
   "original" : "{\\i1}Aye, sir!",
-  "traduzido" : "{\\i1}Aye, sir!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -240,7 +240,7 @@
   "indice" : 36,
   "estilo" : "Default",
   "original" : "Keep it from launching!",
-  "traduzido" : "Keep it from launching!",
+  "traduzido" : "Impedir que ele decole!",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -254,7 +254,7 @@
   "indice" : 38,
   "estilo" : "Default",
   "original" : "{\\i1}Aye, sir!",
-  "traduzido" : "{\\i1}Aye, sir!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -268,14 +268,14 @@
   "indice" : 40,
   "estilo" : "Default",
   "original" : "{\\i1}They're gonna get away!",
-  "traduzido" : "{\\i1}They're gonna get away!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 41,
   "estilo" : "Default",
   "original" : "{\\i1}Hold on, I'm coming to help you!",
-  "traduzido" : "{\\i1}Hold on, I'm coming to help you!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -303,7 +303,7 @@
   "indice" : 45,
   "estilo" : "Default",
   "original" : "Andy!",
-  "traduzido" : "Andy!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -324,7 +324,7 @@
   "indice" : 48,
   "estilo" : "Default",
   "original" : "Third time this month. I'm getting sick of it.",
-  "traduzido" : "Terceira vez este mês. Estou cansado disso.",
+  "traduzido" : "Terceira vez este mês. Estou cansada disso.",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -387,14 +387,14 @@
   "indice" : 57,
   "estilo" : "Default",
   "original" : "Tada!",
-  "traduzido" : "Tada!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 58,
   "estilo" : "Default",
   "original" : "A Federal Forces rank badge. A real one!",
-  "traduzido" : "A Federal Forces rank badge. A real one!",
+  "traduzido" : "Fita da Forca Federal. A verdadeira!",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -450,7 +450,7 @@
   "indice" : 66,
   "estilo" : "Default",
   "original" : "The Federation doesn't even {\\i1}have{\\i0} any mobile suits!",
-  "traduzido" : "The Federation doesn't even {\\i1}have{\\i0} any mobile suits!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -478,7 +478,7 @@
   "indice" : 70,
   "estilo" : "Default",
   "original" : "They do {\\i1}not{\\i0} have mobile suits!",
-  "traduzido" : "They do {\\i1}not{\\i0} have mobile suits!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -548,7 +548,7 @@
   "indice" : 80,
   "estilo" : "Default",
   "original" : "Proof?",
-  "traduzido" : "Proof?",
+  "traduzido" : "Prova?",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -807,14 +807,14 @@
   "indice" : 117,
   "estilo" : "Default",
   "original" : "So-so.",
-  "traduzido" : "So-so.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 118,
   "estilo" : "Default",
   "original" : "So-so?",
-  "traduzido" : "So-so?",
+  "traduzido" : "Estou bem.",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -842,7 +842,7 @@
   "indice" : 122,
   "estilo" : "Default",
   "original" : "So-so.",
-  "traduzido" : "So-so.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -912,7 +912,7 @@
   "indice" : 132,
   "estilo" : "Default",
   "original" : "You aren't hurt, are you?",
-  "traduzido" : "Não está ferido, né?",
+  "traduzido" : "Não está ferida, né?",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1087,7 +1087,7 @@
   "indice" : 157,
   "estilo" : "Default",
   "original" : "I was worried you'd gotten into an accident or something!",
-  "traduzido" : "Fiquei preocupado que você tivesse sofrido um acidente ou algo assim!",
+  "traduzido" : "Fiquei preocupada que você tivesse sofrido um acidente ou algo assim!",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1150,14 +1150,14 @@
   "indice" : 166,
   "estilo" : "Default",
   "original" : "Well, if you get hungry later on,\\Ndon't come running to me!",
-  "traduzido" : "Well, if you get hungry later on,\\Ndon't come running to me!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 167,
   "estilo" : "Default",
   "original" : "Al?",
-  "traduzido" : "Al?",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1269,14 +1269,14 @@
   "indice" : 183,
   "estilo" : "Default",
   "original" : "Bang!",
-  "traduzido" : "Bang!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 184,
   "estilo" : "Default",
   "original" : "Hey, candid cameraman!\\NHow are you feeling this morning?",
-  "traduzido" : "Hey, candid cameraman!\\NHow are you feeling this morning?",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1346,7 +1346,7 @@
   "indice" : 194,
   "estilo" : "Default",
   "original" : "{\\i1}And{\\i0} I have to go there for a whole 'nother year!",
-  "traduzido" : "{\\i1}And{\\i0} I have to go there for a whole 'nother year!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1500,7 +1500,7 @@
   "indice" : 216,
   "estilo" : "Default",
   "original" : "A Zaku! It's hit.",
-  "traduzido" : "A Zaku! It's hit.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1577,7 +1577,7 @@
   "indice" : 227,
   "estilo" : "Default",
   "original" : "Receiver's credentials?",
-  "traduzido" : "Receiver's credentials?",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1640,7 +1640,7 @@
   "indice" : 238,
   "estilo" : "OP",
   "original" : "Since I can believe that I can become the wind someday",
-  "traduzido" : "Since I can believe that I can become the wind someday",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1703,1022 +1703,28 @@
   "indice" : 250,
   "estilo" : "OP",
   "original" : "Back when I believed in everything",
-  "traduzido" : "Back when I believed in everything",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 252,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H051718&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H051718&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 253,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H1E4047&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H1E4047&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 254,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H3F5A64&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H3F5A64&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 255,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H516771&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H516771&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 256,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H5C7981&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H5C7981&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 257,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H748A95&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H748A95&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 258,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H7B919B&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H7B919B&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 259,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H859AA4&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H859AA4&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 260,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H8DA1AB&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H8DA1AB&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 261,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H93AAB5&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H93AAB5&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 262,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H9CAFBA&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H9CAFBA&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 263,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HA5B6C1&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HA5B6C1&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 264,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HAEBCC4&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HAEBCC4&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 265,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HB7C4CC&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HB7C4CC&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 266,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HC0CAD1&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HC0CAD1&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 267,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HCBD1D6&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HCBD1D6&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 268,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HD8DBDF&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HD8DBDF&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 269,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&HB0&\\c&HD8DBDF&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&HB0&\\c&HD8DBDF&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 270,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HE4E4E5&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HE4E4E5&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 271,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HE4E4E5&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HE4E4E5&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 272,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HE1E4E5&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HE1E4E5&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 273,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HD4DCDC&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HD4DCDC&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 274,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HCDD5D7&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HCDD5D7&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 275,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HC5CED2&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HC5CED2&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 276,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HB6C4CB&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HB6C4CB&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 277,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HB4C0C7&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HB4C0C7&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 278,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HAEBCC5&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HAEBCC5&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 279,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HA9BAC2&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HA9BAC2&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 280,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HA3B4BD&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HA3B4BD&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 281,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H9CAEB8&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H9CAEB8&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 282,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H97A8B3&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H97A8B3&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 283,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H8DA2AD&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H8DA2AD&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 284,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H859CA7&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H859CA7&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 285,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H7E969F&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H7E969F&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 286,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H7B929C&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H7B929C&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 287,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H718A93&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H718A93&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 288,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H6A818B&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H6A818B&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 289,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H5B7780&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H5B7780&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 290,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H506B76&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H506B76&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 291,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H445B66&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H445B66&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 292,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H2A4A55&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H2A4A55&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 293,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H1C3944&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H1C3944&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 294,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H0A2229&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H0A2229&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 295,
-  "estilo" : "Signs",
-  "original" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H030E12&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&H030E12&\\pos(703.333,469.334)}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
+  "traduzido" : "Quando ainda acreditava em tudo",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 296,
   "estilo" : "Signs",
   "original" : "{=0}{\\fad(485,485)\\alpha&H00&\\fs90\\fscx86\\fnQuadraat-Bold\\c&HE7E6E5&\\blur1.05\\pos(720.273,526.47)}How Many Miles to the Battlefield?",
-  "traduzido" : "{=0}{\\fad(485,485)\\alpha&H00&\\fs90\\fscx86\\fnQuadraat-Bold\\c&HE7E6E5&\\blur1.05\\pos(720.273,526.47)}How Many Miles to the Battlefield?",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 297,
-  "estilo" : "Signs",
-  "original" : "{=0}{\\pos(0,0)\\an7\\p1\\c&H000000&}m 127.5 382.5 l 118.5 670.5 1308 694.5 1290 426",
-  "traduzido" : "{=0}{\\pos(0,0)\\an7\\p1\\c&H000000&}m 127.5 382.5 l 118.5 670.5 1308 694.5 1290 426",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 298,
   "estilo" : "Signs",
   "original" : "{=0}{\\fad(485,485)\\alpha&H00&\\fs90\\fscx86\\fnQuadraat-Bold\\c&HE7E6E5&\\blur1.5\\pos(720.273,526.47)}How Many Miles to the Battlefield?",
-  "traduzido" : "{=0}{\\fad(485,485)\\alpha&H00&\\fs90\\fscx86\\fnQuadraat-Bold\\c&HE7E6E5&\\blur1.5\\pos(720.273,526.47)}How Many Miles to the Battlefield?",
+  "traduzido" : "{=0}{\\fad(485,485)\\alpha&H00&\\fs90\\fscx86\\fnQuadraat-Bold\\c&HE7E6E5&\\blur1.5\\pos(720.273,526.47)}Até quando para o campo de batalha?",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 299,
   "estilo" : "Signs",
   "original" : "{\\fnQuadraat-Bold\\blur1.5\\fs135\\c&HEAE7E5&\\pos(718.774,548.571)}NEXT\\NEPISODE",
-  "traduzido" : "{\\fnQuadraat-Bold\\blur1.5\\fs135\\c&HEAE7E5&\\pos(718.774,548.571)}NEXT\\NEPISODE",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 300,
-  "estilo" : "Signs",
-  "original" : "{\\pos(0,0)\\an7\\p1\\c&H000000&}m 348 328.5 l 346.5 718.5 1167 742.5 1126.5 384",
-  "traduzido" : "{\\pos(0,0)\\an7\\p1\\c&H000000&}m 348 328.5 l 346.5 718.5 1167 742.5 1126.5 384",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 301,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.35,479.625)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.35,479.625)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 302,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.395,479.67)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.395,479.67)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 303,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.155,479.61)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.155,479.61)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 304,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.35,479.61)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.35,479.61)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 305,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.395,479.67)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.395,479.67)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 306,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.35,479.67)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.35,479.67)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 307,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.305,479.58)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.305,479.58)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 308,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.17,479.565)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.17,479.565)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 309,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.155,479.475)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.155,479.475)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 310,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.32,479.46)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.32,479.46)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 311,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.32,479.37)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.32,479.37)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 312,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.155,479.475)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.155,479.475)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 313,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.02,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.02,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 314,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.065,479.43)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.065,479.43)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 315,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.05,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.05,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 316,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.08,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.08,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 317,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.08,479.37)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.08,479.37)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 318,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.08,479.415)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.08,479.415)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 319,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.065,479.385)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.065,479.385)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 320,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.185,479.31)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.185,479.31)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 321,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.155,479.385)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.155,479.385)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 322,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.08,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.08,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 323,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.46)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.46)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 324,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.96,479.385)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.96,479.385)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 325,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.37)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.37)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 326,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.355)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.355)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 327,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.325)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.325)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 328,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.25)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.25)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 329,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.02,479.235)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.02,479.235)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 330,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.02,479.22)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.02,479.22)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 331,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.9,479.235)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.9,479.235)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 332,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.99,479.19)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.99,479.19)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 333,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.93,479.22)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.93,479.22)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 334,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.205)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.205)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 335,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.975,479.16)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.975,479.16)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 336,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.05,479.04)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.05,479.04)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 337,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.065,478.95)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.065,478.95)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 338,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.05,479.1)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.05,479.1)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 339,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.035,479.085)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.035,479.085)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 340,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.08,479.145)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.08,479.145)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 341,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.265)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(715.005,479.265)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 342,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.975,479.25)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.975,479.25)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 343,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.9,479.16)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.9,479.16)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 344,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.84,479.04)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.84,479.04)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 345,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.675,479.07)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.675,479.07)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 346,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.72,479.13)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.72,479.13)\\frz-0.3}GUERRA NAS {\\fsp-3}ENTULHAS {\\fsp-6}DO BOLSO",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 347,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.66,479.1)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.66,479.1)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 348,
-  "estilo" : "Signs",
-  "original" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.885,479.175)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=3}{\\alpha&H00&\\fnFlightcase\\fsp-15\\fs135\\blur0.75\\c&HEEE4E3&\\pos(714.885,479.175)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 349,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.35,479.625)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.35,479.625)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 350,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.395,479.67)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.395,479.67)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 351,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.155,479.61)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.155,479.61)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 352,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.35,479.61)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.35,479.61)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 353,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.395,479.67)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.395,479.67)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 354,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.35,479.67)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.35,479.67)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 355,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.305,479.58)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.305,479.58)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 356,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.17,479.565)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.17,479.565)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 357,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.155,479.475)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.155,479.475)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 358,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.32,479.46)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.32,479.46)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 359,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.32,479.37)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.32,479.37)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 360,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.155,479.475)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.155,479.475)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 361,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.02,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.02,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 362,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.065,479.43)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.065,479.43)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 363,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.05,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.05,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 364,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.08,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.08,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 365,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.08,479.37)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.08,479.37)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 366,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.08,479.415)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.08,479.415)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 367,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.065,479.385)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.065,479.385)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 368,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.185,479.31)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.185,479.31)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 369,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.155,479.385)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.155,479.385)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 370,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.08,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.08,479.445)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 371,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.46)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.46)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 372,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.96,479.385)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.96,479.385)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 373,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.37)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.37)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 374,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.355)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.355)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 375,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.325)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.325)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 376,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.25)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.25)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 377,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.02,479.235)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.02,479.235)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 378,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.02,479.22)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.02,479.22)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 379,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.9,479.235)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.9,479.235)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 380,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.99,479.19)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.99,479.19)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 381,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.93,479.22)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.93,479.22)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 382,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.205)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.205)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 383,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.975,479.16)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.975,479.16)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 384,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.05,479.04)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.05,479.04)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 385,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.065,478.95)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.065,478.95)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 386,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.05,479.1)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.05,479.1)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 387,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.035,479.085)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.035,479.085)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 388,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.08,479.145)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.08,479.145)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 389,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.265)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(715.005,479.265)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 390,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.975,479.25)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.975,479.25)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 391,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.9,479.16)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.9,479.16)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 392,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.84,479.04)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.84,479.04)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 393,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.675,479.07)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.675,479.07)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 394,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.72,479.13)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.72,479.13)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 395,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.66,479.1)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.66,479.1)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 396,
-  "estilo" : "Signs",
-  "original" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.885,479.175)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
-  "traduzido" : "{=2}{\\fnFlightcase\\fsp-15\\fs135\\blur1.5\\alpha&H90&\\c&HEEE5E2&\\pos(714.885,479.175)\\frz-0.3}W{\\fsp-3}AR IN {\\fsp-6}THE POCKET",
+  "traduzido" : "{\\fnQuadraat-Bold\\blur1.5\\fs135\\c&HEAE7E5&\\pos(718.774,548.571)}PRÓXIMO\\NEPISÓDIO",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2733,13 +1739,6 @@
   "estilo" : "Signs",
   "original" : "{\\fs105\\fnQuadraat-Bold\\blur1.05\\c&HE6E6E6&\\pos(728.351,514.071)}Reflections in a Brown Eye",
   "traduzido" : "{\\fs105\\fnQuadraat-Bold\\blur1.05\\c&HE6E6E6&\\pos(728.351,514.071)}Reflexos em um Olho Castanho",
-  "idiomaOriginal" : "en",
-  "idiomaTraduzido" : "pt-br"
-}, {
-  "indice" : 399,
-  "estilo" : "Signs",
-  "original" : "{\\pos(0,0)\\an7\\p1\\c&H010101&}m 156 142.5 l 162 648 1288.5 618 1303.5 144",
-  "traduzido" : "{\\pos(0,0)\\an7\\p1\\c&H010101&}m 156 142.5 l 162 648 1288.5 618 1303.5 144",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

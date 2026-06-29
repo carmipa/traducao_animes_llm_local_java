@@ -50,17 +50,21 @@
                     <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path><line x1="9" y1="11" x2="13" y2="11"></line></svg>
                     <span>6. Revisão de Legendas</span>
                 </button>
+                <button class="nav-item" data-target="cura" id="btn-menu-cura" data-tooltip="Corrija falhas estruturais nas formatações e tags do ASS causadas por LLMs.">
+                    <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    <span>7. Cura de Legendas</span>
+                </button>
                 <button class="nav-item" data-target="remuxer" id="btn-menu-remuxer" data-tooltip="Recombine vídeos originais e as legendas traduzidas.">
                     <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
-                    <span>7. Remuxer</span>
+                    <span>8. Remuxer</span>
                 </button>
                 <button class="nav-item" data-target="mapa" id="btn-menu-mapa" data-tooltip="Exiba a árvore estrutural e taxonomia do código Java.">
                     <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                    <span>8. Mapa do Projeto</span>
+                    <span>9. Mapa do Projeto</span>
                 </button>
                 <button class="nav-item" data-target="telemetria" id="btn-menu-telemetria" data-tooltip="Monitore hits de cache, tokens e logs em tempo real.">
                     <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-                    <span>9. Telemetria</span>
+                    <span>10. Telemetria</span>
                 </button>
             </nav>
             
@@ -506,7 +510,55 @@
                     </div>
                 </div>
 
-                <!-- 7. PAINEL DE REMUXER -->
+                <!-- 7. PAINEL DE CURA DE LEGENDAS -->
+                <div class="panel" id="panel-cura">
+                    <div class="glass-card">
+                        <h2>Cura Estrutural de Tags ASS</h2>
+                        <p class="card-desc">Saneamento estrutural de formatações complexas que o LLM pode ter quebrado, projetando as formatações originais da legenda base no texto traduzido.</p>
+                        
+                        <div class="anime-meta-banner hidden" id="meta-banner-cura"></div>
+
+                        <form id="form-cura" class="standard-form">
+                            <div class="form-group">
+                                <label for="cura-entrada">Pasta com legendas ORIGINAIS (.ass): <span class="help-icon" data-tooltip="A cura lê a subpasta traducao_ptbr dentro desta pasta (criada automaticamente pelo Tradutor) e corrige as tags ASS lá.">?</span></label>
+                                <input type="text" id="cura-entrada" name="entrada" autocomplete="off" spellcheck="false" placeholder="Ex: E:\animes\DANMACHI\temporada_4\legendas_extraidas_ass" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cura-contexto">Obra / Contexto (Opcional): <span class="help-icon" data-tooltip="Selecione a obra para exibir dados e capa do anime.">?</span></label>
+                                <select id="cura-contexto">
+                                    <option value="" disabled selected>Carregando contextos...</option>
+                                </select>
+                            </div>
+
+                            <div class="cura-actions" style="display: flex; gap: 15px; margin-top: 20px;">
+                                <button type="button" class="btn btn-primary btn-green" id="btn-iniciar-cura" data-tooltip="Inicia a varredura corretiva e reinjeção de tags em todos os episódios do anime selecionado.">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                    <span>Iniciar Cura de Tags</span>
+                                </button>
+                                
+                                <button type="button" class="btn btn-secondary btn-clear-form" data-form="form-cura" data-tooltip="Limpa todos os campos e oculta o cartão do anime">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                                    <span>Limpar Campos</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="glass-card console-card">
+                        <div class="console-header">
+                            <h3>Logs de Cura Estrutural</h3>
+                            <div class="console-actions">
+                                <button class="btn-toggle-console" data-target="console-cura" data-tooltip="Alternar altura expandida do console">↕ Expandir</button>
+                                <button class="btn-clear-console" data-target="console-cura">Limpar</button>
+                            </div>
+                        </div>
+                        <div class="console-body" id="console-cura">
+                            <div class="system-message">Aguardando execução...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. PAINEL DE REMUXER -->
                 <div class="panel" id="panel-remuxer">
                     <div class="glass-card">
                         <h2>Remuxer Industrial</h2>

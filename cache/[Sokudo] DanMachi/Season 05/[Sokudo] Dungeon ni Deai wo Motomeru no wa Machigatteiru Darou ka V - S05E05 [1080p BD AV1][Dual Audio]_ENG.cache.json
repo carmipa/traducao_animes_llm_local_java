@@ -989,7 +989,7 @@
   "indice" : 141,
   "estilo" : "Default",
   "original" : "Bell!",
-  "traduzido" : "Bell!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1010,7 +1010,7 @@
   "indice" : 144,
   "estilo" : "Default",
   "original" : "Freya...",
-  "traduzido" : "Freya...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1738,7 +1738,7 @@
   "indice" : 248,
   "estilo" : "Default",
   "original" : "Hestia!",
-  "traduzido" : "Hestia!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1815,7 +1815,7 @@
   "indice" : 259,
   "estilo" : "Default",
   "original" : "Wash that filthy face of yours immediately.",
-  "traduzido" : "Lave essa cara suja imediatamente.",
+  "traduzido" : "Lave essa face suja imediatamente.",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2627,7 +2627,7 @@
   "indice" : 379,
   "estilo" : "Next Ep",
   "original" : "{\\pos(962,327)\\c&H000000&\\blur0.6}Orario",
-  "traduzido" : "{\\pos(962,327)\\c&H000000&\\blur0.6}Orario",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2641,7 +2641,7 @@
   "indice" : 381,
   "estilo" : "Next Ep",
   "original" : "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Orario",
-  "traduzido" : "{\\pos(962,327)\\bord0\\shad0\\blur0.5}Orario",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

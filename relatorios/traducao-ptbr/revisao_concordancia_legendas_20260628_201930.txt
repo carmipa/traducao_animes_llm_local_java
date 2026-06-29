@@ -1,0 +1,9 @@
+REVISÃO DE CONCORDÂNCIA PT-BR (.ass via LLM)
+============================================
+Pasta: C:\animes\[Joseki] Mobile Suit Gundam 0080 War in the Pocket COMPLETE (1989)(BD AV1 1080p Opus)[Sub Eng]\traducao-ptbr
+Duração: 19min 19s
+Arquivos analisados: 6
+Falas auditadas: 3650
+Falas sem original EN (ignoradas): 31
+Problemas detectados: 2042
+Falas corrigidas via LLM: 889

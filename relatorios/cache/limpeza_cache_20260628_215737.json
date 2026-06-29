@@ -1,0 +1,9 @@
+{
+  "tipo" : "Limpeza de Cache",
+  "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache",
+  "tempoTotalMs" : 285,
+  "arquivosProcessados" : 44,
+  "itensDetectados" : 23505,
+  "itensCorrigidos" : 23505,
+  "registradoEm" : "2026-06-29T00:57:37.329384200Z"
+}

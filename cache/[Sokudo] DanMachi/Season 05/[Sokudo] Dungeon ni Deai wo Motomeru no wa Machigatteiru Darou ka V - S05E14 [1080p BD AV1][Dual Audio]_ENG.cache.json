@@ -79,7 +79,7 @@
   "indice" : 15,
   "estilo" : "Default",
   "original" : "Hedin!",
-  "traduzido" : "Hedin!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -450,7 +450,7 @@
   "indice" : 68,
   "estilo" : "Default",
   "original" : "Anya!",
-  "traduzido" : "Anya!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -751,7 +751,7 @@
   "indice" : 111,
   "estilo" : "Default",
   "original" : "Mama Mia!",
-  "traduzido" : "Mama Mia!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -765,7 +765,7 @@
   "indice" : 113,
   "estilo" : "Default",
   "original" : "Hildis Vini.",
-  "traduzido" : "Hildis Vini.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1108,7 +1108,7 @@
   "indice" : 162,
   "estilo" : "Default",
   "original" : "Mia.",
-  "traduzido" : "Mia.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1178,7 +1178,7 @@
   "indice" : 172,
   "estilo" : "Flashback",
   "original" : "Ottarl.",
-  "traduzido" : "Ottarl.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1311,7 +1311,7 @@
   "indice" : 191,
   "estilo" : "Default",
   "original" : "Agallis Arvesynth!",
-  "traduzido" : "Agallis Arvesynth!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1325,7 +1325,7 @@
   "indice" : 193,
   "estilo" : "Default",
   "original" : "Solia!",
-  "traduzido" : "Solia!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1339,7 +1339,7 @@
   "indice" : 195,
   "estilo" : "Default",
   "original" : "Sjau!",
-  "traduzido" : "Sjau!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1402,7 +1402,7 @@
   "indice" : 204,
   "estilo" : "Default",
   "original" : "Tsk.",
-  "traduzido" : "Tsk.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1521,7 +1521,7 @@
   "indice" : 221,
   "estilo" : "Default",
   "original" : "Thanks for proving my point.",
-  "traduzido" : "Obrigado por provar meu ponto.",
+  "traduzido" : "Muito obrigada por provar meu ponto.",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1675,7 +1675,7 @@
   "indice" : 243,
   "estilo" : "Default",
   "original" : "Allen.",
-  "traduzido" : "Allen.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1913,7 +1913,7 @@
   "indice" : 277,
   "estilo" : "Default",
   "original" : "Gralineze Fromel!",
-  "traduzido" : "Gralineze Fromel!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1962,7 +1962,7 @@
   "indice" : 284,
   "estilo" : "Default",
   "original" : "Gokoh!",
-  "traduzido" : "Gokoh!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1976,7 +1976,7 @@
   "indice" : 286,
   "estilo" : "Default",
   "original" : "Caelus Hildr!",
-  "traduzido" : "Caelus Hildr!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2032,7 +2032,7 @@
   "indice" : 294,
   "estilo" : "Default",
   "original" : "Hedin.",
-  "traduzido" : "Hedin.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2340,7 +2340,7 @@
   "indice" : 341,
   "estilo" : "Ep Title",
   "original" : "{\\an2\\t(3899,0,1,\\alpha&HFF&)\\pos(1472,816)}Einherjar",
-  "traduzido" : "{\\an2\\t(3899,0,1,\\alpha&HFF&)\\pos(1472,816)}Einherjar",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

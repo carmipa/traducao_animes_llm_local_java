@@ -1073,7 +1073,7 @@
   "indice" : 153,
   "estilo" : "Default",
   "original" : "Vana Seith.",
-  "traduzido" : "Vana Seith.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1290,7 +1290,7 @@
   "indice" : 184,
   "estilo" : "Default",
   "original" : "Bell...",
-  "traduzido" : "Bell...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -1542,7 +1542,7 @@
   "indice" : 220,
   "estilo" : "Default",
   "original" : "I'm done playing pretend.",
-  "traduzido" : "Estou cansado de brincar de faz de conta.",
+  "traduzido" : "Estou cansada de brincar de faz de conta.",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2375,7 +2375,7 @@
   "indice" : 339,
   "estilo" : "Default",
   "original" : "I'm ready to bust some damn heads!",
-  "traduzido" : "Estou pronto para partir alguns crânios!",
+  "traduzido" : "Estou pronta para partir alguns crânios!",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2627,7 +2627,7 @@
   "indice" : 375,
   "estilo" : "Default",
   "original" : "Hestia.",
-  "traduzido" : "Hestia.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2648,7 +2648,7 @@
   "indice" : 380,
   "estilo" : "Ep Title",
   "original" : "{\\shad0\\blur0.5\\pos(1520,816)\\t(3700,0,1,\\alpha&HFF&)}Vesta",
-  "traduzido" : "{\\shad0\\blur0.5\\pos(1520,816)\\t(3700,0,1,\\alpha&HFF&)}Vesta",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

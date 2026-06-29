@@ -1654,21 +1654,21 @@
   "indice" : 236,
   "estilo" : "Default",
   "original" : "Chloe...",
-  "traduzido" : "Chloe...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 237,
   "estilo" : "Default",
   "original" : "Lunor...",
-  "traduzido" : "Lunor...",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
   "indice" : 238,
   "estilo" : "Default",
   "original" : "Ryu!",
-  "traduzido" : "Ryu!",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2165,7 +2165,7 @@
   "indice" : 309,
   "estilo" : "Flashback",
   "original" : "Syr.",
-  "traduzido" : "Syr.",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {
@@ -2697,7 +2697,7 @@
   "indice" : 386,
   "estilo" : "Ep Title",
   "original" : "{\\an2\\shad0\\blur0.5\\pos(1609,819)\\t(3606,0,1,\\alpha&HFF&)}Seidr",
-  "traduzido" : "{\\an2\\shad0\\blur0.5\\pos(1609,819)\\t(3606,0,1,\\alpha&HFF&)}Seidr",
+  "traduzido" : "",
   "idiomaOriginal" : "en",
   "idiomaTraduzido" : "pt-br"
 }, {

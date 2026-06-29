@@ -15,6 +15,7 @@ import org.traducao.projeto.raspagemRevisao.application.ResultadoRevisaoLegendas
 import org.traducao.projeto.raspagemRevisao.application.RevisarCacheUseCase;
 import org.traducao.projeto.raspagemRevisao.application.RevisarLegendasUseCase;
 import org.traducao.projeto.remuxer.application.RemuxarLoteUseCase;
+import org.traducao.projeto.remuxer.domain.RelatorioRemux;
 import org.traducao.projeto.telemetria.TelemetriaResumo;
 import org.traducao.projeto.telemetria.TelemetriaService;
 import org.traducao.projeto.traducao.application.ProcessarArquivoUseCase;
@@ -23,6 +24,7 @@ import org.traducao.projeto.traducao.domain.exceptions.TradutorException;
 import org.traducao.projeto.traducao.domain.ports.MistralPort;
 import org.traducao.projeto.traducao.infrastructure.config.TradutorProperties;
 import org.traducao.projeto.traducao.infrastructure.contexto.GerenciadorContexto;
+import org.traducao.projeto.traducao.presentation.ui.AnsiCores;
 import org.traducao.projeto.traducao.presentation.ui.PastasExecucao;
 import org.traducao.projeto.traducaoCorrige.application.LimparCacheUseCase;
 
@@ -577,11 +579,24 @@ public class ApiController {
                     return;
                 }
 
-                remuxarLoteUseCase.executar(pathVideos, pathLegendas);
-                System.out.println("\n\u001B[32m========================================================================\u001B[0m");
-                System.out.println("\u001B[32m  🎉 [SUCESSO] REMUXER DE VÍDEOS FINALIZADO COM SUCESSO!\u001B[0m");
-                System.out.println("\u001B[32m========================================================================\n\u001B[0m");
-                log.info("[SUCESSO] Remuxer de vídeos finalizado.");
+                RelatorioRemux relatorio = remuxarLoteUseCase.executar(pathVideos, pathLegendas);
+                boolean semFalhas = relatorio.getTotalErros() == 0 && relatorio.getMkvProcessadosSucesso() > 0;
+                String resumo = relatorio.getMkvProcessadosSucesso() + " sucesso, " + relatorio.getTotalErros() + " erro(s)"
+                    + (relatorio.getErrosLegendaInvalida() > 0
+                        ? " (" + relatorio.getErrosLegendaInvalida() + " com legenda vazia/corrompida)"
+                        : "");
+                String linhaSeparadora = "========================================================================";
+                if (semFalhas) {
+                    System.out.println("\n" + AnsiCores.GREEN + linhaSeparadora + AnsiCores.RESET);
+                    System.out.println(AnsiCores.GREEN + "  [SUCESSO] REMUXER FINALIZADO! (" + resumo + ")" + AnsiCores.RESET);
+                    System.out.println(AnsiCores.GREEN + linhaSeparadora + AnsiCores.RESET + "\n");
+                    log.info("[SUCESSO] Remuxer de videos finalizado: {}", resumo);
+                } else {
+                    System.out.println("\n" + AnsiCores.RED + linhaSeparadora + AnsiCores.RESET);
+                    System.out.println(AnsiCores.RED + "  [FALHA] REMUXER FINALIZADO COM ERROS! (" + resumo + ")" + AnsiCores.RESET);
+                    System.out.println(AnsiCores.RED + linhaSeparadora + AnsiCores.RESET + "\n");
+                    log.error("[FALHA] Remuxer de videos finalizado com erros: {}", resumo);
+                }
             } catch (Exception e) {
                 log.error("Erro no remuxer em background", e);
                 System.out.println("\u001B[31m[ERRO] Falha no Remuxer: " + e.getMessage() + "\u001B[0m");

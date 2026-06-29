@@ -486,16 +486,19 @@ public class RevisarLegendasUseCase {
 
     private boolean deveIgnorarAuditoria(EventoLegenda evento, String texto) {
         String estilo = evento.estilo() != null ? evento.estilo().toLowerCase() : "";
+        if (estilo.contains("sign")) {
+            return true;
+        }
         String visivel = extrairTextoVisivel(texto);
         return estilo.contains("romaji") && visivel.equalsIgnoreCase("you");
     }
 
     private String consertarKaraokeQuebrado(String texto) {
         if (texto == null) return null;
-        // Se encontrar chaves que contêm texto não iniciando com \
+        // Se encontrar chaves que contêm texto não iniciando com \ ou = (ex: {=2})
         // e substituí-las por \N seguido do texto.
-        // O regex \{([^\\}][^}]*)\} captura {conteúdo} onde 'conteúdo' não inicia com \ ou }
-        return texto.replaceAll("\\{([^\\\\}][^}]*)\\}", "\\\\N$1");
+        // O regex \{([^\\=}][^}]*)\} captura {conteúdo} onde 'conteúdo' não inicia com \, = ou }
+        return texto.replaceAll("\\{([^\\\\=}][^}]*)\\}", "\\\\N$1");
     }
 
     private String extrairTextoVisivel(String texto) {

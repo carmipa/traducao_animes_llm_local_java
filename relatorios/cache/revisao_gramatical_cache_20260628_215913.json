@@ -1,0 +1,9 @@
+{
+  "tipo" : "Revisão Gramatical (cache LLM)",
+  "detalhe" : "D:\\PROJETOS-OPEN\\traducao_animes_llm_local_java\\cache",
+  "tempoTotalMs" : 85301,
+  "arquivosProcessados" : 44,
+  "itensDetectados" : 146,
+  "itensCorrigidos" : 71,
+  "registradoEm" : "2026-06-29T00:59:13.545600400Z"
+}
